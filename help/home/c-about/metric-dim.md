@@ -1,0 +1,97 @@
+---
+description: ステップバイステップ方式のウィザードを使用して、指標属性によって定義されるディメンション（指標ディメンション）を作成できます。作成した新しい指標ディメンションをテストし、プレビューし、ディメンションリストに保存できます。
+title: 指標ディメンションウィザード
+uuid: 411b2e28-0958-43bb-a853-7de7b3063818
+translation-type: tm+mt
+source-git-commit: d892186621e7acb9504254496b038efc3e9fd8ec
+
+---
+
+
+# 指標ディメンションウィザード{#metric-dim-wizard}
+
+ステップバイステップ方式のウィザードを使用して、指標属性によって定義されるディメンション（指標ディメンション）を作成できます。作成した新しい指標ディメンションをテストし、プレビューし、ディメンションリストに保存できます。
+
+指標ディメンションは、指標を新しいディメンションに変換します。例えば、ページビュー数指標と訪問者レベルに基づいた指標ディメンションには、各訪問者のページビュー数合計に基づいてディメンションエレメントが表示されます。この指標ディメンションを使用して、ディメンションエレメントに基づいて現在定義されている指標を拡張し、新しいディメンションとして作成および保存することができます。
+
+## ステップ 1：ディメンションと指標の選択 {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
+
+1. 指標ディメンションウィザードを開きます。
+
+   In a workspace, right-click and select **[UICONTROL Tools]** > **[UICONTROL Create Metric Dim]**.
+
+1. 指標ディメンションに名前を付けます。
+
+   デフォルトでは、「名前」フィールドはレベルと指標の選択内容に基づいて自動設定されます。
+
+1. ディメンションレベルを選択します。
+
+   ディメンションレベルとは、入力をフィルタリングしたり、ディメンションタイプを定義したりするすべての構成エレメント値を含む親ディメンションです。
+
+   ディメンションレベルには以下が含まれます。
+
+   * クリックスルー
+   * ヒット
+   * 製品        
+   * 訪問
+   * 訪問者
+
+1. 指標を選択します。
+
+   事前作成された指標を選択して拡張し、指標ディメンションとして保存します。
+
+   ![](assets/6_4_workstation_metricdim_metric.png)
+
+1. （オプション）指標の数式を作成します。
+
+   ボックスをクリックして、カスタム指標の数式を入力します。計算されたプレビュー値が表示されて、式が検証されます。
+
+   ![](assets/6_4_workstation_metricdim_create_metric.png)
+
+   独自の[指標の式](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html)の追加や、別の指標エディターまたはビジュアライゼーションからのカットアンドペーストが可能です。構文エラー、数式エラー、未定義エラーおよびその他のエラーがウィザードに報告されます。
+
+1. クリック **[!UICONTROL Next]**.
+
+## ステップ 2：形式の設定とグループの設定 {#section-5bddf3cd306545d7806a501637f80f77}
+
+1. 新しい指標ディメンションの形式を選択します。
+
+   ![](assets/6_4_workstation_metricdim_format_metric.png)
+
+   形式は、ビジュアライゼーションで開いたときに指標をどのように表示するかを定義するものです。これらの形式は選択された [printf 標準](http://www.cplusplus.com/reference/cstdio/printf/)で、以下のように定義されています。
+
+   ```
+   %[flags][width][.precision][length][specifier]
+   % 0.2lf = % _ [flags] 0 [width] .2 [.precision] l [length] f[ specifier]
+   ```
+
+   In the **[!UICONTROL Preview]** field, a value will appear based on the metric and format selected.
+
+1. 「グループの数」の式を追加します。
+
+   様々な範囲、すなわちグループを利用して指標ディメンションを定義できます。This returns subsets of elements based on size, such as [0-4], [5-10],...). ディメンションレベルのエレメントは、範囲に指標の値を含むエレメントに関連付けられます。グループの式の説明は、「[ディメンション式の構文](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)」を参照してください。
+
+1. Click **[!UICONTROL Preview]** to open table of Metric Dim values before saving.
+
+   ![](assets/6_4_workstation_metricdim_preview.png)
+
+   このテーブルには、指標ディメンションごとの指標の値の詳細が表示されます。
+
+1. Click **[!UICONTROL Show in Dimension Menu]** to add the newly created dimension to the **Dimension** tab in the **Finder**.
+
+1. クリック **[!UICONTROL Next]**.
+
+## ステップ 3：終了および保存 {#section-d9043235b18a425f9de0db668d4b1683}
+
+1. 保存後の指標ディメンションエディター、グラフビジュアライゼーションまたはテーブルの起動を選択します。
+
+   | フィールド | 説明 |
+   |---|---|
+   | **[!UICONTROL Launch Metric Dim Editor]** | 指標ディメンションエディターを開きます。 |
+   | **[!UICONTROL Launch Graph]** | テーブルの PNG グラフィックを起動します。 |
+   | **[!UICONTROL Launch Table]** | ワークスペース内のテーブルを起動し、新しい指標ディメンションの値を選択されている指標の値と比較して列に表示します。 |
+
+1. をクリック **[!UICONTROL Finish]** して保存します。
+
+   保存ダイアログが開き、ファイルを保存することができます。値を表示するために選択したオプションがワークスペース内に表示されます。
+
