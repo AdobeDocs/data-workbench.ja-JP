@@ -1,0 +1,54 @@
+---
+description: タイムゾーンのコードと形式について取り上げます。
+solution: Analytics
+title: タイムゾーンのコード
+topic: Data workbench
+uuid: 5698882a-9682-41d8-88d3-8471578a22cc
+translation-type: tm+mt
+source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+
+---
+
+
+# タイムゾーンのコード{#time-zone-codes}
+
+タイムゾーンのコードと形式について取り上げます。
+
+Data Workbench サーバーでは、時刻を指定するパラメーターの大半で次の形式が使用されます。
+
+* Month DD , YYYY HH :MM :SS TZone
+* 例：August 13, 2013 22:30:00 EST
+
+タイムゾーンの表現には、システムに依存しない次の形式（協定世界時）が使用されます。
+
+* UTC +hhmm dstrules
+
+記号（+）の部分にはプラス（+）記号かマイナス（-）記号を、hhmm には UTC からのオフセット（時と分）を指定します。dstrules は、夏時間などの時刻調整制度を導入するための一連のルールを指定する変数です（省略可能）。
+
+dstrules を指定する場合、[!DNL dstrules.dst] という名前のタブ区切りファイルが、[!DNL Base] プロファイル（特定のデータセットに関連付けられていない設定ファイル）またはデータセットプロファイル（データセット固有の設定ファイル）の Dataset\TimeZone ディレクトリに存在する必要があります。タイムゾーンに依存しない、夏時間の一連のルールをこのファイルで指定します。一連のルールは、年度ごとに異なっていても構いません。アドビが提供している [!DNL DST.dst][!DNL Base] ファイル（ プロファイル内）には、2005 年エネルギー政策法（2007 年より施行）によって定められた米国の標準ルールと、それ以前の年度用の米国ルールが指定されています。
+
+タイムゾーンの指定例を次に示します。
+
+* 米国東部夏時間：Time Zone = string: UTC -0500 DST
+* オフセットと dstrules を指定しない UTC 時刻（GMT に相当）：Time Zone = string: UTC -0000
+
+この形式を使用する場合に、Data Workbench サーバー、Data Workbench コンピューター、ローカルのコンピューターのシステムタイムゾーンを、指定したタイムゾーンに揃える必要はありません。また、Data Workbench サーバーコンピューター上で使用されているデータセットプロファイルについても、タイムゾーン設定をすべて揃える必要はありません。
+
+次の表は、時刻ベースのパラメーターでタイムゾーンの指定に使用できるコードを一覧にしたものです。
+
+## タイムゾーンコード表 {#section-b4f965b872c543e2ac52a3c94410d076}
+
+If you are implementing Daylight Saving Time or a similar clock-shifting policy, you must save the [!DNL .dst] file containing the appropriate rules in the profile name [!DNL \Dataset\Timezone] directory on the data workbench server machine.
+
+| コード | タイムゾーン | GMT からのオフセット |
+|---|---|---|
+| gmt | グリニッジ標準時 | 0 |
+| est | 東部標準時 | 5 |
+| edt | 東部夏時間 | 5 |
+| cst | 中部標準時 | 6 |
+| cdt | 中部夏時間 | 6 |
+| mst | 山岳部標準時 | 7 |
+| mdt | 山地夏時間 | 7 |
+| pst | 太平洋標準時 | 8 |
+| pdt | 太平洋夏時間 | 8 |
+
