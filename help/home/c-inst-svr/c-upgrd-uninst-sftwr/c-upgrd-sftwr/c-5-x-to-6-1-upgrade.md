@@ -180,8 +180,7 @@ Follow these steps to update the **[!UICONTROL Server v6.1]** components:
    >
    >例えば、簡体字中国語で起動するには、コマンドライン設定で渡すショートカットを作成します。
    >
-   >
-   ```
+   >```
    >Insight.exe -zh-cn
    >```
    >
