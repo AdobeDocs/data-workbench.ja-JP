@@ -3,7 +3,7 @@ description: Data Workbench 6.3用のサーバーコンポーネントのアッ�
 title: DWB Server 6.2から6.3へのアップグレード
 uuid: e12b6cc1-070e-4bc7-bc64-203d11cfeae9
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: 79d5a2f44ade88f25f7621a4738d14c43777fc9f
 
 ---
 
@@ -22,26 +22,27 @@ If you have customized profiles that take precedence over the default files prov
    1. Change the data type for **[!UICONTROL Proxy Password]** from &quot; [!DNL string"] to &quot; [!DNL EncryptedString]&quot; in the *Workstation Configuration* section.
 
       ```
-      Proxy User Name = string: 
-      Proxy Password = EncryptedString:   ( 
-      
-<i>from Proxy Password = String</i>)Use Address File = bool:true”
+        Proxy User Name = string: 
+        Proxy Password = EncryptedString:   ( 
+        from Proxy Password = String) 
+        Use Address File = bool: true
+      ```
 
-    1.新しい名前と値のペアの変換を有効にする新しいエントリを追加します。*BuildNameValuePair*と*ExtractNameValuePairs*
-    
-    ワークスペースを開き、**管理者**/*プロファイルマネージャー**を右クリックします。
-    
-    「**Context**」で、**Base**列の**meta.cfg**ファイルをクリックし、「**ローカル化**」をクリックします。 「ユーザー」(User)テーブルの列で右クリックし、「**開く**」(**Open**) > 「**ワークステーション**」(**in Workstation**)の順に選択します。
-    
-    ![](assets/meta_cfg.png)
-    
-    * In the new window, click **metadata** and add acceptable children templates.
-    
-    ![](assets/meta_cfg_child.png)
-    
-    * **変換**を開き、新しいテンプレートを追加します。
-    
-    ![](assets/meta_cfg_template.png)
+   1. 新しい名前と値のペアの変換を有効にする新しいエントリ *BuildNameValuePair* と *ExtractNameValuePairs* を追加します。
+
+      ワークスペースを開き、**管理者**／**プロファイルマネージャー**&#x200B;を右クリックします。
+
+      **コンテキスト**&#x200B;の下で、**Base** 列の **meta.cfg** ファイルをクリックし、「**ローカル化**」をクリックします。User テーブル列で右クリックし、**開く**／**ワークステーションで**&#x200B;を選択します。
+
+      ![](assets/meta_cfg.png)
+
+      * 新しいウィンドウで、**metadata** をクリックし、acceptable children テンプレートを追加します。
+
+         ![](assets/meta_cfg_child.png)
+
+      * **transformation** を開き、新しいテンプレートを追加します。
+
+         ![](assets/meta_cfg_template.png)
 
 * **高速結合の強化のための更新**。Data Workbench での変換速度の向上を利用するために、次の設定ファイルに対してパラメーターの追加または値の変更を行います。
 
