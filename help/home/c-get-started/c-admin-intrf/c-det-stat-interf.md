@@ -5,7 +5,7 @@ title: 詳細ステータスインターフェイス
 topic: Data workbench
 uuid: c4d375d9-431f-4b0a-ba15-b7a10501b2e2
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: fd3afa80250d5ae20b7758ba840fd4d436545cf2
 
 ---
 
@@ -69,7 +69,7 @@ The following table lists the tasks that can be completed using the [!DNL Detail
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;StageName&nbsp;13.0&nbsp;sec
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;.&nbsp;.
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;Log&nbsp;Processing\ProfileName&nbsp;0.8&nbsp;sec
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;StageName&nbsp;0.8&nbsp;sec</code> </p> <p>クエリーの完了に要する時間は、通常はすべてのディメンションの合計サイズに比例します。各ディメンションのサイズを確認してから、特定のディメンションが十分に役立っているか、ディメンションのパフォーマンスコストを正当化できるほど十分に使用されているかを評価できます。十分ではない場合、<span class="wintitle">プロファイルマネージャー</span>でディメンションを削除できます。 プロファイル<a href="../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-prof-mgr.md"> ・マネージャーを参照</a>。 </p> <p>要素名のリストが大きすぎる（128 MB 以上）ディメンションは、アドレス空間使用量合計が制限に近くない場合でも、「メモリ不足」エラーを生じさせることがあります。 </p> <p>また、Data Workbenchサーバークラスターを使用しているが、中央の正規化を使用していない場合、要素名のリストが大きいディメンションは、送信メモリ予算に大きな影響を与えます。 中央集中型の正規化について詳しくは、『<i>データセット設定ガイド</i>』を参照してください。 要素名のリストをすべて結合して保存するために必要なメモリ量が、クラスター内のすべてのサーバーで 100 MB を超える場合、クエリーアクティビティが軽量の場合でも、「送信メモリ予算を超えました」エラーが表示されることがあります。例えば、サーバー 4 台からなるクラスターがあり、各サーバーで 25 MB 以上が要素名のリストの保存に使用されている場合、エラーが表示されることがあります。 </p> </td> 
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;StageName&nbsp;0.8&nbsp;sec</code> </p> <p>クエリーの完了に要する時間は、通常はすべてのディメンションの合計サイズに比例します。各ディメンションのサイズを確認してから、特定のディメンションが十分に役立っているか、ディメンションのパフォーマンスコストを正当化できるほど十分に使用されているかを評価できます。十分ではない場合、<span class="wintitle">プロファイルマネージャー</span>でディメンションを削除できます。 <p>要素名のリストが大きすぎる（128 MB 以上）ディメンションは、アドレス空間使用量合計が制限に近くない場合でも、「メモリ不足」エラーを生じさせることがあります。 </p> <p>また、Data Workbenchサーバークラスターを使用しているが、中央の正規化を使用していない場合、要素名のリストが大きいディメンションは、送信メモリ予算に大きな影響を与えます。 中央集中型の正規化について詳しくは、『<i>データセット設定ガイド</i>』を参照してください。 要素名のリストをすべて結合して保存するために必要なメモリ量が、クラスター内のすべてのサーバーで 100 MB を超える場合、クエリーアクティビティが軽量の場合でも、「送信メモリ予算を超えました」エラーが表示されることがあります。例えば、サーバー 4 台からなるクラスターがあり、各サーバーで 25 MB 以上が要素名のリストの保存に使用されている場合、エラーが表示されることがあります。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ログ処理と変換に費やされる時間をモニタリングするには </p> </td> 
