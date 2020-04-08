@@ -1,22 +1,22 @@
 ---
-description: Master Insightサーバー上のクラスターの設定、クラスターのアクセス制御ファイルの更新などに関する情報です。
+description: Master Insightサーバーでのクラスターの設定、クラスターのアクセス制御ファイルの更新などに関する情報です。
 solution: Insight
 title: クラスタリング用のMaster Insightサーバーの設定
 uuid: c3ac38e3-79c5-4863-9156-194589a6bcbd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
 ---
 
 
 # クラスタリング用のMaster Insightサーバーの設定{#configuring-the-master-insight-server-for-clustering}
 
-Master Insightサーバー上のクラスターの設定、クラスターのアクセス制御ファイルの更新などに関する情報です。
+Master Insightサーバーでのクラスターの設定、クラスターのアクセス制御ファイルの更新などに関する情報です。
 
 クラスターを設定するには、マスターで次の手順を実行しま [!DNL Insight Server]す。
 
-* 処理の共通名と [!DNL Insight Servers’] アドレスをアドレスファイルに追加します。
-* すべてをファイル内 [!DNL Insight Servers] のCluster Serversグループに追加し [!DNL Access Control.cfg] ます。
+* ア追加ドレスファイルに対する処理の共通名とアドレス。 [!DNL Insight Servers’]
+* ファ追加イル内のCluster Servers [!DNL Insight Servers] グループに属するすべてのも [!DNL Access Control.cfg] の。
 
 * Components for Processing Serversデ [!DNL Synchronize.cfg] ィレクトリ内のファイルを更新して、マスターを指定しま [!DNL Insight Server]す。
 
@@ -38,7 +38,7 @@ Master Insightサーバー上のクラスターの設定、クラスターのア
 
 **アドレスファイルに処理[!DNL Insight Servers]を追加するには**
 
-1. タイト [!DNL Insight] ルバーを右クリックし、/をクリックして、設定プロファイルを起動し、読み込み **[!UICONTROL Switch Profile]** ます（まだ開いていない場合） **[!UICONTROL Configuration]**。
+1. 開始 [!DNL Insight] し、設定プロファイルを読み込みます（まだ開いていない場合）。タイトルバーを右クリックし、/をクリック **[!UICONTROL Switch Profile]** しま **[!UICONTROL Configuration]**&#x200B;す。
 
 1. の「/」 [!DNL Insight]タブで、サ [!DNL Admin] ムネールを [!DNL Dataset and Profile] クリックして、サーバ **[!UICONTROL Servers Manager]** ーマネージャーワークスペースを開きます。
 
@@ -78,22 +78,22 @@ Master Insightサーバー上のクラスターの設定、クラスターのア
 
 ## クラスタのアクセス制御ファイルの更新 {#section-fce1367d92a445168c35e9ca506e7d6b}
 
-クラスター [!DNL Insight Servers] 内で使用するには、クラ [!DNL Insight Server] スター内の各（マスターを含む）が、Cluster Serversアクセ [!DNL Insight Server]ス制御グループに属している必要があります。 Cluster Serversグループは、クラスターへの参加を許可されるサーバーを（IPアドレスで）識別します。 このファイルはマスター上で管理および管理されますが、ク [!DNL Insight Server]ラスター内のすべてのユーザーによっ [!DNL Insight Servers] て使用されます。
+クラスター [!DNL Insight Servers] 内で使用するには、クラ [!DNL Insight Server] スター（マスターを含む）内のそれぞれがCluster Servers [!DNL Insight Server]アクセス制御グループに属している必要があります。 Cluster Serversグループは、クラスターへの参加を許可されるサーバーを（IPアドレスで）識別します。 このファイルはマスター上で管理および管理されますが、ク [!DNL Insight Server]ラスター内のすべてのユーザーによっ [!DNL Insight Servers] て使用されます。
 
-**アクセス制御ファイルを編集するには**
+**アクセス制御ファイルを編集**
 
 1. の「/」 [!DNL Insight]タブで、サ [!DNL Admin] ムネールを [!DNL Dataset and Profile] クリックして、サーバ **[!UICONTROL Servers Manager]** ーマネージャーワークスペースを開きます。
 
 1. マスターのアイコンを右クリックし、をク [!DNL Insight Server] リックしま **[!UICONTROL Server Files]**&#x200B;す。
 
-1. で、Access Control [!DNL Server Files Manager]ディレクトリを開きます。
+1. で、ディレク [!DNL Server Files Manager]トリをアクセス制御します。
 1. 次の手順を実行してファイルを開 [!DNL Access Control.cfg] きます。
 
    1. サーバー名列のチェックマークを右ク *リックし* 、をクリックしま **[!UICONTROL Make Local]**&#x200B;す。
 
    1. 列のチェックマークを右クリックし、/ [!DNL Temp] をクリッ **[!UICONTROL Open]** クしま **[!UICONTROL in Insight]**&#x200B;す。
 
-1. Access Control Groups構造を展開し、AccessGroup (Cluster Servers)を展開します。
+1. 「アクセス制御グループ」構造を展開し、「AccessGroup (Cluster Servers)」を展開します。
 1. クラスター [!DNL Insight Server] 内の（マスターを含む）それぞれ [!DNL Insight Server]に対して、次の手順を実行します。
 
    1. 右クリックし、/ **[!UICONTROL Members]** をクリ **[!UICONTROL Add New]** ックしま **[!UICONTROL New Member]**&#x200B;す。
@@ -108,13 +108,13 @@ Master Insightサーバー上のクラスターの設定、クラスターのア
 
    1. ウィンドウ上部 **[!UICONTROL (modified)]** のを右クリックし、をクリックしま **[!UICONTROL Save]**&#x200B;す。
 
-   1. In the [!DNL Server Files Manager], right-click the check mark for the file in the [!DNL Temp] column and click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
+   1. で、列 [!DNL Server Files Manager]内のファイルのチェックマークを右クリックし、 [!DNL Temp] > **[!UICONTROL Save to]** &lt; ***[!UICONTROL server name]**>をクリックします*。
 
 ## 同期ファイルの設定 {#section-d23e751771c84da6bab6a34a8db867bc}
 
 次の手順を使用して、ファイルの中央コピーを設定でき [!DNL Synchronize.cfg] ます。 このファイルの中央コピーはマスター上に保持されま [!DNL Insight Server]す。 クラスタ内 [!DNL Insight Servers] の処理は、このファイルの更新されたコピーを取 [!DNL Insight Server] 得するためにマスタとの通信を開始します。
 
-マスタ [!DNL Synchronize.cfg] ーの場所を指定するファイルで [!DNL Insight Server]す。 また、クラスター内の各処理がマスターから取得する管理フ [!DNL Insight Servers] ァイルのセットも識別します [!DNL Insight Server]。 処理では、これらのフ [!DNL Insight Servers] ァイルを開始時にマスターから自動的にダ [!DNL Insight Server] ウンロードします。 また、ファイルが変更された場合に、これらのファイルの更新されたコピーをマス [!DNL Insight Server] ターから動的に取得します。
+マスタ [!DNL Synchronize.cfg] ーの場所を指定するファイルで [!DNL Insight Server]す。 また、クラスター内の各処理がマスターから取得する管理フ [!DNL Insight Servers] ァイルのセットも識別します [!DNL Insight Server]。 処理では、これらのフ [!DNL Insight Servers] ァイルがマスターからダウンロードされると、マス [!DNL Insight Server] ターの開始時に行われます。 また、ファイルが変更された場合に、これらのファイルの更新されたコピーをマス [!DNL Insight Server] ターから動的に取得します。
 
 >[!NOTE]
 >
@@ -137,7 +137,7 @@ Master Insightサーバー上のクラスターの設定、クラスターのア
 1. コンポーネント構造を展開します。
 1. Cluster Primary Server Addressパラメーターで、マスター（プライマリ）のIPアドレスを指定しま **[!UICONTROL Insight Server]**&#x200B;す。
 
-   ![](assets/cfg_cluster_SyncFile_(CentralCopy).png)
+   ![](assets/cfg_cluster_SyncFile_CentralCopy.png)
 
    マスターと処理の間で同期が発生するたびに記録するログを作 [!DNL Insight Server] 成するには、Enable Synchronization Logパラメー [!DNL Insight Servers]ターが「true」に設定されていることを確認します。
 
@@ -145,7 +145,7 @@ Master Insightサーバー上のクラスターの設定、クラスターのア
 
    1. ウィンドウ上部 **[!UICONTROL (modified)]** のを右クリックし、をクリックしま **[!UICONTROL Save]**&#x200B;す。
 
-   1. In [!DNL Server Files Manager], right-click the check mark for the file in the [!DNL Temp] column and click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
+   1. で、 [!DNL Server Files Manager]列内のファイルのチェックマークを右クリックし、 [!DNL Temp] / **[!UICONTROL Save to]** &lt; ***[!UICONTROL server name]**>をクリックします*。
 
 ## データセットの場所の設定(temp.db) {#section-5ec257a4b4c64fb58baec1f12119a822}
 
@@ -169,7 +169,7 @@ Master Insightサーバー上のクラスターの設定、クラスターのア
 
    1. 列のチェックマークを右クリックし、/ [!DNL Temp]をクリッ **[!UICONTROL Open]** クしま **[!UICONTROL in Insight]**&#x200B;す。
 
-1. DiskSpaceManagerComponent構造を展開し、[ディスクファイル]リストを展開します。
+1. DiskSpaceManagerComponent構造を展開し、[Disk Files]リストを展開します。
 1. エントリ0を編集して、ファイルの場所を変更し [!DNL temp.db] ます。
 1. 複数のドライブに分散する [!DNL temp.db] 場合は、次の手順を使用して、追加の各ドライブに対する追加のエントリを作成します。
 
@@ -184,5 +184,5 @@ Master Insightサーバー上のクラスターの設定、クラスターのア
 
    1. ウィンドウ上部 **[!UICONTROL (modified)]** のを右クリックし、をクリックしま **[!UICONTROL Save]**&#x200B;す。
 
-   1. In [!DNL Server Files Manager], right-click the check mark for the file in the [!DNL Temp] column and click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
+   1. で、 [!DNL Server Files Manager]列内のファイルのチェックマークを右クリックし、 [!DNL Temp] / **[!UICONTROL Save to]** &lt; ***[!UICONTROL server name]**>をクリックします*。
 
