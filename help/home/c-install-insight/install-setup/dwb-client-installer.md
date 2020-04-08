@@ -1,40 +1,40 @@
 ---
-description: Data Workbench には、ワークステーション（クライアント）アプリケーションをインストールするためのセットアップウィザードがあります。
+description: Data Workbenchには、ワークステーション（クライアント）アプリケーションをインストールするためのセットアップウィザードが用意されています。
 title: ワークステーションセットアップウィザード
 uuid: e2bf6606-e7ba-439f-b50c-118706ab5b7d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: b5a22e7a050d7c01570286dcb54e368f7ecdbcd8
 
 ---
 
 
 # ワークステーションセットアップウィザード{#workstation-setup-wizard}
 
-Data Workbench には、ワークステーション（クライアント）アプリケーションをインストールするためのセットアップウィザードがあります。
+Data Workbenchには、ワークステーション（クライアント）アプリケーションをインストールするためのセットアップウィザードが用意されています。
 
 ## セットアップウィザードを使用したワークステーションのインストール {#section-58da9bb6196c46eab3b54146913fdcb8}
 
-インストールウィザードの実行可能ファイルを起動して、各ステップを順に実行し、ワークステーションクライアントプログラムをインストールします。ワークステーションをインストールしたら、サーバーとプロファイルに接続できます。
+インストールウィザードの実行ファイルを起動し、各手順を実行して、ワークステーションクライアントプログラムをインストールします。 ワークステーションのインストール後、サーバーとプロファイルに接続
 
-1. ワークステーションインストーラーの実行可能ファイルをダブルクリックします。
-1. 「**はい**」をクリックして、Windows へのプログラムのインストールを許可します。
-1. セットアップウィザードの&#x200B;**言語**&#x200B;を選択します。
+1. 重複 — ワークステーションインストーラの実行可能ファイルをクリックします。
+1. 「はい **** 」をクリックして、プログラムのWindowsへのインストールを許可します。
+1. セットアップウ **ィザードの** 「言語」を選択します。
 
    ウィザードが開きます。
 
    ![](assets/6_4_workstation_wizard.png)
 
-1. **Data Workbench セットアップウィザードの開始** ダイアログで「**次へ**」をクリックします。
+1. Data Workbenchセッ **トアップ** ウィザード **の開始ダイアログで「次へ** 」をクリックします。
 
-1. **新規インストール**&#x200B;するか、既存インストールを&#x200B;**アップグレードまたは修復**&#x200B;するかを選択します。
+1. [新規インストール]をインスト **ールするか** 、既存のイ **ンストールをアップグレード** 、または修復するかを選択します。
 
-   **新規インストール**&#x200B;は、以前インストールされたファイルをすべて上書きします。
+   **[新規インストール]を選択すると** 、以前にインストールされたファイルが上書きされます。
 
-   **アップグレード**&#x200B;は、ワークステーションを最新バージョンに更新するか、既存インストールを修復できるようにします。Data Workbench は、インストールされている **Insight.exe** ファイルを比較して、新しいバージョンのクライアントがある場合はワークステーションセットアップウィザードを実行します。
+   **アップグレード** ：ワークステーションを最新バージョンに更新するか、既存のインストールを修復できます。 Data Workbenchは、インストールされた **Insight.exe** Clientファイルを比較し、新しいバージョンのクライアントが使用可能な場合は、ワークステーションセットアップウィザードを実行します。
 
-1. インストール場所を選択します。
+1. インストール場所の選択：
 
-   「**標準**」を選択すると、デフォルトのフォルダーおよび場所にインストールされます。
+   **「標準」は** 、デフォルトのフォルダと場所にインストールされます。
 
    * プログラムファイルはデフォルトで次の場所に保存されます。
 
@@ -42,7 +42,7 @@ Data Workbench には、ワークステーション（クライアント）ア�
       C:\Program Files\Adobe\Adobe Analytics\Data Workbench
       ```
 
-   * データファイル（プロファイル、証明書、トレースログ、ユーザーファイル）はデフォルトで次の場所に保存されます。
+   * データファイル(プロファイル、証明書、トレースログ、ユーザーファイル)は、デフォルトで次の場所に保存されます。
 
       ```
       C:\Users\<username>\AppData\Local\Adobe\Adobe Analytics\Data Workbench\
@@ -50,48 +50,48 @@ Data Workbench には、ワークステーション（クライアント）ア�
 
       >[!IMPORTANT]
       >
-      >A generic ***Insight.cfg*** file without server details will be installed initially. 以前のインストールからファイルを移動するのではなく、新たにインストールされた ***Insight.cfg*** ファイルを使用してカスタマイズすることをお勧めします。Because the path for installing the workstation has changed, the addition of fonts, removal of the *User Folder*, and the removal of the *TraceFileComponent * is recommended.
+      >サーバーの詳細を含まない汎用 ***的なInsight.cfg*** ファイルが最初にインストールされます。 以前のインストールからファイルを移動するのではなく、新しくインストールした ***Insight.cfgファイルを使用して*** 、カスタマイズすることをお勧めします。 ワークステーションのインストールパスが変更されたので、フォントの追加、 *User Folderの削除*、および*TraceFileComponent *の削除を推奨します。
 
-1. （オプション）「** Custom**」を選択して、言語パッケージと、プログラムおよびデータファイルの場所を選択します。
-1. **スタートメニューのショートカット**&#x200B;の場所を選択します。
+1. （オプション）「カス **タム** 」を選択して、言語パッケージと、言語ファイルとプログラムファイルの場所を選択します。
+1. ショートカットの場 **所を開始メニューで**&#x200B;選択
 
    ![](assets/6_4_workstation_wizard_folder.png)
 
-   Windows のスタートメニューにショートカットをインストールしないようにするには、「**スタートメニューに追加しない**」をクリックします。
+   [開始 **メニューフォルダを作成しない]をクリックして** 、Windowsのメニューにショートカットをインストールしないようにします。
 
-1. 「**次へ」をクリックします。**」をクリックします。選択したファイル位置のパスと言語に関する要約が表示されます。「**インストール**」をクリックします。
+1. 「**次へ」をクリックします。** 選択したファイルの場所のパスと言語の概要が表示されます。 Click **Install.**
 
-1. **Data Workbench 証明書**&#x200B;を探します。
+1. Data Workbenchの証 **明書を探します**。
 
-   インストール中に Data Workbench 証明書が見つからなかった場合は、証明書（デフォルトではクライアントの **Certificates** フォルダーにある **.pem** ファイル）の場所を参照するためのダイアログが開きます。または、「**スキップp**」をクリックして、インストール後に証明書を探します。
+   インストール中にData Workbenchの証明書が見つからない場合は、ダイアログが開いて証明書の場所(デフォルトではクライアントの **Certificates** フォルダーにある **.pem****** ファイル)を参照するか、「スキップ」をクリックしてインストール後の証明書を検索します。
 
-   証明書が見つかったら、「**インストール**」をクリックします。
+   証明書を **見つけたら** 、「Install」をクリックします。
 
-1. セットアップウィザードが完了し、Data Workbench がインストールされたら、「**完了**」をクリックしてセットアップを完了します。
+1. セットアップウィザードが完了し、Data Workbenchがインストールされたら、「完了」をクリ **ックし** 、セットアップを完了します。
 
    >[!NOTE]
    >
-   >The default log location for the Workstation Set up Wizard at **[!DNL C:\Users\`<userName>&#39;\AppData\Local\Temp ]**
+   >ワークステーションセットアップウィザードの既定のログの場所( **[!DNL C:\Users\)<userName>&#39;\AppData\Local\Temp ]**
 
-   セットアップ後に Data Workbench を開くには、「**アプリケーションを起動**」チェックボックスをオンにします。
+   設定後にWorkbenchを **開くには** 、「アプリケーションを起動」チェックボックスを選択します。
 
 1. **ファイル内のサーバ** ーへの接続を設定 **[!DNL Insight.cfg]** します。
 
-   ワークステーションをインストールすると、ワークステーション設定エクスペリエンスの強化ワークスペースが開き、*Insight.cfg* ファイル内の[サーバー接続情報の入力](/help/home/c-get-started/c-insght-config-param.md)に関する追加情報と、ドロップダウンからプロファイルを選択するためのオプションが表示されます。サーバーへの接続状況も表示されます。
+   ワークステーションのインストール後、拡張ワークステーション設定ワークスペースが開き、 [Insight.cfg](/help/home/c-get-started/c-insght-config-param.md)** (Enhanced Workstation Configuration Experience)ファイルにサーバー接続情報を入力する方法や、ドロップダウンからプロファイルを選択するオプションに関する追加情報が表示されます。 サーバーへの接続状態を表示することもできます。
 
    ![](assets/6_4_workstation_install_conf_conn.png)
 
-## インストールフォルダー {#section-b5ea5a3b3ecb4622aef713972f3f8ebd}
+## インストールフォルダ {#section-b5ea5a3b3ecb4622aef713972f3f8ebd}
 
-Data Workbench のフォルダー構造には、2 つのインストール場所があります。
+Data Workbenchのフォルダー構造には、2つのインストール場所があります。
 
-* **プログラムファイル****Insight.exe** ファイルおよびクライアントをサポートするファイル（**Insight.ini**）は、デフォルトで次の場所に配置されるようになりました。
+* **プログラムファイル****Insight.exe** 、およびサポートするクライアントファイル(**Insight.ini**)が、デフォルトで次の場所に配置されるようになりました。
 
    ```
    C:\Program Files\Adobe\Analytics\DataWorkbench
    ```
 
-* **Appdata** フォルダー
+* Appdataフ **ォルダ** 。
 
    **Insight.cfg**、プロファイル、証明書、トレースログおよびユーザーファイルは、デフォルトで次の場所に配置されるようになりました。
 
@@ -99,7 +99,7 @@ Data Workbench のフォルダー構造には、2 つのインストール場所
    C:\Users\<Winuser>\AppData\Adobe\Analytics\DataWorkbench\ 
    ```
 
-   **Appdata** フォルダーのパスを `Insight.ini` ファイル内に設定できます。
+   ファイル内の **Appdata** フォルダのパスを設定でき `Insight.ini` ます。
 
    ```
    [InitialSettings] 
@@ -109,10 +109,10 @@ Data Workbench のフォルダー構造には、2 つのインストール場所
 
 ## ワークステーションのアンインストール {#section-5ce2e233fe4348469ef1b3c451dd5b70}
 
-Data Workbench now includes an executable to uninstall the workstation (located by default at **`Program Files\Adobe\Adobe Analytics\Data Workbench\ unins000.exe`**).
+Data Workbenchには、ワークステーション（デフォルトでは）をアンインストールする実行可能ファイルが含まれるようにな **`Program Files\Adobe\Adobe Analytics\Data Workbench\ unins000.exe`**&#x200B;りました。
 
-ハードドライブから起動して、Data Workbench ワークステーションファイルを削除するためのステップに従います。
+を起動し、Data Workbenchワークステーションファイルをハードドライブから削除する手順に従います。
 
 >[!NOTE]
 >
->You can launch the **unins000.exe** executable from the folder, using the **Uninstall Data Workbench** shortcut from Start Menu, or from **[!UICONTROL Control Panel]** > **[!UICONTROL Program and Features]**.
+>開始メニューの「 **Uninstall Data Workbench****」ショートカットを使用するか、/からunins000.exe実行可能ファイルを起動で** きます **[!UICONTROL Control Panel]****[!UICONTROL Program and Features]**。
