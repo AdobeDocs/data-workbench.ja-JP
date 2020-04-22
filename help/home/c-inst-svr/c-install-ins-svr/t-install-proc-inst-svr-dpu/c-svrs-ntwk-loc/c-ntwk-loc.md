@@ -4,7 +4,7 @@ solution: Insight
 title: ネットワークの場所
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: f6ec885266de6b6d99615d73fad2a1c22897424b
 
 ---
 
@@ -48,9 +48,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col2"> NetworkLocationに名前を割り当てます。 NetworkLocationに割り当てる名前は、アドレスファイル内で一意である必要があります。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Parent </td> 
+   <td colname="col1"> 親 </td> 
    <td colname="col2"> <p>このNetworkLocationに含まれるメンバの別のNetworkLocationの名前を指定します。 このパラメーターは、あるNetworkLocationを別のNetworkLocationに拡張することを有効にします。 </p> <p>Parentパラメーターを「DNS」に設定して、NetworkLocationをクライアントの通常のDNSシステムに拡張できます。 </p> <p>例：親=文字列：DNS </p> <p>DNSが親の場合、クライアントはNetworkLocationを通じて名前を解決できない場合、クライアントコンピューターのDNSシステムを使用して共通名の解決を試みます。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
