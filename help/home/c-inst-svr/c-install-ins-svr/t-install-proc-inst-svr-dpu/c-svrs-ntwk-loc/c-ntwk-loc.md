@@ -1,17 +1,17 @@
 ---
-description: 概念的には、アドレスファイルは、ネットワーク化されたマシン上のETC\HOSTSファイルと同じ目的を果たします。
+description: 概念的には、アドレスファイルは、ネットワーク接続されたマシン上のETC&bsol;HOSTSファイルと同じ目的を果たします。
 solution: Insight
 title: ネットワークの場所
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
 translation-type: tm+mt
-source-git-commit: f6ec885266de6b6d99615d73fad2a1c22897424b
+source-git-commit: e8612fab1c13ca5262816dde7deaa6fd8bedbc62
 
 ---
 
 
 # ネットワークの場所{#network-locations}
 
-概念的には、アドレスファイルは、ネットワーク化されたマシン上のETC\HOSTSファイルと同じ目的を果たします。
+概念的には、アドレスファイルは、ネットワーク接続されたマシン上のETC&amp;bsol;HOSTSファイルと同じ目的を果たします。
 
 ただし、名前の単一のコレクションを記述するHOSTSファイルとは異なり、アドレスファイルにはネットワークロケーションと呼ばれる複数の名前のコレクションが含まれます。
 
