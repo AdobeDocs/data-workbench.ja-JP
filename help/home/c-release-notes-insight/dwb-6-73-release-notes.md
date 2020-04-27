@@ -3,16 +3,12 @@ description: Data Workbench 6.73の新機能および修正点です。
 title: Data Workbench 6.73 のリリースノート
 uuid: bba63a8c-9cb7-4334-b66a-22db92153066
 translation-type: tm+mt
-source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+source-git-commit: 9552a2f9fe4e450b1e212b38a09f77252a009419
 
 ---
 
 
 # Data Workbench 6.73 のリリースノート{#data-workbench-release-notes}
-
-Data Workbench 6.73の新機能および修正点です。
-
-## Data Workbench 6.73 のリリースノート {#topic-7655534554ac4a4b816af1bd73b06aad56757}
 
 Data Workbench 6.73の新機能および修正点です。
 
@@ -37,7 +33,7 @@ Data Workbench 6.73の新機能および修正点です。
 
 * Data Workbenchワークステーションバージョン6.73は、Data Workbenchサーバーバージョン6.61以前のバージョンに接続しません。 その理由は、古いバージョンのサーバは、バージョン6.73ではサポートされていない暗号の弱い形式を使うからだ。古いバージョンのサポートを有効にするには
 
-   1. OpenSSLバージョン1.0.1hでサポートされている強力な暗号リストを使用して、サーバ上のデフォルトのSSL暗号を上書きします。 上書きするには、「Components」ディレクトリと「Components for Processing Servers」ディレクトリにある「Communications.cfg」ファイルに鍵「SSL Ciphers」を追加します。 次に例を示します。`SSL Ciphers = string: !aNULL:AESGCM`
+   1. サーバ上のデフォルトのSSL暗号リストを、OpenSSLバージョン1.0.1hでサポートされている強力な暗号リストで上書きします。 上書きするには、「Components」ディレクトリと「Components for Processing Servers」ディレクトリにある「Communications.cfg」ファイルに鍵「SSL Ciphers」を追加します。 次に例を示します。`SSL Ciphers = string: !aNULL:AESGCM`
 
       >[!NOTE]
       >
