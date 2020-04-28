@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Data Workbench ヘルプ
 translation-type: tm+mt
-source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
+source-git-commit: 888aeff0052ab7261885b3047eae6e91f1e90b03
 
 ---
 
@@ -14,6 +14,7 @@ source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
 + [Data Workbench ヘルプ](home/home.md)
 + リリースノート {#release-notes}
    + [リリースノートの概要](home/c-release-notes-insight/release-notes.md)
+   + [Data Workbench 6.74 のリリースノート](home/c-release-notes-insight/dwb-6-74-release-notes.md)
    + [Data Workbench 6.73 のリリースノート](home/c-release-notes-insight/dwb-6-73-release-notes.md)
    + [Data Workbench 6.72 のリリースノート](home/c-release-notes-insight/dwb-6-72-release-notes.md)
    + [Data Workbench 6.7 のリリースノート](home/c-release-notes-insight/dwb-6-7-release-notes.md)
