@@ -2,9 +2,9 @@
 cloud: experience-cloud
 product: analytics
 audience: end-user
-user-guide-title: Data Workbench Help
+user-guide-title: Data Workbench ヘルプ
 translation-type: tm+mt
-source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
+source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
 
 ---
 
@@ -56,7 +56,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
    + [Data Workbench の起動](home/c-get-started/t-open-ins.md)
    + [ユーザーの自己プロビジョニング](home/c-get-started/c-self-provisioning-users.md)
    + [オフラインおよびオンラインでの作業](home/c-get-started/c-off-on.md)
-   + [Profiles](home/c-get-started/c-work-prof.md)
+   + [プロファイル](home/c-get-started/c-work-prof.md)
    + [ワークトップ](home/c-get-started/c-unstd-wktp.md)
    + [ファイルのバージョン管理](home/c-get-started/c-unstd-file-ver.md)
    + [ワークトップサムネールメニューの使用](home/c-get-started/c-wktp-thumb-menu.md)
@@ -71,7 +71,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [ワークスペースの保存](home/c-get-started/c-work-worksp/c-save-wksp.md)
       + [ワークスペースの書き出し](home/c-get-started/c-work-worksp/c-ex-wksp.md)
       + [ワークスペースの読み込み](home/c-get-started/c-work-worksp/c-importing-workspace.md)
-      + [ワークスペースへの説明の追加](home/c-get-started/c-work-worksp/t-add-wksp-desc.md)
+      + [ワー追加クスペースの説明](home/c-get-started/c-work-worksp/t-add-wksp-desc.md)
       + [ワークスペースのロック解除](home/c-get-started/c-work-worksp/c-unlock-wksp.md)
       + [ワークスペースの削除](home/c-get-started/c-work-worksp/c-del-wksp.md)
       + [ワークスペースウィンドウメニューの使用](home/c-get-started/c-work-worksp/c-wksp-win-menu.md)
@@ -89,10 +89,10 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [書き出すセグメントの設定](home/c-get-started/c-exp-data-seg-exp/t-config-sgts-expt.md)
       + [セグメントエクスポートで使用するディメンションを作成する](home/c-get-started/c-exp-data-seg-exp/c-dim-sgmt-expt.md)
       + [カスタムヘッダーでのセグメントエクスポート](home/c-get-started/c-exp-data-seg-exp/c-segment-export.md)
-      + [S/FTP配信を使用したセグメントのエクスポート](home/c-get-started/c-exp-data-seg-exp/exporting-data.md)
-      + [プロファイルとオーディエンスのエクスポート](home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
+      + [S/FTPを使用したセグメントのエクスポート配信](home/c-get-started/c-exp-data-seg-exp/exporting-data.md)
+      + [プロファイルとオーディエンスの書き出し](home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
       + [Analytics コアサービスへのエクスポート](home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
-      + [Adobe Targetへの書き出し](home/c-get-started/c-exp-data-seg-exp/dwb-target-export.md)
+      + [「Export to Adobe」ターゲット](home/c-get-started/c-exp-data-seg-exp/dwb-target-export.md)
       + [セグメントエクスポートウィザード](home/c-get-started/c-exp-data-seg-exp/segment-export.md)
    + [Analyticsレポート](home/c-get-started/c-template-report-types.md)
    + アトリビューションレポート {#attribution-reports}
@@ -122,11 +122,11 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [ビジュアライゼーションでのズームインまたはズームアウト](home/c-get-started/c-vis/c-zoom-vis.md)
       + [ワークスペースへの引き出し線の追加](home/c-get-started/c-vis/c-call-wkspc.md)
       + [ビジュアライゼーションの注釈の作成](home/c-get-started/c-vis/c-present-layer.md)
-      + [ブックマークの追加](home/c-get-started/c-vis/c-bookmark-about.md)
+      + [しお追加り](home/c-get-started/c-vis/c-bookmark-about.md)
       + [指標ディメンションウィザード](home/c-get-started/c-vis/dwb-create-metricdim/dwb-create-metricdim.md)
       + [指標ディメンションの編集](home/c-get-started/c-vis/dwb-create-metricdim/dwb-6-4-metric-dim-edit.md)
    + Analysis visualizations {#analysis-visualizations}
-      + [分析ビジュアライゼーションの概要](home/c-get-started/c-analysis-vis/c-analysis-vis.md)
+      + [分析視覚化の概要](home/c-get-started/c-analysis-vis/c-analysis-vis.md)
       + [2次元散布グラフ](home/c-get-started/c-analysis-vis/c-scat-plots.md)
       + [3D 散布グラフ](home/c-get-started/c-analysis-vis/c-3d-scatterplots.md)
       + 注釈 {#annotations}
@@ -157,7 +157,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + Filter editors {#filter-editors}
          + [フィルターエディターの概要](home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md)
          + [フィルター条件の操作](home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-con.md)
-         + [フィルターの保存と読み込み](home/c-get-started/c-analysis-vis/c-filter-editors/t-save-filters.md)
+         + [保存と読み込みのフィルター](home/c-get-started/c-analysis-vis/c-filter-editors/t-save-filters.md)
          + [フィルターファイルの手動編集](home/c-get-started/c-analysis-vis/c-filter-editors/c-edit-filter-files.md)
          + [ワークスペースへのフィルターの適用](home/c-get-started/c-analysis-vis/c-filter-editors/c-app-filters-wksps.md)
       + ファネルビジュアライゼーション {#funnel-visualization}
@@ -172,7 +172,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
          + [グローブ上での選択](home/c-get-started/c-analysis-vis/c-globes/c-sel-globe.md)
       + グラフ {#graphs}
          + [グラフの概要](home/c-get-started/c-analysis-vis/c-graphs/c-graphs.md)
-         + [指標の追加と変更](home/c-get-started/c-analysis-vis/c-graphs/c-add-chg-metrics.md)
+         + [追加指標の変更](home/c-get-started/c-analysis-vis/c-graphs/c-add-chg-metrics.md)
          + [ディメンションの変更](home/c-get-started/c-analysis-vis/c-graphs/c-chg-dim.md)
          + [グラフ表示の変更](home/c-get-started/c-analysis-vis/c-graphs/c-chg-graph-disp.md)
          + [シリーズの変更](home/c-get-started/c-analysis-vis/c-graphs/c-chg-series.md)
@@ -199,7 +199,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
          + [パスの開始と終了の表示](home/c-get-started/c-analysis-vis/c-path-browsers/c-disp-starts-.md)
          + [パスブラウザーのルートの変更](home/c-get-started/c-analysis-vis/c-path-browsers/c-chg-root.md)
          + [パスの選択](home/c-get-started/c-analysis-vis/c-path-browsers/t-sel-paths.md)
-         + [パス内の他の要素を表示する](home/c-get-started/c-analysis-vis/c-path-browsers/c-el-paths.md)
+         + [表示パス内のより多くの要素](home/c-get-started/c-analysis-vis/c-path-browsers/c-el-paths.md)
       + [円グラフ](home/c-get-started/c-analysis-vis/c-pie-chart.md)
       + Process map {#process-maps}
          + [プロセスマップの概要](home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md)
@@ -215,7 +215,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
          + [プロセスマップからのビジュアライゼーションの作成](home/c-get-started/c-analysis-vis/c-proc-maps/c-vis-proc-maps.md)
          + [カラーリンクの有効化](home/c-get-started/c-analysis-vis/c-proc-maps/c-act-color-lnks.md)
          + [指標の数量の表示](home/c-get-started/c-analysis-vis/c-proc-maps/c-disp-metric-quantities.md)
-         + [引き出し線の追加](home/c-get-started/c-analysis-vis/c-proc-maps/c-add-callouts.md)
+         + [引追加き出し線](home/c-get-started/c-analysis-vis/c-proc-maps/c-add-callouts.md)
       + 傾向スコアリング {#visitor-propensity}
          + [傾向スコアリングの概要](home/c-get-started/c-analysis-vis/c-visitor-propensity/c-visitor-propensity.md)
          + [傾向スコアリングの設定](home/c-get-started/c-analysis-vis/c-visitor-propensity/t-propensity-steps.md)
@@ -231,15 +231,15 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
          + [セグメントのビジュアライゼーションの再利用](home/c-get-started/c-analysis-vis/c-seg/c-reuse-seg-vis.md)
       + テーブル {#tables}
          + [表の概要](home/c-get-started/c-analysis-vis/c-tables/c-tables.md)
-         + [指標の追加と変更](home/c-get-started/c-analysis-vis/c-tables/c-add-metrics.md)
-         + [ディメンションの追加、変更、移動](home/c-get-started/c-analysis-vis/c-tables/c-add-chg-dim.md)
+         + [追加指標の変更](home/c-get-started/c-analysis-vis/c-tables/c-add-metrics.md)
+         + [追加寸法の変更、移動](home/c-get-started/c-analysis-vis/c-tables/c-add-chg-dim.md)
          + [データをウィンドウに合わせる](home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md)
          + [テーブル表示の変更](home/c-get-started/c-analysis-vis/c-tables/c-chg-tbl-disp.md)
          + [テーブル内のデータの並べ替え](home/c-get-started/c-analysis-vis/c-tables/c-sort-data.md)
          + [データのマスク](home/c-get-started/c-analysis-vis/c-tables/c-mask-data.md)
          + [シリーズの凡例を有効にする](home/c-get-started/c-analysis-vis/c-tables/c-srs-leg.md)
          + [テーブルからURIを開く](home/c-get-started/c-analysis-vis/c-tables/c-open-uri-tbls.md)
-         + [階層ビューの適用](home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md)
+         + [階層表示](home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md)
          + [Microsoft Excelにエクスポート](home/c-get-started/c-analysis-vis/c-tables/c-exp-excel.md)
          + [TSVファイルへのエクスポート](home/c-get-started/c-analysis-vis/c-tables/c-ex-tsv-file.md)
       + [ワークシート内のデータの操作](home/c-get-started/c-analysis-vis/c-data-wksts.md)
@@ -271,17 +271,17 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [オープンな管理インターフェイス](home/c-get-started/c-admin-intrf/c-op-admin-intrf.md)
       + [データセットスキーマインターフェイス](home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md)
       + [クエリーステータスの凡例](home/c-get-started/c-admin-intrf/c-query-stat-lgnd.md)
-      + クエリーキュー {#query-que}
-         + [クエリーキューの概要](home/c-get-started/c-admin-intrf/c-query-que/c-query-que.md)
+      + クエリキュー {#query-que}
+         + [クエリキューの概要](home/c-get-started/c-admin-intrf/c-query-que/c-query-que.md)
          + [クエリーキューのユーザーグループ](home/c-get-started/c-admin-intrf/c-query-que/c-query-que-user-grps.md)
          + [クエリーキューのリソースモニター](home/c-get-started/c-admin-intrf/c-query-que/c-query-que-res-mon.md)
          + [クエリー文字列のグループ化](home/c-get-started/c-admin-intrf/c-query-que/c-query-string-grouping.md)
       + [処理の凡例](home/c-get-started/c-admin-intrf/c-pro-lgd.md)
       + [詳細ステータスインターフェイス](home/c-get-started/c-admin-intrf/c-det-stat-interf.md)
       + プロファイルマネージャー {#profile-mgr}
-         + [ユーザープロファイルでのフォルダーの作成](home/c-get-started/c-admin-intrf/c-prof-mgr/t-fldrs-user-prof.md)
-         + [ユーザープロファイル内のローカルファイルの変更](home/c-get-started/c-admin-intrf/c-prof-mgr/c-mod-files-user-prof.md)
-         + [作業プロファイルへのファイルの公開](home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md)
+         + [ユーザーフォルダー内のプロファイル](home/c-get-started/c-admin-intrf/c-prof-mgr/t-fldrs-user-prof.md)
+         + [ユーザー・プロファイル内のローカル・ファイルの変更](home/c-get-started/c-admin-intrf/c-prof-mgr/c-mod-files-user-prof.md)
+         + [作業用プロファイル](home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md)
          + [作業プロファイルからのファイルの削除](home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md)
          + [ファイルを空にして非表示にする（0バイト）](home/c-get-started/c-admin-intrf/c-prof-mgr/c-empty-files.md)
          + [添付ファイルとしてのファイルのコピー&amp;ペースト](home/c-get-started/c-admin-intrf/c-prof-mgr/c-cpy-pastet.md)
@@ -292,14 +292,14 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
          + [データセットマネージャー](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dataset-mgrs.md)
          + 依存関係マップ {#dep-maps}
             + [依存関係マップ](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dep-maps.md)
-            + [縦断コンポーネントを表示](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-prof-comp.md)
+            + [表示プロファイルコンポーネント](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-prof-comp.md)
             + [データセットコンポーネント](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-dataset-comp.md)
-            + [クエリーモデルコンポーネント](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-qry-mod-comp.md)
+            + [クエリモデルのコンポーネント](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-qry-mod-comp.md)
             + [ワークスペースとビジュアライゼーション](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-wksps-vis.md)
-            + [ノードの詳細の表示](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-view-node-dtls.md)
+            + [表示ノードの詳細](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-view-node-dtls.md)
             + [ハイライト表示されたノードの表示](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-hltd-nodes.md)
             + [マップ内での検索](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-srch-map.md)
-            + [縦断コンポーネントの編集](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-edit-prof-comp.md)
+            + [編集プロファイルコンポーネント](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-edit-prof-comp.md)
             + [ファイルブロック](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-wkg-file-blocks.md)
             + [パフォーマンスデータの表示](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md)
             + [フィールドビューアを開く](home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-opn-field-vwrs.md)
@@ -319,13 +319,13 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
          + [メニューのカスタマイズ](home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-ctm-menus.md)
          + [ワークスペースメニューとメニュー項目の作成](home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-wksp-menus-itms.md)
          + [order.txtファイルを使用したメニューのカスタマイズ](home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/t-cstm-menus-ordr-files.md)
-      + プロファイルマネージャーとサーバーファイルマネージャーのカスタマイズ {#cstm-prof-files-mgrs}
-         + [プロファイルマネージャーとサーバーファイルマネージャーのカスタマイズ](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-cstm-prof-files-mgrs.md)
-         + [プロファイルマネージャーの作成](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-prof-mgrs.md)
+      + サーバーマネージャーとプロファイルファイルマネージャーのカスタマイズ {#cstm-prof-files-mgrs}
+         + [サーバーマネージャーとプロファイルファイルマネージャーのカスタマイズ](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-cstm-prof-files-mgrs.md)
+         + [プロファイル管理](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-prof-mgrs.md)
          + [サーバーファイルマネージャーの作成](home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-svr-files-mgrs.md)
       + ワークトップタブのカスタマイズ {#cstm-wktp-tabs}
          + [ワークトップタブのカスタマイズ](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md)
-         + [ワークトップへのタブの追加](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-add-tabs.md)
+         + [ワ追加ークトップのタブ](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-add-tabs.md)
          + [タブ順序の変更](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-chg-ordr-tabs.md)
          + [サブフォルダーをサブタブとして表示](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-sbfldrs-sbtabs.md)
          + [タブの表示/非表示の切り替え](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-hide-rmv-tabs.md)
@@ -342,7 +342,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [ページオーバーレイの設定](home/c-get-started/c-intf-anlys-ftrs/c-config-pg-ovlys.md)
       + [パスブラウザーの設定](home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md)
       + [プロセスマップの設定](home/c-get-started/c-intf-anlys-ftrs/t-config-proc-maps.md)
-      + [データセットスキーマインターフェイスの設定](home/c-get-started/c-intf-anlys-ftrs/t-dataset-schema-intf.md)
+      + [データセットスキーマインターフェイス](home/c-get-started/c-intf-anlys-ftrs/t-dataset-schema-intf.md)
       + [時間ディメンションのローカライズ](home/c-get-started/c-intf-anlys-ftrs/dwb-format-time-dimensions.md)
    + [設定パラメーター](home/c-get-started/c-insght-config-param.md)
    + Query language syntax {#qry-lang-syntx}
@@ -352,12 +352,13 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [指標式の構文](home/c-get-started/c-qry-lang-syntx/c-syntx-mtrc-exp.md)
       + [ディメンション式の構文](home/c-get-started/c-qry-lang-syntx/c-syntx-dim-exp.md)
       + [フィルター式の構文](home/c-get-started/c-qry-lang-syntx/c-syntx-fltr-exp.md)
-      + [数式の構文](home/c-get-started/c-qry-lang-syntx/c-math-expressions.md)
+      + [数学式](home/c-get-started/c-qry-lang-syntx/c-math-expressions.md)
       + [統計コールアウト](home/c-get-started/c-qry-lang-syntx/c-statistical-callouts.md)
-      + [正規表現](home/c-get-started/c-qry-lang-syntx/c-search-regex.md)
+      + [正規式](home/c-get-started/c-qry-lang-syntx/c-search-regex.md)
 + Dataset configuration {#dataset}
    + [データセットの構築について](home/c-dataset-const-proc/c-dataset-constr.md)
    + [データセット設定について](home/c-dataset-const-proc/c-dataset-config.md)
+   + [GDPRに対するData Workbenchのサポート](home/c-dataset-const-proc/dwb-gdpr.md)
    + ログ処理設定ファイル {#log-proc-config-file}
       + [ログ処理設定ファイルについて](home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)
       + [ログ処理設定ファイルの編集](home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md)
@@ -512,7 +513,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [Report Serverのインストール](home/c-rpt-oview/c-inst-rpt/c-inst-rpt.md)
       + [始める前に](home/c-rpt-oview/c-inst-rpt/c-before-begin.md)
       + [インストールの概要](home/c-rpt-oview/c-inst-rpt/t-install-oview.md)
-      + [レポートプログラムファイルのインストール](home/c-rpt-oview/c-inst-rpt/t-install-rpt-prg-files.md)
+      + [レポート・プログラム・ファイルのインストール](home/c-rpt-oview/c-inst-rpt/t-install-rpt-prg-files.md)
       + デジタル証明書 {#digital-certs}
          + [デジタル証明書のダウンロードとインストール](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-install-dig-cert.md)
          + [デジタル証明書について](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-underst-dig-cert.md)
@@ -546,7 +547,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
          + [仮想ディレクトリ(IIS 5.0)へのレポートポータルのマッピング](home/c-rpt-oview/c-install-rpt-port/c-virtual-dir/c-map-rpt-port-vdir-5.md)
       + [セッション設定ファイルの編集](home/c-rpt-oview/c-install-rpt-port/t-edit-sess-config-file.md)
       + [Email.aspファイルの編集](home/c-rpt-oview/c-install-rpt-port/t-email-file.md)
-      + [Profiles.xmlファイルの編集](home/c-rpt-oview/c-install-rpt-port/t-edit-prof-file.md)
+      + [プロファイル.xmlファイルの編集](home/c-rpt-oview/c-install-rpt-port/t-edit-prof-file.md)
       + [レポートポータルのユーザインターフェイスのカスタマイズ](home/c-rpt-oview/c-install-rpt-port/c-rpt-port-user-inter.md)
       + [データベースの権限の設定](home/c-rpt-oview/c-install-rpt-port/t-set-data-perm.md)
       + [レポートポータルのテスト](home/c-rpt-oview/c-install-rpt-port/t-test-rpt-port.md)
@@ -571,7 +572,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [ベースライン測定の取得の概要](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-bsln-msmts.md)
       + ページリクエストデータの取得 {#acquire-page-request}
          + [ページリクエストデータの取得の概要](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-pg-req-data/c-acq-pg-req-data.md)
-         + [クエリ文字列について](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-pg-req-data/c-undst-qry-strg.md)
+         + [クエリ文字列](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-pg-req-data/c-undst-qry-strg.md)
          + [コンテンツタイプでのフィルタリング](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-pg-req-data/c-fltr-cnt-type.md)
          + [制御実験の実行](home/c-undst-pg-tag/c-acq-bsln-msmts/c-acq-pg-req-data/c-perf-ctrl-exp.md)
       + [埋め込みオブジェクトリクエスト（ページタグ）の取得](home/c-undst-pg-tag/c-acq-bsln-msmts/c-embed-obj-req.md)
@@ -588,31 +589,31 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
          + [フォームフィールド入力の取得](home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-frm-fld-inpt/c-acq-frm-fld-inpt.md)
          + [一般情報](home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-frm-fld-inpt/c-gen-info.md)
          + [ASP固有の情報](home/c-undst-pg-tag/c-acq-ext-msmt/c-acq-frm-fld-inpt/c-asp.md)
-   + [Flashリッチメディアコンテンツ内の訪問者アクティビティの追跡](home/c-undst-pg-tag/t-trk-vstr-act.md)
+   + [Flashリッチメディアコンテンツ内の訪問者アクティビティのトラッキング](home/c-undst-pg-tag/t-trk-vstr-act.md)
    + [サードパーティのページタグに関するP3Pの考慮事項](home/c-undst-pg-tag/c-cons-thrd-pty-pg-tag.md)
    + [ページタグ変数マッピングのワークシート](home/c-undst-pg-tag/c-pg-tag-wkst.md)
 + Metrics, dimensions, and filters {#metrics}
-   + [Data Workbenchの指標、ディメンションおよびフィルターについて](home/c-about/c-about.md)
-   + [指標、ディメンションおよびフィルターの展開](home/c-about/c-expand-capabilities.md)
+   + [Data Workbenchの指標、ディメンションおよびフィルター](home/c-about/c-about.md)
+   + [指標、ディメンションおよびフィルター](home/c-about/c-expand-capabilities.md)
    + [ディメンションタイプ](home/c-about/c-dimension-types.md)
    + [指標ディメンションウィザード](home/c-about/metric-dim.md)
    + 組み込み指標、ディメンション、フィルター {#built-in-metrics}
-      + [組み込み指標、ディメンション、フィルターについて](home/c-about/c-builtin-metrics-dims/c-builtin-metrics-dims.md)
+      + [組み込み指標、ディメンション、フィルター](home/c-about/c-builtin-metrics-dims/c-builtin-metrics-dims.md)
       + [ビルトイン指標](home/c-about/c-builtin-metrics-dims/c-builtin-metrics.md)
       + [組み込みディメンション](home/c-about/c-builtin-metrics-dims/c-builtin-dims.md)
-      + [ビルトインプロファイルフィルター](home/c-about/c-builtin-metrics-dims/c-builtin-filters.md)
-   + 基準縦断 {#baseline-profiles}
+      + [組み込みプロファイルフィルター](home/c-about/c-builtin-metrics-dims/c-builtin-filters.md)
+   + ベースラインプロファイル {#baseline-profiles}
       + [ベースラインプロファイルの概要](home/c-about/c-about-baseline-profiles/c-about-baseline-profiles.md)
       + [トラフィックプロファイル指標](home/c-about/c-about-baseline-profiles/c-traffic-profile.md)
       + [トラフィックプロファイルディメンション](home/c-about/c-about-baseline-profiles/c-traffic-profile-dims.md)
-      + [バリュープロファイル指標](home/c-about/c-about-baseline-profiles/c-value-profile-metrics.md)
-      + [値プロファイルディメンション](home/c-about/c-about-baseline-profiles/c-value-profile-dims.md)
+      + [値プロファイル指標](home/c-about/c-about-baseline-profiles/c-value-profile-metrics.md)
+      + [値のプロファイル次元](home/c-about/c-about-baseline-profiles/c-value-profile-dims.md)
       + [マーケティングプロファイルディメンション](home/c-about/c-about-baseline-profiles/c-marketing-profile.md)
 +  Geography{#geography}
    + [Data Workbenchの地域について](home/c-geo-oview/c-geo-oview.md)
    + Data Workbench地域のインストール {#install-geography}
       + [Data Workbench地域のインストール](home/c-geo-oview/c-inst-geo/c-inst-geo.md)
-      + [地域プロファイルのインストール](home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md)
+      + [「Geography」プロファイル](home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md)
       + [地域参照ファイルのインストール](home/c-geo-oview/c-inst-geo/t-inst-lkp-files.md)
       + [Terrain Images.cfg ファイルのインストール](home/c-geo-oview/c-inst-geo/t-inst-trn-imgs-file.md)
    + 画像レイヤー {#imagery-layers}
@@ -640,7 +641,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [Data Servicesについて](home/c-geo-oview/c-wk-data-svcs/c-abt-data-svcs.md)
       + Data Serviceのインストール {#install-data-service}
          + [Data WorkbenchサーバーへのData Serviceのインストール](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-install-data-svc.md)
-         + [Data Service Profileのインストール](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-inst-data-svc-prof.md)
+         + [Data Serviceインストールプロファイル](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-inst-data-svc-prof.md)
          + [Data Service Lookupファイルのインストール](home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/t-inst-data-svc-lkp-files.md)
       + [データサービスファイルの更新](home/c-geo-oview/c-wk-data-svcs/c-updt-data-svc-files.md)
    + Data Workbench地域のアップグレードとアンインストール {#upgrade-uninstall-geo}
@@ -648,7 +649,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [Data Workbench地域のアンインストール](home/c-geo-oview/c-upgrd-uninst-geo/t-uninst-geo.md)
 + Controlled experiments {#experiments}
    + [Data Workbenchで制御される実験について](home/c-undst-ctrld-exp/c-undst-ctrld-exp.md)
-   + [サイトでの訪問者の識別方法](home/c-undst-ctrld-exp/c-id-vstrs.md)
+   + [サイトはどのようにして訪問者を識別するか](home/c-undst-ctrld-exp/c-id-vstrs.md)
    + [制御実験の仕組みは？](home/c-undst-ctrld-exp/c-ctrld-exp-wk.md)
    + [私は何をテストすればよいですか？](home/c-undst-ctrld-exp/c-wht-test-.md)
    + [要件](home/c-undst-ctrld-exp/c-reqs-.md)
@@ -660,7 +661,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
    + 対照実験の作成 {#create-controlled-experiment}
       + [対照実験の作成](home/c-undst-ctrld-exp/t-crt-ctrld-exp/t-crt-ctrld-exp.md)
       + [目標の定義](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-dfn-obj.md)
-      + [仮説の立て方](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-frm-hyp.md)
+      + [仮説](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-frm-hyp.md)
       + [必要な訪問者数の決定](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-nmbr-vstrs-nd.md)
       + [テストコンテンツの作成](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-crt-test-cnt.md)
       + [テストの設定と導入](home/c-undst-ctrld-exp/t-crt-ctrld-exp/c-cnfg-dply-exp.md)
@@ -679,7 +680,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [Insight Serverライセンスユニットについて](home/c-inst-svr/c-install-ins-svr/c-abt-inst-svr-lic-units.md)
       + Insight Server DPU {#insight-server-dpu}
          + [InsightサーバーDPUのインストール手順](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-install-proc-inst-svr-dpu.md)
-         + [Insightサーバープログラムファイルのインストール](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-install-prgm-files.md)
+         + [Insightサーバーのプログラムファイル](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/t-install-prgm-files.md)
          + デジタル証明書 {#dig-certs}
             + [デジタル証明書のダウンロードとインストール](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/c-dnld-dgtl-cert.md)
             + [文字列の暗号化](home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/string-encryption.md)
@@ -705,7 +706,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
             + [Master Insightサーバーのインストール](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/t-ins-mstr-ins-svr.md)
             + [クラスタリング用のMaster Insightサーバーの設定](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-mstr-ins-svr-clstr.md)
             + [処理インサイトサーバーのインストールと設定](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/t-inst-proc-ins-svrs.md)
-            + [クラスターで実行するプロファイルの設定](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-prof-run-clstr.md)
+            + [クラスター上でプロファイルを実行するように設定する](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-inst-ins-svr-clstr/c-inst-proc-clstr/c-config-prof-run-clstr.md)
          + 既存のクラスターへのInsightサーバーの追加 {#add-server-cluster}
             + [既存のクラスターへのInsightサーバーの追加](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-ins-svrs-ex-clstr.md)
             + [既存のクラスターへのInsightサーバーDPUの追加](home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-add-ins-svrs-ex-clstr/c-add-dpu-ex-clstr.md)
@@ -715,18 +716,18 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [デジタル証明書の再検証](home/c-inst-svr/c-admin-inst-svr/c-reval-dgtl-cert.md)
       + [サービスが実行中であることの確認](home/c-inst-svr/c-admin-inst-svr/c-cfrm-svc-rng.md)
       + Access Control {#access-control}
-         + [アクセス制御の設定](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-config-acs-ctrl.md)
-         + [アクセス制御グループについて](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-undst-acc-ctrl-grps.md)
+         + [設定アクセス制御](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-config-acs-ctrl.md)
+         + [アクセス制御グループ](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-undst-acc-ctrl-grps.md)
          + [アクセスレベルについて](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-undst-acc-lvls.md)
          + [グループメンバーアクセスのユーザー管理](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/dwb-self-admin-member-access.md)
       + ディスク領域の監視 {#monitor-disk-space}
          + [ディスク領域の監視](home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/c-mntr-disk-spc.md)
          + [データセットデータ領域の監視](home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/t-mntr-dtst-data-spc.md)
-         + [イベントデータ領域の監視](home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/t-mntr-evt-data-spc.md)
+         + [監視イベントデータ領域](home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/t-mntr-evt-data-spc.md)
          + [イベントデータのバックアップ](home/c-inst-svr/c-admin-inst-svr/c-mntr-disk-spc/c-bk-up-evt-data.md)
       + [メモリ使用量の監視](home/c-inst-svr/c-admin-inst-svr/t-mntr-mry-usg.md)
       + [管理アラートの設定](home/c-inst-svr/c-admin-inst-svr/t-config-adm-alrts.md)
-      + [管理イベントの監視](home/c-inst-svr/c-admin-inst-svr/t-mntr-adm-evts.md)
+      + [管理イベント](home/c-inst-svr/c-admin-inst-svr/t-mntr-adm-evts.md)
       + [監査ログの監視](home/c-inst-svr/c-admin-inst-svr/t-mntr-adt-lgs.md)
       + [通信の設定](home/c-inst-svr/c-admin-inst-svr/t-config-com.md)
       + [DPU.cfgの設定](home/c-inst-svr/c-admin-inst-svr/t-config-dpu.md)
@@ -745,7 +746,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + 設定 {#configure}
          + [リピータ機能の設定](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-cnfg-rptr-fntly.md)
          + [Repeater用のInsightサーバーFSUの設定](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-fsu-rptr.md)
-         + [ターゲットコンピューターのアクセス制御の設定](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
+         + [アクセス制御マシンのターゲットの設定](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
          + [Insightとリピーター間の接続の作成](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-crt-conn-ins-rptr.md)
          + [次の手順](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-nxt-stps-reptr.md)
       + [リピータの管理](home/c-inst-svr/c-rptr-fntly/c-admin-rptr.md)
@@ -779,7 +780,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
 + Sensor {#sensor}
    + [データ収集プロセスの仕組み](home/c-snsr-ovrvw/c-data-col-proc.md)
    + [基本コンポーネントとは](home/c-snsr-ovrvw/c-basic-comp.md)
-   + [Sensorは訪問者やセッションをどのように識別しますか。](home/c-snsr-ovrvw/c-id-vstrs-sess.md)
+   + [センサーはセッションや訪問者を識別する方法](home/c-snsr-ovrvw/c-id-vstrs-sess.md)
    + インストール {#install}
       + [センサーの取り付け](home/c-snsr-ovrvw/c-inst-snsr/c-inst-snsr.md)
       + [Windows Server 2000以降でのMicrosoft IIS](home/c-snsr-ovrvw/c-inst-snsr/c-install-iis.md)
@@ -803,8 +804,8 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [Javaライブラリパスの変更](home/c-snsr-ovrvw/admin-sensor/modify-java-lib-path.md)
       + [データコレクタの実行の確認](home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md)
       + [データ送信機の実行の確認](home/c-snsr-ovrvw/admin-sensor/c-data-trmtr-rng.md)
-      + [管理イベントの監視](home/c-snsr-ovrvw/admin-sensor/c-mntr-admin-evts.md)
-      + [Target Data Workbenchサーバーの変更](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
+      + [管理イベント](home/c-snsr-ovrvw/admin-sensor/c-mntr-admin-evts.md)
+      + [Data Workbenchターゲットの変更](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
       + オフラインセンサー {#offline}
          + [オフラインセンサーの処理](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-ofln-snsrs.md)
          + [「基準日」時間について](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-as-of-tm.md)
@@ -824,8 +825,8 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [Txlogd.confファイルの例](home/c-snsr-ovrvw/sensor-sample-configs/txlogd-conf-samples.md)
    + [センサートランスミッターのコマンドラインオプション](home/c-snsr-ovrvw/sensor-transmitter-options.md)
    + [Sensor UNIXファイルの権限](home/c-snsr-ovrvw/sensor-unix-permissions.md)
-+ 監視プロファイルのインストール {#monitor}
-   + [監視プロファイルのインストール](home/monitoring-installation/monitoring-installation.md)
++ 監視プロファイル {#monitor}
+   + [監視プロファイル](home/monitoring-installation/monitoring-installation.md)
    + ワークスペース {#workspace}
       + [Data Workbenchサーバーを監視するためのワークスペース](home/monitoring-installation/monitoring-profiles/monitoring-profiles.md)
       + [Data Workbenchの履歴ワークスペース](home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md)
@@ -834,15 +835,15 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
    + Data Workbenchのプロファイルディメンションと指標 {#monitoring-appendix}
       + [Data Workbenchのプロファイルディメンションと指標](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
       + [Data Workbench履歴プロファイルのディメンション](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
-      + [Data Workbenchのプロファイルステータスプロファイルのディメンション](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
-      + [Data Workbenchサーバーのステータスプロファイルのディメンション](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
-      + [Data Workbenchの履歴監視プロファイルの指標](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
-+ ダッシュボード{#dashboard}
+      + [Data Workbenchのディメンションステータスプロファイルプロファイル](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
+      + [Data Workbenchサーバーのステータスプロファイル](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
+      + [Data Workbenchの履歴監視プロファイル](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
++ ダッシュボード {#dashboard}
    + [ビジネス機会](home/c-adobe-data-workbench-dashboard/c-business-opportunities.md)
    + [機能](home/c-adobe-data-workbench-dashboard/c-features.md)
    + [用語集](home/c-adobe-data-workbench-dashboard/c-glossary.md)
    + [はじめに](home/c-adobe-data-workbench-dashboard/t-getting-started/t-getting-started.md)
-   + [ダッシュボードのユーザインターフェイス](home/c-adobe-data-workbench-dashboard/t-getting-started/c-dashboard-user-interface.md)
+   + [ダッシュボードユーザーインターフェイス](home/c-adobe-data-workbench-dashboard/t-getting-started/c-dashboard-user-interface.md)
    + ビジュアライゼーション {#visualizations}
       + [ビジュアライゼーション](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualizations.md)
       + ビジュアライゼーションタイプ {#visualization-types}
@@ -869,29 +870,29 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
    + ダッシュボード {#dashboards}
       + [ダッシュボード](home/c-adobe-data-workbench-dashboard/c-dashboards/c-dashboards.md)
       + ダッシュボードの表示 {#viewing-dashboards}
-         + [ダッシュボードを開いて表示する](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-opening-and-viewing-dashboards.md)
+         + [開く/表示ダッシュボード](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-opening-and-viewing-dashboards.md)
          + [クイックアクセスメニュー](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-quick-access-menu.md)
-         + ダッシュボードブラウザ] {#dashboard-browser}
+         + ダッシュボードブラウザー] {#dashboard-browser}
             + [ダッシュボードブラウザ](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-dashboard-browser.md)
-            + [ダッシュボードブラウザの表示](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-dashboard-browser-views.md)
-            + [ダッシュボードブラウザ内での検索](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-searching-within-the-dashboard-browser.md)
+            + [ダッシュボードブラウザー表示](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-dashboard-browser-views.md)
+            + [検索，ダッシュボードブラウザ内](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-browser/c-searching-within-the-dashboard-browser.md)
          + [ダッシュボードハイパーリンク](home/c-adobe-data-workbench-dashboard/c-dashboards/c-opening-and-viewing-dashboards/c-dashboard-hyperling.md)
-      + [クエリー先パラメーター](home/c-adobe-data-workbench-dashboard/c-dashboards/c-query-to-parameter.md)
+      + [クエリ対パラメータ](home/c-adobe-data-workbench-dashboard/c-dashboards/c-query-to-parameter.md)
       + [ダッシュボードの作成](home/c-adobe-data-workbench-dashboard/c-dashboards/c-creating-a-dashboard.md)
-      + [ダッシュボードの保存](home/c-adobe-data-workbench-dashboard/c-dashboards/t-saving-a-dashboard.md)
-      + [ダッシュボードの編集と更新](home/c-adobe-data-workbench-dashboard/c-dashboards/t-editing-updating-a-dashboard.md)
-      + [ダッシュボードのコピーの作成](home/c-adobe-data-workbench-dashboard/c-dashboards/t-making-a-copy-of-a-dashboard.md)
-      + [その他のダッシュボード機能](home/c-adobe-data-workbench-dashboard/c-dashboards/c-other-dashboard-functions.md)
-      + [ダッシュボードの共有とアクセス制御](home/c-adobe-data-workbench-dashboard/c-dashboards/c-dashboard-sharing-and-access-controls.md)
+      + [保存，ダッシュボード](home/c-adobe-data-workbench-dashboard/c-dashboards/t-saving-a-dashboard.md)
+      + [ダッシュボードの編集](home/c-adobe-data-workbench-dashboard/c-dashboards/t-editing-updating-a-dashboard.md)
+      + [A.ダッシュボード](home/c-adobe-data-workbench-dashboard/c-dashboards/t-making-a-copy-of-a-dashboard.md)
+      + [その他のダッシュボード関数](home/c-adobe-data-workbench-dashboard/c-dashboards/c-other-dashboard-functions.md)
+      + [ダッシュボード共有とアクセス制御](home/c-adobe-data-workbench-dashboard/c-dashboards/c-dashboard-sharing-and-access-controls.md)
    + 選択 {#select}
-      + [ダッシュボード内での選択](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-making-selections-within-the-dashboard.md)
+      + [選択範囲内でのダッシュボード](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-making-selections-within-the-dashboard.md)
       + [選択のロック](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-locked-selections.md)
       + [選択の適用](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/t-applying-selections.md)
       + [選択の削除](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-removing-selections.md)
       + [選択内容の決定](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-determining-whats-selected.md)
-      + [プロファイル間の選択](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-cross-profile-selections.md)
+      + [クロスプロファイル](home/c-adobe-data-workbench-dashboard/c-making-selections-within-the-dashboard/c-cross-profile-selections.md)
    + [データの書き出し](home/c-adobe-data-workbench-dashboard/c-exporting-data.md)
-   + [ダッシュボードアクセスコントロール](home/c-adobe-data-workbench-dashboard/c-dashboard-access-controls.md)
+   + [ダッシュボードアクセス制御](home/c-adobe-data-workbench-dashboard/c-dashboard-access-controls.md)
    + [ユーザーアカウント管理](home/c-adobe-data-workbench-dashboard/c-user-account-functions.md)
    + [ヘルプメニュー](home/c-adobe-data-workbench-dashboard/c-help-menu.md)
 + ダッシュボード管理者 {#admin}
@@ -903,30 +904,30 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [IISを有効にする](home/c-preparing-for-dashboard-installation/c-installation-prerequisites/t-enabling-iis.md)
       + [必要なコンポーネントのインストール](home/c-preparing-for-dashboard-installation/c-installation-prerequisites/t-installing-required-components.md)
    + サーバ通信 {#servers-communication}
-      + [ダッシュボードからData Workbenchサーバーへの通信](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
+      + [ダッシュボードとData Workbenchサーバー間の通信](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [クエリAPIの有効化を確認しています](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
-      + [アクセス制御の設定](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
+      + [設定アクセス制御](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
    + ダッシュボードの導入 {#dashboard-deployment}
       + [ダッシュボードの導入](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/c-dashboard-deployment.md)
-      + [ダッシュボードのデプロイ](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)
+      + [ダッシュボード](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)
       + [SQL Serverの設定](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-configuring-the-sql-server.md)
       + [ダッシュボードの初期化](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-initializing-the-dashboard.md)
-      + [ダッシュボードのライセンスキーの追加](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-add-dashboard-license-key.md)
+      + [追加ダッシュボードライセンスキー](home/c-preparing-for-dashboard-installation/c-dashboard-deployment/t-add-dashboard-license-key.md)
    + [管理コンソールからの管理](home/c-preparing-for-dashboard-installation/c-managing-from-the-administration-console.md)
    + プロファイル接続 {#profile-connections}
       + [プロファイル接続の管理](home/c-preparing-for-dashboard-installation/c-managing-profile-connections/c-managing-profile-connections.md)
       + [プロファイル接続の追加](home/c-preparing-for-dashboard-installation/c-managing-profile-connections/t-adding-a-profile-connection.md)
       + [プロファイル接続の編集](home/c-preparing-for-dashboard-installation/c-managing-profile-connections/t-editing-a-profile.md)
-      + [プロファイル接続の削除](home/c-preparing-for-dashboard-installation/c-managing-profile-connections/t-removing-a-profile-connection.md)
+      + [接続のプロファイル](home/c-preparing-for-dashboard-installation/c-managing-profile-connections/t-removing-a-profile-connection.md)
    + スキーマ {#schema}
-      + [スキーマの管理](home/c-preparing-for-dashboard-installation/c-managing-the-schema/c-managing-the-schema.md)
-      + [プロファイルのスキーマ定義の初期化と更新](home/c-preparing-for-dashboard-installation/c-managing-the-schema/t-initializing-and-updating-a-profiles-schema-definition.md)
+      + [スキーマ](home/c-preparing-for-dashboard-installation/c-managing-the-schema/c-managing-the-schema.md)
+      + [プロファイル定義の初期化と更新](home/c-preparing-for-dashboard-installation/c-managing-the-schema/t-initializing-and-updating-a-profiles-schema-definition.md)
    + フォルダー {#folders}
       + [フォルダの管理](home/c-preparing-for-dashboard-installation/c-managing-folders/c-managing-folders.md)
       + [フォルダの追加](home/c-preparing-for-dashboard-installation/c-managing-folders/t-adding-folders.md)
       + [フォルダ名の変更](home/c-preparing-for-dashboard-installation/c-managing-folders/t-renaming-folders.md)
       + [フォルダの削除](home/c-preparing-for-dashboard-installation/c-managing-folders/t-deleting-folders.md)
-      + [ダッシュボードとフォルダの移動](home/c-preparing-for-dashboard-installation/c-managing-folders/t-moving-dashboards-and-folders.md)
+      + [フォルダとダッシュボードの移動](home/c-preparing-for-dashboard-installation/c-managing-folders/t-moving-dashboards-and-folders.md)
    + ユーザーアカウント {#user-accounts}
       + [ユーザーアカウントの管理](home/c-preparing-for-dashboard-installation/t-managing-user-accounts/t-managing-user-accounts.md)
       + [ユーザーアカウントの追加](home/c-preparing-for-dashboard-installation/t-managing-user-accounts/t-adding-a-user-account.md)
@@ -945,7 +946,7 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
    + [Data Workbenchのインストールとプロビジョニング](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-provision.md)
    + [DWB管理サービスの基本的なオンボーディング手順](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md)
    + [Data Workbenchのアーキテクチャ](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-architecture.md)
-   + [スキーマデザイン可算構造](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-arch-countable.md)
+   + [スキーマデザインの可算構造](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-arch-countable.md)
    + [Data Workbenchの管理](home/dwb-implement-overview/dwb-implement-admin.md)
    + 設定と実装 {#implement-configure}
       + [Data Workbenchの設定と実装](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-configure.md)
@@ -961,9 +962,9 @@ source-git-commit: f1e341ef1c2390b1f81bb9a402c4a0c54dd6001c
       + [データ処理 — 主キーの作成](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-primary-key.md)
    + 機能の実装 {#feature-implemenatation}
       + [Data Workbenchの機能の実装](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-deliver.md)
-      + [新しいスキーマの設定の変更](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
+      + [新しい構成の変更スキーマ](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [派生ディメンションの設定](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [ クエリー API](https://www.adobe.io/)
 + [Data WorkbenchとAnalyticsデータフィード](https://marketing.adobe.com/resources/help/en_US/insight/insight_sc_implementation.pdf)
-+ [Data WorkbenchとAdobe Targetの統合](home/dwb-adobe-target.md)
++ [Data WorkbenchとAdobeターゲット](home/dwb-adobe-target.md)
 + [Data Workbench 用語集](dwb-glossary.md)
