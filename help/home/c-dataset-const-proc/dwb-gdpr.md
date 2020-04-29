@@ -4,7 +4,7 @@ solution: Analytics
 title: GDPRに対するData Workbenchのサポート
 topic: Data workbench
 translation-type: tm+mt
-source-git-commit: 89a17210bb6f941309b283e54aa8485c5e823595
+source-git-commit: 4002d01c4c9aaa7d8833415aba3fa5105cb7ac1f
 
 ---
 
@@ -21,7 +21,7 @@ GDPR規制は、GDPRの実施を担当する様々な関係者の役割と義務
 * アドビは、お客様との契約に **基づいて** 、GDPR要件を実装するためのソフトウェアとサービスを提供するデータプロセッサーの役割を果たします。
 * Data WorkbenchをGDPRサービスと統合し、GDPRの基準に従うと、サイト(データの対象 ****)への訪問者は、データ・プロセッサであるアドビが「忘れ去られる権利」を行使できます。 忘れられる権利を達成するために、データコントローラーは、問題のある訪問者IDをUIまたはAPIからアドビにアップロードできます。 送信アクセ [スおよび削除リクエストを含む詳細については、](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html) Adobe Analytics GDPRワークフローのドキュ [メントを参照してください](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html) 。
 
->[!N注意]
+>[!NOTE]
 >
 >他のデータソースの場合、組織は、CRM、POS、IVR、その他の生のデータソースなど、問題のある訪問者IDを他のログソースからクリーンアップする必要があります。 カスタムスコープのサービスパッケージは、各データソースまたは他のカスタムオプションに対し _て完全な置き換えファイルのセットを提供することで_ 、組織のサポートを提供するために利用できます。
 
