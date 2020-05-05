@@ -4,7 +4,7 @@ product: analytics
 audience: end-user
 user-guide-title: Data Workbench ヘルプ
 translation-type: tm+mt
-source-git-commit: 6098c4fcb14d7fd2444832aaaf0f5b7cc1811dac
+source-git-commit: b3fb1e355cc42f96b2daaee9e58c22fa20a5a005
 
 ---
 
@@ -966,6 +966,6 @@ source-git-commit: 6098c4fcb14d7fd2444832aaaf0f5b7cc1811dac
       + [新規スキーマの設定の変更](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [派生ディメンションの設定](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [ クエリー API](https://www.adobe.io/)
-+ [Data WorkbenchとAnalyticsデータフィード](home/assets/insight_sc_implementation.pdf)
++ [Data WorkbenchとAnalyticsデータフィード](home/assets/dwb-analytics-implementation.pdf)
 + [Data WorkbenchとAdobeターゲットの統合](home/dwb-adobe-target.md)
 + [Data Workbench 用語集](dwb-glossary.md)
