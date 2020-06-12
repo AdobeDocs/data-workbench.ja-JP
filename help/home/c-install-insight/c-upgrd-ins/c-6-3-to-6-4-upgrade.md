@@ -3,7 +3,10 @@ description: Data Workbench v6.4 にアップグレードするには、この�
 title: 6.3 から 6.4 へのアップグレード
 uuid: 2461c1ab-cf99-4fb5-b431-d7062df7a53d
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 74%
 
 ---
 
@@ -25,12 +28,12 @@ Data Workbench 6.4 にアップグレードする際は、以下の要件およ�
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   これにより、やり取りを行うこれらの実行ファイルに「ホワイトリスト」権限を許可します。
+   これにより、これらのインターフェイスする実行可能ファイルに対して許可リスト権限が有効になります。
 
 * **サーバー上の&#x200B;*Trust_ca_cert.pem*証明書を更新します**。
 * **アトリビューションプロファイルの再編成**。
 
-   * *Attribution* フォルダーの名前が ***Attribution - Premiumに変更されました*** ( *Profiles*\*Attribution - Premium*のデフォルトのインストールで見つかりました)。
+   * *Attribution* フォルダーの名前が ***Attribution - Premiumに変更されました*** ( *プロファイル*\*Attribution - Premium*にあるデフォルトのインストールにあります)。
 
    * *Premium* プロファイルは削除され、ワークスペースは新しい ***Attribution - Premium*** フォルダーに移動されました。
 
@@ -109,7 +112,7 @@ Data Workbench 6.4 にアップグレードする際は、以下の要件およ�
 
       >[!NOTE]
       >
-      >Windows Server 2012でReport Serverを実行している場合は、Windows Server 2012 R2をインストールする必要があります。
+      >Windows Server 2012でReport Serverを実行する場合は、Windows Server 2012 R2をインストールする必要があります。
 
    1. これらのフォルダーの所有者として「SYSTEM」を割り当てます。
 
@@ -122,7 +125,7 @@ Data Workbench 6.4 にアップグレードする際は、以下の要件およ�
      2 = string: MS Mincho
    ```
 
-* **お使いのMicrosoft Excelのバージョンを更新します**（必要な場合）。
+* **Microsoft Excelのバージョンを更新します**（必要な場合）。
 
    Data Workbench 6.4 のリリースに伴って、Excel 2007 のサポートが終了しました。また、Data Workbench は 64 ビットアーキテクチャの Microsoft Windows 上でのみ動作するので、64 ビット版の Microsoft Excel もインストールすることをお勧めします。
 
