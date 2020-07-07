@@ -1,16 +1,19 @@
 ---
 description: 重要なワークスペースをブックマークして、ワークフローで使用されているビジュアライゼーションやレポート間をすばやく移動できます。
 solution: Analytics
-title: ブックマークの追加
+title: しおり追加
 topic: Data workbench
 uuid: 8b7fd6ac-9bab-4e7a-8f52-8568413052e8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 2c1b2adfe8bf479c2a8cbd150ed006be2336022c
+workflow-type: tm+mt
+source-wordcount: '208'
+ht-degree: 69%
 
 ---
 
 
-# ブックマークの追加{#add-a-bookmarks}
+# しおり追加{#add-a-bookmarks}
 
 重要なワークスペースをブックマークして、ワークフローで使用されているビジュアライゼーションやレポート間をすばやく移動できます。
 
@@ -30,7 +33,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **ブックマークを削除するには：**
 
-* ブックマークパネルで右クリックし、「削除」を選択し **[!UICONTROL ます<bookmark title>]**選択したブックマークを削除する場合は、を選択します。また、すべてのブッ&#x200B;**[!UICONTROL Clear All Bookmarks]**クマークを削除する場合は、を選択します。
+* ブックマークパネルで右クリックし、「 **[!UICONTROL 削除」を選択します<bookmark title>]**選択したブックマークを削除する場合は、「ブックマークの削除」を選択します。すべて&#x200B;**[!UICONTROL Clear All Bookmarks]**のブックマークを削除する場合は、を選択します。
 
 * You can also right-click on the workspace in the thumbnail view within the worktop and select **[!UICONTROL Clear Bookmark]**.
 
@@ -38,7 +41,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 >
 >* ブックマークは、25 個まで保存できます。
 >* ブックマークを追加してからワークスペースの場所を移動すると、ブックマークは無効になるので、ブックマークパネルから削除して再設定する必要があります。
->
-
-
 
