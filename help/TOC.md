@@ -3,8 +3,12 @@ cloud: experience-cloud
 product: analytics
 audience: end-user
 user-guide-title: Data Workbench ヘルプ
+user-guide-description: Learn about the multi-channel capabilities of Data Workbench. Includes Data Workbench Client, Installation, Dataset Configuration guides, and more.
 translation-type: tm+mt
-source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
+source-git-commit: 53e6b7b96e7addd848a00691163878846b22b4c6
+workflow-type: tm+mt
+source-wordcount: '3518'
+ht-degree: 25%
 
 ---
 
@@ -32,7 +36,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + [Data Workbench 6.11 の更新](home/c-release-notes-insight/c-6-1-1.md)
    + [2014年4月リリースのデータフィードの更新](home/c-release-notes-insight/c-release-notes-insight-mr41714.md)
    + [Data Workbench 6.1 のリリースノート](home/c-release-notes-insight/c-release-notes-insight-61/c-release-notes-insight-61.md)
-   + [Data Workbench 6.0および6.0.4のリリースノート](home/c-release-notes-insight/c-release-notes-previous/c-release-notes-insight-600.md)
+   + [Data Workbench6.0および6.0.4のリリースノート](home/c-release-notes-insight/c-release-notes-previous/c-release-notes-insight-600.md)
 + インストール {#install}
    + [ワークステーションの要件](home/c-install-insight/c-data-workbench-client-install.md)
    + ワークステーションの設定 {#workstation-setup}
@@ -46,7 +50,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Insightサーバーへの接続の設定](home/c-install-insight/install-setup/c-conn-isvr.md)
       + [接続のトラブルシューティング](home/c-install-insight/install-setup/t-conn-trbsh.md)
    + Data Workbench のアップグレード {#upgrade-dwb}
-      + [Data Workbenchのアップグレードの概要](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
+      + [アップグレードData Workbenchの概要](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
       + [6.4 から 6.5 へのアップグレード](home/c-install-insight/c-upgrd-ins/c-6-4-to-6-5-upgrade.md)
       + [6.3 から 6.4 へのアップグレード](home/c-install-insight/c-upgrd-ins/c-6-3-to-6-4-upgrade.md)
       + [DWBサーバーのアップグレード： 6.2 ～ 6.3](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
@@ -93,7 +97,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [S/FTP配信を使用したセグメントのエクスポート](home/c-get-started/c-exp-data-seg-exp/exporting-data.md)
       + [プロファイルとオーディエンスのエクスポート](home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
       + [Analytics コアサービスへのエクスポート](home/c-release-notes-insight/c-6-4/dwb-crs-integration.md)
-      + [Adobeターゲットに書き出し](home/c-get-started/c-exp-data-seg-exp/dwb-target-export.md)
+      + [Adobe Targetに書き出し](home/c-get-started/c-exp-data-seg-exp/dwb-target-export.md)
       + [セグメントエクスポートウィザード](home/c-get-started/c-exp-data-seg-exp/segment-export.md)
    + [Analyticsレポート](home/c-get-started/c-template-report-types.md)
    + アトリビューションレポート {#attribution-reports}
@@ -359,7 +363,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
 + Dataset configuration {#dataset}
    + [データセットの構築について](home/c-dataset-const-proc/c-dataset-constr.md)
    + [データセット設定について](home/c-dataset-const-proc/c-dataset-config.md)
-   + [GDPRに対するData Workbenchのサポート](home/c-dataset-const-proc/dwb-gdpr.md)
+   + [GDPRのData Workbenchサポート](home/c-dataset-const-proc/dwb-gdpr.md)
    + ログ処理設定ファイル {#log-proc-config-file}
       + [ログ処理設定ファイルについて](home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)
       + [ログ処理設定ファイルの編集](home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md)
@@ -411,7 +415,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
             + [ExtractValue](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-exvalue.md)
             + [Flatten](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md)
             + [形式](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md)
-            + [ハッシュ](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-hash.md)
+            + [Hash](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-hash.md)
             + [Haversine](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-haversine.md)
             + [IPLookup](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-iplookup.md)
             + [LookupRows](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-lookuprows.md)
@@ -423,7 +427,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
             + [Sessionize](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-sessionize.md)
             + [Split](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-split.md)
             + [Tokenize](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md)
-            + [Union](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-union.md)
+            + [和集合](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-union.md)
          + URI 変換 {#uri-transformations}
             + [URI 変換](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-uri-transf/c-uri-transf.md)
             + [AppendURI](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-uri-transf/c-appenduri.md)
@@ -500,7 +504,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
          + [レポートセットの設定](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/t-config-rpt-set.md)
          + [Microsoft Excelファイルとしてのレポートの生成](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/c-gen-rpts-ex-files.md)
          + [レポートの動的生成](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/c-dyn-gen-rpts.md)
-         + [Data Workbenchサーバーへのレポートセットの公開](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-pub-rpt-set.md)
+         + [レポートセットをData Workbenchサーバに公開する](home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-pub-rpt-set.md)
       + [レポートセットのステータスの確認](home/c-rpt-oview/c-work-rpt-sets/c-rev-rpt-set-stat.md)
       + 既存のReport.cfgファイルの編集 {#edit-existing-report-files}
          + [既存のReport.cfgファイルの編集](home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md)
@@ -594,7 +598,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + [サードパーティのページタギングに関するP3Pの考慮事項](home/c-undst-pg-tag/c-cons-thrd-pty-pg-tag.md)
    + [ページタグ変数マッピングのワークシート](home/c-undst-pg-tag/c-pg-tag-wkst.md)
 + Metrics, dimensions, and filters {#metrics}
-   + [Data Workbenchの指標、ディメンション、フィルターについて](home/c-about/c-about.md)
+   + [Data Workbench指標、ディメンションおよびフィルターについて](home/c-about/c-about.md)
    + [指標、ディメンション、フィルターの展開](home/c-about/c-expand-capabilities.md)
    + [ディメンションタイプ](home/c-about/c-dimension-types.md)
    + [指標ディメンションウィザード](home/c-about/metric-dim.md)
@@ -610,8 +614,8 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [値プロファイル指標](home/c-about/c-about-baseline-profiles/c-value-profile-metrics.md)
       + [値プロファイルディメンション](home/c-about/c-about-baseline-profiles/c-value-profile-dims.md)
       + [マーケティングプロファイルのディメンション](home/c-about/c-about-baseline-profiles/c-marketing-profile.md)
-+  Geography{#geography}
-   + [Data Workbenchの地域について](home/c-geo-oview/c-geo-oview.md)
++ 地域 {#geography}
+   + [Data Workbench地域について](home/c-geo-oview/c-geo-oview.md)
    + Data Workbench地域のインストール {#install-geography}
       + [Data Workbench地域のインストール](home/c-geo-oview/c-inst-geo/c-inst-geo.md)
       + [Geographyプロファイルのインストール](home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md)
@@ -649,7 +653,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Data Workbench地域のアップグレード](home/c-geo-oview/c-upgrd-uninst-geo/t-upgrd-geo.md)
       + [Data Workbench地域のアンインストール](home/c-geo-oview/c-upgrd-uninst-geo/t-uninst-geo.md)
 + Controlled experiments {#experiments}
-   + [Data Workbenchで制御される実験について](home/c-undst-ctrld-exp/c-undst-ctrld-exp.md)
+   + [Data Workbench制御実験について](home/c-undst-ctrld-exp/c-undst-ctrld-exp.md)
    + [サイトでの訪問者の識別方法](home/c-undst-ctrld-exp/c-id-vstrs.md)
    + [制御下での実験はどのように行われますか？](home/c-undst-ctrld-exp/c-ctrld-exp-wk.md)
    + [何をテストすればいいですか。](home/c-undst-ctrld-exp/c-wht-test-.md)
@@ -716,7 +720,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [Data Workbenchサーバーの管理](home/c-inst-svr/c-admin-inst-svr/c-admin-inst-svr.md)
       + [デジタル証明書の再検証](home/c-inst-svr/c-admin-inst-svr/c-reval-dgtl-cert.md)
       + [サービスの実行の確認](home/c-inst-svr/c-admin-inst-svr/c-cfrm-svc-rng.md)
-      + Access Control {#access-control}
+      + アクセス制御 {#access-control}
          + [アクセス制御の設定](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-config-acs-ctrl.md)
          + [アクセス制御グループについて](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-undst-acc-ctrl-grps.md)
          + [アクセスレベルについて](home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-undst-acc-lvls.md)
@@ -747,7 +751,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + 設定 {#configure}
          + [リピータ機能の設定](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-cnfg-rptr-fntly.md)
          + [リピーター用のInsightサーバーFSUの設定](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-fsu-rptr.md)
-         + [ターゲットマシン用のアクセス制御の設定](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
+         + [Targetマシン用のアクセス制御の設定](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-cfg-acc-ctrll-tgt-mach.md)
          + [Insightとリピーター間の接続の作成](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-crt-conn-ins-rptr.md)
          + [次の手順](home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/c-nxt-stps-reptr.md)
       + [リピータの管理](home/c-inst-svr/c-rptr-fntly/c-admin-rptr.md)
@@ -806,7 +810,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [データコレクターの実行の確認](home/c-snsr-ovrvw/admin-sensor/c-data-cltr-rng.md)
       + [データ送信機の実行の確認](home/c-snsr-ovrvw/admin-sensor/c-data-trmtr-rng.md)
       + [管理イベントの監視](home/c-snsr-ovrvw/admin-sensor/c-mntr-admin-evts.md)
-      + [ターゲットData Workbenchサーバーの変更](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
+      + [TargetData Workbenchサーバーの変更](home/c-snsr-ovrvw/admin-sensor/t-trgt-ins-svr.md)
       + オフラインセンサー {#offline}
          + [オフラインセンサーの処理](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-ofln-snsrs.md)
          + [「基準日」の時間について](home/c-snsr-ovrvw/admin-sensor/c-ofln-snsrs/c-as-of-tm.md)
@@ -831,14 +835,14 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + ワークスペース {#workspace}
       + [Data Workbenchサーバーを監視するためのワークスペース](home/monitoring-installation/monitoring-profiles/monitoring-profiles.md)
       + [Data Workbenchの履歴ワークスペース](home/monitoring-installation/monitoring-profiles/monitoring-historical-using.md)
-      + [Data Workbenchプロファイルのステータスワークスペース](home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md)
+      + [Data Workbenchプロファイルステータスワークスペース](home/monitoring-installation/monitoring-profiles/monitoring-profile-using.md)
       + [Data Workbenchサーバーのステータスワークスペース](home/monitoring-installation/monitoring-profiles/monitoring-server-using.md)
    + Data Workbenchプロファイルのディメンションと指標 {#monitoring-appendix}
       + [Data Workbenchプロファイルのディメンションと指標](home/monitoring-installation/monitoring-appendix/monitoring-appendix.md)
       + [Data Workbench履歴プロファイルのディメンション](home/monitoring-installation/monitoring-appendix/monitoring-historical.md)
-      + [Data Workbenchプロファイルのステータスプロファイルのディメンション](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
-      + [Data Workbenchサーバーのステータスプロファイルーのディメンション](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
-      + [Data Workbenchの履歴監視プロファイルの指標](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
+      + [Data Workbenchプロファイルステータスプロファイルのディメンション](home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md)
+      + [Data Workbenchサーバーのステータスプロファイルのディメンション](home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md)
+      + [Data Workbench履歴監視プロファイルの指標](home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md)
 + ダッシュボード {#dashboard}
    + [ビジネスチャンス](home/c-adobe-data-workbench-dashboard/c-business-opportunities.md)
    + [機能](home/c-adobe-data-workbench-dashboard/c-features.md)
@@ -847,7 +851,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
    + [ダッシュボードユーザーインターフェイス](home/c-adobe-data-workbench-dashboard/t-getting-started/c-dashboard-user-interface.md)
    + ビジュアライゼーション {#visualizations}
       + [ビジュアライゼーション](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualizations.md)
-      + ビジュアライゼーションのタイプ {#visualization-types}
+      + Visualization Types {#visualization-types}
          + [ビジュアライゼーションのタイプ](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-visualization-types.md)
          + [列グラフ](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-column-charts.md)
          + [棒グラフ](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-bar-charts.md)
@@ -905,7 +909,7 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [IISを有効にする](home/c-preparing-for-dashboard-installation/c-installation-prerequisites/t-enabling-iis.md)
       + [必要なコンポーネントのインストール](home/c-preparing-for-dashboard-installation/c-installation-prerequisites/t-installing-required-components.md)
    + サーバー通信 {#servers-communication}
-      + [Data Workbenchサーバーとのダッシュボード](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
+      + [Data Workbenchサーバーとのダッシュボード通信](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [クエリAPIの有効化を確認しています](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
       + [アクセス制御の設定](home/c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
    + ダッシュボードの導入 {#dashboard-deployment}
@@ -942,15 +946,15 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [ユーザーグループの削除](home/c-preparing-for-dashboard-installation/c-managing-user-groups/t-removing-a-user-group.md)
    + [システムログ](home/c-preparing-for-dashboard-installation/c-system-logs.md)
 + Data Workbenchの実装 {#implement}
-   + [Adobe Data Workbenchの導入](home/dwb-implement-overview/dwb-implement-overview.md)
+   + [アドビData Workbenchの実装](home/dwb-implement-overview/dwb-implement-overview.md)
    + [Data Workbenchの検出と要件](home/dwb-implement-overview/dwb-implement-discovery.md)
    + [Data Workbenchのインストールとプロビジョニング](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-provision.md)
    + [DWB管理対象サービスの基本的なオンボーディング手順](home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md)
-   + [Data Workbenchのアーキテクチャ](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-architecture.md)
+   + [Data Workbenchアーキテクチャ](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-architecture.md)
    + [スキーマデザイン可算構造](home/dwb-implement-overview/dwb-implement-architecture/dwb-implement-arch-countable.md)
-   + [Data Workbenchの管理](home/dwb-implement-overview/dwb-implement-admin.md)
+   + [Data Workbench管理](home/dwb-implement-overview/dwb-implement-admin.md)
    + 設定と導入 {#implement-configure}
-      + [Data Workbenchの設定と実装](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-configure.md)
+      + [Data Workbenchの設定と導入](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-configure.md)
       + [イベント時間の設定](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-event-time.md)
       + [寸法設定](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-dim-setup.md)
       + [指標の設定](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-metric-setup.md)
@@ -960,11 +964,11 @@ source-git-commit: 4a31b493a9ce308dbd72c55156a2c197f30015e2
       + [SAINTスクラバーのスクリプティング](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-saint-scripting.md)
       + [ファイル転送ガバナンス](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-file-transfer.md)
       + [クエリAPIの設定](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-query-api.md)
-      + [データ処理 — 主キーの構築](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-primary-key.md)
+      + [データ処理 —プライマリキーの作成](home/dwb-implement-overview/dwb-implement-configure/dwb-implement-primary-key.md)
    + 機能の実装 {#feature-implemenatation}
-      + [Data Workbenchの機能の実装](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-deliver.md)
+      + [機能のData Workbench実装](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-deliver.md)
       + [新規スキーマの設定の変更](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-config-new-schema.md)
       + [派生ディメンションの設定](home/dwb-implement-overview/dwb-implement-deliver/dwb-implement-derived-dims.md)
 + [ クエリー API](https://www.adobe.io/)
-+ [Data WorkbenchとAdobeターゲットの統合](home/dwb-adobe-target.md)
++ [Adobe TargetとのData Workbench統合](home/dwb-adobe-target.md)
 + [Data Workbench 用語集](dwb-glossary.md)
