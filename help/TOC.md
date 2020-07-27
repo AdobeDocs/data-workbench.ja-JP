@@ -4,9 +4,9 @@ product: analytics
 audience: end-user
 user-guide-title: Data Workbench ヘルプ
 user-guide-description: Learn about the multi-channel capabilities of Data Workbench. Includes Data Workbench Client, Installation, Dataset Configuration guides, and more.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 53e6b7b96e7addd848a00691163878846b22b4c6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3518'
 ht-degree: 100%
 
