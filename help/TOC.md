@@ -338,7 +338,7 @@ ht-degree: 100%
       + [ローカライズされた言語の設定](home/c-get-started/c-intf-anlys-ftrs/c-localized-ime/c-localized-ime-config.md)
       + ロックされているワークスペースの設定 {#config-locked-wkspc}
          + [ロックされているワークスペースの設定](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-config-locked-wkspc.md)
-         + [folder.lock ファイルと &lt;ワークスペース名>.lock ファイル](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-fldr-wksp-files.md)
+         + [folder.lock ファイルと ワークスペース名.lock ファイル](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-fldr-wksp-files.md)
          + [Unlock パラメーターの設定](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-unlck-param.md)
       + [「開く」機能の設定](home/c-get-started/c-intf-anlys-ftrs/c-config-open-funct.md)
       + [引き出し線の設定](home/c-get-started/c-intf-anlys-ftrs/c-config-callouts.md)
