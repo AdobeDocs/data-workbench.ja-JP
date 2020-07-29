@@ -70,7 +70,7 @@ ht-degree: 100%
       + [ワークスペースの表示：概要](home/c-get-started/c-work-worksp/c-work-worksp.md)
       + [ワークスペースの表示](home/c-get-started/c-work-worksp/c-dis-worksp.md)
       + [ワークスペースの作成](home/c-get-started/c-work-worksp/c-create-worksp.md)
-      + [ワークスペースファイルメニュー](home/c-get-started/c-work-worksp/c-use-wksp-file-menu.md)
+      + [ ワークスペースファイルメニュー](home/c-get-started/c-work-worksp/c-use-wksp-file-menu.md)
       + [ワークスペースの再適合](home/c-get-started/c-work-worksp/c-refit-wksp.md)
       + [ワークスペースの共有](home/c-get-started/c-work-worksp/c-share-wksp.md)
       + [ワークスペースの保存](home/c-get-started/c-work-worksp/c-save-wksp.md)
@@ -318,7 +318,7 @@ ht-degree: 100%
       + [サーバーモニターインターフェイス](home/c-get-started/c-admin-intrf/c-svr-mtr-intfc.md)
       + [設定オプション](home/c-get-started/c-admin-intrf/c-config-opt.md)
    + インターフェイスと分析機能 {#ui-analysis-features}
-      + [インターフェイスと分析機能](home/c-get-started/c-intf-anlys-ftrs/c-intf-anlys-ftrs.md)
+      + [インターフェイスと分析機能 ](home/c-get-started/c-intf-anlys-ftrs/c-intf-anlys-ftrs.md)
       + [Data Workbench のローカルカスタマイズ](home/c-get-started/c-intf-anlys-ftrs/c-cstm-lcl.md)
       + メニューのカスタマイズ {#custom-menus}
          + [メニューのカスタマイズ](home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-ctm-menus.md)
@@ -338,7 +338,7 @@ ht-degree: 100%
       + [ローカライズされた言語の設定](home/c-get-started/c-intf-anlys-ftrs/c-localized-ime/c-localized-ime-config.md)
       + ロックされているワークスペースの設定 {#config-locked-wkspc}
          + [ロックされているワークスペースの設定](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-config-locked-wkspc.md)
-         + [folder.lock ファイルと ワークスペース名.lock ファイル](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-fldr-wksp-files.md)
+         + [Folder.lock ファイルと workspace name.lock ファイル](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-fldr-wksp-files.md)
          + [Unlock パラメーターの設定](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-unlck-param.md)
       + [「開く」機能の設定](home/c-get-started/c-intf-anlys-ftrs/c-config-open-funct.md)
       + [引き出し線の設定](home/c-get-started/c-intf-anlys-ftrs/c-config-callouts.md)
