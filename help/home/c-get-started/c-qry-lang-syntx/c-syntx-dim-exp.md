@@ -5,20 +5,23 @@ title: ディメンション式の構文
 topic: Data workbench
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '1855'
+ht-degree: 92%
 
 ---
 
 
-# Syntax for dimension expressions{#syntax-for-dimension-expressions}
+# ディメンション式の構文{#syntax-for-dimension-expressions}
 
 ディメンション式は、単独で使用することはできませんが、ディメンションが指標式またはフィルター式の中で呼び出される場所ではどこでも使用できます。
 
 1. 下線を引いた語句は、式のテキストにそのまま入力する必要があります。
-1. {TEXT}? の形式は、オプションのテキストを表します。
-1. {TEXT}* の形式は、0 回以上発生するテキストを表します。
-1. {A | B | C |...} の形式は、A または B または C... のように、所定のオプションのうちの 1 つのみから成るテキストを表します。
-1. [A,B) の形式は、A 以上 B 未満の数値の範囲を表します。
+1. フォームはオプションのテキストを `{TEXT}?` 表します。
+1. The form `{TEXT}*` represents text that may occur zero or more times.
+1. The form `{A | B | C |...}` represents text that consists of exactly one of the given options, such as A or B or C....
+1. The form `[A,B)` represents a range of numbers, from A up to but not including B.
 
 <table id="table_2D9AE1E2397843C284E838330370A1EE"> 
  <tbody> 
@@ -48,7 +51,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>bucket(Level, Metric, Count, Format {, Start {, Size}? }?) </p> </td> 
-   <td colname="col2"> <p>要素が数値範囲（固定サイズ、例えば、[0-9]、[10-19] など）のディメンションを定義します。Level の要素は、そのレベルの要素の Metric の値を範囲に含むバケットディメンションの要素に関連付けられます。Format は、指標の要素の書式設定に使用する printf 書式の文字列です。 </p> <p>例：Page_Duration_Minutes が、各ページに滞在した時間（分）を表すページビューレベルのディメンションである場合、bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5) は、各セッションに使用した時間（分）を表すセッションレベルのディメンションで、その要素は 5 分間隔の {[0-5), [5-10),...,[495-500)} です。 </p> <p>Start は、最初の間隔の開始値（デフォルト：0）であり、Size は間隔のサイズ（デフォルト：1）です。 </p> </td> 
+   <td colname="col2"> <p>要素が数値範囲（固定サイズ、例えば、[0-9]、[10-19] など）のディメンションを定義します。Level の要素は、そのレベルの要素の Metric の値を範囲に含むバケットディメンションの要素に関連付けられます。Format は、指標の要素の書式設定に使用する printf 書式の文字列です。 </p> <p>Example: If Page_Duration_Minutes is a Page View-level dimension representing the number of minutes spent on each page, then bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5) is a Session-level dimension representing the number of minutes spent in each Session; its elements are 5 minute intervals <code>{[0-5), [5-10),...,[495-500)}</code>. </p> <p>Start は、最初の間隔の開始値（デフォルト：0）であり、Size は間隔のサイズ（デフォルト：1）です。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>prefix(Level {,ElementName-&gt;(Prefix{,Prefix}* )}* ) </p> </td> 
@@ -60,7 +63,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>cartesian_product(Separator {,Dim}*) </p> </td> 
-   <td colname="col2"> <p>指定したディメンションの要素のすべての組み合わせ（「デカルト積」）を要素とするディメンションを定義します。各要素の名前は、入力ディメンションの中の対応する要素を、指定した Separator 文字列で区切って連結した名前になります。 </p> <p>例えば、ディメンション D1 の要素が {"a", "b"} で、ディメンション D2 の要素が {"x", "y"} の場合、デカルト積 cartesian product("-", D1, D2) の要素は {"a-x", "a-y", "b-x", "b-y"} になります。 </p> <p>内部的には、入力ディメンションはそれぞれ、要素の数が 2 のべき乗（要素の数以上で最も近い数）であるかのように扱われます。このため、デカルト積にはダミーの要素がいくつか存在することになります。Data Workbench APIを使用する場合、出力形式に応じて、これらの要素は省略される場合や、「#nnn」（nnnは要素の序数）と表示される場合があります（クライアントでは無視する必要があります）。 </p> <p>例えば、上記の例で D2 に 3 つの要素 {"x", "y", "z"} がある場合、要素は 4 つあるもとのして扱われ、デカルト積の要素は {"a-x", "a-y", "a-z", "#3", "b-x", "b-y", "b-z", "#7"} となります。 </p> <p>ディメンションを指定しない場合、1 つの要素「#0」を持つディメンションとなり、None ディメンションと等しくなります。 </p> </td> 
+   <td colname="col2"> <p>指定したディメンションの要素のすべての組み合わせ（「デカルト積」）を要素とするディメンションを定義します。各要素の名前は、入力ディメンションの中の対応する要素を、指定した Separator 文字列で区切って連結した名前になります。 </p> <p>例えば、ディメンション D1 の要素が {"a", "b"} で、ディメンション D2 の要素が {"x", "y"} の場合、デカルト積 cartesian product("-", D1, D2) の要素は {"a-x", "a-y", "b-x", "b-y"} になります。 </p> <p>内部的には、入力ディメンションはそれぞれ、要素の数が 2 のべき乗（要素の数以上で最も近い数）であるかのように扱われます。このため、デカルト積にはダミーの要素がいくつか存在することになります。Data WorkbenchAPIを使用する場合、出力形式に応じて、これらの要素は省略される場合や、「#nnn」（nnnは要素の順序）と表示される場合があります（クライアントは無視する必要があります）。 </p> <p>例えば、上記の例で D2 に 3 つの要素 {"x", "y", "z"} がある場合、要素は 4 つあるもとのして扱われ、デカルト積の要素は {"a-x", "a-y", "a-z", "#3", "b-x", "b-y", "b-z", "#7"} となります。 </p> <p>ディメンションを指定しない場合、1 つの要素「#0」を持つディメンションとなり、None ディメンションと等しくなります。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>nearest_countable(Dim) </p> </td> 
