@@ -3,7 +3,10 @@ description: Data Workbench 6.2 のリリースノートには、新機能、ア
 title: Data Workbench 6.2 のリリースノート
 uuid: 8631c936-d53b-493d-9f58-72f541c3ddce
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '1267'
+ht-degree: 83%
 
 ---
 
@@ -36,12 +39,12 @@ Data Workbench 6.2 には、新しいユーザーインターフェイス（ブ�
 
 **ブックマークの使用**
 
-1. ツールバーの右上隅にあるブックマークアイコン ![](assets/bookmark_icon.png) をクリックして、ワークスペースをブックマークします。
-1. Click **[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]** in the left pane to open a list of bookmarks.
+1. ワークスペースにブックマークを追加するには、ツールバーの右上隅にあるブックマークアイコン ![](assets/bookmark_icon.png) をクリックします。
+1. 左側のペインで&#x200B;**[!UICONTROL 追加]**／**[!UICONTROL ブックマークパネル]**&#x200B;をクリックして、ブックマークのリストを開きます。
 
    ![](assets/bookmarks_panel.png)
 
-1. To open a bookmarked workspace, click a workspace name in the **[!UICONTROL Bookmark Panel]**.
+1. ブックマーク付きのワークスペースを開くには、**[!UICONTROL ブックマークパネル]**&#x200B;でワークスペース名をクリックします。
 
    ![](assets/bookmarks_panel_left.png)
 
@@ -49,25 +52,26 @@ Data Workbench 6.2 には、新しいユーザーインターフェイス（ブ�
 
 **ブックマークを削除するには：**
 
-* ブックマークパネルで右クリックし、「削除」を選択し **[!UICONTROL ます<bookmark title>]**選択したブックマークを削除する場合は、を選択します。また、すべてのブッ&#x200B;**[!UICONTROL Clear All Bookmarks]**クマークを削除する場合は、を選択します。
+* ブックマークパネルで右クリックし、「 **[!UICONTROL 削除」を選択します<bookmark title>]**選択したブックマークを削除するには、「すべてのブックマークを**[!UICONTROL &#x200B;クリア」を選択し、すべてのブックマークを削除するには&#x200B;]**、「すべてのブックマークをクリア」を選択します。
 
-* You can also right-click on the workspace in the thumbnail view within the worktop and select **[!UICONTROL Clear Bookmark]**.
+* ワークトップ内のサムネールビューでワークスペースを右クリックして、「**[!UICONTROL ブックマークをクリア]**」を選択することもできます。
 
 >[!IMPORTANT]
 >
 >* ブックマークは、25 個まで保存できます。
 >* ブックマークを追加した後に、ワークスペースの場所を移動すると、ブックマークが無効になるため、ブックマークパネルから削除してリセットする必要があります。
+
 >
 
 
 
 ## ワークスペースの新しいアイコン {#section-c108bbd1661249e79c146727ff3d2470}
 
-Data Workbench 6.2 では、ワークスペース内のテキストがアイコンに置き換えられました。You can still hover over and see the tool tip message identifying the icon, including **[!UICONTROL File]**, **[!UICONTROL Add]**, and **[!UICONTROL Export]**.
+Data Workbench 6.2 では、ワークスペース内のテキストがアイコンに置き換えられました。ただし、カーソルを上に置くと、**[!UICONTROL ファイル]**、**[!UICONTROL 追加]**、**[!UICONTROL エクスポート]**&#x200B;など、アイコンの機能を示すツールチップメッセージが表示されます。
 
 ![](assets/new_icons.png)
 
-A new **[!UICONTROL Help]** icon is added to access the documentation and other knowledge centers, including the following links:
+以下のリンクを含む、ドキュメントやその他のナレッジセンターにアクセスできる新しい&#x200B;**[!UICONTROL ヘルプ]**&#x200B;アイコンが追加されました。
 
 <table id="table_64BBC67B1BB44B1197FF7E5E7B067696"> 
  <thead> 
@@ -78,11 +82,11 @@ A new **[!UICONTROL Help]** icon is added to access the documentation and other 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Reports &amp; Analytics </td> 
+   <td colname="col1"> Marketing Reports &amp; Analytics </td> 
    <td colname="col2"><span class="uicontrol">Adobe Marketing Reports &amp; Analytics</span> のヘルプページが開きます。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Idea Exchange </td> 
+   <td colname="col1"> アイデア交換 </td> 
    <td colname="col2"><span class="uicontrol">Idea Exchange のログイン</span>が開きます。このオンラインポータルでは、ユーザーが Data Workbench への更新の変更や機能拡張のアイデアを投稿することができます。これらの顧客中心のアイデアに対して後ですべてのユーザーによる投票が行われます。 </td> 
   </tr> 
   <tr> 
@@ -121,7 +125,7 @@ A new **[!UICONTROL Help]** icon is added to access the documentation and other 
  <tbody> 
   <tr> 
    <td colname="col1"><b>フルスクリーンビュー</b>。ワークスペースが画面を埋め、新しいサイズに再適合されます。 </td> 
-   <td colname="col2"><b>Ctrl プラス（+）</b> <p>Ctrl + +（キーパッド） </p> <p><i> または</i> </p> <p>Ctrl + Shift + +（キーボード） </p> </td> 
+   <td colname="col2"><b>Ctrl プラス（+）</b> <p>Ctrl + +（キーパッド） </p> <p><i>または</i> </p> <p>Ctrl + Shift + +（キーボード） </p> </td> 
    <td colname="col3"> 
     <ul id="ul_C7C731B894D946D9916F50806F015857"> 
      <li id="li_452B4C119B1A40038A408CFFC53653A9">ファイル／ページサイズ／画面にフィット <p><i>を選択し、次に以下を選択</i> </p> </li> 
@@ -130,7 +134,7 @@ A new **[!UICONTROL Help]** icon is added to access the documentation and other 
   </tr> 
   <tr> 
    <td colname="col1"><b>ウィンドウビュー</b>。ワークスペースが標準のウィンドウビューで表示され、新しいサイズに再適合されます。 </td> 
-   <td colname="col2"><b>Ctrl マイナス（-）</b> <p>Ctrl + - </p> </td> 
+   <td colname="col2"><b>Ctrl マイナス（-）</b> <p>Ctrl - </p> </td> 
    <td colname="col3"> 
     <ul id="ul_3474B9EFD69343C09BC84E485D896C28"> 
      <li id="li_820BAED76FF24A5785E6D89C5C692DD5">ファイル／ページサイズ／標準 <p><i>を選択し、次に以下を選択</i> </p> </li> 
@@ -149,7 +153,7 @@ A new **[!UICONTROL Help]** icon is added to access the documentation and other 
 * 簡体字中国語用のクライアントユーザーインターフェイスのエラーを修正しました。
 * Adobe Analyticsは、Data Workbenchを強化するデータフィードを更新し、Adobe Experience Cloudと統合されるプロファイルとオーディエンスを活用しました。 2014 年 4 月 21 日までに、Data Workbench のすべてのユーザーはこの移行のために環境の準備を行う必要がありました。
 
-   Profiles &amp; Audiencesが導入され、Adobe Analytics全体で顧客の全体像を把握できるようになりました。 この新しいサービスは、Adobe Experience Cloud内で利用でき、分析ツールの価値を高め、Analytics内でこれらの機能の基盤を確立し始めます。 新しいExperience Cloud訪問者IDがデータフィードに追加され、新しいデータフィードやグローバル訪問者IDに対応するためのその他の機能強化や改善が行われます。
+   Adobe Analytics全土の顧客を完全に表示するプロファイルやオーディエンスが導入されました。 この新しいサービスは、分析ツールの価値をさらに高め、Analytics内でこれらの機能の基盤を構築する開始を実現するために、Adobe Experience Cloud内で利用できます。 新しいExperience Cloud訪問者IDがデータフィードに追加され、新しいデータフィードおよびグローバル訪問者IDに対応するためのその他の機能強化や改善が行われます。
 * ワークスペースをインポートすると、インポートが成功した場合でも、エラーメッセージが表示されます。
 
 ## アップグレード要件 {#section-3cc74d08f7454d698b5a6d3f1dcde282}
@@ -157,7 +161,7 @@ A new **[!UICONTROL Help]** icon is added to access the documentation and other 
 * アトリビューションプロファイルは、Analytics（SC／Insight）のデータフィードを利用する Adobe SC プロファイルを実装しているユーザー用に設定されています。デフォルトでは、ルールに基づくモデルで評価されたデフォルトのインタラクションとしてマーケティングイベントとコンバージョンイベントが使用されます。
 * For users of the Adobe SC profile upgrading to Data Workbench 6.2, if you are not using the default configurations, verify that the [!DNL x-bot_id] value in the [!DNL SC Fields.cfg] file is being decoded properly and that the [!DNL x-bot_id] field is listed properly in the [!DNL Decoding Instructions.cfg] and the [!DNL Exclude Hit.cfg] files. これは、設定ファイルをデフォルトの設定から変更している場合にのみ問題となります。
 
-* If you have deleted unused fields in the **[!UICONTROL Dataset]** > **[!UICONTROL Log Processing** > **[!DNL SC Fields.cfg]** file for the Adobe SC profile, you will need to update to accommodate updated field values used for the Attribution profile.
+* If you have deleted unused fields in the **[!UICONTROL Dataset]** > **[!UICONTROL Log Processing]** > **[!DNL SC Fields.cfg]** file for the Adobe SC profile, you will need to update to accommodate updated field values used for the Attribution profile.
 
 ## 既知の問題 {#section-dbb307639835493a83409f5f461932b8}
 
