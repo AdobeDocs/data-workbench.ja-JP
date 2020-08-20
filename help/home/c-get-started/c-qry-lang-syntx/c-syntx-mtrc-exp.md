@@ -5,24 +5,27 @@ title: 指標式の構文
 topic: Data workbench
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+workflow-type: tm+mt
+source-wordcount: '851'
+ht-degree: 91%
 
 ---
 
 
-# Syntax for metric expressions{#syntax-for-metric-expressions}
+# 指標式の構文{#syntax-for-metric-expressions}
 
 指標は、指標エディターを使用して編集し、プロファイルの Metrics ディレクトリに保存できます。
 
-詳しくは、「派生指標の作成 [と編集」を参照してください](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)。 指標式はワークシートで使用することもできます。詳しくは、「 [ワークシート](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). 指標式を定義するには、次の構文を使用します。
+詳しくは、「派生指標の [作成と編集](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)」を参照してください。 指標式はワークシートで使用することもできます。詳しくは、「 [ワークシート](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). 指標式を定義するには、次の構文を使用します。
 
 メモ:
 
 1. 下線を引いた語句は、式のテキストにそのまま入力する必要があります。
-1. {TEXT}? の形式は、オプションのテキストを表します。
-1. {TEXT}* の形式は、0 回以上発生するテキストを表します。
-1. {A | B | C |...} の形式は、A または B または C... のように、所定のオプションのうちの 1 つのみから成るテキストを表します。
-1. [A,B) の形式は、A 以上 B 未満の数値の範囲を表します。
+1. フォームはオプションのテキストを `{TEXT}?` 表します。
+1. The form `{TEXT}*` represents text that may occur zero or more times.
+1. The form `{A | B | C |...}` represents text that consists of exactly one of the given options, such as A or B or C....
+1. The form `[A,B)` represents a range of numbers, from A up to but not including B.
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
