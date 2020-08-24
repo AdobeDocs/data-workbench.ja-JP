@@ -3,7 +3,10 @@ description: ステップバイステップ方式のウィザードを使用し�
 title: 指標ディメンションウィザード
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 translation-type: tm+mt
-source-git-commit: d892186621e7acb9504254496b038efc3e9fd8ec
+source-git-commit: 35e6e9280ab36e8b39e89039b791199d1de54e03
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: d892186621e7acb9504254496b038efc3e9fd8ec
 
 1. 指標ディメンションウィザードを開きます。
 
-   In a workspace, right-click and select **[UICONTROL Tools]** > **[UICONTROL Create Metric Dim]**.
+   ワークスペース内で右クリックし、**[!UICONTROL ツール]**／**[!UICONTROL 指標ディメンションを作成]**&#x200B;を選択します。
 
 1. 指標ディメンションに名前を付けます。
 
@@ -32,9 +35,9 @@ source-git-commit: d892186621e7acb9504254496b038efc3e9fd8ec
 
    * クリックスルー
    * ヒット
-   * 製品        
+   * 製品         
    * 訪問
-   * 訪問者
+   * 訪問者。
 
 1. 指標を選択します。
 
@@ -50,7 +53,7 @@ source-git-commit: d892186621e7acb9504254496b038efc3e9fd8ec
 
    独自の[指標の式](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html)の追加や、別の指標エディターまたはビジュアライゼーションからのカットアンドペーストが可能です。構文エラー、数式エラー、未定義エラーおよびその他のエラーがウィザードに報告されます。
 
-1. クリック **[!UICONTROL Next]**.
+1. 「**[!UICONTROL 次へ]**」をクリックします。
 
 ## ステップ 2：形式の設定とグループの設定 {#section-5bddf3cd306545d7806a501637f80f77}
 
@@ -65,21 +68,21 @@ source-git-commit: d892186621e7acb9504254496b038efc3e9fd8ec
    % 0.2lf = % _ [flags] 0 [width] .2 [.precision] l [length] f[ specifier]
    ```
 
-   In the **[!UICONTROL Preview]** field, a value will appear based on the metric and format selected.
+   「**[!UICONTROL プレビュー]**」フィールドに、選択されている指標と形式に基づいて値が表示されます。
 
 1. 「グループの数」の式を追加します。
 
    様々な範囲、すなわちグループを利用して指標ディメンションを定義できます。This returns subsets of elements based on size, such as [0-4], [5-10],...). ディメンションレベルのエレメントは、範囲に指標の値を含むエレメントに関連付けられます。グループの式の説明は、「[ディメンション式の構文](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)」を参照してください。
 
-1. Click **[!UICONTROL Preview]** to open table of Metric Dim values before saving.
+1. 保存する前に、「**[!UICONTROL プレビュー]**」をクリックして指標ディメンションの値のテーブルを開きます。
 
    ![](assets/6_4_workstation_metricdim_preview.png)
 
    このテーブルには、指標ディメンションごとの指標の値の詳細が表示されます。
 
-1. Click **[!UICONTROL Show in Dimension Menu]** to add the newly created dimension to the **Dimension** tab in the **Finder**.
+1. 「**[!UICONTROL ディメンションメニューに表示]**」をクリックして、新しく作成したディメンションを&#x200B;**ファインダー**&#x200B;の「**ディメンション**」タブに追加します。
 
-1. クリック **[!UICONTROL Next]**.
+1. 「**[!UICONTROL 次へ]**」をクリックします。
 
 ## ステップ 3：終了および保存 {#section-d9043235b18a425f9de0db668d4b1683}
 
@@ -87,11 +90,11 @@ source-git-commit: d892186621e7acb9504254496b038efc3e9fd8ec
 
    | フィールド | 説明 |
    |---|---|
-   | **[!UICONTROL Launch Metric Dim Editor]** | 指標ディメンションエディターを開きます。 |
-   | **[!UICONTROL Launch Graph]** | テーブルの PNG グラフィックを起動します。 |
-   | **[!UICONTROL Launch Table]** | ワークスペース内のテーブルを起動し、新しい指標ディメンションの値を選択されている指標の値と比較して列に表示します。 |
+   | **[!UICONTROL 指標ディメンションエディターを起動]** | 指標ディメンションエディターを開きます。 |
+   | **[!UICONTROL グラフを起動]** | テーブルの PNG グラフィックを起動します。 |
+   | **[!UICONTROL テーブルを起動]** | ワークスペース内のテーブルを起動し、新しい指標ディメンションの値を選択されている指標の値と比較して列に表示します。 |
 
-1. をクリック **[!UICONTROL Finish]** して保存します。
+1. 「**[!UICONTROL 終了]**」をクリックして保存します。
 
    保存ダイアログが開き、ファイルを保存することができます。値を表示するために選択したオプションがワークスペース内に表示されます。
 
