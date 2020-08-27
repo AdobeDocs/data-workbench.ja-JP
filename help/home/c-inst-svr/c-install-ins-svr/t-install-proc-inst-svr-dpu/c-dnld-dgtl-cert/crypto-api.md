@@ -1,14 +1,17 @@
 ---
 description: Windowsの証明書ストアでは、クライアントの証明書と秘密鍵をWindowsの証明書ストアに保存し、サーバーとのSSL通信を可能にします。
-title: Windows証明書ストア
+title: Windows 証明書ストア
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: a766b64ef809e2223fed869d8d63b75f270a3d39
+workflow-type: tm+mt
+source-wordcount: '1000'
+ht-degree: 82%
 
 ---
 
 
-# Windows証明書ストア{#windows-certificate-store}
+# Windows 証明書ストア{#windows-certificate-store}
 
 Windowsの証明書ストアでは、クライアントの証明書と秘密鍵をWindowsの証明書ストアに保存し、サーバーとのSSL通信を可能にします。
 
@@ -40,9 +43,9 @@ Windowsの証明書ストアでは、クライアントの証明書と秘密鍵�
 </filepath>>\Certificates\
 ```
 
-証明書の名前は、 `<Common Name>.pem` (ファイル [!DNL Analytics Server 1.pem]ではな [!DNL trust_ca_cert.pem] く)など。
+証明書の名前は `<Common Name>.pem` (例えば、 [!DNL Analytics Server 1.pem] ( [!DNL trust_ca_cert.pem] ファイルではなく)です。
 
-証明書および秘密鍵が読み込めるようになる前に、.[!DNL pem] の形式を、など [!DNL .pfx] の形式に変更し [!DNL pkcs12.pfx] ます。
+証明書および秘密鍵が読み込めるようになる前に、.[!DNL pem] の形式を、などの [!DNL .pfx] 形式に変更し [!DNL pkcs12.pfx] ます。
 
 1. コマンドプロンプトまたはターミナルを開き、次のディレクトリに移動します。
 
@@ -113,7 +116,7 @@ Windowsの証明書ストアでは、クライアントの証明書と秘密鍵�
 
 1. これらのパラメーターを追加して、値が Windows 証明書マネージャーのリストと一致するのを検証したら、[!DNL Insight.cfg] ファイルを保存します。
 
-これで、ワークステーションを開始（またはサーバーから切断／再接続）できます。問題がなければ、証明書ストアから証明書およびキーが Data Workbench に読み込まれ、通常どおりの接続が確立されます。
+これで、ワークステーションを開始（またはサーバーから切断／再接続）できます。Data Workbench は、証明書ストアから証明書および秘密鍵を読み込んで、通常どおりに接続します。
 
 ## ログ出力 {#section-a7ef8c9e90ef4bbabaa3cd51a2aca3ab}
 
