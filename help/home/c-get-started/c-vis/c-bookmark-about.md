@@ -5,10 +5,10 @@ title: しおり追加
 topic: Data workbench
 uuid: 8b7fd6ac-9bab-4e7a-8f52-8568413052e8
 translation-type: tm+mt
-source-git-commit: 2c1b2adfe8bf479c2a8cbd150ed006be2336022c
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 69%
+source-wordcount: '218'
+ht-degree: 87%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 69%
 
    ワークスペースをブックマークする前は、このアイコンは単なる本として表示されます。ワークスペースをブックマークすると、ブックマークアイコンはページがマークされた本に変化します。
 
-1. Click **[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]** in the left pane to open a list of bookmarks.
+1. 左側のペインで&#x200B;**[!UICONTROL 追加]**／**[!UICONTROL ブックマークパネル]**&#x200B;をクリックして、ブックマークの一覧を表示します。
 
    ![](assets/bookmarks_panel.png)
 
-1. To open a bookmarked workspace, click a workspace name in the **[!UICONTROL Bookmark Panel]**.
+1. ブックマーク付きのワークスペースを開くには、**[!UICONTROL ブックマークパネル]**&#x200B;でワークスペース名をクリックします。
 
    ![](assets/bookmarks_panel_left.png)
 
@@ -33,9 +33,9 @@ ht-degree: 69%
 
 **ブックマークを削除するには：**
 
-* ブックマークパネルで右クリックし、「 **[!UICONTROL 削除」を選択します<bookmark title>]**選択したブックマークを削除する場合は、「ブックマークの削除」を選択します。すべて&#x200B;**[!UICONTROL Clear All Bookmarks]**のブックマークを削除する場合は、を選択します。
+* In the Bookmark Panel, right-click and select **Remove`<bookmark title>`** to delete a selected bookmark, or select **[!UICONTROL Clear All Bookmarks]** to delete all bookmarks.
 
-* You can also right-click on the workspace in the thumbnail view within the worktop and select **[!UICONTROL Clear Bookmark]**.
+* ワークトップ内のサムネールビューでワークスペースを右クリックして、「**[!UICONTROL ブックマークをクリア]**」を選択することもできます。
 
 >[!IMPORTANT]
 >
