@@ -3,7 +3,7 @@ description: Data Workbench 6.2 のリリースノートには、新機能、ア
 title: Data Workbench 6.2 のリリースノート
 uuid: 8631c936-d53b-493d-9f58-72f541c3ddce
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 83%
@@ -52,7 +52,7 @@ Data Workbench 6.2 には、新しいユーザーインターフェイス（ブ�
 
 **ブックマークを削除するには：**
 
-* ブックマークパネルで右クリックし、「 **[!UICONTROL 削除」を選択します<bookmark title>]**選択したブックマークを削除するには、「すべてのブックマークを**[!UICONTROL &#x200B;クリア」を選択し、すべてのブックマークを削除するには&#x200B;]**、「すべてのブックマークをクリア」を選択します。
+* In the Bookmark Panel, right-click and select **Remove`<bookmark title>`** to delete a selected bookmark, or select **[!UICONTROL Clear All Bookmarks]** to delete all bookmarks.
 
 * ワークトップ内のサムネールビューでワークスペースを右クリックして、「**[!UICONTROL ブックマークをクリア]**」を選択することもできます。
 
