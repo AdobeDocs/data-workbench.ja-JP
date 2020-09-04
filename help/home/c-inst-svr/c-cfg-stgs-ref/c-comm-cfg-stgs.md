@@ -4,9 +4,9 @@ solution: Insight
 title: 通信の設定
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
 translation-type: tm+mt
-source-git-commit: 2ed16fa0d447426c4de863e502792bfb292765cc
+source-git-commit: 638eca495223fc9d5326bf9462a9c289d6fe2d9e
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '508'
 ht-degree: 5%
 
 ---
@@ -34,11 +34,11 @@ Insightサーバーまたはリピーター用の通信を設定する手順で�
  <tbody> 
   <tr> 
    <td colname="col1"> アクセス制御ファイル </td> 
-   <td colname="col2"> <p>アクセス制御 <span class="filepath"> .cfg </span> ファイルの場所。 デフォルトの場所は、 <span class="filepath"> Insightサーバー </span> または <span class="keyword"> リピーターのインストールディレクトリ内のアクセス制御 </span><span class="wintitle"></span> フォルダーです。 </p> <p>例： <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>アクセス制御 <span class="filepath"> .cfg </span> ファイルの場所。 デフォルトの場所は、 <span class="filepath"> Insightサーバー </span> または <span class="keyword"> リピーターのインストールディレクトリ内のアクセス制御 </span><span class="wintitle"></span> フォルダーです。 </p> <p>例：<code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> アクセスログディレクトリ </td> 
-   <td colname="col2"> <p>監査ログのマップ先フォルダー。 </p> <p>例： <filepath></filepath> </p> <p> <p>注意： 監査ログを別のローカルドライブにマップできます(例： <span class="filepath"> string:P:\\Audit\\ </span>)。ただし、監査ログをネットワークドライブにマップしないでください。 </p> </p> </td> 
+   <td colname="col2"> <p>監査ログのマップ先フォルダー。 </p> <p>例：<code>Access Log Directory = string: Audit\\</code> </p> <p> <p>注意： 監査ログを別のローカルドライブにマップできます(例： <span class="filepath"> string:P:\\Audit\\ </span>)。ただし、監査ログをネットワークドライブにマップしないでください。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> アクセスログの詳細 </td> 
@@ -46,19 +46,19 @@ Insightサーバーまたはリピーター用の通信を設定する手順で�
   </tr> 
   <tr> 
    <td colname="col1"> IPインターフェイス </td> 
-   <td colname="col2"> <p>2つの異なるネットワークにアクセスするために2つのネットワークカードが使用可能な場合に使用するIPアドレス。 </p> <p>例：I <filepath></filepath><i>&lt; <span class="filepath"> IP アドレス </span>&gt;</i> </p> </td> 
+   <td colname="col2"> <p>2つの異なるネットワークにアクセスするために2つのネットワークカードが使用可能な場合に使用するIPアドレス。 </p> <p>例：<code>IP Interface = string: &lt; IP Address &gt;</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Port </td> 
-   <td colname="col2"> <p>Insightサーバー <span class="keyword"> または </span> リピーターがリスンする、安全でない(HTTP)ポート <span class="wintitle"></span> 。 デフォルトポートは 80 です。値0を入力すると、セキュリティで保護されていない接続が無効になります。 </p> <p>例： <filepath></filepath> </p> </td> 
+   <td colname="col2"> <p>Insightサーバー <span class="keyword"> または </span> リピーターがリスンする、安全でない(HTTP)ポート <span class="wintitle"></span> 。 デフォルトポートは 80 です。値0を入力すると、セキュリティで保護されていない接続が無効になります。 </p> <p>例：<code>Port = int: 80</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL暗号 </td> 
-   <td colname="col2"> 一部の環境は、他のユーザーよりも強い通信セキュリティを必要とします。 特定のSSL暗号スイートを使用する場合は、このパラメーターを使用して指定できます。 <p>例： <filepath></filepath> </p> </td> 
+   <td colname="col2"> 一部の環境は、他のユーザーよりも強い通信セキュリティを必要とします。 特定のSSL暗号スイートを使用する場合は、このパラメーターを使用して指定できます。 <p>例：<code>SSL Ciphers = string: AES256-SHA256</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSLポート </td> 
-   <td colname="col2"> <p>Insightサーバー <span class="keyword"> または </span> リピーターがリスンする安全な（SSL経由の）ポート <span class="wintitle"></span> 。 デフォルトポートは 443 です。値0を入力すると、セキュリティで保護された接続が無効になります。 </p> <p>例：<span class="filepath"></span> </p> <filepath></filepath> </td> 
+   <td colname="col2"> <p>Insightサーバー <span class="keyword"> または </span> リピーターがリスンする安全な（SSL経由の）ポート <span class="wintitle"></span> 。 デフォルトポートは 443 です。値0を入力すると、セキュリティで保護された接続が無効になります。 </p> <p>例：<span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
