@@ -5,12 +5,15 @@ title: 信頼性の凡例
 topic: Data workbench
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 93%
 
 ---
 
 
-# Confidence legends{#confidence-legends}
+# 信頼性の凡例{#confidence-legends}
 
 信頼性の凡例は、表示されている数字が偶然によるものである可能性を判断したり、データ内に存在する可能性がある偏差を理解するのに役立ちます。
 
@@ -51,17 +54,18 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->計算の結果を分析する際は、次の点を考慮する必要があります。>
+>計算の結果を分析する際は、次の注意事項を考慮する必要があります。
 >* 数字は予測です。異なるデータセットで同じ計算を繰り返すと、異なる結果が得られます。これは、ランダム変動として知られています。
 >* より高い確率の推定は正規性の前提に依存しますが、この前提はすべての指標に対して正しいとは限りません。 そのため、確率 99 ％の値は、確率 90 ％の値より信頼性が低くなります。
+
 >
 >
 より正確な数字が必要な場合は、統計の専門家に相談してください。
 
 ## 指標または数式の変更 {#section-7f09ff84c3514f26b78d29294e1f03d9}
 
-* In the confidence legend, click in the **[!UICONTROL Metric or Formula]** field and type the desired metric or expression. 式の構文ルールについては、「クエリー言語の構 [文」を参照してくださ](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)い。
+* 信頼性の凡例で、「**[!UICONTROL 指標または数式]**」フィールド内をクリックし、目的の指標または式を入力します。式の構文ルールについては、「[クエリー言語構文](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)」を参照してください。 
 
-## Microsoft Excelにエクスポート {#section-f36e2db7273740b7af278f8a2b79d564}
+## Microsoft Excel へのエクスポート {#section-f36e2db7273740b7af278f8a2b79d564}
 
-ウィンドウの書き出しの詳細については、「ウィンドウデータの書き [出し」を参照してくださ](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)い。
+ウィンドウのエクスポートの詳細については、「ウィンドウデータの [エクスポート](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)」を参照してください。
