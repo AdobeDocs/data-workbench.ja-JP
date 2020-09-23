@@ -1,19 +1,22 @@
 ---
-description: Insightサーバーでの時間ベースのパラメーターに関する手順の形式設定を参照してください。
-solution: Insight
+description: Insightサーバーで、時間ベースのパラメーターに関する手順をフォーマットします。
+solution: Analytics
 title: タイムゾーンのコード
 uuid: dcc8aa15-5846-4f24-8b82-e25ff89871ba
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 55%
 
 ---
 
 
 # タイムゾーンのコード{#time-zone-codes}
 
-Insightサーバーでの時間ベースのパラメーターに関する手順の形式設定を参照してください。
+Insightサーバーで、時間ベースのパラメーターに関する手順をフォーマットします。
 
-の時間ベースのパラメーターのほ [!DNL Insight Server] とんどは、次の形式で指定します。
+の時間に基づくほとんどのパラメーター [!DNL Insight Server] は、次の形式で指定します。
 
 *Month DD, YYYY HH:MM:SS TimeZone*
 
@@ -25,7 +28,7 @@ UTC +hhmm *dstrules*
 
 記号（+）の部分にはプラス（+）記号かマイナス（-）記号を、*hhmm* には UTC からのオフセット（時と分）を指定します。*dstrules* は、夏時間などの時刻調整制度を導入するための一連のルールを指定する変数です（省略可能）。
 
-*dstrules*( *&lt;[!DNL dstrules]>*[!DNL .dst] )を指定する場合、Baseプロファイル（特定のデータセットに関連付けられていない設定ファイルの場合）またはデータセットプロファイル（データセット固有の設定ファイルの場合）のDataset\TimeZoneディレクトリ内に、&lt;>という名前のタブ区切りファイルが存在する必要があります。 タイムゾーンに依存しない、夏時間の一連のルールをこのファイルで指定します。一連のルールは、年度ごとに異なっていても構いません。アドビが提供している [!DNL DST.dst] ファイル（Base プロファイル内）には、2005 年エネルギー政策法（2007 年より施行）によって定められた米国の標準ルールと、それ以前の年度用の米国ルールが指定されています。
+If you specify *dstrules*, a tab-delimited file named *&lt;[!DNL dstrules]>* [!DNL .dst] must be present within the Dataset\TimeZone directory of either the Base profile (for configuration files that are not associated with a particular dataset) or the dataset profile (for configuration files that are dataset-specific). タイムゾーンに依存しない、夏時間の一連のルールをこのファイルで指定します。一連のルールは、年度ごとに異なっていても構いません。アドビが提供している [!DNL DST.dst] ファイル（Base プロファイル内）には、2005 年エネルギー政策法（2007 年より施行）によって定められた米国の標準ルールと、それ以前の年度用の米国ルールが指定されています。
 
 タイムゾーンの指定例を次に示します。
 
