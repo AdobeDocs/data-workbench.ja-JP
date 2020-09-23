@@ -1,10 +1,10 @@
 ---
-description: Insight Server Replication Serviceを実行するTargetインサイトサーバーコンピューターは、このリピーターサーバー上のログファイルを読み取れる必要があります。
-solution: Insight
+description: Insight Server Replication Serviceを実行するターゲットインサイトサーバーコンピューターは、このリピーターサーバー上のログファイルを読み取れる必要があります。
+solution: Analytics
 title: ターゲットマシンのアクセス制御の設定
 uuid: 35e032cf-6c1d-4348-88ce-4f4a6a30b16f
 translation-type: tm+mt
-source-git-commit: 0276701151d1403926ce184069526ebdf3e28e36
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 6%
@@ -14,7 +14,7 @@ ht-degree: 6%
 
 # ターゲットマシンのアクセス制御の設定{#configuring-access-control-for-target-machines}
 
-Insight Server Replication Serviceを実行するTargetインサイトサーバーコンピューターは、このリピーターサーバー上のログファイルを読み取れる必要があります。
+Insight Server Replication Serviceを実行するターゲットインサイトサーバーコンピューターは、このリピーターサーバー上のログファイルを読み取れる必要があります。
 
 ターゲットマシンへのアクセスは、 [!DNL Access Control.cfg] ファイルを使用して許可されます。
 
@@ -25,7 +25,7 @@ Insight Server Replication Serviceを実行するTargetインサイトサーバ�
    例：[!DNL D:\Adobe\Repeater\Access Control]
 
 1. メモ帳 [!DNL Access Control.cfg] などのテキストエディターで開きます。
-1. このリピーターサーバーのログファイルにアクセスする [!DNL Insight Server] 必要があるコンピューターのアクセスグループを作成します。 このアクセスグループに「レプリケーションTarget」などの名前を付けます。
+1. このリピーターサーバーのログファイルにアクセスする [!DNL Insight Server] 必要があるコンピューターのアクセスグループを作成します。 このアクセスグループに「レプリケーションターゲット」などの名前を付けます。
 
    次のファイルフラグメントは、アクセスグループの見え方を示しています。
 
