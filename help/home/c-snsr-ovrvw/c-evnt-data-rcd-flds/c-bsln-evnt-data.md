@@ -1,17 +1,20 @@
 ---
-description: Sensorによって記録されるベースラインイベントデータレコードフィールドに関する情報です。
-solution: Insight
+description: Sensorで記録される基準イベントデータレコードフィールドに関する情報です。
+solution: Analytics
 title: ベースラインイベントデータレコードフィールド
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '461'
+ht-degree: 72%
 
 ---
 
 
 # ベースラインイベントデータレコードフィールド{#baseline-event-data-record-fields}
 
-Sensorによって記録されるベースラインイベントデータレコードフィールドに関する情報です。
+Sensorで記録される基準イベントデータレコードフィールドに関する情報です。
 
 <table id="table_E29606BB010E4DB48C463979B7BEC769"> 
  <thead> 
@@ -31,7 +34,7 @@ Sensorによって記録されるベースラインイベントデータレコ�
   </tr> 
   <tr> 
    <td colname="col1"> cs(referrer) </td> 
-   <td colname="col2"> <p>クライアントによってリクエストとともにサーバーに送信された HTTP リファラー文字列。 </p> <p>例：http://www.mysite.net/cgi-bin/websearch?qry </p> <p>ページタグを使用している場合、cs(referrer)は、HTTPやHTTPなどのタグ画像を含むドキュメントの完全なURLです。 </p> <p>また、Apache（1.3、2.0および2.2）とIISセンサーを設定して、要求に使用するポートを取り込み、HTTP要求とHTTPS要求を識別できます。 </p> </td> 
+   <td colname="col2"> <p>クライアントによってリクエストとともにサーバーに送信された HTTP リファラー文字列。 </p> <p>例：http://www.mysite.net/cgi-bin/websearch?qry </p> <p>ページタグを使用している場合、cs(転送者)は、タグ画像を含むドキュメントの完全なURLです。HTTPやHTTPなどが含まれます。 </p> <p>また、Apache（1.3、2.0および2.2）とIISのセンサーを設定して、要求に使用するポートを取り込むことができます。これにより、HTTP要求とHTTPS要求を識別できます。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(user-agent) </td> 
@@ -39,15 +42,15 @@ Sensorによって記録されるベースラインイベントデータレコ�
   </tr> 
   <tr> 
    <td colname="col1"> cs-method </td> 
-   <td colname="col2"> <p>HTTPリクエストのメソッドのタイプ </p> <p>例：GET </p> <p>リファレンス：http://www.w3.org/TR/2000/NOTE-shoplogfileformat-20001115/#field_method </p> </td> 
+   <td colname="col2"> <p>HTTP要求のメソッドタイプ </p> <p>例：GET </p> <p>リファレンス：http://www.w3.org/TR/2000/NOTE-shoplogfileformat-20001115/#field_method </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs-uri-query </td> 
-   <td colname="col2"> <p>URIのクエリ文字列部分（ステム+クエリ文字列= URI） </p> <p>疑問符（?）で始まり、名前と値のペアを含んでいる場合もあります。複数のペアが含まれている場合は、アンパサンド（&amp;）で区切って指定されます。 </p> <p>例：page=homepage </p> </td> 
+   <td colname="col2"> <p>URIのクエリ文字列部分(ステム+クエリ文字列= URI) </p> <p>疑問符（?）で始まり、名前と値のペアを含んでいる場合もあります。複数のペアが含まれている場合は、アンパサンド（&amp;）で区切って指定されます。 </p> <p>例：page=homepage </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs-uri-stem </td> 
-   <td colname="col2"> <p>URIのステム部分（ステム+クエリ文字列= URI） </p> <p>ステムは、サーバー上の要求されたリソースに対する実際のパスまたは論理パスです。 </p> <p>例：/index.asp </p> </td> 
+   <td colname="col2"> <p>URIのステム部分(ステム+クエリ文字列= URI) </p> <p>ステムは、サーバー上の要求されたリソースに対する実際のパスまたは論理パスです。 </p> <p>例：/index.asp </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> sc(content-type) </td> 
@@ -55,7 +58,7 @@ Sensorによって記録されるベースラインイベントデータレコ�
   </tr> 
   <tr> 
    <td colname="col1"> sc-bytes </td> 
-   <td colname="col2"> <p>リクエストへの応答としてサーバーからクライアントに送信されたデータのバイト数。」と表示されます。 </p> <p>例：4996 </p> </td> 
+   <td colname="col2"> <p>リクエストへの応答としてサーバーからクライアントに送信されたデータのバイト数。。 </p> <p>例：4996 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> sc-status </td> 
@@ -80,4 +83,4 @@ Sensorによって記録されるベースラインイベントデータレコ�
  </tbody> 
 </table>
 
-は、ベー [!DNL data workbench server] スラインイベントデータレコードフィールドから多数の変数を取得できます。 詳しくは、『データセット設定ガイド』 *を参照してください*。
+は、ベースラインイベントデータレコードフィールドから多数の変数を取得で [!DNL data workbench server] きます。 詳しくは、『 *データセット設定ガイド*』を参照してください。
