@@ -1,10 +1,13 @@
 ---
 description: Insightサーバーコンピューターを再起動する場合は、まずInsight Serverサービスを停止する必要があります。
-solution: Insight
+solution: Analytics
 title: サービスの再起動
 uuid: fda05e5a-9527-43e0-86c8-c4adba51955c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '60'
+ht-degree: 10%
 
 ---
 
@@ -15,8 +18,8 @@ Insightサーバーコンピューターを再起動する場合は、まずInsi
 
 **推奨頻度：** 必要な場合のみ
 
-**サービスを停止する[!DNL Insight Server]には**
+**サー[!DNL Insight Server]ビスを停止するには**
 
 1. Click **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Services]**.
-1. サービスを選 [!DNL Insight Server] 択し、ボタンをクリック **[!UICONTROL Stop]** します。
-コンピューターを再起動す [!DNL Insight Server] ると、サービス [!DNL Insight Server] が自動的に開始されます。
+1. サービスを選択し、 [!DNL Insight Server] ボタンをクリックし **[!UICONTROL Stop]** ます。
+コンピューターを再起動すると、 [!DNL Insight Server] サービス [!DNL Insight Server] 開始が自動的に実行されます。
