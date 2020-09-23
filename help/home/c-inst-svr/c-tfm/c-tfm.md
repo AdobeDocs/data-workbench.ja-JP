@@ -1,19 +1,22 @@
 ---
-description: InsightサーバーFSUでの変換の設定手順を参照してください。
-solution: Insight
-title: 変形
+description: InsightサーバーFSUでの変換の設定手順を説明します。
+solution: Analytics
+title: 変換
 uuid: 17538912-caca-4953-ad84-b832be555dbf
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '41'
+ht-degree: 4%
 
 ---
 
 
-# 変形{#transform}
+# 変換{#transform}
 
-InsightサーバーFSUでの変換の設定手順を参照してください。
+InsightサーバーFSUでの変換の設定手順を説明します。
 
 >[!NOTE]
 >
->FSUを機能に設定するに [!DNL Insight] は、特別使用ライセンスが [!DNL Insight] 必要になり [!DNL Transform] ます。 詳しくは、アドビカスタマーケアにお問い合わせください。
+>FSUを [!DNL Insight][!DNL Insight][!DNL Transform] 機能に設定するには、特別使用ライセンスが必要です。 詳しくは、Adobeカスタマーケアにお問い合わせください。
 
