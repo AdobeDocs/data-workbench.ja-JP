@@ -1,26 +1,29 @@
 ---
-description: ExpCookieURLパラメータを使用して、制御されたテストが正しく動作しているかどうかをテストできます。
-solution: Insight,Analytics
-title: ExpCookieURLパラメータの変更（オプション）
+description: ExpCookieURLパラメータを使用して、制御対象のテストが適切に動作しているかどうかをテストできます。
+solution: Analytics,Analytics
+title: ExpCookieURL パラメーターの変更（オプション）
 topic: Data workbench
 uuid: 0c160c26-f9de-4e41-a05d-bf7bb32395bb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 6%
 
 ---
 
 
-# ExpCookieURLパラメータの変更（オプション）{#modifying-the-expcookieurl-paramter-optional}
+# ExpCookieURL パラメーターの変更（オプション）{#modifying-the-expcookieurl-paramter-optional}
 
-ExpCookieURLパラメータを使用して、制御されたテストが正しく動作しているかどうかをテストできます。
+ExpCookieURLパラメータを使用して、制御対象のテストが適切に動作しているかどうかをテストできます。
 
-このパラメーターは、要求されたときに指定したテストとグループに配置され、Webサイトのルートにリダイレクトされる仮想ページのURLを定義します。 この時点から、テストの最後まで、指定したテストとグループの一部となります。
+このパラメーターは、要求されたときに指定したテストおよびグループに配置され、Webサイトのルートにリダイレクトされる仮想ページのURLを定義します。 その時点から、テストの最後まで、指定したテストとグループの一部となります。
 
-このパラメーターのデフォルトのペ [!DNL setcookie.htm]ージはですが、任意の有効な仮想URLを使用できます。
+このパラメーターのデフォルトのページはです [!DNL setcookie.htm]が、任意の有効な仮想URLを使用できます。
 
 >[!NOTE]
 >
->これは仮想URLであり、実際のページや既存のコンテンツではない。 Webサーバー上の指定されたパスに、指定された名前のファイルは存在しません。
+>仮想URLを指定し、実際のページや既存のコンテンツの一部ではない必要があります。 指定したパスに、指定した名前のファイルはWebサーバー上に存在しない必要があります。
 
 ExpCookieURLパラメータの例を次に示します。
 
