@@ -1,18 +1,21 @@
 ---
-description: Transformを設定した後、他のアプリケーションで使用できるようにログソースデータを書き出すように設定する必要があります。
-solution: Insight
+description: 変換を設定した後、他のアプリケーションで使用できるように、ログソースデータをエクスポートするように設定する必要があります。
+solution: Analytics
 title: 次の手順
 uuid: 359f24da-6367-4992-9153-66d872ed6b21
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '115'
+ht-degree: 3%
 
 ---
 
 
 # 次の手順{#next-steps}
 
-Transformを設定した後、他のアプリケーションで使用できるようにログソースデータを書き出すように設定する必要があります。
+変換を設定した後、他のアプリケーションで使用できるように、ログソースデータをエクスポートするように設定する必要があります。
 
-設定す [!DNL Transform]るには、イベントデータを書き出すプロファイルのフォルダー内の[!DNL [!DNL Insight] Transform.cfg]ファイルと[!DNL [!DNL Insight][!DNL Dataset] Transform Mode.cfg]ファイルを編集します。 設定手順については、『データセット設 [!DNL Transform] 定ガイド』の章 *を参照してください*。
+構成を行う [!DNL Transform]には、イベントデータを書き出すプロファイルーのフォル [!DNL Insight] ダー内にある[!DNL [!DNL Insight] Transform.cfg]ファイルと[!DNL [!DNL Dataset] Transform Mode.cfg]ファイルを編集します。 設定手順については、『 [!DNL Transform] データセット設定ガイド **』の章を参照してください。
 
-プロファイルのイベントデ [!DNL Transform] ータを書き出す設定を行うと、「詳細なステータス」インターフェイスにメモリ使用量の情報が表示されます。 For more information, see the Administrative Interfaces chapter of the * [!DNL Insight] User Guide*.
+プロファイルのイベントデータを書き出すように設定 [!DNL Transform] したら、詳細ステータスインターフェイスで表示のメモリ使用量を設定できます。 For more information, see the Administrative Interfaces chapter of the * [!DNL Insight] User Guide*.
