@@ -1,48 +1,51 @@
 ---
-description: アドビが特定のアプリケーション用に開発したプロファイルと参照ファイルは、データセットの分析を可能にする指標、ディメンションおよびワークスペースを提供する内部プロファイルです。
-solution: Insight
+description: Adobeが特定のアプリケーション用に開発したプロファイルとルックアップファイルは、データセットの分析を可能にする指標、ディメンション、ワークスペースを提供する内部プロファイルです。
+solution: Analytics
 title: プロファイルと参照ファイルのインストール
 uuid: edc670a6-ebc9-4a20-a66f-81dd4adf7433
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 5%
 
 ---
 
 
 # プロファイルと参照ファイルのインストール{#installing-profiles-and-lookup-files}
 
-アドビが特定のアプリケーション用に開発したプロファイルと参照ファイルは、データセットの分析を可能にする指標、ディメンションおよびワークスペースを提供する内部プロファイルです。
+Adobeが特定のアプリケーション用に開発したプロファイルとルックアップファイルは、データセットの分析を可能にする指標、ディメンション、ワークスペースを提供する内部プロファイルです。
 
-アドビが提供する他のすべての内部プロファイルと同様に、これらのプロファイルは変更しないでください。 すべてのカスタマイズは、お客様のデータセットまたはお客様が作成する役割に特有のプロファイルまたはその他のプロファイルで行う必要があります。
+Adobeが提供する他のすべての内部プロファイルと同様に、これらのプロファイルは変更しないでください。 すべてのカスタマイズは、お客様のデータセットまたはお客様が作成する役割に特有のプロファイルまたはその他のプロファイルで行う必要があります。
 
-アドビでは、アプリケーションのプロファイルと参照ファイルをファイルとして配布 [!DNL .zip] しています。 各zipファイルには、そのファイルに含まれるプロファイルと参照ファイルを持つアプリケーションの名前が付けられます。 (例えば、にはSite v5.2 [!DNL Site52.zip] のプロファイルファイルが含まれています)。このファ [!DNL .zip] イルには2つのフォルダー(お [!DNL Lookups] よび [!DNL Profiles])が含まれます。
+Adobeは、アプリケーションのプロファイルファイルと参照ファイルを [!DNL .zip] ファイルとして配布します。 各zipファイルには、そのファイルに含まれるプロファイルファイルと参照ファイルを持つアプリケーションの名前が付けられます。 (例えば、Site v5.2のプロファイルファイル [!DNL Site52.zip] が含まれている場合)。 この [!DNL .zip] ファイルには2つのフォルダー( [!DNL Lookups] および [!DNL Profiles])が含まれています。
 
 >[!NOTE]
 >
->アプリケーションのプロファイルと参照ファイルを含むインストールファイルがまだない場合は、開始する前にアドビのFTPサイトからダウンロードしてください。
+>アプリケーションのプロファイルと参照ファイルが含まれているインストールファイルがまだない場合は、まずAdobeのFTPサイトからダウンロードしてください。
 
-データセットプロファイルを処理し実行するコンピューターに、プロファ [!DNL Insight Server] イルとその参照ファイルをインストールする必要があります。 クラスターを実行している場 [!DNL Insight Server] 合は、マスターサーバーにファイルをインストールする必要があります。 For information about dataset profiles, see the *Dataset Configuration Guide*.
+データセットプロファイルを処理する [!DNL Insight Server] マシンにプロファイルとそのルックアップファイルをインストールし、実行する必要があります。 クラスターを実行している場合は、マスターサーバーにファイルをインストールする必要があり [!DNL Insight Server] ます。 For information about dataset profiles, see the *Dataset Configuration Guide*.
 
-**アドビアプリケーション用のプロファイルをインストールするには**
+**Adobeアプリケーション用のプロファイルをインストールするには**
 
-1. アドビから [!DNL Profiles] 提供されたファ [!DNL .zip] イルからフォルダーを開きます。
+1. Adobeから提供された [!DNL Profiles] フ [!DNL .zip] ァイルからフォルダを開きます。
 
-1. ファイル内のフォルダー内のすべてのフ [!DNL Profiles] ォルダーを、イ [!DNL .zip] ンストールディレクトリ [!DNL Profiles] 内のフォルダーにコ [!DNL Insight Server] ピーします。 [!DNL ...\Profiles\]*&lt;[!DNL internal profile name]>フ*[!DNL Insight Server] ォルダーを作成します。 実際のプロファイル名は異なる場合があります。
+1. ファイル内のフォルダー内のすべてのフォルダーを、インストー [!DNL Profiles] ルディレクトリ内 [!DNL .zip] のフォルダーにコピーし [!DNL Profiles][!DNL Insight Server] ます。 次の例に示すように&#x200B; [!DNL ...\Profiles\]*、[!DNL internal profile name]&lt;* > [!DNL Insight Server] フォルダーを使用して終了します。 実際のプロファイル名は異なる場合があります。
 
    ![](assets/win_installprofiles.png)
 
-1. インストールしたディレクトリ内の[!DNL Profiles\]*&lt;[!DNL dataset profile name]>* フォルダーに移動し、このディレク [!DNL Insight Server] トリ [!DNL profile.cfg] 内のファイルを探します。
+1. インストールしたディレクトリ内の&#x200B; [!DNL Profiles\]*&lt;[!DNL dataset profile name]>* フォルダーに移動し [!DNL Insight Server] 、このディレクトリ内の [!DNL profile.cfg] ファイルを探します。
 
    >[!NOTE]
    >
-   >初めてプロファイルをインストールする場合は、提供されたSampleプロファイルをデータセットプロファイルとして使用できます。 Sampleプロファイルのフ [!DNL profile.cfg] ァイル（名前は、など）は、インスト [!DNL profile.cfg.offline]ールディレクトリ内のフォルダー内にあ [!DNL Profiles\Sample] ります(この名前は [!DNL Insight Server] 次のようになります)。
+   >初めてプロファイルをインストールする場合は、付属のサンプルプロファイルをデータセットプロファイルとして使用できます。 Sampleプロファイルの [!DNL profile.cfg] ファイル(名前は、など [!DNL profile.cfg.offline])は、インストールディレクトリ内の [!DNL Profiles\Sample][!DNL Insight Server] フォルダにあります。
 
-1. メモ帳など [!DNL profile.cfg] のテキストエディターを使用してファイルを開き、次の操作を行います。
+1. メモ帳などのテキストエディターを使用して [!DNL profile.cfg] ファイルを開き、次の操作を行います。
 
-   1. Directoriesベクトルに内部プロファイルのエントリを追加します。 プロファイル名は、コンピューター上のフォルダーにコピーしたディレク [!DNL Profiles] トリの名前に対応し [!DNL Insight Server] ます。
+   1. Directoriesベクトル内の追加内部プロファイルのエントリ。 プロファイル名は、コンピューター上のフォルダーにコピーしたディレクトリの名前に対応 [!DNL Profiles] し [!DNL Insight Server] ます。
 
-   1. 必要に応じて、ディレクトリの数を更新します。
-   1. 次に示すように、このファイルの「共通名」行にサーバの共通名を追加します。
+   1. 必要に応じてディレクトリ数を更新します。
+   1. 次追加に示すように、このファイルの「共通名」行に対するサーバーの共通名。
 
       ```
       Profile = profileInfo: 
@@ -60,15 +63,15 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 
       >[!NOTE]
       >
-      >ファ *イル内の共通名に* 指定するserverCommonNameは、データセットプロファイルを処理し実行するマシンのサー [!DNL profile.cfg][!DNL Insight Server] バー共通名に対応しています。 データセットプロファイルをク [!DNL profile.cfg] ラスター上で実行するように更新する手順につい [!DNL Insight Server] ては、「 [Insight Server Clusters](../../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-abt-ins-svr-clsters.md)」を参照してください。
+      >フ *ァイルの共通名に指定するserverCommonName* は、データセットプロファイルを処理して実行する [!DNL profile.cfg][!DNL Insight Server] マシンのサーバー共通名に対応しています。 データセットプロファイルがクラスター上で実行さ [!DNL profile.cfg] れるように更新する手順については、「 [!DNL Insight Server] Insight Server Clusters [](../../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-abt-ins-svr-clsters.md)」を参照してください。
 
-1. ファイルを保存します。ファイル名が変わったかのように、必ずフ [!DNL profile.cfg] ァイルを保存してください。
+1. ファイルを保存します。ファイル名が変わっているかのように、必ずファイル [!DNL profile.cfg] を保存してください。
 
-**アドビアプリケーションの参照ファイルをインストールするには**
+**Adobeアプリケーションの参照ファイルをインストールするには**
 
-1. アドビから [!DNL Lookups] 提供されたファ [!DNL .zip] イルからフォルダーを開きます。
+1. Adobeから提供された [!DNL Lookups] フ [!DNL .zip] ァイルからフォルダを開きます。
 
-1. ファイル内のフォルダー内のすべてのフ [!DNL Lookups] ォルダーを、イ [!DNL .zip] ンストールディレクトリ [!DNL Lookups] 内のフォルダーにコ [!DNL Insight Server] ピーします。 [!DNL ...\Lookups\]*&lt;[!DNL internal profile name]>フ*[!DNL Insight Server] ォルダーを作成します。 実際のプロファイル名は異なる場合があります。
+1. ファイル内のフォルダー内のすべてのフォルダーを、インストー [!DNL Lookups] ルディレクトリ内 [!DNL .zip] のフォルダーにコピーし [!DNL Lookups][!DNL Insight Server] ます。 次の例に示すように&#x200B; [!DNL ...\Lookups\]*、[!DNL internal profile name]&lt;* > [!DNL Insight Server] フォルダーを使用して終了します。 実際のプロファイル名は異なる場合があります。
 
    ![](assets/win_installLookups.png)
 
