@@ -1,18 +1,18 @@
 ---
 description: Insightサーバークラスターは、Insightおよびレポートのユーザーが処理し、アクセスできるようにするデータの量が、単一のInsightサーバーの容量を超える場合に必要です。
-solution: Insight
-title: Insight Server Clustersについて
+solution: Analytics
+title: Insight サーバークラスターについて
 uuid: d65e0fe5-f87d-4d8e-a208-9192e9d62fb5
 translation-type: tm+mt
-source-git-commit: 2c1b2adfe8bf479c2a8cbd150ed006be2336022c
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
 workflow-type: tm+mt
 source-wordcount: '320'
-ht-degree: 8%
+ht-degree: 11%
 
 ---
 
 
-# Insight Server Clustersについて{#about-insight-server-clusters}
+# Insight サーバークラスターについて{#about-insight-server-clusters}
 
 Insightサーバークラスターは、Insightおよびレポートのユーザーが処理し、アクセスできるようにするデータの量が、単一のInsightサーバーの容量を超える場合に必要です。
 
@@ -22,7 +22,7 @@ Insightサーバークラスターは、Insightおよびレポートのユーザ
 
 >[!NOTE]
 >
->FSU( [!DNL Insight Server] ファイルサーバーユニット)を使用する場合は、FSUをマスターとして設定することをお勧めし [!DNL Insight Server]ます。 FSUの設定について詳しくは、『 *データセット設定ガイド*』を参照してください。
+>FSU( [!DNL Insight Server] ファイルサーバーユニット)を使用する場合は、FSUをマスターとして設定することをAdobeにお勧めし [!DNL Insight Server]ます。 FSUの設定について詳しくは、『 *データセット設定ガイド*』を参照してください。
 
 マスターは、クラスター内の他のサーバー(処理サーバー、場合によってはクエリサーバー) [!DNL Insight Server] とおよびのインスタンス間の通信 [!DNL Insight Servers] を管理 [!DNL Insight][!DNL Report]します。 特定のデータセットに対して、ログファイルの処理は、設定ファイルに指定された（1つ以上の）指定 [!DNL Insight Servers] された（マスターまたは処理）データに対して行われ [!DNL Insight Server] ます。 クラスター環境で作業する場合、 [!DNL Insight] インストールはマスターにアクセスするように設定され [!DNL Insight Server]ますが、クエリはクラスター [!DNL Insight Servers] 内の任意のユーザーが処理できます。
 
@@ -41,4 +41,4 @@ Insightサーバークラスターは、Insightおよびレポートのユーザ
 
 >[!IMPORTANT]
 >
->この章の説明は、5を超えるクラスターを作成する場合には適用されません( [!DNL Insight Server] 5) [!DNL Insight Servers]。 必要システム構成と、5を超えるクラスターのプロファイル構成の推奨事項を入手するには、アドビにお問い合わせくだ [!DNL Insight Servers]さい。
+>この章の説明は、5を超えるクラスターを作成する場合には適用されません( [!DNL Insight Server] 5) [!DNL Insight Servers]。 Adobeに問い合わせて、システム要件と、5を超えるクラスターのプロファイル構成の推奨事項を入手してくだ [!DNL Insight Servers]さい。
