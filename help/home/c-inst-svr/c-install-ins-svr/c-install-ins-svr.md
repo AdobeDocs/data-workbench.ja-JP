@@ -1,18 +1,21 @@
 ---
-description: Insightサーバーは、サーバーコンピューターごとにライセンスされます。
-solution: Insight
-title: Data Workbenchサーバーのインストール
+description: Insight Serverは、サーバーコンピューターごとにライセンスが付与されます。
+solution: Analytics
+title: Data Workbench サーバーのインストール
 uuid: d6a64a6e-a463-4980-b836-45017fab6e7e
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '75'
+ht-degree: 10%
 
 ---
 
 
-# Data Workbenchサーバーのインストール{#installing-data-workbench-servers}
+# Data Workbench サーバーのインストール{#installing-data-workbench-servers}
 
-Insightサーバーは、サーバーコンピューターごとにライセンスされます。
+Insight Serverは、サーバーコンピューターごとにライセンスが付与されます。
 
-アドビアプリケーションの多くの実装では、の1つのインストールのみが [!DNL Insight Server] 必要です。ただし、最初のク [!DNL Insight Servers] ラスターを作成するために、追加のを追加することもで [!DNL Insight Server] きます。
+多くのAdobeアプリケーションの実装では、の1つのインストールのみが必要 [!DNL Insight Server] です。ただし、最初のクラスターを作成するた [!DNL Insight Servers] めに、最初のクラスターに追加することもで [!DNL Insight Server] きます。
 
-この節では、単一のデータ処理ユニット(DPU) [!DNL Insight Server] またはファイルサーバーユニット(FSU)をインストールする方法について説明します。 クラスターのインストールおよび設定手順については、 [!DNL Insight Server] 「 [Insight Server Clusters](../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-abt-ins-svr-clsters.md)」を参照してください。
+この節では、1つの [!DNL Insight Server] データ処理ユニット(DPU)またはファイルサーバーユニット(FSU)をインストールする方法について説明します。 クラスターのインストールと設定の手順については、「 [!DNL Insight Server][Insightサーバークラスター](../../../home/c-inst-svr/c-install-ins-svr/c-ins-svr-clstrs/c-abt-ins-svr-clsters.md)」を参照してください。
