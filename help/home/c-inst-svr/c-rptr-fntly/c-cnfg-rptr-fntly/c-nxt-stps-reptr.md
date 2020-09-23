@@ -1,19 +1,22 @@
 ---
-description: リピータ機能のインストールを完了する手順です。
-solution: Insight
+description: リピータ機能のインストールを完了する手順。
+solution: Analytics
 title: 次の手順
 uuid: 74ac9ef3-11c2-4af0-9901-edbbcc8ac0fb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '70'
+ht-degree: 5%
 
 ---
 
 
 # 次の手順{#next-steps}
 
-リピータ機能のインストールを完了する手順です。
+リピータ機能のインストールを完了する手順。
 
-* データの収集元のサーバーに、『* [!DNL Sensors][!DNL Insight] Sensor Guide*』の説明に従ってをインストールし、リピーターサーバーにデータを送信します。
+* データの収集元のサーバーに、『* [!DNL Sensors][!DNL Insight] Sensor Guide*』の説明に従ってをインストールし、データをリピーターサーバーに送信します。
 
-* FSUにサービスをインストールする手順につ [!DNL Replication Service] いては [!DNL Insight Server]、「 [Insight Server Replication Service](../../../../home/c-inst-svr/c-ins-svr-rep-svc/c-ins-svr-rep-svc.md#concept-926e654e80d943a0b6ac44a82a510d92) 」を参照してくださ [!DNL Insight Server] い。
+* forを設定していない場合は、「 [!DNL Replication Service] Insight Server Replication Service [!DNL Insight Server][」を参照して、](../../../../home/c-inst-svr/c-ins-svr-rep-svc/c-ins-svr-rep-svc.md#concept-926e654e80d943a0b6ac44a82a510d92)[!DNL Insight Server] FSUにサービスをインストールする手順を確認してください。
 
