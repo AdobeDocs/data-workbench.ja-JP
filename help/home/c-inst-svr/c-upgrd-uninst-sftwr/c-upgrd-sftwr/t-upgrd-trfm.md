@@ -1,10 +1,13 @@
 ---
 description: Transformフォルダーをアップグレードする手順です。
-solution: Insight
+solution: Analytics
 title: 変換のアップグレード
 uuid: 26e567bc-7571-4317-b77c-2631a163a4b5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+workflow-type: tm+mt
+source-wordcount: '73'
+ht-degree: 5%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 Transformフォルダーをアップグレードする手順です。
 
-1. リリースパッ [!DNL .zip] ケージのフ [!DNL Insight Server] ァイルを開き、そのファイ [!DNL Profiles] ル内のフォルダーを開 [!DNL .zip] きます。
-1. インストールデ [!DNL Transform] ィレクトリ内の [!DNL Profiles] フォルダにフォルダをコ [!DNL Insight Server] ピーします。 この操作を行うと、既存のフォルダーが上書き [!DNL Transform] されます。
-1. プロファイルを継承する各プロフ [!DNL Transform] ァイルに対して、ファイル [!DNL profile.cfg] のDirectoriesベクトルに「Transform」エントリがあることを確認します。
+1. リリースパッケージの [!DNL .zip] ファイルを開き、そのフ [!DNL Insight Server] ァイル内の [!DNL Profiles][!DNL .zip] フォルダーを開きます。
+1. インストー [!DNL Transform] ルディレクトリ内の [!DNL Profiles] フォルダーにフォルダーをコピー [!DNL Insight Server] します。 これを行うと、既存の [!DNL Transform] フォルダーが上書きされます。
+1. プロファイルを継承する各プロファイルについて、 [!DNL Transform] ベクトル内に「Transform」エントリがあることを [!DNL profile.cfg] 確認します。
 データの再処理は、プロファイルの同期後に開始されます。
