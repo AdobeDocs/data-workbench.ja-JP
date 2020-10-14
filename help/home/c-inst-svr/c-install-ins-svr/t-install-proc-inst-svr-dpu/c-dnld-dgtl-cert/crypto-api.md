@@ -1,25 +1,25 @@
 ---
-description: Windowsの証明書ストアでは、クライアントの証明書と秘密鍵をWindowsの証明書ストアに保存し、サーバーとのSSL通信を可能にします。
+description: Windows 証明書ストアを使用すると、サーバーとの SSL 通信のために、クライアントの証明書と秘密鍵を Windows 証明書ストアに格納できます。
 title: Windows 証明書ストア
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: a766b64ef809e2223fed869d8d63b75f270a3d39
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1000'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 
-# Windows 証明書ストア{#windows-certificate-store}
+# Windows 証明書ストア {#windows-certificate-store}
 
-Windowsの証明書ストアでは、クライアントの証明書と秘密鍵をWindowsの証明書ストアに保存し、サーバーとのSSL通信を可能にします。
+Windows 証明書ストアを使用すると、サーバーとの SSL 通信のために、クライアントの証明書と秘密鍵を Windows 証明書ストアに格納できます。
 
 クライアント向けの Windows 証明書ストアは新しい機能で、SSL 通信証明書および秘密鍵を、`Insight/Certificates/<CertName>.pem` ファイルではなく、Windows 証明書ストアに格納できます。Windows 証明書ストアの使用は、他のアプリケーションに証明書ストアを使用する場合、および 1 か所で証明書管理を行いたい場合に適しています。また、Windows 証明書ストアが提供するその他の Windows 監査ログを使用したいユーザーに適しています。
 
 >[!NOTE]
 >
->Licensing with the license server is still maintained using the existing `<Common Name>.pem` file, and that the certificate obtained from the certificate store will only be used for communication to the servers that you specify.
+>ライセンスサーバーを使用したライセンスは、既存の `<Common Name>.pem` ファイルを使用して管理されており、証明書ストアから取得した証明書は、指定したサーバーとの通信にのみ使用されます。
 
 ## 前提条件 {#section-69b18600052145ff8e5299b7123e69c5}
 
@@ -34,7 +34,7 @@ Windowsの証明書ストアでは、クライアントの証明書と秘密鍵�
 
 **手順 1：ユーザーの SSL 証明書および秘密鍵を Windows 証明書ストアに読み込む。**
 
-イン[カスタム証明書の使用](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd)で、SSL 証明書および鍵を次のディレクトリに配置するように指示されます。
+ [カスタム証明書の使用](../../../../../home/c-inst-svr/c-install-ins-svr/t-install-proc-inst-svr-dpu/c-dnld-dgtl-cert/using-custom-certificates-dwb.md#concept-ee6a9b5015f84a0ba64a11428b0a72dd)で、SSL 証明書および鍵を次のディレクトリに配置するように指示されます。
 
 ```
 < 
@@ -43,9 +43,9 @@ Windowsの証明書ストアでは、クライアントの証明書と秘密鍵�
 </filepath>>\Certificates\
 ```
 
-証明書の名前は `<Common Name>.pem` (例えば、 [!DNL Analytics Server 1.pem] ( [!DNL trust_ca_cert.pem] ファイルではなく)です。
+証明書の名前は `<Common Name>.pem`（[!DNL Analytics Server 1.pem] など）になります（[!DNL trust_ca_cert.pem] ファイルではありません）。
 
-証明書および秘密鍵が読み込めるようになる前に、.[!DNL pem] の形式を、などの [!DNL .pfx] 形式に変更し [!DNL pkcs12.pfx] ます。
+証明書と秘密鍵が読み込めるようになる前に、.[!DNL pem] 形式から [!DNL .pfx] 形式（[!DNL pkcs12.pfx] など）に変換しておく必要があります）。
 
 1. コマンドプロンプトまたはターミナルを開き、次のディレクトリに移動します。
 
@@ -53,7 +53,7 @@ Windowsの証明書ストアでは、クライアントの証明書と秘密鍵�
    <CommonName>.pem c: cd \<DWB Install folder \Certificates
    ```
 
-1. Run [!DNL openssl] with the following arguments (with the actual [!DNL .pem] file name):
+1. 次の引数（および実際の [!DNL openssl] ファイル名）で [!DNL .pem] を実行します。
 
    ```
    openssl pkcs12 -in "<Common Name>.pem" -export -out "<Common Name>.pfx"
@@ -72,7 +72,7 @@ Windowsの証明書ストアでは、クライアントの証明書と秘密鍵�
 
    ![](assets/6_5_crypto_api_4.png)
 
-1. Click **Browse** and select the `<CommonName>.pfx` file you created previously. ファイル拡張子ドロップダウンボックスを X.509 証明書から **Personal Information Exchange** または&#x200B;**すべてのファイル**&#x200B;のどちらかに変更する必要があります。
+1. 「**参照**」をクリックし、以前作成した `<CommonName>.pfx` ファイルを選択します。ファイル拡張子ドロップダウンボックスを X.509 証明書から **Personal Information Exchange** または&#x200B;**すべてのファイル**&#x200B;のどちらかに変更する必要があります。
 
    ファイルを選択して、「**開く**」をクリックし、「**次へ**」をクリックします。
 
@@ -88,7 +88,7 @@ Windowsの証明書ストアでは、クライアントの証明書と秘密鍵�
 
    >[!NOTE]
    >
-   >Pay particular attention to the **Issued To** and **Issued By** fields. これらは、次の手順で必要になります。
+   >「**発行先**」および「**発行者**」フィールドには特に注意を払います。これらは、次の手順で必要になります。
 
 **手順 2：Insight.cfg ファイルを編集する。**
 
@@ -110,9 +110,9 @@ Windowsの証明書ストアでは、クライアントの証明書と秘密鍵�
 
    >[!NOTE]
    >
-   >The name &quot;Personal&quot; in the Certificate Manager (certmgr.msc) actually refers to the certificate store named **My.**&#x200B;その結果、推奨のとおりに SSL 通信証明書および鍵（.PFX）を「**個人**」証明書ストアにインポートする場合、**SSL CryptoAPI Cert Store Name** 文字列を &quot;My&quot; に設定する必要があります。このパラメーターを &quot;Personal&quot; に設定すると、機能しなくなります。これは、Windows 証明書ストアに独特のものです。
+   >証明書マネージャー（certmgr.msc）の「個人」という名前は、実際は「My」という名前の証明書ストアを参照しています&#x200B;**。**&#x200B;その結果、推奨のとおりに SSL 通信証明書および鍵（.PFX）を「**個人**」証明書ストアにインポートする場合、**SSL CryptoAPI Cert Store Name** 文字列を &quot;My&quot; に設定する必要があります。このパラメーターを &quot;Personal&quot; に設定すると、機能しなくなります。これは、Windows 証明書ストアに独特のものです。
 
-   事前定義されたシステムストアの完全なリストについては、次の場所から入手できます：[ https://msdn.microsoft.com/ja-jp/library/windows/desktop/aa388136(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136%28v=vs.85%29.aspx)。お使いのシステムには、その他の証明書ストアがある場合があります。「個人」（**My** など）以外のストアを使用したい場合、証明書ストアの正規名を入手し、[!DNL Insight.cfg] ファイルに指定する必要があります。（システムストア名「My」は、Windows ドキュメントでは、「My」および「MY」と一貫性なく呼ばれています。このパラメーターは、大文字と小文字が区別されないようです。）
+   事前定義されたシステムストアの完全なリストについては、次の場所から入手できます：[https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/windows/desktop/aa388136%28v=vs.85%29.aspx)。お使いのシステムには、その他の証明書ストアがある場合があります。「個人」（**My** など）以外のストアを使用したい場合、証明書ストアの正規名を入手し、[!DNL Insight.cfg] ファイルに指定する必要があります。（システムストア名「My」は、Windows ドキュメントでは、「My」および「MY」と一貫性なく呼ばれています。このパラメーターは、大文字と小文字が区別されないようです。）
 
 1. これらのパラメーターを追加して、値が Windows 証明書マネージャーのリストと一致するのを検証したら、[!DNL Insight.cfg] ファイルを保存します。
 
@@ -128,4 +128,4 @@ ERROR Fatal error: the cert could not be found!
 
 >[!NOTE]
 >
->The L4 logging framework can be enabled by setting up the [!DNL L4.cfg] file (see your account manager to set this up).
+>L4 ログフレームワークを有効にするには、[!DNL L4.cfg] ファイルをセットアップします（セットアップ方法についてはアカウントマネージャーにお問い合わせください）。
