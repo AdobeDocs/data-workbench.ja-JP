@@ -3,11 +3,11 @@ cloud: experience-cloud
 product: analytics
 audience: end-user
 user-guide-title: Data Workbench ヘルプ
-user-guide-description: Learn about the multi-channel capabilities of Data Workbench. Includes Data Workbench Client, Installation, Dataset Configuration guides, and more.
-translation-type: ht
+user-guide-description: Data Workbench のマルチチャネル機能について学びます。Data Workbench クライアント、インストール、データセット設定ガイドなどが含まれます。
+translation-type: tm+mt
 source-git-commit: 53e6b7b96e7addd848a00691163878846b22b4c6
-workflow-type: ht
-source-wordcount: '3518'
+workflow-type: tm+mt
+source-wordcount: '3536'
 ht-degree: 100%
 
 ---
