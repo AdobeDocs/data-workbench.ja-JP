@@ -1,11 +1,14 @@
 ---
 description: ログソースは、データセット構築用の元データを含むファイルです。
 solution: Analytics
-title: Log Sources
+title: ログソース
 topic: Data workbench
 uuid: ea21c3d7-9188-4ba8-bacd-052d678bd799
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '3664'
+ht-degree: 84%
 
 ---
 
@@ -16,14 +19,14 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 各データレコードが 1 件のトランザクションレコードまたは 1 回のイベントの発生を表していることから、ログソース内のデータは「イベントデータ」と呼ばれます。The data workbench server can process log sources that are derived from data collected by [!DNL Sensors] or extracted from other data sources.
 
-* **Data Collected by [!DNL Sensors]: ** Data collected by [!DNL Sensors] from HTTP and application servers is transmitted to data workbench servers, which convert the data into highly compressed log ( [!DNL .vsl]) files. Sensor Filesを参 [照してください](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-b25f11c477b54032a15b6117b3bf9009)。
+* **Data Collected by [!DNL Sensors]: ** Data collected by [!DNL Sensors] from HTTP and application servers is transmitted to data workbench servers, which convert the data into highly compressed log ( [!DNL .vsl]) files. 詳しくは、 [Sensorファイルを参照してください](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-b25f11c477b54032a15b6117b3bf9009)。
 
-* **Insight サーバーによって抽出されたデータ：** Data Workbench サーバーは、フラットファイルや XML ファイル、ODBC 準拠のデータベースからイベントデータを読み取り、デコーダーを使用して、データから目的のエレメントを抽出します。そうしたイベントデータは、メモリに常駐している必要はありませんが、イベントデータを含んでいるレコードには追跡 ID が格納されている必要があります。詳しくは、 ログフ [ァイル](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e)、 [XMLログソース](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-c7b154e93748447b986e97f6ef688887)、 [ODBCデータソース](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3)。
+* **Insight サーバーによって抽出されたデータ：** Data Workbench サーバーは、フラットファイルや XML ファイル、ODBC 準拠のデータベースからイベントデータを読み取り、デコーダーを使用して、データから目的のエレメントを抽出します。そうしたイベントデータは、メモリに常駐している必要はありませんが、イベントデータを含んでいるレコードには追跡 ID が格納されている必要があります。詳しくは、 [ログファイル](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e)、 [XMLログソース](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-c7b154e93748447b986e97f6ef688887)、 [ODBCデータソース](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3)。
 
 **ログソースを追加するには**
 
 1. Open [!DNL Log Processing.cfg] in data workbench.
-1. 右クリックし、 **[!UICONTROL Log Sources]**&#x200B;をクリックしま **[!UICONTROL Add New]**&#x200B;す。
+1. 右クリック **[!UICONTROL Log Sources]**&#x200B;して、をクリックし **[!UICONTROL Add New]**&#x200B;ます。
 
 1. 次のいずれかを選択します。
 
@@ -43,9 +46,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    >[!NOTE]
    >
-   >A data workbench server [!DNL File Server Unit] can receive and store [!DNL Sensor] files, log files, and XML files and serve them to the data workbench server&#39;s [!DNL Data Processing Units] that construct the dataset. Insightサーバ [ーのファイルサーバーユニットの設定を参照してくださ](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d)い。
+   >A data workbench server [!DNL File Server Unit] can receive and store [!DNL Sensor] files, log files, and XML files and serve them to the data workbench server&#39;s [!DNL Data Processing Units] that construct the dataset. Insightサーバーのファイルサーバーユニットの [設定を参照してください](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d)。
 
-   You can open the configuration of any log source from a [!DNL Transformation Dependency Map]. 詳しくは、データセッ [!DNL Transformation Dependency Map]ト設定ツー [ルを参照してください](../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5)。
+   You can open the configuration of any log source from a [!DNL Transformation Dependency Map]. 詳しくは、「 [!DNL Transformation Dependency Map]データセット設定ツール [](../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5)」を参照してください。
 
 <!--
 c_sensor_files.xml
@@ -77,15 +80,15 @@ YYYYMMDD はファイルの日付で、*SENSORID* は、データを収集して
      <ul id="ul_AE144ED0FAB94FE8B32599A058659DE1"> 
       <li id="li_1E4E4CFD72C34B5EB71A3C59877950A9"> 「*」は、任意の数の文字と一致します。 </li> 
       <li id="li_4664400FC12E44B39B28438B85D20ED8"> 「?」は、単一の文字と一致します。 </li> 
-     </ul> </p> <p> 例えば、<span class="filepath">Logs\*.vsl</span> というパスは、Logs ディレクトリ内の、<span class="filepath">.vsl</span> で終わるすべてのファイルと一致します。<span class="filepath">Logs\*-SENSOR?.vsl</span> というパスは、任意の日付（YYYYMMDD）を持ち、SENSOR の後に 1 文字続く（SENSOR1 など）、Logs ディレクトリ内のファイルと一致します。 </p> <p> 指定したパスのすべてのサブディレクトリを検索対象にしたい場合は、Recursive パラメーターを true に設定する必要があります。 </p> <p> <p>注意：Data Workbench サーバーの<span class="wintitle">ファイルサーバーユニット</span>からファイルを読み取る場合、適切な URI を Log Paths パラメーターに入力する必要があります。例えば、<span class="filepath">/Logs/*-*.vsl</span> という URI は、Logs ディレクトリ内のすべての <span class="filepath">.vsl</span> ファイルと一致します。Insightサーバ <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> ーのファイルサーバーユニットの設定を参照してください</a>。 </p> </p> </td> 
+     </ul> </p> <p> 例えば、<span class="filepath">Logs\*.vsl</span> というパスは、Logs ディレクトリ内の、<span class="filepath">.vsl</span> で終わるすべてのファイルと一致します。<span class="filepath">Logs\*-SENSOR?.vsl</span> というパスは、任意の日付（YYYYMMDD）を持ち、SENSOR の後に 1 文字続く（SENSOR1 など）、Logs ディレクトリ内のファイルと一致します。 </p> <p> 指定したパスのすべてのサブディレクトリを検索対象にしたい場合は、Recursive パラメーターを true に設定する必要があります。 </p> <p> <p>注意：Data Workbench サーバーの<span class="wintitle">ファイルサーバーユニット</span>からファイルを読み取る場合、適切な URI を Log Paths パラメーターに入力する必要があります。例えば、<span class="filepath">/Logs/*-*.vsl</span> という URI は、Logs ディレクトリ内のすべての <span class="filepath">.vsl</span> ファイルと一致します。Insightサーバーのファイルサーバーユニットの <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> 設定を参照してください</a>。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Log Server </td> 
-   <td colname="col2">ファイルサーバーへの接続に必要な情報（アドレス、名前、ポートなど）。Log Server パラメーターに値が入力されている場合、<span class="wintitle">Log Paths</span> は URI として解釈されます。それ以外の場合は、ローカルパスとして解釈されます。詳しくは、 Insightサー <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> バーのファイルサーバーユニットの設定</a>。 </td> 
+   <td colname="col2">ファイルサーバーへの接続に必要な情報（アドレス、名前、ポートなど）。Log Server パラメーターに値が入力されている場合、<span class="wintitle">Log Paths</span> は URI として解釈されます。それ以外の場合は、ローカルパスとして解釈されます。詳しくは、 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> Insightサーバーのファイルサーバーユニットの設定を参照してください</a>。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Log Source ID </td> 
-   <td colname="col2"> <p>このパラメーターには、任意の文字列を値として指定できます。このパラメーターの値が指定されていると、異なるログソースからのログエントリを区別して、ログの生成元を特定したり、処理の対象を絞り込んだりすることができます。x-log-source-id フィールドには、ログソースを識別する値がログエントリごとに格納されます。例えば、VSensor01 という <span class="wintitle">Sensor</span> からのログエントリを識別したい場合、「<span class="filepath">from VSensor01</span>」と入力すれば、このソースから収集されるすべてのログエントリの x-log-source-id フィールドにその文字列が渡されます。 </p> <p> x-log-source-idフィールドについて詳しくは、「イベントデータレコードのフ <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> ィールド」を参照してください</a>。 </p> </td> 
+   <td colname="col2"> <p>このパラメーターには、任意の文字列を値として指定できます。このパラメーターの値が指定されていると、異なるログソースからのログエントリを区別して、ログの生成元を特定したり、処理の対象を絞り込んだりすることができます。x-log-source-id フィールドには、ログソースを識別する値がログエントリごとに格納されます。例えば、VSensor01 という <span class="wintitle">Sensor</span> からのログエントリを識別したい場合、「<span class="filepath">from VSensor01</span>」と入力すれば、このソースから収集されるすべてのログエントリの x-log-source-id フィールドにその文字列が渡されます。 </p> <p> x-log-source-idフィールドについて詳しくは、「 <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> イベントデータレコードのフィールド</a>」を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Recursive </td> 
@@ -100,7 +103,7 @@ YYYYMMDD はファイルの日付で、*SENSORID* は、データを収集して
 
 >[!NOTE]
 >
->Do not use the configuration parameters for [!DNL Sensor] data sources to determine which log entries within a log file should be included in a dataset. その場合は、特定のディレクトリ内のすべてのログファイルを指すようにデータソースを設定したうえで、[!DNL Log Processing.cfg] の Start Time パラメーターと End Time パラメーターを使用し、データセットの構築に使用するログエントリを選択します。データフィ [ルタを参照してくださ](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d)い。
+>Do not use the configuration parameters for [!DNL Sensor] data sources to determine which log entries within a log file should be included in a dataset. その場合は、特定のディレクトリ内のすべてのログファイルを指すようにデータソースを設定したうえで、[!DNL Log Processing.cfg] の Start Time パラメーターと End Time パラメーターを使用し、データセットの構築に使用するログエントリを選択します。詳しくは、 [データフィルターを参照してください](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d)。
 
 <!--
 c_log_files.xml
@@ -118,11 +121,12 @@ c_log_files.xml
 * データ処理の始まりと終わりの時間を指定するために、各ファイル名は次の形式になっている必要があります。
 
    * [!DNL YYYYMMDD-SOURCE.log]
+
    *YYYYMMDD* はファイル内の全データのグリニッジ標準時（GMT）の日付で、*SOURCE* はファイルに含まれているデータの取得元を表す変数です。
 
    >[!NOTE]
    >
-   >データセットへの組み込みを計画しているログファイルの確認については、アドビのコンサルティングサービスにお問い合わせください。
+   >データセットへの組み込みを予定しているログファイルの確認については、Adobeコンサルティングサービスにお問い合わせください。
 
 ## パラメーター {#section-83a861ac24954d54bbb9530e4d8bf23c}
 
@@ -130,7 +134,7 @@ c_log_files.xml
 
 >[!NOTE]
 >
->The processing of log file log sources requires additional parameters that are defined in a [!DNL Log Processing Dataset Include] file, which contains a subset of the parameters included in a [!DNL Log Processing.cfg] file as well as special parameters for defining decoders for extracting data from the log file. ログファイルログソースのデコーダーの定義について詳しくは、 [Text File Decoder Groupsを参照してください](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-text-file-dec-groups.md#concept-0db34988e17c41bfb1797f1d8e78aabd)。
+>The processing of log file log sources requires additional parameters that are defined in a [!DNL Log Processing Dataset Include] file, which contains a subset of the parameters included in a [!DNL Log Processing.cfg] file as well as special parameters for defining decoders for extracting data from the log file. ログファイルログソースに使用するデコーダーの定義について詳しくは、 [テキストファイルデコーダーグループを参照してください](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-text-file-dec-groups.md#concept-0db34988e17c41bfb1797f1d8e78aabd)。
 
 <table id="table_F33735B5B90A48B0B21FA02D9198CCA9"> 
  <thead> 
@@ -150,11 +154,11 @@ c_log_files.xml
      <ul id="ul_1F02D26A08D846E2A3114E5C33F60ECF"> 
       <li id="li_ECAE1C03A1C448A1B86AE00B3A955708"> 「*」は、任意の数の文字を表します。 </li> 
       <li id="li_24FDB500C5934CAAA4124C435DF4B290"> 「?」は、単一の文字を表します。 </li> 
-     </ul> </p> <p> 例えば、<span class="filepath">Logs\*.log</span> というパスは、Logs ディレクトリ内の、<span class="filepath">.log</span> で終わるすべてのファイルと一致します。 </p> <p> 指定したパスのすべてのサブディレクトリを検索対象にしたい場合は、Recursive パラメーターを true に設定する必要があります。 </p> <p> Data Workbench サーバーの<span class="wintitle">ファイルサーバーユニット</span>からファイルを読み取る場合、適切な URI を Log Paths パラメーターに入力する必要があります。例えば、<span class="filepath">URI/Logs/*.log</span> は、Logs ディレクトリ内のすべての <span class="filepath">.log</span> ファイルと一致します。Insightサーバ <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> ーのファイルサーバーユニットの設定を参照してください</a>。 </p> </td> 
+     </ul> </p> <p> 例えば、<span class="filepath">Logs\*.log</span> というパスは、Logs ディレクトリ内の、<span class="filepath">.log</span> で終わるすべてのファイルと一致します。 </p> <p> 指定したパスのすべてのサブディレクトリを検索対象にしたい場合は、Recursive パラメーターを true に設定する必要があります。 </p> <p> Data Workbench サーバーの<span class="wintitle">ファイルサーバーユニット</span>からファイルを読み取る場合、適切な URI を Log Paths パラメーターに入力する必要があります。例えば、<span class="filepath">URI/Logs/*.log</span> は、Logs ディレクトリ内のすべての <span class="filepath">.log</span> ファイルと一致します。Insightサーバーのファイルサーバーユニットの <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> 設定を参照してください</a>。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Log Server </td> 
-   <td colname="col2"> ファイルサーバーへの接続に必要な情報（アドレス、名前、ポートなど）。Log Server パラメーターに値が入力されている場合、<span class="wintitle">Log Paths</span> は URI として解釈されます。それ以外の場合は、ローカルパスとして解釈されます。詳しくは、 Insightサー <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> バーのファイルサーバーユニットの設定</a>。 </td> 
+   <td colname="col2"> ファイルサーバーへの接続に必要な情報（アドレス、名前、ポートなど）。Log Server パラメーターに値が入力されている場合、<span class="wintitle">Log Paths</span> は URI として解釈されます。それ以外の場合は、ローカルパスとして解釈されます。詳しくは、 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> Insightサーバーのファイルサーバーユニットの設定を参照してください</a>。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Compressed </td> 
@@ -166,11 +170,11 @@ c_log_files.xml
   </tr> 
   <tr> 
    <td colname="col1"> Log Source ID </td> 
-   <td colname="col2"> <p>このパラメーターには、任意の文字列を値として指定できます。このパラメーターの値が指定されていると、異なるログソースからのログエントリを区別して、ログの生成元を特定したり、処理の対象を絞り込んだりすることができます。x-log-source-id フィールドには、ログソースを識別する値がログエントリごとに格納されます。例えば、LogFile01 というログファイルソースからのログエントリを識別したい場合、「<span class="filepath">from LogFile01</span>」と入力すれば、このソースから収集されるすべてのログエントリの x-log-source-id フィールドにその文字列が渡されます。 </p> <p> x-log-source-idフィールドについて詳しくは、「イベントデータレコードのフ <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> ィールド」を参照してください</a>。 </p> </td> 
+   <td colname="col2"> <p>このパラメーターには、任意の文字列を値として指定できます。このパラメーターの値が指定されていると、異なるログソースからのログエントリを区別して、ログの生成元を特定したり、処理の対象を絞り込んだりすることができます。x-log-source-id フィールドには、ログソースを識別する値がログエントリごとに格納されます。例えば、LogFile01 というログファイルソースからのログエントリを識別したい場合、「<span class="filepath">from LogFile01</span>」と入力すれば、このソースから収集されるすべてのログエントリの x-log-source-id フィールドにその文字列が渡されます。 </p> <p> x-log-source-idフィールドについて詳しくは、「 <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> イベントデータレコードのフィールド</a>」を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mask Pattern </td> 
-   <td colname="col2"> <p>規則的な名前のログファイルを指定するための正規表現パターン。一連のログファイルのソースを識別する目的で使用されます。考慮されるのはファイル名のみです。パスと拡張子は、正規表現のマッチングの対象外となります。<span class="wintitle">マスクパターン</span>を指定しなかった場合は、マスクが自動的に生成されます。 </p> <p> <span class="filepath">Logs\010105server1.log</span> や <span class="filepath">Logs\010105server2.log</span> というファイルの場合、<span class="wintitle">マスクパターン</span>は [0-9]{6}(.*) となります。このパターンを適用した場合、ファイル名から「server1」や「server2」という文字列が抽出されます。 </p> <p> 詳しくは、 <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> 正規表現</a>. </p> </td> 
+   <td colname="col2"> <p>規則的な名前のログファイルを指定するための正規表現パターン。一連のログファイルのソースを識別する目的で使用されます。考慮されるのはファイル名のみです。パスと拡張子は、正規表現のマッチングの対象外となります。<span class="wintitle">マスクパターン</span>を指定しなかった場合は、マスクが自動的に生成されます。 </p> <p> <span class="filepath">Logs\010105server1.log</span> や <span class="filepath">Logs\010105server2.log</span> というファイルの場合、<span class="wintitle">マスクパターン</span>は <code>[0-9]{6}(.*)</code>. このパターンを適用した場合、ファイル名から「server1」や「server2」という文字列が抽出されます。 </p> <p> 詳しくは、 <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> 正規表現</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Recursive </td> 
@@ -220,7 +224,7 @@ c_xml_log_sources.xml
 
 >[!NOTE]
 >
->データセットへの組み込みを予定しているXMLログファイルの確認については、アドビのコンサルティングサービスにお問い合わせください。
+>データセットへの組み込みを予定しているXMLログファイルの確認については、Adobeコンサルティングサービスにお問い合わせください。
 
 ## パラメーター {#section-d07b96d7f6ad4affb9cc0a0bc1b88c4d}
 
@@ -248,11 +252,11 @@ XML ログソースに関して、以下の表に示したパラメーターが�
      <ul id="ul_0AE5D0ADE0F64CFAA856492A49239F58"> 
       <li id="li_4CBC0D1733F04258B3A55CC6FA714538 "> 「*」は、任意の数の文字と一致します。 </li> 
       <li id="li_81B597436A1241FF94E73C18A0ABBFA1"> 「?」は、単一の文字と一致します。 </li> 
-     </ul> </p> <p>例えば、<span class="filepath">Logs\*.xml</span> というパスは、Logs ディレクトリ内の、<span class="filepath">.xml</span> で終わるすべてのファイルと一致します。 </p> <p> 指定したパスのすべてのサブディレクトリを検索対象にしたい場合は、<span class="wintitle">Recursive</span> フィールドを true に設定する必要があります。 </p> <p> <p>注意：Data Workbench サーバーの<span class="wintitle">ファイルサーバーユニット</span>からファイルを読み取る場合、適切な URI を <span class="wintitle">Log Paths</span> フィールドに入力する必要があります。例えば、<span class="filepath">URI/Logs/*.xml</span> は、Logs ディレクトリ内のすべての <span class="filepath">.xml</span> ファイルと一致します。Insightサーバ <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> ーのファイルサーバーユニットの設定を参照してください</a>。 </p> </p> </td> 
+     </ul> </p> <p>例えば、<span class="filepath">Logs\*.xml</span> というパスは、Logs ディレクトリ内の、<span class="filepath">.xml</span> で終わるすべてのファイルと一致します。 </p> <p> 指定したパスのすべてのサブディレクトリを検索対象にしたい場合は、<span class="wintitle">Recursive</span> フィールドを true に設定する必要があります。 </p> <p> <p>注意：Data Workbench サーバーの<span class="wintitle">ファイルサーバーユニット</span>からファイルを読み取る場合、適切な URI を <span class="wintitle">Log Paths</span> フィールドに入力する必要があります。例えば、<span class="filepath">URI/Logs/*.xml</span> は、Logs ディレクトリ内のすべての <span class="filepath">.xml</span> ファイルと一致します。Insightサーバーのファイルサーバーユニットの <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> 設定を参照してください</a>。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Log Server </td> 
-   <td colname="col2"> ファイルサーバーへの接続に必要な情報（アドレス、名前、ポートなど）。<span class="wintitle">Log Server</span> フィールドに値が入力されている場合、<span class="wintitle">Log Paths</span> は URI として解釈されます。それ以外の場合は、ローカルパスとして解釈されます。詳しくは、 Insightサー <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> バーのファイルサーバーユニットの設定</a>。 </td> 
+   <td colname="col2"> ファイルサーバーへの接続に必要な情報（アドレス、名前、ポートなど）。<span class="wintitle">Log Server</span> フィールドに値が入力されている場合、<span class="wintitle">Log Paths</span> は URI として解釈されます。それ以外の場合は、ローカルパスとして解釈されます。詳しくは、 <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> Insightサーバーのファイルサーバーユニットの設定を参照してください</a>。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Compressed </td> 
@@ -264,11 +268,11 @@ XML ログソースに関して、以下の表に示したパラメーターが�
   </tr> 
   <tr> 
    <td colname="col1"> Log Source ID </td> 
-   <td colname="col2"> <p>このフィールドには、任意の文字列を値として指定できます。このフィールドの値が指定されていると、異なるログソースからのログエントリを区別して、ログの生成元を特定したり、処理の対象を絞り込んだりすることができます。x-log-source-id フィールドには、ログソースを識別する値がログエントリごとに格納されます。例えば、XMLFile01 というログファイルソースからのログエントリを識別したい場合、「<span class="filepath">from XMLFile01</span>」と入力すれば、このソースから収集されるすべてのログエントリの x-log-source-id フィールドにその文字列が渡されます。 </p> <p> x-log-source-idフィールドについて詳しくは、「イベントデータレコードのフ <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> ィールド」を参照してください</a>。 </p> </td> 
+   <td colname="col2"> <p>このフィールドには、任意の文字列を値として指定できます。このフィールドの値が指定されていると、異なるログソースからのログエントリを区別して、ログの生成元を特定したり、処理の対象を絞り込んだりすることができます。x-log-source-id フィールドには、ログソースを識別する値がログエントリごとに格納されます。例えば、XMLFile01 というログファイルソースからのログエントリを識別したい場合、「<span class="filepath">from XMLFile01</span>」と入力すれば、このソースから収集されるすべてのログエントリの x-log-source-id フィールドにその文字列が渡されます。 </p> <p> x-log-source-idフィールドについて詳しくは、「 <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> イベントデータレコードのフィールド</a>」を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Mask Pattern </td> 
-   <td colname="col2"> <p>規則的な名前のログファイルを指定するための正規表現パターン。一連のログファイルのソースを識別する目的で使用されます。考慮されるのはファイル名のみです。パスと拡張子は、正規表現のマッチングの対象外となります。<span class="wintitle">マスクパターン</span>を指定しなかった場合は、マスクが自動的に生成されます。 </p> <p> <span class="filepath">Logs\010105server1.xml</span> や <span class="filepath">Logs\010105server2.xml</span> というファイルの場合、マスクパターンは [0-9]{6}(.*) となります。このパターンを適用した場合、ファイル名から「server1」や「server2」という文字列が抽出されます。 </p> <p> 詳しくは、 <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> 正規表現</a>. </p> </td> 
+   <td colname="col2"> <p>規則的な名前のログファイルを指定するための正規表現パターン。一連のログファイルのソースを識別する目的で使用されます。考慮されるのはファイル名のみです。パスと拡張子は、正規表現のマッチングの対象外となります。<span class="wintitle">マスクパターン</span>を指定しなかった場合は、マスクが自動的に生成されます。 </p> <p> <span class="filepath">Logs\010105server1.xml</span> や <span class="filepath">Logs\010105server2.xml</span> というファイルの場合、マスクパターンは <code>[0-9]{6}(.*)</code>. このパターンを適用した場合、ファイル名から「server1」や「server2」という文字列が抽出されます。 </p> <p> 詳しくは、 <a href="../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c"> 正規表現</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Recursive </td> 
@@ -287,7 +291,7 @@ XML ログソースに関して、以下の表に示したパラメーターが�
 
 >[!NOTE]
 >
->データセットのデータソースを定義した後で、XMLログソースを削除または移動しないでください。 データソースのディレクトリには、新しく作成された XML ファイルだけを追加する必要があります。
+>データセットのデータソースを定義した後でXMLログソースを削除または移動することは避けてください。 データソースのディレクトリには、新しく作成された XML ファイルだけを追加する必要があります。
 
 <!--
 AVRO-log-file.xml
@@ -300,7 +304,7 @@ Avro データフィードは、より効率的な方法でデータを Data Wor
 * Avro は、トラフィックおよびコマースデータ用の単一ソース形式を提供します。
 * Avro フィードは、1 日ごとに提供される複数のソースチャンクの圧縮データです。入力されたフィールドのみをプロビジョニングしたり、監視および通知機能を提供したり、履歴データにアクセスしたり、自動リカバリしたりします。
 * スキーマ（AVRO ログファイルの自動定義レイアウト）は、各ファイルの最初に含まれます。
-* デコーダーへの変更なしに Data Workbench データを取り込むための情報をサポートする新しいフィールドが追加されます。以下が含まれます。
+* デコーダーへの変更なしに Data Workbench データを取り込むための情報をサポートする新しいフィールドが追加されます。これには、以下が含まれます。
 
    * eVar：1 ～ 250（以前は 1 ～ 75）
    * カスタムイベント：1 ～ 1000（1 ～ 100 に対して）
@@ -308,7 +312,7 @@ Avro データフィードは、より効率的な方法でデータを Data Wor
 
 >[!NOTE]
 >
->また、Avroフィードを使用すると、シャットダウンせずにフィード内の新しいフィールドに即座にアクセスできるので、サービス時間の要件なしでフィールドを更新できます。
+>また、Avroフィードを使用すると、シャットダウンを行わずにフィード内の新しいフィールドに即座にアクセスできるので、サービス時間の要件を満たさずにフィールドを更新できます。
 
 Avro データフィードは、個別のファイルに設定されます。
 
@@ -335,7 +339,7 @@ Avro データフィードは、個別のファイルに設定されます。
 
 >[!NOTE]
 >
->データ [!DNL x-product(Generates row)] 内で配列が検出された場合は、フィールドが指定されます。 このフィールドは、配列にネストされたデータ用に新しい行を入力フィールドとして生成します。例えば、配列に多くの製品の値を持つヒット行がある場合、各製品の入力ファイルに行が生成されます。
+>データ内で配列が検出された場合、 [!DNL x-product(Generates row)] フィールドが指定されます。 このフィールドは、配列にネストされたデータ用に新しい行を入力フィールドとして生成します。例えば、配列に多くの製品の値を持つヒット行がある場合、各製品の入力ファイルに行が生成されます。
 
 | **デフォルトを選択** | デフォルトフィールドの標準として識別するためのフィールドを選択します。 |
 |---|---|
