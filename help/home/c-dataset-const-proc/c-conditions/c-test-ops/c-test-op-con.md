@@ -5,7 +5,10 @@ title: テスト演算の条件
 topic: Data workbench
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '1119'
+ht-degree: 84%
 
 ---
 
@@ -16,7 +19,7 @@ Compare、Not Empty、Range、Regular Expression、String Match など、テス�
 
 * [Compare](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-fb2bdb3838504099b324b9838cdeeaac)
 * [Not Empty](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-1decb9d887894073a1b6b3d985729ac8)
-* [Range](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-1db31583bb09418b8f49481a897b08a6)
+* [範囲](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-1db31583bb09418b8f49481a897b08a6)
 * [正規表現](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-ae9c016502cb44128760c58f2d2d5297)
 * [String Match](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f)
 
@@ -41,9 +44,9 @@ Compare、Not Empty、Range、Regular Expression、String Match など、テス�
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments </td> 
-   <td colname="col2"> (オプション)条件についてのメモ。 </td> 
-   <td colname="col3"> Comments </td> 
+   <td colname="col1"> コメント </td> 
+   <td colname="col2"> （オプション）条件についてのメモ。 </td> 
+   <td colname="col3"> コメント </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Input A </td> 
@@ -56,11 +59,11 @@ Compare、Not Empty、Range、Regular Expression、String Match など、テス�
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Operation </td> 
+   <td colname="col1"> 操作 </td> 
    <td colname="col2"> <p>比較演算。利用可能な演算（とその意味）を次に示します。 
      <ul id="ul_74F3C298E9CC4FE89897BA0052A9EB9F"> 
       <li id="li_1605FA73474E404A84056D40E7082623"> = または ==（Input A と Input B が等しい） </li> 
-      <li id="li_F694A262ED7A4787B2A68B877339620C"> &lt;&gt; または !=（Input A は Input B と等しくない） </li> 
+      <li id="li_F694A262ED7A4787B2A68B877339620C"> &lt;&gt; or !=（Input A は Input B と等しくない） </li> 
       <li id="li_1A75437E23B64BEB92297E1C771092B0"> &lt;（Input A は Input B より小さい） </li> 
       <li id="li_B80ED6BE9DEA41FE84BC6BA3B7759276"> &lt;=（Input A は Input B 以下） </li> 
       <li id="li_93148F34065F489E8E198DFB9F9F0E70"> &gt;（Input A は Input B より大きい） </li> 
@@ -70,7 +73,7 @@ Compare、Not Empty、Range、Regular Expression、String Match など、テス�
   </tr> 
   <tr> 
    <td colname="col1"> タイプ </td> 
-   <td colname="col2">実行する比較のタイプ。<span class="wintitle">LEXICAL</span>、<span class="wintitle">NUMERIC</span>、<span class="wintitle">DATETIME</span> のいずれかを選択できます。タイプの説明は、「テスト演算のテ <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> ストタイプ」を参照してください</a>。 </td> 
+   <td colname="col2">実行する比較のタイプ。<span class="wintitle">LEXICAL</span>、<span class="wintitle">NUMERIC</span>、<span class="wintitle">DATETIME</span> のいずれかを選択できます。これらのタイプの説明は、「テスト演算の <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> テストタイプ</a>」を参照してください。 </td> 
    <td colname="col3"> <span class="wintitle"> LEXICAL</span> </td> 
   </tr> 
  </tbody> 
@@ -88,14 +91,14 @@ This example uses a [!DNL Compare] condition to define the [!DNL Log Entry Condi
 
 | パラメーター | 説明 | デフォルト |
 |---|---|---|
-| Comments | (オプション)条件についてのメモ。 | Comments |
+| コメント | （オプション）条件についてのメモ。 | コメント |
 | Input | 特定のログエントリに関して、値が格納されているかどうかのチェック対象となるフィールドの名前。 |  |
 
 この例では、x-some-field を入力として受け取り、そのフィールドに値が格納されている（空でない）かどうかをテストします。フィールドに値が格納されていれば、条件を満たしたことになります。
 
 ![](assets/cfg_Condition_NotEmpty.png)
 
-## Range {#section-1db31583bb09418b8f49481a897b08a6}
+## 範囲 {#section-1db31583bb09418b8f49481a897b08a6}
 
 [!DNL Range] は、入力フィールドを受け取り、その値が、指定された下限値（Min）パラメーターと上限値（Max）パラメーターの範囲（両端の値を含む）に含まれているかどうかを判断する条件です。
 
@@ -116,9 +119,9 @@ This example uses a [!DNL Compare] condition to define the [!DNL Log Entry Condi
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments </td> 
-   <td colname="col2"> (オプション)条件についてのメモ。 </td> 
-   <td colname="col3"> Comments </td> 
+   <td colname="col1"> コメント </td> 
+   <td colname="col2"> （オプション）条件についてのメモ。 </td> 
+   <td colname="col3"> コメント </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Input </td> 
@@ -127,17 +130,17 @@ This example uses a [!DNL Compare] condition to define the [!DNL Log Entry Condi
   </tr> 
   <tr> 
    <td colname="col1"> Min </td> 
-   <td colname="col2"> <p>範囲の下限。 </p> <p> このパラメーターの値は、リテラル値または文字列（つまりフィールド名以外）であることが必要です。このフィールドの日付を使用する場合、タイムゾーンを指定する必要があります。サポートされているタイムゾーンの略称一覧については、<a href="../../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477">タイムゾーンのコード</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>範囲の下限。 </p> <p> このパラメーターの値は、リテラル値または文字列（つまりフィールド名以外）であることが必要です。このフィールドの日付を使用する場合、タイムゾーンを指定する必要があります。サポートされているタイムゾーンの略称一覧については、 <a href="../../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> タイムゾーンのコード</a>. </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Max </td> 
-   <td colname="col2"> <p>範囲の上限。 </p> <p> <p>注意：このパラメーターの値は、リテラル値または文字列（つまりフィールド名以外）であることが必要です。このフィールドの日付を使用する場合、タイムゾーンを指定する必要があります。サポートされているタイムゾーンの略称一覧については、<a href="../../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477">タイムゾーンのコード</a>を参照してください。 </p> </p> </td> 
+   <td colname="col2"> <p>範囲の上限。 </p> <p> <p>注意：このパラメーターの値は、リテラル値または文字列（つまりフィールド名以外）であることが必要です。このフィールドの日付を使用する場合、タイムゾーンを指定する必要があります。サポートされているタイムゾーンの略称一覧については、 <a href="../../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> タイムゾーンのコード</a>. </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> タイプ </td> 
-   <td colname="col2">実行する比較のタイプ。<span class="wintitle">LEXICAL</span>、<span class="wintitle">NUMERIC</span>、<span class="wintitle">DATETIME</span> のいずれかを選択できます。タイプの説明は、「テスト演算のテ <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> ストタイプ」を参照してください</a>。 </td> 
+   <td colname="col2">実行する比較のタイプ。<span class="wintitle">LEXICAL</span>、<span class="wintitle">NUMERIC</span>、<span class="wintitle">DATETIME</span> のいずれかを選択できます。これらのタイプの説明は、「テスト演算の <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> テストタイプ</a>」を参照してください。 </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
@@ -147,13 +150,13 @@ This example uses a [!DNL Range] condition to define the [!DNL Log Entry Conditi
 
 >[!NOTE]
 >
->MinまたはMaxパラメーターが空白のままの場合、使用可能な最小または最大の整数値が代わりに使用されます。 最小値はゼロ（0）で、最大値は無限です。
+>MinまたはMaxパラメーターを空白のままにした場合、使用可能な最小または最大の整数値が代わりに使用されます。 最小値はゼロ（0）で、最大値は無限です。
 
 ![](assets/cfg_Condition_RangeCondition.png)
 
 ## 正規表現 {#section-ae9c016502cb44128760c58f2d2d5297}
 
-条件テ [!DNL Regular Expression] ストでは、正規表現のパターンマッチング( [Regular Expressionsを参照](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c))を使用して、指定した入力フィールドの値に、Matchesパラメーターで指定したパターンの1つに一致する文字列が含まれているかどうかを判定します。
+この [!DNL Regular Expression] 条件テストでは、正規式のパターンマッチング( [正規式を参照](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c))を使用して、Matchesパラメーターで指定されたパターンのいずれかに一致する文字列が、指定された入力フィールドの値に含まれているかどうかを判断します。
 
 入力データが文字列ベクトルである場合、ベクトル内の 1 つ目の値だけがテストに使用されます。The [!DNL Regular Expression] condition performs full string comparisons. 文字列を部分的に識別する必要がある場合は、文字列の前後に「.*」を付加する必要があります。
 
@@ -174,9 +177,9 @@ This example uses a [!DNL Range] condition to define the [!DNL Log Entry Conditi
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments </td> 
-   <td colname="col2"> (オプション)条件についてのメモ。 </td> 
-   <td colname="col3"> Comments </td> 
+   <td colname="col1"> コメント </td> 
+   <td colname="col2"> （オプション）条件についてのメモ。 </td> 
+   <td colname="col3"> コメント </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Input </td> 
@@ -184,7 +187,7 @@ This example uses a [!DNL Range] condition to define the [!DNL Log Entry Conditi
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 一致する </td> 
+   <td colname="col1"> 一致 </td> 
    <td colname="col2"> <p>入力フィールドの値と突き合わせる正規表現パターン（複数可）。 </p> <p> <b>正規表現パターンを追加するには</b> 
      <ol id="ol_6D6467FF74334DEA8E8625C3B155D11D"> 
       <li id="li_9E13A63558FF44749C2E49BD50B7F770"><span class="uicontrol">Matches</span> を右クリックします。 </li> 
@@ -196,7 +199,7 @@ This example uses a [!DNL Range] condition to define the [!DNL Log Entry Conditi
  </tbody> 
 </table>
 
-以下に示したのは、Web サイトトラフィックから収集したデータのフィールドに、[!DNL Regular Expression] 条件を適用して、一致しているかどうかを判断する例です。The condition returns true only if the cs(referrer-query) field contains a string matching the regular expression campaign=C[1-9][0-9]{4}. この正規表現は、「campaign=C12345」を含んでいるすべての文字列と一致します。一方、「campaign=C0123&amp;」という文字列は、「C」の後の先頭文字が 1 ～ 9 の範囲にないので、このパターンとは一致しません。
+以下に示したのは、Web サイトトラフィックから収集したデータのフィールドに、[!DNL Regular Expression] 条件を適用して、一致しているかどうかを判断する例です。The condition returns true only if the cs(referrer-query) field contains a string matching the regular expression `campaign=C[1-9][0-9]{4}`. この正規表現は、「campaign=C12345」を含んでいるすべての文字列と一致します。一方、「campaign=C0123&amp;」という文字列は、「C」の後の先頭文字が 1 ～ 9 の範囲にないので、このパターンとは一致しません。
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
@@ -219,9 +222,9 @@ The [!DNL String Match] condition tests for string equality. 指定されたフ�
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments </td> 
-   <td colname="col2"> (オプション)条件についてのメモ。 </td> 
-   <td colname="col3"> Comments </td> 
+   <td colname="col1"> コメント </td> 
+   <td colname="col2"> （オプション）条件についてのメモ。 </td> 
+   <td colname="col3"> コメント </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Input </td> 
@@ -229,7 +232,7 @@ The [!DNL String Match] condition tests for string equality. 指定されたフ�
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 一致する </td> 
+   <td colname="col1"> 一致 </td> 
    <td colname="col2"> <p>入力フィールドの値と突き合わせる文字列（複数可）。 </p> <p> <b>文字列を追加するには</b> 
      <ol id="ol_9E32218C771445D88357960475FAD6EB"> 
       <li id="li_A700747858D0470491783E9B3933DAFE"><span class="uicontrol">Matches</span> を右クリックします。 </li> 
