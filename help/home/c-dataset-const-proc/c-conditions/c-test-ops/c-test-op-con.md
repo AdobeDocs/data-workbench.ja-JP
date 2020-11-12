@@ -5,9 +5,9 @@ title: テスト演算の条件
 topic: Data workbench
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 translation-type: tm+mt
-source-git-commit: 1630f34588e4984226b70c963618856496b42346
+source-git-commit: ed7597393049099e08586716163cbd1cca50c5fa
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1114'
 ht-degree: 82%
 
 ---
@@ -199,7 +199,7 @@ This example uses a [!DNL Range] condition to define the [!DNL Log Entry Conditi
  </tbody> 
 </table>
 
-以下に示したのは、Web サイトトラフィックから収集したデータのフィールドに、[!DNL Regular Expression] 条件を適用して、一致しているかどうかを判断する例です。The condition returns true only if the cs(referrer-query) field contains a string matching the regular expression `campaign=C[1-9][0-9]{4}`. This regular expression matches any string containing `campaign=C12345`. However, the pattern would not match the string `campaign=C0123&` because the first character after the &quot;C&quot; is not in the range 1-9.
+以下に示したのは、Web サイトトラフィックから収集したデータのフィールドに、[!DNL Regular Expression] 条件を適用して、一致しているかどうかを判断する例です。The condition returns true only if the cs(referrer-query) field contains a string matching the regular expression `campaign=C[1-9][0-9]{4}`. This regular expression matches any string containing `campaign=C12345`. However, the pattern would not match the string `campaign=C0123&` because the first character after the `C` is not in the range `1-9`.
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
