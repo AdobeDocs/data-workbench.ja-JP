@@ -5,7 +5,10 @@ title: 正規表現
 topic: Data workbench
 uuid: f3a0119d-6fac-4f63-8dca-4db32d2a737a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: 0727e5b18c89a22b6ee775b1293d3b68e5cee81c
+workflow-type: tm+mt
+source-wordcount: '1418'
+ht-degree: 86%
 
 ---
 
@@ -64,7 +67,7 @@ Data Workbench サーバーでは、いくつかの変換および条件の中�
 
 | メタ文字 | 説明 |
 |---|---|
-| . （ドット） | 1 文字に一致します。例えば、`re:x.z` は「xyz」や「xxz」に一致します。 |
+| 。（ドット） | 1 文字に一致します。例えば、`re:x.z` は「xyz」や「xxz」に一致します。 |
 | *（星印） | Matches one or more characters, for example: `re:Z*` matches &quot;ZZZ&quot;. |
 | ? （ワイルドカード） | 直前の式と最小のマッチングで 0 回または 1 回一致します。例えば、`xy?z` は「xy」と「xyz」に一致します。 |
 
@@ -125,7 +128,7 @@ Data Workbench サーバーでは、いくつかの変換および条件の中�
 
 >[!NOTE]
 >
->正規表現の先頭に^を、末尾に$を含む場合、ターゲット文字列全体が正規表現と一致する必要があります。
+>正規式の先頭に^を、末尾に$を付けた場合、ターゲット文字列全体が正規式と一致する必要があります。
 
 **任意の文字との一致**
 
@@ -152,12 +155,12 @@ Data Workbench サーバーでは、いくつかの変換および条件の中�
    <td colname="col2"> メタ文字（*）の直前の文字の 0 回以上の繰り返しと一致します。例えば、[0-9]* というパターンは、0 ～ 9（任意の整数）の任意の数の文字と一致します。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> プラス記号（+） </td> 
+   <td colname="col1"> Plus (+) </td> 
    <td colname="col2"> 直前の文字または範囲の 1 回以上の繰り返しと一致します。例えば、thre+ というパターンは、three とは一致しますが、through とは一致しません。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> {n} </td> 
-   <td colname="col2"> <p>直前の文字または範囲の、ちょうど n 回の繰り返しと一致します。米国の電話番号は、[0-9]{3}-[0-9]{3}-[0-9]{4} というパターンと一致します。 </p> <p> 最適なパターンではありませんが、ターゲット文字列が適切な形式になっているかどうかは、これで判別できます。 </p> </td> 
+   <td colname="col2"> <p>直前の文字または範囲の、ちょうど n 回の繰り返しと一致します。The following pattern matches United States phone numbers: <code>[0-9]{3}-[0-9]{3}-[0-9]{4}</code>. </p> <p> 最適なパターンではありませんが、ターゲット文字列が適切な形式になっているかどうかは、これで判別できます。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> {n,m} </td> 
