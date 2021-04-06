@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: Data Workbench ヘルプ
 user-guide-description: Data Workbench のマルチチャネル機能について学びます。Data Workbench クライアント、インストール、データセット設定ガイドなどが含まれます。
 translation-type: tm+mt
-source-git-commit: cfa391f4238bac43fdf2539baa8e038a79110200
+source-git-commit: 3fc9ad4411438afe50c0e20d807234176480e2b3
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3493'
 ht-degree: 100%
 
 ---
@@ -53,7 +53,6 @@ ht-degree: 100%
       + [Data Workbench のアップグレード：概要](home/c-install-insight/c-upgrd-ins/c-upgrd-ins.md)
       + [6.4 から 6.5 へのアップグレード](home/c-install-insight/c-upgrd-ins/c-6-4-to-6-5-upgrade.md)
       + [6.3 から 6.4 へのアップグレード](home/c-install-insight/c-upgrd-ins/c-6-3-to-6-4-upgrade.md)
-      + [DWB サーバーのアップグレード：6.2 から 6.3 へ](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
       + [DWB サーバーのアップグレード：6.1 から 6.2 へ](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
       + [Data Workbench 6.0 から 6.1 へのアップグレード](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
       + [Data Workbench 5.5 から 6.1 へのアップグレード](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
@@ -269,7 +268,6 @@ ht-degree: 100%
       + ベクターレイヤーの操作 {#vector-layers}
          + [ベクターレイヤーの操作](home/c-get-started/c-im-layers/c-vctr-layers/c-vctr-layers.md)
          + [ベクターファイルを参照するベクターレイヤーの定義](home/c-get-started/c-im-layers/c-vctr-layers/c-ref-vctr-files.md)
-         + [タブ区切り値ファイルを参照するベクターレイヤー](home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md)
          + [新しいベクターレイヤーを使用可能にする](home/c-get-started/c-im-layers/c-vctr-layers/t-make-new-vctr-layer-av.md)
    + 管理インターフェイス {#admin-ui}
       + [管理インターフェイス](home/c-get-started/c-admin-intrf/c-admin-intrf.md)
@@ -334,7 +332,6 @@ ht-degree: 100%
          + [タブ順序の変更](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-chg-ordr-tabs.md)
          + [サブフォルダーのサブタブ表示](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-sbfldrs-sbtabs.md)
          + [タブの非表示または削除](home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/t-hide-rmv-tabs.md)
-      + [Input Method Editor のインストール](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md)
       + [ローカライズされた言語の設定](home/c-get-started/c-intf-anlys-ftrs/c-localized-ime/c-localized-ime-config.md)
       + ロックされているワークスペースの設定 {#config-locked-wkspc}
          + [ロックされているワークスペースの設定](home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-config-locked-wkspc.md)
@@ -380,7 +377,6 @@ ht-degree: 100%
          + [新規訪問者条件](home/c-dataset-const-proc/c-trans-config-file/c-spec-trans-param/c-new-vstr-con.md)
          + [タイムゾーン](home/c-dataset-const-proc/c-trans-config-file/c-spec-trans-param/c-time-zones.md)
       + [変換設定ファイルに関する考慮事項](home/c-dataset-const-proc/c-trans-config-file/c-con-tran-config-file.md)
-      + [DeviceAtlas の配布](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md)
    + データセットインクルードファイル {#dataset-include-files}
       + [データセットインクルードファイルについて](home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)
       + [データセットインクルードファイルの操作](home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/c-work-dataset-inc-files.md)
@@ -468,7 +464,6 @@ ht-degree: 100%
       + データセット設定インターフェイス {#dataset-config-ui}
          + [データセット設定インターフェイスの操作](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-config-int.md)
          + [データセットのスキーマ](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-schema.md)
-         + [依存関係マップ](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dep-maps.md)
          + [フィールドビューア](home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-field-viewers.md)
       + データセットのコンポーネントの非表示 {#hide-dataset-comp}
          + [データセットのコンポーネントの非表示](home/c-dataset-const-proc/c-dataset-config-tools/c-hide-dataset-comp/c-hide-dataset-comp.md)
@@ -765,12 +760,6 @@ ht-degree: 100%
       + Insight サーバーのアップグレード {#upgrade-insight-server}
          + [Insight サーバーのアップグレード](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-sftwr.md)
          + [DWB サーバーのアップグレード：6.2 から 6.3 へ](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)
-         + [DWB サーバーのアップグレード：6.1 から 6.2 へ](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-1-to-6-2-upgrade.md)
-         + Data Workbench 6.0 から 6.1 へのアップグレード {#upgrade-6-0-to-6-1}
-            + [Data Workbench 6.0 から 6.1 へのアップグレード](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-6-0-to-6-1-upgrade.md)
-            + [Input Method Editor のインストール](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md)
-            + [DeviceAtlas の配布](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md)
-         + [Data Workbench 5.5 から 6.1 へのアップグレード](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-5-x-to-6-1-upgrade.md)
          + [DWB サーバーのアップグレード：5.4 から 5.5 へ](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-to-5.5.md)
          + [変換のアップグレード](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-trfm.md)
          + [リピーターのアップグレード](home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md)
