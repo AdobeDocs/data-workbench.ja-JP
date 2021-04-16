@@ -1,14 +1,15 @@
 ---
 description: 階層ビューは、Site または HBX アプリケーションを使用している場合にのみ表示可能です。
-solution: Analytics
 title: 階層ビューの適用
-topic: Data workbench
 uuid: 859a92af-4f7e-4bb5-9a98-917006894301
+exl-id: 27a69404-40d3-44ab-bf5c-b2a5d8d836c2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 63%
 
 ---
-
 
 # 階層ビューの適用{#apply-hierarchy-views}
 
@@ -24,23 +25,23 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **階層ビューを有効または無効にするには**
 
-* From any page or URI visualization, right-click an element or the label of the page dimension and click **[!UICONTROL Hierarchy View]**.
+* ページまたはURIのビジュアライゼーションから、ページディメンションの要素またはラベルを右クリックし、**[!UICONTROL Hierarchy View]**&#x200B;をクリックします。
 
    ![](assets/mnu_Table_HierarchyView.png)
 
-   An X is shown next to the option when the [!DNL hierarchy view] is active.
+   [!DNL hierarchy view]がアクティブな場合は、オプションの横にXが表示されます。
 
-   階層は、ツリー構造を使用して Web サイトのセクションとページにまとめられます。セクション（ノード）は、セクション名の横の+記号または — 記号を使用して展開したり、折りたたんだりできます。 個々のページの横には+記号や — 記号は表示されません。
+   階層は、ツリー構造を使用して Web サイトのセクションとページにまとめられます。セクション（ノード）は、セクション名の横の+記号または — 記号を使用して展開または折りたたむことができます。 個々のページの横には+記号または — 記号は表示されません。
 
    ![](assets/vis_Table_HierarchyView_Expanded.png)
 
 ## 階層ビューでのディメンション要素のマスク {#section-e477c469934846da8d807f92fc2f3ed1}
 
-マスクとは、データのサブセットまたはディメンション内の要素のサブセットを選択することです。分析に含めたくない要素をマスクまたは非表示にします。Using the [!DNL Mask] menu options for hierarchy views, you select the minimum percentage of a metric that an element must have to be displayed in the visualization.
+マスクとは、データのサブセットまたはディメンション内の要素のサブセットを選択することです。分析に含めたくない要素をマスクまたは非表示にします。階層表示の[!DNL Mask]メニューオプションを使用して、ビジュアライゼーションに要素を表示する必要がある指標の最小割合を選択します。
 
-**メニューオプションを使用してデータをマス[!DNL Mask]クするには**
+**メ [!DNL Mask] ニューオプションを使用してデータをマスクするには**
 
-1. Right-click an element or the label of the dimension and click **[!UICONTROL Mask]**.
+1. ディメンションの要素またはラベルを右クリックし、**[!UICONTROL Mask]**&#x200B;をクリックします。
 
    ![](assets/mnu_Table_HierarchyView_Masking.png)
 
