@@ -2,16 +2,15 @@
 description: 新しいフィールドをLog Processing.cfgに追加し、新しいSplit変換と拡張ディメンションを作成した後で、データ再処理のFast Inputステージが完了したら、作成した新しい拡張ディメンションを表示できます。
 solution: Analytics,Analytics
 title: 実験結果の表示
-topic: Data workbench
 uuid: c0468cad-fb8d-4ecf-8912-bf80b44b0a65
+exl-id: cada693c-79cb-4f49-a2f0-6ff60425be1c
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 4%
 
 ---
-
 
 # 実験結果の表示{#viewing-the-experiment-results}
 
@@ -21,7 +20,7 @@ ht-degree: 4%
 
 **テストディメンションを表示するには**
 
-* の任意のワークスペース内 [!DNL Insight]で、作成したテストディメンションを含むテーブルを開きます。
+* [!DNL Insight]の任意のワークスペース内で、作成したテストディメンションを含むテーブルを開きます。
 
    テストディメンション要素は、現在実行している各テストと各テスト内の各グループを表し、各グループの現在のセッション数と共に表示されます。 各グループには次の形式で名前が付けられ、テスト名の後にグループ名が続きます。
 
@@ -29,7 +28,7 @@ ht-degree: 4%
 
    例：[!DNL New Homepage.Control]
 
-次の表に、で作成された制御実験グループディメンション [!DNL Transformation.cfg] と、各実験とそのグループを示します。
+次の表に、[!DNL Transformation.cfg]で作成された制御実験グループディメンションと、各実験とそのグループを示します。
 
 新しいホームページのテストは、表の下部に2つのグループと共に表示されます。制御とインデックス2
 
