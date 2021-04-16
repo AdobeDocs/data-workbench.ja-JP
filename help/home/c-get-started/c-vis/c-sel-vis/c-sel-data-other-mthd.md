@@ -1,14 +1,15 @@
 ---
 description: ポイントアンドクリックによりビジュアライゼーションで簡単かつ強力な選択を行えますが、Adobe アプリケーションでは、これ以外に 3 つの方法を使用して、データを選択し、選択したデータで作業を行えます。
-solution: Analytics
 title: 他の方法を使用してデータを選択する
-topic: Data workbench
 uuid: 0e2b8e6d-d696-4597-9f85-1968b18cfbc8
+exl-id: d6ef163e-1faa-4b0f-b69b-9e559f6f34fb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 93%
 
 ---
-
 
 # 他の方法を使用してデータを選択する{#selecting-data-using-other-methods}
 
@@ -20,7 +21,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    例：以前の購入に基づいて、ひやかし客と購入する顧客という 2 つのタイプの買い物客を比較する場合。
 
-   セグメントを使用しても、影響を受けるのは、そのセグメントディメンションを使用しているワークスペースだけです。詳しくは、[セグメント](../../../../home/c-get-started/c-analysis-vis/c-seg/c-seg.md#concept-71a333e5c7334e0489c76fca95862fbc)を参照してください。
+   セグメントを使用しても、影響を受けるのは、そのセグメントディメンションを使用しているワークスペースだけです。[セグメント](../../../../home/c-get-started/c-analysis-vis/c-seg/c-seg.md#concept-71a333e5c7334e0489c76fca95862fbc)を参照してください。
 
 * **フィルター：**&#x200B;フィルターエディターにより、複雑なデータ選択を行うことができ、エディターで明確に指定した選択条件を表示できます。また、フィルターを保存して、再使用できます。
 
@@ -32,5 +33,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    例：カリフォルニアの顧客のみに関するデータの詳細分析を実行する場合。
 
-   サブセットはData Workbenchにグローバルに適用されるので、サブセットを使用すると、すべてのワークスペースに影響します。 See [Working with Subsets](../../../../home/c-get-started/c-vis/c-wk-subsets/c-wk-subsets.md#concept-43809322b6374d5cb2536630a13e943b).
-
+   サブセットはData Workbenchにグローバルに適用されるので、サブセットを使用すると、すべてのワークスペースに影響が及びます。 [サブセットの操作](../../../../home/c-get-started/c-vis/c-wk-subsets/c-wk-subsets.md#concept-43809322b6374d5cb2536630a13e943b)を参照してください。
