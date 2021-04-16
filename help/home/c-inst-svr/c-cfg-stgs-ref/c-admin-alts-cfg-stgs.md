@@ -1,16 +1,15 @@
 ---
 description: Insightサーバー、リピーターまたは変換に関する管理アラートを設定する手順です。
-solution: Analytics
 title: 管理アラートの設定
 uuid: c2be2d1e-d81d-4d9f-ac94-4b642dad90b9
+exl-id: c75e442e-33e6-4fc8-8368-29482f09e1cc
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '514'
 ht-degree: 4%
 
 ---
-
 
 # 管理アラートの設定{#administrative-alerts-configuration-settings}
 
@@ -34,15 +33,15 @@ Insightサーバー、リピーターまたは変換に関する管理アラー�
   </tr> 
   <tr> 
    <td colname="col1"> エラーカテゴリ </td> 
-   <td colname="col2"> エラーをエラー分類ファイルと共に分類できます。 各エラーカテゴリには、独自の受信者セットと独自のスロットル遅延を設定できます。 例えば、スロットル遅延が0の重大なカテゴリを作成すると、重大なエラーが発生するたびに、受信者リストで指定された受信者に即座に電子メールで送信されます。 エラーカテゴリー化ファイル内のサブ文字列と一致しないエラーは、デフォルトカテゴリに割り当てられます。 新しいカテゴリを追加するには、数値を右クリックし、 <span class="uicontrol"> 新規 </span> / <span class="uicontrol"> エラーカテゴリをクリックし </span>ます。 右クリック操作を使用して、コピーまたは削除することもできます。 </td> 
+   <td colname="col2"> エラーをエラー分類ファイルと共に分類できます。 各エラーカテゴリには、独自の受信者セットと独自のスロットル遅延を設定できます。 例えば、スロットル遅延が0の重大なカテゴリを作成すると、重大なエラーが発生するたびに、受信者リストで指定された受信者に即座に電子メールで送信されます。 エラーカテゴリー化ファイル内のサブ文字列と一致しないエラーは、デフォルトカテゴリに割り当てられます。 新しいカテゴリを追加するには、数値を右クリックし、追加<span class="uicontrol">新しい</span> &gt; <span class="uicontrol">エラーカテゴリ</span>をクリックします。 右クリック操作を使用して、コピーまたは削除することもできます。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> エラー分類ファイル </td> 
-   <td colname="col2"> <p>各アラートの分類に使用するファイルの名前。 このファイルはメモ帳を使用して作成します。 このファイルの各行には、タブで区切られた3つの列が必要です。 最初の列はエラー時に一致する文字列です。 ^記号は先頭に一致し、$は文字列の末尾に一致します。その他のすべての文字は、文字どおりに一致します。 2番目の列は、一致するエラーのカテゴリです。このエラーカテゴリは、「エラー」に表示されます。 3つ目は代替メッセージで、送信される電子メールの実際のエラーメッセージの前に付加されます。 ファイルを指定しない場合、すべてのエラーはデフォルトとして分類されます。 </p> <p>このファイルの例については、Lookupsディレクトリの <span class="filepath"> Errorカテゴリ.txt </span> ファイルを参照してください。 </p> </td> 
+   <td colname="col2"> <p>各アラートの分類に使用するファイルの名前。 このファイルはメモ帳を使用して作成します。 このファイルの各行には、タブで区切られた3つの列が必要です。 最初の列はエラー時に一致する文字列です。 ^記号は先頭に一致し、$は文字列の末尾に一致します。その他のすべての文字は、文字どおりに一致します。 2番目の列は、一致するエラーのカテゴリです。このエラーカテゴリは、「エラー」に表示されます。 3つ目は代替メッセージで、送信される電子メールの実際のエラーメッセージの前に付加されます。 ファイルを指定しない場合、すべてのエラーはデフォルトとして分類されます。 </p> <p>このファイルの例については、Lookupsディレクトリの<span class="filepath"> Errorカテゴリ.txt </span>ファイルを参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 送信元 </td> 
-   <td colname="col2"> <p>電子メールメッセージの「送信者」パラメーターに表示されるアドレス。 </p> <p>例： <span class="filepath"> server_errors@mycompany.com </span></p> </td> 
+   <td colname="col2"> <p>電子メールメッセージの「送信者」パラメーターに表示されるアドレス。 </p> <p>例：<span class="filepath"> server_errors@mycompany.com </span></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 最小ディスク容量(MB) </td> 
@@ -50,11 +49,11 @@ Insightサーバー、リピーターまたは変換に関する管理アラー�
   </tr> 
   <tr> 
    <td colname="col1"> センサーアラートタイムアウト（分） </td> 
-   <td colname="col2"> <p>サーバーは、設定済みで以前に接続した <span class="wintitle"> センサーからこの時間内にデータを受け取らない場合、電子メールアラート </span> を生成します。 デフォルト値は 15 です。 </p> <p> <p>注意： <span class="wintitle"> センサー </span> 警告タイムアウトは、センサーへの既存の接続が切断された場合にのみ機能 <span class="wintitle"></span> します。 サーバーのサービスが停止して再起動され、 <span class="wintitle"> Sensorが接続しない場合、サーバー </span> では電子メールアラートは生成されません。 </p> </p> </td> 
+   <td colname="col2"> <p>サーバーは、設定済みで、以前接続した<span class="wintitle">センサー</span>からこの時間内にデータを受信しなかった場合、電子メールアラートを生成します。 デフォルト値は 15 です。 </p> <p> <p>注意： <span class="wintitle">センサー</span>アラートタイムアウトは、<span class="wintitle">センサー</span>への既存の接続が切断された場合にのみ機能します。 サーバーのサービスが停止して再起動され、<span class="wintitle"> Sensor </span>が接続しない場合、サーバーは電子メールアラートを生成しません。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> サーバーアドレス </td> 
-   <td colname="col2"> <p>送信電子メールのSMTPサーバーのアドレスです。 </p> <p>例： <span class="filepath"> mail.mycompany.com </span></p> <p>SMTPサーバーは、説明された機能を使用するために必要です。 </p> </td> 
+   <td colname="col2"> <p>送信電子メールのSMTPサーバーのアドレスです。 </p> <p>例：<span class="filepath"> mail.mycompany.com </span></p> <p>SMTPサーバーは、説明された機能を使用するために必要です。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Server Password </td> 
@@ -70,4 +69,3 @@ Insightサーバー、リピーターまたは変換に関する管理アラー�
   </tr> 
  </tbody> 
 </table>
-
