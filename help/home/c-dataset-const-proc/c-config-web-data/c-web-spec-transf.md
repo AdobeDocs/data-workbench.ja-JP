@@ -1,14 +1,15 @@
 ---
 description: Site 用プロファイルに付属の変換データセットインクルードファイルで定義する Web 固有の設定について取り上げます。
-solution: Analytics
 title: 変換に関する Web 固有の設定
-topic: Data workbench
 uuid: 282f0f4d-43d7-41cf-bae8-5cac6b4d81a0
+exl-id: 737f5e7a-7ab3-4ff7-8d92-7ccd87c28743
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '2035'
+ht-degree: 62%
 
 ---
-
 
 # 変換に関する Web 固有の設定{#web-specific-settings-for-transformation}
 
@@ -25,35 +26,35 @@ Site 用プロファイルに付属の変換データセットインクルード
 
 [!DNL Page View Condition] は、訪問者のページビュー履歴に関して収集されるデータに、特定のログエントリ（ページリクエスト）を含めるかどうかを判断する条件演算です。[!DNL Page View Condition] を満たしたログエントリは、Page View 可算ディメンションのエレメントとして追加されます。ログエントリが [!DNL Page View Condition] を満たさなかった場合でも、他のディメンションからは、引き続きそのデータフィールドにアクセスすることができます。[!DNL Page View Condition] の条件判定の結果は、Page View ディメンションに加え、次のディメンションに影響を及ぼす可能性があります。
 
-* **[!DNL URI]および[!DNL Page]:**これらのディメンションは、の影響を直接受けま[!DNL Page View Condition]す。 If the given page does not pass the[!DNL Page View Condition,]it is not be included in the URI or Page dimensions.
+* **[!DNL URI]および [!DNL Page]:** これらのディメンションは、の直接の影響を受け [!DNL Page View Condition]ます。指定したページが[!DNL Page View Condition,]を渡さない場合、そのページはURIディメンションまたはPageディメンションに含まれません。
 
-* **[!DNL Visitor Page Views]および[!DNL Session Page Views]:**訪問者ページビュー数ディメンションとセッションページビュー数ディメンションは、特定のセッションで訪問者が閲覧したページ数、または特定のセッションで閲覧したページ数をそれぞれ示します。 Pages filtered out by the[!DNL Page View Condition]are not part of this count.
+* **[!DNL Visitor Page Views]および [!DNL Session Page Views]** :「訪問者ページの表示」ディメンションと「セッションページの表示」ディメンションは、それぞれ、特定の訪問者が特定のセッションに対して閲覧したページ数を示します。[!DNL Page View Condition]によって除外されたページは、このカウントに含まれません。
 
-* **セッション番号：** は、セ [!DNL Page View Condition] ッション番号ディメンションに間接的に影響します。 The Session Number dimension is created prior to the [!DNL Page View Condition]; therefore, when considering [!DNL Session Number] in relation to the [!DNL Page Views], it is possible to have sessions with no page views.
+* **Session Number:** こ [!DNL Page View Condition] れは、Session Numberディメンションに間接的に影響します。Session Numberディメンションは、[!DNL Page View Condition]の前に作成されます。したがって、[!DNL Session Number]を[!DNL Page Views]と関連付けると、ページ表示のないセッションを持つことが可能です。
 
-Your default implementation of [!DNL Site] includes a [!DNL Transformation Dataset Include] file in which the Page View countable dimension and the related [!DNL Page View Condition] are defined.
+[!DNL Site]のデフォルトの実装には、[!DNL Transformation Dataset Include]ファイルが含まれており、このファイルにはページ表示の可算ディメンションと関連する[!DNL Page View Condition]が定義されています。
 
-可算ディメンションについて詳しくは、拡張ディメンション [を参照してくださ](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)い。
+可算ディメンションについて詳しくは、[拡張Dimension](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)を参照してください。
 
 **Page View Condition の設定を編集するには**
 
-1. データセットプ [!DNL Profile Manager] ロファイル内でを開き、ファイルを開 [!DNL Dataset\Transformation\Traffic\Page View.cfg] きます。
+1. データセットプロファイル内で[!DNL Profile Manager]を開き、[!DNL Dataset\Transformation\Traffic\Page View.cfg]ファイルを開きます。
 
    >[!NOTE]
    >
-   >If you have customized your implementation of [!DNL Site], the file in which these configuration settings exist may differ from the location described.
+   >[!DNL Site]の実装をカスタマイズした場合は、これらの設定が存在するファイルが、説明に記載されている場所と異なる可能性があります。
 
-1. Review or edit the values of the parameters of the [!DNL Page View Condition] as needed. 以下の例を参考にしてください。In this file, the [!DNL Page View Condition] is defined by a [!DNL Copy] transformation. このファイルには、Page View 可算ディメンションも定義されていることに注目してください。
+1. 必要に応じて[!DNL Page View Condition]のパラメーターの値を確認または編集します。 以下の例を参考にしてください。このファイルでは、[!DNL Page View Condition]は[!DNL Copy]変換によって定義されています。 このファイルには、Page View 可算ディメンションも定義されていることに注目してください。
 
    ![](assets/cfg_WebParameters_PageView.png)
 
    >[!NOTE]
    >
-   >可算ディメンションについて詳しくは、拡張ディメンション [を参照してくださ](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)い。 変換について詳しくは、 [!DNL Copy] データ変換を参 [照してください](../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md)。
+   >可算ディメンションについて詳しくは、[拡張Dimension](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)を参照してください。 [!DNL Copy]変換について詳しくは、[データ変換](../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md)を参照してください。
 
-1. Save the file by right-clicking **[!UICONTROL (modified)]** at the top of the window, then click **[!UICONTROL Save]**.
+1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックしてファイルを保存します。
 
-1. To make the locally made changes take effect, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column, then click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, where profile name is the name of the dataset profile or the inherited profile to which the dataset include file belongs.
+1. ローカルに適用した変更を有効にするには、[!DNL Profile Manager]で[!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]** > ***[!UICONTROL profile name]***&#x200B;をクリックします。プロファイル名は、データセットインクルードファイルが属するデータセットプロファイル名または継承プロファイルです。
 
    >[!NOTE]
    >
@@ -61,17 +62,17 @@ Your default implementation of [!DNL Site] includes a [!DNL Transformation Datas
 
 ## URI ディメンション {#section-348f7e9099d049d197a7cdcbc8a6c234}
 
-[!DNL Site] を利用する場合、閲覧された Web サイトページの URI ステムをエレメントに持つ URI ディメンションを定義する必要があります。Your default implementation includes a [!DNL Transformation Dataset Include] file in which the URI simple dimension is defined.
+[!DNL Site] を利用する場合、閲覧された Web サイトページの URI ステムをエレメントに持つ URI ディメンションを定義する必要があります。デフォルトの導入環境には、URIシンプルディメンションが定義された[!DNL Transformation Dataset Include]ファイルが含まれています。
 
-シンプルディメンションについて詳しくは、拡張ディメンションを [参照してくださ](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)い。
+シンプルディメンションについて詳しくは、[拡張Dimension](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)を参照してください。
 
 **URI ディメンションの設定を編集するには**
 
-1. データセットプ [!DNL Profile Manager] ロファイル内でを開き、ファイルを開 [!DNL Dataset\Transformation\Traffic\URI.cfg] きます。
+1. データセットプロファイル内で[!DNL Profile Manager]を開き、[!DNL Dataset\Transformation\Traffic\URI.cfg]ファイルを開きます。
 
    >[!NOTE]
    >
-   >If you have customized your implementation of [!DNL Site], the file in which these configuration settings exist may differ from the location described.
+   >[!DNL Site]の実装をカスタマイズした場合は、これらの設定が存在するファイルが、説明に記載されている場所と異なる可能性があります。
 
 1. このファイルのパラメーターの値を確認し、必要に応じて編集します。以下の例を参考にしてください。
 
@@ -86,9 +87,9 @@ Your default implementation of [!DNL Site] includes a [!DNL Transformation Datas
    >
    >この値を変更すると、パフォーマンスに重大な問題が発生する可能性があります。 変更が必要な場合は必ずアドビまでご相談ください。
 
-* Save the [!DNL URI.cfg] file by right-clicking **[!UICONTROL (modified)]** at the top of the window, then click **[!UICONTROL Save]**.
+* ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、[!DNL URI.cfg]をクリックして&#x200B;**[!UICONTROL Save]**&#x200B;ファイルを保存します。
 
-* To make the locally made changes take effect, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column, then click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, where profile name is the name of the dataset profile or the inherited profile to which the dataset include file belongs.
+* ローカルに適用した変更を有効にするには、[!DNL Profile Manager]で[!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]** > ***[!UICONTROL profile name]***&#x200B;をクリックします。プロファイル名は、データセットインクルードファイルが属するデータセットプロファイル名または継承プロファイルです。
 
    >[!NOTE]
    >
@@ -96,17 +97,17 @@ Your default implementation of [!DNL Site] includes a [!DNL Transformation Datas
 
 ## Referrer ディメンション {#section-8a97ec34d18b4814b5f95495ac4f8638}
 
-[!DNL Site] を利用する場合、Referrer ディメンションを定義する必要があります。Referrer ディメンションの構成エレメントは、すべてのセッションの最初に出現するログエントリのリファラーの第 2 レベルドメインです。Your default implementation includes a [!DNL Transformation Dataset Include] file in which the Referrer simple dimension is defined.
+[!DNL Site] を利用する場合、Referrer ディメンションを定義する必要があります。Referrer ディメンションの構成エレメントは、すべてのセッションの最初に出現するログエントリのリファラーの第 2 レベルドメインです。デフォルトの導入環境には、転送者のシンプルディメンションが定義された[!DNL Transformation Dataset Include]ファイルが含まれています。
 
-シンプルディメンションについて詳しくは、拡張ディメンションを [参照してくださ](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)い。
+シンプルディメンションについて詳しくは、[拡張Dimension](../../../home/c-dataset-const-proc/c-ex-dim/c-abt-ex-dim.md)を参照してください。
 
 **Referrer ディメンションの設定を編集するには**
 
-1. データセットプ [!DNL Profile Manager] ロファイル内でを開き、ファイルを開 [!DNL Dataset\Transformation\Traffic\Referrer.cfg] きます。
+1. データセットプロファイル内で[!DNL Profile Manager]を開き、[!DNL Dataset\Transformation\Traffic\Referrer.cfg]ファイルを開きます。
 
    >[!NOTE]
    >
-   >If you have customized your implementation of [!DNL Site], the file in which these configuration settings exist may differ from the location described.
+   >[!DNL Site]の実装をカスタマイズした場合は、これらの設定が存在するファイルが、説明に記載されている場所と異なる可能性があります。
 
 1. このファイルのパラメーターの値を確認し、必要に応じて編集します。以下の例を参考にしてください。
 
@@ -116,11 +117,11 @@ Your default implementation of [!DNL Site] includes a [!DNL Transformation Datas
 
    >[!NOTE]
    >
-   >In the example above, the [!DNL Maximum Elements] parameter is set to 0. このパラメーターを 0 に設定した場合、Data Workbench サーバーの内部的なデフォルト値である 32768 が使用されます。
+   >上記の例では、[!DNL Maximum Elements]パラメーターは0に設定されています。 このパラメーターを 0 に設定した場合、Data Workbench サーバーの内部的なデフォルト値である 32768 が使用されます。
 
-1. Save the [!DNL Referrer.cfg] file by right-clicking **[!UICONTROL (modified)]** at the top of the window, then click **[!UICONTROL Save]**.
+1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、[!DNL Referrer.cfg]をクリックして&#x200B;**[!UICONTROL Save]**&#x200B;ファイルを保存します。
 
-1. To make the locally made changes take effect, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column, then click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, where profile name is the name of the dataset profile or the inherited profile to which the dataset include file belongs.
+1. ローカルに適用した変更を有効にするには、[!DNL Profile Manager]で[!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]** > ***[!UICONTROL profile name]***&#x200B;をクリックします。プロファイル名は、データセットインクルードファイルが属するデータセットプロファイル名または継承プロファイルです。
 
    >[!NOTE]
    >
@@ -128,9 +129,9 @@ Your default implementation of [!DNL Site] includes a [!DNL Transformation Datas
 
 ## セッションのパラメーター {#section-0a209b0c504041a5801f7f71a963c8b1}
 
-[!DNL Site] を利用する場合、Web サイトにおける訪問者のセッションの境界を定義するパラメーターを指定できます。These parameters are valid only when defined in a [!DNL Transformation Dataset Include] file within your [!DNL Site] implementation.
+[!DNL Site] を利用する場合、Web サイトにおける訪問者のセッションの境界を定義するパラメーターを指定できます。これらのパラメーターは、[!DNL Site]実装内の[!DNL Transformation Dataset Include]ファイルで定義されている場合にのみ有効です。
 
-The following parameters are unique in that they can be members of [!DNL Transformation Dataset Include] file&#39;s [!DNL Parameters] vector, or they can be listed as individual parameters in the [!DNL Transformation.cfg]file. パラメーターは 1 回しか定義できないので、これらのパラメーターは [!DNL Transformation.cfg] ファイルに定義するか、データセットインクルードファイルの [!DNL Parameters] ベクトルに定義するか、のどちらかとなります。両方のファイルに定義することはできません。**Maximum Session Duration と Session Timeout**
+次のパラメーターは、[!DNL Transformation Dataset Include]ファイルの[!DNL Parameters]ベクトルのメンバーになることも、[!DNL Transformation.cfg]ファイルに個々のパラメーターとして指定することもできるという点で一意です。 パラメーターは 1 回しか定義できないので、これらのパラメーターは [!DNL Transformation.cfg] ファイルに定義するか、データセットインクルードファイルの [!DNL Parameters] ベクトルに定義するか、のどちらかとなります。両方のファイルに定義することはできません。**Maximum Session Duration と Session Timeout**
 
 Maximum Session Duration と Session Timeout は、訪問者のセッション期間を定義する文字列パラメーターです。セッション期間は、これらのパラメーターに、Internal Domains パラメーターを加味して決定されます。
 
@@ -142,25 +143,25 @@ Session Timeout は、特定の訪問者について、1 セッションの終�
 
 >[!NOTE]
 >
->The [!DNL Sessionize] transformation&#39;s [!DNL Timeout Condition] also plays a role in determining the length of a visitor&#39;s session. Session Timeout と Maximum Session Duration が該当しない場合、新しいセッションの開始と見なすべきログエントリであるかどうかは、[!DNL Timeout Condition] をチェックして判断されます。For more information, see [Data Transformations](../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md).
+>[!DNL Sessionize]変換の[!DNL Timeout Condition]も、訪問者のセッションの長さの決定に役立ちます。 Session Timeout と Maximum Session Duration が該当しない場合、新しいセッションの開始と見なすべきログエントリであるかどうかは、[!DNL Timeout Condition] をチェックして判断されます。詳しくは、[データ変換](../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md)を参照してください。
 
 **Maximum Session Duration パラメーターと Session Timeout パラメーターを編集するには**
 
-If you are working with [!DNL Site], your default implementation likely includes a [!DNL Transformation Dataset Include] file in which the names and recommended values of these parameters are specified.
+[!DNL Site]を扱う場合、これらのパラメーターの名前と推奨値が指定された[!DNL Transformation Dataset Include]ファイルがデフォルトの実装に含まれていると考えられます。
 
-1. データセット [!DNL Profile Manager] プロファイル内でを開き、に移動しま [!DNL Dataset\Transformation\Traffic\Session Parameters.cfg]す。
+1. データセットプロファイル内で[!DNL Profile Manager]を開き、[!DNL Dataset\Transformation\Traffic\Session Parameters.cfg]に移動します。
 
    >[!NOTE]
    >
-   >If you have customized your implementation of [!DNL Site], the file in which these parameters are defined may differ from the location described.
+   >[!DNL Site]の実装をカスタマイズした場合、これらのパラメーターが定義されているファイルが、説明に記載されている場所と異なる可能性があります。
 
 1. パラメーターの値を必要に応じて編集します。必ず適切な単位（分、時など）を指定してください。
 
    ![](assets/cfg_WebParameters_SessionParameters.png)
 
-1. Save the [!DNL Session Parameters.cfg] file by right-clicking **[!UICONTROL (modified)]** at the top of the window and clicking **[!UICONTROL Save]**.
+1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックして、[!DNL Session Parameters.cfg]ファイルを保存します。
 
-1. To make the locally made changes take effect, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column, then click **[!UICONTROL Save to]** >  **[!UICONTROL profile name]**, where profile name is the name of the dataset profile or the inherited profile to which the dataset include file belongs.
+1. ローカルに適用した変更を有効にするには、[!DNL Profile Manager]で[!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]** > **[!UICONTROL profile name]**&#x200B;をクリックします。プロファイル名は、データセットインクルードファイルが属するデータセットプロファイルの名前または継承プロファイルです。
 
    >[!NOTE]
    >
@@ -174,25 +175,24 @@ If you are working with [!DNL Site], your default implementation likely includes
 
 **内部ドメインを追加するには**
 
-If you are working with [!DNL Site], your default implementation includes a [!DNL Transformation Dataset Include] file for defining the Internal Domains parameter. 対象となるパラメーターは、このファイルの中で指定します。必要な作業は、追加したい内部ドメインを入力してファイルを保存するだけです。
+[!DNL Site]を使用する場合、Internal Domainsパラメーターを定義する[!DNL Transformation Dataset Include]ファイルがデフォルトの導入環境に含まれています。 対象となるパラメーターは、このファイルの中で指定します。必要な作業は、追加したい内部ドメインを入力してファイルを保存するだけです。
 
-1. データセット [!DNL Profile Manager] プロファイル内でを開き、 [!DNL Dataset\Transformation\Traffic\Internal Domains.cfg.]
+1. データセットプロファイル内で[!DNL Profile Manager]を開き、[!DNL Dataset\Transformation\Traffic\Internal Domains.cfg.]に移動します
 
    >[!NOTE]
    >
-   >If you have customized your implementation of [!DNL Site], the file in which the Internal Domains parameter is defined may differ from the location described.
+   >[!DNL Site]の実装をカスタマイズした場合、Internal Domainsパラメーターが定義されているファイルが、説明に記載されている場所と異なる可能性があります。
 
-1. Right-click **[!UICONTROL Value]** for the Internal Domains vector parameter and click **[!UICONTROL Add new]** > **[!UICONTROL Value]**.
+1. Internal Domainsベクトルパラメーターの&#x200B;**[!UICONTROL Value]**&#x200B;を右クリックし、**[!UICONTROL Add new]**/**[!UICONTROL Value]**&#x200B;をクリックします。
 
 1. 必要に応じて値を編集します。
 
    ![](assets/cfg_WebParameters_InternalDomains.png)
 
-1. Save the [!DNL Internal Domains.cfg] file by right-clicking **[!UICONTROL (modified)]** at the top of the window and clicking **[!UICONTROL Save]**.
+1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックして、[!DNL Internal Domains.cfg]ファイルを保存します。
 
-1. To make the locally made changes take effect, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column, then click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, where profile name is the name of the dataset profile or the inherited profile to which the dataset include file belongs.
+1. ローカルに適用した変更を有効にするには、[!DNL Profile Manager]で[!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]** > ***[!UICONTROL profile name]***&#x200B;をクリックします。プロファイル名は、データセットインクルードファイルが属するデータセットプロファイル名または継承プロファイルです。
 
    >[!NOTE]
    >
    >アドビから提供される内部プロファイルには、変更した設定ファイルを一切保存しないでください。内部プロファイルに対するアップデートをインストールするときに変更内容が上書きされます。
-
