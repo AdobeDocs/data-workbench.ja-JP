@@ -1,17 +1,15 @@
 ---
 description: 信頼性の凡例は、表示されている数字が偶然によるものである可能性を判断したり、データ内に存在する可能性がある偏差を理解するのに役立ちます。
-solution: Analytics
 title: 信頼性の凡例
-topic: Data workbench
 uuid: 2559ff7c-6060-4fee-b509-9ae0c3912016
+exl-id: 9aab169a-98b8-4e71-b74d-28e385c5c424
 translation-type: tm+mt
-source-git-commit: 98452ba81d71db65c75e3d07712eefa18c003f53
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 93%
+source-wordcount: '445'
+ht-degree: 88%
 
 ---
-
 
 # 信頼性の凡例{#confidence-legends}
 
@@ -62,10 +60,10 @@ ht-degree: 93%
 >
 より正確な数字が必要な場合は、統計の専門家に相談してください。
 
-## 指標または数式の変更 {#section-7f09ff84c3514f26b78d29294e1f03d9}
+## 指標または数式の変更{#section-7f09ff84c3514f26b78d29294e1f03d9}
 
-* 信頼性の凡例で、「**[!UICONTROL 指標または数式]**」フィールド内をクリックし、目的の指標または式を入力します。式の構文ルールについては、「[クエリー言語構文](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)」を参照してください。 
+* 信頼性の凡例で、**[!UICONTROL Metric or Formula]**&#x200B;フィールドをクリックし、目的の指標または式を入力します。 式構文の規則については、「[クエリ言語の構文](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)」を参照してください。
 
 ## Microsoft Excel へのエクスポート {#section-f36e2db7273740b7af278f8a2b79d564}
 
-ウィンドウのエクスポートの詳細については、「ウィンドウデータの [エクスポート](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)」を参照してください。
+ウィンドウのエクスポートについては、「[ウィンドウデータのエクスポート](../../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)」を参照してください。
