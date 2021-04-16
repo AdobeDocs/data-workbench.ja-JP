@@ -1,14 +1,15 @@
 ---
 description: タイムゾーンのコードと形式について取り上げます。
-solution: Analytics
 title: タイムゾーンのコード
-topic: Data workbench
 uuid: 5698882a-9682-41d8-88d3-8471578a22cc
+exl-id: 2829c4ca-af6f-4ddb-acce-b33c3b552ba7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '376'
+ht-degree: 91%
 
 ---
-
 
 # タイムゾーンのコード{#time-zone-codes}
 
@@ -38,7 +39,7 @@ dstrules を指定する場合、[!DNL dstrules.dst] という名前のタブ区
 
 ## タイムゾーンコード表 {#section-b4f965b872c543e2ac52a3c94410d076}
 
-If you are implementing Daylight Saving Time or a similar clock-shifting policy, you must save the [!DNL .dst] file containing the appropriate rules in the profile name [!DNL \Dataset\Timezone] directory on the data workbench server machine.
+夏時間などの時計シフトポリシーを導入する場合は、適切なルールを含む[!DNL .dst]ファイルをData Workbenchサーバーコンピューターのプロファイル名[!DNL \Dataset\Timezone]ディレクトリに保存する必要があります。
 
 | コード | タイムゾーン | GMT からのオフセット |
 |---|---|---|
@@ -51,4 +52,3 @@ If you are implementing Daylight Saving Time or a similar clock-shifting policy,
 | mdt | 山地夏時間 | 7 |
 | pst | 太平洋標準時 | 8 |
 | pdt | 太平洋夏時間 | 8 |
-
