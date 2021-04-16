@@ -1,20 +1,21 @@
 ---
 description: ビジュアライゼーションを開く方法に関する情報です。
-solution: Analytics
 title: ビジュアライゼーションを開く
-topic: Data workbench
 uuid: 106c6899-8f93-4221-898d-c7cde5ea19a8
+exl-id: 3b475429-ca2d-4bca-b1ac-2107ce200dcd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '118'
+ht-degree: 63%
 
 ---
 
-
-# Opening visualizations{#opening-visualizations}
+# ビジュアライゼーションを開く{#opening-visualizations}
 
 ビジュアライゼーションを開く方法に関する情報です。
 
-Data Workbenchの実装は完全にカスタマイズできるので、このガイドに記載されている内容と異なる場合があります。 各ビジュアライゼーションへの正確なパスは、本ガイドに記載しません。
+お使いのData Workbenchの実装は完全にカスタマイズ可能なので、本ガイドに記載されている内容と異なる場合があります。 各ビジュアライゼーションへの正確なパスは、本ガイドに記載しません。
 
 すべてのビジュアライゼーションは、ワークスペース内で右クリックし、目的のメニューオプションを選択することによって、開けます。
 
@@ -22,8 +23,7 @@ Data Workbenchの実装は完全にカスタマイズできるので、このガ
 
 >[!NOTE]
 >
->ビジュアライゼーションは、ワークスペースのようにインポートすることができません。When you right-click in the worktop and select **[!UICONTROL Import]**, you can import an existing workspace, but not a visualization residing outside of the workspace.
+>ビジュアライゼーションは、ワークスペースのようにインポートすることができません。ワークトップ内で右クリックし、**[!UICONTROL Import]**&#x200B;を選択すると、既存のワークスペースを読み込むことはできますが、ワークスペースの外側にあるビジュアライゼーションを読み込むことはできません。
 >
 >![](assets/import_workspace.png)>
 >ビジュアライゼーションをインポートしようとすると、「有効なワークスペースではありません」というエラーが表示されます。
-
