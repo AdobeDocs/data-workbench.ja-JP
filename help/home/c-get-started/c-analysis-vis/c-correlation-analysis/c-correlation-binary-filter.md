@@ -1,14 +1,15 @@
 ---
 description: 相関行列でバイナリフィルターを使用すると、相関している指標のどちらかまたは両方の値を制限して、比較対象を絞り込むことができます。
-solution: Analytics
 title: 相関行列のバイナリフィルター
-topic: Data workbench
 uuid: 61c3ca37-cfa2-49dc-87de-4e9a44647eca
+exl-id: e693fc72-5697-4c47-a498-e0d4d875c688
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '210'
+ht-degree: 55%
 
 ---
-
 
 # 相関行列のバイナリフィルター{#binary-filter-in-the-correlation-matrix}
 
@@ -21,19 +22,19 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/correlation_matrix_binary_filter.png)
 
-   窓が **[!UICONTROL Edit Correlation Metric Details]** 開きます。
+   **[!UICONTROL Edit Correlation Metric Details]**&#x200B;ウィンドウが開きます。
 
    ![](assets/correlation_matrix_metric_details.png)
 
 1. バイナリフィルターを設定します。
 
-   First, click the **[!UICONTROL Inactive]** setting. It will toggle to set the filter as **[!UICONTROL Active]** and display the **Comparison** and **Value** fields.
+   最初に、**[!UICONTROL Inactive]**&#x200B;設定をクリックします。 フィルターを&#x200B;**[!UICONTROL Active]**&#x200B;に設定し、**比較**&#x200B;フィールドと&#x200B;**値**&#x200B;フィールドを表示するように切り替えます。
 
-   Then, select a **[!UICONTROL Comparison]** operator and set its **[!UICONTROL Value]** to set up a filter for the selected metric.
+   次に、**[!UICONTROL Comparison]**&#x200B;演算子を選択し、**[!UICONTROL Value]**&#x200B;を設定して、選択した指標のフィルターを設定します。
 
 >[!IMPORTANT]
 >
->Data Workbench 6.2のバイナリフィルターが更新され、新機能が追加されました。そのため、以前のバージョンで作成されたバイナリフィルターを使用して相関行列を作成し直す必要があります。
+>Data Workbench6.2のバイナリフィルターは更新され、新機能が追加されました。そのため、以前のバージョンで作成したバイナリフィルターを使用した相関行列はすべて作成し直す必要があります。
 
 ## ディメンションエレメントの追加 {#section-f19f4e0368ca488e92d1e28bcc24417c}
 
@@ -41,4 +42,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 ![](assets/correlation_matrix_element.png)
 
-ワークスペース内で右クリックして、「**テーブル**」を選択します。 Open a dimension with its elements and drag to the **[!UICONTROL Element]** setting in the Edit Correlation Metric Details window, or drop on a metric in the Correlation Matrix.
+ワークスペース内で右クリックして、「**テーブル**」を選択します。 エレメントを含むディメンションを開き、相関指標の詳細を編集ウィンドウの&#x200B;**[!UICONTROL Element]**&#x200B;設定にドラッグするか、相関行列の指標にドロップします。
