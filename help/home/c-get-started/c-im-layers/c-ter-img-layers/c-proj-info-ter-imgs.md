@@ -1,16 +1,17 @@
 ---
 description: data workbench は、すべての地形画像レイヤーソースに対して緯度-経度投影法とユニバーサル横メルカトル（UTM）投影法の両方をサポートしています。
-solution: Analytics
 title: 地形画像の投影情報の指定
-topic: Data workbench
 uuid: cc1e1e35-6b23-4121-a9f5-489001cb2ef8
+exl-id: 2638c5d4-164d-411b-8464-0a3af81b6537
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 76%
 
 ---
 
-
-# Specify projection information for terrain images{#specify-projection-information-for-terrain-images}
+# 地形画像の投影情報の指定{#specify-projection-information-for-terrain-images}
 
 data workbench は、すべての地形画像レイヤーソースに対して緯度-経度投影法とユニバーサル横メルカトル（UTM）投影法の両方をサポートしています。
 
@@ -20,13 +21,13 @@ data workbench は、すべての地形画像レイヤーソースに対して�
 
 [!DNL Terrain Images.cfg] ファイル内の緯度-経度投影形式（LatLonProjection）は、緯度と経度に関する 4 つのパラメーターで定義されます。
 
-To specify a LatLonProjection for unprojected images (raw unprojected bitmaps and general images, unprojected), you can enter settings for the LatLonProjection within the [!DNL Terrain Images.cfg] window in Data Workbench.
+未投影の画像（生の未投影ビットマップおよび未投影の一般的な画像）に対してLatLonProjectionを指定するには、Data Workbenchの[!DNL Terrain Images.cfg]ウィンドウ内にLatLonProjectionの設定を入力します。
 
 埋め込み投影情報を使用して画像の を指定するには、メモ帳などのテキストエディターで [!DNL Terrain Images.cfg] ファイルを開き、Projection Info パラメーターを LatLonProjection に設定し、[!DNL LatLonProjection]LatLonProjection の設定を追加します。
 
 **未投影の画像に対して LatLonProjection を指定するには**
 
-1. Data Workbenchでフ [!DNL Terrain Images.cfg] ァイルを開き、地形画像レイヤーを定義するにはの説明に従って、地 [形画像レイヤーソースを追加します](../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-ter-img-layers.md#concept-f4b3a20969354ca38955e3fd5beb0f4f)。
+1. [!DNL Terrain Images.cfg]ファイルをData Workbenchで開き、[地形画像レイヤーを定義するには](../../../../home/c-get-started/c-im-layers/c-ter-img-layers/c-ter-img-layers.md#concept-f4b3a20969354ca38955e3fd5beb0f4f)の説明に従って、地形画像レイヤーソースを追加します。
 1. 以下のパラメーターの表をガイドとして使用して、Projection Info パラメーターを編集します。
 
 <table id="table_32F6EADB2DA34592ABD6FFAC9E00BB27"> 
@@ -56,16 +57,16 @@ To specify a LatLonProjection for unprojected images (raw unprojected bitmaps an
  </tbody> 
 </table>
 
-1. Save the file by right-clicking **[!UICONTROL (modified)]** at the top of the window and clicking **[!UICONTROL Save]**.
-1. To save the locally made changes to the Data Workbench server computer, in the [!DNL Server Files Manager], right-click the check mark for [!DNL Terrain Images.cfg] in the [!DNL Temp] column, then click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.
+1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックして、ファイルを保存します。
+1. ローカルに適用した変更をData Workbenchサーバーコンピューターに保存するには、[!DNL Server Files Manager]で、[!DNL Temp]列の[!DNL Terrain Images.cfg]のチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL server name]**>*&#x200B;をクリックします。
 
 **埋め込み投影情報を使用して画像の LatLonProjection を指定するには**
 
-In the [!DNL Server Files Manager], click **[!UICONTROL Components]** to view its contents. [!DNL Terrain Images.cfg] ファイルは、このディレクトリ内に格納されています。
+[!DNL Server Files Manager]の&#x200B;**[!UICONTROL Components]**&#x200B;をクリックして、内容を表示します。 [!DNL Terrain Images.cfg] ファイルは、このディレクトリ内に格納されています。
 
-Right-click the check mark in the server name column for [!DNL Terrain Images.cfg], then click **[!UICONTROL Make Local]**. A check mark appears in the [!DNL Temp] column for [!DNL Terrain Images.cfg].
+[!DNL Terrain Images.cfg]のサーバー名列のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 [!DNL Terrain Images.cfg]の[!DNL Temp]列にチェックマークが表示されます。
 
-Right-click the newly created check mark in the [!DNL Temp] column and click **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. The [!DNL Terrain Images.cfg] file appears in a Notepad window.
+[!DNL Temp]列に新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Notepad]**&#x200B;をクリックします。 [!DNL Terrain Images.cfg]ファイルがメモ帳ウィンドウに表示されます。
 
 以下のサンプルファイルの一部をガイドとして使用して、Projection Info パラメーターを編集します。以下にハイライトされているように、投影タイプを必ず指定してください。パラメーターの説明については、前の手順の LatLonProjection パラメーターの表を参照してください。
 
@@ -77,7 +78,7 @@ Projection Info = LatLonProjection:
   Lon1 = double: 180
 ```
 
-## ユニバーサル横メルカトル投影法 {#section-606df0ed1c2d4a6bac3ff0fa2cfb3e82}
+## ユニバーサル横メルカトル投影法  {#section-606df0ed1c2d4a6bac3ff0fa2cfb3e82}
 
 ユニバーサル横メルカトル（UTM）投影法は、8 つのパラメーターで定義されます。地形画像レイヤーに対してユニバーサル横メルカトル投影法を指定する場合、地形画像ファイルでは画像の上に偽の（投影された）北を合わせ、画像の右に偽の西を合わせる必要があります。
 
@@ -85,9 +86,9 @@ Projection Info = LatLonProjection:
 
 **ユニバーサル横メルカトル投影法を指定するには**
 
-1. In the [!DNL Server Files Manager], click **[!UICONTROL Components]** to view its contents. [!DNL Terrain Images.cfg] ファイルは、このディレクトリ内に格納されています。
-1. Right-click the check mark in the server name column for [!DNL Terrain Images.cfg], then click **[!UICONTROL Make Local]**. A check mark appears in the [!DNL Temp] column for [!DNL Terrain Images.cfg.]
-1. Right-click the newly created check mark in the [!DNL Temp] column and click **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. The [!DNL Terrain Images.cfg] file appears in a Notepad window.
+1. [!DNL Server Files Manager]の&#x200B;**[!UICONTROL Components]**&#x200B;をクリックして、内容を表示します。 [!DNL Terrain Images.cfg] ファイルは、このディレクトリ内に格納されています。
+1. [!DNL Terrain Images.cfg]のサーバー名列のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 [!DNL Terrain Images.cfg.]の[!DNL Temp]列にチェックマークが表示されます
+1. [!DNL Temp]列に新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Notepad]**&#x200B;をクリックします。 [!DNL Terrain Images.cfg]ファイルがメモ帳ウィンドウに表示されます。
 1. 以下のサンプルファイルの一部とパラメーターの表をガイドとして使用して、Projection Info パラメーターを編集します。以下にハイライトされているように、投影タイプを必ず指定してください。
 
    ```
@@ -136,4 +137,3 @@ Projection Info = LatLonProjection:
   </tr> 
  </tbody> 
 </table>
-
