@@ -1,14 +1,15 @@
 ---
 description: Data Workbench サーバーは再処理中、ログ処理と変換のデータセット設定ファイルに指定された内容に従ってデータセットを再構築します。
-solution: Analytics
 title: 再処理と再変換について
-topic: Data workbench
 uuid: 0253bc8c-8883-41eb-8a9f-e0685613ff5c
+exl-id: 12c69935-a981-492c-9124-71f6f06ff77b
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '368'
+ht-degree: 69%
 
 ---
-
 
 # 再処理と再変換について{#understanding-reprocessing-and-retransformation}
 
@@ -24,23 +25,23 @@ Data Workbench サーバーは再処理中、ログ処理と変換のデータ�
 
 * 新しいデータソースを追加する。
 * [!DNL Profile.cfg] ファイルで新しい Data Workbench サーバーをクラスターに追加する。
-* Change the [!DNL Cluster.cfg] file.
-* 次を含むフ [!DNL Log Processing.cfg] ァイルまた [!DNL Log Processing Dataset Include] はファイルを変更します（ただし、これに限りません）。
+* [!DNL Cluster.cfg]ファイルを変更します。
+* [!DNL Log Processing.cfg]ファイルまたは[!DNL Log Processing Dataset Include]ファイルを変更します。次のファイルを変更できます。
 
    * 新しいパラメーターの追加
    * 変換の変更
    * Start Time パラメーターまたは End Time パラメーターの変更
 
-* Upgrade your [!DNL Insight Server.exe] file.
+* [!DNL Insight Server.exe]ファイルをアップグレードします。
 
 これ以外にも、[!DNL Log Processing.cfg] ファイルの Reprocess パラメーターに任意の文字またはその組み合わせを入力し、ファイルを保存することで再処理はいつでも開始できます。
 
 >[!NOTE]
 >
->For reprocessing to occur, the Pause parameter in the [!DNL Log Processing Mode.cfg] file must be set to false. このパラメーターの値はデフォルトで false になっているので、通常、変更は不要です。詳しくは、「追加の設定フ [!DNL Log Processing Mode.cfg]ァイル」 [を参照してください](/help/home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md)。
+>再処理を行うには、[!DNL Log Processing Mode.cfg]ファイルのPauseパラメーターをfalseに設定する必要があります。 このパラメーターの値はデフォルトで false になっているので、通常、変更は不要です。[!DNL Log Processing Mode.cfg]について詳しくは、[追加の構成ファイル](/help/home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md)を参照してください。
 
 ## 再変換 {#section-02446744549940ada8eba0573ec5575f}
 
-Each time you change any information in the [!DNL Transformation.cfg] file or in a [!DNL Transformation Dataset Include] file, such as change a transformation or define a new dimension, transformation occurs automatically.
+変換の変更や新しいディメンションの定義など、[!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイル内の情報を変更するたびに、自動的に変換が実行されます。
 
-Each time you change lookup files that are referenced in the [!DNL Transformation.cfg] file or in a [!DNL Transformation Dataset Include] file (including lookup files for [!DNL Categorize], [!DNL FlatFileLookup], and [!DNL ODBCLookup] transformations), you must initiate transformation by entering any character or combination of characters in the Reprocess parameter of the [!DNL Transformation.cfg] file and saving the file.
+[!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイル（[!DNL Categorize]、[!DNL FlatFileLookup]、[!DNL ODBCLookup]変換の参照ファイルを含む）で参照されている参照ファイルを変更するたびに、[!DNL Transformation.cfg]ファイルのReprocessパラメーターに任意の文字または文字の組み合わせを入力し、ファイルを保存します。
