@@ -1,20 +1,21 @@
 ---
-description: 入力セルの作成方法
-solution: Analytics
+description: 入力セルの作成方法。
 title: 入力セルの作成
-topic: Data workbench
 uuid: 9b2883e4-b12a-4279-9894-37a1df6c34b3
+exl-id: 1e55696e-fcc8-4521-b37b-f52409229e6d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 62%
 
 ---
 
-
 # 入力セルの作成{#create-an-input-cell}
 
-入力セルの作成方法
+入力セルの作成方法。
 
-When cell B1 is formatted as an input cell (by right-clicking the cell and clicking **[!UICONTROL Format]** > **[!UICONTROL Input Cell]**) and you lock the visualization (by right-clicking its top border and clicking **[!UICONTROL Locked]**), you can change the value of the input cell to view results “on-the-fly.”
+セルB1が入力セルとして形式設定されている（セルを右クリックし、**[!UICONTROL Format]**/**[!UICONTROL Input Cell]**&#x200B;をクリックして）、ビジュアライゼーションをロックした場合（上の枠を右クリックし、**[!UICONTROL Locked]**&#x200B;をクリックして）、入力セルの値を「その場で」表示結果に変更できます。
 
 次の例は、入力セルの数式が表示されているワークシートを示しています。
 
@@ -31,4 +32,3 @@ B1 を書式設定してビジュアライゼーションをロックした後�
 ![](assets/vis_Worksheet_InputCell_locked.png)
 
 ![](assets/vis_Worksheet_InputCell_locked_changed.png)
-
