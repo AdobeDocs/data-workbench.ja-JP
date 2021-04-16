@@ -1,14 +1,15 @@
 ---
 description: ビジュアライゼーション内の指標領域またはディメンション領域を右クリックしてメニューにアクセスし、そのビジュアライゼーション内の指標またはディメンションに関連するアクションを実行します。
-solution: Analytics
 title: 指標メニューとディメンションメニュー
-topic: Data workbench
 uuid: 0dfae2bd-6c33-4496-83ea-f7f6de960259
+exl-id: 59bed6c1-74b2-49e2-ac68-f22c8bed668a
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '554'
+ht-degree: 96%
 
 ---
-
 
 # 指標メニューとディメンションメニュー{#metric-and-dimension-menus}
 
@@ -16,7 +17,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 
 特定のタイプのビジュアライゼーションでのこれらのメニューオプションの使用について詳しくは、「 [分析のビジュアライゼーション](../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md).
 
-## 指標メニュー {#section-115db63a26f04b57ac954a69972c6291}
+## 指標メニュー{#section-115db63a26f04b57ac954a69972c6291}
 
 ビジュアライゼーション内の指標関連領域を右クリックして、指標メニューにアクセスします。
 
@@ -42,7 +43,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
   </tr> 
   <tr> 
    <td colname="col1"> <p>選択範囲をズーム </p> </td> 
-   <td colname="col2"> <p>折れ線グラフで選択したデータのサブセットにズームインします。「<a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530">ビジュアライゼーションへのズーム</a>」を参照してください。選択範囲について詳しくは、ビジュアライゼーションでの選 <a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746"> 択を参照してくださ</a>い。 </p> </td> 
+   <td colname="col2"> <p>折れ線グラフで選択したデータのサブセットにズームインします。「<a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530">ビジュアライゼーションへのズーム</a>」を参照してください。選択範囲について詳しくは、<a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746">ビジュアライゼーションでの選択</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>指標エディター </p> </td> 
@@ -79,7 +80,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
  </tbody> 
 </table>
 
-## ディメンションメニューの使用 {#section-e09de0aa6b74459a957b627ff7d07979}
+## ディメンションメニュー{#section-e09de0aa6b74459a957b627ff7d07979}を使用
 
 ビジュアライゼーション内のディメンション関連領域を右クリックして、ディメンションメニューにアクセスします。
 
@@ -165,4 +166,3 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
   </tr> 
  </tbody> 
 </table>
-
