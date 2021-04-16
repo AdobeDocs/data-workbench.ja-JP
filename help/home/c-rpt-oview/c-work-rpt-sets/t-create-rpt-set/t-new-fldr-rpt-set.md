@@ -1,23 +1,24 @@
 ---
 description: 新しいレポートセットフォルダーを作成する手順です。
-solution: Analytics
-title: レポートセット用の新しいフォルダの作成
-topic: Data workbench
+title: レポートセット用の新しいフォルダーの作成
 uuid: d48046ef-6ce2-458f-ac9d-d864628b8166
+exl-id: 5e00df9b-6b66-4910-aa5e-a3c8de686650
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '100'
+ht-degree: 28%
 
 ---
 
-
-# レポートセット用の新しいフォルダの作成{#create-a-new-folder-for-the-report-set}
+# レポートセット用の新しいフォルダーの作成{#create-a-new-folder-for-the-report-set}
 
 新しいレポートセットフォルダーを作成する手順です。
 
-1. Data Workbenchで、ワークスペース内 [!DNL Profile Manager] で右クリックし、//をクリッ **[!UICONTROL Admin]** クして開 **[!UICONTROL Profile]** きます **[!UICONTROL Profile Manager]**。
-1. をクリック **[!UICONTROL Reports]** して、フォルダを開 [!DNL Reports] きます。
+1. data workbenchで、ワークスペース内で右クリックし、**[!UICONTROL Admin]**/**[!UICONTROL Profile]**/**[!UICONTROL Profile Manager]**&#x200B;をクリックして、[!DNL Profile Manager]を開きます。
+1. **[!UICONTROL Reports]**&#x200B;をクリックして[!DNL Reports]フォルダーを開きます。
 
    ![ステップ情報](assets/vis_Reports_Manager.png)
 
-1. 新しいレ [!DNL User] ポートセットを作成するフォルダの列で、右クリックし、/を選択し **[!UICONTROL Create]** ます **[!UICONTROL Folder]**。 New Folder という名前のフォルダーが、[!DNL File] の [!DNL Reports] 列に表示されます。
-1. 新しいフォルダの列を右ク **[!UICONTROL User]** リックし、パラメータ内をク **[!UICONTROL Dir]** リックして、フォルダの新しい名前を入力します。
+1. 新しいレポートセットを作成するフォルダーの[!DNL User]列で、右クリックし、**[!UICONTROL Create]**/**[!UICONTROL Folder]**&#x200B;を選択します。 New Folder という名前のフォルダーが、[!DNL File] の [!DNL Reports] 列に表示されます。
+1. 新しいフォルダーの&#x200B;**[!UICONTROL User]**&#x200B;列を右クリックし、**[!UICONTROL Dir]**&#x200B;パラメーター内をクリックして、フォルダーの新しい名前を入力します。
