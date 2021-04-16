@@ -1,16 +1,17 @@
 ---
 description: 新しいファンネルビジュアライゼーションを構築するには、次の手順を実行します。
-solution: Analytics
-title: ファンネルの構築
-topic: Data workbench
+title: ファネルの作成
 uuid: 88afa09d-42ff-4e3b-b5cc-d74e01f4fc39
+exl-id: 24b63998-3aad-4ddf-b2d2-78dd0df9a510
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 81%
 
 ---
 
-
-# ファンネルの構築{#building-a-funnel}
+# ファネルの作成{#building-a-funnel}
 
 新しいファンネルビジュアライゼーションを構築するには、次の手順を実行します。
 
@@ -20,17 +21,17 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/dimension_table_pagename.png)
 
-   For example, right-click on the workspace and select **[!UICONTROL Table > Site Content > Page Name]**
+   例えば、ワークスペースを右クリックし、「**[!UICONTROL Table > Site Content > Page Name]**」を選択します。
 
 1. ファネルのビジュアライゼーションが開きます。
 
-   For example, right-click on the workspace and select **[!UICONTROL Visualization > Funnel]**.
+   例えば、ワークスペースを右クリックし、「**[!UICONTROL Visualization > Funnel]**」を選択します。
 
    ![](assets/step2-funnel.png)
 
-1. Add a dimension by selecting the element, then drag while then holding **[!UICONTROL `<Ctrl>`]** + **[!UICONTROL `<Alt>`]**.
+1. 要素を追加選択し、**[!UICONTROL `<Ctrl>`]** + **[!UICONTROL `<Alt>`]**&#x200B;を押しながらドラッグして、ディメンションを作成します。
 
-1. 要素をターゲットゾーンの上の位置にドラッグしま **[!UICONTROL Drag Dimension Element Here]**&#x200B;す。
+1. 要素をターゲットゾーン&#x200B;**[!UICONTROL Drag Dimension Element Here]**&#x200B;の上の位置にドラッグします。
 
    ![](assets/step4-funnel.png)
 
@@ -48,4 +49,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 ファンネルからは、フォールアウト率とフォールスルー率、顧客の販売コンバージョンの割合、キャンペーンやコンテンツパスに従っている割合を特定できます。詳しくは、[パスブラウザー](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119)を開くと、選択したページに到着する前に表示していたページの詳細なリストと、ページを離れた後のパスを表示できます。
 
-その他のファネル機 [能を参照してくださ](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md#concept-e65c81fe17794acd8d00d796b1780dc3)い。
+その他の[ファネル機能](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md#concept-e65c81fe17794acd8d00d796b1780dc3)を参照してください。
