@@ -1,14 +1,15 @@
 ---
 description: 新しい指標を追加または指標を変更するための手順です。
-solution: Analytics
 title: 指標の追加と変更
-topic: Data workbench
 uuid: c0763e0e-081a-4f00-b655-359f5b790ead
+exl-id: b40ad2bc-410d-4c80-b9f3-bc7e7cc42407
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 78%
 
 ---
-
 
 # 指標の追加と変更{#add-and-change-a-metrics}
 
@@ -20,9 +21,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **新しい指標を追加するには**
 
-* Right-click an element or the label of a metric and click **[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]**>*. 最初に選択した指標の下に指標が追加されます。
+* 指標の要素またはラベルを右クリックし、**[!UICONTROL Add Metric]**/*&lt;**[!UICONTROL metric name]**>*&#x200B;をクリックします。 最初に選択した指標の下に指標が追加されます。
 
 **指標を変更するには**
 
-* Right-click an element or the label of the metric that you want to change and click **[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*. 元の指標が新しい指標で置き換えられます。
-
+* 変更する指標の要素またはラベルを右クリックし、**[!UICONTROL Change Metric]**/*&lt;**[!UICONTROL metric name]**>*&#x200B;をクリックします。 元の指標が新しい指標で置き換えられます。
