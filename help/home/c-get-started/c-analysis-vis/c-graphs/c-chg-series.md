@@ -1,14 +1,15 @@
 ---
 description: 各要素をワークスペース内の他のビジュアライゼーション間でより容易に追跡できるよう、ディメンション内の要素を折れ線グラフ内でシリーズとして色分けできます。
-solution: Analytics
 title: シリーズの変更
-topic: Data workbench
 uuid: 4e9630c6-a663-486d-ae82-f6d25f74a41c
+exl-id: 7a639a7f-e526-4916-a957-b005277bdd2d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 85%
 
 ---
-
 
 # シリーズの変更{#change-a-series}
 
@@ -22,9 +23,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **シリーズを有効にするには**
 
-* Right-click an element or the label of the dimension and click **[!UICONTROL Change Series]** > *&lt;**[!UICONTROL dimension name]**>*.
+* ディメンションの要素またはラベルを右クリックし、**[!UICONTROL Change Series]**/*&lt;**[!UICONTROL dimension name]**>*&#x200B;をクリックします。
 
 **シリーズを無効にするには**
 
-* Right-click an element or the label of the dimension and click **[!UICONTROL Change Series]** > **[!UICONTROL None]**.
-
+* ディメンションの要素またはラベルを右クリックし、**[!UICONTROL Change Series]**/**[!UICONTROL None]**&#x200B;をクリックします。
