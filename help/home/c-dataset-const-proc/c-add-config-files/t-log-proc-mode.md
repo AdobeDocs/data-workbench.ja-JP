@@ -1,14 +1,15 @@
 ---
 description: 設定ファイル Log Processing Mode.cfg では、データセットに組み入れるデータの処理を一時停止したり、オフラインソースを指定したりすることができます。Data Workbench サーバーの状態ファイルが保存される頻度を指定することもできます。
-solution: Analytics
 title: Log Processing Mode.cfg
-topic: Data workbench
 uuid: 1f1e5d8b-80e7-4423-bb03-56e706a1b7b4
+exl-id: e252b815-e691-490d-9ac9-88bb1fd2c64d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '956'
+ht-degree: 83%
 
 ---
-
 
 # Log Processing Mode.cfg{#log-processing-mode-cfg}
 
@@ -18,21 +19,21 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **データセットプロファイルの Log Processing Mode.cfg ファイルを編集するには**
 
-1. While working in your dataset profile, open the [!DNL Profile Manager] and click **[!UICONTROL Dataset]** to show its contents.
+1. データセットプロファイルで[!DNL Profile Manager]を開き、**[!UICONTROL Dataset]**&#x200B;をクリックしてその内容を表示します。
 
    >[!NOTE]
    >
-   >If the [!DNL Log Processing Mode.cfg] file is not located in the directory for the desired profile, you need to copy this file from the Base directory on the data workbench server machine into the profile&#39;s directory.
+   >[!DNL Log Processing Mode.cfg]ファイルが目的のプロファイルのディレクトリ内にない場合は、Data Workbenchサーバーコンピューター上のBaseディレクトリからプロファイルのディレクトリにこのファイルをコピーする必要があります。
 
-   For information about opening and working with the [!DNL Profile Manager,] see the *Data Workbench User Guide*.
+   [!DNL Profile Manager,]を開いて使用する方法については、『*Data Workbenchユーザーガイド*』を参照してください。
 
-1. Right-click the check mark next to the configuration file&#39;s name and click **[!UICONTROL Make Local]**. このファイル用のチェックマークが [!DNL User] 列に表示されます。
-1. 新しく作成されたチェックマークを右クリックし、/をクリ **[!UICONTROL Open]** ックしま **[!UICONTROL from the workbench]**&#x200B;す。 設定ウィンドウが表示されます。
+1. 設定ファイルの名前の横のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 このファイル用のチェックマークが [!DNL User] 列に表示されます。
+1. 新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL from the workbench]**&#x200B;をクリックします。 設定ウィンドウが表示されます。
 1. 次の表を参考にして、設定ファイルのパラメーターを編集します。
 
    >[!NOTE]
    >
-   >Some of the parameters in the [!DNL Log Processing Mode.cfg] file have names that include [!DNL Fast Input] or [!DNL Fast Merge]. [!DNL Fast Input] は、データセット構築のログ処理段階を指し、データセットの処理にかかる合計時間の約半分を占めます。[!DNL Fast Merge] は、データセット構築の変換段階を指します。先行するログ処理があって初めて使用されます。[!DNL Fast Merge] は、ファイルの変更による再変換時には発生し [!DNL Transformation Dataset Configuration] ません。 Like [!DNL Fast Input], [!DNL Fast Merge] is also responsible for approximately half of the dataset processing time.
+   >[!DNL Log Processing Mode.cfg]ファイル内の一部のパラメーターの名前には、[!DNL Fast Input]または[!DNL Fast Merge]が含まれます。 [!DNL Fast Input] は、データセット構築のログ処理段階を指し、データセットの処理にかかる合計時間の約半分を占めます。[!DNL Fast Merge] は、データセット構築の変換段階を指します。先行するログ処理があって初めて使用されます。[!DNL Fast Merge] は、 [!DNL Transformation Dataset Configuration] ファイルの変更による再変換中には発生しません。[!DNL Fast Input]と同様、[!DNL Fast Merge]もデータセットの処理時間の約半分を占めます。
 
    <table id="table_1BF356E21C0E4119A277F40CEC5D7A21"> 
    <thead> 
@@ -63,7 +64,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
       <td colname="col2"> <p>オフラインログソースのマスク。 </p> <p> <b> オフラインソースを指定するには</b> 
       <ul id="ul_569B90E9A85246F88906FA5444F8A93E"> 
        <li id="li_3EF182CEF4A44106B5267175EC62B9AB"> <span class="uicontrol">Offline Sources</span> を右クリックし、<span class="uicontrol">新規追加</span>／<span class="uicontrol">Source</span> をクリックします。 </li> 
-       <li id="li_E8FBA212F4784B1A830745A90BB3AF90"> 新しいソースのパラメーターに、ログシーケンスのマスクを入力します。ファイル名が YYYYMMDD-<i>SENSORID</i>.vsl 形式の Sensor ログソースの場合、マスクは <i>SENSORID</i> です。SENSORID の大文字と小文字は区別されます。ログファイルログソースの場合、<span class="wintitle">Mask Pattern</span> によって抽出された文字列がマスクになります。See <a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e"> Log Files</a>. </li> 
+       <li id="li_E8FBA212F4784B1A830745A90BB3AF90"> 新しいソースのパラメーターに、ログシーケンスのマスクを入力します。ファイル名が YYYYMMDD-<i>SENSORID</i>.vsl 形式の Sensor ログソースの場合、マスクは <i>SENSORID</i> です。SENSORID の大文字と小文字は区別されます。ログファイルログソースの場合、<span class="wintitle">Mask Pattern</span> によって抽出された文字列がマスクになります。「<a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e">ログファイル</a>」を参照してください。 </li> 
       </ul> </p> <p> Offline Sources に属しているソースは、追加したり削除したりしても、データセットの再処理は実行されません。 </p> <p> 基準日時の測定は、プロファイルのオンラインソースの処理に対して維持されます。オフラインソースが再びオンラインになると、そのソースから送られてくるログファイルの処理が再開されます。 </p> <p> ソースがオンラインに戻ったらすぐに、Offline Sources からそのソースを削除する必要があります。削除しなかった場合、Data Workbench サーバーは、ソースからデータが送信されている限り、そのソースをオンラインソースとして処理し、基準日時を更新します。そのソースが再度オフラインになった場合、基準日時の測定が停止します。 </p> </td> 
    </tr> 
    <tr> 
@@ -85,10 +86,10 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    </tbody> 
    </table>
 
-   Data Workbench ウィンドウ内で [!DNL Log Processing Mode.cfg] ファイルを編集するときは、基本的な編集機能にショートカットキーを使用できます。切り取り（Ctrl + X）、コピー（Ctrl + C）、貼り付け（Ctrl + V）、取り消し（Ctrl + Z）、やり直し（Ctrl + Shift + Z）、セクション選択（クリックしながらドラッグ）、すべて選択（Ctrl + A）などの操作が可能です。In addition, you can use the shortcuts to copy and paste text from one configuration file ( [!DNL .cfg]) to another.
+   Data Workbench ウィンドウ内で [!DNL Log Processing Mode.cfg] ファイルを編集するときは、基本的な編集機能にショートカットキーを使用できます。切り取り（Ctrl + X）、コピー（Ctrl + C）、貼り付け（Ctrl + V）、取り消し（Ctrl + Z）、やり直し（Ctrl + Shift + Z）、セクション選択（クリックしながらドラッグ）、すべて選択（Ctrl + A）などの操作が可能です。また、設定ファイル([!DNL .cfg])間でテキストをコピーして貼り付ける際にも、ショートカットキーを使用できます。
 
-1. ウィンドウ上部 **[!UICONTROL (modified)]** のを右クリックし、をクリックしま **[!UICONTROL Save]**&#x200B;す。
-1. で、列 [!DNL Profile Manager]内のファイルのチェックマークを右クリックし、 [!DNL User] /をクリックし **[!UICONTROL Save to]** ます **[!UICONTROL datasetprofile name]**。
+1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
+1. [!DNL Profile Manager]で、[!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]**/**[!UICONTROL datasetprofile name]**&#x200B;をクリックします。
 
    >[!NOTE]
    >
