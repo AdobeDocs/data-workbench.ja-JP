@@ -1,14 +1,15 @@
 ---
 description: Insight サーバーのファイルサーバーユニットとファイルサーバー設定プロセスについて取り上げます。
-solution: Analytics
 title: Data Workbench サーバーのファイルサーバーユニットの設定
-topic: Data workbench
 uuid: ccb65952-f017-4434-b2f8-74c274450834
+exl-id: 19b8c08a-e9f2-47ab-ad9f-1fddfbd9d249
 translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1784'
+ht-degree: 66%
 
 ---
-
 
 # Data Workbench サーバーのファイルサーバーユニットの設定{#configuring-a-data-workbench-server-file-server-unit}
 
@@ -18,11 +19,11 @@ Insight サーバーのファイルサーバーユニットとファイルサー
 c_abt_file_svr_units.xml
 -->
 
-You can configure the data workbench server (InsightServer64.exe) to run as a File Server Unit (FSU) by completing the parameters in the **[!UICONTROL Log Sources]** > **[!UICONTROL Log Server]** node of the [!DNL Log Processing.cfg] file. When the data workbench server is configured to run as an FSU, it stores source files ( [!DNL .vsl] files, text files, or XML files) that can be accessed quickly by multiple processing servers (DPUs). Data Workbench サーバークラスター内の複数の DPU が FSU にアクセスしてログファイルを読み取るとき、DPU 間でログファイルが分割され、同じファイルが複数回処理されることはありません。
+[!DNL Log Processing.cfg]ファイルの&#x200B;**[!UICONTROL Log Sources]** > **[!UICONTROL Log Server]**&#x200B;ノードでパラメーターを設定すると、Data Workbenchサーバー(InsightServer64.exe)をファイルサーバーユニット(FSU)として実行するように設定できます。 FSUとして実行するように設定されているData Workbenchサーバーにはソースファイル（[!DNL .vsl]ファイル、テキストファイルまたはXMLファイル）が格納され、複数の処理サーバー(DPU)からすばやくアクセスできます。 Data Workbench サーバークラスター内の複数の DPU が FSU にアクセスしてログファイルを読み取るとき、DPU 間でログファイルが分割され、同じファイルが複数回処理されることはありません。
 
 >[!NOTE]
 >
->5 ～ 10個のDPUで構成されるData Workbenchサーバークラスターを提供するFSUを設定する場合は、クラスターのマスターサーバーをFSUにする必要があります。
+>5 ～ 10個のDPUから成るData Workbenchサーバークラスターを提供するFSUを設定する場合は、クラスターのマスターサーバーをFSUにする必要があります。
 
 Data Workbench サーバークラスターをインストールする方法について詳しくは、『*サーバー製品のインストールと管理に関するガイド*』を参照してください。
 
@@ -46,7 +47,7 @@ Data Workbench サーバークラスターで処理されるデータセット�
 
 >[!NOTE]
 >
->次の手順は、すべてのログファイルがデフォルトのディレクトリに存在することを前提としています。 別のディレクトリにログを保管する場合やログのパスを複数設ける必要がある場合は、具体的な設定内容をアドビ システムズ社コンサルティングサービスにご相談ください。
+>以下の手順は、すべてのログファイルがデフォルトのディレクトリに存在することを前提としています。 別のディレクトリにログを保管する場合やログのパスを複数設ける必要がある場合は、具体的な設定内容をアドビ システムズ社コンサルティングサービスにご相談ください。
 
 ## データソースの指定 {#section-d2b545db7ab142ffb4be32e040395383}
 
@@ -54,11 +55,11 @@ Data Workbench サーバークラスターで処理されるデータセット�
 
 **データソースとその場所を指定するには**
 
-1. Open the [!DNL Log Processing.cfg] file. See [Editing the Log Processing Configuration File](../../../home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md#task-6a2fa1b735cb4eefad730f0a3a7858e5).
+1. [!DNL Log Processing.cfg]ファイルを開きます。 「[ログ処理設定ファイルの編集](../../../home/c-dataset-const-proc/c-log-proc-config-file/t-edit-log-proc-config-file.md#task-6a2fa1b735cb4eefad730f0a3a7858e5)」を参照してください。
 
-1. [!DNL Sensor]、ログファイルまたは XML データソースを追加します。See [Log Files](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e).
+1. [!DNL Sensor]、ログファイルまたは XML データソースを追加します。[ログファイル](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e)を参照してください。
 
-1. Log Paths パラメーターを設定します。詳しくは、 [Sensor Files](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-b25f11c477b54032a15b6117b3bf9009)、 [Log Files](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e)、 [XML Log Sources](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-c7b154e93748447b986e97f6ef688887)。 有効な URI を必ず指定してください。
+1. Log Paths パラメーターを設定します。詳しくは、  [Sensor Files](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-b25f11c477b54032a15b6117b3bf9009)、 [Log Files](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e) [、または](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-c7b154e93748447b986e97f6ef688887)XML Log Sources。有効な URI を必ず指定してください。
 
 1. 次の表に記載した Log Server のパラメーターを設定します。
 
@@ -102,46 +103,46 @@ DPU から FSU に接続するためにプロキシサーバーが必要な場�
 | パラメーター | 説明 |
 |---|---|
 | Proxy Address | Data Workbench サーバーがファイルサーバーにアクセスするときに使用するプロキシサーバーのアドレス。 |
-| Proxy Password | (オプション)プロキシサーバーへのパスワード。 |
+| Proxy Password | （オプション）プロキシサーバーへのパスワード。 |
 | Proxy Port | プロキシサーバーのポート。デフォルトは 8080 です。 |
-| Proxy User Name | (オプション)プロキシサーバーのユーザー名。 |
+| Proxy User Name | （オプション）プロキシサーバーのユーザー名。 |
 
-Following is an example of a defined [!DNL Log Server] in the [!DNL Log Processing.cfg] file. Log Source 1 は LogFile ソースです。その場所として、FSU01 というコンピューター上の Logs というディレクトリ（Log Paths パラメーターに指定された URI に注目）が指定されています。
+次に、[!DNL Log Processing.cfg]ファイル内の定義済み[!DNL Log Server]の例を示します。 Log Source 1 は LogFile ソースです。その場所として、FSU01 というコンピューター上の Logs というディレクトリ（Log Paths パラメーターに指定された URI に注目）が指定されています。
 
 ![](assets/cfg_LogProcessing_LogServer.png)
 
-## ファイルサーバーユニット上の権限の編集 {#section-b4a54b591b4e4435a728a67f194057ef}
+## ファイルサーバーユニット上の権限の編集  {#section-b4a54b591b4e4435a728a67f194057ef}
 
 従来は、FSU からログファイルを読み取るように特定のデータセットのプロファイルを設定していました。今後は、FSU 上の権限を編集して、プロファイルを実行している DPU からの接続を許可する必要があります。以下の手順で、権限ファイルである [!DNL Access Control.cfg] の編集方法を説明します。
 
 **FSU 上の権限を編集するには**
 
-1. Open the [!DNL Server Files Manager] for the data workbench server machine that you are setting up as your FSU and click **[!UICONTROL Access Control]** to show its contents.
+1. FSUとして設定しているData Workbenchサーバーコンピューターの[!DNL Server Files Manager]を開き、**[!UICONTROL Access Control]**&#x200B;をクリックしてその内容を表示します。
 
-   For information about opening and working with the [!DNL Server Files Manager], see the *Data Workbench User Guide*.
+   [!DNL Server Files Manager]を開いて操作する方法については、『*Data Workbenchユーザーガイド*』を参照してください。
 
-1. In the [!DNL Server Files Manager] window, click **[!UICONTROL Access Control]** to show its contents. [!DNL Access Control.cfg] ファイルは、このディレクトリ内に格納されています。
+1. [!DNL Server Files Manager]ウィンドウで、**[!UICONTROL Access Control]**&#x200B;をクリックしてその内容を表示します。 [!DNL Access Control.cfg] ファイルは、このディレクトリ内に格納されています。
 
-1. Right-click the check mark in the server name column for [!DNL Access Control.cfg], then click **[!UICONTROL Make Local]**. A check mark appears in the [!DNL Temp] column for [!DNL Access Control.cfg].
+1. [!DNL Access Control.cfg]のサーバー名列のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 [!DNL Access Control.cfg]の[!DNL Temp]列にチェックマークが表示されます。
 
-1. Right-click the newly created check mark under the [!DNL Temp] column and click **[!UICONTROL Open]** > **[!UICONTROL in Workstation]**.
+1. [!DNL Temp]列の下に新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Workstation]**&#x200B;をクリックします。
 
-1. In the [!DNL Access Control] window, click **[!UICONTROL Access Control Groups]** to show its contents.
+1. [!DNL Access Control]ウィンドウで、**[!UICONTROL Access Control Groups]**&#x200B;をクリックしてその内容を表示します。
 
-1. Right-click the numeric label for the final [!DNL AccessGroup] in the list and click **[!UICONTROL Add new]** > **[!UICONTROL Group]**.
+1. リストの最後の[!DNL AccessGroup]の数値ラベルを右クリックし、**[!UICONTROL Add new]**/**[!UICONTROL Group]**&#x200B;をクリックします。
 
-1. 新しいの [!DNL Name] を入力します [!DNL AccessGroup]。 （例：Connecting Servers）。
+1. 新しい[!DNL AccessGroup]の[!DNL Name]を入力します。 （例：Connecting Servers）。
 
-1. 新しいアイテムの下 **[!UICONTROL Member]** で右クリックし、 [!DNL AccessGroup]>をクリッ **[!UICONTROL Add new]** クしま **[!UICONTROL Member]**&#x200B;す。
+1. 新しい[!DNL AccessGroup]の下の&#x200B;**[!UICONTROL Member]**&#x200B;を右クリックし、**[!UICONTROL Add new]**/**[!UICONTROL Member]**&#x200B;をクリックします。
 
 1. このファイルサーバーに接続する、Data Workbench サーバーの DPU の IP アドレスを入力します。
 1. ログファイルへのアクセスが必要となるクラスター内の Data Workbench サーバー DPU を含め、この FSU に接続する他の Data Workbench サーバー DPU についても、手順 4 と手順 5 を繰り返します。
-1. 新しいアイテムの下 **[!UICONTROL Read-Only Access]** で右クリックし、 [!DNL AccessGroup]>をクリッ **[!UICONTROL Add new]** クしま **[!UICONTROL URI]**&#x200B;す。
+1. 新しい[!DNL AccessGroup]の下の&#x200B;**[!UICONTROL Read-Only Access]**&#x200B;を右クリックし、**[!UICONTROL Add new]**/**[!UICONTROL URI]**&#x200B;をクリックします。
 
 1. ファイルサーバーコンピューター上に保存されるログファイルの場所を入力します。パスの指定にはスラッシュ（/）を使用してください。デフォルトの場所は /Logs/ です。
-1. Right-click **[!UICONTROL (modified)]** at the top of the window, then click **[!UICONTROL Save]**.
+1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
 
-1. In the [!DNL Server Files Manager] window, right-click the check mark for [!DNL Access Control.cfg] in the [!DNL Temp] column, then click **[!UICONTROL Save to]** > **[!UICONTROL server name]** to save the locally made changes to the data workbench server&#39;s FSU.
+1. [!DNL Server Files Manager]ウィンドウで、[!DNL Temp]列の[!DNL Access Control.cfg]のチェックマークを右クリックし、**[!UICONTROL Save to]**/**[!UICONTROL server name]**&#x200B;をクリックして、Data WorkbenchサーバーのFSUに対してローカルに適用した変更を保存します。
 
 ## ログファイルの場所の指定 {#section-f9a649bf1b2544feb10ad8820384edb0}
 
@@ -149,15 +150,15 @@ Following is an example of a defined [!DNL Log Server] in the [!DNL Log Processi
 
 **ログファイルの場所を指定するには**
 
-1. In the [!DNL Server Files Manager] window, click **[!UICONTROL Components]** to show its contents. [!DNL Communications.cfg] ファイルは、このディレクトリ内に格納されています。
+1. [!DNL Server Files Manager]ウィンドウで、**[!UICONTROL Components]**&#x200B;をクリックしてその内容を表示します。 [!DNL Communications.cfg] ファイルは、このディレクトリ内に格納されています。
 
-1. Right-click the check mark in the server name column for [!DNL Communications.cfg], then click **[!UICONTROL Make Local]**. A check mark appears in the [!DNL Temp] column for [!DNL Communications.cfg].
+1. [!DNL Communications.cfg]のサーバー名列のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 [!DNL Communications.cfg]の[!DNL Temp]列にチェックマークが表示されます。
 
-1. Right-click the newly created check mark under the [!DNL Temp] column and click **[!UICONTROL Open]** > **[!UICONTROL in Workstation.]**.
+1. [!DNL Temp]列の下に新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Workstation.]**&#x200B;をクリックします。
 
-1. In the [!DNL Communications.cfg] window, click **[!UICONTROL component]** to show its contents.
+1. [!DNL Communications.cfg]ウィンドウで、**[!UICONTROL component]**&#x200B;をクリックしてその内容を表示します。
 
-1. In the [!DNL Communications.cfg] window, click **[!UICONTROL Servers]** to show its contents. 場合によっては、FileServer、LoggingServer、InitServer、StatusServer、SendServer、ReplicateServer など、複数のサーバーが表示されます。
+1. [!DNL Communications.cfg]ウィンドウで、**[!UICONTROL Servers]**&#x200B;をクリックしてその内容を表示します。 場合によっては、FileServer、LoggingServer、InitServer、StatusServer、SendServer、ReplicateServer など、複数のサーバーが表示されます。
 
 1. （[!DNL Sensor] ログソースのみ）[!DNL LoggingServer]（Data Workbench サーバーによって処理される [!DNL Sensor] のログファイルが書き込まれる場所）を探し、その番号をクリックしてメニューを表示します。Log Directory パラメーターを編集して、ログファイルの適切な場所を反映します。デフォルトのログディレクトリは、Data Workbench サーバーのインストールディレクトリにある Logs フォルダーです。
 
@@ -172,11 +173,11 @@ Following is an example of a defined [!DNL Log Server] in the [!DNL Log Processi
 
    >[!NOTE]
    >
-   >If the [!DNL Local Path] and URI parameters are populated as shown, you can access the log files on the FSU from any data workbench server by clicking [!DNL Logs] in the [!DNL Server Files Manager].
+   >[!DNL Local Path]パラメーターとURIパラメーターが図のように設定されている場合は、[!DNL Server Files Manager]の[!DNL Logs]をクリックして、任意のData WorkbenchサーバーからFSU上のログファイルにアクセスできます。
 
-1. Right-click **[!UICONTROL (modified)]** at the top of the configuration window, then click **[!UICONTROL Save]**.
+1. 設定ウィンドウの上部にある&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
 
-1. In the [!DNL Server Files Manager] window, right-click the check mark for [!DNL Communications.cfg] in the [!DNL Temp] column, then click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>* to save the locally made changes to the data workbench server&#39;s FSU.
+1. [!DNL Server Files Manager]ウィンドウで、[!DNL Temp]列の[!DNL Communications.cfg]のチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL server name]***&#x200B;をクリックして、Data WorkbenchサーバーのFSUに対してローカルに適用した変更を保存します。
 
 ## クラスターにおける中央の正規化サーバーの作成 {#section-2c1f57b683f94cc193bc069e886bba28}
 
@@ -188,36 +189,36 @@ FSU を中央の正規化サーバーとして使用するには、その FSU �
 
 **FSU を中央の正規化サーバーとして設定するには**
 
-1. Add a [!DNL NormalizeServer] entry to the [!DNL Communications.cfg] file on the FSU.
+1. FSU上の追加[!DNL Communications.cfg]ファイルへの[!DNL NormalizeServer]エントリ。
 
    >[!NOTE]
    >
-   >If you have installed the complete release package for data workbench server v5.0 or later, the [!DNL Communications.cfg] file on your FSU should have a [!DNL NormalizeServer] entry already. 該当するエントリが存在するかどうかは、以下の手順で確認できます。
+   >Data Workbenchサーバーv5.0以降の完全なリリースパッケージをインストールした場合、FSU上の[!DNL Communications.cfg]ファイルには既に[!DNL NormalizeServer]エントリが存在する必要があります。 該当するエントリが存在するかどうかは、以下の手順で確認できます。
 
    1. [!DNL Communications.cfg]ログファイルの場所の指定[の説明に従い、Data Workbench で ](#section-f9a649bf1b2544feb10ad8820384edb0) ファイルを開きます。
 
    1. **[!UICONTROL component]** をクリックしてその内容を表示します。
-   1. 右クリックし、/ **[!UICONTROL Servers]** をクリ **[!UICONTROL Add New]** ックしま **[!UICONTROL Centralized Normalization Server]**&#x200B;す。
+   1. **[!UICONTROL Servers]**&#x200B;を右クリックし、**[!UICONTROL Add New]**/**[!UICONTROL Centralized Normalization Server]**&#x200B;をクリックします。
 
-   1. In the URI parameter for the [!DNL NormalizeServer], type [!DNL /Cluster/].
+   1. [!DNL NormalizeServer]のURIパラメーターに[!DNL /Cluster/]と入力します。
 
       ![](assets/cfg_Communications_NormalizeServer.png)
 
-   1. ウィンドウ上部 **[!UICONTROL (modified)]** のを右クリックし、をクリックしま **[!UICONTROL Save]**&#x200B;す。
+   1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
 
-   1. In the [!DNL Server Files Manager] window, right-click the check mark for [!DNL Communications.cfg] in the [!DNL Temp] column, then click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server]**>* name to save the locally made changes to the data workbench server FSU.
+   1. [!DNL Server Files Manager]ウィンドウで、[!DNL Temp]列の[!DNL Communications.cfg]のチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL server]***&#x200B;名をクリックして、Data WorkbenchサーバーのFSUに対してローカルに適用した変更を保存します。
 
 1. Data Workbench サーバークラスターのマスターサーバー上にある [!DNL Cluster.cfg] ファイルで中央の正規化サーバーを定義します。
 
    >[!NOTE]
    >
-   >If the FSU on which you are setting up your centralized normalization server is not the master data workbench Server in your cluster, you must add the IP addresses of the DPUs in the cluster to the [!DNL Cluster Servers] access group in the FSU&#39;s [!DNL Access Control.cfg] file. [!DNL Cluster Servers] グループにサーバーを追加する手順については、『*サーバー製品のインストールと管理に関するガイド*』の「クラスターのアクセス制御ファイルの更新」の節を参照してください。
+   >中央の正規化サーバーを設定するFSUが、クラスター内のマスターData Workbenchサーバーではない場合は、クラスター内のDPUのIPアドレスをFSUの[!DNL Access Control.cfg]ファイル内の[!DNL Cluster Servers]アクセスグループに追加する必要があります。 [!DNL Cluster Servers] グループにサーバーを追加する手順については、『*サーバー製品のインストールと管理に関するガイド*』の「クラスターのアクセス制御ファイルの更新」の節を参照してください。
 
-   1. Open the [!DNL Profile Manager] within your dataset profile, then click **[!UICONTROL Dataset]** to show its contents. [!DNL Cluster.cfg] ファイルは、このディレクトリ内に格納されています。
+   1. データセットプロファイル内で[!DNL Profile Manager]を開き、**[!UICONTROL Dataset]**&#x200B;をクリックしてその内容を表示します。 [!DNL Cluster.cfg] ファイルは、このディレクトリ内に格納されています。
 
-   1. の横のチェックマークを右クリックし、を [!DNL Cluster.cfg]クリックしま **[!UICONTROL Make Local]**&#x200B;す。 このファイル用のチェックマークが [!DNL User] 列に表示されます。
+   1. [!DNL Cluster.cfg]の横のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 このファイル用のチェックマークが [!DNL User] 列に表示されます。
 
-   1. 新しく作成されたチェックマークを右クリックし、/をクリ **[!UICONTROL Open]** ックしま **[!UICONTROL in Notepad]**&#x200B;す。
+   1. 新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Notepad]**&#x200B;をクリックします。
 
    1. 次のファイルフラグメントでハイライトされているテキストを追加します。
 
@@ -235,7 +236,7 @@ FSU を中央の正規化サーバーとして使用するには、その FSU �
 
       >[!NOTE]
       >
-      >When you enter the common name of FSU for the SSL Server Common Name parameter, the FSU uses its [!DNL .address] file to resolve the common name. For information about the [!DNL .address] file, see the *Server Products Installation and Administration Guide*.
+      >SSL Server Common NameパラメーターにFSUの共通名を入力すると、FSUは[!DNL .address]ファイルを使用して共通名を解決します。 [!DNL .address]ファイルについて詳しくは、『*サーバー製品のインストールと管理に関するガイド*』を参照してください。
 
    1. ファイルを保存します。
-   1. In the [!DNL Profile Manager], right-click the check mark for [!DNL Cluster.cfg] in the [!DNL User] column, then click **[!UICONTROL Save to]** > ***[!UICONTROL dataset profile name]*** to save the locally made changes to the dataset profile.
+   1. [!DNL Profile Manager]で、[!DNL User]列の[!DNL Cluster.cfg]のチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL dataset profile name]***&#x200B;をクリックして、データセットプロファイルに対してローカルに適用した変更を保存します。
