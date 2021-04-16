@@ -1,17 +1,15 @@
 ---
 description: Compare、Not Empty、Range、Regular Expression、String Match など、テスト演算の条件について取り上げます。
-solution: Analytics
 title: テスト演算の条件
-topic: Data workbench
 uuid: 6a117569-1372-4095-972b-76289a45f19e
+exl-id: 6c1f521b-a6b9-4bb7-bdfa-56c615b0c916
 translation-type: tm+mt
-source-git-commit: ed7597393049099e08586716163cbd1cca50c5fa
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1114'
 ht-degree: 82%
 
 ---
-
 
 # テスト演算の条件{#test-operation-conditions}
 
@@ -23,7 +21,7 @@ Compare、Not Empty、Range、Regular Expression、String Match など、テス�
 * [正規表現](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-ae9c016502cb44128760c58f2d2d5297)
 * [String Match](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f)
 
-## Compare {#section-fb2bdb3838504099b324b9838cdeeaac}
+## Compare  {#section-fb2bdb3838504099b324b9838cdeeaac}
 
 [!DNL Compare] は、文字列値または数値を比較する条件です。文字列値を比較する場合、大文字と小文字を区別するかどうかを指定できます。
 
@@ -73,13 +71,13 @@ Compare、Not Empty、Range、Regular Expression、String Match など、テス�
   </tr> 
   <tr> 
    <td colname="col1"> タイプ </td> 
-   <td colname="col2">実行する比較のタイプ。<span class="wintitle">LEXICAL</span>、<span class="wintitle">NUMERIC</span>、<span class="wintitle">DATETIME</span> のいずれかを選択できます。これらのタイプの説明は、「テスト演算の <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> テストタイプ</a>」を参照してください。 </td> 
+   <td colname="col2">実行する比較のタイプ。<span class="wintitle">LEXICAL</span>、<span class="wintitle">NUMERIC</span>、<span class="wintitle">DATETIME</span> のいずれかを選択できます。これらのタイプの説明については、「<a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a">テスト演算のテストタイプ</a>」を参照してください。 </td> 
    <td colname="col3"> <span class="wintitle"> LEXICAL</span> </td> 
   </tr> 
  </tbody> 
 </table>
 
-This example uses a [!DNL Compare] condition to define the [!DNL Log Entry Condition]. Data Workbench サーバーは、各イベントデータレコードを読み取る際、数値である x-age と 55 を比較します。特定のログエントリについて、x-age が 55 以下である場合、そのログエントリはデータセットの構築プロセスに含められます。
+この例では、[!DNL Compare]条件を使用して[!DNL Log Entry Condition]を定義しています。 Data Workbench サーバーは、各イベントデータレコードを読み取る際、数値である x-age と 55 を比較します。特定のログエントリについて、x-age が 55 以下である場合、そのログエントリはデータセットの構築プロセスに含められます。
 
 ![](assets/cfg_Condition_CompareCondition.png)
 
@@ -114,7 +112,7 @@ This example uses a [!DNL Compare] condition to define the [!DNL Log Entry Condi
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Case Sensitive </td> 
+   <td colname="col1"> 大文字と小文字を区別 </td> 
    <td colname="col2">true または false。<span class="wintitle">Type</span> が <span class="wintitle">LEXICAL</span> の場合にのみ使用されます。false に設定した場合、大文字と小文字は区別されません。 </td> 
    <td colname="col3"> true </td> 
   </tr> 
@@ -124,7 +122,7 @@ This example uses a [!DNL Compare] condition to define the [!DNL Log Entry Condi
    <td colname="col3"> コメント </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Input </td> 
+   <td colname="col1"> 入力 </td> 
    <td colname="col2"> ログエントリからの入力として使用するフィールドの名前。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -140,13 +138,13 @@ This example uses a [!DNL Compare] condition to define the [!DNL Log Entry Condi
   </tr> 
   <tr> 
    <td colname="col1"> タイプ </td> 
-   <td colname="col2">実行する比較のタイプ。<span class="wintitle">LEXICAL</span>、<span class="wintitle">NUMERIC</span>、<span class="wintitle">DATETIME</span> のいずれかを選択できます。これらのタイプの説明は、「テスト演算の <a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a"> テストタイプ</a>」を参照してください。 </td> 
+   <td colname="col2">実行する比較のタイプ。<span class="wintitle">LEXICAL</span>、<span class="wintitle">NUMERIC</span>、<span class="wintitle">DATETIME</span> のいずれかを選択できます。これらのタイプの説明については、「<a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a">テスト演算のテストタイプ</a>」を参照してください。 </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-This example uses a [!DNL Range] condition to define the [!DNL Log Entry Condition]. As the data workbench server reads each [!DNL event data] record, it compares the numeric values x-age and 55. 特定のログエントリについて、x-age が 55 以上である場合、そのログエントリはデータセットの構築プロセスに含められます。この例で実行される機能は、[!DNL Compare] 条件で取り上げた例と同じです。[Compare](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-fb2bdb3838504099b324b9838cdeeaac) を参照してください。
+この例では、[!DNL Range]条件を使用して[!DNL Log Entry Condition]を定義しています。 Data Workbenchサーバーは、各[!DNL event data]レコードを読み取る際、数値x-ageと55を比較します。 特定のログエントリについて、x-age が 55 以上である場合、そのログエントリはデータセットの構築プロセスに含められます。この例で実行される機能は、[!DNL Compare] 条件で取り上げた例と同じです。[Compare](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-fb2bdb3838504099b324b9838cdeeaac) を参照してください。
 
 >[!NOTE]
 >
@@ -156,9 +154,9 @@ This example uses a [!DNL Range] condition to define the [!DNL Log Entry Conditi
 
 ## 正規表現 {#section-ae9c016502cb44128760c58f2d2d5297}
 
-この [!DNL Regular Expression] 条件テストでは、正規式のパターンマッチング( [正規式を参照](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c))を使用して、Matchesパラメーターで指定されたパターンのいずれかに一致する文字列が、指定された入力フィールドの値に含まれているかどうかを判断します。
+[!DNL Regular Expression]条件テストでは、正規式のパターンマッチング([正規式](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c)を参照)を使用して、Matchesパラメーターで指定されたパターンのいずれかに一致する文字列が指定された入力フィールドの値に含まれているかどうかを判定します。
 
-入力データが文字列ベクトルである場合、ベクトル内の 1 つ目の値だけがテストに使用されます。The [!DNL Regular Expression] condition performs full string comparisons. 文字列を部分的に識別する必要がある場合は、文字列の前後に「.*」を付加する必要があります。
+入力データが文字列ベクトルである場合、ベクトル内の 1 つ目の値だけがテストに使用されます。[!DNL Regular Expression]条件は、文字列全体を比較します。 文字列を部分的に識別する必要がある場合は、文字列の前後に「.*」を付加する必要があります。
 
 [!DNL Regular Expression] 条件のパラメーターについて次の表で説明します。
 
@@ -172,7 +170,7 @@ This example uses a [!DNL Range] condition to define the [!DNL Log Entry Conditi
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Case Sensitive </td> 
+   <td colname="col1"> 大文字と小文字を区別 </td> 
    <td colname="col2"> true または false。false に設定した場合、大文字と小文字は区別されません。 </td> 
    <td colname="col3"> true </td> 
   </tr> 
@@ -182,12 +180,12 @@ This example uses a [!DNL Range] condition to define the [!DNL Log Entry Conditi
    <td colname="col3"> コメント </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Input </td> 
+   <td colname="col1"> 入力 </td> 
    <td colname="col2"> ログエントリからの入力として使用するフィールドの名前。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 一致 </td> 
+   <td colname="col1"> Matches </td> 
    <td colname="col2"> <p>入力フィールドの値と突き合わせる正規表現パターン（複数可）。 </p> <p> <b>正規表現パターンを追加するには</b> 
      <ol id="ol_6D6467FF74334DEA8E8625C3B155D11D"> 
       <li id="li_9E13A63558FF44749C2E49BD50B7F770"><span class="uicontrol">Matches</span> を右クリックします。 </li> 
@@ -199,13 +197,13 @@ This example uses a [!DNL Range] condition to define the [!DNL Log Entry Conditi
  </tbody> 
 </table>
 
-以下に示したのは、Web サイトトラフィックから収集したデータのフィールドに、[!DNL Regular Expression] 条件を適用して、一致しているかどうかを判断する例です。The condition returns true only if the cs(referrer-query) field contains a string matching the regular expression `campaign=C[1-9][0-9]{4}`. This regular expression matches any string containing `campaign=C12345`. However, the pattern would not match the string `campaign=C0123&` because the first character after the `C` is not in the range `1-9`.
+以下に示したのは、Web サイトトラフィックから収集したデータのフィールドに、[!DNL Regular Expression] 条件を適用して、一致しているかどうかを判断する例です。この条件は、cs(転送者クエリ)フィールドに、正規式`campaign=C[1-9][0-9]{4}`と一致する文字列が含まれている場合にのみtrueを返します。 この正規式は、`campaign=C12345`を含む任意の文字列と一致します。 ただし、`C`の後の最初の文字が`1-9`の範囲にないので、`campaign=C0123&`という文字列とは一致しません。
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
 ## String Match {#section-f8d132085c6b4500bfbe4515b848142f}
 
-The [!DNL String Match] condition tests for string equality. 指定されたフィールドを入力として受け取り、各ログエントリ内のフィールドの値と、この条件演算の Matches パラメーターに指定された文字列とを比較します。Matches に指定されたいずれかの文字列が、指定された入力フィールドの値と同じ（大文字と小文字が区別されます）である場合、true を返します。[!DNL StringCondition] に一致文字列が存在しない場合は、false を返します。入力データが文字列ベクトルである場合、ベクトル内の 1 つ目の値（文字列）だけがテストに使用されます。
+[!DNL String Match]条件は、文字列の等価性をテストします。 指定されたフィールドを入力として受け取り、各ログエントリ内のフィールドの値と、この条件演算の Matches パラメーターに指定された文字列とを比較します。Matches に指定されたいずれかの文字列が、指定された入力フィールドの値と同じ（大文字と小文字が区別されます）である場合、true を返します。[!DNL StringCondition] に一致文字列が存在しない場合は、false を返します。入力データが文字列ベクトルである場合、ベクトル内の 1 つ目の値（文字列）だけがテストに使用されます。
 
 <table id="table_BD599BAA5DD54B278813B6C38AC8DE6B"> 
  <thead> 
@@ -217,7 +215,7 @@ The [!DNL String Match] condition tests for string equality. 指定されたフ�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Case Sensitive </td> 
+   <td colname="col1"> 大文字と小文字を区別 </td> 
    <td colname="col2"> true または false。false に設定した場合、大文字と小文字は区別されません。 </td> 
    <td colname="col3"> true </td> 
   </tr> 
@@ -227,7 +225,7 @@ The [!DNL String Match] condition tests for string equality. 指定されたフ�
    <td colname="col3"> コメント </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Input </td> 
+   <td colname="col1"> 入力 </td> 
    <td colname="col2"> ログエントリからの入力として使用するフィールドの名前。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -244,7 +242,6 @@ The [!DNL String Match] condition tests for string equality. 指定されたフ�
  </tbody> 
 </table>
 
-以下に示したのは、Web サイトトラフィックから収集したデータに [!DNL String Match] 条件を適用する例です。The condition tests whether the input field (cs-uri-stem) matches either of the two strings specified in the Matches parameter, and it succeeds if the field cs-uri-stem is either the exact string [!DNL /navigation/footer.asp] or the exact string [!DNL /navigation/header.asp].
+以下に示したのは、Web サイトトラフィックから収集したデータに [!DNL String Match] 条件を適用する例です。この条件は、入力フィールド(cs-uri-stem)がMatchesパラメーターで指定された2つの文字列のいずれかに一致するかどうかをテストし、フィールドcs-uri-stemが正確な文字列[!DNL /navigation/footer.asp]または完全な文字列[!DNL /navigation/header.asp]のいずれかである場合に成功します。
 
 ![](assets/cfg_Condition_StringMatch.png)
-
