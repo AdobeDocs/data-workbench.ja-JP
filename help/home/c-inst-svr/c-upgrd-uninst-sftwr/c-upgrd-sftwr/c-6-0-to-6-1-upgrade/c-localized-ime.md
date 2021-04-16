@@ -1,14 +1,15 @@
 ---
 description: Data Workbench では、現在、国際的な言語の補助的なテキスト入力プロセスとして Input Method Editor（IME）をサポートしています。
-solution: Analytics
 title: Input Method Editor のインストール
-topic: Data workbench
 uuid: 2a4dc6de-9dd7-4280-b410-fb88a135fe45
+exl-id: 3fcc58f5-29a9-427e-831a-44d527614b56,0bdc7d95-b49a-4ca5-9fde-9c1ce2cd14ec,e4e1c016-0544-434a-b82e-fdd2a4af316c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 91%
 
 ---
-
 
 # Input Method Editor のインストール{#installing-the-input-method-editor}
 
@@ -20,11 +21,11 @@ IME を使用すると、地域の言語に適した様々な方法を用いて�
 >
 >Data Workbench 6.1リリースでは、簡体字中国語の仮想キーボードのみがサポートされます。 この IME で他の言語を入力すると、予期せぬ動作が生じる可能性があります。
 
-## IME の使用 {#section-5f008d75a7b24119ab6aebc55454f927}
+## IME の使用  {#section-5f008d75a7b24119ab6aebc55454f927}
 
 フローティング IME テキスト入力機能を使用するには：
 
-1. Click **[!UICONTROL Alt + Space]** for any text input area.
+1. 任意のテキスト入力領域で&#x200B;**[!UICONTROL Alt + Space]**&#x200B;をクリックします。
 1. システムの IME を使用して値を入力します。
 1. **[!UICONTROL Enter]** キーを押すか、「**[!UICONTROL OK]**」ボタンをクリックして、入力ダイアログを閉じます。
 
