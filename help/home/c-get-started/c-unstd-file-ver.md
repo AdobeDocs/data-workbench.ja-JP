@@ -1,28 +1,29 @@
 ---
-description: ワークトップを使用すると、特定のワークスペースがData Workbenchサーバー上にあるか、ローカルマシン上にあるか、またはその両方に存在するかに関わらず、各ワークスペースの保存場所を簡単に判断できます。
-solution: Analytics
+description: ワークトップを使用すると、特定のワークスペースがData Workbenchサーバー上にあるか、ローカルマシン上にあるか、その両方にあるかに関係なく、それぞれのワークスペースが保存されている場所を簡単に特定できます。
 title: ファイルのバージョン管理
-topic: Data workbench
 uuid: 5e7430f3-1425-41d2-828b-bc8f5786bf3b
+exl-id: 82a70d51-a95c-4ddd-8d3c-cd0364940693
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 26%
 
 ---
 
-
 # ファイルのバージョン管理{#file-versioning}
 
-ワークトップを使用すると、特定のワークスペースがData Workbenchサーバー上にあるか、ローカルマシン上にあるか、またはその両方に存在するかに関わらず、各ワークスペースの保存場所を簡単に判断できます。
+ワークトップを使用すると、特定のワークスペースがData Workbenchサーバー上にあるか、ローカルマシン上にあるか、その両方にあるかに関係なく、それぞれのワークスペースが保存されている場所を簡単に特定できます。
 
-## Identifying file versions {#section-d555c96b016344f19b356c12213dd2a9}
+## ファイルのバージョンを識別{#section-d555c96b016344f19b356c12213dd2a9}
 
 **サーバー**
 
-サーバーワークスペースは、接続されたData Workbenchサーバーに保存され、このプロファイルとタブにアクセスできるすべてのユーザーが使用できます。 サーバーワークスペースは、1 つのサムネールとして表示されます。
+サーバーワークスペースは、接続されたData Workbenchサーバーに保存され、このプロファイルーとタブにアクセスできるすべてのユーザーが使用できます。 サーバーワークスペースは、1 つのサムネールとして表示されます。
 
 ![](assets/wsp_thumb_server.png)
 
-サーバーワークスペースは、デフォルトでは、接続されているData Workbenchサーバー上のWorkspacesフォルダー内の適切なサブフォルダーに保存されます。
+サーバーワークスペースは、デフォルトで、接続されているData Workbenchサーバー上のWorkspacesフォルダー内の適切なサブフォルダーに保存されます。
 
 **ローカル**
 
@@ -30,16 +31,16 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 ![](assets/wsp_thumb_local.png)
 
-ローカルワークスペースは、デフォルトでは、Data Workbench(ま [!DNL User\working profile name\Workspaces\tab] たはInsight)のインストールディレクトリ内のnameフォルダーに保存されます。
+ローカルワークスペースは、デフォルトでは、Data Workbench（またはInsight）のインストールディレクトリ内の[!DNL User\working profile name\Workspaces\tab] nameフォルダーに保存されます。
 
 >[!NOTE]
 >
->サーバーワークスペースのローカルバージョンがある場合は、サーバーバージョンに戻してから、サーバーワークスペースの更新バージョンをダウンロードする必要があります。 To revert back to the server version without local changes, right-click the thumbnail of the local workspace and click **[!UICONTROL Revert to server version]**.
+>サーバーワークスペースのローカルバージョンがある場合、サーバーバージョンに戻してから、サーバーワークスペースの更新バージョンをダウンロードする必要があります。 ローカル変更のないサーバーバージョンに戻すには、ローカルワークスペースのサムネールを右クリックし、**[!UICONTROL Revert to server version]**&#x200B;をクリックします。
 
 **ユーザー**
 
-ユーザーワークスペースは、ローカルマシン上で作成され、ローカルマシン上にのみ存在するワークスペースです。ユーザーワークスペースは、背後に空白のワークスペースの輪郭が点線で描かれた単一のサムネールとして表示され、接続されているData Workbenchサーバー上にソースワークスペースがないことを示します。
+ユーザーワークスペースは、ローカルマシン上で作成され、ローカルマシン上にのみ存在するワークスペースです。ユーザーワークスペースは、背後に空白のワークスペースの輪郭が点線で描かれた1つのサムネールとして表示されます。これは、接続されているData Workbenchサーバーにソースワークスペースがないことを示します。
 
 ![](assets/wsp_thumb_user.png)
 
-ユーザーワークスペースは、デフォルトでは、Insightのインストールディレクトリ内のUser\*working profile name*\Workspaces\*tab name*フォルダーに保存されます。
+ユーザーワークスペースは、デフォルトでは、Insightインストールディレクトリ内のUser\*workingプロファイル名*\Workspaces\*tab name*フォルダーに保存されます。
