@@ -1,16 +1,16 @@
 ---
 description: 管理タスクに関する概念情報です。
-solution: Analytics
-title: Report Serverの管理
-topic: Data workbench
+title: レポートサーバーの管理
 uuid: e07b53c3-9ded-4510-ba0b-47ce4cca3303
+exl-id: 90340a2a-c907-41b1-828d-506548da4413
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '16'
+ht-degree: 37%
 
 ---
 
-
-# Report Serverの管理{#administering-report-server}
+# サポートサーバーの管理{#administering-report-server}
 
 管理タスクに関する概念情報です。
-
