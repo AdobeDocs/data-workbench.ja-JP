@@ -1,26 +1,27 @@
 ---
-description: サードパーティのWebサイトリンク間でアクティビティをキャプチャして、出口ターゲット分析を有効にします。
-solution: Analytics
-title: 離脱リンクの追跡
-topic: Data workbench
+description: サードパーティのWebサイトリンク間のアクティビティをキャプチャして、離脱ターゲットの分析を有効にします。
+title: 外部リンクへの離脱数の追跡
 uuid: 523f5b4c-4600-4d44-82e7-4a8b2db2d266
+exl-id: fd7434e9-cd66-408e-baa9-6a0df4039786
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '193'
+ht-degree: 6%
 
 ---
 
+# 外部リンクへの離脱数の追跡{#tracking-exits-to-external-links}
 
-# 離脱リンクの追跡{#tracking-exits-to-external-links}
+サードパーティのWebサイトリンク間のアクティビティをキャプチャして、離脱ターゲットの分析を有効にします。
 
-サードパーティのWebサイトリンク間でアクティビティをキャプチャして、出口ターゲット分析を有効にします。
-
-Webページには、サードパーティのWebサイトへのリンクを含めることができ、それらのリンク間のアクティビティをキャプチャして、Exit Target分析を有効にできます。特に、サードパーティのサイトが照会を受け取った場合に照会料を支払う必要があります。 clickイベントはデフォルトでサードパーティシステムのログファイルに書き込まれるので、clickイベントをローカルにキャプチャするには、リンクに対して変更を加える必要があります。 Webサイト内に存在するサードパーティリンクは、次のように変更する必要があります。
+Webページには、サードパーティのWebサイトへのリンクを含めることができ、それらのリンク間のアクティビティを取り込んで、離脱ターゲットの分析を有効にできます。特に、サードパーティのサイトがそのような照会を受け取った場合に、参照料を支払う必要があります。 clickイベントはデフォルトでサードパーティシステムのログファイルに書き込まれるので、clickイベントをローカルにキャプチャするには、リンクに対して変更を加える必要があります。 Webサイト内に存在するサードパーティリンクは、次のように変更する必要があります。
 
 ```
 <A HREF=”http://www.myserver.com/PageExit.htm?v_eurl=http://www.othersite.com”>
 ```
 
-参照先のファ [!DNL PageExit.htm] イルを作成し、次のスクリプトを含むように構造化する必要があります。
+参照先の[!DNL PageExit.htm]ファイルを作成し、次のスクリプトを含むように構造化する必要があります。
 
 ```
 <html> 
@@ -51,9 +52,8 @@ location.replace(getExitURLQuery("v_eurl"));
 </html>
 ```
 
-ファイルに対してリクエストを [!DNL PageExit.htm] 行うことで、v_eurl値が分析のために収集されます。 さらに、が読み込ま [!DNL PageExit.htm] れると、指定したv_eurlターゲットの場所に直ちにリダイレクトされます。
+[!DNL PageExit.htm]ファイルに対してリクエストを行うと、v_eurl値が分析のために収集されます。 また、[!DNL PageExit.htm]がロードされると、指定したv_eurlターゲットの場所に直ちにリダイレクトされます。
 
 | 収集されたデータ | 説明 | 例 |
 |---|---|---|
 | v_eurl | v_eurlクエリ文字列変数に関連付けられた値。 この値は、HTMLページ内に存在するリンクのターゲットURLを表します。 | v_eurl=www.othersite.com |
-
