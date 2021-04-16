@@ -1,16 +1,17 @@
 ---
 description: マップ上でマウスを動かすと、ポインター位置の地理的な場所に対応する使用可能データがあれば、ビジュアライゼーションの右上隅に表示されます。
-solution: Analytics
 title: グローブの操作
-topic: Data workbench
 uuid: 8aa3ad86-8129-47f6-8af9-d645ff9c566b
+exl-id: 2dc410fd-e452-4d03-88b9-fe1027b54e9c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '227'
+ht-degree: 93%
 
 ---
 
-
-# Working with globes{#working-with-globes}
+# グローブの操作{#working-with-globes}
 
 マップ上でマウスを動かすと、ポインター位置の地理的な場所に対応する使用可能データがあれば、ビジュアライゼーションの右上隅に表示されます。
 
@@ -36,7 +37,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **グローブの明るさを切り替えるには**
 
-時刻による太陽の位置に基づいたグローブの明るさをオン／オフすることができます。時間は、Data Workbenchサーバーによって設定されます。
+時刻による太陽の位置に基づいたグローブの明るさをオン／オフすることができます。時間はData Workbenchサーバーによって設定されます。
 
-* Right-click within the visualization and click **[!UICONTROL Toggle Lighting]**. メニュー項目の左にある X は、太陽の位置に基づいた明るさが有効になっていることを示します。
-
+* ビジュアライゼーション内で右クリックし、**[!UICONTROL Toggle Lighting]**&#x200B;をクリックします。 メニュー項目の左にある X は、太陽の位置に基づいた明るさが有効になっていることを示します。
