@@ -1,26 +1,27 @@
 ---
 description: 待ち時間ディメンションは、Sessions（セッション）などの可算ディメンションや、Day（日）などの時間ディメンションである親ディメンションから作成されます。
-solution: Analytics
 title: 待ち時間ディメンションの作成
-topic: Data workbench
 uuid: 531d8bf6-a66f-4b02-9d81-05664fb9c988
+exl-id: 38b470ef-9409-455b-b2b8-b0391f80b800
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 88%
 
 ---
-
 
 # 待ち時間ディメンションの作成{#create-a-latency-dimension}
 
 待ち時間ディメンションは、Sessions（セッション）などの可算ディメンションや、Day（日）などの時間ディメンションである親ディメンションから作成されます。
 
-Data Workbenchで待ち時間テーブルを作成すると、ビジュアライゼーションファイル(.vw)に自動的に待ち時間ディメンションが追加されます。 以下の手順に従って、テーブルの待ち時間ディメンションを編集できます。
+待ち時間テーブルをData Workbenchで作成すると、待ち時間ディメンションがビジュアライゼーションファイル(.vw)に自動的に追加されます。 以下の手順に従って、テーブルの待ち時間ディメンションを編集できます。
 
 **待ち時間ディメンションを編集するには**
 
-1. 作成した待ち時間テーブルをメモ帳などのテキストエディターで開きます。It is located in the User > `working profile name` > Work folder within your Data Workbench installation directory.
+1. 作成した待ち時間テーブルをメモ帳などのテキストエディターで開きます。このフォルダーは、Data Workbenchーのインストールディレクトリ内のUser/`working profile name`/Workフォルダーにあります。
 
-   定義された待ち時間ディメンションには、次の例に示すパラメーターが含まれています（待ち時間ディメンションの定義には、他のパラメーターが含まれている場合もあります）。は、待 [!DNL line entity = LatencyDim:] ち時間ディメンションの定義の開始を示します。
+   定義された待ち時間ディメンションには、次の例に示すパラメーターが含まれています（待ち時間ディメンションの定義には、他のパラメーターが含まれている場合もあります）。[!DNL line entity = LatencyDim:]は、待ち時間ディメンションの定義の開始を示します。
 
    ```
    entity = LatencyDim:
@@ -47,14 +48,14 @@ Data Workbenchで待ち時間テーブルを作成すると、ビジュアライ
    <tbody> 
    <tr> 
       <td colname="col1"> <p>名前 </p> </td> 
-      <td colname="col2"> <p>(オプション)ディメンションラベルまたはエレメントを右クリックしたときにコンテキストメニューに表示される待ち時間ディメンションの名前。 </p> </td> 
+      <td colname="col2"> <p>（オプション）ディメンションラベルまたはエレメントを右クリックしたときにコンテキストメニューに表示される待ち時間ディメンションの名前。 </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> <p>Level </p> </td> 
       <td colname="col2"> <p>待ち時間ディメンションの親である可算ディメンション。セッション、訪問者、ページビューなどがあります。 </p> </td> 
    </tr> 
    <tr> 
-      <td colname="col1"> <p>Clip </p> </td> 
+      <td colname="col1"> <p>クリップ </p> </td> 
       <td colname="col2"> <p>待ち時間ディメンションのレベルと 1 対多の関係にある可算ディメンション。待ち時間は、このディメンションの境界を超える計算されません。例えば、ページビューのレベルとセッションのクリップを指定した場合、待ち時間は、同じセッション中にイベントとして発生したページビューに対して計算されます。 </p> <p>1 対多の（単純な）ディメンションの詳細については、『<i>データセット設定ガイド</i>』を参照してください。 </p> </td> 
    </tr> 
    <tr> 
@@ -63,7 +64,7 @@ Data Workbenchで待ち時間テーブルを作成すると、ビジュアライ
    </tr> 
    <tr> 
       <td colname="col1"> 形式 </td> 
-      <td colname="col2"> <p>(オプション)Data Workbenchでの待ち時間のビジュアライゼーションの外観を指定します。 Format パラメーターでは、次の値を編集できます。 
+      <td colname="col2"> <p>（オプション）待ち時間のビジュアライゼーションのData Workbenchでの外観を指定します。 Format パラメーターでは、次の値を編集できます。 
       <ul id="ul_ABF4C17BDE2E4F6C9CBDD933674DE861"> 
          <li id="li_5ED6A7267C81444983AF8507ADC6A5AB">時間文字列。待ち時間のビジュアライゼーションに表示される時間の単位（日や週など）。時間ディメンションを変更した場合は、時間文字列も変更してください。 </li> 
          <li id="li_E3B517ECE1494221AAE90455CC0AAB42">オフセット。Time Before の値を負の値にした整数。例えば、Time Before が 7 の場合、オフセットは -7 となります。 </li> 
@@ -80,7 +81,7 @@ Data Workbenchで待ち時間テーブルを作成すると、ビジュアライ
    </tbody> 
    </table>
 
-1. Save the [!DNL .vw] file to the User\*working profile name*\Work folder.
+1. [!DNL .vw]ファイルをUser\*workingフォルダー名*\Workプロファイルーに保存します。
 
    次に、デフォルトの待ち時間ディメンションの設定を示します。
 
