@@ -1,36 +1,37 @@
 ---
 description: 傾向スコアリングビジュアライゼーションを使用するには、この手順に従います。
-solution: Analytics
 title: 傾向スコアリングの設定
-topic: Data workbench
 uuid: afc9aada-3bf9-4ce6-8c43-a955771065b4
+exl-id: e16a7062-636e-44a9-a07d-343d48bf1b4c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 63%
 
 ---
-
 
 # 傾向スコアリングの設定{#setting-up-propensity-scoring}
 
 傾向スコアリングビジュアライゼーションを使用するには、この手順に従います。
 
-1. 新しいワークスペースを開き、/// **[!UICONTROL Add]** をク **[!UICONTROL Visualization]** リッ **[!UICONTROL Predictive Analytics]** クし **[!UICONTROL Scoring]** ます **[!UICONTROL Propensity Score]**。
+1. 新しいワークスペースを開き、**[!UICONTROL Add]**/**[!UICONTROL Visualization]**/**[!UICONTROL Predictive Analytics]**/**[!UICONTROL Scoring]**/**[!UICONTROL Propensity Score]**&#x200B;をクリックします。
 
    ![](assets/propensity_visualization.png)
 
-1. Set the **[!UICONTROL Target]** (the dependent variable).
+1. **[!UICONTROL Target]** （従属変数）を設定します。
 
    従属変数を設定するには、次を選択します。
 
-* **ディメンション**:ワークスペース内で右クリックし、を選択しま **[!UICONTROL Table]**&#x200B;す。 次に、従属変数としてディメンションエレメントを選択します。
+* **Dimension要素**:ワークスペース内で右クリックし、「」を選択し **[!UICONTROL Table]**&#x200B;ます。次に、従属変数としてディメンションエレメントを選択します。
 
    OR
 
-* **[!UICONTROL Filter Editor]**&#x200B;をインストールします。//をク **[!UICONTROL Add]** リック **[!UICONTROL Visualization]** して、フ **[!UICONTROL Filter Editor]** ィルターエディターのビジュアライゼーションを開きます。
+* **[!UICONTROL Filter Editor]**&#x200B;に移動します。**[!UICONTROL Add]**/**[!UICONTROL Visualization]**/**[!UICONTROL Filter Editor]**&#x200B;をクリックして、フィルターエディターのビジュアライゼーションを開きます。
 
    ![](assets/propensity_visualization_filter_editor.png)
 
-   After selecting a Dimension element or Filter as the dependent variable, click **[!UICONTROL Set Target]**, enter a name to describe the dependent variable. 「**[!UICONTROL OK]**」をクリックして（フィルターボックスが強調表示されていることを確認し）ターゲットを設定します。
+   従属変数としてDimension要素またはフィルターを選択した後、**[!UICONTROL Set Target]**&#x200B;をクリックし、従属変数を説明する名前を入力します。 「**[!UICONTROL OK]**」をクリックして（フィルターボックスが強調表示されていることを確認し）ターゲットを設定します。
 
    ![](assets/propensity_visualization_setTarget.png)
 
@@ -41,16 +42,16 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/propensity_visualization_metrics.png)
 
-* **指標**. From the Propensity Scoring toolbar, select a metric from the **[!UICONTROL Metrics]** menu.
+* **指標**. 傾向スコアリングツールバーの&#x200B;**[!UICONTROL Metrics]**&#x200B;メニューから指標を選択します。
 
-* **ディメンション**:ワークスペース内で右クリックし、を選択しま **[!UICONTROL Table]**&#x200B;す。 Select one or more Dimension elements and drag to the left column under **[!UICONTROL Independent Variables]** or to the **[!UICONTROL Element]** box using the `<Ctrl>` + `<Alt>` keys.
+* **Dimension要素**:ワークスペース内で右クリックし、「」を選択し **[!UICONTROL Table]**&#x200B;ます。1つ以上のDimension要素を選択し、**[!UICONTROL Independent Variables]**&#x200B;の下の左の列、または`<Ctrl>` + `<Alt>`キーを使用して&#x200B;**[!UICONTROL Element]**&#x200B;ボックスにドラッグします。
 
-1. 設定 **[!UICONTROL Training Filter]**. You can define the set of visitors that you want to score by clicking **[!UICONTROL Options]** > **[!UICONTROL Set Training Filter]** from the Propensity Scoring toolbar. これにより、スコア対象の訪問者のみを使用してデータのサブセットが作成されます。例えば、先月訪問した訪問者、オーストラリア在住の訪問者または特定の製品を見た訪問者を使用できます。
+1. 設定 **[!UICONTROL Training Filter]**. 傾向スコアリングツールバーで&#x200B;**[!UICONTROL Options]**/**[!UICONTROL Set Training Filter]**&#x200B;をクリックして、スコア対象の訪問者のセットを定義できます。 これにより、スコア対象の訪問者のみを使用してデータのサブセットが作成されます。例えば、先月訪問した訪問者、オーストラリア在住の訪問者または特定の製品を見た訪問者を使用できます。
 
-   デフォルトのフィルタ **[!UICONTROL Train on Everyone]**&#x200B;ーはですが、テーブルでアクティブ化す **[!UICONTROL Dimension Elements]** るか、を使用してフィルターを作成することで変更できま **[!UICONTROL Filter Editor]**&#x200B;す。
+   デフォルトのフィルターは&#x200B;**[!UICONTROL Train on Everyone]**&#x200B;ですが、テーブルの&#x200B;**[!UICONTROL Dimension Elements]**&#x200B;をアクティブ化するか、**[!UICONTROL Filter Editor]**&#x200B;を使用してフィルターを作成することで、フィルターを変更できます。
 
    ディメンションエレメントを選択するか、フィルターを作成し、アクティブ化したら、**オプション**／**トレーニングフィルターを設定**&#x200B;をクリックし、フィルターを説明する名前を入力し、「**[!UICONTROL OK]**」をクリックします。
-1. Once you have identified all your inputs, press **[!UICONTROL Go]**.
+1. すべての入力を識別したら、**[!UICONTROL Go]**&#x200B;を押します。
 
    ![](assets/propensity_visualization_GO.png)
 
@@ -71,9 +72,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    派生指標は、関連する平均スコア指標です。
 1. 正解率を確認します。
 
-   The system will display **[!UICONTROL Model Complete]** and generate a scoring model when the process is complete.
+   プロセスが完了すると、**[!UICONTROL Model Complete]**&#x200B;が表示され、スコアリングモデルが生成されます。
 
-   Right-clicking on **[!UICONTROL Model Complete]** will identify the accuracy of the scoring model as defined by the system. Values ranging from 0 percent to 100 percent will identify the likelihood of the visitors matching the **[!UICONTROL Target]** variable.
+   **[!UICONTROL Model Complete]**&#x200B;を右クリックすると、システムで定義されたスコアリングモデルの精度が識別されます。 0 ～ 100 %の値は、訪問者が&#x200B;**[!UICONTROL Target]**&#x200B;変数に一致する確率を示します。
 
    混同行列は、実際のポジティブ（AP）、実際のネガティブ（AN）、予測されたポジティブ （PP）、予測されたネガティブ（PN）の組み合わせによる 4 カウントを付与します。これらの数値は、真の正解とわかっている 20 ％を差し引いた検定データに、結果のスコアリングモデルを適用することで取得されます。スコアが 50％を超える場合、（定義されたイベントに一致する）ポジティブケースとして予測されます。
 
@@ -96,6 +97,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  </tbody> 
 </table>
 
-1. リフトチャ [ート、ゲインチャート](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md#concept-0d049f6baf534f7fb97f271843ba6c4a)、またはモデルビ [ューアを開きます](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md#concept-9f2593a8218140b7bd132a4c74e159f9)。
+1. [リフトチャートまたはゲインチャート](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md#concept-0d049f6baf534f7fb97f271843ba6c4a)、または[モデルビューア](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md#concept-9f2593a8218140b7bd132a4c74e159f9)を開きます。
 
-   モデル完了ビジュアライゼー **ションを右クリックし** 、「 **[!UICONTROL Lift Chart]**」、「」 **[!UICONTROL Gain Chart]**、「 **[!UICONTROL Model Viewer.]**
+   **モデル完了**&#x200B;ビジュアライゼーションを右クリックし、**[!UICONTROL Lift Chart]**、**[!UICONTROL Gain Chart]**、または&#x200B;**[!UICONTROL Model Viewer.]**&#x200B;を選択します
