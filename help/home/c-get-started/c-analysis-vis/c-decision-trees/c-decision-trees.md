@@ -1,14 +1,15 @@
 ---
 description: デシジョンツリーは予測分析のビジュアライゼーションで、訪問者の特性と関係を評価するために使用されます。デシジョンツリービルダーは、指定されたポジティブケースと一連の入力に基づいて、デシジョンツリービジュアライゼーションを生成します。
-solution: Analytics
 title: デシジョンツリービルダー
-topic: Data workbench
 uuid: 1f7e91ea-e5d9-4d8e-9fcf-cae4de42dfdd
+exl-id: d93e6a34-be59-4af5-84c3-c13deb98b57b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 98%
 
 ---
-
 
 # デシジョンツリービルダー{#decision-tree-builder}
 
@@ -32,7 +33,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 <table id="table_FCC5D63EF8A843D79B2338BD951025EA"> 
  <tbody> 
   <tr> 
-   <td colname="col1"> <p><b>ツールバーとメニュー</b> </p> <p>ツールバーには、ポジティブケースの設定や入力リストの追加を行う機能など、デシジョンツリー用のボタンとメニューコマンドが用意されています。 </p> <p>他のビジュアライゼーションと同様に、「<span class="uicontrol">エレメント</span>」ボックスを使用してディメンションと要素をドラッグアンドドロップできますが、ファインダーペインから直接ドラッグすることもできます。 </p> <p>詳しくは、デシジョンツリーのオプシ <a href="../../../../home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-menu.md#concept-bfc4e80651a243d3966cc770b205606c"> ョンを参照してくださ</a>い。 </p> </td> 
+   <td colname="col1"> <p><b>ツールバーとメニュー</b> </p> <p>ツールバーには、ポジティブケースの設定や入力リストの追加を行う機能など、デシジョンツリー用のボタンとメニューコマンドが用意されています。 </p> <p>他のビジュアライゼーションと同様に、「<span class="uicontrol">エレメント</span>」ボックスを使用してディメンションと要素をドラッグアンドドロップできますが、ファインダーペインから直接ドラッグすることもできます。 </p> <p>詳しくは、<a href="../../../../home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees-menu.md#concept-bfc4e80651a243d3966cc770b205606c">デシジョンツリーのオプション</a>を参照してください。 </p> </td> 
    <td colname="col2"> <p><b>入力リスト</b> </p> <p>この領域には、ツリーモデルへの入力が表示されます。入力は、ツリー表示領域内のノードに応じて色分けされます。 </p> <p>入力を右クリックすると、モデルから入力を削除し、リセットすることができます。 </p> <p>ツリーノードの上にカーソルを置くと、そのノードへの分岐に沿って分岐条件が表示され、そのノードでの予測とその信頼値が表示されます。 </p> </td> 
    <td colname="col3"> <p><b>ツリー表示</b> </p> <p>この領域には、リーフノードが予測に基づいて色分けされたツリーモデルが表示されます（ポジティブケースの True 予測は緑色に、False 予測は赤色になります）。 </p> <p>分岐ノードは、その選択条件に一致する入力に応じて色分けされます。ノードの上にカーソルを置くと、分岐に関する情報が表示され、入力リストが展開されて、その分岐にある分岐点とトレーニングセットの配分が表示されます。 </p> <p>しきい値を下回るノードは、デフォルトでは表示されません。分岐を調べるには、展開可能なノード（+ 記号で示される）をクリックします。完全なツリー表示に戻るには、ルートノードをクリックします。 </p> </td> 
   </tr> 
@@ -40,4 +41,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 </table>
 
 <!-- <a id="section_E800327344194A6DBF37F273D8462E2A"></a> -->
-
