@@ -1,14 +1,15 @@
 ---
 description: モデルビューアでは、傾向スコアリング機能を使用して、ロジスティック回帰モデルを生成できます。
-solution: Analytics
 title: モデルビューア
-topic: Data workbench
 uuid: 7ee8ff29-21c2-4721-804a-c7a5d101b50b
+exl-id: e0e4acd4-76a2-436a-993b-2bb7ca91ae1a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 100%
 
 ---
-
 
 # モデルビューア{#model-viewer}
 
@@ -18,7 +19,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **モデルビューアグラフを開くには**
 
-1. Select [!DNL Add Visualization > Predictive Analytics > Scoring] .
+1. [!DNL Add Visualization > Predictive Analytics > Scoring] を選択します。
 1. 保存されたスコアの「モデル完了」の上にカーソルを置きます。
 
 ![](assets/propensity_model_viewer.png)
