@@ -1,28 +1,29 @@
 ---
-description: Data Workbenchクライアントのユーザーインターフェイスアクションとショートカットキーの一覧を表示します。
-solution: Analytics
+description: Data Workbenchクライアントユーザーインターフェイスのリストとショートカットキーを表示します。
 title: クイックリファレンス
-topic: Data workbench
 uuid: d4563f21-4a0c-4ba5-844a-700b03a7f56e
+exl-id: 59ac0cc7-e7c7-4ce1-889a-9a65a0faa853
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '477'
+ht-degree: 88%
 
 ---
 
+# クイックリファレンス{#quick-reference}
 
-# Quick reference{#quick-reference}
-
-Data Workbenchクライアントのユーザーインターフェイスアクションとショートカットキーの一覧を表示します。
+Data Workbenchクライアントユーザーインターフェイスのリストとショートカットキーを表示します。
 
 「[キーボードショートカット](../../../home/c-get-started/c-vis/c-qk-ref.md#section-0597bf92e1af4bcf9f1c8ceffe52649a)」も参照してください。
 
-## Actions for the Data Workbench client {#section-dfea35452c2e4f0b92229a4974bc24fa}
+## Data Workbenchクライアントの操作{#section-dfea35452c2e4f0b92229a4974bc24fa}
 
 クライアントユーザーインターフェイス内で作業を実行する時に、以下のアクションを使用します。
 
 | アクション | 結果 |
 |---|---|
-| ズーム後に  | 項目を選択 |
+| クリック | 項目を選択 |
 | クリックしながらドラッグ | 範囲を選択 |
 | Ctrl キーを押しながら選択 | 選択範囲に追加 |
 | Shift キーを押しながら選択 | 選択範囲から削除 |
@@ -36,7 +37,7 @@ Data Workbenchクライアントのユーザーインターフェイスアクシ
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> ワークスペースの左上隅にあるData Workbenchのロゴをクリックします </td> 
+   <td colname="col1"> ワークスペースの左上隅にあるData Workbenchロゴをクリックします </td> 
    <td colname="col2"> <p>変更を保存 </p> </td> 
   </tr> 
   <tr> 
@@ -60,12 +61,12 @@ Data Workbenchクライアントのユーザーインターフェイスアクシ
 
 | アクション | 結果 |
 |---|---|
-| ズーム後に  | 項目を選択 |
+| クリック | 項目を選択 |
 | クリックしながらドラッグ | テキストの範囲を選択 |
 | Ctrl キーを押しながら選択 | 選択範囲にテキストを追加 |
 | Shift キーを押しながら選択 | 選択範囲からテキストを削除 |
 
-## Keyboard shortcuts for the Data Workbench client {#section-0597bf92e1af4bcf9f1c8ceffe52649a}
+## Data Workbenchクライアントのキーボードショートカット{#section-0597bf92e1af4bcf9f1c8ceffe52649a}
 
 ワークスペースと設定ファイルには以下のショートカットキーを使用します。
 
@@ -91,7 +92,7 @@ Data Workbenchクライアントのユーザーインターフェイスアクシ
 | アクション | 結果 |
 |---|---|
 | Ctrl + X | テキストを切り取り |
-| Ctrl + Z | 前に入力した文字に対してアクションを取り消し |
+| Ctrl + Z | 元に戻す 以前に入力した文字のアクション |
 | Ctrl + Shift + Z | 入力した文字に対してアクションをやり直し |
 | Ctrl + A | すべて選択 |
 
@@ -106,7 +107,7 @@ Data Workbenchクライアントのユーザーインターフェイスアクシ
  <tbody> 
   <tr> 
    <td colname="col1"><b>フルスクリーンビュー</b>。ワークスペースが画面を埋め、新しいサイズに再適合されます。 </td> 
-   <td colname="col2"><b>Ctrl プラス（+）</b> <p>Ctrl + +（キーパッド） </p> <p><i> または</i> </p> <p>Ctrl + Shift + +（キーボード） </p> </td> 
+   <td colname="col2"><b>Ctrl プラス（+）</b> <p>Ctrl + +（キーパッド） </p> <p><i>または</i> </p> <p>Ctrl + Shift + +（キーボード） </p> </td> 
    <td colname="col3"> 
     <ul id="ul_C7C731B894D946D9916F50806F015857"> 
      <li id="li_452B4C119B1A40038A408CFFC53653A9">ファイル／ページサイズ／画面にフィット <p><i>を選択し、次に以下を選択</i> </p> </li> 
@@ -115,7 +116,7 @@ Data Workbenchクライアントのユーザーインターフェイスアクシ
   </tr> 
   <tr> 
    <td colname="col1"><b>ウィンドウビュー</b>。ワークスペースが標準のウィンドウビューで表示され、新しいサイズに再適合されます。 </td> 
-   <td colname="col2"><b>Ctrl マイナス（-）</b> <p>Ctrl + - </p> </td> 
+   <td colname="col2"><b>Ctrl マイナス（-）</b> <p>Ctrl - </p> </td> 
    <td colname="col3"> 
     <ul id="ul_3474B9EFD69343C09BC84E485D896C28"> 
      <li id="li_820BAED76FF24A5785E6D89C5C692DD5">ファイル／ページサイズ／標準 <p><i>を選択し、次に以下を選択</i> </p> </li> 
@@ -152,4 +153,3 @@ Data Workbenchクライアントのユーザーインターフェイスアクシ
   </tr> 
  </tbody> 
 </table>
-
