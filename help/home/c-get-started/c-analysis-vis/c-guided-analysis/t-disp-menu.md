@@ -1,14 +1,15 @@
 ---
 description: ディメンションの情報またはオプションを表示するための手順です。
-solution: Analytics
 title: ディメンションメニューの表示
-topic: Data workbench
 uuid: e2c4fa8d-3559-45bd-8ec5-d064c763b20b
+exl-id: 55b2cb3a-d82e-4e42-b1b6-079ca3667be8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '89'
+ht-degree: 65%
 
 ---
-
 
 # ディメンションメニューの表示{#display-the-dimension-menu}
 
@@ -20,7 +21,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    >[!NOTE]
    >
-   >ディメンション名が赤で表示される場合、そのディメンション名はデータセットに定義されていません。
+   >ディメンション名が赤で表示される場合、そのディメンションはデータセット内で定義されていません。
 
 1. この節で説明したように、ディメンションの統計情報を確認します。
 1. （オプション）次のいずれかのオプションをクリックします。
@@ -28,4 +29,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    * **[!UICONTROL Add]** をクリックして、別のディメンションを追加します。
    * **[!UICONTROL Remove]** をクリックして、選択したディメンションを削除します。
    * **[!UICONTROL Add Visualization]** をクリックして、選択したディメンションのビジュアライゼーションを追加します。
-
