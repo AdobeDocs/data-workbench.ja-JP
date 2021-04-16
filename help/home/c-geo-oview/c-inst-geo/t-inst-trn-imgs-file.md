@@ -1,14 +1,15 @@
 ---
 description: Terrain Images.cfgファイルをData Workbenchサーバーにインストールする手順です。
-solution: Analytics
 title: Terrain Images.cfg ファイルのインストール
-topic: Data workbench
 uuid: b692bff9-9356-4047-a2f7-f44310bf85fa
+exl-id: 4cc91839-ea36-4476-846a-59af4c5f684c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '91'
+ht-degree: 10%
 
 ---
-
 
 # Terrain Images.cfg ファイルのインストール{#installing-the-terrain-images-cfg-file}
 
@@ -16,10 +17,9 @@ Terrain Images.cfgファイルをData Workbenchサーバーにインストール
 
 >[!NOTE]
 >
->You need to install the [!DNL Terrain Images.cfg] file only if you want to make new terrain image layers to display on the globe visualization.
+>グローブビジュアライゼーションに表示する新しい地形画像レイヤーを作成する場合にのみ、[!DNL Terrain Images.cfg]ファイルをインストールする必要があります。
 
-1. Copy the [!DNL Terrain Images.cfg] file from the [!DNL .zip] file provided to you by Adobe.
+1. Adobeから提供された[!DNL .zip]ファイルから[!DNL Terrain Images.cfg]ファイルをコピーします。
 1. Data Workbenchサーバーのインストールディレクトリ内のComponentsフォルダーにファイルを貼り付けます。
 
-   の設定について詳しくは、地 [!DNL Terrain Images.cfg]形画像レ [イヤーの操作を参照してください](../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-trn-img-lyrs.md#concept-8a0a16013e824ac29f35a0349b5d8ccf)。
-
+   [!DNL Terrain Images.cfg]の設定について詳しくは、[地形画像レイヤーの操作](../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-trn-img-lyrs.md#concept-8a0a16013e824ac29f35a0349b5d8ccf)を参照してください。
