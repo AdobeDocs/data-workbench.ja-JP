@@ -1,29 +1,30 @@
 ---
 description: 要素ポイントレイヤーをグローブビジュアライゼーションに表示できるようにする手順です。
-solution: Analytics
-title: 新規要素ポイントレイヤーを利用可能にする
-topic: Data workbench
+title: 新しい要素ポイントレイヤーを使用可能にする
 uuid: 7880de63-d206-4c56-b8cf-75882d867ace
+exl-id: 9001f6b6-5d25-48a0-9381-04f679e0ff4d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 42%
 
 ---
 
-
-# 新規要素ポイントレイヤーを利用可能にする{#making-a-new-element-point-layer-available}
+# 新しい要素ポイントレイヤーを使用可能にする{#making-a-new-element-point-layer-available}
 
 要素ポイントレイヤーをグローブビジュアライゼーションに表示できるようにする手順です。
 
-1. Data Workbenchサーバーのインストールディレクトリ内のProfiles\*profile name*\Mapsフォルダーに、レイヤーファイルとその関連する参照ファイルを配置します。
+1. Data Workbenchサーバーのインストールディレクトリ内のプロファイルー\*プロファイルー名*\Mapsフォルダーに、レイヤーファイルと関連する参照ファイルを配置します。
 1. 要素ポイントレイヤーの新しいディメンションを定義し、まだデータセットを再変換していない場合は、ここでデータセットを再変換します。
-1. Edit the [!DNL order.txt] file in the Profiles\*profile name*\Maps folder to reflect the order in which you want the layers to display. デフォルトで、レイヤーは名前の辞書順で表示されます。
+1. プロファイル\*プロファイル名*\Mapsフォルダー内の[!DNL order.txt]ファイルを編集し、レイヤーを表示する順序を反映します。 デフォルトで、レイヤーは名前の辞書順で表示されます。
 
    >[!NOTE]
    >
-   >When editing the [!DNL order.txt] file, take care not to cover up map layers that you want to show.
+   >[!DNL order.txt]ファイルを編集する際は、表示するマップレイヤーを隠さないように注意してください。
 
    [!DNL order.txt] ファイルの使用方法の詳細については、『*Data Workbench ユーザーガイド*』のインターフェイスおよび分析機能の設定の章を参照してください。
 
-1. In data workbench, select the desired profile by right-clicking the workspace title bar and clicking **[!UICONTROL Switch Profile]** > *&lt;**[!UICONTROL profile name]**>*.
-1. Right-click the workspace title bar and click **[!UICONTROL Work Online]**. の横にXが表示されま [!DNL Work Online]す。
+1. data workbenchで、ワークスペースのタイトルバーを右クリックし、**[!UICONTROL Switch Profile]**/***[!UICONTROL profile name]**>*&#x200B;をクリックして、目的のプロファイルを選択します。
+1. ワークスペースのタイトルバーを右クリックし、「**[!UICONTROL Work Online]**」をクリックします。 [!DNL Work Online]の横にXが表示されます。
 1. ワークスペースを開き、グローブビジュアライゼーションで右クリックして、新しいレイヤーを選択します。レイヤー名の横に X マークが表示されます。
