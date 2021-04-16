@@ -1,20 +1,21 @@
 ---
 description: data workbench は、検索および並べ替え操作に正規表現（regex）を利用します。
-solution: Analytics
 title: 正規表現
-topic: Data workbench
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
+exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 67%
 
 ---
 
-
-# Regular expressions{#regular-expressions}
+# 正規表現{#regular-expressions}
 
 data workbench は、検索および並べ替え操作に正規表現（regex）を利用します。
 
-Within the **[!UICONTROL Search]** field you can perform a search following the &quot;re:&quot; statement using common expressions, for example:
+**[!UICONTROL Search]**&#x200B;フィールド内で、「re:」ステートメントの後に、一般的な式を使用して検索を実行できます。例：
 
 ```
 <b>re: *.s</b>
@@ -29,7 +30,7 @@ Within the **[!UICONTROL Search]** field you can perform a search following the 
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>. （ドット） </p> </td> 
+   <td colname="col1"> <p>。（ドット） </p> </td> 
    <td colname="col2"> <p>1 文字に一致します。例えば、<span class="filepath">re:x.z</span> は「xyz」や「xxz」に一致します。 </p> </td> 
   </tr> 
   <tr> 
@@ -43,6 +44,6 @@ Within the **[!UICONTROL Search]** field you can perform a search following the 
  </tbody> 
 </table>
 
-このほか、一般的な正規表現を使用して、さらに複雑な検索文字列を作成することもできます。正規表現は、クエリーエンティティパネルを含むすべてのData Workbench検索フィールドで使用されます。
+このほか、一般的な正規表現を使用して、さらに複雑な検索文字列を作成することもできます。正規式は、クエリエンティティパネルを含むすべてのData Workbench検索フィールドで使用されます。
 
 詳しくは、[正規表現](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions)の説明を参照してください。
