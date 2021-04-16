@@ -1,16 +1,17 @@
 ---
 description: 複数のディメンションを 1 つのテーブルに追加して、データをより詳細にクロス集計できます。
-solution: Analytics
-title: ディメンションの追加、変更、移動
-topic: Data workbench
+title: ディメンション追加、変更、移動
 uuid: d8e67374-3b2b-4548-9322-e83c52941331
+exl-id: d2249f39-f4ab-4ec6-a2fb-90f8ecb2e3d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 70%
 
 ---
 
-
-# ディメンションの追加、変更、移動{#add-change-and-move-a-dimension}
+# ディメンション追加、変更、移動{#add-change-and-move-a-dimension}
 
 複数のディメンションを 1 つのテーブルに追加して、データをより詳細にクロス集計できます。
 
@@ -18,7 +19,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **新しいディメンションを追加するには**
 
-* Right-click an element or the label of any dimension or the label of any metric and click **[!UICONTROL Add Dimension]** > *&lt;**[!UICONTROL dimension name]**>.*&#x200B;をクリックします。選択されている軸上でビジュアライゼーションにディメンションが追加されます。
+* 任意のディメンションの要素またはラベル、または任意の指標のラベルを右クリックし、**[!UICONTROL Add Dimension]**/*&lt;**[!UICONTROL dimension name]**>をクリックします。*&#x200B;をクリックします。選択されている軸上でビジュアライゼーションにディメンションが追加されます。
 
 次の例は、曜日ディメンションに対してグラフ化されたセッション指標（上のテーブル）と、今月という 2 つ目のディメンションが上軸に追加された同じテーブル（下のテーブル）を示しています。
 
@@ -26,14 +27,13 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **ディメンションを変更するには**
 
-* Right-click an element or the label of the dimension you want to change and click **[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]**>*.
+* 変更するディメンションの要素またはラベルを右クリックし、**[!UICONTROL Change Dimension]**/*&lt;**[!UICONTROL dimension name]**>*&#x200B;をクリックします。
 
 **ディメンションを別の場所に移動するには**
 
 ディメンションを同じ軸上の別の位置またはもう一方の軸に移動できます。
 
-* Right-click an element or the label of the dimension that you want to move, click **[!UICONTROL Move]***&lt; **[!UICONTROL dimension name]**>*, then complete the appropriate step:
+* 移動するディメンションの要素またはラベルを右クリックし、**[!UICONTROL Move]***&lt;**[!UICONTROL dimension name]**>*をクリックして、次のうち該当する手順を実行します。
 
    * ディメンションをもう一方の軸に移動するには、上軸または左軸をクリックします。
-   * To swap locations with another dimension on the same axis, click **[!UICONTROL (move here)]**.
-
+   * 位置を同じ軸上の別のディメンションと置き換えるには、**[!UICONTROL (move here)]**&#x200B;をクリックします。
