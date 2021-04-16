@@ -1,22 +1,23 @@
 ---
 description: ワークスペースを .png 画像ファイルとしてエクスポートしたり、特定のウィンドウのデータを Excel（.xls または .xlsx）ファイルにエクスポートできます。
-solution: Analytics
-title: ワークスペースの書き出し
-topic: Data workbench
+title: ワークスペースのエクスポート
 uuid: 59ea6e46-d2e9-41f9-9c8f-e3071eb65424
+exl-id: 87416ddf-2ac0-4f95-ae8e-71051061c757
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '774'
+ht-degree: 55%
 
 ---
 
-
-# ワークスペースの書き出し{#export-a-workspace}
+# ワークスペースのエクスポート{#export-a-workspace}
 
 ワークスペースを .png 画像ファイルとしてエクスポートしたり、特定のウィンドウのデータを Excel（.xls または .xlsx）ファイルにエクスポートできます。
 
-## ワークスペースをPNGファイルとして書き出す {#section-f9fbe0f0a1c341e2b063cce106cac35e}
+## ワークスペースをPNGファイルとして書き出す{#section-f9fbe0f0a1c341e2b063cce106cac35e}
 
-You can save a snapshot of a workspace in Portable Network Graphic format (`.png` files). The following color options are available when saving workspaces as `.png` files:
+ワークスペースのスナップショットは、Portable Network Graphic形式（`.png`ファイル）で保存できます。 ワークスペースを`.png`ファイルとして保存する場合は、次のカラーオプションを使用できます。
 
 * **暗い背景**&#x200B;は、ワークスペースを表示されているとおりにコピーします。
 * **明るい背景**&#x200B;は、ワークスペースの要素をカラーでコピーし、白色背景で表示します。
@@ -24,60 +25,60 @@ You can save a snapshot of a workspace in Portable Network Graphic format (`.png
 
 **ワークスペースを .png ファイルとしてエクスポートするには**
 
-ワークスペースのタイトルバーメニューで、// **[!UICONTROL Export]** &lt;> **[!UICONTROL Export PNG]** をクリ *ック&#x200B;**[!UICONTROL color option]**します*。
+ワークスペースのタイトルバーメニューで、**[!UICONTROL Export]**/**[!UICONTROL Export PNG]**/*&lt;**[!UICONTROL color option]**>*&#x200B;をクリックします。
 
-ダイアログ [!UICONTROL Save Image As] ボックスが表示されます。
+[!UICONTROL Save Image As]ダイアログボックスが開きます。
 
-Navigate to the directory in which you want to save the file, change the name of the file if necessary, and click **[!UICONTROL Save]**.
+ファイルを保存するディレクトリに移動し、必要に応じてファイル名を変更して、**[!UICONTROL Save]**&#x200B;をクリックします。
 
-## Export workspace data to Microsoft Excel {#section-fe214e3dbc364d2eba3834d62d295acb}
+## ワークスペースデータをMicrosoft Excelにエクスポート{#section-fe214e3dbc364d2eba3834d62d295acb}
 
 ワークスペースを Excel にエクスポートする場合、Data Workbench は、特定のビジュアライゼーションのデータ、ディメンションと値の凡例、テキスト注釈を、ワークシートごとに 1 つのビジュアライゼーションを持つ新しい Excel ブックにエクスポートします。
 
 ワークスベースと個々のウィンドウを Microsoft Excel にエクスポートするには、以下の要件を満たしている必要があります。
 
-* Data Workbenchと同じマシンにMicrosoft Excelをインストールする必要があります。
-* Data Workbenchプロセスが実行されているユーザーアカウントには、Microsoft Excelへのアクセス権が必要です。
+* Microsoft ExcelがData Workbenchと同じマシンにインストールされている必要があります。
+* Data Workbench処理を実行しているユーザーアカウントには、Microsoft Excelへのアクセス権が必要です。
 
 >[!NOTE]
 >
 >* データを Excel ファイルとしてエクスポートする場合、Excel の新しいインスタンスが開かれます。この処理について詳しくは、[http://support.microsoft.com/ja-jp/kb/257757](http://support.microsoft.com/kb/257757) を参照してください。
->* Data Workbenchでは256列を超えるデータ行と65,536行のデータをサポートしていますが、8.0より前のバージョンのMicrosoft Excelではサポートしていません。
+>* Data Workbenchでは256列を超えるデータと65,536行のデータをサポートしていますが、バージョン8.0より前のMicrosoft Excelではサポートしていません。
 >
 
 
 
-これらの要件を満たしている場合、Data WorkbenchはMicrosoft Excelを自動的に起動し、データを新しいExcelワークブックにエクスポートします。 グラフ、パスブラウザー、プロセスマップ、散布グラフ、グローブのビジュアライゼーションからはデータをエクスポートできません。
+これらの要件を満たしている場合、Data Workbenchは自動的にMicrosoft Excelに開始し、データを新しいExcelブックにエクスポートします。 グラフ、パスブラウザー、プロセスマップ、散布グラフ、グローブのビジュアライゼーションからはデータをエクスポートできません。
 
-## カスタムタイトルの適用 {#section-a332e157554546cb8e88922a8d7a4fa2}
+## カスタムタイトルの適用{#section-a332e157554546cb8e88922a8d7a4fa2}
 
-Unless you have specified a Custom title for the window on the [!UICONTROL Export] menu, the [!UICONTROL Export title] listed (for example, City Table) is used as the worksheet name.
+[!UICONTROL Export]メニューでウィンドウのカスタムタイトルを指定していない限り、リストに表示される[!UICONTROL Export title]（City Tableなど）がワークシート名として使用されます。
 
-1. Right-click the top border of the window and click in the **[!UICONTROL Custom title]** field.
+1. ウィンドウの上の枠を右クリックし、**[!UICONTROL Custom title]**&#x200B;フィールドをクリックします。
 1. ウィンドウに適用するタイトルを入力します。
 
    ![](assets/mnu_window_TitleBar_Export.png)
 
 >[!NOTE]
 >
->If you enter a hyphen (-) in the [!UICONTROL Custom title] field, this visualization is not exported with the workspace.
+>[!UICONTROL Custom title]フィールドにハイフン(-)を入力した場合、このビジュアライゼーションはワークスペースと共にエクスポートされません。
 
-When you export the workspace to Excel, the worksheet containing the data for this window is named using the title that you specified instead of the title in the [!UICONTROL Export title] field.
+ワークスペースをExcelにエクスポートする場合、このウィンドウのデータを含むワークシートには、[!UICONTROL Export title]フィールドのタイトルではなく、指定したタイトルを使用して名前が付けられます。
 
-## Export a workspace or sidebar to Excel {#section-360438b66d5f4734826ab463b4a01a75}
+## ワークスペースまたはサイドバーをExcelにエクスポート{#section-360438b66d5f4734826ab463b4a01a75}
 
-**ワークスペースデータを新しいまたはファイルにエクスポ[!DNL .xls]ートする[!DNL .xlsx]には**
+**ワークスペースデータを新しい [!DNL .xls] または [!DNL .xlsx] ファイルにエクスポートするには**
 
-1. In title bar of the workspace, click **[!UICONTROL Export]** > **[!UICONTROL Export]**.
+1. ワークスペースのタイトルバーで、**[!UICONTROL Export]**/**[!UICONTROL Export]**&#x200B;をクリックします。
 1. ワークスペースをエクスポートするか、サイドバーをエクスポートするか、両方をエクスポートするかを指定します。
 
-## Export to a template Excel file {#section-814772929ca64cf6b92b89d3fdd02302}
+## テンプレートExcelファイル{#section-814772929ca64cf6b92b89d3fdd02302}にエクスポート
 
-You can export data in your workspace to a template Excel file (`.xls` or `.xlsx`). テンプレートファイルを使用すると、ワークスペースをエクスポートするたびにデータのフォーマットに要する時間を短縮できます。
+ワークスペース内のデータをテンプレートExcelファイル（`.xls`または`.xlsx`）にエクスポートできます。 テンプレートファイルを使用すると、ワークスペースをエクスポートするたびにデータのフォーマットに要する時間を短縮できます。
 
 >[!NOTE]
 >
->This template file must be an `.xls` or `.xlsx` file, not an `.xlt` file.
+>このテンプレートファイルは`.xlt`ファイルではなく、`.xls`ファイルまたは`.xlsx`ファイルでなければなりません。
 
 データをエクスポートすると、テンプレート内の既存のタブ区切りシート（それぞれが 1 つのビジュアライゼーションを表す）にワークスペースの最新データが再設定されますが、タブ区切りシートとしてテンプレートに存在していない新しいウィンドウは無視されます。テンプレートファイル内のその他すべてのタブ区切りシートは、変更されないままです。
 
@@ -85,25 +86,23 @@ You can export data in your workspace to a template Excel file (`.xls` or `.xlsx
 
 テーブルのビジュアライゼーションからエクスポートしたキャンペーンデータを円グラフや Excle ファイルの別のタブ区切りシートで使用して、この情報を週ごとに更新するものとします。テンプレートを使用すると、データを更新するたびにテーブルのタブ区切りシートから円グラフのタブ区切りシートへの参照を作成し直す必要がなくなります。テーブルデータはエクスポート時に更新され、それによって円グラフが自動的に更新されます。
 
-**ワークスペースデータをテンプレートまたはファイルにエク[!DNL .xls]スポートする[!DNL .xlsx]には**
+**ワークスペースデータをテンプレート [!DNL .xls] または [!DNL .xlsx] ファイルにエクスポートするには**
 
-1. ワークスペースのタイトルバーを右クリックし、/をクリッ **[!UICONTROL Export]** クしま **[!UICONTROL Export to Excel from Template]**&#x200B;す。
+1. ワークスペースのタイトルバーを右クリックし、**[!UICONTROL Export]**/**[!UICONTROL Export to Excel from Template]**&#x200B;をクリックします。
 1. ワークスペースをエクスポートするか、サイドバーをエクスポートするか、両方をエクスポートするかを指定します。
 
-   ダイアログ [!UICONTROL Select a template worksheet] ボックスが開きます。
+   [!UICONTROL Select a template worksheet]ダイアログボックスが開きます。
 
 1. 必要に応じて、以下の手順のどちらかを完了します。
 
-   * If you are using a `.xls` template file:
+   * `.xls`テンプレートファイルを使用している場合：
 
-      1. Browse to and select the template `.xls` file.
-      1. クリック **[!UICONTROL Open]**.
-   * If you are using a `.xlsx` template file:
+      1. テンプレート`.xls`ファイルを参照して選択します。
+      1. 「**[!UICONTROL Open]**」をクリックします。
+   * `.xlsx`テンプレートファイルを使用している場合：
 
-      1. テンプレートファイルの場所を参照します。The `.xlsx` file name is not displayed.
-      1. フィールドに [!UICONTROL File name] と入力し、をク `.xlsx` リックしま **[!UICONTROL Open]**&#x200B;す。 All `.xlsx` file names display in the file list.
+      1. テンプレートファイルの場所を参照します。`.xlsx`ファイル名は表示されません。
+      1. [!UICONTROL File name]フィールドに`.xlsx`と入力し、**[!UICONTROL Open]**&#x200B;をクリックします。 すべての`.xlsx`ファイル名がファイルリストーに表示されます。
 
-      1. Select the template `.xlsx` file.
-      1. クリック **[!UICONTROL Open]**.
-
-
+      1. テンプレート`.xlsx`ファイルを選択します。
+      1. 「**[!UICONTROL Open]**」をクリックします。
