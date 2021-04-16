@@ -1,11 +1,12 @@
 ---
-description: 'null'
-solution: Analytics
+description: Data Workbenchダッシュボード管理者ガイド
 title: Data Workbenchダッシュボード管理者ガイド
-topic: Data workbench
 uuid: 662f8cac-e5af-4892-afc1-78f705d3033e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '15'
+ht-degree: 0%
 
 ---
 
