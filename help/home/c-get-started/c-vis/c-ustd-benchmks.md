@@ -1,14 +1,15 @@
 ---
 description: ベンチマークは、すべてのデータに基づく指標の分布とデータの選択に基づく指標の分布とを比較することによって、データの定性的な差異を表示します。
-solution: Analytics
 title: ベンチマーク
-topic: Data workbench
 uuid: 2e5255cd-eafd-45de-a16f-70d719d2ac0c
+exl-id: 6294c4f9-a338-409a-a157-86cdfbbb6f76
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 90%
 
 ---
-
 
 # ベンチマーク{#benchmarks}
 
@@ -18,7 +19,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->ベンチマークは、データセットのデータの差異や、作成するデータサブセットの差異を表すことができます。 サブセットについて詳しくは、サブセットの [操作を参照してください](../../../home/c-get-started/c-vis/c-wk-subsets/c-wk-subsets.md#concept-43809322b6374d5cb2536630a13e943b)。
+>ベンチマークは、データセットのデータの差異や、作成した任意のデータサブセットを表すことができます。 サブセットについて詳しくは、「[サブセットの操作](../../../home/c-get-started/c-vis/c-wk-subsets/c-wk-subsets.md#concept-43809322b6374d5cb2536630a13e943b)」を参照してください。
 
 次のグラフでは、ある Web サイト上のセッションを曜日と時間帯別に表示しています。左のビジュアライゼーションは、サイトトラフィックが時間とともにとるパターンをよく表しています。全体のサイトトラフィックパターンを週末のトラフィックパターンと比較するには、右のビジュアライゼーションに示すように、曜日別のセッションのグラフで土曜日と日曜日を選択します。
 
