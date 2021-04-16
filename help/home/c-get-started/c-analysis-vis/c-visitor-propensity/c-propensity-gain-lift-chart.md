@@ -1,14 +1,15 @@
 ---
 description: リフトチャートとゲインチャートは、スコアリング対象モデルの潜在的パフォーマンスを評価するためのビジュアライゼーションで、オーディエンスの定義された部分に対するパフォーマンスを評価します。
-solution: Analytics
 title: 傾向のゲインチャートとリフトチャート
-topic: Data workbench
 uuid: 4f08277e-deea-48d3-ab15-214c43ad6664
+exl-id: 5ac08512-ac9c-4e85-a4f9-ea6d819095d8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 99%
 
 ---
-
 
 # 傾向のゲインチャートとリフトチャート{#propensity-gain-and-lift-charts}
 
@@ -18,8 +19,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **リフトチャートまたはゲインチャートを開くには**
 
-1. Select [!DNL Add Visualization > Predictive Analytics > Scoring] .
-1. Hover over **[!UICONTROL Model Complete]** of a saved score.
+1. [!DNL Add Visualization > Predictive Analytics > Scoring] を選択します。
+1. 保存されたスコアの&#x200B;**[!UICONTROL Model Complete]**&#x200B;の上にカーソルを置きます。
 
 ![](assets/propensity_lift_gain_1.png)
 
