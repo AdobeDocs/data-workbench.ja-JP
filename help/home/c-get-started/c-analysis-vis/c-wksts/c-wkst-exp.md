@@ -1,14 +1,15 @@
 ---
 description: ワークシート式とセル参照の使用に関する概念的な情報です。
-solution: Analytics
 title: ワークシート式
-topic: Data workbench
 uuid: be57d6bd-3e13-4c90-9034-8e0f2b8315aa
+exl-id: 1ff3ec24-0363-4b6c-8c91-31e49ed0f7c4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 92%
 
 ---
-
 
 # ワークシート式{#worksheet-expressions}
 
@@ -53,7 +54,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>C3 </p> <p>「Apply Now」ページと「Application Wizard」ページを表示した、参照による訪問者 </p> </td> 
-   <td colname="col2"> <p> <span class="filepath"> =Referred_Visitors[Page="/applynow/default.asp" </span> </p> <p> AND <span class="filepath">Page="/applynow/appwizard.asp"]</span> </p> </td> 
+   <td colname="col2"> <p> <span class="filepath"> =Referred_訪問者[Page="/applynow/default.asp"  </span> </p> <p> AND <span class="filepath">Page="/applynow/appwizard.asp"]</span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>C4 </p> <p>「Apply Now」ページと「Application Wizard」ページを表示した、リファラー A からの訪問者 </p> </td> 
@@ -80,13 +81,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 ![](assets/client-exp.png)
 
-## セル参照の使用 {#section-0004e315c9c94d359b1a8a39794ba555}
+## セル参照の使用  {#section-0004e315c9c94d359b1a8a39794ba555}
 
 式の中の文字列は、それ自体であっても、ワークシート内の別の式の中でも、セル参照に置き換えられます。
 
-* **単純なセル参照：**&#x200B;セル A2 にはテキスト Visitors があり、見出しとして使用されています。Cell B2 contains [!DNL eval(A1)], which evaluates to [!DNL =Visitors].
+* **単純なセル参照：**&#x200B;セル A2 にはテキスト Visitors があり、見出しとして使用されています。セルB2には[!DNL eval(A1)]が含まれ、[!DNL =Visitors]と評価されます。
 
-* **フィルターセル参照：**&#x200B;セル A5 には昨日の日付が含まれています。Cell B5 contains [!DNL Visitors[ Day=A5 ]], which evaluates to the number of Visitors yesterday.
+* **フィルターセル参照：**&#x200B;セル A5 には昨日の日付が含まれています。セルB5には[!DNL訪問者[ Day=A5 ]]が含まれ、昨日の訪問者数と評価されます。
 
-* **連結セル参照：**&#x200B;セル A5 には今日の日付が含まれ、セル A6 には 08:00 ～ 08:59 の 1 時間の期間が含まれます。Cell B6 contains [!DNL Visitors[ Hour=A5+” ”+A6 ]], which evaluates to the number of Visitors today between 8:00 AM and 9:00 AM.
-
+* **連結セル参照：**&#x200B;セル A5 には今日の日付が含まれ、セル A6 には 08:00 ～ 08:59 の 1 時間の期間が含まれます。セルB6には[!DNL訪問者[ Hour=A5+&quot;&quot;+A6 ]]が含まれ、午前8時から午前9時の間の今日の訪問者数と評価されます。
