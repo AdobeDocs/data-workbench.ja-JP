@@ -1,14 +1,15 @@
 ---
 description: Data Workbench 6.1 のリリースノートには、新機能、アップグレード要件、バグの修正および既知の問題が含まれています。
-solution: Analytics
 title: Data Workbench 6.1 のリリースノート
-topic: Data workbench
 uuid: 5bfb558a-ce85-4b4a-95dc-ccef337c4d1b
+exl-id: ed37a00f-b4cd-428e-abb7-7c52d5cfd2f9
 translation-type: tm+mt
-source-git-commit: 2cba66a160fec9154796f093d04a422a5b0da265
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '693'
+ht-degree: 87%
 
 ---
-
 
 # Data Workbench 6.1 のリリースノート{#data-workbench-release-notes}
 
@@ -22,7 +23,7 @@ Data Workbench 6.1 には、次の新機能が含まれています。
 |--- |--- |
 | 64-bit Windows のアップグレード | アップグレード後の Data Workbench のサーバー、レポートサーバーおよびクライアントコンポーネントは、64-bit Windows オペレーティングシステム上でのみ動作します。 |
 | 傾向スコアリング | オーディエンスをスコアリングすると、顧客のロイヤルティを特定し、販売をコンバージョンしたり、ストーリーやキャンペーンに対して何らかのアクションを起こしたりする可能性が高い顧客を統計的に把握することができます。傾向スコアリングには、モデルを表示し、選択した指標の変化する相関を示す次のビジュアライゼーションが含まれるようになりました。<ul><li>モデルビューアでは、傾向スコアリングで生成されたロジスティック回帰モデルを調べ、（定数項を含む）各入力変数の係数の重みとその統計的な誤差範囲が表示されます。 </li><li>リフトチャートとゲインチャートは、スコアリング対象データモデルの潜在的な増加を評価する場合に使用します。</li><li>混同行列は、実際のポジティブ（AP）、実際のネガティブ（AN）、予測されたポジティブ （PP）、予測されたネガティブ（PN）の組み合わせによる 4 カウントを付与します。</li> <li>v6.1 以降では、ディメンション、またはディメンションと指標の 2 種類に基づいた傾向スコアリングを保存する保存オプションが追加されました。</li><li>Ctrl + Alt キーを押しながら、エレメントを傾向スコアリングおよびクラスタービルダーにドラッグ＆ドロップして追加できるようになりました。以前は、テーブルエレメントを追加するには、テーブルから「エレメント」ボックスにドラッグする必要がありました。</li></ul> |
-| Data Workbench での中国語の使用 | Data Workbench では、現在、クライアントアプリケーションで簡体字中国語をサポートしています。また、Data Workbenchは、国際言語の第2のテキスト入力プロセスとしてInput Method Editor(IME)をサポートしています。 |
+| Data Workbench での中国語の使用 | Data Workbench では、現在、クライアントアプリケーションで簡体字中国語をサポートしています。Data Workbenchでは、国際言語向けの第2のテキスト入力プロセスとしてInput Method Editor(IME)もサポートしています。 |
 | 数学関数 | 指標、数学変換およびワークシートのセルに数学関数を追加して、データセットに対してより複雑な計算を実行できるようになりました。 |
 | 統計コールアウト | テーブルで指標列に対して統計の概要コールアウトが提供されるようになりました。コールアウトには、列の平均値、標準偏差値、最小値、最大値、平方偏差および合計数を表示できます。コールアウトは、任意の選択および評価に組み込むことができます。 |
 | 相関行列フィルター | 相関行列に追加されたバイナリフィルターを使用すると、相関している指標のどちらかまたは両方の値を制限して、比較対象を絞り込むことができます。また、Ctrl + Alt キーを押しながら、エレメントを評価対象の行列の列または行にドラッグすることで、ディメンションテーブルからディメンションエレメントを追加できるようにもなりました。 |
@@ -32,19 +33,19 @@ Data Workbench 6.1 には、次の新機能が含まれています。
 
 テーブルの列をアルファベット順または序数別に並べ替えることができます。
 
-To better select elements in a Dimension table, you can order the first column alphabetically or by ordinals by selecting the **[!UICONTROL Sort]** menu option.
+Dimensionテーブル内の要素をより適切に選択するには、**[!UICONTROL Sort]**&#x200B;メニューオプションを選択して、最初の列をアルファベット順または序数別に並べ替えます。
 
 列を序数別に並べ替えた場合は、# 文字が表示されます（デフォルト）。
 
 **「並べ替え」オプションの選択**
 
-To change sorting options between ordinal and alphabet, right-click and select **[!UICONTROL Sort]**. 順序を逆にするには、矢印をクリックします。
+並べ替えオプションを序数別とアルファベット順で切り替えるには、右クリックし、**[!UICONTROL Sort]**&#x200B;を選択します。 順序を逆にするには、矢印をクリックします。
 
 ![](assets/sort_table_alpha.png)
 
 >[!NOTE]
 >
->他の列を序数別に並べ替えるには、列の名前をクリックします。
+>他の列の名前をクリックすると、その列を序数別に並べ替えることができます。
 
 ## ファンネルでのフォールアウトラベルの非表示
 
@@ -54,7 +55,7 @@ To change sorting options between ordinal and alphabet, right-click and select *
 
 ![](assets/c_funnel_hide_fallout.png)
 
-When in a **[!UICONTROL Funnel]** visualization, you can right-click the title and select **[!UICONTROL Hide Fallout]** from the menu to hide the fallout labels.
+**[!UICONTROL Funnel]**&#x200B;ビジュアライゼーション内で、タイトルを右クリックし、メニューから「**[!UICONTROL Hide Fallout]**」を選択して、フォールアウトラベルを非表示にできます。
 
 ## 既知の問題 {#section-ff2180c6871c413480e15fa915c253b9}
 
