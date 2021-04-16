@@ -1,16 +1,17 @@
 ---
 description: ガイド付き分析のビジュアライゼーションは、ワークスペース内に作成した選択範囲に基づく詳細な分析の手がかりを提供します。
-solution: Analytics
 title: ガイド付き分析
-topic: Data workbench
 uuid: 01ed8207-3a14-45ac-8a1d-4e17ac39bb94
+exl-id: c19b52b6-52db-455e-adde-8b2400aae006
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 93%
 
 ---
 
-
-# Guided analysis{#guided-analysis}
+# ガイド付き分析{#guided-analysis}
 
 ガイド付き分析のビジュアライゼーションは、ワークスペース内に作成した選択範囲に基づく詳細な分析の手がかりを提供します。
 
@@ -20,10 +21,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->ディメンション名が赤で表示される場合、そのディメンション名はデータセットに定義されていません。
+>ディメンション名が赤で表示される場合、そのディメンションはデータセット内で定義されていません。
 
 ワークスペース内に選択範囲を作成すると、ガイド付き分析のビジュアライゼーションではディメンションの左側にチェックマークが、右側にドットが表示されて、最も関連性の高い情報を提供するディメンションを示します。
 
 * **チェックマーク**&#x200B;は、統計的に重要な意味で値がベンチマークと異なる（つまり、選択範囲とベンチマークの差異が偶然によるものではない）ディメンションを示します。
 * **ドット**&#x200B;は、選択範囲がベンチマークとどの程度異なるかを示します。最初のドットは U 統計量を表し、2 つ目のドットは V 統計量を表します。「 [統計量について](../../../../home/c-get-started/c-analysis-vis/c-guided-analysis/c-stat-measures.md#concept-ba2c7f417f384dc0a3438fcb6e268708). ドットが明るくて大きいほど差異が大きく、選択範囲に基づいたディメンションに関する情報の関連性が高くなります（つまり、より明るく大きいドットはより有意義な情報を表します）。
-
