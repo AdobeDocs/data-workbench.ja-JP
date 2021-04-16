@@ -1,14 +1,15 @@
 ---
 description: 密度マップビジュアライゼーションは、四角形のマップ内にエレメントを影付きの長方形として表示します。
-solution: Analytics
 title: 密度マップ
-topic: Data workbench
 uuid: c13cecee-f322-4757-aa90-12039173ff9f
+exl-id: da37d954-cadb-42a6-a44b-9b38c0354a5d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '610'
+ht-degree: 84%
 
 ---
-
 
 # 密度マップ{#density-map}
 
@@ -25,30 +26,30 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    新しいワークスペースを開いた後に、**追加**／**一時的にロック解除**&#x200B;をクリックする必要がある場合があります。
 1. クリック **[!UICONTROL Visualization]** > **[!UICONTROL Density Map]**.
 
-1. Select a **[!UICONTROL Dimension]** from the menu.
+1. メニューから&#x200B;**[!UICONTROL Dimension]**&#x200B;を選択します。
 
-   For example, select **[!UICONTROL Time]** > **[!UICONTROL Days]**.
+   例えば、**[!UICONTROL Time]** > **[!UICONTROL Days]**&#x200B;を選択します。
 
-   In contrast, selecting **[!UICONTROL Time]** > **[!UICONTROL Hours]** would give you more elements with smaller values displaying as smaller rectangles.
+   一方、**[!UICONTROL Time]**/**[!UICONTROL Hours]**&#x200B;を選択すると、より小さい値を持つ要素がより多く表示され、小さい長方形として表示されます。
 
    >[!NOTE]
    >
-   >必要に応じて複数の要素を持つディメンションを選択します。 現在、ディメンションごとのエレメント数は最大 200 個に制限されています。
+   >必要に応じて複数のエレメントを持つディメンションを選択する必要があります。 現在、ディメンションごとのエレメント数は最大 200 個に制限されています。
 
-1. You can change dimension views by opening **[!UICONTROL Visualization]** > **[!UICONTROL Table]** and selecting across elements from the table to display in the map.
+1. **[!UICONTROL Visualization]** > **[!UICONTROL Table]**&#x200B;を開き、テーブルからマップに表示する要素を選択して、表示をディメンションを変更できます。
 
    ![](assets/density_map_day_selections.png)
 
    マップは、テーブルからの選択に応じて変更されます。
 
 1. 小さなエレメントの上にカーソルを置くと、マウスカーソルの近くに表示されるテキスト内にそのエレメントの名前と値が表示されます。
-1. Mask elements by right-clicking and selecting **[!UICONTROL Mask]**, then choose an option.
+1. 右クリックし&#x200B;**[!UICONTROL Mask]**&#x200B;を選択して要素をマスクし、オプションを選択します。
 
    ![](assets/density_map_day_mask.png)
 
-   To display all masked nodes, select **[!UICONTROL Unhide All]**.
+   マスクされたすべてのノードを表示するには、**[!UICONTROL Unhide All]**&#x200B;を選択します。
 
-1. Spotlight elements by right-clicking and selecting **[!UICONTROL Spotlight]**, then choose an option. スポットライトを使用すると、範囲内のエレメントに明暗を付けることができます。
+1. 右クリックして&#x200B;**[!UICONTROL Spotlight]**&#x200B;を選択し、要素をスポットライトしてから、オプションを選択します。 スポットライトを使用すると、範囲内のエレメントに明暗を付けることができます。
 1. ワークスペースに色凡例を追加します。色凡例を使用して、マップ内の値を識別することができます。
 
    ワークスペースに色凡例を追加できます。ノードの色は、データの追加のディメンションに基づいて変更されます。
@@ -56,7 +57,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/density_map_change_dim.png)
 
-1. Add callouts by right-clicking a cell and selecting **[!UICONTROL Add Callout]**. メニューから様々なタイプやビジュアライゼーションを選択できます。
+1. 引き出し線を追加表示するには、セルを右クリックし、「**[!UICONTROL Add Callout]**」を選択します。 メニューから様々なタイプやビジュアライゼーションを選択できます。
 
    ![](assets/density_map_callout.png)
 
@@ -69,7 +70,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 * エレメントを選択するには、左クリックします。
 * 複数のエレメントを選択するには、Ctrl キーを押しながらクリックします。
 * エレメントを選択解除するには、Shift キーを押しながらクリックします。
-* メニューを開くには、選択したエレメント内で右クリックします。次に、またはを **[!UICONTROL Deselect]** 選択して、 **[!UICONTROL Deselect All]** 選択した要素を消去します。
+* メニューを開くには、選択したエレメント内で右クリックします。次に、**[!UICONTROL Deselect]**&#x200B;または&#x200B;**[!UICONTROL Deselect All]**&#x200B;を選択して、選択した要素をクリアします。
 
 ## 追加のオプション {#section-d77defb012424de4a7ced8e5c93115bc}
 
@@ -101,4 +102,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
  </tbody> 
 </table>
-
