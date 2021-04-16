@@ -1,24 +1,25 @@
 ---
 description: フィルターは、データセット内のデータのサブセットを定義する式です。
-solution: Analytics
 title: フィルター式の構文
-topic: Data workbench
 uuid: faeb6847-3295-48ab-9d1c-db00f57647ba
+exl-id: 515c1645-69c8-4990-a913-d2d505c6fe51
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '789'
+ht-degree: 94%
 
 ---
 
-
-# Syntax for filter expressions{#syntax-for-filter-expressions}
+# フィルター式の構文{#syntax-for-filter-expressions}
 
 フィルターは、データセット内のデータのサブセットを定義する式です。
 
 フィルターは、ディメンション間の関係に従って、各ディメンションの各要素を通すか、通さないかを決定します。
 
-Filters can be edited using the [!DNL Filter Editor]. Filter [Editorsを参照してください](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3)。
+フィルターは[!DNL Filter Editor]を使用して編集できます。 「[フィルターエディター](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3)」を参照してください。
 
-次の表の各構文の説明には、そのフィルターを使用する指標式の例があります。For example, Sessions[True] is a metric defined using the “True” filter. The Sessions[True] metric is the same as the Sessions metric because the True filter admits every element of the Session dimension.
+次の表の各構文の説明には、そのフィルターを使用する指標式の例があります。例えば、Sessions[True]は、「True」フィルターを使用して定義された指標です。 TrueフィルターはSessionディメンションのすべての要素を通すので、Sessions[True]指標はSessions指標と同じです。
 
 <table id="table_5D66E6C11B384460BAAA7A6130214594"> 
  <tbody> 
@@ -55,7 +56,7 @@ Filters can be edited using the [!DNL Filter Editor]. Filter [Editorsを参照�
    <td colname="col2"> <p>ディメンション Dim の指定した要素を通します。 </p> <p>例：Sessions[ Page=”A” ] は、ページ A を訪問したセッションの数です。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Dim &lt;&gt; “Value” </p> <p>Dim != “Value” </p> </td> 
+   <td colname="col1"> <p>Dim &lt;&gt; “Value” </p> <p>Dim != “値” </p> </td> 
    <td colname="col2"> <p>ディメンション Dim の指定した要素以外をすべて通します。 </p> <p>例：Sessions[ Page&lt;&gt;”A” ] は、A 以外のページを訪問したセッションの数です。 </p> </td> 
   </tr> 
   <tr> 
@@ -104,4 +105,3 @@ Filters can be edited using the [!DNL Filter Editor]. Filter [Editorsを参照�
   </tr> 
  </tbody> 
 </table>
-
