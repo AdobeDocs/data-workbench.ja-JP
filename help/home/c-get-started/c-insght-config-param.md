@@ -1,14 +1,15 @@
 ---
 description: Insight.cfg ファイル内でパラメーターを設定して、ネットワーク接続と Data Workbench の設定を指定します。
-solution: Analytics
 title: 設定パラメーター
-topic: Data workbench
 uuid: 6e1248c1-3eae-44a3-8b19-f595d79e8d0d
+exl-id: c92fc79f-452d-4839-840a-a3ea9e8754c4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1519'
+ht-degree: 70%
 
 ---
-
 
 # 設定パラメーター{#configuration-parameters}
 
@@ -24,7 +25,7 @@ Insight.cfg ファイル内でパラメーターを設定して、ネットワ�
 
 ![](assets/cfg_Workstation_AddServer.png)
 
-Some of the parameters available in the new [!DNL Insight.cfg] file may not available in your version of the [!DNL Insight.cfg] file. If one of these parameters is needed, you must add it to the [!DNL Insight.cfg] file using [!DNL Add Custom Key], by right-clicking on a parameter, then specifying the name and type. You can also add parameters by opening the [!DNL .cfg] file (located in the Data Workbench installation directory) using a text editor.
+新しい[!DNL Insight.cfg]ファイルに含まれる一部のパラメーターは、お使いのバージョンの[!DNL Insight.cfg]ファイルでは使用できない場合があります。 これらのパラメーターの1つが必要な場合は、[!DNL Add Custom Key]を使用して[!DNL Insight.cfg]ファイルに追加する必要があります。パラメーターを右クリックし、名前とタイプを指定します。 テキストエディターを使用して(Data Workbenchのインストールディレクトリにある)[!DNL .cfg]ファイルを開いて、パラメーターを追加することもできます。
 
 パラメーターエントリを追加するためのモデルとして使用できる、[!DNL Insight.cfg] ファイルに使用可能なすべてのパラメーターの例を以下に示します。
 
@@ -80,11 +81,11 @@ Toolbar Icons = bool: false
   </tr> 
   <tr> 
    <td colname="col1"> <p>Default Online Level </p> </td> 
-   <td colname="col2"> <p>(オプション)Data Workbenchのインスタンスを開くたびに、デフォルトでストリーミング、オフラインまたはオンラインとして動作させることができます。 選択肢は Streaming、Online、Offline です。Data Workbenchのデフォルト設定は、「オフライン」で動作します。 </p> <p> <p>Note: Before deciding to work online by default, make sure to weigh the benefits and consequences outlined in <a href="../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54"> Working Offline and Online</a>. </p> </p> </td> 
+   <td colname="col2"> <p>（オプション）Data Workbenchインスタンスを開くたびに、デフォルトでストリーミング、オフラインまたはオンラインとして動作させることができます。 選択肢は Streaming、Online、Offline です。Data Workbenchのデフォルト設定は、オフラインで動作します。 </p> <p> <p>注意：デフォルトでオンラインで動作することを決定する前に、「<a href="../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54">オフラインでの作業」と「</a>オンラインでの作業」で説明されている利点と結果を考慮する必要があります。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Fonts </p> </td> 
-   <td colname="col2"> <p>(オプション)UTF8 ベースの unicode 特殊文字をレンダリングするために<span class="keyword">クライアント</span>が使用する必要があるフォントをリストしたベクトルです。リスト内のフォント数に制限はありません。 </p> <p>先頭のフォントは常に Lucida Sans Console でなければなりません。If this parameter is not included in the <span class="filepath"> Insight.cfg</span> file, Data Workbench uses only Lucida Sans console to display text. </p> <p> Data Workbenchは、レンダリングできない文字が検出されるまで、リスト内の最初のフォントを使用してすべての文字をレンダリングします。 レンダリングできない文字が出現した場合は、リストの 2 番目のフォントを使用してその文字をレンダリングします。そのフォントが文字をレンダリングしない場合、Data Workbenchはリスト内の3番目のフォントを使用してその文字をレンダリングし、フォントリストの最後に達するまで同様に続きます。 正しいフォントがベクトルに含まれていない場合は、その文字の16進値が表示されます。 </p> <p> <p>注意： Data Workbenchの実行中は、このパラメーターを変更しないでください。 </p> </p> </td> 
+   <td colname="col2"> <p>（オプション）UTF8 ベースの unicode 特殊文字をレンダリングするために<span class="keyword">クライアント</span>が使用する必要があるフォントをリストしたベクトルです。リスト内のフォント数に制限はありません。 </p> <p>先頭のフォントは常に Lucida Sans Console でなければなりません。このパラメーターが<span class="filepath"> Insight.cfg</span>ファイルに含まれていない場合、Data WorkbenchはLucida Sans Consoleのみを使用してテキストを表示します。 </p> <p> Data Workbenchは、リスト内の最初のフォントを使用して、レンダリングできない文字が検出されるまですべての文字をレンダリングします。 レンダリングできない文字が出現した場合は、リストの 2 番目のフォントを使用してその文字をレンダリングします。そのフォントが文字をレンダリングしない場合、Data Workbenchはリストの3番目のフォントを使用してその文字をレンダリングし、フォントリストの終わりに達するまで同様にレンダリングします。 ベクトルに正しいフォントがリストされていない場合は、Data Workbenchにその文字の16進値が表示されます。 </p> <p> <p>注意： Data Workbenchの実行中は、このパラメーターを変更しないでください。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Gamma </p> </td> 
@@ -92,55 +93,55 @@ Toolbar Icons = bool: false
   </tr> 
   <tr> 
    <td colname="col1"> <p>Licensing </p> </td> 
-   <td colname="col2"> <p>(オプション)プロキシサーバー経由で Adobe License Server にアクセスしている場合のみ、Licensing ベクトルのパラメーターを変更する必要があります。 </p> <p><span class="keyword">クライアント</span>がプロキシサーバー経由で Adobe License Server にアクセスできるようにするパラメーターのセクション識別子です。Licensing ノードを展開して、以下のパラメーターを入力します。 </p> </td> 
+   <td colname="col2"> <p>（オプション）プロキシサーバー経由で Adobe License Server にアクセスしている場合のみ、Licensing ベクトルのパラメーターを変更する必要があります。 </p> <p><span class="keyword">クライアント</span>がプロキシサーバー経由で Adobe License Server にアクセスできるようにするパラメーターのセクション識別子です。Licensing ノードを展開して、以下のパラメーターを入力します。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Proxy Address </p> </td> 
-   <td colname="col2"> <p>(オプション)<span class="keyword">クライアント</span>が Adobe License Server にアクセスするために使用する必要があるプロキシサーバーのアドレス。 </p> </td> 
+   <td colname="col2"> <p>（オプション）<span class="keyword">クライアント</span>が Adobe License Server にアクセスするために使用する必要があるプロキシサーバーのアドレス。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Proxy Port </p> </td> 
-   <td colname="col2"> <p>(オプション)プロキシサーバーのポート。 </p> </td> 
+   <td colname="col2"> <p>（オプション）プロキシサーバーのポート。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Proxy User Name </p> </td> 
-   <td colname="col2"> <p>(オプション)プロキシサーバーのユーザー名。 </p> </td> 
+   <td colname="col2"> <p>（オプション）プロキシサーバーのユーザー名。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Proxy Password </p> </td> 
-   <td colname="col2"> <p>(オプション)Proxy User Name に関連付けられたパスワード。 </p> </td> 
+   <td colname="col2"> <p>（オプション）Proxy User Name に関連付けられたパスワード。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Maximum Sample Size (MB) </p> </td> 
-   <td colname="col2"> <p>1 台のコンピューター上で動作している<span class="keyword">クライアント</span>が使用するデータキャッシュ内で許容される最大サイズを指定します。 </p> <p>While the Sample Bytes parameter in the <span class="filepath"> Server.cfg</span> file specifies the data cache size for all <span class="keyword"> clients</span> connecting to a Data Workbench server (250e6 bytes by default), the Maximum Sample Size parameter enables you to further limit the data cache size for a particular computer. このパラメーターは、ストレージまたは計算能力に制限のあるコンピューターにクライアントがインストールされている場合に役立ちます。 </p> <p> <p>注意：このパラメーターは、クライアントプログラムによってローカルにクエリーされるローカルデータサンプルのサイズを制限します。対照的に、<span class="filepath">cache.db</span> ファイルには、クライアントが接続する各プロファイル用のデータに加え、要素名とそのディメンションが含まれています。<span class="filepath">cache.db</span> ファイル内のこれらの要素名とディメンションは、ローカルクエリーの実行に必要です。そのため、データセット内の要素数を減らす以外にサイズを制限する方法はありません。 </p> </p> </td> 
+   <td colname="col2"> <p>1 台のコンピューター上で動作している<span class="keyword">クライアント</span>が使用するデータキャッシュ内で許容される最大サイズを指定します。 </p> <p><span class="filepath"> Server.cfg</span>ファイルのSample Bytesパラメーターでは、Data Workbenchサーバーに接続するすべての<span class="keyword">クライアント</span>のデータキャッシュサイズを指定しますが（デフォルトでは250e6バイト）、Maximum Sample Sizeパラメーターを使用すると、特定のコンピューターのデータキャッシュサイズをさらに制限できます。 このパラメーターは、ストレージまたは計算能力に制限のあるコンピューターにクライアントがインストールされている場合に役立ちます。 </p> <p> <p>注意：このパラメーターは、クライアントプログラムによってローカルにクエリーされるローカルデータサンプルのサイズを制限します。対照的に、<span class="filepath">cache.db</span> ファイルには、クライアントが接続する各プロファイル用のデータに加え、要素名とそのディメンションが含まれています。<span class="filepath">cache.db</span> ファイル内のこれらの要素名とディメンションは、ローカルクエリーの実行に必要です。そのため、データセット内の要素数を減らす以外にサイズを制限する方法はありません。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>名前 </p> </td> 
-   <td colname="col2">(オプション)<span class="keyword">クライアント</span>が<span class="keyword">サーバー</span>の識別に使用する名前。 </td> 
+   <td colname="col2">（オプション）<span class="keyword">クライアント</span>が<span class="keyword">サーバー</span>の識別に使用する名前。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Network Location </p> </td> 
-   <td colname="col2"> <p>(オプション)The network location that <span class="keyword"> client</span> uses to resolve the Data Workbench server common name to an IP address. 使用可能なネットワーク位置は、サーバー上のアドレスファイルで定義されています。詳しくは、『サーバー製品のインストールと管理ガイド<i></i>』を参照してください。 </p> <p>ネットワーク位置を指定しない場合、<span class="keyword">クライアント</span>はデフォルトのネットワーク位置「Insight」を使用して共通名を解決します。 </p> </td> 
+   <td colname="col2"> <p>（オプション）<span class="keyword"> client</span>がData Workbenchサーバーの共通名をIPアドレスに解決するために使用するネットワークの場所。 使用可能なネットワーク位置は、サーバー上のアドレスファイルで定義されています。詳しくは、『サーバー製品のインストールと管理ガイド<i></i>』を参照してください。 </p> <p>ネットワーク位置を指定しない場合、<span class="keyword">クライアント</span>はデフォルトのネットワーク位置「Insight」を使用して共通名を解決します。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Port </p> </td> 
    <td colname="col2"> <p><span class="keyword">クライアント</span>が要求を送信するポート。このポート番号は、Data Workbenchサーバーが要求をリスンしているポートと一致する必要があります。 安全な接続を行うため、通常は 443 を設定します。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Proxy Address </p> </td> 
-   <td colname="col2"> <p>Data Workbenchサーバーコンピューターに接続するためにプロキシサーバーが必要な場合は、少なくともこのパラメーターとProxy Portパラメーターを設定する必要があります。 オプションで、Proxy User Name パラメーターと Proxy User Password パラメーターにも入力できます。 </p> <p>The address of the proxy server that <span class="keyword"> the client</span> must use to access the Data Workbench server. </p> </td> 
+   <td colname="col1"> <p>プロキシアドレス </p> </td> 
+   <td colname="col2"> <p>Data Workbenchサーバーコンピューターへの接続にプロキシサーバーが必要な場合は、少なくともこのパラメーターとProxy Portパラメーターを設定する必要があります。 オプションで、Proxy User Name パラメーターと Proxy User Password パラメーターにも入力できます。 </p> <p><span class="keyword">クライアント</span>がData Workbenchサーバーにアクセスする際に使用する必要があるプロキシサーバーのアドレス。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Proxy Password </p> </td> 
-   <td colname="col2"> <p>(オプション)プロキシサーバーへのパスワード。 </p> </td> 
+   <td colname="col2"> <p>（オプション）プロキシサーバーへのパスワード。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Proxy Port </p> </td> 
+   <td colname="col1"> <p>プロキシポート </p> </td> 
    <td colname="col2"> <p>プロキシサーバーのポート。デフォルト値は 8080 です。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Proxy User Name </p> </td> 
-   <td colname="col2"> <p>(オプション)プロキシサーバーのユーザー名。 </p> </td> 
+   <td colname="col2"> <p>（オプション）プロキシサーバーのユーザー名。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>検索 </p> </td> 
@@ -152,11 +153,11 @@ Toolbar Icons = bool: false
   </tr> 
   <tr> 
    <td colname="col1"> <p>SSL Client Certificate </p> </td> 
-   <td colname="col2"> <p>複数の証明書がある場合を除いてオプションです。Data Workbenchのこのコピーのデジタル証明書を含むファイルの名前。 「デジタル証明書のダウンロードとインストール」でダウンロードしたファイルです。 </p> <p>例：<span class="filepath">Samantha Smith.pem</span> </p> <p>このパラメーターを空白のままにした場合、<span class="keyword">クライアント</span>は存在する証明書であれば何でも使用します。 </p> </td> 
+   <td colname="col2"> <p>複数の証明書がある場合を除いてオプションです。このData Workbenchのコピー用のデジタル証明書が含まれるファイルの名前です。 「デジタル証明書のダウンロードとインストール」でダウンロードしたファイルです。 </p> <p>例：<span class="filepath">Samantha Smith.pem</span> </p> <p>このパラメーターを空白のままにした場合、<span class="keyword">クライアント</span>は存在する証明書であれば何でも使用します。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>SSL Server Common Name </p> </td> 
-   <td colname="col2"> <p>Data Workbenchサーバーの共通名（デジタル証明書に割り当てられている名前）。 </p> </td> 
+   <td colname="col2"> <p>Data Workbenchサーバーの共通名（デジタル証明書で割り当てられている名前）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Toolbar Icons </p> </td> 
@@ -168,30 +169,29 @@ Toolbar Icons = bool: false
   </tr> 
   <tr> 
    <td colname="col1"> <p>Use SSL </p> </td> 
-   <td colname="col2">Specifies whether SSL is used for secure communication between the Data Workbench server and <span class="keyword"> the client</span>. 選択肢は true または false です。デフォルト値は true です。 </td> 
+   <td colname="col2">Data Workbenchサーバーと<span class="keyword">クライアント</span>間の安全な通信にSSLを使用するかどうかを指定します。 選択肢は true または false です。デフォルト値は true です。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Unhide All </p> </td> 
-   <td colname="col2"> <p>(オプション)以下の機能のいずれかを使用して非表示にしているすべての指標、ディメンション、フィルターを一時的に再表示できます。 
+   <td colname="col2"> <p>（オプション）以下の機能のいずれかを使用して非表示にしているすべての指標、ディメンション、フィルターを一時的に再表示できます。 
      <ul id="ul_B40E28D9FDC0418BBFA9B0A37F4F6913"> 
       <li id="li_E51BAC99AAE949E5886F19557366453A"><span class="filepath">order.txt</span> ファイル内の [Exclusive] 設定 </li> 
       <li id="li_E3D8222BC55D4CEB90BCCAE606711306"><span class="filepath">order.txt</span> ファイル内の Hide オプション </li> 
       <li id="li_2ADE4EFC1F964D0A90B40CFB3D2766E8"><span class="filepath">.metric</span> ファイル、<span class="filepath">.dim</span> ファイル、<span class="filepath">.filter</span> ファイル内の Show パラメーター </li> 
       <li id="li_BBCD248A8F33440092B52E407E300FCC"><span class="filepath">Transformation.cfg</span> ファイル内の Hidden パラメーター </li> 
-     </ul> </p> <p>これらの方法の詳細については、「メニュー項目を非 <a href="../../home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/t-cstm-menus-ordr-files.md#task-a391800a8dd444deb3e1516d5189f999"> 表示にする」を参照してくださ</a>い。 </p> <p>選択肢は true または false です。デフォルト設定は false です。このパラメーターを true に変更すると、非表示の指標、ディメンション、フィルターが一時的に再表示されます。 </p> </td> 
+     </ul> </p> <p>これらのメソッドについて詳しくは、「<a href="../../home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/t-cstm-menus-ordr-files.md#task-a391800a8dd444deb3e1516d5189f999">メニュー項目を非表示にする</a>」を参照してください。 </p> <p>選択肢は true または false です。デフォルト設定は false です。このパラメーターを true に変更すると、非表示の指標、ディメンション、フィルターが一時的に再表示されます。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Unlock </p> </td> 
-   <td colname="col2"> <p>(オプション)ロックされているワークスペースのロック解除を許可するかどうかを指定します。選択肢は true と false です。true に設定するとロックされているワークスペースをロック解除でき、false に設定するとロック解除できません。デフォルト値は false です。ロックされているワークスペースについて詳しくは、「 <a href="../../home/c-get-started/c-work-worksp/c-unlock-wksp.md#concept-18ada952aecf45c79a806b31b294023e"> ワークスペースのロック解除</a>. </p> </td> 
+   <td colname="col2"> <p>（オプション）ロックされているワークスペースのロック解除を許可するかどうかを指定します。選択肢は true と false です。true に設定するとロックされているワークスペースをロック解除でき、false に設定するとロック解除できません。デフォルト値は false です。ロックされているワークスペースについて詳しくは、「 <a href="../../home/c-get-started/c-work-worksp/c-unlock-wksp.md#concept-18ada952aecf45c79a806b31b294023e"> ワークスペースのロック解除</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Update Software </p> </td> 
-   <td colname="col2"> <p>(オプション)Specifies whether to allow this <span class="keyword"> the </span>client software to be updated by the Data Workbench server. 選択肢は true または false です。デフォルト値は true です。 </p> </td> 
+   <td colname="col2"> <p>（オプション）この<span class="keyword"></span>クライアントソフトウェアをData Workbenchサーバーで更新できるようにするかどうかを指定します。 選択肢は true または false です。デフォルト値は true です。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>User Folder </p> </td> 
-   <td colname="col2"> <p>(オプション)任意のワークスペース、指標、ディメンションまたは各プロファイルの設定ファイルのローカルコピーを格納するフォルダーの名前と場所を指定します。デフォルト設定はUser\\で、Data Workbenchのインストールディレクトリ内のUserフォルダーを指定します。 </p> <p>2 人のユーザーが同じコンピューターを共有している場合、この設定を変更すると役に立ちます。両方のユーザーを受け入れるため、どちらのユーザーもアクセス権を持つ共有フォルダーを指定できます。 </p> </td> 
+   <td colname="col2"> <p>（オプション）任意のワークスペース、指標、ディメンションまたは各プロファイルの設定ファイルのローカルコピーを格納するフォルダーの名前と場所を指定します。デフォルト設定はUser\\で、Data Workbenchのインストールディレクトリ内のUserフォルダーを指定します。 </p> <p>2 人のユーザーが同じコンピューターを共有している場合、この設定を変更すると役に立ちます。両方のユーザーを受け入れるため、どちらのユーザーもアクセス権を持つ共有フォルダーを指定できます。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
