@@ -1,16 +1,17 @@
 ---
 description: Format 変換は一連の入力を受け取って、指定された構造と一致するように出力の書式を整えます。
-solution: Analytics
 title: 形式
-topic: Data workbench
 uuid: c596902e-21bc-4ce6-9ca4-7ca86dfc0a6c
+exl-id: 842b502e-cd16-45b3-ada8-6f2d899f1d54
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 100%
 
 ---
 
-
-# 形式{#format}
+# Format{#format}
 
 Format 変換は一連の入力を受け取って、指定された構造と一致するように出力の書式を整えます。
 
@@ -31,12 +32,12 @@ Format 変換は一連の入力を受け取って、指定された構造と一�
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments </td> 
-   <td colname="col2"> (オプション)変換についてのメモ。 </td> 
+   <td colname="col1"> コメント </td> 
+   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> この変換が適用される条件。 </td> 
    <td colname="col3"></td> 
   </tr> 
