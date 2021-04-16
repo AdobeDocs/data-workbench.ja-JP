@@ -1,30 +1,29 @@
 ---
 description: Insightサーバーは、デフォルトで、ポート80（HTTPの場合）および443（HTTPSの場合）をリッスンします。
-solution: Analytics
 title: ポート設定の確認
 uuid: 1adad226-5891-4498-80b6-1bb4d67f5bbb
+exl-id: 924860e3-5afa-4c0f-bb7a-d38d5c1355b7
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 7%
 
 ---
 
-
 # ポート設定の確認{#checking-the-port-settings}
 
 Insightサーバーは、デフォルトで、ポート80（HTTPの場合）および443（HTTPSの場合）をリッスンします。
 
-これらのポートが、をインストールしたマシン上の別のプロセスによって既に割り当てられている場合 [!DNL Insight Server]は、次の手順に従って、 [!DNL Insight Server’s] ポート割り当てを変更します。
+[!DNL Insight Server]をインストールしたマシン上の別のプロセスによって、これらのポートが既に割り当てられている場合は、次の手順に従って[!DNL Insight Server’s]ポートの割り当てを変更します。
 
 **ポートの割り当てを変更するには**
 
-1. インストールしたディレクトリ内の [!DNL Components] フォルダーに移動し [!DNL Insight Server]ます。
+1. [!DNL Insight Server]をインストールしたディレクトリの[!DNL Components]フォルダーに移動します。
 
    例：[!DNL C:\Adobe\Server\Components]
 
-1. メモ帳などのテキストエディターで [!DNL Communications.cfg] ファイルを開きます。
+1. [!DNL Communications.cfg]ファイルをメモ帳などのテキストエディターで開きます。
 1. 次に示すように、PortとSSL Portのエントリを探します。
 
    ```
@@ -41,4 +40,4 @@ Insightサーバーは、デフォルトで、ポート80（HTTPの場合）お�
      . . .
    ```
 
-1. これらのポートが使用したくない場合は、ポートの割り当てを変更 [!DNL Insight Server] し、ファイルを保存して閉じます。
+1. [!DNL Insight Server]で使用したくないポートがある場合は、ポートの割り当てを変更し、ファイルを保存して閉じます。
