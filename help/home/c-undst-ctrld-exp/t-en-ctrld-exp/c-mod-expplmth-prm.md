@@ -1,21 +1,19 @@
 ---
-description: 'null'
-solution: Analytics,Analytics
+description: ExpPartialMatch パラメーターの変更（オプション）
 title: ExpPartialMatch パラメーターの変更（オプション）
-topic: Data workbench
 uuid: 15ed33cc-5ec8-45b2-a4eb-d1941962ca9d
+exl-id: 8ad45368-85a4-4865-b66b-52c29c28799c
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 14%
+source-wordcount: '82'
+ht-degree: 18%
 
 ---
 
-
 # ExpPartialMatch パラメーターの変更（オプション）{#modifying-the-exppartialmatch-parameter-optional}
 
-制御下の実験を有効にして、Webサイト全体またはWebサイトのサブディレクトリ全体を別の場所に再マップする場合は、 [!DNL txlogd.conf] ファイル内のExpPartialMatchパラメータを「on」に設定できます。 デフォルトは「off」です。
+Webサイト全体またはWebサイトのサブディレクトリ全体を別の場所に再マップする制御実験を有効にする場合は、[!DNL txlogd.conf]ファイルのExpPartialMatchパラメーターを「on」に設定できます。 デフォルトは「off」です。
 
 次に、ExpPartialMatchパラメータの例を示します。
 
