@@ -1,14 +1,15 @@
 ---
 description: データセット構築用ログエントリから取得されたデフォルトの値には、AppendURI 変換を利用して情報を付加することができます。
-solution: Analytics
 title: AppendURI
-topic: Data workbench
 uuid: 8334d4f9-2bf6-4bd0-af65-8f2b0959652d
+exl-id: 0d5901c0-bd13-4499-8e26-44839aeb7413
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '557'
+ht-degree: 94%
 
 ---
-
 
 # AppendURI{#appenduri}
 
@@ -16,14 +17,14 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 この変換によって、URI ディメンションの作成に使用される内部フィールドの最後に名前と値のペアが追加されます。名前と値のペアは、Query String Key パラメーターを名前として作成され、その値には、識別された Input パラメーターの値が使用されます。[!DNL AppendURI] コマンドでは、名前と値のペアを他の要素（[!DNL URI] ステムや、URI に既に適用されている [!DNL AppendURI] の処理結果）から分離するために必要な疑問符（?）とアンパサンド（&amp;）が適宜追加されます。
 
-変換は、 [!DNL AppendURI] ファイルまたはファイルで定義されてい [!DNL Transformation.cfg] る場合にのみ機能 [!DNL Transformation Dataset Include] します。
+[!DNL AppendURI]変換は、[!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイルで定義されている場合にのみ機能します。
 
 | パラメーター | 説明 | デフォルト |
 |---|---|---|
 | 名前 | 変換のわかりやすい名前。ここには任意の名前を入力することができます。 |  |
-| Comments | (オプション)変換についてのメモ。 |  |
-| Condition | この変換が適用される条件。 |  |
-| Default | デフォルト値。条件が満たされたが、入力値が利用できない場合に使用されます。 |  |
+| コメント | （オプション）変換についてのメモ。 |  |
+| 条件 | この変換が適用される条件。 |  |
+| デフォルト | デフォルト値。条件が満たされたが、入力値が利用できない場合に使用されます。 |  |
 | Input | URI の最後に付加する値のフィールド名。 |  |
 | Query String Key | 付加される名前と値のペアを作成するときに使用する名前。 |  |
 
@@ -39,4 +40,4 @@ modelview という ASP ページは、すべてのトラフィックが集ま�
 
 ![](assets/cfg_TransformationType_AppendURI.png)
 
-この例のシステムは、[!DNL modelview.asp] と [!DNL xmlmodelview.asp] という 2 つのページですべてのリクエストを処理しています。一方のページはブラウザートラフィック用で、もう一方のページはシステム間の XML 通信用です。アプリケーションサーバープロセスは、実行するアクションを cs-uri-query の id 名に基づいて決定します。したがって、id フィールドから値を抽出して、URI に付加することが可能です。結果、Web サイト訪問者のトラフィックを反映した、様々なバリエーションの URI を収集することができます。この例の [!DNL String Match] 条件は、変換の適用先となるログエントリを決定するものです。cs-uri-stem フィールドから目的の 2 つの Web ページを探し、それ以外はすべて無視しています。入力（名前と値のペアの値）は、cs-uri-query(id) の結果、つまり「login」です。Query String Key パラメーターの指定に従って、「id」という名前が付加されます。Thus, for the incoming cs-uri value of our example, the resulting URI used by the [!DNL URI] dimension is [!DNL /modelview.asp&id=login].
+この例のシステムは、[!DNL modelview.asp] と [!DNL xmlmodelview.asp] という 2 つのページですべてのリクエストを処理しています。一方のページはブラウザートラフィック用で、もう一方のページはシステム間の XML 通信用です。アプリケーションサーバープロセスは、実行するアクションを cs-uri-query の id 名に基づいて決定します。したがって、id フィールドから値を抽出して、URI に付加することが可能です。結果、Web サイト訪問者のトラフィックを反映した、様々なバリエーションの URI を収集することができます。この例の [!DNL String Match] 条件は、変換の適用先となるログエントリを決定するものです。cs-uri-stem フィールドから目的の 2 つの Web ページを探し、それ以外はすべて無視しています。入力（名前と値のペアの値）は、cs-uri-query(id) の結果、つまり「login」です。Query String Key パラメーターの指定に従って、「id」という名前が付加されます。したがって、この例のcs-uri値から得られる値の場合、[!DNL URI]ディメンションで使用される結果のURIは[!DNL /modelview.asp&id=login]になります。
