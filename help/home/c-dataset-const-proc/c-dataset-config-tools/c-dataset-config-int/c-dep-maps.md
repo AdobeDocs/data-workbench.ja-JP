@@ -1,20 +1,21 @@
 ---
 description: プロファイルのコンポーネントの設定は、依存関係マップで視覚化し、管理することができます。
-solution: Analytics
 title: 依存関係マップ
-topic: Data workbench
 uuid: c869267c-5fa9-43b8-b4d4-06c7a36bfa8e
+exl-id: 4618c735-f507-4abc-a4b4-d52a37c64c60,733407ca-3326-406a-a642-a3ea3d3f6b8b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 87%
 
 ---
-
 
 # 依存関係マップ{#dependency-maps}
 
 プロファイルのコンポーネントの設定は、依存関係マップで視覚化し、管理することができます。
 
-* **データセットコンポーネント：** データセットの、ファイル、ファイルに定義されているログソース、フィルター、フィールド、変換お [!DNL Log Processing.cfg]よび拡張デ [!DNL Transformation.cfg]ィメンション [!DNL dataset include] です。
+* **データセットコンポーネント：データセットの** 、 [!DNL Log Processing.cfg]ファイル、ファイルに定義されているログソース、フィルター、フィールド、変換、拡張ディメンション [!DNL Transformation.cfg] [!DNL dataset include] 。
 
 * **クエリーモデルのコンポーネント：** Dimensions、Metrics、Filters の各フォルダーで定義されている指標、ディメンション、フィルター
 * **ワークスペースとビジュアライゼーション：**&#x200B;ワークスペース、レポート、メニューオプション、グローブレイヤー
@@ -23,10 +24,10 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 マップ上では、プロファイルコンポーネントが色付きの点（ノード）で表されます。ノードを接続している線は、依存関係、つまりコンポーネント同士の関連を表現しています。2 つのノード間の線は、左側のノードの出力が右側のノードの入力である（つまり、右側のノードが左側のノードに依存している）ことを示します。
 
-## データセットのコンポーネントの表示 {#section-3e51c09c23cc40aeade2e6ad0fa7c8d2}
+## データセットのコンポーネントの表示  {#section-3e51c09c23cc40aeade2e6ad0fa7c8d2}
 
-1. Right-click within the dependency map and click **[!UICONTROL Display]**.
-1. Choose **[!UICONTROL Dataset]**. の左側にXが表示されます [!DNL Dataset]。
+1. 依存関係マップ内で右クリックし、「**[!UICONTROL Display]**」をクリックします。
+1. **[!UICONTROL Dataset]**&#x200B;を選択します。 [!DNL Dataset]の左にXが表示されます。
 
 他の表示オプションについて詳しくは、『*Data Workbench ユーザーガイド*』を参照してください。
 
@@ -35,7 +36,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 ![](assets/vis_DependencyMap.png)
 
 * 黄緑色のノードは、データセットに定義されている特定のフィルターまたは 1 つまたは複数のログソースを表します。ログソースのノードは常にマップの左端に表示されます。
-* A gray node represents a field that is listed in the Fields parameter in a [!DNL Log Processing.cfg] or [!DNL Log Processing Include]file.
+* 灰色のノードは、[!DNL Log Processing.cfg]ファイルまたは[!DNL Log Processing Include]ファイルのFieldsパラメーターに指定されているフィールドを表します。
 
 * 青のノードは、変換を表します。
 * 緑のノードは、拡張ディメンションを表します。
@@ -52,7 +53,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->依存関係マップ内でハイライトされたパスは、選択を構成しません。
+>依存関係マップ内でハイライトされているパスは、選択範囲を構成しません。
 
 ノードを右クリックすると、マップに表示されている各コンポーネントに関する識別情報を確認したり、メニューオプションを選択して、コンポーネントに関する詳細を表示したり、コンポーネントを編集したりできます。加えて、テキスト検索を実行したり、変換や拡張ディメンションのパフォーマンス情報を表示したりすることもできます。
 
