@@ -1,22 +1,23 @@
 ---
 description: Report Server.cfgパラメーターに関する情報です。
-solution: Analytics
-title: Report Server.cfgのパラメーター
-topic: Data workbench
+title: Report Server.cfg のパラメーター
 uuid: 506f30f7-c8c6-4580-8423-7da8d00b0d57
+exl-id: 339e4219-ff4d-4df6-b45a-7144927a843b
 translation-type: tm+mt
-source-git-commit: 6443bdf8856ba51252685fa0c1ed65f831142956
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1685'
+ht-degree: 8%
 
 ---
 
-
-# Report Server.cfgのパラメーター{#report-server-cfg-parameters}
+# Report Server.cfg のパラメーター{#report-server-cfg-parameters}
 
 Report Server.cfgパラメーターに関する情報です。
 
-「Insightサーバー [!DNL Report Server.cfg] への接続の [設定」に示すサンプルには](../../../home/c-rpt-oview/c-inst-rpt/t-config-conn-ins-svr.md#task-a3ca949c43244782b658fb4437fd724c) 、デフォルトでファイルに含まれるパラメー [!DNL Report Server.cfg] ターのみが含まれます。
+[Insightサーバーへの接続の設定](../../../home/c-rpt-oview/c-inst-rpt/t-config-conn-ins-svr.md#task-a3ca949c43244782b658fb4437fd724c)に示すサンプル[!DNL Report Server.cfg]には、デフォルトで[!DNL Report Server.cfg]ファイルに含まれているパラメーターのみが含まれています。
 
-プロキシサーバー経由でAdobe License Serverに接続する場合は、にLicensingベクトルとそのパラメーターを追加する必要がありま [!DNL Report Server.cfg]す。 次に、このベクトルとそのパラメーターの例を示します。このベクトルは、Licensingベクトルにモデルを使用できます。
+プロキシサーバー経由でAdobeLicense Serverに連絡する場合は、Licensingベクトルとそのパラメーターを[!DNL Report Server.cfg]に追加する必要があります。 Licensingベクトルのモデルを使用できる、このベクトルとそのパラメーターの例を以下に示します。
 
 ```
 Licensing = serverInfo:  
@@ -26,7 +27,7 @@ Proxy Port = int: ProxyPort
 Proxy User Name = string: ProxyUserName 
 ```
 
-次の表に、ファイルのパラメーターの説 [!DNL Report Server.cfg] 明を示します。
+次の表に、[!DNL Report Server.cfg]ファイルのパラメーターの説明を示します。
 
 <table id="table_9DA4A3124A9D444CBB4CBFF6FA279A42"> 
  <thead> 
@@ -38,27 +39,27 @@ Proxy User Name = string: ProxyUserName
  <tbody> 
   <tr> 
    <td colname="col1"> Excel拡張機能 </td> 
-   <td colname="col2"> <p>次のExcel拡張機能がサポートされています。 </p> <p>Excel Extension = string: <span class="filepath"> .xlsx </span> </p> <p>Excel Extension = string: <span class="filepath"> .xls </span> （デフォルト） </p> </td> 
+   <td colname="col2"> <p>サポートされるExcelの拡張機能を次に示します。 </p> <p>Excel Extension = string:<span class="filepath"> .xlsx </span> </p> <p>Excel Extension = string:<span class="filepath"> .xls </span>（デフォルト） </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Fonts </td> 
-   <td colname="col2"> <p>(オプション)Vector listing the fonts that <span class="keyword"> Report Server </span> should use to render UTF8-based unicode special characters. リスト内のフォント数に制限はありません。 </p> <p>先頭のフォントは常に Lucida Sans Console でなければなりません。If this parameter is not included in the <span class="filepath"> Report Server.cfg </span> file, <span class="keyword"> Report Server </span> uses only Lucida Sans console to display text. </p> <p> <span class="keyword"> Report Serverは、レ </span> ンダリングできない文字が検出されるまで、リストの最初のフォントを使用してすべての文字をレンダリングします。 次に、リスト内の2番目のフォントを使用してその文字をレンダリングします。 If that font does not render the character, <span class="keyword"> Report Server </span> uses the third font in the list to render that character, and so on, until it reaches the end of the font list. If the correct font is not listed in the vector, <span class="keyword"> Report Server </span> displays the hexidecimal value for the character. </p> <p> <p>注意： Report Serverの実行中は、このパラメーターを変 <span class="keyword"> 更しない </span> でください。 </p> </p> </td> 
+   <td colname="col2"> <p>（オプション）<span class="keyword"> Report Server </span>がUTF8ベースのUnicode特殊文字をレンダリングする際に使用する必要があるフォントをリストしたベクトルです。 リスト内のフォント数に制限はありません。 </p> <p>先頭のフォントは常に Lucida Sans Console でなければなりません。このパラメーターが<span class="filepath"> Report Server.cfg </span>ファイルに含まれていない場合、<span class="keyword">レポートサーバー</span>はLucida Sans Consoleのみを使用してテキストを表示します。 </p> <p> <span class="keyword"> Report Serverでは、レンダリングできない文字が検出されるまで、リストの最初のフォントを </span> 使用してすべての文字がレンダリングされます。次に、リストの2番目のフォントを使用してその文字をレンダリングします。 そのフォントが文字をレンダリングしない場合、<span class="keyword"> Report Server </span>はリストの3番目のフォントを使用してその文字をレンダリングします。フォントリストの終わりに達するまで同様です。 ベクトルに正しいフォントがリストされていない場合、<span class="keyword">レポートサーバー</span>には、その文字の16進数値が表示されます。 </p> <p> <p>注意： <span class="keyword">レポートサーバー</span>の実行中は、このパラメーターに変更を加えないでください。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Gamma </td> 
-   <td colname="col2"> <p> <span class="wintitle"> .pngフ </span> ァイル出 <span class="filepath"> 力のガ </span> ンマ設定。 デフォルト値は 1.6 です。 </p> <p> <p>注意： この値を変更することはお勧めしません。 </p> </p> </td> 
+   <td colname="col2"> <p> <span class="wintitle">  </span> .png <span class="filepath">  </span> ファイル出力のガンマ設定デフォルト値は 1.6 です。 </p> <p> <p>注意： Adobeでは、この値を変更することをお勧めしません。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Licensing </td> 
-   <td colname="col2"> <p>(オプション)このベクトルのパラメーターを変更する必要があるのは、プロキシサーバーを通じてアドビのライセンスサーバーに接続する場合のみです。 </p> <p>プロキシサーバーを介してアドビのライセンスサーバーに接続するように設定したパラメーターのセクション識別子。 </p> </td> 
+   <td colname="col2"> <p>（オプション）プロキシサーバー経由でAdobeのライセンスサーバーにアクセスする場合にのみ、このベクトルのパラメーターを変更する必要があります。 </p> <p>プロキシサーバーを介してAdobeのライセンスサーバーに接続するように設定したパラメーターのセクション識別子。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Proxy Address </td> 
-   <td colname="col2"> Report Serverがアドビのライセンスサーバーにア <span class="keyword"> クセスす </span> る際に使用する必要があるプロキシサーバーのアドレス。 </td> 
+   <td colname="col2"> <span class="keyword"> Report Server </span>がAdobeのライセンスサーバーにアクセスする際に使用する必要があるプロキシサーバーのアドレス。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Proxy Password </td> 
-   <td colname="col2"> (オプション)The password associated with the <span class="wintitle"> Proxy User Name </span>. </td> 
+   <td colname="col2"> （オプション）<span class="wintitle">プロキシユーザー名</span>に関連付けられているパスワードです。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Proxy Port </td> 
@@ -66,71 +67,71 @@ Proxy User Name = string: ProxyUserName
   </tr> 
   <tr> 
    <td colname="col1"> Proxy User Name </td> 
-   <td colname="col2"> (オプション)プロキシサーバーへのアクセスに使用するユーザー名です。 </td> 
+   <td colname="col2"> （オプション）プロキシサーバーへのアクセスに使用するユーザー名です。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Network Location </td> 
-   <td colname="col2"> Report Serverがサーバーの共通 <span class="keyword"> 名をIP </span> アドレスに解決するために使用するネットワークの場所です。 ネットワークの場所は、Data Workbenchサーバーコンピューター上のAddressesディレクトリにあるアドレスファイルで定義されます。 </td> 
+   <td colname="col2"> <span class="keyword">レポートサーバー</span>がサーバーの共通名をIPアドレスに解決するために使用するネットワークの場所。 ネットワークの場所は、Data WorkbenchサーバーコンピューターのAddressesディレクトリにあるアドレスファイルで定義されます。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> サーバー </td> 
-   <td colname="col2"> <p>レポートを生成するために接続する必要があるData WorkbenchサーバーコンピューターのReport Serverを設定するた <span class="keyword"> めに設定する </span> パラメーターのセクション識別子。 このベクトルには、このベクトルにリストされている項目の数を示す数値が含まれます。 </p> <p>各サーバーに対して、serverInfoエントリを追加し、必要に応じてパラメーターを設定します。 </p> </td> 
+   <td colname="col2"> <p>レポートを生成するために接続する必要があるData Workbenchサーバーコンピューター<span class="keyword">レポートサーバー</span>を構成するために設定するパラメーターのセクション識別子。 このベクトルには、このベクトルに含まれる項目の数を示す数値が含まれます。 </p> <p>各サーバーに対して、serverInfoエントリを追加し、必要に応じてパラメーターを設定します。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Address </td> 
-   <td colname="col2"> レポートを生成するためにレポートサーバーが接続する必要が <span class="keyword"> あるData Workbenchサ </span> ーバーコンピューターのIPアドレス。 </td> 
+   <td colname="col2"> <span class="keyword">レポートサーバー</span>が接続してレポートを生成する必要があるData WorkbenchサーバーコンピューターのIPアドレス。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 名前 </td> 
-   <td colname="col2"> Data Workbenchサーバーを識 <span class="keyword"> 別するた </span> めにReport Serverが内部で使用する名前。 これは単なる内部ラベルなので、任意の名前を使用できます。 一貫性を保つため、サーバーのデジタル証明書に記載されている共通名を使用することをお勧めします。 </td> 
+   <td colname="col2"> <span class="keyword">レポートサーバー</span>がData Workbenchサーバーを識別するために内部的に使用する名前。 これは単に内部ラベルなので、任意の名前を使用できます。 一貫性を保つために、サーバーのデジタル証明書に記載されている共通名を使用することをお勧めします。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Port </td> 
-   <td colname="col2"> Report ServerがData Workbenchサ <span class="keyword"> ーバーと </span> 通信する際に使用するポート。 安全な接続の場合、この値は通常443です。 </td> 
+   <td colname="col2"> <span class="keyword">レポートサーバー</span>がData Workbenchサーバーと通信するポート。 安全な接続の場合、この値は通常443です。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Proxy Address </td> 
-   <td colname="col2"> The address of a proxy server that <span class="keyword"> Report Server </span> must use to access the data workbench server. このパラメーターは、サーバーコンピューターに接続するためにプロキシサーバーが必要な場合にのみ必要です。 </td> 
+   <td colname="col1"> プロキシアドレス </td> 
+   <td colname="col2"> <span class="keyword">レポートサーバー</span>がData Workbenchサーバーにアクセスする際に使用する必要があるプロキシサーバーのアドレス。 このパラメーターは、サーバーコンピューターに接続するためにプロキシサーバーが必要な場合にのみ必要です。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Proxy Password </td> 
    <td colname="col2"> プロキシサーバーへのパスワード。このパラメーターは、Data Workbenchサーバーコンピューターに接続するためにプロキシサーバーが必要な場合にのみ必要です。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Proxy Port </td> 
+   <td colname="col1"> プロキシポート </td> 
    <td colname="col2"> プロキシサーバーのポート。デフォルト値は 8080 です。このパラメーターは、Data Workbenchサーバーコンピューターに接続するためにプロキシサーバーが必要な場合にのみ必要です。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Proxy User Name </td> 
-   <td colname="col2"> プロキシサーバーのユーザー名。 このパラメーターは、Data Workbenchサーバーコンピューターに接続するためにプロキシサーバーが必要な場合にのみ必要です。 </td> 
+   <td colname="col2"> プロキシサーバーのユーザー名です。 このパラメーターは、Data Workbenchサーバーコンピューターに接続するためにプロキシサーバーが必要な場合にのみ必要です。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL Client Certificate </td> 
-   <td colname="col2"> Report ServerコンピューターのSSL証明書フ <span class="keyword"> ァイルの </span> 名前。 </td> 
+   <td colname="col2"> <span class="keyword">レポートサーバー</span>コンピューターのSSL証明書ファイルの名前です。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL Server Common Name </td> 
-   <td colname="col2"> <span class="wintitle"> Data Workbenchサーバーのデ </span> ジタル証明書に表示されるサーバー共通名。 </td> 
+   <td colname="col2"> <span class="wintitle"> Data Workbenchサーバーのデジタル証明書 </span> に一覧表示されるサーバー共通名。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Use SSL </td> 
-   <td colname="col2"> Indicates whether SSL is used for secure communication between the data workbench server and <span class="keyword"> Report Server </span>. 選択肢は true または false です。デフォルト値は true です。 </td> 
+   <td colname="col2"> Data Workbenchサーバーと<span class="keyword">レポートサーバー</span>間の安全な通信にSSLが使用されるかどうかを示します。 選択肢は true または false です。デフォルト値は true です。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 結果のメモリ制限(KB) </td> 
-   <td colname="col2"> <p>レポートおよびアラートで使用可能にするメモリ量(KB)。 デフォルト値は 50000 です。 </p> <p>レポートの実行時に、 <span class="keyword"> Report Serverはま </span> ずこの値を確認し、次にMaximum Slice Sizeパラメーターの値を確認します。 例えば、このパラメーターを50,000に設定し、「最大スライスサイズ」を50に設定した場合、 <span class="keyword"></span> Report Serverでは、より多くのワークスペースを実行できる領域があっても、一度に実行できるワークスペースは50個までです。 </p> <p> <p>注意： この制限は、Data WorkbenchサーバーのQuery Memory Limitパラメーターで設定された値を超えないようにし、同時にレポートを実行する他のユーザーに少しの余裕を与えるために、 <span class="wintitle"></span> Query Memory Limitよりも少し小さく設定するのが理想的です。 </p> </p> </td> 
+   <td colname="col2"> <p>レポートおよびアラートで使用可能にするメモリ量(KB)。 デフォルト値は 50000 です。 </p> <p>レポートの実行時に、<span class="keyword">レポートサーバー</span>が最初にこの値を確認し、次にMaximum Slice Sizeパラメーターの値を確認します。 例えば、このパラメーターを50,000に設定し、スライスの最大サイズを50に設定した場合、より多くのワークスペースを実行できる領域があっても、<span class="keyword">レポートサーバー</span>は一度に50個のワークスペースのみを実行します。 </p> <p> <p>注意： この制限は、Data Workbenchサーバーのクエリメモリ制限パラメーターに設定された値を超えないようにする必要があります。また、同時にレポートを実行する他のクエリに対して若干の余裕を持たせるために、<span class="wintitle">メモリ制限</span>より少し低く設定するのが理想的です。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 最大スライスサイズ </td> 
-   <td colname="col2"> Report Serverで一度に実行できるレポートワ <span class="keyword"> ークス </span> ペースの最大数です。 デフォルト値は 50 です。この設定をReport Serverで使用する方法 <span class="keyword"> につ </span> いて詳しくは、結果のメモリ制限(KB) <span class="wintitle"> パラメーターの説明を参照し </span> てください。 </td> 
+   <td colname="col2"> <span class="keyword">レポートサーバー</span>が一度に実行できるレポートワークスペースの最大数です。 デフォルト値は 50 です。<span class="keyword">レポートサーバー</span>でこの設定を使用する方法について詳しくは、<span class="wintitle">結果メモリ制限(KB) </span>パラメーターの説明を参照してください。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Update Software </td> 
-   <td colname="col2"> <p>Indicates whether to allow this <span class="keyword"> Report Server's </span> software to be updated by the data workbench server. 選択肢は true または false です。デフォルト値は true です。 </p> <p>次に、モデルを使用できるこのパラメーターの例を示します。 </p> <p> <code> Update&amp;nbsp;Software&amp;nbsp;=&amp;nbsp;bool:&amp;nbsp;false </code> </p> </td> 
+   <td colname="col2"> <p>この<span class="keyword">レポートサーバーの</span>ソフトウェアをData Workbenchサーバーによって更新させるかどうかを示します。 選択肢は true または false です。デフォルト値は true です。 </p> <p>次に、モデルを使用できるこのパラメーターの例を示します。 </p> <p> <code> Update&amp;nbsp;Software&amp;nbsp;=&amp;nbsp;bool:&amp;nbsp;false </code> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> OpenGLハードウェアレンダリングの使用 </td> 
-   <td colname="col2"> <p>Report Serverで、ハ <span class="keyword"> ードウェ </span> アレンダリング（マシンのグラフィックカードなど）を使用してレポート出力を生成するかどうかを制御します。 選択肢は true または false です。デフォルト値は true です。 </p> <p>このパラメーターは、グラフィックカードに問題が発生した場合にのみfalseに設定する必要があります。 falseに設定した場合、Report Serverはハードウ <span class="keyword"> ェアレンダリ </span> ングを使用せず、デフォルトでソフトウェアレンダリングを使用します。 </p> </td> 
+   <td colname="col1"> OpenGLハードウェアレンダリングを使用 </td> 
+   <td colname="col2"> <p><span class="keyword">レポートサーバー</span>がハードウェアレンダリング（コンピューターのグラフィックカードなど）を使用してレポート出力を生成するかどうかを制御します。 選択肢は true または false です。デフォルト値は true です。 </p> <p>このパラメーターは、グラフィックカードに問題が発生している場合にのみfalseに設定する必要があります。 falseに設定した場合、<span class="keyword">レポートサーバー</span>はハードウェアレンダリングを使用せず、デフォルトでソフトウェアレンダリングを使用します。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> レポート </td> 
@@ -138,40 +139,39 @@ Proxy User Name = string: ProxyUserName
   </tr> 
   <tr> 
    <td colname="col1"> 完了メッセージの間隔 </td> 
-   <td colname="col2"> <p>レポートまたはアラートの生成中にクエ <span class="keyword"> リが実 </span> 行された場合に、Report Serverが完了ステータスメッセージを印刷する頻度（秒）。 デフォルト値は 120 秒です。 </p> <p>例：Workspaceクエリは62.145672%完了しています。 </p> <p>完了メッセージはreportserver.logに書き <span class="filepath"> 込まれ、サ </span> ーバーと同期されます。 この設定では、各レポー <span class="filepath"> トセット </span> の間で繰り返し送信されるstatus.txtファイルを制御し、完了率をサムネールと共に表示できるようにします。 レポートセットが完了したとき、または間隔に達したとき（いずれか早い方）に、メッセージが送信されます。 この値を大きく設定しても、サムネールによってクライアントインターフェイスで生成されたレポートの表示速度は変わりませんが、表示される中間メッセージの数は影響を受けます。 小さい値を指定すると、 <span class="keyword"> Report Serverからプロファイルにデータが同期され、 </span> status.txtメッセージが変更されるたびに、すべてのDPUおよび接続されているすべてのクライアントにデータが同期されるので、システムでデータの同期に大量の時間がかか <span class="filepath"></span> ります。 </p> <p>この設定パラメータの設定に関係なく、レポートセットが完 <span class="filepath"></span> 了すると、システムは常にstatus.txtファイルを送信します。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword">レポートサーバー</span>が、レポートまたはアラートの生成中にクエリが実行されているときに完了ステータスメッセージを印刷する頻度（秒）。 デフォルト値は 120 秒です。 </p> <p>例：Workspaceクエリが62.145672%完了した。 </p> <p>完了メッセージは<span class="filepath"> reportserver.log </span>に書き込まれ、サーバーと同期されます。 この設定は、各レポートセットに対して前後に送信される<span class="filepath"> status.txt </span>ファイルを制御するので、完了率がサムネールと共に表示されます。 レポートセットが完了するか、間隔に達する（いずれか早い方）たびに、メッセージが送信されます。 この値を大きく設定すると、クライアントインターフェイスでサムネールによって生成されたレポートの表示速度は低くなりますが、表示される中間メッセージの数は低くなります。 小さい値を指定すると、<span class="keyword"> status.txt </span>メッセージが変更されるたびに、<span class="filepath"> Report Server </span>サーバーからプロファイルへ、すべてのDPUと接続されているすべてのクライアントへデータが同期されるので、データの同期に大きな時間がかかる場合があります。 </span></p> <p>この設定パラメーターの設定に関係なく、レポートセットが完了すると、システムは常に<span class="filepath"> status.txt </span>ファイルを送信します。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> プロファイル </td> 
-   <td colname="col2"> <p>このベクトルにリストされている項目の数を示す数値です。 レポートを作成する各プロファイルに対して、Profilesベクトルに <span class="wintitle"> ReportProfileエ </span> ントリを追加し、ServerパラメーターとProfileパラメーターを設定します。 </p> <p> <span class="wintitle"> サーバ </span> ー — Data Workbenchサー <span class="keyword"> バーを識別す </span> るためにReport Serverが内部的に使用する名前。 この名前は、Data WorkbenchサーバーのSSL証明書に記載されているサーバー共通名である必要があります。 </p> <p> <span class="wintitle"> プロフ </span> ァイル — レポートを作成する対象のプロファイルの名前。 この名前は、Data Workbenchサーバーコンピューター上の名前付きプロファイルと一致する必要があります。 </p> </td> 
+   <td colname="col2"> <p>このベクトルに含まれる項目の数を示す数値です。 レポートを作成するプロファイルごとに、プロファイルベクトルに<span class="wintitle"> ReportProfile </span>エントリを追加し、Serverパラメーターとプロファイルパラメーターを設定します。 </p> <p> <span class="wintitle"> サーバー </span> -  <span class="keyword"> Report ServerがData Workbenchサーバーを識別する際に内部的に </span> 使用する名前。この名前は、Data WorkbenchサーバーのSSL証明書に一覧表示されるサーバー共通名である必要があります。 </p> <p> <span class="wintitle"> プロファイル </span>  — レポートを作成するプロファイルの名前。この名前は、Data Workbenchサーバーコンピューター上の名前付きプロファイルと一致する必要があります。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SMTP Server for Errors </td> 
-   <td colname="col2"> <p>電子メールでReport Serverエラーを送信するSMTPサーバー <span class="wintitle"> のアド </span> レスです。 </p> <p>例： <span class="filepath"> mail.mycompany.com </span> </p> <p>SMTPサーバーは、説明された機能を使用するために必要です。 </p> </td> 
+   <td colname="col2"> <p><span class="wintitle">レポートサーバー</span>のエラーを電子メールで送信するSMTPサーバーのアドレスです。 </p> <p>例：<span class="filepath"> mail.mycompany.com </span> </p> <p>SMTPサーバーは、説明された機能を使用するために必要です。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SMTP Server for Errors Password </td> 
-   <td colname="col2"> <p>SMTPサーバーにログインするためのパスワードです。 メールの送信にログインが必要でない限り、このパラメータはオプションです。 </p> <p>SMTPサーバーは、説明された機能を使用するために必要です。 </p> </td> 
+   <td colname="col2"> <p>SMTPサーバーにログインするためのパスワードです。 メールの送信にログインが必要な場合を除き、このパラメーターはオプションです。 </p> <p>SMTPサーバーは、説明された機能を使用するために必要です。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SMTP Server for Errors Send From </td> 
-   <td colname="col2"> Report Serverエラーの送信元の電子メール <span class="wintitle"> アドレス </span> です。 </td> 
+   <td colname="col2"> <span class="wintitle">レポートサーバー</span>のエラーの送信元の電子メールアドレスです。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> SMTP Server For Errors Send To </td> 
-   <td colname="col2"> <p>アラートの送信先の電子メールアドレス。 </p> <p>例： <span class="filepath"> adm1@company.com,adm2@company.com </span> </p> <p>SMTPサーバーは、説明された機能を使用するために必要です。 </p> </td> 
+   <td colname="col1"> SMTP Server for Errors Send To </td> 
+   <td colname="col2"> <p>アラートの送信先の電子メールアドレス。 </p> <p>例：<span class="filepath"> adm1@company.com,adm2@company.com </span> </p> <p>SMTPサーバーは、説明された機能を使用するために必要です。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SMTP Server for Errors Username </td> 
-   <td colname="col2"> <p>SMTPサーバーにログインするためのユーザー名です。 メールの送信にログインが必要でない限り、このパラメータはオプションです。 </p> <p>SMTPサーバーは、説明された機能を使用するために必要です。 </p> </td> 
+   <td colname="col2"> <p>SMTPサーバーにログインするためのユーザー名です。 メールの送信にログインが必要な場合を除き、このパラメーターはオプションです。 </p> <p>SMTPサーバーは、説明された機能を使用するために必要です。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ステータス間隔 </td> 
-   <td colname="col2"> <p>Report Serverがステータス情報を生成し、 <span class="wintitle"> Data Workbenchサ </span> ーバーに送信して詳細なステータスで表示する頻度（秒） <span class="wintitle"> です </span>。 </p> <p>デフォルト値は 120 秒です。レポートキューの実行には時間がかかる場合があるので、2分などの小さな値に設定することはお勧めしません。 この場合、600 ～ 1200秒の設定を考えてみましょう。 </p> <p>詳細なステータスについて詳 <span class="wintitle"> しくは、『Insight </span>ユーザーガイド』の「管理インターフェイス」という章を <a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> 参照してくださ </a>い。 </p> </td> 
+   <td colname="col2"> <p><span class="wintitle">レポートサーバー</span>が、ステータス情報を生成してdata workbenchサーバーに送信し、<span class="wintitle">詳細なステータス</span>に表示する頻度（秒）。 </p> <p>デフォルト値は 120 秒です。レポートキューの実行には数時間かかる場合があるので、2分などの小さな値に設定しないことをお勧めします。 この場合、600 ～ 1200秒の設定を考えてみてください。 </p> <p><span class="wintitle">詳細なステータス</span>について詳しくは、『Insightユーザーガイド</a>』の「管理インターフェイス」という章を参照してください。<a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> </a></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 更新間隔 </td> 
-   <td colname="col2"> <p>Report Serverが、Profilesベクトルにリストされているす <span class="keyword"> べてのプ </span> ロファイルで、新しいレポートおよびアラートを監視する頻度（分単位）です。 デフォルト値は10分です。 </p> <p>指定した時間は、一覧に表示されるすべてのプロファイルに分割されます。 例えば、間隔を10分に設定し、2つのプロファイルを監視する場合、各プロファイルは5分間監視されます。 新しいまたは変更されたレポートやアラートがプロファイルに保存されたときにプロファイルが監視されている場合、そのレポートやアラートは即座に生成できます。 </p> <p>「更新間隔」 <span class="wintitle"> が複数のプ </span> ロファイルを監視するように設定されている場合は、この設定が、設定された時間内にすべてのプロファイルを読み込むのに十分な高さに設定されていることが重要です。 例えば、大きなディメンションが多数設定されたシステムでは、すべての要素名を持つ初期データ接続を取得するのに数分かかる場合があり、この設定は完全な同期が行われるまで十分な長さにする必要があります。 そうしないと、プロファイルの同期エラーが発生します。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Report Server </span>が、プロファイルベクトルに示されたすべてのプロファイルを監視し、新しいレポートとアラートを受け取る頻度（分）。 デフォルト値は10分です。 </p> <p>指定した時間は、リストに表示されているすべてのプロファイルに分割されます。 例えば、間隔を10分に設定し、2つのプロファイルを監視する場合、各プロファイルは5分間監視されます。 新しいレポートや変更されたアラートがプロファイルに保存されたときにプロファイルが監視されている場合、そのレポートやアラートを即座に生成できます。 </p> <p><span class="wintitle"> [更新間隔</span>]が複数のプロファイルを監視するように設定されている場合、この設定は、設定された時間内にすべてのプロファイルを読み込むのに十分な高さに設定されていることが重要です。 大きなディメンションが多数設定されているシステムで、例えば、すべての要素名を持つ初期データ接続を取得するのに数分かかる場合は、この設定が、完全な同期が行われるまで十分な長さに設定されている必要があります。 そうしないと、プロファイルの同期エラーが発生します。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
