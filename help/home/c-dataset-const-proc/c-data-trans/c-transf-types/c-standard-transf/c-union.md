@@ -1,14 +1,15 @@
 ---
 description: Union 変換は、一連の入力を受け取り、出力として文字列ベクトルを作成します。
-solution: Analytics
 title: Union
-topic: Data workbench
 uuid: 2f8bd332-727e-4a4e-a3e7-a52ea2b0a33a
+exl-id: 841b5133-d587-409c-b39e-47169beb2ddf
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 100%
 
 ---
-
 
 # Union{#union}
 
@@ -19,9 +20,9 @@ Union 変換は、一連の入力を受け取り、出力として文字列ベ�
 | パラメーター | 説明 | デフォルト |
 |---|---|---|
 | 名前 | 変換のわかりやすい名前。ここには任意の名前を入力することができます。 |  |
-| Comments | (オプション)変換についてのメモ。 |  |
-| Condition | この変換が適用される条件。 |  |
-| Default | デフォルト値。条件が満たされたが、入力値が利用できない場合に使用されます。 |  |
+| コメント | （オプション）変換についてのメモ。 |  |
+| 条件 | この変換が適用される条件。 |  |
+| デフォルト | デフォルト値。条件が満たされたが、入力値が利用できない場合に使用されます。 |  |
 | Inputs | 1 つまたは複数の入力値。 |  |
 | Output | 出力フィールドの名前。 |  |
 
