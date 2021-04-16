@@ -1,14 +1,15 @@
 ---
 description: 入力変数、クラスターの数およびターゲット母集団（必要に応じて）を選択して、データセット内のクラスターを定義します。
-solution: Analytics
 title: クラスターの構築
-topic: Data workbench
 uuid: f8462445-b7d2-48ae-aed7-2a3abc491cfb
+exl-id: 60bc75bf-2f89-455b-8be9-aa20bb837752
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 61%
 
 ---
-
 
 # クラスターの構築{#building-clusters}
 
@@ -24,17 +25,17 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 1. 入力変数を選択します。
 
-   * Add metrics to the **[!UICONTROL Input Variables]** list by selecting from the **[!UICONTROL Metric]** menu in the toolbar.
+   * ツールバーの&#x200B;**[!UICONTROL Metric]**&#x200B;追加メニューから選択して、**[!UICONTROL Input Variables]**&#x200B;リストに対する指標を表示します。
 
       ![](assets/cluster_metric_select.png)
 
-   * Add dimension elements to the **[!UICONTROL Input Variables]** list by dragging them from a Dimension&#39;s table.
+   * ディメンション要素を&#x200B;**[!UICONTROL Input Variables]**&#x200B;リストに追加ドラッグします。
 
-      Press **[!UICONTROL Ctrl + Alt]** and drag selected dimension elements to the **[!UICONTROL Input Variables]** list or to the **[!UICONTROL Element]** box in the toolbar.
+      **[!UICONTROL Ctrl + Alt]**&#x200B;を押して、選択したディメンションリストを&#x200B;**[!UICONTROL Input Variables]**&#x200B;要素またはツールバーの&#x200B;**[!UICONTROL Element]**&#x200B;ボックスにドラッグします。
 
       ![](assets/cluster_dim_select.png)
-   デフォルトでは、データセット全体に対してクラスタリングが実行されます。You can see all input variables in the left **[!UICONTROL Preprocessing]** pane.
-1. Use the **[!UICONTROL Options]** menu to select the desired number of clusters.
+   デフォルトでは、データセット全体に対してクラスタリングが実行されます。左側の&#x200B;**[!UICONTROL Preprocessing]**&#x200B;ペインにすべての入力変数が表示されます。
+1. **[!UICONTROL Options]**&#x200B;メニューを使用して、必要なクラスター数を選択します。
 
    ![](assets/build_cluster_2.png)
 
@@ -42,11 +43,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/build_cluster_3.png)
 
-   Start by defining the desired subset using selections in your Workspace or by using the **[!UICONTROL Filter Editor]**. Once you have the desired subset selected, set the Target Population in the **[!UICONTROL Options]** menu. ターゲットグループにわかりやすい名前を付けることをお勧めします。
+   開始を行うには、ワークスペースでの選択を使用して目的のサブセットを定義するか、**[!UICONTROL Filter Editor]**&#x200B;を使用します。 目的のサブセットを選択したら、**[!UICONTROL Options]**&#x200B;メニューで「ターゲット母集団」を設定します。 ターゲットグループにわかりやすい名前を付けることをお勧めします。
 
-   The **[!UICONTROL Options]** menu also has settings to control the maximum number of passes and the acceptable threshold for center convergence.
+   **[!UICONTROL Options]**&#x200B;メニューには、パスの最大数と中心収束の許容されるしきい値を制御する設定もあります。
 
-1. After inputs and options have been configured, click the **Go** button to run the clustering locally or press **[!UICONTROL Submit]** to send the task to the Predictive Analytics Server. サーバーに送信した場合は、収束が完了すると、データセットに結果のディメンションが保存されます。
+1. 入力とオプションを設定したら、「**移動**」ボタンをクリックしてクラスタリングをローカルで実行するか、**[!UICONTROL Submit]**&#x200B;を押して予測分析サーバーにタスクを送信します。 サーバーに送信した場合は、収束が完了すると、データセットに結果のディメンションが保存されます。
 
    ローカルで実行した場合は、クラスタービルダーが 4 つキャノピークラスタリングステージを経て、入力に基づいてインテリジェントに中心が定義されます。
 
@@ -62,7 +63,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    >[!NOTE]
    >
-   >If you add or remove inputs during convergence, the process will pause until you press **Go** again.
+   >収束中に入力を追加または削除すると、「**Go**」を再度押すまでプロセスは一時停止します。
 
    クラスターを作成したら、カラーピッカーを開いて、異なる配分結果に色を割り当てることができます。
 
@@ -72,11 +73,10 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/build_cluster_6.png)
 
-1. If you wish to use this cluster dimension in other visualizations, you can **[!UICONTROL Save]** it locally or **[!UICONTROL Submit]** it to the server.
+1. 他のビジュアライゼーションでこのクラスターディメンションを使用する場合は、ローカルに&#x200B;**[!UICONTROL Save]**、または&#x200B;**[!UICONTROL Submit]**&#x200B;サーバーにできます。
 
 収束を再度実行する場合や、入力の関連性を確認する場合は、クラスタービルダーで既存のクラスターディメンションをロードすることもできます。
 
 >[!TIP]
 >
->When selected, **[!UICONTROL Reset]** will completely release all the input variables and give you a blank cluster builder visualization to define new clusters.
-
+>選択すると、**[!UICONTROL Reset]**&#x200B;はすべての入力変数を完全に解放し、空のクラスタービルダービジュアライゼーションを提供して新しいクラスターを定義します。
