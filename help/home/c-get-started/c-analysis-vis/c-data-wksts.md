@@ -1,22 +1,23 @@
 ---
 description: ワークシートの任意のセルにテキストまたは式を入力できます。
-solution: Analytics
 title: ワークシート内のデータの操作
-topic: Data workbench
 uuid: c2331fa5-aa07-4622-8f44-5124c22dffcb
+exl-id: 40d9211b-8f5c-4051-8f93-638ffacf45bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 76%
 
 ---
 
-
-# Work with data in worksheets{#work-with-data-in-worksheets}
+# ワークシート内のデータの操作{#work-with-data-in-worksheets}
 
 ワークシートの任意のセルにテキストまたは式を入力できます。
 
-All expressions in a worksheet are preceded by an equal sign (=) unless using [!DNL eval( )], which treats the text in the referenced cell as a expression.
+[!DNL eval( )]を使用しない限り、ワークシート内のすべての式の前に等号(=)が付きます。参照先のセル内のテキストが式として扱われます。
 
-For a full list of metric, dimension, and filter syntax rules, see [Query Language Syntax](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f).
+指標、ディメンション、フィルターの構文ルールの完全なリストについては、[クエリ言語構文](../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)を参照してください。
 
 **ワークシートにデータを入力するには**
 
@@ -25,34 +26,34 @@ For a full list of metric, dimension, and filter syntax rules, see [Query Langua
 
 **セル間でコピーして貼り付けるには**
 
-1. Right-click the cell containing the data that you want to copy and click **[!UICONTROL Copy]**.
-1. Right-click the cell into which you want to paste the copied data and click **[!UICONTROL Paste]**.
+1. コピーするデータを含むセルを右クリックし、「**[!UICONTROL Copy]**」をクリックします。
+1. コピーしたデータを貼り付けるセルを右クリックし、**[!UICONTROL Paste]**&#x200B;をクリックします。
 
 Data Workbenchは、新しいセルの参照を自動的に更新して、適切な列と行を参照します。
 
 **セルのグループ間でコピーして貼り付けるには**
 
 1. コピーするデータを含む複数のセルを選択します。
-1. Right-click the cells containing the data that you want to copy and click **[!UICONTROL Copy]**.
-1. Right-click the first cell into which you want to start pasting the copied data and click **[!UICONTROL Paste]**. データが先頭セルおよびその下に貼り付けられます。
+1. コピーするデータを含むセルを右クリックし、「**[!UICONTROL Copy]**」をクリックします。
+1. コピーしたデータの貼り付け先となる最初のセルを右クリックし、開始して&#x200B;**[!UICONTROL Paste]**&#x200B;をクリックします。 データが先頭セルおよびその下に貼り付けられます。
 
 Data Workbenchは、新しいセルの参照を自動的に更新して、適切な列と行を参照します。
 
 **列を挿入するには**
 
-* 列を右クリックし、をクリックしま **[!UICONTROL Insert Column]**&#x200B;す。 新しい列が選択した列の左側に挿入されます。
+* 列を右クリックし、**[!UICONTROL Insert Column]**&#x200B;をクリックします。 新しい列が選択した列の左側に挿入されます。
 
 **列を削除するには**
 
-* Right-click the column that you want to delete and click **[!UICONTROL Delete Column]**. 列が削除されます。
+* 削除する列を右クリックし、「**[!UICONTROL Delete Column]**」をクリックします。 列が削除されます。
 
 **行を挿入するには**
 
-* 行を右クリックし、をクリックしま **[!UICONTROL Insert Row]**&#x200B;す。 新しい行が選択した行の上に挿入されます。
+* 行を右クリックし、**[!UICONTROL Insert Row]**&#x200B;をクリックします。 新しい行が選択した行の上に挿入されます。
 
 **行を削除するには**
 
-* Right-click the row that you want to delete and click **[!UICONTROL Delete Row]**. 行が削除されます。
+* 削除する行を右クリックし、「**[!UICONTROL Delete Row]**」をクリックします。 行が削除されます。
 
 **列のサイズを変更するには**
 
@@ -61,7 +62,7 @@ Data Workbenchは、新しいセルの参照を自動的に更新して、適切
 
 **セルを書式設定するには**
 
-1. Right-click the cell and click **[!UICONTROL Format]**.
+1. セルを右クリックし、**[!UICONTROL Format]**&#x200B;をクリックします。
 
    ![](assets/mnu_Worksheet_Format.png)
 
@@ -84,7 +85,7 @@ Data Workbenchは、新しいセルの参照を自動的に更新して、適切
    <td colname="col2"> <p>セル内のデータを左、中央または右に均等配置します。デフォルトは左揃えです。 </p> <p>選択した書式を削除するには、「<span class="uicontrol">デフォルト</span>」をクリックします。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>色 </p> </td> 
+   <td colname="col1"> <p>Color </p> </td> 
    <td colname="col2"> <p>選択したフォント色をセル内のデータに適用します。デフォルトのフォント色は白です。 </p> <p>選択した書式を削除するには、「<span class="uicontrol">デフォルト</span>」をクリックします。 </p> </td> 
   </tr> 
   <tr> 
@@ -158,4 +159,3 @@ Data Workbenchは、新しいセルの参照を自動的に更新して、適切
   </tr> 
  </tbody> 
 </table>
-
