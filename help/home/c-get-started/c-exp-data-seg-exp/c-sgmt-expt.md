@@ -1,26 +1,27 @@
 ---
 description: Data Workbenchクライアントの詳細テーブルビジュアライゼーションから、セグメントエクスポートの定義を簡単に作成できます。
-solution: Analytics
-title: セグメントのエクスポート
-topic: Data workbench
+title: セグメントエクスポート
 uuid: 85c8aa72-23fe-424b-9580-6759dc8f8681
+exl-id: 49998b46-f3a6-43a3-a76e-468894b27ee4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '498'
+ht-degree: 55%
 
 ---
 
-
-# Segment export{#segment-export}
+# セグメントエクスポート{#segment-export}
 
 Data Workbenchクライアントの詳細テーブルビジュアライゼーションから、セグメントエクスポートの定義を簡単に作成できます。
 
-In addition, [!DNL Segment Exports] automatically combine their results to a single server, rather than producing partial results on each DPU that you must combine using an external process. You can create a segment export file, save it to the [!DNL Profile Manager], and upload the output file to a server of your choice.
+また、[!DNL Segment Exports]は、外部プロセスを使用して結合する必要のある各DPU上で部分的な結果を生成するのではなく、自動的に1つのサーバーに結果を結合します。 セグメントエクスポートファイルを作成して[!DNL Profile Manager]に保存し、任意のサーバーに出力ファイルをアップロードできます。
 
 **セグメントエクスポートサーバーを設定するには**
 
-The [!DNL Segment Export] feature creates a single output file on the segment export server, rather than separate output files created on each DPU. セグメントエクスポートサーバーは、通常 FSU 上で動作するように設定されます。
+[!DNL Segment Export]機能により、各DPUに個別の出力ファイルを作成するのではなく、セグメントエクスポートサーバーに単一の出力ファイルが作成されます。 セグメントエクスポートサーバーは、通常 FSU 上で動作するように設定されます。
 
-In the Dataset\ directory in the [!DNL Profile Manager], open the [!DNL Segment Export.cfg] in Workstation, and specify your server’s address. （アドレスは IP または完全修飾ドメイン名です）。
+[!DNL Profile Manager]のDataset\ディレクトリで、ワークステーションの[!DNL Segment Export.cfg]を開き、サーバーのアドレスを指定します。 （アドレスは IP または完全修飾ドメイン名です）。
 
 ![](assets/segment_export_cfg.png)
 
@@ -30,17 +31,17 @@ In the Dataset\ directory in the [!DNL Profile Manager], open the [!DNL Segment 
 
 セキュリティの点から、セグメントエクスポートの後に実行する実行可能ファイルやバッチファイルは、セグメントエクスポートサーバーの設定可能なスクリプトディレクトリに置く必要があります。
 
-The [!DNL .part] and final output must reside in the configurable Exports directory. 実行するコマンドは、Command および Command Arguments に存在します。Command Arguments 内の %file% のインスタンスは、出力ファイルのパスに置き換えられます。
+[!DNL .part]と最終出力は、設定可能なエクスポートディレクトリに置く必要があります。 実行するコマンドは、Command および Command Arguments に存在します。Command Arguments 内の %file% のインスタンスは、出力ファイルのパスに置き換えられます。
 
 >[!NOTE]
 >
->Data Workbench 5.4では、¥Exportsフォルダーが自動的に作成されます。 バージョン 5.4 より前に設定した以前のエクスポートディレクトリでは、各セグメントエクスポートのファイル名の前に Exports\ プレフィックスが必要でした。現在このプレフィックスの追加は不要です。
+>Data Workbench5.4以降では、¥Exportsフォルダーが自動的に作成されます。 バージョン 5.4 より前に設定した以前のエクスポートディレクトリでは、各セグメントエクスポートのファイル名の前に Exports\ プレフィックスが必要でした。現在このプレフィックスの追加は不要です。
 
-1. In [!DNL Communications.cfg] on the destination server for [!DNL Segment Exports], add a SegmentExportServer to the list of servers. （例を赤で示します）。
+1. [!DNL Segment Exports]の宛先サーバーの[!DNL Communications.cfg]で、サーバーのリストにSegmentExportServerを追加します。 （例を赤で示します）。
 
    ![](assets/communications_cfg_example.png)
 
-   Exports Directory: Specifies where to put [!DNL .part] and output files. 共有ディレクトリも指定できます。
+   Exports Directory:[!DNL .part]と出力ファイルを置く場所を指定します。 共有ディレクトリも指定できます。
 
    Scripts Directory：実行するすべての実行可能ファイルまたはバッチファイルのあるディレクトリを指定します。
 
@@ -48,7 +49,7 @@ The [!DNL .part] and final output must reside in the configurable Exports direct
 
    ![](assets/accesscontrol_cfg_example.png)
 
-1. Change your [!DNL .export] files:
+1. [!DNL .export]ファイルを変更します。
 
    ![](assets/segment_export_query_example.png)
 
@@ -72,13 +73,12 @@ The [!DNL .part] and final output must reside in the configurable Exports direct
 
    ![](assets/create_segment_export_file.png)
 
-1. 詳細テーブルのヘッダーで右クリックし、を選択しま **[!UICONTROL Create Segment Export File]**&#x200B;す。
-1. にフ [!DNL Save as]ァイルの名前を入力し [!DNL .export] ます。
-1. On the [!DNL .export] file, configure the parameters as necessary.
+1. 詳細テーブルのヘッダーで右クリックし、**[!UICONTROL Create Segment Export File]**&#x200B;を選択します。
+1. [!DNL Save as]に[!DNL .export]ファイルの名前を入力します。
+1. [!DNL .export]ファイルで、必要に応じてパラメーターを設定します。
 
    ワークスペース内の選択やフィルターは、エクスポートファイルに組み込まれます。
 
-1. Save the [!DNL .export] file.
+1. [!DNL .export]ファイルを保存します。
 
-   The saved file displays in the [!DNL Profile Manager] for you to save to the server. ファイルをサーバーに保存すると、エクスポートが開始されます。
-
+   保存したファイルは[!DNL Profile Manager]に表示され、サーバに保存できます。 ファイルをサーバーに保存すると、エクスポートが開始されます。
