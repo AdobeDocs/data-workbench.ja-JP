@@ -1,30 +1,31 @@
 ---
-description: このドキュメントでは、Data Workbenchの監視プロファイルで使用されるフィールド、ディメンションおよび指標を含むプロファイルについて説明します。
-solution: Analytics
-title: Data Workbenchのプロファイルディメンションと指標
-topic: Data workbench
+description: このドキュメントでは、Data Workbenchの監視プロファイルで使用されるフィールド、ディメンションおよび指標のプロファイルについて説明します。
+title: Data Workbench プロファイルのディメンションと指標
 uuid: 42ef154f-fd8b-4609-8685-96d9dbf32a3d
+exl-id: cfad9897-2ea3-47e4-aa36-416e0fde9358
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 5%
 
 ---
 
+# Data Workbench プロファイルのディメンションと指標{#data-workbench-profile-dimensions-and-metrics}
 
-# Data Workbenchのプロファイルディメンションと指標{#data-workbench-profile-dimensions-and-metrics}
+このドキュメントでは、Data Workbenchの監視プロファイルで使用されるフィールド、ディメンションおよび指標のプロファイルについて説明します。
 
-このドキュメントでは、Data Workbenchの監視プロファイルで使用されるフィールド、ディメンションおよび指標を含むプロファイルについて説明します。
+Data Workbenchサーバーを監視するには、詳細なステータスを解析し、特定のサーバー情報も取得するスクリプトを使用してデータを収集します。 次に、Data Workbenchサーバーの情報がData Workbench Sensorのページタグ呼び出しに渡され、収集してVSLファイルに保存されます。
 
-Data Workbenchサーバーを監視するには、特定のサーバー情報も取り込みながら、詳細なステータスを解析するスクリプトを使用してデータを収集します。 次に、Data Workbenchサーバーの情報が、Data Workbench Sensorが収集してVSLファイルに保存するためのページタグ呼び出しに渡されます。
+## Data Workbench監視プロファイルが使用するプロファイル{#section-b5b1234f55c3407dae8e68b031b7cd7f}
 
-## Data Workbench監視プロファイルで使用されるプロファイル {#section-b5b1234f55c3407dae8e68b031b7cd7f}
+次のプロファイルには、サーバーの状態とパフォーマンスのデータを表示できるディメンションと指標が用意されています。
 
-次のプロファイルは、サーバーの状態とパフォーマンスデータを表示できるディメンションと指標を提供します。
-
-* [Insightプロファイルステータスプロファイルのディメンション](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64)
-* [Insightサーバーステータスプロファイルのディメンション](../../../home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md#concept-8cbeb91e99bc42e2b52b22d551423f8a)
-* [Insight Historicプロファイルのディメンション](../../../home/monitoring-installation/monitoring-appendix/monitoring-historical.md#concept-a42837c9c9274f83ad5bc5a6720f02b0)
+* [InsightプロファイルステータスプロファイルのDimension](../../../home/monitoring-installation/monitoring-appendix/monitoring-profile-status.md#concept-d4cd7da41c8a42bab4aea25418264e64)
+* [InsightサーバーのステータスプロファイルのDimension](../../../home/monitoring-installation/monitoring-appendix/monitoring-servers-profile.md#concept-8cbeb91e99bc42e2b52b22d551423f8a)
+* [インサイト歴史プロファイルのDimension](../../../home/monitoring-installation/monitoring-appendix/monitoring-historical.md#concept-a42837c9c9274f83ad5bc5a6720f02b0)
 * [Insight Historical Monitoringプロファイルの指標](../../../home/monitoring-installation/monitoring-appendix/monitoring-hist-metrics.md#concept-8fece88b1f014637bbc7c8372ee93203)
 
-ステータスプロファイルを使用すると、Data Workbenchの現在のパフォーマンスを、運用上の観点から確認できます。 Profile Statusプロフ **ァイルと** Server Statusプロファイルは **** 、Detailed StatusサーバーとData Workbenchサーバーからデータを収集します。 収集されたすべてのデータがフィールドに配置さ `cs-uri-query` れ、使用されます。
+「ステータス」プロファイルを使用すると、data workbenchが現在どのように動作しているかを、操作上の観点から確認できます。 **プロファイルステータス**&#x200B;プロファイルと&#x200B;**サーバーステータス**&#x200B;プロファイルは、詳細ステータスとdata workbenchサーバーからデータを収集します。 収集されたすべてのデータは、使用する`cs-uri-query`フィールドに配置されます。
 
-履歴プ **ロファイル** (Historic Profiles)を使用すると、履歴データを使用して、構成とハードウェアの変更の影響を評価できます。 履歴プロファイルは、構成やハードウェアの変更が時間の経過と共に及ぼす影響を評価できるので、最も役に立つ場合があります。
+**履歴プロファイル**&#x200B;を使用すると、構成とハードウェアの変更が与える影響を履歴データを使用して評価できます。 過去のプロファイルは、構成とハードウェアの変更が時間の経過とともに及ぼす影響を評価できるので、最も役に立つ場合があります。
