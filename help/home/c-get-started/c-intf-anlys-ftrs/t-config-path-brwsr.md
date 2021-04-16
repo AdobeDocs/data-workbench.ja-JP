@@ -1,27 +1,28 @@
 ---
 description: パスブラウザーは、アプリケーションとデータセットに対して意味を持つベースディメンション、グループディメンション、レベルディメンションおよび指標の任意の組み合わせを使用するように設定できます。
-solution: Analytics
 title: パスブラウザーの設定
-topic: Data workbench
 uuid: 1ba3fb6e-b76f-428f-b6ec-077669c3b305
+exl-id: be6a68f7-e3e3-4207-a112-3a4fdd5c5f57
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '422'
+ht-degree: 65%
 
 ---
-
 
 # パスブラウザーの設定{#configure-a-path-browser}
 
 パスブラウザーは、アプリケーションとデータセットに対して意味を持つベースディメンション、グループディメンション、レベルディメンションおよび指標の任意の組み合わせを使用するように設定できます。
 
-After you configure a path browser, it is listed with other path browsers in the [!DNL Add Visualization] menu.
+パスブラウザーを設定すると、他のパスブラウザーと共に[!DNL Add Visualization]メニューに表示されます。
 
-1. で、をク [!DNL Profile Manager]リックし、 **[!UICONTROL Menu]**&#x200B;とをクリック **[!UICONTROL Add Visualization]** します **[!UICONTROL Path Browser]**。
+1. [!DNL Profile Manager]の&#x200B;**[!UICONTROL Menu]**&#x200B;をクリックし、**[!UICONTROL Add Visualization]**&#x200B;と&#x200B;**[!UICONTROL Path Browser]**&#x200B;をクリックします。
 
-   At least one [!DNL *.vw] file resides in the Path Browser directory.
+   パスブラウザーディレクトリには、少なくとも1つの[!DNL *.vw]ファイルが存在します。
 
-1. Right-click the check mark for the desired file and click **[!UICONTROL Make Local]**.
-1. Right-click the check mark for the file in the [!DNL User] column and click **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. 目的のファイルのチェックマークを右クリックし、「**[!UICONTROL Make Local]**」をクリックします。
+1. [!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Notepad]**&#x200B;をクリックします。
 1. 次のサンプルのファイルと表を参考にして、ファイルのパラメーターを編集します。
 
    ```
@@ -67,14 +68,14 @@ After you configure a path browser, it is listed with other path browsers in the
 
 >[!NOTE]
 >
->For more information about the base dimension, group dimension, level dimension, and metric for a path browser, see [Path Browsers](../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md#concept-f2e9fdafed6e49c2bd111ab425cd6e2b).
+>パスブラウザーのベースディメンション、グループディメンション、レベルディメンションおよび指標について詳しくは、[パスブラウザー](../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md#concept-f2e9fdafed6e49c2bd111ab425cd6e2b)を参照してください。
 
-1. In Notepad, click **[!UICONTROL File]** > **[!UICONTROL Save As]** to save the file with a new name based on the group dimension, that is, *Group dimension name*.vw.
+1. メモ帳で、**[!UICONTROL File]**/**[!UICONTROL Save As]**&#x200B;をクリックして、グループディメンションに基づいて新しい名前でファイルを保存します。つまり、*グループディメンション名*.vwという名前で保存します。
 
    ファイルは、パスブラウザーディレクトリに保存してください。
 
    >[!NOTE]
    >
-   >To make sure that your path browser is saved as a [!DNL *.vw] file, in the [!DNL Save As] window, set Save as type to All Files.
+   >パスブラウザーを[!DNL *.vw]ファイルとして保存するには、[!DNL Save As]ウィンドウで、保存するファイルの種類を「すべてのファイル」に設定します。
 
-1. (Optional) To make the changes available to all users of the working profile, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column and click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. （オプション）作業プロファイルのすべてのユーザーが変更を利用できるようにするには、[!DNL Profile Manager]で、[!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL working profile name]**>*&#x200B;をクリックします。
