@@ -1,14 +1,15 @@
 ---
 description: ユニバーサル横メルカトル（UTM）投影法は、8 つのパラメーターで定義されます。
-solution: Analytics
 title: ユニバーサル横メルカトル投影法
-topic: Data workbench
 uuid: 55421412-5c68-4a4f-88d6-650d5999a77c
+exl-id: 7d7610c3-14e7-474e-b792-ad413c86a2ef
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 86%
 
 ---
-
 
 # ユニバーサル横メルカトル投影法{#universal-transverse-mercator-projections}
 
@@ -20,11 +21,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **ユニバーサル横メルカトル投影法を指定するには**
 
-1. In the [!DNL Server Files Manager], click **[!UICONTROL Components]** to view its contents. [!DNL Terrain Images.cfg] ファイルは、このディレクトリ内に格納されています。
+1. [!DNL Server Files Manager]の&#x200B;**[!UICONTROL Components]**&#x200B;をクリックして、内容を表示します。 [!DNL Terrain Images.cfg] ファイルは、このディレクトリ内に格納されています。
 
-1. Right-click the check mark in the *server name* column for [!DNL Terrain Images.cfg], then click **[!UICONTROL Make Local]**. A check mark appears in the [!DNL Temp] column for [!DNL Terrain Images.cfg].
+1. [!DNL Terrain Images.cfg]の&#x200B;*サーバー名*&#x200B;列のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 [!DNL Terrain Images.cfg]の[!DNL Temp]列にチェックマークが表示されます。
 
-1. Right-click the newly created check mark in the [!DNL Temp] column and click **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. The [!DNL Terrain Images.cfg]file appears in a Notepad window.
+1. [!DNL Temp]列に新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Notepad]**&#x200B;をクリックします。 [!DNL Terrain Images.cfg]ファイルがメモ帳ウィンドウに表示されます。
 
 1. 以下のサンプルファイルの一部とパラメーターの表をガイドとして使用して、Projection Info パラメーターを編集します。以下にハイライトされているように、投影タイプを必ず指定してください。
 
@@ -48,4 +49,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 | Northwest Corner Coordinates、Southeast Corner Coordinates | 画像の左上隅と右下隅の座標（投影されたメートル単位）。 |
 | Prime Meridian | 投影の中心子午線の経度（度単位の東経で指定）。負数を使用して西経の度を指定できます。 |
 | Scale Factor | 楕円の長半径に対する投影円筒の半径の比率。ユニバーサル横メルカトル（UTM）投影法の場合、常に 0.9996 です。 |
-
