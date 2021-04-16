@@ -1,29 +1,30 @@
 ---
-description: レポートとアラートを生成する前に、Insightサーバーのアドレスを指定し、レポート対象のプロファイルを指定するようにレポートサーバーを設定する必要があります。
-solution: Analytics
-title: Insightサーバーへの接続の設定
-topic: Data workbench
+description: レポートとアラートを生成する前に、Insightサーバーのアドレスと、レポート対象のプロファイルを識別するように、レポートサーバーを設定する必要があります。
+title: Insight サーバーへの接続の設定
 uuid: 2018b67e-90a6-41d7-b628-4b463869df6e
+exl-id: a398a665-fe09-448a-977c-b0f9de4add09
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 9%
 
 ---
 
+# Insight サーバーへの接続の設定{#configuring-the-connection-to-the-insight-server}
 
-# Configuring the Connection to the Insight Server{#configuring-the-connection-to-the-insight-server}
-
-レポートとアラートを生成する前に、Insightサーバーのアドレスを指定し、レポート対象のプロファイルを指定するようにレポートサーバーを設定する必要があります。
+レポートとアラートを生成する前に、Insightサーバーのアドレスと、レポート対象のプロファイルを識別するように、レポートサーバーを設定する必要があります。
 
 >[!NOTE]
 >
->以下の説明に従ってReport Serverを設定するまで、Report Serverを正常に実行することはできません。 プログラムと共にインストールされた設定されていないファイルでReport Serverを実行しようとすると、Report Serverはエラーのストリームを生成します。
+>以下の説明に従ってReport Serverを設定するまで、Report Serverを正常に実行できません。 プログラムと共にインストールされた未設定のファイルを使用してReport Serverを実行しようとすると、Report Serverはエラーのストリームを生成します。
 
 **Report Serverを設定するには**
 
 1. Windowsエクスプローラで、Report Serverをインストールしたディレクトリに移動します。
-1. メモ帳でフ [!DNL ReportServer.cfg] ァイルを開き、必要に応じてファイルを変更します。
+1. [!DNL ReportServer.cfg]ファイルをメモ帳で開き、必要に応じて変更します。
 
-   次のサンプルには、デ [!DNL Report Server.cfg] フォルトでファイルに含まれてい [!DNL Report Server.cfg] るパラメータのみが含まれています（必要なパラメータ設定がハイライト表示されています）。 プロキシサーバーを通じてAdobe License Serverに接続する場合は、Licensingベクトルとそのパラメーターを追加する必要があります。 詳しく [は、Report Server.cfgのパラメーター](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) （英語のみ）を参照してください。
+   次のサンプル[!DNL Report Server.cfg]には、デフォルトで[!DNL Report Server.cfg]ファイルに含まれているパラメーターのみが含まれています（必要なパラメーター設定が強調表示されています）。 プロキシサーバー経由でAdobeライセンスサーバーに連絡する場合は、Licensingベクトルとそのパラメーターを追加する必要があります。 詳しくは、[Report Server.cfg parameters](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06)を参照してください。
 
    ```
    Fonts = vector: 0 items
