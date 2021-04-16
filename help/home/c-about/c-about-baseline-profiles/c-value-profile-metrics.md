@@ -1,17 +1,15 @@
 ---
-description: 'null'
-solution: Analytics
+description: 値プロファイルの指標
 title: 値プロファイルの指標
-topic: Data workbench
 uuid: 68951e33-013a-466b-b0f3-839eaef89cb5
+exl-id: 9e95008c-1162-4f50-89d2-dcf5fcf8746a
 translation-type: tm+mt
-source-git-commit: 662bf8fdff196814e5a11c1f5e1ae12d4d57e1db
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
-source-wordcount: '118'
-ht-degree: 16%
+source-wordcount: '120'
+ht-degree: 17%
 
 ---
-
 
 # 値プロファイルの指標{#value-profile-metrics}
 
