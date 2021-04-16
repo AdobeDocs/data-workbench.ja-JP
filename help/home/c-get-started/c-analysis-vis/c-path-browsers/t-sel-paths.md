@@ -1,14 +1,15 @@
 ---
 description: パスブラウザー内でパスを選択して、パスの要素に関連するデータを含むフィルターを作成できます。
-solution: Analytics
 title: パスの選択
-topic: Data workbench
 uuid: 3131df2f-674f-44b8-9006-d8cb1ecf3874
+exl-id: c560dfd0-ccaf-4a60-88a1-29a33f8aa014
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '259'
+ht-degree: 86%
 
 ---
-
 
 # パスの選択{#select-a-path}
 
@@ -20,14 +21,14 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->パスブラウザーのデフォルトのレベルディメンションを変更できます。 パスブラウザーの設定手順については、「パスブラウザーの [設定」を参照してくださ](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)い。
+>パスブラウザーのデフォルトのレベルディメンションを変更できます。 パスブラウザーを設定する手順については、「[パスブラウザーの設定](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)」を参照してください。
 
 1. 表示されているパスをルートの左側または右側に拡張するには、パスブラウザー内の要素をクリックします。
-1. 目的の要素を右クリックし、をクリックしま **[!UICONTROL Select path]**&#x200B;す。 選択されたパスに白い輪郭線が表示されます。
+1. 目的の要素を右クリックし、「**[!UICONTROL Select path]**」をクリックします。 選択されたパスに白い輪郭線が表示されます。
 
    >[!NOTE]
    >
-   >開始ノードまたは終了ノードを選択することはできません。
+   >開始またはエンドノードは選択できません。
 
 1. パスを追加する各エレメントに対して、手順 1 を繰り返します。
 
@@ -36,4 +37,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    ![](assets/client-path.png)
 
    このパスは、選択された内容で構成されており、選択されたエレメントによって作成されたパスに関連するデータを表示するように、ワークスペースで開いているその他すべてのビジュアライゼーション（凡例を含む）が更新されます。「[ビジュアライゼーションに選択範囲を作成する](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746)」を参照してください。
-
