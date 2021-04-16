@@ -1,17 +1,16 @@
 ---
-description: 'null'
-solution: Analytics
+description: Data Workbenchドキュメント
 title: Data Workbench ヘルプ
-topic: Reports and analytics
+topic: Reports & Analytics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
-translation-type: ht
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
-workflow-type: ht
-source-wordcount: '268'
-ht-degree: 100%
+exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
+translation-type: tm+mt
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 98%
 
 ---
-
 
 # Data Workbench ヘルプ {#data-workbench-help}
 
@@ -30,14 +29,14 @@ Data Workbench に次の予測分析機能、データビジュアライゼー�
 * [傾向スコアリング](/help/home/c-get-started/c-analysis-vis/c-visitor-propensity/c-visitor-propensity.md)
 * [デシジョンツリー](/help/home/c-get-started/c-analysis-vis/c-decision-trees/c-decision-trees.md)
 * [相関行列](/help/home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-analysis.md)
-* [クラスタリング](/help/home/c-get-started/c-analysis-vis/c-visitor-cluster/c-visitor-cluster.md)
+* [Clustering](/help/home/c-get-started/c-analysis-vis/c-visitor-cluster/c-visitor-cluster.md)
 * [弦のビジュアライゼーション](/help/home/c-get-started/c-analysis-vis/c-chord-visualization.md)
 * [アトリビューションプロファイル](/help/home/c-get-started/c-attribution-profiles/c-rules-attrib/c-rules-attrib.md)
 * [マスターマーケティングプロファイルエクスポートと統合](/help/home/c-get-started/c-exp-data-seg-exp/c-mmp-integration.md)
 
 ## その他の Analytics ユーザーガイド
 
-[Analytics ユーザーガイド](https://docs.adobe.com/content/help/ja-JP/analytics/landing/home.html)
+[Analytics ユーザーガイド](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 
 ## Data Workbench のリリースノートおよび新機能
 
