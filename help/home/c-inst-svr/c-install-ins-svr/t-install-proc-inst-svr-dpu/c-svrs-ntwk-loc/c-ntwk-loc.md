@@ -1,16 +1,15 @@
 ---
 description: 概念的には、アドレスファイルは、ネットワーク接続されたマシン上のETC&bsol;HOSTSファイルと同じ目的を果たします。
-solution: Analytics
 title: ネットワーク位置
 uuid: a2097eca-dd75-4d43-b8a8-fb4c768df38d
+exl-id: 938217da-8935-4f2a-b5f8-9afc1dd489f3
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 3%
 
 ---
-
 
 # ネットワーク位置{#network-locations}
 
@@ -20,7 +19,7 @@ ht-degree: 3%
 
 ネットワークの場所は、アドレス定義の名前付きコレクションです。 コレクション内の各アドレス定義は、共通名とIPアドレスを関連付けます。
 
-アドレスファイルでは、NetworkLocationと呼ばれる構造体にネットワークの場所が定義されています。 次の例のNetworkLocationは、「MyCorporate Intranet」という名前のネットワークの場所を定義します。 共通名をIPアドレス「10.2.1.70」 [!DNL VS01.myCompany.com] にマップするアドレス定義が含まれます。
+アドレスファイルでは、NetworkLocationと呼ばれる構造体にネットワークの場所が定義されます。 次の例のNetworkLocationは、「MyCorporate Intranet」という名前のネットワークの場所を定義します。 共通名[!DNL VS01.myCompany.com]をIPアドレス&quot;10.2.1.70&quot;にマップするアドレス定義が含まれます。
 
 ```
 0 = NetworkLocation: 
