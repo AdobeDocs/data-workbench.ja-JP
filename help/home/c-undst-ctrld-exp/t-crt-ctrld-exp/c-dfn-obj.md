@@ -2,22 +2,21 @@
 description: 目的の主な機能とターゲットオーディエンスを定義します。
 solution: Analytics,Analytics
 title: 目標の定義
-topic: Data workbench
 uuid: 4957b249-8790-4275-98ab-9c6398039a63
+exl-id: 6ee140ff-3cfb-45f8-9bce-f360fbb19322
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 3%
 
 ---
 
-
 # 目標の定義{#defining-the-objective}
 
 目的の主な機能とターゲットオーディエンスを定義します。
 
-目的を定義する際は、分析するWebサイトまたはWebサイトプロセスの目的を考慮します。 *その主な機能は何ですか。 ターゲットオーディエンスは誰ですか。*
+目的を定義する際は、分析するWebサイトまたはWebサイトプロセスの目的を考慮します。*主な機能は何ですか？ ターゲットオーディエンスは誰ですか？*
 
 一般的なWebサイトの目標は、より多くの訪問者を顧客に変換することや、テスト期間中のテスト内のすべての訪問者の平均売上高を増やすことです。
 
@@ -25,7 +24,6 @@ ht-degree: 3%
 
 Webサイトについて理解したいと思っているものは何かをよく考えてください。 テストの計画を慎重に行うと、ビジネスにとって結果がより有意義になります。
 
-**目的：** 次の図に示すように、「デモのご依頼」グラフィカルリンクを使用して、Webサイトでの訪問者のデモを依頼する訪問者数を増やすには：
+**目的：** 次の図に示すように、「デモの要請」グラフィカルリンクを使用して、Webサイトでの訪問者のデモをリクエストする訪問者数を増やします。
 
 ![](assets/ControlPage.png)
-
