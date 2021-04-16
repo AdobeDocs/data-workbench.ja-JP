@@ -1,16 +1,15 @@
 ---
 description: DPU設定ファイルDPU.cfgは、Insight Serverの様々なパフォーマンスパラメーターを指定します。
-solution: Analytics
 title: DPU.cfg の設定
 uuid: c348622b-7d4b-4cfa-a8f8-a07d91e440d5
+exl-id: 55e4ea7f-fee3-4af7-9cbc-d121e79e6ab2
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 5%
 
 ---
-
 
 # DPU.cfg の設定{#configuring-dpu-cfg}
 
@@ -20,15 +19,15 @@ DPU設定ファイルDPU.cfgは、Insight Serverの様々なパフォーマン�
 
 **推奨頻度：** 必要な場合のみ
 
-**DPUパフォーマンス設定を変更するには[!DNL Insight Server]**
+**[!DNL Insight Server] DPUパフォーマンス設定を変更するには**
 
-1. の「>」 [!DNL Insight]タブで [!DNL Admin] 、 [!DNL Dataset and Profile]**[!UICONTROL Servers Manager]** サムネールをクリックしてサーバーマネージャーワークスペースを開きます。
-1. 設定するアイコンを右クリック [!DNL Insight Server] し、をクリックし **[!UICONTROL Server Files]**&#x200B;ます。
-1. In the [!DNL Server Files Manager], click **[!UICONTROL Components]** to view its contents. [!DNL DPU.cfg] ファイルは、このディレクトリ内に格納されています。
-1. Right-click the check mark in the *server name* column for [!DNL DPU.cfg] and click **[!UICONTROL Make Local]**. A check mark appears in the [!DNL Temp] column for [!DNL DPU.cfg].
-1. Right-click the newly created check mark in the [!DNL Temp] column and click **[!UICONTROL Open]** > **[!UICONTROL in Insight]**.
-1. In the [!DNL DPU.cfg] window, click component to view its contents.
-1. 必要に応じて、パフォーマンスとパスの設定を変更します。 このファイルで使用できるパラメーターのリストについては、 [DPUパフォーマンス設定を参照してください](../../../home/c-inst-svr/c-cfg-stgs-ref/c-dpu-perf-stgs.md#concept-477c4c526de44bda84176e62266c3df1)。
+1. [!DNL Insight]の「[!DNL Admin]/[!DNL Dataset and Profile]」タブで、**[!UICONTROL Servers Manager]**&#x200B;サムネールをクリックして、サーバーマネージャーワークスペースを開きます。
+1. 設定する[!DNL Insight Server]のアイコンを右クリックし、「**[!UICONTROL Server Files]**」をクリックします。
+1. [!DNL Server Files Manager]の&#x200B;**[!UICONTROL Components]**&#x200B;をクリックして、内容を表示します。 [!DNL DPU.cfg] ファイルは、このディレクトリ内に格納されています。
+1. [!DNL DPU.cfg]の&#x200B;*サーバー名*&#x200B;列のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 [!DNL DPU.cfg]の[!DNL Temp]列にチェックマークが表示されます。
+1. [!DNL Temp]列に新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Insight]**&#x200B;をクリックします。
+1. [!DNL DPU.cfg]ウィンドウで、「component」をクリックして内容を表示します。
+1. 必要に応じて、パフォーマンスとパスの設定を変更します。 このファイルで使用できるパラメーターのリストについては、[DPUパフォーマンス設定](../../../home/c-inst-svr/c-cfg-stgs-ref/c-dpu-perf-stgs.md#concept-477c4c526de44bda84176e62266c3df1)を参照してください。
 
    >[!NOTE]
    >
@@ -38,7 +37,6 @@ DPU設定ファイルDPU.cfgは、Insight Serverの様々なパフォーマン�
 
 1. 次の操作を行って、変更をサーバーに保存します。
 
-   1. ウィンドウ上部 **[!UICONTROL (modified)]** を右クリックし、をクリックし **[!UICONTROL Save]**&#x200B;ます。
+   1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
 
-   1. で、列内 [!DNL Server Files Manager]のファイルのチェックマークを右クリックし、 [!DNL Temp] / **[!UICONTROL Save to]** &lt; *>を選択します&#x200B;**[!UICONTROL server name]***。
-
+   1. [!DNL Server Files Manager]で、[!DNL Temp]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL server name]***&#x200B;を選択します。
