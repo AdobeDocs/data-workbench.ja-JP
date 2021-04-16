@@ -1,22 +1,22 @@
 ---
-description: この節では、Data Workbenchで提供される組み込みの指標、ディメンションおよびフィルターに関する詳細情報を提供します。
-solution: Analytics
-title: 組み込み指標、ディメンション、フィルターについて
-topic: Data workbench
+description: この節では、Data Workbenchに用意されている組み込みの指標、ディメンション、フィルターについて詳しく説明します。
+title: 組み込みの指標、ディメンション、フィルターについて
 uuid: 05676254-f6f5-4cb1-a664-da96d5b965db
+exl-id: d581a029-fd59-47c5-b832-64407102ace7
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 8%
 
 ---
 
+# 組み込みの指標、ディメンション、フィルターについて{#about-built-in-metrics-dimensions-and-filters}
 
-# 組み込み指標、ディメンション、フィルターについて{#about-built-in-metrics-dimensions-and-filters}
+この節では、Data Workbenchに用意されている組み込みの指標、ディメンション、フィルターについて詳しく説明します。
 
-この節では、Data Workbenchで提供される組み込みの指標、ディメンションおよびフィルターに関する詳細情報を提供します。
-
-ほとんどすべての指標は、プロファイルのmetricsディレクトリで定義されます。 Insightサーバーのログ処理設定ファイルと変換設定ファイルでそれぞれ定義されるログ処理と変換と呼ばれる2つの段階を通じて、データ処理の状態に関する技術的な情報を伝えるために、いくつかの組み込み指標が用意されています。
+ほとんどすべての指標は、プロファイルのmetricsディレクトリに定義されます。 Insight Serverのログ処理設定ファイルと変換設定ファイルで定義されるログ処理と変換という2つの段階を通じて、データ処理の状況に関する技術情報を伝えるために、いくつかの組み込み指標が用意されています。
 
 >[!NOTE]
 >
->ログ処理段階では、すべてのイベントデータがログファイルから収集されるわけではありません。 イベントデータが別のソース（ODBCデータソースなど）から取得される場合もありますが、 For more information about data sources, see the [Dataset Configuration Guide](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html).
-
+>ログ処理段階では、すべてのイベントデータがログファイルから取得されるわけではありません。 場合によってはありますが、イベントデータはODBCデータソースなどの別のソースから取得される場合があります。 データソースについて詳しくは、『[データセット設定ガイド](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html)』を参照してください。
