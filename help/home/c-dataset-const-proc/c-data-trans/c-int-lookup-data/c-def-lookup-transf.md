@@ -1,14 +1,15 @@
 ---
 description: ルックアップデータをデータセットに組み入れる際に利用できる変換について取り上げます。
-solution: Analytics
 title: ルックアップ変換の定義
-topic: Data workbench
 uuid: 4f7358b1-9e6a-4d03-b0c6-411e454fc11e
+exl-id: 7b1504be-8669-4340-8400-e33f9663b602
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '2288'
+ht-degree: 90%
 
 ---
-
 
 # ルックアップ変換の定義{#defining-lookup-transformations}
 
@@ -20,7 +21,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 * [FlatFileLookup](../../../../home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-def-lookup-transf.md#section-e09b2eeb96444a859b14f03cdaab31f2)
 * [ODBCLookup](../../../../home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-def-lookup-transf.md#section-4dcc3747e42e45c0a057e85f308a83cc)
 
-## Categorize {#section-8474376c14e54d14ae73749696ada468}
+## Categorize  {#section-8474376c14e54d14ae73749696ada468}
 
 [!DNL Categorize] 変換には、パターン文字列と値のペアから成る 2 列のルックアップテーブルを使用します。この変換では、Data Workbench サーバーが個々のイベントデータレコードを順に読み取り、そのレコード内の指定されたフィールドの内容を、ルックアップテーブルの 1 列目にリストされた各パターン文字列と比較します。指定されたフィールドがいずれかのパターン文字列と一致した場合、対応する値（2 列目の内容）を、レコード内の指定された出力フィールドに書き込みます。
 
@@ -30,7 +31,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 
 >[!NOTE]
 >
->The substring test used in [!DNL Categorize] is case-sensitive unless otherwise specified using the [!DNL Case Sensitive] parameter.
+>[!DNL Categorize]で使用されるサブ文字列テストでは、[!DNL Case Sensitive]パラメーターで特に指定しない限り、大文字と小文字が区別されます。
 
 <table id="table_1773344FAAE34BD4919CC4414249FDEE"> 
  <thead> 
@@ -52,22 +53,22 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
    <td colname="col3"> true </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments </td> 
-   <td colname="col2"> (オプション)変換についてのメモ。 </td> 
+   <td colname="col1"> コメント </td> 
+   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> この変換が適用される条件。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Default </td> 
+   <td colname="col1"> デフォルト </td> 
    <td colname="col2"> 条件判定に成功したがカテゴリー化ファイルのいずれのエントリも入力と一致しなかった場合、または指定されたログエントリに入力フィールドが定義されていなかった場合に使用されるデフォルト値。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Delimiter </td> 
+   <td colname="col1"> 区切り </td> 
    <td colname="col2"> <p>ルックアップファイル内の列の区切りに使用する文字列。長さは 1 文字とする必要があります。 </p> <p> Delimiter パラメーター内で Ctrl キーを押しながら右クリックすると、<span class="wintitle">挿入</span>メニューが表示されます。このメニューには、区切り文字としてよく使用される特殊文字が一覧表示されます。 </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -77,7 +78,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
    <td colname="col3"> false </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> File </td> 
+   <td colname="col1"> ファイル </td> 
    <td colname="col2"> カテゴリー化ファイルのパスとファイル名。相対パスの基準は、Data Workbench サーバーのインストールディレクトリです。このファイルは、一般に、Data Workbench サーバーのインストールディレクトリにある Lookups ディレクトリに格納されます。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -96,15 +97,15 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 
 **Categorizeの考慮事項**
 
-* Changes to lookup files in [!DNL Categorize] transformations defined in the [!DNL Transformation.cfg] file or in a [!DNL Transformation Dataset Include] file require retransformation of the dataset. Lookup files for [!DNL Categorize] transformations defined in the [!DNL Log Processing.cfg] file or a [!DNL Log Processing Dataset Include] file are not subject to this limitation. データの再処理について詳しくは、再処理と再変換 [を参照してください](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)。
+* [!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイルで定義されている[!DNL Categorize]変換のルックアップファイルに変更を加えた場合、データセットの再変換が必要になります。 [!DNL Log Processing.cfg]ファイルまたは[!DNL Log Processing Dataset Include]ファイルで定義されている[!DNL Categorize]変換のルックアップファイルは、この制限の対象となりません。 データの再処理について詳しくは、[再処理と再変換](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)を参照してください。
 
-* [!DNL Categorize] ファイルまたはファイルで定 [!DNL Log Processing.cfg] 義された変換は、ルッ [!DNL Log Processing Dataset Include] クアップファイルが変更されるたびに、そのルックアップファイルを再読み込みします。 過去にさかのぼって変更が適用されることはありませんが、その変更が行われた後に読み込まれたログデータにはすべて変更が適用されます。
+* [!DNL Categorize] ファイルまたは [!DNL Log Processing.cfg]  [!DNL Log Processing Dataset Include] ファイルで定義された変換は、ルックアップファイルが変更されるたびに、そのルックアップファイルをリロードします。過去にさかのぼって変更が適用されることはありませんが、その変更が行われた後に読み込まれたログデータにはすべて変更が適用されます。
 
 以下に示したのは、Web サイトトラフィックから収集したイベントデータに、[!DNL Categorize] 変換を使用してルックアップデータを統合する例です。特定の Web サイトにいくつかのビジネスセクションがあって、各セクションのトラフィックフローと生み出された価値に基づいて比較検討できるようにしたいとします。この場合、ルックアップファイルを作成して、各セクションを識別するためのサブ文字列をリストします。
 
-The lookup file [!DNL Lookups\custommap.txt] contains the following table:
+ルックアップファイル[!DNL Lookups\custommap.txt]には、次の表が含まれています。
 
-| /products/ | 製品 |
+| /製品/ | 製品 |
 |---|---|
 | ^/sports/ | Sports |
 | ^/news/ | News |
@@ -118,12 +119,12 @@ Multiple Values パラメーターが false に設定されていると仮定し
 
 | [!DNL cs-uri-stem] | [!DNL x-custommap] |
 |---|---|
-| [!DNL /sports/news/today.php] | Sports |
+| [!DNL /sports/news/today.php] | スポーツ |
 | [!DNL /sports/products/buy.php] | 製品 |
-| [!DNL /news/headlines.php] | News |
+| [!DNL /news/headlines.php] | ニュース |
 | [!DNL /news/products/subscribe.php] | 製品 |
 
-出力結果は、ルックアップファイル内のサブ文字列の順序に左右されます。For example, the cs-uri-stem [!DNL /sports/products/buy.php] returns &quot;Products.&quot; URI ステムは「/sports/」で始まっていますが、ルックアップファイルには「/products/」が「/sports/」よりも先に記述されています。仮に Multiple Values パラメーターが true に設定された場合、x-custommap には、別の値が追加されることになります。最後の例で言えば、ルックアップテーブル内の 2 つの行（Products と News）が一致します。
+出力結果は、ルックアップファイル内のサブ文字列の順序に左右されます。例えば、cs-uri-stem [!DNL /sports/products/buy.php]は「Products」を返します。 URI ステムは「/sports/」で始まっていますが、ルックアップファイルには「/products/」が「/sports/」よりも先に記述されています。仮に Multiple Values パラメーターが true に設定された場合、x-custommap には、別の値が追加されることになります。最後の例で言えば、ルックアップテーブル内の 2 つの行（Products と News）が一致します。
 
 ## FlatFileLookup {#section-e09b2eeb96444a859b14f03cdaab31f2}
 
@@ -146,27 +147,27 @@ Multiple Values パラメーターが false に設定されていると仮定し
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments </td> 
-   <td colname="col2"> (オプション)変換についてのメモ。 </td> 
+   <td colname="col1"> コメント </td> 
+   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> この変換が適用される条件。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Default </td> 
+   <td colname="col1"> デフォルト </td> 
    <td colname="col2"> 条件が満たされたが、入力と一致するエントリがルックアップファイルに存在しなかった場合に使用されるデフォルト値。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Delimiter </td> 
+   <td colname="col1"> 区切り </td> 
    <td colname="col2"> <p>ルックアップファイル内の列の区切りに使用する文字列。長さは 1 文字とする必要があります。 </p> <p> Delimiter パラメーター内で Ctrl キーを押しながら右クリックすると、<span class="wintitle">挿入</span>メニューが表示されます。このメニューには、区切り文字としてよく使用される特殊文字が一覧表示されます。 </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> File </td> 
+   <td colname="col1"> ファイル </td> 
    <td colname="col2"> ルックアップファイルのパスとファイル名。相対パスの基準は、Data Workbench サーバーのインストールディレクトリです。このファイルは、一般に、Data Workbench サーバーのインストールディレクトリにある Lookups ディレクトリに格納されます。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -176,12 +177,12 @@ Multiple Values パラメーターが false に設定されていると仮定し
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Input </td> 
+   <td colname="col1"> 入力 </td> 
    <td colname="col2"> <span class="wintitle">Column Name</span> は、入力データをファイル内の行と突き合わせる際に使用する列の名前です。Header Row が true である場合、ルックアップファイル内の列の名前を指定できます。それ以外の場合、突き合わせる列の 0 ベースの番号を指定する必要があります。<span class="wintitle">Field Name</span> は、ルックアップファイル内の行を特定する際に使用するフィールドの名前です。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Multiple Values </td> 
+   <td colname="col1"> 複数の値 </td> 
    <td colname="col2"> <p>true または false。単一の値（一致行）を返すか、複数の値（一致行ごとに 1 つ）を返すかを指定します。 </p> <p> <p>注意：<span class="wintitle">Multiple Values</span> を false に設定する場合は、複数の一致が生じないよう注意してください。複数の一致が見つかった場合にどれが返されるかは保証されません。 </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -193,12 +194,12 @@ Multiple Values パラメーターが false に設定されていると仮定し
  </tbody> 
 </table>
 
-**考慮事項：[!DNL FlatFileLookup]**
+**の考慮事項[!DNL FlatFileLookup]**
 
 * 入力フィールドとルックアップファイルとの比較では常に、大文字と小文字が区別されます。
-* Changes to lookup files in [!DNL FlatFileLookup] transformations defined in the [!DNL Transformation.cfg] file or [!DNL Transformation Dataset Include] files require retransformation of the dataset. ファイル内で定義さ [!DNL FlatFileLookup] れた変換の参照フ [!DNL Log Processing.cfg] ァイルは、 [!DNL Log Processing Dataset Include] この制限の対象となりません。 データの再処理について詳しくは、再処理と再変換 [を参照してください](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)。
+* [!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイルで定義されている[!DNL FlatFileLookup]変換のルックアップファイルに変更を加えた場合、データセットの再変換が必要になります。 [!DNL Log Processing.cfg]ファイルまたは[!DNL Log Processing Dataset Include]ファイルで定義されている[!DNL FlatFileLookup]変換のルックアップファイルは、この制限の対象となりません。 データの再処理について詳しくは、[再処理と再変換](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)を参照してください。
 
-* [!DNL FlatFileLookup] ファイル内の変換は、ル [!DNL Log Processing.cfg] ックアップフ [!DNL Log Processing Dataset Include] ァイルが変更されるたびに、ルックアップファイルをリロードします。 過去にさかのぼって変更が適用されることはありませんが、その変更が行われた後に読み込まれたログデータにはすべて変更が適用されます。
+* [!DNL FlatFileLookup] ルックアップファイルが変更されるたびに、 [!DNL Log Processing.cfg] ファイルまたは [!DNL Log Processing Dataset Include] ファイル内の変換によって、ルックアップファイルがリロードされます。過去にさかのぼって変更が適用されることはありませんが、その変更が行われた後に読み込まれたログデータにはすべて変更が適用されます。
 
 以下に示したのは、Web サイトトラフィックから収集したイベントデータに、[!DNL FlatFileLookup] 変換を使用してルックアップデータを統合する例です。その Web サイトへのトラフィックルーティングに寄与している Web サイトパートナーを見つけ出して、そのパートナー ID を、よりわかりやすい名前に変換したいとします。そうすると、トラフィックのルーティングに使われているサイト間の関係よりも明確にビジネス上の関係を表現する拡張ディメンションとビジュアライゼーションを、そのわかりやすい名前を使用して作成できます。
 
@@ -208,11 +209,11 @@ Multiple Values パラメーターが false に設定されていると仮定し
 
 例えば、ルックアップテーブルに次の情報が格納されているとします。
 
-| ID | Partner | Started | PrintName |
+| ID | パートナー | Started | PrintName |
 |---|---|---|---|
 | 1 | P154 | Aug 21, 1999 | Yahoo |
-| 2 | P232 | July 10, 2000 | Microsoft |
-| 3 | P945 | Jan 12, 2001 | Amazon |
+| 2 | P232 | 2000 年 7 月 10 日（PT） | Microsoft |
+| 3 | P945 | 2001 年 1 月 12 日（PT） | Amazon |
 
 次の例は、次のように変換されます。
 
@@ -222,11 +223,11 @@ Multiple Values パラメーターが false に設定されていると仮定し
 
 ## ODBCLookup {#section-4dcc3747e42e45c0a057e85f308a83cc}
 
-The [!DNL ODBCLookup] transformation operates like a [!DNL FlatFileLookup] transformation. 唯一違うのは、変換時に使用されるルックアップテーブルの内容が、フラットファイルからではなく、ODBC データベースから入力されるという点です。
+[!DNL ODBCLookup]変換は、[!DNL FlatFileLookup]変換と同じ働きをします。 唯一違うのは、変換時に使用されるルックアップテーブルの内容が、フラットファイルからではなく、ODBC データベースから入力されるという点です。
 
 >[!NOTE]
 >
->[!DNL ODBCLookup] 変換は、データセット構築プロセスの変換段階でのみ実行できます。 可能であれば、[!DNL FlatFileLookup] 変換ではなく [!DNL ODBCLookup] 変換を使用することをお勧めします。外部システムの利用の可否に依存しないという点で、[!DNL FlatFileLookup] 変換の方が信頼性に優れています。加えて、ルックアップテーブルのあるフラットファイルがローカルで管理されていれば、ルックアップテーブルが変更されるリスクも小さくて済みます。
+>[!DNL ODBCLookup] 変換は、データセット構築プロセスの変換段階でのみ実行できます。可能であれば、[!DNL FlatFileLookup] 変換ではなく [!DNL ODBCLookup] 変換を使用することをお勧めします。外部システムの利用の可否に依存しないという点で、[!DNL FlatFileLookup] 変換の方が信頼性に優れています。加えて、ルックアップテーブルのあるフラットファイルがローカルで管理されていれば、ルックアップテーブルが変更されるリスクも小さくて済みます。
 
 <table id="table_B903DB291BCC4F44B09D54300216D288"> 
  <thead> 
@@ -243,12 +244,12 @@ The [!DNL ODBCLookup] transformation operates like a [!DNL FlatFileLookup] trans
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments </td> 
-   <td colname="col2"> (オプション)変換についてのメモ。 </td> 
+   <td colname="col1"> コメント </td> 
+   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> この変換が適用される条件。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -268,7 +269,7 @@ The [!DNL ODBCLookup] transformation operates like a [!DNL FlatFileLookup] trans
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Default </td> 
+   <td colname="col1"> デフォルト </td> 
    <td colname="col2"> 条件が満たされたが、入力と一致するエントリがルックアップファイルに存在しなかった場合に使用されるデフォルト値。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -278,7 +279,7 @@ The [!DNL ODBCLookup] transformation operates like a [!DNL FlatFileLookup] trans
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Multiple Values </td> 
+   <td colname="col1"> 複数の値 </td> 
    <td colname="col2"> <p>true または false。単一の値（一致行）を返すか、複数の値（一致行ごとに 1 つ）を返すかを指定します。 </p> <p> <p>注意：<span class="wintitle">Multiple Values</span> を false に設定する場合は、複数の一致が生じないよう注意してください。複数の一致が見つかった場合にどれが返されるかは保証されません。 </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -295,13 +296,12 @@ The [!DNL ODBCLookup] transformation operates like a [!DNL FlatFileLookup] trans
  </tbody> 
 </table>
 
-* The Data Source Name, [!DNL Database User ID], [!DNL Database Password], and Table Identifier parameters are the same as the parameters of the same names that are described for ODBC data sources. See [ODBC Data Sources](../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3).
+* Data Source Name、[!DNL Database User ID]、[!DNL Database Password]、Table Identifierの各パラメーターは、ODBCデータソースに対して記述されている同じ名前のパラメーターと同じです。 [ODBCデータソース](../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3)を参照してください。
 
-* ODBC データソースとは異なり、[!DNL ODBCLookup] 変換には、インクリメントする ID 列は不要です。See [ODBC Data Sources](../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3). なぜなら、データセットがアクティブである間は、どのような形であれ、ルックアップテーブルの内容に変更が生じることは許されないためです。ルックアップテーブル（またはビュー）への変更は、再変換が実行されるまで検出されません。データの再処理について詳しくは、[再処理と再変換](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)を参照してください。
+* ODBC データソースとは異なり、[!DNL ODBCLookup] 変換には、インクリメントする ID 列は不要です。[ODBCデータソース](../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-odbc-data-sources.md#concept-5f2cf635081d44beab826ef5ec8cf4e3)を参照してください。 なぜなら、データセットがアクティブである間は、どのような形であれ、ルックアップテーブルの内容に変更が生じることは許されないためです。ルックアップテーブル（またはビュー）への変更は、再変換が実行されるまで検出されません。データの再処理について詳しくは、 [再処理と再変換](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md).
 
 古くなった DNS レコードを最新のレコードに変換したいとします。どちらのレコードも SQL データベースに格納されています。この作業を行うには、そのデータベースから生成されたルックアップテーブルを参照して、古い DNS レコードを置き換える必要があります。
 
 この場合、ログエントリから s-dns フィールドを検索し、見つかった s-dns エントリと、ルックアップテーブル VISUAL.LOOKUP の [!DNL OLDDNS] 列内のエントリとを比較します。テーブル内の行が特定された場合、その行の [!DNL NEWDNS] 列から最新の DNS レコードエントリを取得し、出力フィールド s-dns に割り当てます。
 
 ![](assets/cfg_TransformationType_ODBCLookup.png)
-
