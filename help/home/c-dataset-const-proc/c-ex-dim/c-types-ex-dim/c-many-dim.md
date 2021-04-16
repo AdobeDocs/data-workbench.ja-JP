@@ -1,14 +1,15 @@
 ---
 description: 多対多ディメンションは、その親の可算ディメンションとの間に多対多の関係を持ちます。
-solution: Analytics
 title: 多対多ディメンション
-topic: Data workbench
 uuid: 42c909e8-1228-4210-9406-ffc0d92372fa
+exl-id: 02d1a21c-a5b4-4b58-8089-9b9c68a7b1d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 100%
 
 ---
-
 
 # 多対多ディメンション{#many-to-many-dimensions}
 
@@ -33,12 +34,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments </td> 
-   <td colname="col2"> (オプション)拡張ディメンションについてのメモ。 </td> 
+   <td colname="col1"> コメント </td> 
+   <td colname="col2"> （オプション）拡張ディメンションについてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 親と入力フィールドの値との関係を作成する条件。 </td> 
    <td colname="col3"> </td> 
   </tr> 
