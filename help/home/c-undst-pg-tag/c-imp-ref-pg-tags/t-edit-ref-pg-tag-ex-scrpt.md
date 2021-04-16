@@ -1,22 +1,23 @@
 ---
-description: 参照ページタグは、Webサーバー上に存在するページタグ実行スクリプトで構成され、呼び出されると、サイト訪問者が要求したページのクライアント側のすべてのデータが収集されます。
-solution: Analytics
-title: 参照ページのタグ実行スクリプトの編集
-topic: Data workbench
+description: 参照ページタグは、Webサーバー上に存在するページタグ実行スクリプトで構成されます。このスクリプトを呼び出すと、サイト訪問者が要求したページのクライアント側のすべてのデータが収集されます。
+title: 参照ページタグ実行スクリプトの編集
 uuid: 0db00b89-e420-423d-9b88-8b724baa828f
+exl-id: bc922b59-716e-4e92-84b5-59a52620df03
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 6%
 
 ---
 
+# 参照ページタグ実行スクリプトの編集{#editing-the-reference-page-tag-execution-script}
 
-# 参照ページのタグ実行スクリプトの編集{#editing-the-reference-page-tag-execution-script}
+参照ページタグは、Webサーバー上に存在するページタグ実行スクリプトで構成されます。このスクリプトを呼び出すと、サイト訪問者が要求したページのクライアント側のすべてのデータが収集されます。
 
-参照ページタグは、Webサーバー上に存在するページタグ実行スクリプトで構成され、呼び出されると、サイト訪問者が要求したページのクライアント側のすべてのデータが収集されます。
+[!DNL Reference Page Tag Execution Script]を変更して、Adobeコンサルティングサービスチームとのミーティングで特定される可能性のある追加情報を収集できます。 [!DNL Reference Page Tag Execution Script]のサイズは比較的小さく、Webページへのダウンロード数が多くなるのを防ぎます。
 
-アドビのコンサルティングサ [!DNL Reference Page Tag Execution Script] ービスチームとの会議で要件を収集する際に特定される可能性のある追加情報を収集するように、を変更できます。 は、Webペ [!DNL Reference Page Tag Execution Script] ージに大量のダウンロードが追加されないように、サイズが比較的小さくなっています。
-
-次のコー [!DNL Reference Page Tag Execution Script] ドが、という名前のファイルで提供されま [!DNL zig.js]す。
+次の[!DNL Reference Page Tag Execution Script]コードは、[!DNL zig.js]という名前のファイルで提供されます。
 
 ```
 //REFERENCE PAGE TAG 
@@ -60,19 +61,19 @@ document.write(ct,cd,cu,vo,ce);
 //END REFERENCE PAGE TAG 
 ```
 
-を使用したデータ収集を容易にするには、次 [!DNL Reference Page Tag]の手順を実行してください。
+[!DNL Reference Page Tag]を使用したデータ収集を容易にするには、次の手順を実行します。
 
-1. Webサーバー上のディレクトリに、1ピクセルx 1ピクセルの画像ファイルを [!DNL zag.gif] 作成するか、このファイルを配置します。
-1. cd変数を変更して、Webサイトの適切なドメインまたはファイルの参照元のアドビの管理サービスドメインを [!DNL zag.gif] 参照します。 ファイルへの参照は、ファイル関数の実行によって作成 [!DNL zig.js] されます。 次に例を示します。
+1. [!DNL zag.gif]という名前の1ピクセルx 1ピクセルの画像ファイルを作成するか、Webサーバー上のディレクトリに配置します。
+1. cd変数を変更して、[!DNL zag.gif]ファイルの参照元であるWebサイトまたはAdobe管理サービスドメインの適切なドメインを参照します。 ファイルへの参照は、[!DNL zig.js]ファイル関数の実行によって作成されます。 次に例を示します。
 
    ```
    //www.mysite.com
    ```
 
-1. cu変数を変更して、ファイルの場所への適切なパスを参照し [!DNL zag.gif] ます。 例えば、
+1. cu変数を変更して、[!DNL zag.gif]ファイルの場所への適切なパスを参照します。 例えば、
 
    ```
    /scripts
    ```
 
-1. およびファイルに対して適切なキャッシュ制御ヘッダーが確立されてい [!DNL zag.gif] ることを確 [!DNL zig.js] 認します。
+1. [!DNL zag.gif]ファイルと[!DNL zig.js]ファイルに対して、適切なキャッシュ制御ヘッダーが確立されていることを確認します。
