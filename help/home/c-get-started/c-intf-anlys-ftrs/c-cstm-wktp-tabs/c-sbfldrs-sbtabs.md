@@ -1,37 +1,37 @@
 ---
 description: デフォルトでは、新たに作成されたタブには、関連付けられたディレクトリ内にあるサブフォルダーが、サブタブではなく階層化されたドロップダウンサブディレクトリとして表示されます。
-solution: Analytics
-title: サブフォルダーをサブタブとして表示
-topic: Data workbench
+title: サブフォルダーのサブタブ表示
 uuid: b4d7c6dd-d5ad-4b93-ba67-65a69e11eefc
+exl-id: 6a05852b-3efc-4e71-9782-d4cc3a687a26
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 26%
 
 ---
 
-
-# サブフォルダーをサブタブとして表示{#display-subfolders-as-subtabs}
+# サブフォルダーのサブタブ表示{#display-subfolders-as-subtabs}
 
 デフォルトでは、新たに作成されたタブには、関連付けられたディレクトリ内にあるサブフォルダーが、サブタブではなく階層化されたドロップダウンサブディレクトリとして表示されます。
 
-You can display subfolders as subtabs (as shown in the following example) by placing an [!DNL empty folder.useTabs] file in the *working profile name*\Workspaces\*tab name folder* within the Data Workbench installation directory.
+サブフォルダーをサブタブとして（次の例に示すように）表示するには、Data Workbenchーインストールディレクトリ内の&#x200B;*workingプロファイルー名*\Workspaces\*tab name folder*に[!DNL empty folder.useTabs]ファイルを配置します。
 
-The following example shows the [!DNL Custom] tab with drop-down subdirectories.
+次の例は、ドロップダウンサブディレクトリを含む[!DNL Custom]タブを示しています。
 
 ![](assets/client-sub.png)
 
-If you place an [!DNL empty folder.useTabs] file in the Workspaces\Custom folder, all of the subfolders within the Custom folder display in the [!DNL Worktop] as subtabs, as shown in the following example:
+[!DNL empty folder.useTabs]ファイルをWorkspaces\Customフォルダーに配置すると、次の例に示すように、Customフォルダー内のすべてのサブフォルダーが[!DNL Worktop]にサブタブとして表示されます。
 
 ![](assets/client-sub2.png)
 
-**サブフォルダーをサブタブとして[!DNL Worktop]**
+**サブフォルダーを[!DNL Worktop]**
 
 >[!NOTE]
 >
->Each directory level must have a [!DNL Tab Name.useTabs] file for the contents of the subfolder to appear as subtabs instead of hierarchical, drop-down subdirectories.
+>各ディレクトリレベルには、サブフォルダーのコンテンツを階層化されたドロップダウンサブディレクトリではなくサブタブとして表示するための[!DNL Tab Name.useTabs]ファイルが必要です。
 
-1. In the [!DNL Profile Manager], click **[!UICONTROL Workspaces]** to view its contents.
-1. In the *working profile name* column, right-click the check mark for one of the [!DNL folder.useTabs] files and click **[!UICONTROL Copy]**.
-1. Right-click in the [!DNL User] column for the Workspaces\*tab name* folder and click **[!UICONTROL Paste]**. そのタブ内のサブフォルダーが、サブタブとして表示されるようになります。
-1. (Optional) To make this change available to all users of the working profile, right-click the white check mark for the [!DNL new folder.useTabs] file in the [!DNL User] column and click **[!UICONTROL Save to]** > &lt; **[!UICONTROL working profile name]**>.
-
+1. [!DNL Profile Manager]の&#x200B;**[!UICONTROL Workspaces]**&#x200B;をクリックして、内容を表示します。
+1. *作業プロファイル名*&#x200B;列で、[!DNL folder.useTabs]ファイルの1つのチェックマークを右クリックし、**[!UICONTROL Copy]**&#x200B;をクリックします。
+1. Workspaces\*tab name*フォルダーの[!DNL User]列内で右クリックし、**[!UICONTROL Paste]**&#x200B;をクリックします。 そのタブ内のサブフォルダーが、サブタブとして表示されるようになります。
+1. （オプション）作業プロファイルのすべてのユーザーがこの変更を利用できるようにするには、[!DNL User]列の[!DNL new folder.useTabs]ファイルの白いチェックマークを右クリックし、**[!UICONTROL Save to]** > **[!UICONTROL working profile name]**&#x200B;をクリックします。
