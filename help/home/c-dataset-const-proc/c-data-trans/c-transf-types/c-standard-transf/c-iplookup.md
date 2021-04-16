@@ -1,26 +1,27 @@
 ---
 description: IPLookup 変換は、IP Geo-Location データまたは IP Geo-Intelligence データ（各種ベンダーによって提供され、アドビ独自の形式に変換される）を受け取って、そのデータを分析用の地理情報に変換します。
-solution: Analytics
 title: IPLookup
-topic: Data workbench
 uuid: 6fccee39-761f-4854-a7fd-3f8b453e0698
+exl-id: 3e9dba44-8d31-49af-8ce0-fecaf92edeb7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 88%
 
 ---
-
 
 # IPLookup{#iplookup}
 
 IPLookup 変換は、IP Geo-Location データまたは IP Geo-Intelligence データ（各種ベンダーによって提供され、アドビ独自の形式に変換される）を受け取って、そのデータを分析用の地理情報に変換します。
 
-Two [!DNL IPLookup] transformations are listed in the Add new > *Transformation type *menu:
+新しい> *Transformation type *メニューには、追加2つの[!DNL IPLookup]変換が表示されます。
 
-* [!DNL IPLookup] データの [!DNL IP geo-location] Quova
+* [!DNL IPLookup] Quova( [!DNL IP geo-location] データ)
 
-* [!DNL IPLookup] Digital Envoy（データ用） [!DNL IP geo-intelligence]
+* [!DNL IPLookup] Digital Envoy for  [!DNL IP geo-intelligence] data
 
-When defining an [!DNL IPLookup] transformation, choose the appropriate transformation for your [!DNL IP geo-location] or [!DNL IP geo-intelligence] data.
+[!DNL IPLookup]変換を定義する場合は、[!DNL IP geo-location]データまたは[!DNL IP geo-intelligence]データに適した変換を選択します。
 
 <table id="table_C438A30AB5E64160A5C486D6887B1D7E"> 
  <thead> 
@@ -37,22 +38,22 @@ When defining an [!DNL IPLookup] transformation, choose the appropriate transfor
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments </td> 
-   <td colname="col2"> (オプション)変換についてのメモ。 </td> 
+   <td colname="col1"> コメント </td> 
+   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> この変換が適用される条件。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> File </td> 
+   <td colname="col1"> ファイル </td> 
    <td colname="col2"> ルックアップファイルのパスとファイル名。相対パスの基準は、Data Workbench サーバーのインストールディレクトリです。このファイルは、一般に、Data Workbench サーバーのインストールディレクトリにある Lookups ディレクトリに格納されます。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> IP Address </td> 
+   <td colname="col1"> IP アドレス </td> 
    <td colname="col2"> IP アドレスの読み取り元となるフィールド。 </td> 
    <td colname="col3"> c-ip </td> 
   </tr> 
@@ -67,4 +68,3 @@ When defining an [!DNL IPLookup] transformation, choose the appropriate transfor
 この例では、（ルックアップファイル [!DNL IP geo-location] 内の）[!DNL Quova.bin] データを使用して、一連の出力フィールドを作成します。出力データ（AOL、ASN、Area Code など）を使用して、訪問者トラフィックの地域別分析に使用するディメンションを作成できます。
 
 ![](assets/cfg_TransformationType_IPLookup.png)
-
