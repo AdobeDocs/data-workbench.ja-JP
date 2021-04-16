@@ -1,27 +1,25 @@
 ---
 description: ディメンション式は、単独で使用することはできませんが、ディメンションが指標式またはフィルター式の中で呼び出される場所ではどこでも使用できます。
-solution: Analytics
 title: ディメンション式の構文
-topic: Data workbench
 uuid: c437cc52-4eb3-4202-a0b4-e23889f9c8a2
+exl-id: 58609e31-8ad8-418b-9a9f-40462d6443f7
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1855'
 ht-degree: 92%
 
 ---
 
-
 # ディメンション式の構文{#syntax-for-dimension-expressions}
 
 ディメンション式は、単独で使用することはできませんが、ディメンションが指標式またはフィルター式の中で呼び出される場所ではどこでも使用できます。
 
 1. 下線を引いた語句は、式のテキストにそのまま入力する必要があります。
-1. フォームはオプションのテキストを `{TEXT}?` 表します。
-1. The form `{TEXT}*` represents text that may occur zero or more times.
-1. The form `{A | B | C |...}` represents text that consists of exactly one of the given options, such as A or B or C....
-1. The form `[A,B)` represents a range of numbers, from A up to but not including B.
+1. `{TEXT}?`の形式はオプションのテキストを表します。
+1. `{TEXT}*`の形式は、0回以上発生する可能性のあるテキストを表します。
+1. `{A | B | C |...}`の形式は、A、B、Cなど、指定されたオプションの1つだけから成るテキストを表します。.
+1. `[A,B)`の形式は、AからBまでの数値の範囲を表します。
 
 <table id="table_2D9AE1E2397843C284E838330370A1EE"> 
  <tbody> 
@@ -51,7 +49,7 @@ ht-degree: 92%
   </tr> 
   <tr> 
    <td colname="col1"> <p>bucket(Level, Metric, Count, Format {, Start {, Size}? }?) </p> </td> 
-   <td colname="col2"> <p>要素が数値範囲（固定サイズ、例えば、[0-9]、[10-19] など）のディメンションを定義します。Level の要素は、そのレベルの要素の Metric の値を範囲に含むバケットディメンションの要素に関連付けられます。Format は、指標の要素の書式設定に使用する printf 書式の文字列です。 </p> <p>Example: If Page_Duration_Minutes is a Page View-level dimension representing the number of minutes spent on each page, then bucket(Session, sum(Page_Duration_Minutes, Page_View), 100, "%0.0f minutes", 0, 5) is a Session-level dimension representing the number of minutes spent in each Session; its elements are 5 minute intervals <code>{[0-5), [5-10),...,[495-500)}</code>. </p> <p>Start は、最初の間隔の開始値（デフォルト：0）であり、Size は間隔のサイズ（デフォルト：1）です。 </p> </td> 
+   <td colname="col2"> <p>要素が数値範囲（固定サイズ、例えば、[0-9]、[10-19] など）のディメンションを定義します。Level の要素は、そのレベルの要素の Metric の値を範囲に含むバケットディメンションの要素に関連付けられます。Format は、指標の要素の書式設定に使用する printf 書式の文字列です。 </p> <p>例：Page_Duration_Minutesが、各ページの滞在時間を表すページ表示レベルのディメンションの場合、bucket(Session, sum(Page_Duration_Minutes, Page_表示), 100, "%0.0f minutes, 0, 5)は、各セッションでの滞在時間を表す。要素は5分間隔<code>{[0-5), [5-10),...,[495-500)}</code>です。 </p> <p>Start は、最初の間隔の開始値（デフォルト：0）であり、Size は間隔のサイズ（デフォルト：1）です。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>prefix(Level {,ElementName-&gt;(Prefix{,Prefix}* )}* ) </p> </td> 
@@ -95,4 +93,3 @@ ht-degree: 92%
   </tr> 
  </tbody> 
 </table>
-
