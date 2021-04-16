@@ -1,14 +1,15 @@
 ---
 description: 画像注釈を使用して、任意のソースから画像をコピーし、ワークスペースに直接貼り付けられます。
-solution: Analytics
 title: 画像注釈
-topic: Data workbench
 uuid: 62a655f6-120b-4cf4-adaa-aa04f721a7dc
+exl-id: 905d3e9e-0d24-456e-af45-c29f12ed986d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 48%
 
 ---
-
 
 # 画像注釈{#image-annotations}
 
@@ -16,38 +17,37 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 その後、サイズを変更したり、カラースキームを反転させたり、画像を暗くしたりできます。
 
-## 画像の追加 {#section-bcb71217e75f4135a90a222b27479c9a}
+## 追加画像{#section-bcb71217e75f4135a90a222b27479c9a}
 
-1. Copy any image to your clipboard by right-clicking the image and clicking **[!UICONTROL Copy]**.
-1. Right-click within the image annotation and click **[!UICONTROL Paste Image]**.
+1. 画像を右クリックし、**[!UICONTROL Copy]**&#x200B;をクリックして、画像をクリップボードにコピーします。
+1. 画像注釈内で右クリックし、「**[!UICONTROL Paste Image]**」をクリックします。
 
 ![](assets/mnu_Image_Paste.png)
 
 >[!NOTE]
 >
->画像注釈に追加できる画像は1つだけです。 新しい画像を注釈に貼り付けると、既存の画像の上に貼り付けられます。複数の画像をワークスペースに追加するには、別の画像注釈を追加する必要があります。
+>1つの画像注釈に追加できる画像は1つだけです。 新しい画像を注釈に貼り付けると、既存の画像の上に貼り付けられます。複数の画像をワークスペースに追加するには、別の画像注釈を追加する必要があります。
 
-## 画像のサイズ変更 {#section-c8136a2573bf4378a9aa18cc6a098b27}
+## 画像のサイズ変更{#section-c8136a2573bf4378a9aa18cc6a098b27}
 
 * クリックしながら注釈の枠または角をドラッグします。
 
-## 画像の反転 {#section-6248ca0f729f4397ac200fae0eef9d9a}
+## 画像を反転{#section-6248ca0f729f4397ac200fae0eef9d9a}
 
-* 注釈内で右クリックし、「>」または「>」 **[!UICONTROL Display Mode]** をク **[!UICONTROL Invert (white to black)]** リック **[!UICONTROL Display Mode]** します **[!UICONTROL Invert (black to white)]**。
+* 注釈内で右クリックし、**[!UICONTROL Display Mode]** > **[!UICONTROL Invert (white to black)]**&#x200B;または&#x200B;**[!UICONTROL Display Mode]** > **[!UICONTROL Invert (black to white)]**&#x200B;をクリックします。
 
-## 画像のグレー表示 {#section-2d4b66428ea4456e9735c0ad09f3b765}
+## 画像を暗くする{#section-2d4b66428ea4456e9735c0ad09f3b765}
 
-* 注釈内で右クリックし、「>」または「>」 **[!UICONTROL Display Mode]** をク **[!UICONTROL Dim]** リック **[!UICONTROL Display Mode]** します **[!UICONTROL Very Dim]**。
+* 注釈内で右クリックし、**[!UICONTROL Display Mode]** > **[!UICONTROL Dim]**&#x200B;または&#x200B;**[!UICONTROL Display Mode]** > **[!UICONTROL Very Dim]**&#x200B;をクリックします。
 
-## Return to original display mode {#section-044fad7278bd4947b463deca1b94acfd}
+## 元の表示モードに戻る{#section-044fad7278bd4947b463deca1b94acfd}
 
-* 注釈内で右クリックし、「>」をクリッ **[!UICONTROL Display Mode]** クしま **[!UICONTROL Original]**&#x200B;す。
+* 注釈内で右クリックし、**[!UICONTROL Display Mode]**/**[!UICONTROL Original]**&#x200B;をクリックします。
 
-## Fit to window {#section-904eb9aed20947749bc35525efeb4bda}
+## ウィンドウに合わせる{#section-904eb9aed20947749bc35525efeb4bda}
 
 **「ウィンドウに合わせる」オプションを有効または無効にするには**
 
-The [!DNL Fit to Window] option, when selected, lets the annotation automatically expand or shrink to fit the image size. このオプシ [!DNL Fit to Window] ョンは、デフォルトで有効になっています。
+[!DNL Fit to Window]オプションを選択すると、画像サイズに合わせて注釈が自動的に拡大または縮小されます。 [!DNL Fit to Window]オプションはデフォルトで有効になっています。
 
-* 注釈内で右クリックします **[!UICONTROL Fit to Window]**。 When enabled, an X appears to the left of [!DNL Fit to Window].
-
+* 注釈内で右クリックし、**[!UICONTROL Fit to Window]**&#x200B;をクリックします。 有効にすると、[!DNL Fit to Window]の左側にXが表示されます。
