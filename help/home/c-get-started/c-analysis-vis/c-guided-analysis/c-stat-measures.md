@@ -1,18 +1,19 @@
 ---
-description: 統計を支援するために、Data Workbenchでは、ガイド付き分析のビジュアライゼーションに3つの統計指標を提供しています。
-solution: Analytics
-title: 統計指標
-topic: Data workbench
+description: 統計を支援するために、Data Workbenchはガイド付き分析のビジュアライゼーションに3つの統計的測定基準を提供します。
+title: 統計的尺度
 uuid: a8782cd2-d657-4c04-9c5d-8e0af2a3b76e
+exl-id: 166ff98b-d531-4b31-897e-0c7fedbd2f4d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 82%
 
 ---
 
+# 統計的尺度{#statistical-measures}
 
-# 統計指標{#statistical-measures}
-
-統計を支援するために、Data Workbenchでは、ガイド付き分析のビジュアライゼーションに3つの統計指標を提供しています。
+統計を支援するために、Data Workbenchはガイド付き分析のビジュアライゼーションに3つの統計的測定基準を提供します。
 
 >[!NOTE]
 >
@@ -24,7 +25,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->U統計とV統計は互いを補うように選択され、それぞれが、他方が強く応答しない可能性のある相関のタイプを検出するよう調整されました。
+>U統計とV統計は互いを補うように選択されました。それぞれが、他方が強く反応しないタイプの相関関係を検出するよう調整されています。
 
 このビジュアライゼーションをガイドとして使用し、他のビジュアライゼーションをワークスペースに追加して、選択に基づいた、データに対する洞察を深めることができます。
 
