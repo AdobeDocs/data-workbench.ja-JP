@@ -1,14 +1,15 @@
 ---
 description: データセットを設定するとき、特定の拡張ディメンションが Data Workbench のディメンションメニューに表示されないようにしたい場合があります。
-solution: Analytics
 title: データセットのコンポーネントの非表示
-topic: Data workbench
 uuid: 011e762b-547c-4a41-9473-d6d617177c86
+exl-id: be8fd482-6084-41bd-bfbf-302bacbbc587
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 100%
 
 ---
-
 
 # データセットのコンポーネントの非表示{#hiding-dataset-components}
 
