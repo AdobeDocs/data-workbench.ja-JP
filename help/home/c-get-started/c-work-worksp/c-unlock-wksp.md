@@ -1,31 +1,32 @@
 ---
-description: 管理者は、特定のユーザーのみが特定のワークスペースを変更できるようにData Workbenchを設定できます。
-solution: Analytics
+description: 管理者は、特定のData Workbenchのみが特定のワークスペースを変更できるように管理を設定できます。
 title: ワークスペースのロック解除
-topic: Data workbench
 uuid: 07e7ee09-36f1-4990-8e6d-5ec356f8cf0d
+exl-id: 6c603e63-3b61-46ce-9798-483cc7eb38ed
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '191'
+ht-degree: 29%
 
 ---
 
+# ワークスペースのロック解除{#unlocking-a-workspace}
 
-# Unlocking a workspace{#unlocking-a-workspace}
-
-管理者は、特定のユーザーのみが特定のワークスペースを変更できるようにData Workbenchを設定できます。
+管理者は、特定のData Workbenchのみが特定のワークスペースを変更できるように管理を設定できます。
 
 ワークスペースがロックされている場合、ユーザーはほとんどのビジュアライゼーションで選択を行い、テーブルのデータを並べ替えることができますが、ワークスペースにそれ以外の変更を行うことはできません。
 
-Certain users have the ability to temporarily unlock a locked workspace using the [!DNL Temporarily Unlock] option on the workspace title bar menu, make the necessary changes, then save the workspace. 次回ユーザーがワークスペースを開くときには、再びロックされています。
+特定のユーザーは、ワークスペースのタイトルバーメニューの[!DNL Temporarily Unlock]オプションを使用して、ロックされたワークスペースのロックを一時的に解除し、必要な変更を行って、ワークスペースを保存できます。 次回ユーザーがワークスペースを開くときには、再びロックされています。
 
-If you cannot make and save changes to a workspace and the [!DNL Temporarily Unlock] option is not available in the [!DNL File] menu, this workspace has been locked by your Adobe application administrator and you cannot change it. 詳細については管理者にお問い合わせください。
+ワークスペースに対して変更を行って保存できず、[!DNL Temporarily Unlock]オプションが[!DNL File]メニューで使用できない場合、このワークスペースはAdobeアプリケーション管理者によってロックされており、変更できません。 詳細については管理者にお問い合わせください。
 
 **ワークスペースをロックまたはロック解除するには**
 
-ワークスペースのタイトルバーで、/をクリッ **[!UICONTROL File]** クしま **[!UICONTROL Temporarily Unlock]**&#x200B;す。
+ワークスペースのタイトルバーで、**[!UICONTROL File]**/**[!UICONTROL Temporarily Unlock]**&#x200B;をクリックします。
 
 >[!NOTE]
 >
->For information about configuring individual workspaces and entire tabs or folders to be locked, see [Configuring Locked Workspaces](../../../home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-config-locked-wkspc.md#concept-b6ce110bbed645d89f29373b5106836a).
+>個々のワークスペースと、ロックするタブまたはフォルダー全体の設定について詳しくは、[ロックされたワークスペースの設定](../../../home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-config-locked-wkspc.md#concept-b6ce110bbed645d89f29373b5106836a)を参照してください。
 
-To delete server workspaces, you must use the [!DNL Profile Manager]. 詳しくは、「作業プロファイルか [らのファイルの削除」を参照してください](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md#task-1e29c25e6c824cc9b51cb651e835856b)。
+サーバーワークスペースを削除するには、[!DNL Profile Manager]を使用する必要があります。 詳しくは、「[作業プロファイルからのファイルの削除](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-del-files-wkg-prof.md#task-1e29c25e6c824cc9b51cb651e835856b)」を参照してください。
