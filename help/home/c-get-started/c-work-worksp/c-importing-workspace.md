@@ -1,16 +1,17 @@
 ---
 description: ワークスペースをワークトップにインポートできます。
-solution: Analytics
-title: ワークスペースの読み込み
-topic: Data workbench
+title: ワークスペースのインポート
 uuid: 9f9f0da8-0806-45fe-90b4-d5bc635958e7
+exl-id: 8f589540-9f1c-4776-8815-48d4cfbc5aa6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '103'
+ht-degree: 73%
 
 ---
 
-
-# ワークスペースの読み込み{#import-a-workspace}
+# ワークスペースのインポート{#import-a-workspace}
 
 ワークスペースをワークトップにインポートできます。
 
@@ -25,5 +26,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->ビジュアライゼーションは、ワークスペースのようにインポートすることができません。When you right-click in the worktop and select **[!UICONTROL Import]**, you can import an existing workspace but not a visualization residing outside of the workspace. ビジュアライゼーションをインポートしようとすると、「有効なワークスペースではありません」というエラーが表示されます。
-
+>ビジュアライゼーションは、ワークスペースのようにインポートすることができません。ワークトップ内で右クリックし、**[!UICONTROL Import]**&#x200B;を選択すると、既存のワークスペースはインポートできますが、ワークスペースの外側にあるビジュアライゼーションはインポートできません。 ビジュアライゼーションをインポートしようとすると、「有効なワークスペースではありません」というエラーが表示されます。
