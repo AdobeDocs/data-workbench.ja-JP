@@ -1,16 +1,17 @@
 ---
 description: プロファイルマネージャーを使用して、変更するファイルをダウンロードできます。
-solution: Analytics
 title: ユーザープロファイル内のローカルファイルの変更
-topic: Data workbench
 uuid: 839417d1-34db-4b14-a103-8f5297af55b7
+exl-id: 187d67a1-e436-4bfd-87ad-17b6c70dbee4
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '388'
+ht-degree: 51%
 
 ---
 
-
-# Modify local files in the user profile{#modify-local-files-in-the-user-profile}
+# ユーザープロファイル内のローカルファイルの変更{#modify-local-files-in-the-user-profile}
 
 プロファイルマネージャーを使用して、変更するファイルをダウンロードできます。
 
@@ -18,28 +19,28 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **ファイルをダウンロードするには**
 
-1. In the [!DNL Profile Manager], open the necessary folders and subfolders to locate the file that you want to download.
-1. Right-click the check mark next to the name of the file and click **[!UICONTROL Make Local]**.
+1. [!DNL Profile Manager]で、必要なフォルダーとサブフォルダーを開き、ダウンロードするファイルを探します。
+1. ファイル名の横のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。
 
    >[!NOTE]
    >
-   >Configuration ( [!DNL .cfg]), dimension ( [!DNL .dim]), and metric ( [!DNL .metric]) files can be edited directly in a profile folder and saved to the server without making them local and separately saving them to the server. Simply right-click the check mark next to the name of the file and click **[!UICONTROL Open]** > **in workstation**.
+   >設定([!DNL .cfg])、ディメンション([!DNL .dim])、指標([!DNL .metric])の各ファイルは、プロファイルーフォルダー内で直接編集し、ローカル化したり、別々にサーバーに保存したりすることなく、サーバーに保存できます。 ファイル名の横のチェックマークを右クリックし、ワークステーション&#x200B;**で&#x200B;**[!UICONTROL Open]**/**&#x200B;をクリックするだけです。
 
-After the file has been downloaded to the local computer, a check mark appears in the [!DNL User] column, which indicates that a local copy of the file resides in the User\*profile name* folder on your computer. このチェックマークは、*profile name* 列のチェックマークと同じ色であることに注意してください。これは、ローカルファイルが *profile name* フォルダー内のファイルと同じ変更日時を持つことを示します。
+ファイルをローカルコンピューターにダウンロードすると、[!DNL User]列にチェックマークが表示されます。これは、ファイルのローカルコピーがコンピューター上のUser\*プロファイル名*フォルダーに存在することを示します。 このチェックマークは、*profile name* 列のチェックマークと同じ色であることに注意してください。これは、ローカルファイルが *profile name* フォルダー内のファイルと同じ変更日時を持つことを示します。
 
 **ファイルを変更するには**
 
 1. [!DNL User] 列のファイル名の横のチェックマークを右クリックします。
 1. ファイルの編集方法に応じて、以下のメニューオプションのいずれかをクリックします。
 
-   * **[!UICONTROL Open]** /をク **[!UICONTROL in workstation]** リックします。/をク [!DNL .vw] リックすると、フ [!DNL .cfg] ァイルまたはファイルが編集されます。
+   * **[!UICONTROL Open]** / **[!UICONTROL in workstation]**  [!DNL .vw]  [!DNL .cfg] をクリックします。
 
-   * **開く** /**in vw。 エディタ**.vwファイルを編集して新しいパラメータを追加する場合。
+   * **vwで** > **を開きます。エディタ**.vwファイルを編集して新しいパラメータを追加する場合。
 
-   * **[!UICONTROL Open]** /をクリ **[!UICONTROL In Notepad]**[!DNL .cfg] ックします。
+   * **[!UICONTROL Open]** >をクリックし **[!UICONTROL In Notepad]**  [!DNL .cfg] ます。
 
-   * **[!UICONTROL Open]** >ファ **[!UICONTROL folder]** イルが存在するコンピュータ上のフォルダを開く場合
+   * **[!UICONTROL Open]** >ファイル **[!UICONTROL folder]** が存在するコンピューター上のフォルダーを開く場合
 
 1. 必要に応じてファイルを編集し、保存します。
 
-In the [!DNL Profile Manager], note that the check mark in the [!DNL User] column for the file you edited has changed color. これは、ローカルファイルが *profile name* フォルダー内のバージョンと異なることを示します。必要に応じて、このプロファイルを使用している他のユーザーが使用できるよう、変更したバージョンのファイルをプロファイルに公開できます。
+[!DNL Profile Manager]では、編集したファイルの[!DNL User]列のチェックマークの色が変わっていることに注意してください。 これは、ローカルファイルが *profile name* フォルダー内のバージョンと異なることを示します。必要に応じて、このプロファイルを使用している他のユーザーが使用できるよう、変更したバージョンのファイルをプロファイルに公開できます。
