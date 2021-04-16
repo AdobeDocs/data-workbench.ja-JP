@@ -1,16 +1,17 @@
 ---
 description: 指標、ディメンション、フィルターの式では、識別子を使用して名前付きの指標、ディメンション、フィルターを参照できます。
-solution: Analytics
 title: 識別子の構文
-topic: Data workbench
 uuid: 9cfa188a-05ca-4163-a268-e33fce9a1929
+exl-id: 79bc5585-7b21-4a9d-b044-28ff4bc5a885
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 100%
 
 ---
 
-
-# Syntax for identifiers{#syntax-for-identifiers}
+# 識別子の構文{#syntax-for-identifiers}
 
 指標、ディメンション、フィルターの式では、識別子を使用して名前付きの指標、ディメンション、フィルターを参照できます。
 
