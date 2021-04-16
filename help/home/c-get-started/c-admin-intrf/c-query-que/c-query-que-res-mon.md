@@ -1,16 +1,17 @@
 ---
 description: リソースモニターベクトルには、Memory Budget Monitor と Number of Queries Monitor が含まれます。
-solution: Analytics
-title: クエリーキューのリソースモニター
-topic: Data workbench
+title: クエリキューのリソースモニター
 uuid: 6b516bed-7f9a-4821-869e-19e720f20313
+exl-id: 6d445a4d-a415-41ce-9d45-1bdd0e726edd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 100%
 
 ---
 
-
-# クエリーキューのリソースモニター{#query-queue-resource-monitors}
+# クエリキューのリソースモニター{#query-queue-resource-monitors}
 
 リソースモニターベクトルには、Memory Budget Monitor と Number of Queries Monitor が含まれます。
 
@@ -37,12 +38,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>Low Threshold </p> </td> 
-   <td colname="col2"> <p>double </p> </td> 
+   <td colname="col2"> <p>重複 </p> </td> 
    <td colname="col3"> <p>メモリ使用量の低しきい値（バイト単位）。<span class="wintitle">Memory Budget Monitor</span> の値がこの値を下回る場合、新しいバンチのスケジュールおよびスケジュール済みバンチの増大が許可されます。例えば、ユーザーがワークスペースにビジュアライゼーションを追加すると、バンチが増大します。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Reaction Time </p> </td> 
-   <td colname="col2"> <p>double </p> </td> 
+   <td colname="col2"> <p>重複 </p> </td> 
    <td colname="col3"> <p>メモリ使用量予測のスムージングに使用される時間定数。スムージング値によって、使用量の急増への反応を回避します。 </p> </td> 
   </tr> 
   <tr> 
@@ -51,15 +52,14 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col3"> <p>プロファイルに対して現在スケジュールされているクエリーの合計数をモニタリングします。このリソースモニターを使用すると、クエリーの合計数が「Low Threshold」フィールドの値を下回っている場合に、バンチをスケジュールできます。このモニターは、クエリーの合計数が「High Threshold」フィールドの値を下回っている場合に、現在スケジュールされているバンチの増大を許可します。さらに、優先順位がより高いバンチのスケジュールまたは増大を許可するために、優先順位が低いバンチを削除します。ただし、この設定は、「Untouchable Priority」フィールドで指定された値より高い優先順位を持つバンチを妨げません。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>High Threshold </p> </td> 
+   <td colname="col1"> <p>高しきい値 </p> </td> 
    <td colname="col2"> </td> 
    <td colname="col3"> <p>メモリ使用量の高しきい値（バイト単位）。メモリ使用量がこの値を上回る場合、スケジューリングは行われません。また、メモリ使用量がこの値を下回るまで、しばらくの間、最も優先順位が低いスケジュール済みバンチのスケジュールが一度に 1 つずつ取り消されます。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Low Threshold </p> </td> 
+   <td colname="col1"> <p>低しきい値 </p> </td> 
    <td colname="col2"> </td> 
    <td colname="col3"> <p>メモリ使用量の低しきい値（バイト単位）。<span class="wintitle">Memory Budget Monitor</span> の値がこの値を下回る場合、新しいバンチをスケジュールすることができます。スケジュール済みバンチは増大可能です。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
