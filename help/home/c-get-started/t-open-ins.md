@@ -1,22 +1,23 @@
 ---
-description: Data Workbenchがインストールされ、サーバーに接続されたら、それを使用して処理済みのデータを分析できます。
-solution: Analytics
+description: Data Workbenchをインストールし、サーバーに接続したら、それを使用して処理済みデータを分析できます。
 title: Data Workbench の起動
-topic: Data workbench
 uuid: d1da143d-6302-4467-a989-842b54b87c2e
+exl-id: 898c9dc7-969c-4e62-be6b-1d2e0086b1d6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 4%
 
 ---
 
-
 # Data Workbench の起動{#opening-data-workbench}
 
-Data Workbenchがインストールされ、サーバーに接続されたら、それを使用して処理済みのデータを分析できます。
+Data Workbenchをインストールし、サーバーに接続したら、それを使用して処理済みデータを分析できます。
 
 1. Data Workbenchのインストールディレクトリに移動します。
-1. Double-click [!DNL insight.exe] to start the application.
-1. クリック **[!UICONTROL Login]**.
+1. [!DNL insight.exe]を重複クリックして開始します。
+1. 「**[!UICONTROL Login]**」をクリックします。
 
    ![](assets/dwb_login.png)
 
@@ -24,19 +25,18 @@ Data Workbenchがインストールされ、サーバーに接続されたら、
 
    ![](assets/dwb_signin.png)
 
-   The first time you start, the system displays the [!DNL Start] page and begins downloading profile data and the data cache.
+   初めて開始すると、[!DNL Start]ページが表示され、プロファイルデータとデータキャッシュのダウンロードが開始されます。
 
-1. After the data cache begins to fill, click **[!UICONTROL Start]**.
+1. データキャッシュの記入が開始されたら、「**[!UICONTROL Start]**」をクリックします。
 
-   The system displays the [!DNL Worktop].
+   [!DNL Worktop]が表示されます。
 
    ![](assets/wtp_open.png)
 
-   The next time you start Data Workbench, the system skips the [!DNL Start] page and displays the [!DNL Worktop], unless a new profile has been added to the server.
+   次回開始Data Workbenchを行う際、新しいプロファイルがサーバーに追加されていない限り、[!DNL Start]ページはスキップされ、[!DNL Worktop]が表示されます。
 
-   プロファイルとそのデータの更新は、オンラインで作業し、Data Workbenchサーバーにネットワーク接続している場合にのみダウンロードされます。 オンラインでの作業について詳しくは、「オフラインおよびオ [ンラインでの作業」を参照してくださ](../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54)い。
+   プロファイルとそのデータに対する更新は、オンラインで作業していて、Data Workbenchサーバーにネットワーク接続している場合にのみダウンロードされます。 オンラインでの作業について詳しくは、[オフラインでの作業とオンラインでの作業](../../home/c-get-started/c-off-on.md#concept-cef8758ede044b18b3558376c5eb9f54)を参照してください。
 
    >[!NOTE]
    >
-   >複数のユーザーが1台のマシンを共有してワークステーションを使用する場合は、お勧めしません。
-
+   >複数のユーザーがワークステーションを使用するために1台のマシンを共有することはお勧めしません。
