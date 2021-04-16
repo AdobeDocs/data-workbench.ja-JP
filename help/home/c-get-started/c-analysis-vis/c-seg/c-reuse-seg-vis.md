@@ -1,29 +1,29 @@
 ---
 description: 同じセグメント情報を再利用する場合は、セグメントのビジュアライゼーション、セグメントのビジュアライゼーションを含むワークスペースまたはセグメント自体をディメンションとして保存できます。
-solution: Analytics
 title: セグメントのビジュアライゼーションの再利用
-topic: Data workbench
 uuid: 70161c0a-2bd9-4a60-842c-a3f36fbfb7ee
+exl-id: 238c4947-3cd3-4a6b-9663-3576f5c07eff
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '194'
+ht-degree: 43%
 
 ---
 
-
-# Reusing a segment visualization{#reusing-a-segment-visualization}
+# セグメントのビジュアライゼーションの再利用{#reusing-a-segment-visualization}
 
 同じセグメント情報を再利用する場合は、セグメントのビジュアライゼーション、セグメントのビジュアライゼーションを含むワークスペースまたはセグメント自体をディメンションとして保存できます。
 
-If you would like all users of a profile to use the segments and dimensions that you create or modify, a user with the appropriate permissions must upload them to the appropriate profile using the [!DNL Profile Manager]. See [Publishing Files to Your Working Profile](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9).
+作成または変更したセグメントとディメンションを、プロファイルのすべてのユーザーが使用できるようにする場合は、適切な権限を持つユーザーが、[!DNL Profile Manager]を使用して適切なプロファイルにアップロードする必要があります。 [作業プロファイルへのファイルの公開](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9)を参照してください。
 
 **他のワークスペースで使用できるようにセグメントのビジュアライゼーションを保存するには**
 
-1. Right-click the top border of the segment visualization and click **[!UICONTROL Save]**. The [!DNL Save] window appears. デフォルトの保存場所は、User\*profile name*\Workフォルダーです。
-1. In the [!DNL File name] field, type a more descriptive name for the visualization and click **[!UICONTROL Save]**.
+1. セグメントビジュアライゼーションの上の枠を右クリックし、「**[!UICONTROL Save]**」をクリックします。 [!DNL Save]ウィンドウが表示されます。 デフォルトの保存場所は、User\*プロファイル名*\Workフォルダーです。
+1. 「[!DNL File name]」フィールドに、ビジュアライゼーションを説明する名前を入力し、「**[!UICONTROL Save]**」をクリックします。
 
 **保存されているセグメントのビジュアライゼーションを読み出すには**
 
-1. ワークスペース内で右クリックし、/をクリッ **[!UICONTROL Open]** クしま **[!UICONTROL File]**&#x200B;す。 The [!DNL Open Visualization] window appears.
-1. User\*profile name*\Workフォルダーに保存したセグメントのビジュアライゼーションに移動します。
-1. Select the segment visualization file ( [!DNL *.vw]) and click **[!UICONTROL Open]**.
-
+1. ワークスペース内で右クリックし、**[!UICONTROL Open]**/**[!UICONTROL File]**&#x200B;をクリックします。 [!DNL Open Visualization]ウィンドウが表示されます。
+1. User\*プロファイル名*\Workフォルダーに保存したセグメントのビジュアライゼーションに移動します。
+1. セグメントのビジュアライゼーションファイル([!DNL *.vw])を選択し、「**[!UICONTROL Open]**」をクリックします。
