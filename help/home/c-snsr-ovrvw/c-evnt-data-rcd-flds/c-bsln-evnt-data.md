@@ -1,16 +1,15 @@
 ---
 description: Sensorで記録される基準イベントデータレコードフィールドに関する情報です。
-solution: Analytics
 title: ベースラインイベントデータレコードフィールド
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
+exl-id: ad3d8806-863a-4871-a35b-6680163f00ac
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 72%
 
 ---
-
 
 # ベースラインイベントデータレコードフィールド{#baseline-event-data-record-fields}
 
@@ -78,9 +77,9 @@ Sensorで記録される基準イベントデータレコードフィールド�
   </tr> 
   <tr> 
    <td colname="col1"> x-trackingid </td> 
-   <td colname="col2"> <p>持続 Cookie に検出されたブラウザーの一意識別子を表す 64 ビットの 16 進数値。<span class="wintitle">Sensor</span> によって設定され、サーバーへのリクエストとともにクライアントから提供されます。 </p> <p>例：42FDF66DE610CF36 </p> </td> 
+   <td colname="col2"> <p>持続 Cookie に検出されたブラウザーの一意の ID を表す 64 ビットの 16 進数値。<span class="wintitle">Sensor</span> によって設定され、サーバーへのリクエストとともにクライアントから提供されます。 </p> <p>例：42FDF66DE610CF36 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-は、ベースラインイベントデータレコードフィールドから多数の変数を取得で [!DNL data workbench server] きます。 詳しくは、『 *データセット設定ガイド*』を参照してください。
+[!DNL data workbench server]は、ベースラインイベントのデータレコードフィールドから多数の変数を取得できます。 詳しくは、『*データセット設定ガイド*』を参照してください。
