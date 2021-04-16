@@ -1,16 +1,17 @@
 ---
 description: 使用可能なウィンドウのタイプは、使用しているプロファイルとアプリケーションによって異なります。
-solution: Analytics
 title: ワークスペース内のウィンドウの操作
-topic: Data workbench
 uuid: a7f9b132-999a-4ba8-9e34-1d41075f9e13
+exl-id: 0bedc792-c05b-4f7c-ac1e-f2d5c66e440d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '201'
+ht-degree: 83%
 
 ---
 
-
-# Manipulate windows in a workspace{#manipulate-windows-in-a-workspace}
+# ワークスペース内のウィンドウの操作{#manipulate-windows-in-a-workspace}
 
 使用可能なウィンドウのタイプは、使用しているプロファイルとアプリケーションによって異なります。
 
@@ -35,11 +36,10 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 ワークスペース内およびワークスペース間でウィンドウをコピーして貼り付けられます。
 
-1. Right-click the top border of the window and click **[!UICONTROL Copy]** > **[!UICONTROL Window]**.
-1. 目的のワークスペースで、/をクリ **[!UICONTROL Open]** ックしま **[!UICONTROL From Clipboard]**&#x200B;す。
+1. ウィンドウの上の枠を右クリックし、**[!UICONTROL Copy]**/**[!UICONTROL Window]**&#x200B;をクリックします。
+1. 目的のワークスペースで、**[!UICONTROL Open]**/**[!UICONTROL From Clipboard]**&#x200B;をクリックします。
 
 **ビジュアライゼーションの引き出し線としてウィンドウをコピーして貼り付けるには**
 
-1. Right-click the top border of the window and click **[!UICONTROL Copy]** > **[!UICONTROL Window]**.
-1. 目的のビジュアライゼーションで、目的の要素を右クリックし、/をク **[!UICONTROL Add Callout]** リックしま **[!UICONTROL From Clipboard]**&#x200B;す。
-
+1. ウィンドウの上の枠を右クリックし、**[!UICONTROL Copy]**/**[!UICONTROL Window]**&#x200B;をクリックします。
+1. 目的のビジュアライゼーション内で、目的の要素を右クリックし、**[!UICONTROL Add Callout]**/**[!UICONTROL From Clipboard]**&#x200B;をクリックします。
