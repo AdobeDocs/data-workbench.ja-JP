@@ -1,16 +1,17 @@
 ---
 description: 出力形式の指定に関するガイドラインです。
-solution: Analytics
 title: 出力形式
-topic: Data workbench
 uuid: 12086f14-bad1-4d27-82fb-533e877d0a04
+exl-id: e695eaf4-ebe5-4dd1-8191-8045021d6411
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 63%
 
 ---
 
-
-# Output format{#output-format}
+# 出力形式{#output-format}
 
 出力形式の指定に関するガイドラインです。
 
@@ -24,8 +25,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->If you hold down the Ctrl key and right-click within the [!DNL Output Format] field, an [!DNL Insert menu] appears. このメニューには、区切り文字としてよく使用される特殊文字（Tab など）の一覧が含まれています。
+>Ctrlキーを押しながら[!DNL Output Format]フィールド内を右クリックすると、[!DNL Insert menu]が表示されます。 このメニューには、区切り文字としてよく使用される特殊文字（Tab など）の一覧が含まれています。
 
-セグメントのセッション時間データをエクスポートする場合は、Session Duration（セッション時間）指標に基づく新しい指標を作成する必要があります。The new metric, which is for use only with the [!DNL Output Format] field of segment export, enables Microsoft Excel to correctly interpret sessions lasting less than one hour. To create a new session duration metric, open the [!DNL Session Duration.metric] file (from the [!DNL Profile Manager]) and insert a pound sign (#) into the ftime string: [!DNL ftime = string: %#H:%M:%S]
+セグメントのセッション時間データをエクスポートする場合は、Session Duration（セッション時間）指標に基づく新しい指標を作成する必要があります。新しい指標は、セグメントエクスポートの[!DNL Output Format]フィールドでのみ使用され、Microsoft Excelが1時間未満のセッションを正しく解釈できるようにします。 新しいセッション期間指標を作成するには、[!DNL Profile Manager]から[!DNL Session Duration.metric]ファイルを開き、ポンド記号(#)をftime文字列に挿入します。[!DNL ftime = string: %#H:%M:%S]
 
-ポンド記号を挿入することにより、1 時間未満のセッション時間の前に &quot;0&quot; が付加されます。その結果、Excel は 0:53:21 を 53 分 21 秒と解釈します。Save the new metric with a different name and upload it to the appropriate profile for others to use by right-clicking the check mark for the file in the [!DNL User] column and clicking **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.
+ポンド記号を挿入することにより、1 時間未満のセッション時間の前に &quot;0&quot; が付加されます。その結果、Excel は 0:53:21 を 53 分 21 秒と解釈します。新しい指標を別の名前で保存し、適切なプロファイルにアップロードして、他のユーザーが使用できるようにします。そのためには、[!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL profile name]***&#x200B;をクリックします。
