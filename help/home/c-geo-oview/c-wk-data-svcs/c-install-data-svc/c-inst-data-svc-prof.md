@@ -1,73 +1,73 @@
 ---
-description: データサービスプロファイル（IP Geo-IntelligenceおよびIP Geo-Location）は、アドビのアプリケーションに追加機能を提供する内部プロファイルです。
-solution: Analytics
-title: Data Service Profileのインストール
-topic: Data workbench
+description: データサービスプロファイル（IP Geo-IntelligenceおよびIP Geo-Location）は、Adobeアプリケーションに追加機能を提供する内部プロファイルです。
+title: データサービスプロファイルのインストール
 uuid: 1c03d0cd-7eaa-4e48-bbff-8bfad8fed9e9
+exl-id: 51d080bb-f874-426c-91ea-3912ffd38419
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '746'
+ht-degree: 5%
 
 ---
 
+# データサービスプロファイルのインストール{#installing-the-data-service-profile}
 
-# Data Service Profileのインストール{#installing-the-data-service-profile}
+データサービスプロファイル（IP Geo-IntelligenceおよびIP Geo-Location）は、Adobeアプリケーションに追加機能を提供する内部プロファイルです。
 
-データサービスプロファイル（IP Geo-IntelligenceおよびIP Geo-Location）は、アドビのアプリケーションに追加機能を提供する内部プロファイルです。
+Adobeが提供する他のすべての内部プロファイルと同様に、これらのプロファイルは変更しないでください。 すべてのカスタマイズは、お客様のデータセットまたはお客様が作成する役割に特有のプロファイルまたはその他のプロファイルで行う必要があります。
 
-アドビが提供する他のすべての内部プロファイルと同様に、これらのプロファイルは変更しないでください。 すべてのカスタマイズは、お客様のデータセットまたはお客様が作成する役割に特有のプロファイルまたはその他のプロファイルで行う必要があります。
+Data Serviceプロファイルーには、Data Workbenchサーバーにインストールされる次のデータセットインクルードファイルが含まれます。
 
-データサービスプロファイルには、Data Workbenchサーバーにインストールされる次のデータセットインクルードファイルが含まれます。
+* **プロファイル\*プロファイル名&#x200B;*\Dataset\Log Processing\Traffic\IP.cfg:**は、ログ処理から変換に渡すc-ipフィールドをリストします。
+* **プロファイル\*プロファイル名&#x200B;*\Dataset\Transformation\Geography\IPLookup.cfg:**提供されたIP Geo-IntelligenceまたはIP Geo-locationルックアップファイルを使用して、複数のフィールドの地理データを生成するIPLookup変換を定義します。
 
-* **Profiles\*profile name *\Dataset\Log Processing\Traffic\IP.cfg:**ログ処理から変換に渡すc-ipフィールドを表示します。
-* **Profiles\*profile name *\Dataset\Transformation\Geography\IPLookup.cfg:**提供されたIP Geo-IntelligenceまたはIP Geo-locationルックアップファイルを使用して、複数の地理データフィールドを生成するIPLookup変換を定義します。
+変換データセットインクルードファイルについて詳しくは、『*データセット設定ガイド*』を参照してください。
 
-For information about transformation dataset include files, see the *Dataset Configuration Guide*.
+また、各データサービスプロファイルは、[!DNL IP Coordinates.layer]という名前の要素ポイントレイヤーファイルを提供します。 このレイヤーファイルを使用すると、IPアドレスを使用してグローブ上のデータセット内の場所を動的にマッピングできます。 インストール後、レイヤーは、data workbenchサーバーのインストールディレクトリ内のプロファイルー\*data service name*\Mapsフォルダーに保存されます。
 
-さらに、各データサービスプロファイルには、という名前の要素ポイントレイヤーファイルが用意されていま [!DNL IP Coordinates.layer]す。 このレイヤーファイルを使用すると、IPアドレスを使用して、グローブ上のデータセット内の場所を動的にマッピングできます。 インストール後、レイヤーはData Workbenchサーバーのインストールディレクトリ内のProfiles\*data service name*\Mapsフォルダーに保存されます。
-
-このフ [!DNL IP Coordinates.layer] ァイルは、座標ディメンションを参照します。座標ディメンションは、プロフ [!DNL Coordinates.cfg] ァイルと共に提供され、 [!DNL Geography] Dataset\Transformation\Geography folderフォルダーに格納されているファイルで定義されます。 データセットに定義された座標ディメンションの各要素は、その要素に含まれる緯度と経度の情報を使用してグローブ上にマッピングされます。 動的ポイントを使用する要素ポイントレイヤーの詳細については、「動的ポイントを使用した要 [素ポイントレイヤーの定義」を参照してください](../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyr-file-frmt/c-dyn-pts.md#concept-77ae65bedc3f465489bc135ae7e3c2f3)。
+[!DNL IP Coordinates.layer]ファイルは、座標寸法を参照します。座標寸法は、[!DNL Geography]プロファイルで提供される[!DNL Coordinates.cfg]ファイルで定義され、Dataset\Transformation\Geography folderディレクトリにあります。 データセットに定義されている座標ディメンションの各要素は、その要素に含まれている緯度と経度の情報を使用してグローブ上にマッピングされます。 動的ポイントを使用する要素ポイントレイヤーについて詳しくは、[動的ポイントを使用した要素ポイントレイヤーの定義](../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyr-file-frmt/c-dyn-pts.md#concept-77ae65bedc3f465489bc135ae7e3c2f3)を参照してください。
 
 >[!NOTE]
 >
->バージョン5.1より前のIP Geo-IntelligenceおよびIP Geo-Locationデータサービスをインストールした場合、要素ポイントレイヤーファイルは、動的ポイントを使用する代わりに参照ファイルを参照します。 各レイヤーファイルは、IP GeocodeルックアップファイルとIP Geocodeディメンションを参照します。 IP Geocodes参照ファイルには、IP Geocode（IPアドレスに基づく地理的な場所）と、各地域の緯度と経度のリストが含まれています。 データセットに定義されたIP Geocodeディメンションの各要素は、IP GeocodesルックアップファイルでそのIP Geocodeに対してリストされている緯度と経度を使用して、グローブ上にマッピングされます。
+>バージョン5.1より前のIP Geo-IntelligenceおよびIP Geo-Locationデータサービスをインストールした場合、要素ポイントレイヤーファイルは、動的ポイントを使用する代わりに、参照ファイルを参照します。 各レイヤーファイルは、IP GeocodeルックアップファイルとIP Geocodeディメンションを参照します。 IP Geocodesルックアップファイルには、IP Geocode（IPアドレスに基づく地理的な場所）のリストと、それぞれの緯度と経度が含まれています。 データセットに定義されているIP Geocodeディメンションの各要素は、IP Geocodeルックアップファイルに指定されているそのIP Geocodeの緯度と経度を使用して、グローブ上にマッピングされます。
 
 レイヤーファイルの名前と参照するファイルは、データサービスによって異なります。
 
-* このフ [!DNL IP Geocodes D.layer] ァイルは、IP Geo-Intelligence(Digital Envoy)プロファイルと共にインストールされます。 この要素ポイントレイヤーは、(定 [!DNL IP Geocodes D yyyymmdd.txt] 期的に更新する必要のある)参照ファイルとIP Geocode Dディメンションを参照します。
+* [!DNL IP Geocodes D.layer]ファイルは、IP Geo-Intelligence(Digital Envoy)プロファイルと共にインストールされます。 この要素ポイントレイヤーは、（定期的に更新する必要のある）[!DNL IP Geocodes D yyyymmdd.txt]ルックアップファイルとIP Geocode Dディメンションを参照します。
 
-* このフ [!DNL IP Geocodes Q.layer] ァイルは、IP Geo-location(Quova)プロファイルと共にインストールされます。 この要素ポイントレイヤーは、(定 [!DNL IP Geocodes Q yyyymmdd.txt] 期的に更新する必要のある)参照ファイルとIP Geocode Qディメンションを参照します。
+* [!DNL IP Geocodes Q.layer]ファイルは、IP Geo-Location(Quova)プロファイルと共にインストールされます。 この要素ポイントレイヤーは、（定期的に更新する必要のある）[!DNL IP Geocodes Q yyyymmdd.txt]ルックアップファイルとIP Geocode Qディメンションを参照します。
 
-参照ファイルを使用する要素ポイントレイヤーの詳細については、「要素ポイントレイヤーの定義」「参 [照ファイルの参照」を参照してくださ](../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyrs-ref-lkp-files.md#concept-c40bd0890a984112bce831b596827f0f)い。
+参照ファイルを使用する要素ポイントレイヤーの詳細については、「[参照ファイルを参照する要素ポイントレイヤーの定義](../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyrs-ref-lkp-files.md#concept-c40bd0890a984112bce831b596827f0f)」を参照してください。
 
-## IP Geo-IntelligenceまたはIP Geo-Locationプロファイルをインストールするには {#section-6dff402ffdcb4b31b9bcd0c40a5f7625}
+## IP Geo-IntelligenceまたはIP Geo-Locationプロファイル{#section-6dff402ffdcb4b31b9bcd0c40a5f7625}をインストールするには
 
 >[!NOTE]
 >
->次のインストール手順は、Data Workbenchをインストールし、Data WorkbenchをインストールするData Workbenchサーバーとの接続を確立したことを前提としていま [!DNL Geography]す。 まだ実行していない場合は、『 *Data Workbenchユーザーガイド』を参照してください*。
+>以下のインストール手順は、data workbenchをインストールし、data workbench [!DNL Geography]をインストールするdata workbenchサーバーとdata workbenchサーバーとの接続を確立したことを前提としています。 まだ実行していない場合は、『*Data Workbenchユーザーガイド*』を参照してください。
 
-1. アドビから受け取ったファイル [!DNL .zip] のProfilesフォルダーを開きます。
-1. IP Geo-IntelligenceまたはIP Geo-Locationフォルダーを、Data Workbenchサーバーのインストールディレクトリ内のProfilesフォルダーにコピーします。 最後に…\Profiles\IP Geo-intelligence folder or a ...\Profiles\IP Geo-location on your data workbench server as shown in the following example. フォルダ内の他のフォルダの名前は、表示さ [!DNL Profiles] れているものと異なる場合があります。
+1. Adobeから受け取った[!DNL .zip]ファイルのプロファイルフォルダーを開きます。
+1. IP Geo-IntelligenceフォルダーまたはIP Geo-locationフォルダーを、Data Workbenchサーバーのインストールディレクトリ内のプロファイルフォルダーにコピーします。 最後に…\Profiles\IP Geo-intelligence folder or a ...\Profiles\IP Geo-location on your data workbench server as shown in the following example [!DNL Profiles]フォルダー内の他のフォルダーの名前は、表示されている名前と異なる場合があります。
 
    ![](assets/Geo_installProfiles_dirIP.png)
 
-1. またはプロファイルを使用する各 [!DNL profile.cfg] プロファイルのファイルを更新するには、次の手順を [!DNL IP Geo-intelligence] 実行し [!DNL IP Geo-location] ます。
+1. [!DNL IP Geo-intelligence]または[!DNL IP Geo-location]プロファイルを使用する各プロファイルの[!DNL profile.cfg]ファイルを更新するには、次の手順に従います。
 
    1.  **[!UICONTROL Profile Manager]**.
-   1. の横のチェックマークを右クリックし、をク [!DNL profile.cfg] リックしま **[!UICONTROL Make Local]**&#x200B;す。 このファイル用のチェックマークが [!DNL User] 列に表示されます。
+   1. [!DNL profile.cfg]の横のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 このファイル用のチェックマークが [!DNL User] 列に表示されます。
 
-   1. 新しく作成されたチェックマークを右クリックし、/をクリ **[!UICONTROL Open]** ックしま **[!UICONTROL from the workbench]**&#x200B;す。 The [!DNL profile.cfg] window appears.
+   1. 新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL from the workbench]**&#x200B;をクリックします。 [!DNL profile.cfg]ウィンドウが表示されます。
 
-   1. ウィンドウ [!DNL profile.cfg]で右クリックし、「>」 **[!UICONTROL Directories]** をクリッ **[!UICONTROL Add new]** クしま **[!UICONTROL Directory]**&#x200B;す。
+   1. [!DNL profile.cfg]ウィンドウで&#x200B;**[!UICONTROL Directories]**&#x200B;を右クリックし、**[!UICONTROL Add new]**/**[!UICONTROL Directory]**&#x200B;をクリックします。
 
-      新しいディレクトリをディレクトリのリストの最後に追加するには、リスト内の最後のディレクトリの番号または名前を右クリックし、/をクリッ **[!UICONTROL Add new]** クしま **[!UICONTROL Directory]**&#x200B;す。
+      新しいディレクトリをディレクトリのリストの最後に追加するには、リスト内の最後のディレクトリの番号または名前を右クリックし、**[!UICONTROL Add new]**/**[!UICONTROL Directory]**&#x200B;をクリックします。
 
-   1. 新しいディレクトリの名前を入力します。あ [!DNL IP Geo-intelligence] るいは [!DNL P Geo-location]私
+   1. 新しいディレクトリの名前を入力します。[!DNL IP Geo-intelligence]またはI [!DNL P Geo-location]。
 
-   1. ウィンドウ上部 **[!UICONTROL (modified)]** のを右クリックし、をクリックしま **[!UICONTROL Save]**&#x200B;す。
+   1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
 
-   1. で、列 [!DNL Profile Manager]のチェックマークを右クリ [!DNL profile.cfg] ックし [!DNL User] 、/ **[!UICONTROL Save to]** &lt; *>をクリック&#x200B;**[!UICONTROL profile name]**します*。
+   1. [!DNL Profile Manager]で、[!DNL User]列の[!DNL profile.cfg]のチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL profile name]**>*&#x200B;をクリックします。
 
 >[!NOTE]
 >
->Do not save the modified configuration file to any of the internal profiles provided by Adobe (including the [!DNL IP Geo-location] or [!DNL IP Geo-intelligence] profile), as your changes are overwritten when you install updates to these profiles.
-
+>変更した設定ファイルは、Adobeが提供する内部プロファイル([!DNL IP Geo-location]や[!DNL IP Geo-intelligence]プロファイルを含む)には一切保存しないでください。これらのプロファイルに対するアップデートをインストールすると変更内容が上書きされます。
