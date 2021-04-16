@@ -1,20 +1,21 @@
 ---
 description: プロセスマップの様々なタイプに関する情報です。
-solution: Analytics
 title: プロセスマップのタイプ
-topic: Data workbench
 uuid: 19473b77-13c1-4829-b018-d3316e434ba4
+exl-id: 8bac7036-c7fe-4566-8e59-08e1ddc7ddb7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '748'
+ht-degree: 95%
 
 ---
 
-
-# Types of process maps{#types-of-process-maps}
+# プロセスマップのタイプ{#types-of-process-maps}
 
 プロセスマップの様々なタイプに関する情報です。
 
-## 2D process maps {#section-ea7fbdb80b1b44aebcd9e4090b6540bf}
+## 2Dプロセスマップ{#section-ea7fbdb80b1b44aebcd9e4090b6540bf}
 
 2 次元のプロセスマップは、ディメンション要素間のアクティビティを 2 次元で表示します。2D プロセスマップのノードのサイズは、そのノードに関連付けられた指標の値に比例します。さらに、2 つのノード間の矢印の太さと濃さは、それらのノードの指標の値の平均に比例します。
 
@@ -34,7 +35,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 この例では、各ノードのサイズおよび各矢印の太さと濃さが、Ratings 指標に比例しています。この Ratings 指標は、映画が受けた評価の総数です。したがって、『*Independence Day*』のようにノードの大きい映画は、『*Event Horizon*』のようにノードの小さい映画よりも評価が高いことを示しています。また、『*Cold Mountain*』の前に『*Independence Day*』を評価した映画視聴者は、同じ映画を逆の順序で評価した人よりも多いことがわかります。なお、矢印は、視聴者が『*Independence Day*』を評価した直後に『*Cold Mountain*』を評価したことを示すわけではありません。逆向きの矢印も同じです。間に他の映画を評価している場合がありますが、そのような映画はこのマップには表示されません。
 
-## 2D metric maps {#section-a9b846fc71224058918fbc378315effe}
+## 2D指標マップ{#section-a9b846fc71224058918fbc378315effe}
 
 2 次元の指標マップは、特定の指標の値に基づいてノードを配置する 2D プロセスマップの一種です。ほとんど場合、2D 指標マップで使用される指標は、コンバージョンまたは定着です。コンバージョンマップと定着マップは、対顧客チャネルのプロセスの中で顧客コンバージョンと定着に影響するステップの理解に役立ちます。
 
@@ -54,7 +55,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 >
 >2D指標マップ上のノードを水平に移動することはできません。 指標マップは、指標の値に基づいて左から右にノードを配置するように設計されています。
 
-## 3D process maps {#section-80acb63ea0994af1af7faef3c6264e51}
+## 3Dプロセスマップ{#section-80acb63ea0994af1af7faef3c6264e51}
 
 3 次元のプロセスマップは、ディメンション要素間のアクティビティを 3 次元で表示します。3D プロセスマップの棒の高さは、そのノードに関連付けられた指標の値に比例します。2D プロセスマップと同様に、2 つのノード間のコネクタの太さと濃さは、それらのノードの指標の値の平均に比例します。3D プロセスマップ内では、次のタスクを実行できます。
 
