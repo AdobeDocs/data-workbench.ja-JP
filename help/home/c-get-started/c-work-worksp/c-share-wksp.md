@@ -1,20 +1,21 @@
 ---
 description: エクスポートワークスペースメニューを使用して、ワークスペースの印刷および .png ファイルまたは Excel へのエクスポートを行えます。
-solution: Analytics
 title: ワークスペースの共有
-topic: Data workbench
 uuid: 6100143a-d602-42d7-b742-987fe5f835d6
+exl-id: c05b0f8f-cd73-4025-825b-32471c8681b8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 74%
 
 ---
-
 
 # ワークスペースの共有{#share-a-workspace}
 
 エクスポートワークスペースメニューを使用して、ワークスペースの印刷および .png ファイルまたは Excel へのエクスポートを行えます。
 
-In a workspace, click **[!UICONTROL Export]**.
+ワークスペースで、**[!UICONTROL Export]**&#x200B;をクリックします。
 
 ![](assets/mnu_export.png)
 
@@ -49,11 +50,11 @@ In a workspace, click **[!UICONTROL Export]**.
   </tr> 
   <tr> 
    <td colname="col1"> Excel </td> 
-   <td colname="col2"> Microsoft ExcelがData Workbenchコンピューターにインストールされている場合、はMicrosoft Excelを自動的に起動し、特定のビジュアライゼーション、特定の凡例およびテキスト注釈のデータを新しいExcelファイル（.xlsまたは.xlsx）にエクスポートします。 詳しくは、「<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb">ワークスペースデータを Microsoft Excel にエクスポートする</a>」を参照してください。 </td> 
+   <td colname="col2"> Microsoft ExcelがData Workbenchマシンにインストールされている場合、はMicrosoft Excelを自動的に開始し、特定のビジュアライゼーション、特定の凡例およびテキスト注釈のデータを新しいExcelファイル（.xlsまたは.xlsx）にエクスポートします。 詳しくは、「<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb">ワークスペースデータを Microsoft Excel にエクスポートする</a>」を参照してください。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> テンプレートから（Excel への）エクスポート </td> 
-   <td colname="col2"> If Microsoft Excel is installed on the Data Workbench machine, automatically starts Microsoft Excel and exports the data from certain visualizations, certain legends, and text annotations to the template Excel file (<span class="filepath"> .xls</span> or <span class="filepath"> .xlsx</span>) that you select. 詳しくは、「<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302">テンプレート Excel ファイルにエクスポートする</a>」を参照してください。 </td> 
+   <td colname="col2"> Microsoft ExcelがData Workbenchマシンにインストールされている場合は、Microsoft Excelを自動的に開始し、特定のビジュアライゼーション、特定の凡例およびテキスト注釈のデータを、選択したテンプレートExcelファイル（<span class="filepath"> .xls</span>または<span class="filepath"> .xlsx</span>）にエクスポートします。 詳しくは、「<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302">テンプレート Excel ファイルにエクスポートする</a>」を参照してください。 </td> 
   </tr> 
  </tbody> 
 </table>
