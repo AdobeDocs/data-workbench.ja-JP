@@ -1,23 +1,24 @@
 ---
 description: ワークトップに表示されるタブの順序を変更する手順です。
-solution: Analytics
 title: タブ順序の変更
-topic: Data workbench
 uuid: 6eebc235-20ba-4c3b-8d94-36c0f80869be
+exl-id: 261a81e1-b34c-4789-ac4e-343c25df2e6f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '135'
+ht-degree: 32%
 
 ---
-
 
 # タブ順序の変更{#change-the-tab-order}
 
 ワークトップに表示されるタブの順序を変更する手順です。
 
-1. In the [!DNL Profile Manager], click **[!UICONTROL Workspaces]** to view its contents.
-1. In the *working profile name* column, right-click the check mark for the [!DNL Workspaces\order.txt] file and click **[!UICONTROL Make Local]** > **[!UICONTROL Yes]**.
-1. Right-click the check mark for the [!DNL Workspaces\order.txt] file in the [!DNL User] column and click **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
-1. Rename, delete, or add tab names exactly as you want them to appear in the [!DNL Worktop]. For example, the following would result in the [!DNL Getting Started] tab appearing first and the [!DNL Acquisition] tab appearing last.
+1. [!DNL Profile Manager]の&#x200B;**[!UICONTROL Workspaces]**&#x200B;をクリックして、内容を表示します。
+1. *作業プロファイル名*&#x200B;列で、[!DNL Workspaces\order.txt]ファイルのチェックマークを右クリックし、**[!UICONTROL Make Local]**/**[!UICONTROL Yes]**&#x200B;をクリックします。
+1. [!DNL User]列の[!DNL Workspaces\order.txt]ファイルのチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Notepad]**&#x200B;をクリックします。
+1. [!DNL Worktop]に表示するとおりに、タブ名の名前を変更、削除、追加します。 例えば、次のように指定すると、[!DNL Getting Started]タブが最初に、[!DNL Acquisition]タブが最後に表示されます。
 
    はじめに
 
@@ -28,4 +29,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    獲得
 
 1. ファイルを保存して閉じます。
-1. (Optional) To make the change available to all users of the working profile, right-click the white check mark for the [!DNL Workspaces\order.txt] file in the [!DNL User] column and click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. （オプション）作業プロファイルのすべてのユーザーが変更を利用できるようにするには、[!DNL User]列の[!DNL Workspaces\order.txt]ファイルの白いチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL working profile name]**>*&#x200B;をクリックします。
