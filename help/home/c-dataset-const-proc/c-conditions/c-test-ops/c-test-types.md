@@ -1,20 +1,21 @@
 ---
 description: Compare 条件と Range 条件では、使用する比較のタイプを指定する必要があります。
-solution: Analytics
 title: テスト演算のタイプ
-topic: Data workbench
 uuid: dc0433dd-a35e-472e-8975-f58347512c11
+exl-id: 8abed46e-e76d-47c0-bbe9-cf98cf2d61e8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 98%
 
 ---
-
 
 # テスト演算のタイプ{#test-types-for-test-operations}
 
 Compare 条件と Range 条件では、使用する比較のタイプを指定する必要があります。
 
-The following table describes the available types ( [!DNL LEXICAL], [!DNL NUMERIC], and [!DNL DATETIME]).
+次の表に、使用可能なタイプ([!DNL LEXICAL]、[!DNL NUMERIC]、[!DNL DATETIME])を示します。
 
 <table id="table_1B3AD8BDF0414D0AB8EE0E6D1B53E2CE"> 
  <thead> 
@@ -46,4 +47,3 @@ The following table describes the available types ( [!DNL LEXICAL], [!DNL NUMERI
   </tr> 
  </tbody> 
 </table>
-
