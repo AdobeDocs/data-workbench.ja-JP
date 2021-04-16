@@ -1,16 +1,17 @@
 ---
 description: データセットコンポーネントに関する概念情報です。
-solution: Analytics
 title: データセットコンポーネント
-topic: Data workbench
 uuid: a5dde039-3b79-4543-9953-995eefc73b5f
+exl-id: 6be625c5-1a2e-4b0d-9c34-5f3baec4ba81
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 57%
 
 ---
 
-
-# Dataset components{#dataset-components}
+# データセットコンポーネント{#dataset-components}
 
 データセットコンポーネントに関する概念情報です。
 
@@ -22,15 +23,15 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    * ログソースのノードは、常にマップの 1 番左側に表示されます。データセットにログソースが 1 つだけある場合、マップには「ログソース：*log source name*」と表示されます。 データセットに複数のログソースがある場合、マップには「*number* ログソース」と表示されます。number はログソースの個数です。例えば、データセットに 3 つのログソースがある場合、マップには「3 ログソース」と表示されます。
 
-   * The map displays one Log Entry Condition node for each [!DNL log processing dataset include] file but only one Log Entry Condition node for transformation (if defined in the [!DNL Transformation.cfg] file). ログエントリ条件が空の場合、マップには表示されません。
+   * マップには、各[!DNL log processing dataset include]ファイルに対して1つのLog Entry Conditionノードが表示されますが、変換に対しては1つのLog Entry Conditionノードのみが表示されます（[!DNL Transformation.cfg]ファイルで定義されている場合）。 ログエントリ条件が空の場合、マップには表示されません。
 
-* A gray node represents a field that is listed in the Fields parameter in a [!DNL Log Processing.cfg] or [!DNL Log Processing include] file.
+* 灰色のノードは、[!DNL Log Processing.cfg]ファイルまたは[!DNL Log Processing include]ファイルのFieldsパラメーターに一覧表示されるフィールドを表します。
 
 * 青のノードは、変換を表します。
 * 緑のノードは、拡張ディメンションを表します。
 
 >[!NOTE]
 >
->If your profile’s Dataset folder contains the file [!DNL Insight Transform.cfg], the dependency map shows the log sources, transformations, and exporters defined for use with Transform. 変換については、『*データセット設定ガイド*』を参照してください。
+>プロファイルーのDatasetフォルダーに[!DNL Insight Transform.cfg]ファイルが格納されている場合、依存関係マップには、Transformで使用するために定義されているログソース、変換、エクスポーターが表示されます。 変換については、『*データセット設定ガイド*』を参照してください。
 
-When you enable the Include [!DNL File Blocks] display option, the map displays a single blue node for all of the transformations defined in one dataset configuration file and a single green node for all of the extended dimensions defined in one dataset configuration file. この表示オプションの詳細については、「ファイルブロックを使 [用する」を参照してくださ](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-wkg-file-blocks.md#concept-3652bbabfbd34449a5f842d8aa598efc)い。
+「[!DNL File Blocks]を含める」表示オプションを有効にすると、1つのデータセット設定ファイルで定義されているすべての変換に対しては青の1つのノード、1つのデータセット設定ファイルで定義されているすべての拡張ディメンションに対しては緑の1つのノードが表示されます。 この表示オプションの詳細については、[ファイルブロックの操作](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-wkg-file-blocks.md#concept-3652bbabfbd34449a5f842d8aa598efc)を参照してください。
