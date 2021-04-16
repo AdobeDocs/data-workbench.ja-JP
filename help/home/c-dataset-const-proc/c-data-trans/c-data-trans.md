@@ -1,11 +1,12 @@
 ---
 description: データ変換の概要です。利用可能な各種の変換とその使用方法について説明します。
-solution: Analytics
 title: データ変換
-topic: Data workbench
 uuid: a3b348e1-640f-45d1-b446-0036544bf2ee
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '40'
+ht-degree: 100%
 
 ---
 
