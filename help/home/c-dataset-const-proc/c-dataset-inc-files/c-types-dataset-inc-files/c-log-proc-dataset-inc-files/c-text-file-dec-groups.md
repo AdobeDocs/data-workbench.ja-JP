@@ -1,14 +1,15 @@
 ---
 description: ログファイルをログソースとして処理するためには、ログエントリからデータフィールドを抽出するデコーダーをログ処理データセットインクルードファイル内で定義する必要があります。
-solution: Analytics
 title: テキストファイルデコーダーグループ
-topic: Data workbench
 uuid: 3ff9700b-4f34-4098-8827-6856897bdb28
+exl-id: e9f6e02e-7150-455f-96f0-f34d98cc31b7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '833'
+ht-degree: 68%
 
 ---
-
 
 # テキストファイルデコーダーグループ{#text-file-decoder-groups}
 
@@ -29,27 +30,27 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **テキストファイルデコーダーグループに正規表現デコーダーを追加するには**
 
-1. 「既存のデータセ [!DNL Log Processing Dataset Include] ットインクルードフ [ァイルの編集」の説明に従ってファイルを開き](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md#task-456c04e38ebc425fb35677a6bb6aa077) 、テキストファイルデコーダーグループを追加します。 表のエントリ [Decoder Groupsを参照してください](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-log-proc-dataset-inc-files.md#concept-999475a22519432e98844622ca95b6ab)。
+1. [既存のデータセットインクルードファイルの編集](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md#task-456c04e38ebc425fb35677a6bb6aa077)の説明に従って[!DNL Log Processing Dataset Include]ファイルを開き、テキストファイルデコーダーグループを追加します。 表のエントリ[デコーダーグループ](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-log-proc-dataset-inc-files.md#concept-999475a22519432e98844622ca95b6ab)を参照してください。
 
-1. Right click **[!UICONTROL Decoders]** under the newly created decoder group, then click **[!UICONTROL Add new]** > **[!UICONTROL Regular Expression]**.
+1. 新しく作成したデコーダーグループの&#x200B;**[!UICONTROL Decoders]**&#x200B;を右クリックし、**[!UICONTROL Add new]**/**[!UICONTROL Regular Expression]**&#x200B;をクリックします。
 
 1. 次の情報を指定します。
 
-   * **Fields：**&#x200B;ログファイル内のフィールドの一覧。If any of the fields defined here are to be passed to the transformation phase of dataset construction, those fields must be listed in the Fields parameter of one of the [!DNL Log Processing Dataset Include] files for the dataset. カスタムフィールドの名前は、先頭に「x-」を付ける必要があります。
+   * **Fields：**&#x200B;ログファイル内のフィールドの一覧。ここで定義したフィールドのいずれかをデータセット構築の変換段階に渡す場合は、それらのフィールドをデータセットの[!DNL Log Processing Dataset Include]ファイルの1つのFieldsパラメーターに指定する必要があります。 カスタムフィールドの名前は、先頭に「x-」を付ける必要があります。
 
    * **Name：**（省略可）デコーダーの識別子。
    * **Regular Expression：**&#x200B;ファイル内の各行から必要なフィールドを抽出するために使用します。
 
 1. グループに追加する他のデコーダーについても手順 4 と手順 5 を繰り返します。
-1. To save the [!DNL Log Processing Dataset Include] file, right-click **[!UICONTROL (modified)]** at the top of the window and click **[!UICONTROL Save]**.
+1. [!DNL Log Processing Dataset Include]ファイルを保存するには、ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
 
-1. To make the locally made changes take effect, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column. Click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, where profile name is the name of the dataset profile or the inherited profile to which the dataset include file belongs.
+1. ローカルで行った変更を有効にするには、[!DNL Profile Manager]で[!DNL User]列のファイルのチェックマークを右クリックします。 **[!UICONTROL Save to]**/*&lt;**[!UICONTROL profile name]**>*&#x200B;をクリックします。プロファイル名は、データセットインクルードファイルが属するデータセットプロファイルまたは継承プロファイルの名前です。
 
 アドビから提供される内部プロファイルには、変更した設定ファイルを一切保存しないでください。内部プロファイルに対するアップデートをインストールするときに変更内容が上書きされます。
 
 >[!NOTE]
 >
->1つのログファイルに複数の正規表現デコーダーを含めることができます。 この場合、デコーダーを定義する順序が重要となります。ログファイル内の行と一致する最初のデコーダーが、その行のデコードに使用されます。
+>1つのログファイルに、複数の正規式デコーダーを含めることができます。 この場合、デコーダーを定義する順序が重要となります。ログファイル内の行と一致する最初のデコーダーが、その行のデコードに使用されます。
 
 以下に示したのは、正規表現デコーダーを使用して、タブ区切りのテキストファイルから一連のフィールドデータを抽出する例です。同じ結果は、タブ区切り文字デコーダーを定義することによっても得られます。
 
@@ -63,20 +64,20 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **テキストファイルデコーダーグループに区切り文字デコーダーを追加するには**
 
-1. 「既存のデータセ [!DNL Log Processing Dataset Include] ットインクルードフ [ァイルの編集」の説明に従ってファイルを開き](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md#task-456c04e38ebc425fb35677a6bb6aa077) 、テキストファイルデコーダーグループを追加します。 表のエントリ [Decoder Groupsを参照してください](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-log-proc-dataset-inc-files.md#concept-999475a22519432e98844622ca95b6ab)。
+1. [既存のデータセットインクルードファイルの編集](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md#task-456c04e38ebc425fb35677a6bb6aa077)の説明に従って[!DNL Log Processing Dataset Include]ファイルを開き、テキストファイルデコーダーグループを追加します。 表のエントリ[デコーダーグループ](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-log-proc-dataset-inc-files.md#concept-999475a22519432e98844622ca95b6ab)を参照してください。
 
-1. Right click **[!UICONTROL Decoders]** under the newly created decoder group, then click **[!UICONTROL Add new]** > **[!UICONTROL Delimited]**.
+1. 新しく作成したデコーダーグループの&#x200B;**[!UICONTROL Decoders]**&#x200B;を右クリックし、**[!UICONTROL Add new]**/**[!UICONTROL Delimited]**&#x200B;をクリックします。
 
 1. 次の情報を指定します。
 
-   * **Fields：**&#x200B;ログファイル内のフィールドの一覧。If any of the fields defined here are to be passed to the transformation phase of dataset construction, those fields must be listed in the Fields parameter of one of the [!DNL Log Processing Dataset Include] files for the dataset. カスタムフィールドの名前は、先頭に「x-」を付ける必要があります。
+   * **Fields：**&#x200B;ログファイル内のフィールドの一覧。ここで定義したフィールドのいずれかをデータセット構築の変換段階に渡す場合は、それらのフィールドをデータセットの[!DNL Log Processing Dataset Include]ファイルの1つのFieldsパラメーターに指定する必要があります。 カスタムフィールドの名前は、先頭に「x-」を付ける必要があります。
 
    * **Delimiter：**&#x200B;出力ファイル内のフィールドの区切りに使用する文字。
 
 1. グループに追加する他のデコーダーについても手順 4 と手順 5 を繰り返します。
-1. To save the [!DNL Log Processing Dataset Include] file, right-click **[!UICONTROL (modified)]** at the top of the window and click **[!UICONTROL Save]**.
+1. [!DNL Log Processing Dataset Include]ファイルを保存するには、ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
 
-1. To make the locally made changes take effect, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column, then click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*, where profile name is the name of the dataset profile or the inherited profile to which the dataset include file belongs.
+1. ローカルに適用した変更を有効にするには、[!DNL Profile Manager]で[!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]** > ***[!UICONTROL profile name]***&#x200B;をクリックします。プロファイル名は、データセットインクルードファイルが属するデータセットプロファイル名または継承プロファイルです。
 
 >[!NOTE]
 >
@@ -85,4 +86,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 以下に示したのは、区切り文字デコーダーを使用して、映画に関するデータを含んだコンマ区切り形式のテキストファイルから一連のフィールドデータを抽出する例です。
 
 ![](assets/cfg_LogProcessingInclude_DelimitedDecoder.png)
-
