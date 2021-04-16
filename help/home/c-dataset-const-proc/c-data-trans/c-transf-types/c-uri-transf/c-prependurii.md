@@ -1,14 +1,15 @@
 ---
 description: PrependURI 変換は、AppendURI 変換と同様、URI ディメンションを構築するときに Data Workbench サーバーで使用される内部フィールドに作用します。
-solution: Analytics
 title: PrependURI
-topic: Data workbench
 uuid: 3f2fb1a7-83f7-481e-b892-0937acd379f9
+exl-id: c39d9241-ed66-446e-b59d-fdb11942d0e8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 100%
 
 ---
-
 
 # PrependURI{#prependuri}
 
@@ -19,9 +20,9 @@ PrependURI 変換は、AppendURI 変換と同様、URI ディメンションを�
 | パラメーター | 説明 | デフォルト |
 |---|---|---|
 | 名前 | 変換のわかりやすい名前。ここには任意の名前を入力することができます。 |  |
-| Comments | (オプション)変換についてのメモ。 |  |
-| Condition | この変換が適用される条件。 |  |
-| Default | デフォルト値。条件が満たされたが、入力値が利用できない場合に使用されます。 |  |
+| コメント | （オプション）変換についてのメモ。 |  |
+| 条件 | この変換が適用される条件。 |  |
+| デフォルト | デフォルト値。条件が満たされたが、入力値が利用できない場合に使用されます。 |  |
 | Input | URI の先頭に付加する値のフィールド名。 |  |
 
 次の例は、URI の先頭に s-dns フィールドを単純に付加します。クライアントデバイスからリクエストされたドメインを含める形で URI ディメンションの情報を補います。
