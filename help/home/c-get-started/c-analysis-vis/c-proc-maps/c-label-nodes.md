@@ -1,14 +1,15 @@
 ---
 description: ノードのラベルの表示、非表示、変更に関する情報です。
-solution: Analytics
 title: ノードのラベル付け
-topic: Data workbench
 uuid: ded00cc8-2958-4aca-9d45-92afc441e9e2
+exl-id: e234aa1b-2f5d-42ec-bad7-2ada0db38702
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '144'
+ht-degree: 82%
 
 ---
-
 
 # ノードのラベル付け{#label-a-node}
 
@@ -16,11 +17,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **ノードのラベルを表示するには**
 
-* ノードを右クリックし、 **[!UICONTROL Label]***&lt;>をクリッ **[!UICONTROL node name]**&#x200B;クします&#x200B;*。 ノードのラベルが表示されます。このメニューオプションは、ノードにラベルが付いていない場合にのみ表示されます。
+* ノードを右クリックし、**[!UICONTROL Label]***&lt; **[!UICONTROL node name]**>*をクリックします。 ノードのラベルが表示されます。このメニューオプションは、ノードにラベルが付いていない場合にのみ表示されます。
 
 **ノードのラベルを非表示にするには**
 
-* ノードを右クリックし、 **[!UICONTROL Unlabel]***&lt;>をクリッ **[!UICONTROL node name]**&#x200B;クします&#x200B;*。 ノードのラベルが削除されます。このメニューオプションは、ノードに既にラベルが付いている場合にのみ表示されます。
+* ノードを右クリックし、**[!UICONTROL Unlabel]***&lt; **[!UICONTROL node name]**>*をクリックします。 ノードのラベルが削除されます。このメニューオプションは、ノードに既にラベルが付いている場合にのみ表示されます。
 
 **ノードのラベルを変更するには**
 
@@ -32,4 +33,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 1. ノードラベルをクリックして編集モードに入り、必要に応じてノードのラベルを変更します。
 
 ![](assets/mnu_2DProcessMap_label.png)
-
