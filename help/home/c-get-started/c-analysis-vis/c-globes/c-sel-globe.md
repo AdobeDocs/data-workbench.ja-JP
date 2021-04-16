@@ -1,16 +1,17 @@
 ---
 description: 特定のレイヤーからグローブ上に選択範囲を作成すると、その他すべてのレイヤーには、選択されたデータに関連するデータのみが表示されます。
-solution: Analytics
 title: グローブ上での選択
-topic: Data workbench
 uuid: 265206f8-2437-4490-8e7c-0a00ce56fd7f
+exl-id: 83e3b08b-b2a8-455b-87a4-bf48c619b3b9
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '80'
+ht-degree: 100%
 
 ---
 
-
-# Make selections on a globe{#make-selections-on-a-globe}
+# グローブ上での選択{#make-selections-on-a-globe}
 
 特定のレイヤーからグローブ上に選択範囲を作成すると、その他すべてのレイヤーには、選択されたデータに関連するデータのみが表示されます。
 
