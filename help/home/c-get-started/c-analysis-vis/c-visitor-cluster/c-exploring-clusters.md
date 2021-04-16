@@ -1,14 +1,15 @@
 ---
 description: 構築したクラスターディメンションは、クラスターエクスプローラーを使用して、保存することや、調査することができます。
-solution: Analytics
 title: クラスターの調査
-topic: Data workbench
 uuid: b0a07525-c586-466a-ac5e-7c7674cb58f8
+exl-id: d144f51c-8103-428d-801c-a12fb3ec5866
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 100%
 
 ---
-
 
 # クラスターの調査{#exploring-clusters}
 
@@ -31,4 +32,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 1. クラスターを右クリックして、メニューを表示し、引き出し線のタイプ（画像、テキスト注釈、指標の凡例、テーブル、折れ線グラフまたは散布グラフ）を選択します。
 
    ![](assets/explore_clusters_4.png)
-
