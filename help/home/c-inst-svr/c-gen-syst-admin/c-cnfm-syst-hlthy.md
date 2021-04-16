@@ -1,22 +1,21 @@
 ---
 description: Adobeサーバー製品がインストールされているコンピューターが、必要システム構成ドキュメントで定義された最小システム要件を満たしていることを確認する必要があります。
-solution: Analytics
 title: システムの正常性の確認
 uuid: 6d132865-36ab-40fc-be24-e031f356fce2
+exl-id: 543f7592-dd3c-47ba-b174-5f12e9586378
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 5%
 
 ---
 
-
 # システムの正常性の確認{#confirming-your-systems-are-healthy}
 
 Adobeサーバー製品がインストールされているコンピューターが、必要システム構成ドキュメントで定義された最小システム要件を満たしていることを確認する必要があります。
 
-**推奨頻度：** 5 ～ 10分ごと
+**推奨頻度：5 ～ 10分** ごと
 
 また、次の項目を監視するなど、特定のハードウェアを動作させる上でのベストプラクティスに従って、システムを監視する必要があります。
 
@@ -30,4 +29,4 @@ Adobeサーバー製品がインストールされているコンピューター
 
 Adobeでは、サーバーマシン上のシステムパラメータが設定したしきい値を超えた場合に管理者に警告を出すように管理ツールを設定することをお勧めします。
 
-また、 [!DNL Insight Server] マシンの場合は、各ディスクが設定した最小ディスク容量の制限に達した時点 [!DNL Insight Server] を示すように設定することをAdobeにお勧めします。 これらのアラートの詳細については、「管理アラートの [設定](../../../home/c-inst-svr/c-admin-inst-svr/t-config-adm-alrts.md#task-0858f588da4941aa9d4952f6592681aa)」を参照してください。
+[!DNL Insight Server]マシンの場合、Adobeは各[!DNL Insight Server]を設定し、設定した最小ディスク容量制限に達した時点を示すようにすることも推奨します。 これらのアラートの詳細については、「[管理アラートの設定](../../../home/c-inst-svr/c-admin-inst-svr/t-config-adm-alrts.md#task-0858f588da4941aa9d4952f6592681aa)」を参照してください。
