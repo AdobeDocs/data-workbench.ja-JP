@@ -1,14 +1,15 @@
 ---
 description: シンプルディメンションは、その親の可算ディメンションとの間に 1 対多の関係を持ちます。
-solution: Analytics
 title: シンプルディメンション
-topic: Data workbench
 uuid: 3bca2354-02c4-4739-a7da-acccdb0efdfd
+exl-id: 2acad750-7c48-40f1-8130-ab056ac8bf0d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 100%
 
 ---
-
 
 # シンプルディメンション{#simple-dimensions}
 
@@ -33,12 +34,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments </td> 
-   <td colname="col2"> (オプション)拡張ディメンションについてのメモ。 </td> 
+   <td colname="col1"> コメント </td> 
+   <td colname="col2"> （オプション）拡張ディメンションについてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 親と入力フィールドの値との関係を作成する条件。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -54,7 +55,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> Load File </td> 
-   <td colname="col2"> <p>(オプション)対象の関係について用意した値のファイル。ロードファイルは、次のいずれかの状況で使用します。 </p> <p> 
+   <td colname="col2"> <p>（オプション）対象の関係について用意した値のファイル。ロードファイルは、次のいずれかの状況で使用します。 </p> <p> 
      <ul id="ul_056C4A8E46AA479397DC63173C035D5C"> 
       <li id="li_C26EB5A4AB3C4BEB8EB3A217A5A2377E"> 決まった並び順が値に存在し、Data Workbench で表示したときに維持する必要があるとき。例えば、Quarter ディメンションを作成する場合、そのエレメント（四半期）は常に時系列で表示する必要があります。 </li> 
       <li id="li_5D4DF56BC6124D038A7260131B1F3DB3"> データには見つからなかった場合でも Data Workbench には表示すべき値のプレースホルダーを作成したいとき。 </li> 
@@ -62,7 +63,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Operation </td> 
+   <td colname="col1"> 操作 </td> 
    <td colname="col2"> <p>利用可能な演算は次のとおりです。 </p> <p> 
      <ul id="ul_88AE4279413C42609D8B53EC64B5E913"> 
       <li id="li_DD9623D006844BC28B2AAA8E12AA04E1"> FIRST NONBLANK：ブランクではない最初の入力値が使用されます。最初のログエントリからの入力値であるとは限りません。Input がベクトルフィールドである場合、関連するログエントリのベクトルの先頭行が使用されます。 </li> 
@@ -101,4 +102,3 @@ Thin Mints
 完成したディメンションの定義を次に示します。
 
 ![](assets/cfg_Transformation_Dim_Simple.png)
-
