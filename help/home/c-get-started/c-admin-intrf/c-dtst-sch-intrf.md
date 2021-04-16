@@ -1,36 +1,37 @@
 ---
 description: データセットスキーマインターフェイスには、変換データセット設定ファイルで定義された拡張ディメンション（可算、シンプル、多対多、数値、非正規、時間ディメンション）が表示され、これらのディメンション間の関係についての概観を示します。
-solution: Analytics
 title: データセットスキーマインターフェイス
-topic: Data workbench
 uuid: 3726e568-d3ea-47f8-8ac4-582c97fbbe0a
+exl-id: a8d4cf02-4ff7-4fcc-9062-425c1fe1fb28
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 70%
 
 ---
 
-
-# Dataset Schema interface{#dataset-schema-interface}
+# データセットスキーマインターフェイス{#dataset-schema-interface}
 
 データセットスキーマインターフェイスには、変換データセット設定ファイルで定義された拡張ディメンション（可算、シンプル、多対多、数値、非正規、時間ディメンション）が表示され、これらのディメンション間の関係についての概観を示します。
 
-In addition, the [!DNL Dataset Schema] interface shows any derived dimensions that you have defined, as well as any extended dimensions that are configured to be hidden.
+さらに、[!DNL Dataset Schema]インターフェイスには、定義済みの派生ディメンションと、非表示に設定されている拡張ディメンションが表示されます。
 
 ![](assets/vis_DatasetSchema_Example2.png)
 
 >[!NOTE]
 >
->スキーマダイアグラム内からディメンションを検索できます。 検索文字列によって見つかったディメンションの名前はハイライトされ、下位の子ディメンションで見つかったヒットに対しては親クラスの行の色が変更されます。スクロールして階層とコンテキストを表示できるよう、可算ディメンションは表示されたままになります。
+>ディメンションは、スキーマ図内で検索できます。 検索文字列によって見つかったディメンションの名前はハイライトされ、下位の子ディメンションで見つかったヒットに対しては親クラスの行の色が変更されます。スクロールして階層とコンテキストを表示できるよう、可算ディメンションは表示されたままになります。
 
-**インターフェイスを使用してディメンションタイプを解釈する[!DNL Dataset Schema]には**
+**インター [!DNL Dataset Schema] フェイスを使用してディメンションタイプを解釈するには**
 
-The following table lists the dimension types and the colors in which their names appear in the [!DNL Dataset Schema] interface. （上記の例の）サンプルディメンションの親についても記述しています。
+次の表に、[!DNL Dataset Schema]インターフェイスに名前が表示されるディメンションタイプと色をリストします。 （上記の例の）サンプルディメンションの親についても記述しています。
 
 <table id="table_CF888522626E49A4A10D87085CAB5CC1"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> ディメンションタイプ </th> 
-   <th colname="col2" class="entry"> 色 </th> 
+   <th colname="col2" class="entry"> Color </th> 
    <th colname="col3" class="entry"> サンプルディメンションと親 </th> 
   </tr> 
  </thead>
@@ -82,13 +83,12 @@ The following table lists the dimension types and the colors in which their name
 
 **ディメンションにデフォルトのビジュアライゼーションを表示するには**
 
-* In the [!DNL Dataset Schema] interface, click the desired dimension. デフォルトのビジュアライゼーションが表示されます。例えば、デフォルトのビジュアライゼーションが、セッションと選択したディメンションを表示するテーブルで、URIディメンションをクリックした場合、Data Workbenchには、セッションごとのURIを含むテーブルが表示されます。
+* [!DNL Dataset Schema]インターフェイスで、目的のディメンションをクリックします。 デフォルトのビジュアライゼーションが表示されます。例えば、デフォルトのビジュアライゼーションが、セッションと選択したディメンションを表示するテーブルで、URIディメンションをクリックした場合、Data Workbenchには、セッションごとのURIを含むテーブルが表示されます。
 
    >[!NOTE]
    >
-   >表示されるデフォルトのビジュアライゼーションを変更する場合は、「データセットスキー [マインターフェイス](../../../home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md#concept-e147b3a5b542453ca2b121e1c85bb175)」を参照してください。
+   >表示されるデフォルトのビジュアライゼーションを変更する場合は、[データセットスキーマインターフェイス](../../../home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md#concept-e147b3a5b542453ca2b121e1c85bb175)を参照してください。
 
 **ディメンションに特定のビジュアライゼーションを表示するには**
 
-* インターフ [!DNL Dataset Schema] ェイスで、目的のディメンションを右クリックし、「>」を **[!UICONTROL Add Visualization]** クリッ *クし&#x200B;**[!UICONTROL visualization type]**ます*。
-
+* [!DNL Dataset Schema]インターフェイスで、目的のディメンションを右クリックし、**[!UICONTROL Add Visualization]**/*&lt;**[!UICONTROL visualization type]**>*&#x200B;をクリックします。
