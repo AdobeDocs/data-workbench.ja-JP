@@ -1,36 +1,37 @@
 ---
-description: レポートポータルを使用するには、IISに一連のアプリケーションサーバーページ(ASP)をインストールし、設定する必要があります。
-solution: Analytics
-title: レポートポータルのインストール
-topic: Data workbench
+description: レポートポータルを使用するには、IISに一連のアプリケーションサーバーページ(ASP)をインストールして設定する必要があります。
+title: Report Portal のインストール
 uuid: 6aeb6038-b0b0-48b9-a020-bc9dfd703c43
+exl-id: c6f140d4-a4fe-48e2-bbcd-b43efb2387dd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 11%
 
 ---
 
+# Report Portal のインストール{#installing-the-report-portal}
 
-# レポートポータルのインストール{#installing-the-report-portal}
-
-レポートポータルを使用するには、IISに一連のアプリケーションサーバーページ(ASP)をインストールし、設定する必要があります。
+レポートポータルを使用するには、IISに一連のアプリケーションサーバーページ(ASP)をインストールして設定する必要があります。
 
 **始める前に**
 
-この章の手順では、のインストールと設定方法について説明しま [!DNL Report Portal]す。 これらの手順を実行するには、次の手順を実行する必要があります。
+この章の手順では、[!DNL Report Portal]のインストールと設定の方法について説明します。 これらの手順を完了するには、次の手順を実行する必要があります。
 
 * Microsoft IISをインストールし、バージョンを確認する。
-* レポートが表示されるレポートセットの名前を把握しま [!DNL Report Portal]す。
-* これらのレポートセットの出力を保存す [!DNL Report Server] るディレクトリの場所を把握します。 IISアプリケーションサーバーがこのディレクトリにアクセスできることを確認します。
+* [!DNL Report Portal]によって表示されるレポートを持つレポートセットの名前を知る。
+* [!DNL Report Server]がこれらのレポートセットの出力を保存するディレクトリの場所を確認します。 IISアプリケーションサーバーがこのディレクトリにアクセスできることを確認してください。
 
 >[!NOTE]
 >
->* を使用して表示するには、レ [!DNL Report Portal]ポートは特定の命名規則に従う必要があります。 また、レポートの保存先のディレクトリは、所定の構造に従う必要があります。 これらの要件の詳細については、「レポートセッ [トがレポートポータルと互換性があることを確認する」を参照してください。](../../../home/c-rpt-oview/c-install-rpt-port/c-rpt-port-user-inter.md#section-2b141e5d198a4bbea455699126c24706).
+>* [!DNL Report Portal]を使用して表示するには、レポートは特定の命名規則に従う必要があります。 また、レポートの保存先ディレクトリは、所定の構造に従う必要があります。 これらの要件の説明については、[レポートセットとレポートポータルとの互換性の確保を参照してください。](../../../home/c-rpt-oview/c-install-rpt-port/c-rpt-port-user-inter.md#section-2b141e5d198a4bbea455699126c24706).
    >
    >
-* レポートポータルのパスワードがAES-256ビットに準拠するようになりました。 Report Portal 2.0にアップグレードする場合は、users.mdbデータベースの「パスワードのフィールドサイズ」フィールドを50から150 **に増やします** 。 更新された暗号化でパスワードを受け取るには、フィールドサイズを増やす必要があります。
->* Report Portal 2.0にアップグレードする場合は、users.mdbデータベースの **Password** （パスワード）フィールドのフィールドサイズを50から150に増やします。 更新された暗号化でパスワードを受け取るには、フィールドサイズを増やす必要があります。
->* Report Portal には、ソルティングをサポートしている、より強力なハッシュアルゴリズムが導入されました。If you are upgrading to **Report Portal 2.1**, add a new Text field, *PasswordSalt* with field size of 20 characters in [!DNL users.mdb]database. このフィールドは、パスワードソルトを保存するのに必要です。
->
+* レポートポータルのパスワードがAES-256ビットに準拠するようになりました。 Report Portal 2.0にアップグレードする場合は、**users.mdb**&#x200B;データベースのパスワードのフィールドサイズフィールドを50から150に増やします。 フィールドサイズを増やすと、更新された暗号化でパスワードを受け入れる必要があります。
+>* Report Portal 2.0にアップグレードする場合、users.mdbデータベースの&#x200B;**Password**&#x200B;フィールドのフィールドサイズを50から150に増やします。 フィールドサイズを増やすと、更新された暗号化でパスワードを受け入れる必要があります。
+>* Report Portal には、ソルティングをサポートしている、より強力なハッシュアルゴリズムが導入されました。**レポートポータル2.1**&#x200B;にアップグレードする場合は、新しいテキストフィールド&#x200B;*PasswordSalt*&#x200B;を[!DNL users.mdb]データベースに追加し、フィールドサイズを20文字にします。 このフィールドは、パスワードソルトを保存するのに必要です。
 
+>
 
 
