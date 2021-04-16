@@ -1,28 +1,29 @@
 ---
 description: Data WorkbenchサーバーへのData Serviceのインストールに関する情報です。
-solution: Analytics
-title: Data WorkbenchサーバーへのData Serviceのインストール
-topic: Data workbench
+title: Data Workbench サーバーへのデータサービスのインストール
 uuid: afe8e259-7fef-4327-9afc-18f36a1934db
+exl-id: 414e93b7-4e9c-4c84-8fba-8052939240c5
 translation-type: tm+mt
-source-git-commit: 948c6dd04819e939b45745db573a53c8be51ce37
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '240'
+ht-degree: 7%
 
 ---
 
-
-# Data WorkbenchサーバーへのData Serviceのインストール{#installing-a-data-service-on-a-data-workbench-server}
+# Data Workbench サーバーへのデータサービスのインストール{#installing-a-data-service-on-a-data-workbench-server}
 
 Data WorkbenchサーバーへのData Serviceのインストールに関する情報です。
 
-IP Geo-IntelligenceデータサービスまたはIP Geo-Locationデータサービスを使用している場合は、またはプロファイルと関連する参照ファイルをData Workbenchサーバーにイ [!DNL IP Geo-intelligence] ンス [!DNL IP Geo-location] トールする必要があります。 Data Workbenchプロファイルをインストールした後、次の手順を実行する必要があ [!DNL Geography] ります。 「Data Workbenchの [地域のインストール」を参照してくださ](../../../../home/c-geo-oview/c-inst-geo/c-inst-geo.md)い。 Data Workbenchをインストールしていない場合は、作業を進める前に、『 *Data Workbenchユーザーガイド* 』の手順に従います。
+IP Geo-IntelligenceデータサービスまたはIP Geo-Locationデータサービスを使用している場合は、[!DNL IP Geo-intelligence]または[!DNL IP Geo-location]プロファイルーと、関連する参照ファイルをData Workbenchサーバーにインストールする必要があります。 Data Workbench [!DNL Geography]プロファイルをインストールした後は、次の手順を実行する必要があります。 [Data Workbench地域のインストール](../../../../home/c-geo-oview/c-inst-geo/c-inst-geo.md)を参照してください。 data workbenchをインストールしていない場合は、次に進む前に、『*Data Workbenchユーザーガイド*』の手順に従ってください。
 
 >[!NOTE]
 >
->データサービスファイルをインストールするには、Data Workbenchサーバー上のファイルにアクセスできる必要があります。
+>Data Serviceファイルをインストールするには、Data Workbenchサーバー上のファイルにアクセスできる必要があります。
 
-アドビは、IP Geo-IntelligenceおよびIP Geo-Locationデータサービスをファイルとして配布し [!DNL .zip] ています。 各ファイル [!DNL .zip] には2つのフォルダーが含まれます。参照とプロファイルを参照してください。 Data WorkbenchサーバーにData Serviceをインストールするには、次の手順を実行する必要があります。
+Adobeは、IP Geo-IntelligenceおよびIP Geo-Locationデータサービスを[!DNL .zip]ファイルとして配布します。 各[!DNL .zip]ファイルには2つのフォルダーが含まれています。検索とプロファイル。 Data WorkbenchサーバーにData Serviceをインストールするには、次の手順を実行する必要があります。
 
-* データサービスプロファイルをインストールします。 「Data Service Profile [のインストール」を参照してください](../../../../home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-inst-data-svc-prof.md)。
-* データサービスの参照をインストールします。 Installing the Data [Service Lookup Filesを参照してください](../../../../home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/t-inst-data-svc-lkp-files.md)。
+* データサービスプロファイルをインストールします。 「[Data Serviceプロファイルのインストール](../../../../home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/c-inst-data-svc-prof.md)」を参照してください。
+* データサービス参照をインストールします。 「[Data Service Lookup Filesのインストール](../../../../home/c-geo-oview/c-wk-data-svcs/c-install-data-svc/t-inst-data-svc-lkp-files.md)」を参照してください。
 
-データセットプロファイルを処理および実行するData Workbenchサーバーコンピューターに、Data Serviceプロファイルと参照ファイルをインストールする必要があります。 Data Workbenchサーバークラスターを実行している場合は、マスターサーバーにファイルをインストールする必要があります。 For information about dataset profiles, see the *Dataset Configuration Guide*.
+データセットプロファイルを処理し実行するData Workbenchサーバーコンピューターに、Data Serviceプロファイルとルックアップファイルをインストールする必要があります。 Data Workbenchサーバークラスターを実行している場合は、マスターサーバーにファイルをインストールする必要があります。 データセットのプロファイルについて詳しくは、『*データセット設定ガイド*』を参照してください。
