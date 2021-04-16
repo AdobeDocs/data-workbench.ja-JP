@@ -1,20 +1,21 @@
 ---
 description: Haversine（半正矢）式とは、緯度と経度から特定される球体上の 2 点間の大圏距離を導く数式です。
-solution: Analytics
 title: Haversine
-topic: Data workbench
 uuid: 835fa9dd-db70-4498-a03e-59595bc041fe
+exl-id: e700c0a0-1a1a-4c56-bb4f-1deb1b39b059
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '235'
+ht-degree: 79%
 
 ---
-
 
 # Haversine{#haversine}
 
 Haversine（半正矢）式とは、緯度と経度から特定される球体上の 2 点間の大圏距離を導く数式です。
 
-Like the formula, the [!DNL Haversine] transform requires two sets of [!DNL Latitude] and [!DNL Longitude] settings, using these four inputs to calculate the true distance across the Earth between two locations.
+[!DNL Haversine]変換は、数式と同様に、2組の[!DNL Latitude]と[!DNL Longitude]の設定を必要とします。これら4つの入力を使用して、2つの場所の間の地球の真の距離を計算します。
 
 この距離は、「In Kilometers」フラグを（false または true に）変更することによってマイルまたはキロメートルで表すことができます。
 
@@ -23,8 +24,8 @@ Like the formula, the [!DNL Haversine] transform requires two sets of [!DNL Lati
 | パラメーター | 説明 | デフォルト |
 |---|---|---|
 | 名前 | 変換のわかりやすい名前。ここには任意の名前を入力することができます。 |  |
-| Comments | (オプション)変換についてのメモ。 |  |
-| Condition | この変換が適用される条件。 |  |
+| コメント | （オプション）変換についてのメモ。 |  |
+| 条件 | この変換が適用される条件。 |  |
 | Latitude 1 Field | 地点 1 の緯度。 |  |
 | Latitude 2 Field | 地点 2 の緯度。 |  |
 | Longitude 1 Field | 地点 1 の経度。 |  |
@@ -35,5 +36,4 @@ Like the formula, the [!DNL Haversine] transform requires two sets of [!DNL Lati
 
 >[!NOTE]
 >
->他の場所の距離を識別する場合は、それぞれの場所に、緯度と経度のフィールドのセットが必要です。
-
+>他の場所の距離を識別したい場合は、それぞれの場所に、緯度と経度のフィールドが割り当てられている必要があります。
