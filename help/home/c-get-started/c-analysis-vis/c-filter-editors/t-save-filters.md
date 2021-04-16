@@ -1,32 +1,33 @@
 ---
-description: 保存と読み込みの手順を説明します。フィルター
-solution: Analytics
-title: 保存と読み込みのフィルター
-topic: Data workbench
+description: フィルターを保存して読み込むための手順です。
+title: フィルターの保存と読み込み
 uuid: 5312b9c4-0193-4d45-af54-e8f6d2706bf2
+exl-id: ed6cd2dc-c15b-4971-bf54-1b6915fbe181
 translation-type: tm+mt
-source-git-commit: 3e8f2c01b913afb25fe5f6bde1c7ec5145059266
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '124'
+ht-degree: 33%
 
 ---
 
+# フィルターの保存と読み込み{#save-and-load-filters}
 
-# 保存と読み込みのフィルター{#save-and-load-filters}
+フィルターを保存して読み込むための手順です。
 
-保存と読み込みの手順を説明します。フィルター
-
-1. フィルターの名前(または新しいフィ **ルターの[!UICONTROL noname]場合は** \[\])を右クリックし、をクリックしま **[!UICONTROL Save Filter]**&#x200B;す。
-1. ラベルにフィルターの名前を入力し **[!UICONTROL Save As]** ます。
+1. フィルターの名前(または&#x200B;**\[[!UICONTROL noname]\]**（新しいフィルターの場合）を右クリックし、「**[!UICONTROL Save Filter]**」をクリックします。
+1. **[!UICONTROL Save As]**&#x200B;ラベルにフィルターの名前を入力します。
 
    ![ステップ情報](assets/vis_FilterEditor_SaveFilter.png)
 
-1. クリック **[!UICONTROL Save Filter]**.
+1. 「**[!UICONTROL Save Filter]**」をクリックします。
 
-   フィルターを保存した後、読み込んで他のワークスペースで使用できます。 既存のフィルターを読み込む方法や、 [!DNL Metric Editor]「派生指 [標の作成と編集」を参照してください](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)。
+   フィルターを保存すると、他のワークスペースで読み込んで使用できるようになります。既存のフィルタを読み込む、または[!DNL Metric Editor]内の名前で参照する方法については、以下を参照してください。 「[派生指標の作成と編集](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)」を参照してください。
 
    >[!NOTE]
    >
-   >保存したフィルターをプロファイルのすべてのユーザが使用できるようにするには、を使用して、それらを適切なプロファイルにアップロードする必要がありま [!DNL Profile Manager]す。 詳しくは、 [作業プロファイルへのファイルの公開を参照](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9)。
+   >保存したフィルターをプロファイルのすべてのユーザーが使用できるようにする場合は、[!DNL Profile Manager]を使用して、適切なプロファイルにアップロードする必要があります。 [作業プロファイルへのファイルの公開](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9)を参照してください。
 
-**既存のフィルタを読み込むには**
+**既存のフィルターを読み込むには**
 
-* フィルターの名前を右クリックし、/をクリッ **[!UICONTROL Load Filter]** クしま **[!UICONTROL `<filter name>`]**&#x200B;す。
+* フィルターの名前を右クリックし、**[!UICONTROL Load Filter]**/**[!UICONTROL `<filter name>`]**&#x200B;をクリックします。
