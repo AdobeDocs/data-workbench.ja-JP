@@ -1,34 +1,35 @@
 ---
 description: Data Workbenchサーバーのオフラインまたはオンラインでの操作に関する情報です。
-solution: Analytics
-title: オフラインおよびオンラインでの作業
-topic: Data workbench
+title: オフラインおよびオンラインでの操作
 uuid: 613699d4-6d06-4c3c-b0aa-620933ae4d67
+exl-id: 1c9e0f4f-3172-40d3-b751-ebe6f9f57f8a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 32%
 
 ---
 
-
-# Working offline and online{#working-offline-and-online}
+# オフラインおよびオンラインでの操作{#working-offline-and-online}
 
 Data Workbenchサーバーのオフラインまたはオンラインでの操作に関する情報です。
 
-Data Workbench automatically downloads updates to the profile and its data from the Data Workbench server if you have a network connection to the [!DNL server] and are working online. オンラインで動作するように指定していない場合、Data Workbenchは、プロファイルとそのデータをコンピューターのキャッシュから読み込みます。 この場合、プロファイルを使用して最後にオンラインで動作した時にダウンロードされたプロファイルとそのデータが表示されます。
+[!DNL server]にネットワーク接続していて、オンラインで動作している場合、Data Workbenchはプロファイルとそのデータの更新をData Workbenchサーバから自動的にダウンロードします。 オンラインで動作するように指定していない場合、Data Workbenchはプロファイルとそのデータをコンピューターのキャッシュから読み込みます。 この場合、プロファイルを使用して最後にオンラインで動作した時にダウンロードされたプロファイルとそのデータが表示されます。
 
-オフラインでの動作は、ローカルキャッシュを使用して作業し、コンピューター上のデータをクエリーするので、処理速度の面でメリットがあります。オンラインで作業する場合、すべてのクエリーをData Workbenchサーバーに戻す必要があります。これには時間がかかり、他のオンラインユーザーとサーバーリソースを競合させる必要があります。 Data Workbenchサーバーにネットワーク接続している限り、オフラインで作業すると、Data WorkbenchサーバーはData Workbench上のプロファイルやデータを更新できなくなりますが、Data Workbenchサーバーに項目を保存するのは停止しません。
+オフラインでの動作は、ローカルキャッシュを使用して作業し、コンピューター上のデータをクエリーするので、処理速度の面でメリットがあります。オンラインで作業する場合、すべてのクエリはData Workbenchサーバーに戻る必要があります。これにより、他のオンラインユーザーとサーバーリソースを競い合う必要があります。 Data Workbenchサーバーにネットワーク接続している限り、オフラインで作業を行うと、Data WorkbenchサーバーはData Workbench上のプロファイルやデータを更新しなくなりますが、Data Workbenchサーバーに項目を保存するのは中止されません。
 
-オフラインでの作業が可能なので、Data Workbenchサーバーのサイズは、データセット内のリアルタイムトラフィック入力量やデータ量、Data Workbenchユーザー数などを処理するように設定されていますが、同時使用ユーザー数の上限（実際にはあまり多くは発生しません）に対応する必要はありません。 ユーザーは通常、傾向や比率を探し求め、データを調べているので、ほとんどの場合、正確な数を必要としません。現在のデータを使用して正確な数をクエリーし、解決する必要がある場合は、オンラインで動作して正確な数を取得できますが、クエリーを 100 ％解決するまでにかかる時間は長くなります。
+オフラインで作業できるので、Data Workbenchサーバーのサイズは、データセット内のある程度のリアルタイムトラフィック入力とある程度のデータ量とData Workbenchユーザー数を処理できますが、同時ユーザー数の上限をサポートする必要はありません（実際はそれほど多くはありません）。 ユーザーは通常、傾向や比率を探し求め、データを調べているので、ほとんどの場合、正確な数を必要としません。現在のデータを使用して正確な数をクエリーし、解決する必要がある場合は、オンラインで動作して正確な数を取得できますが、クエリーを 100 ％解決するまでにかかる時間は長くなります。
 
 **オンラインまたはオフラインで作業するには**
 
-サイドバーで、設定をクリックし **[!UICONTROL Connection]** てをクリックしま **[!UICONTROL Work Online]**&#x200B;す。
+サイドバーで&#x200B;**[!UICONTROL Connection]**&#x200B;設定をクリックし、**[!UICONTROL Work Online]**&#x200B;をクリックします。
 
 ![](assets/sidebar_work_online.png)
 
-オンラインで作業する場合、Data WorkbenchはData Workbenchサーバーに接続し、コンピューター上の情報と、Data Workbenchサーバー上に存在するプロファイルとそのデータセット情報とを同期します。
+オンラインで作業する場合、Data WorkbenchはData Workbenchサーバーに接続し、マシン上の情報とData Workbenchサーバー上のプロファイルとそのデータセット情報を同期します。
 
-The default configuration for Data Workbench is to work offline, but as described in the following section, each user can change their [!DNL Insight.cfg] file to make their instance of Data Workbench work online by default.
+Data Workbenchのデフォルト設定はオフラインで動作しますが、次の節で説明するように、各ユーザーは[!DNL Insight.cfg]ファイルを変更して、Data Workbenchのインスタンスをデフォルトでオンラインで動作させることができます。
 
 **デフォルトでオンライン動作させるには**
 
@@ -42,4 +43,4 @@ Default to Online = bool: true
 Color Set = int: 0
 ```
 
-次回Data Workbenchを開くと、Data Workbenchサーバーに接続され、デフォルトでオンラインで動作します。
+次回Data Workbenchを開くと、Data Workbenchサーバーに接続し、デフォルトでオンラインで動作します。
