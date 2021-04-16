@@ -1,47 +1,48 @@
 ---
-description: アドビは、X.509 デジタル証明書を使用して実装されたクライアントおよびサーバーコンポーネントを識別し、認証します。
-solution: Analytics
-title: デジタル証明書について
-topic: Data workbench
+description: アドビは、X.509 電子証明書を使用して、実装されたクライアントおよびサーバーコンポーネントを識別し、認証します。
+title: 電子証明書について
 uuid: a2d84e9a-16aa-4973-85da-303614a4ad7f
+exl-id: 967e9d5b-7972-497e-8902-8db0eb304f27
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '617'
+ht-degree: 69%
 
 ---
 
+# 電子証明書について{#understanding-digital-certificates}
 
-# デジタル証明書について{#understanding-digital-certificates}
-
-アドビは、X.509 デジタル証明書を使用して実装されたクライアントおよびサーバーコンポーネントを識別し、認証します。
+アドビは、X.509 電子証明書を使用して、実装されたクライアントおよびサーバーコンポーネントを識別し、認証します。
 
 [!DNL Report Server] をインストールする場合は、インストールしたクライアントアプリケーションを使用するために、指定された個人（例えば、Jane Smith）を認証するデジタル証明書をインストールする必要があります。
 
 >[!NOTE]
 >
->If you need to migrate [!DNL Report Server] to another machine or another named user, you must obtain a new certificate from Adobe. その場合は、アドビカスタマーケアにお問い合わせください。
+>[!DNL Report Server]を別のマシンまたは別の名前付きユーザーに移行する必要がある場合は、Adobeから新しい証明書を取得する必要があります。 その場合は、アドビカスタマーケアにご連絡ください。
 
-[!DNL Report Server] は、サーバーコンポーネントへのアクセス権を取得するために、このデジタル証明書を利用します。サーバーコンポーネントの管理者は、クライアントの証明書に表示される共通名または組織単位の値に基づいて、サーバーリソースへのアクセスを制限できます。
+[!DNL Report Server] は、サーバーコンポーネントへのアクセス権を取得するために、このデジタル証明書を利用します。サーバーコンポーネントの管理者は、ユーザーの証明書に表示される共通名または組織単位の値に基づいてサーバーリソースへのアクセスを制限できます。
 
-また、アドビアプリケーションと一緒にインストールされる X.509 デジタル証明書は、クライアントおよびサーバーコンポーネントが Secure Sockets Layer（SSL）経由で情報を交換する場合にも使用されます。SSL では、公開鍵と秘密鍵の暗号化システムを使用して HTTP 経由の送信のセキュリティを確保します。アドビの SSL 実装は、1024 ビットの RSA キーをサポートし、128 ビットの RC4 暗号化アルゴリズムを使用します。
+また、アドビアプリケーションと一緒にインストールされる X.509 電子証明書は、クライアントおよびサーバーコンポーネントが Secure Sockets Layer（SSL）経由で情報を交換する場合にも使用されます。SSL では、公開鍵と秘密鍵の暗号化システムを使用して HTTP 経由の送信のセキュリティを確保します。アドビの SSL 実装は、1024 ビットの RSA キーをサポートし、128 ビットの RC4 暗号化アルゴリズムを使用します。
 
-In addition to security, the digital certificate that you install also functions as a license key that enables you to run the installed [!DNL Report Server]. 正常に機能させるには、ノードロックされた最新のデジタル証明書が必要です。これがないと、アプリケーションは起動しません。
+セキュリティに加えて、インストールしたデジタル証明書は、インストールした[!DNL Report Server]を実行するためのライセンスキーとしても機能します。 正常に機能させるには、ノードロックされた最新のデジタル証明書が必要です。これがないと、アプリケーションは起動しません。
 
 ## ノードロックされた証明書 {#section-3338f1558e7844888dced8f395888744}
 
-ノードロックされた証明書とは、その証明書がインストールされているコンピューターに登録されたデジタル証明書です。 ノードロックは、証明書を特定のノード識別子（特定のマシンを一意に識別する値）に永続的に関連付けます。 証明書をノードロックするには、コンピューターがAdobe License ServerまたはLicense Serverにアクセスできるプロキシサーバーにインターネットでアクセスできる必要があります。
+ノードロックされた証明書とは、インストール先のコンピューターに登録されている電子証明書です。ノードロックすることにより、証明書は特定のノード識別子（特定のコンピューターを一意に識別する値）に永続的に関連付けられます。証明書をノードロックするには、コンピューターからインターネット経由で Adobe ライセンスサーバー、またはライセンスサーバーにアクセス可能なプロキシサーバーにアクセスできることが必要です。
 
-If you are installing on a machine that cannot access the Internet, you must obtain and install a special pre-locked certificate as described in [Using Digital Certificates on Machines Without Internet Access](../../../../home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-underst-dig-cert.md#section-18cce05e2204407bb2b6b75deab9197d) on this page.
+インターネットにアクセスできないコンピュータにインストールする場合は、このページの[Using Digital Certificates on Machines Without Internet Access](../../../../home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-underst-dig-cert.md#section-18cce05e2204407bb2b6b75deab9197d)の説明に従って、特別な事前にロックされた証明書を入手し、インストールする必要があります。
 
-If you are installing on a machine that can access the Internet, your digital certificate is node-locked automatically the first time that you start [!DNL Report Server]. ノードロックされた後は、証明書を他のコンピューターで使用することはできません。 If you need to migrate [!DNL Report Server] to another machine, you must obtain a new, unlocked certificate from Adobe.
+インターネットにアクセスできるコンピューターにインストールする場合は、[!DNL Report Server]を初めて開始したときに、デジタル証明書が自動的にノードロックされます。 ノードロックされた後は、その証明書を他のコンピューターで使用することはできません。[!DNL Report Server]を別のマシンに移行する必要がある場合は、ロック解除された新しい証明書をAdobeから取得する必要があります。
 
 ## 最新の証明書 {#section-b4053ab714514dfb97ea7f61bbb8da1e}
 
-ノードロックされている以外に、デジタル証明書は最新のものである必要があります。 最新の状態を維持するには、証明書を定期的に再検証する必要があります（通常は30日ごとですが、アドビとの契約によって異なります）。 お使いのコンピューターがインターネットにアクセスできる場合、再検証プロセスは完全に透過的です。 必要に応じて、[!DNL Report Server] が License Server に自動的に接続し、証明書を再検証します。お使いのコンピューターにインターネットにアクセスできない場合は、次の節の説明に従って、更新された証明書を手動でインストールする必要があります。
+電子証明書はノードロックされているだけでなく、最新であることも必要です。最新の状態に維持するには、証明書を定期的に再検証する必要があります(通常は30日ごとですが、Adobeとの契約によって異なります)。 コンピューターがインターネットにアクセスできる場合、再検証プロセスは完全に透過的です。必要に応じて、[!DNL Report Server] が License Server に自動的に接続し、証明書を再検証します。コンピューターがインターネットにアクセスできない場合は、次のセクションで説明するように、更新済みの証明書を手動でインストールする必要があります。
 
-## Using Digital Certificates on Machines Without Internet Access {#section-18cce05e2204407bb2b6b75deab9197d}
+## インターネットにアクセスできないコンピューターでの電子証明書の使用 {#section-18cce05e2204407bb2b6b75deab9197d}
 
-If you are installing on a machine that cannot access the Internet, you must request a pre-locked certificate for your installation of [!DNL Report Server]. 事前にロックされた証明書は、アドビがコンピューターのノード識別子に手動でロックするデジタル証明書です。
+インターネットにアクセスできないマシンにインストールする場合は、[!DNL Report Server] のインストールに使用する、事前ロック済み証明書を要求する必要があります。事前ロック済み証明書とは、アドビがコンピーターのノード識別子に手動でロックした電子証明書です。
 
-事前にロックされた証明書をリクエストするには、ノード識別子と証明書番号をアドビのカスタマーケアに送信する必要があります。 To obtain the node identifier for your machine, contact Adobe Customer Care to request the Adobe [!DNL Node Identifier] utility. また、[!DNL Report Server] が License Server へのアクセスを試行して失敗した場合に発行されるアラートからノード識別子を入手することもできます。When you receive the pre-locked certificate, install it as described in the last two steps of [Digital Certificate Installation Procedures](../../../../home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/t-dig-cert-install-proc.md#task-5c4bb352ff534b40adc46dd053874e5d).
+事前ロック済み証明書を要求するには、ノード識別子と証明書番号をアドビカスタマーケアに送信する必要があります。お使いのコンピューターのノードIDを取得するには、Adobeカスタマーケアに連絡して、Adobe[!DNL Node Identifier]ユーティリティを要求してください。 また、[!DNL Report Server] が License Server へのアクセスを試行して失敗した場合に発行されるアラートからノード識別子を入手することもできます。事前ロック済み証明書を受け取ったら、[電子証明書のインストール手順](../../../../home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/t-dig-cert-install-proc.md#task-5c4bb352ff534b40adc46dd053874e5d)の最後の 2 つの手順に従ってインストールします。
 
-証明書を再検証する必要がある場合は、検証済みの新しい証明書をLicense Serverからダウンロードし、コンピューターに再インストールする必要があります（アドビとの契約で別段の指定がない場合）。
+証明書を再検証する必要がある場合は、検証済みの新しい証明書をLicense Serverからダウンロードし、マシンに再インストールする必要があります(Adobeとの契約に別の条件がある場合を除く)。
