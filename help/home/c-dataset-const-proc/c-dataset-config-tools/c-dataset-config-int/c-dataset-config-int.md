@@ -1,14 +1,15 @@
 ---
 description: データセット設定インターフェイスには、データセットのコンポーネント（ログソース、フィールド、変換およびディメンション）間の関係が表示されます。
-solution: Analytics
 title: データセット設定インターフェイスの操作
-topic: Data workbench
 uuid: c29faccd-0402-4982-9e5b-7379e2590246
+exl-id: cc2b876f-8d65-4b36-920a-dde3928795bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 77%
 
 ---
-
 
 # データセット設定インターフェイスの操作{#working-with-dataset-configuration-interfaces}
 
@@ -20,9 +21,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 データセット設定のインターフェイスは、次のいずれかの方法で表示できます。
 
-* **管理メニュー：** ワークスペース内で右クリックし、をクリッ **[!UICONTROL Admin]**&#x200B;クして、適切なメニューオプションをクリックします。
+* **管理者メニュー：ワークスペース内で** 右クリックし、をクリックして、適切なメニューオプション **[!UICONTROL Admin]**&#x200B;をクリックします。
 
    -OR-
 
-* **「管理者」タブ：** をクリックして、該当するワークスペースのサムネールを/で **[!UICONTROL Admin]** 開きま **[!UICONTROL Dataset and Profile tab]**&#x200B;す。
-
+* **「管理者」タブ：** をクリックして、適切なワークスペースのサムネールを **[!UICONTROL Admin]** >で開き **[!UICONTROL Dataset and Profile tab]**&#x200B;ます。
