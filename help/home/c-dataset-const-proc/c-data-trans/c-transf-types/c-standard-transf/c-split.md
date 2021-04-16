@@ -1,14 +1,15 @@
 ---
 description: Split 変換は、特定の区切り文字に基づいて 1 つの文字列を複数のサブ文字列のベクトルに分割します。
-solution: Analytics
 title: Split
-topic: Data workbench
 uuid: 116e8465-8fb1-41eb-9a28-412cee54ab87
+exl-id: ea85b095-1306-4938-906d-35d421db6c98
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 100%
 
 ---
-
 
 # Split{#split}
 
@@ -31,17 +32,17 @@ Split 変換は、特定の区切り文字に基づいて 1 つの文字列を�
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments </td> 
-   <td colname="col2"> (オプション)変換についてのメモ。 </td> 
+   <td colname="col1"> コメント </td> 
+   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> この変換が適用される条件。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Delimiter </td> 
+   <td colname="col1"> 区切り </td> 
    <td colname="col2"> <p>入力文字列をサブ文字列に分割する際に使用する文字列。長さは 1 文字とする必要があります。 </p> <p> Delimiter パラメーター内で Ctrl キーを押しながら右クリックすると、挿入メニューが表示されます。このメニューには、区切り文字としてよく使用される特殊文字が一覧表示されます。 </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
