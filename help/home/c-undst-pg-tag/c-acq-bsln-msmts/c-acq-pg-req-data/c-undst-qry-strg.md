@@ -1,35 +1,36 @@
 ---
-description: クエリ文字列(cs-uri-query)は、HTTPのステートレスな性質上、Webアプリケーションやサイト開発者がページ間で情報を渡す際によく使用されます。
-solution: Analytics
+description: クエリ文字列(cs-uri-クエリ)は、HTTPのステートレスな特性を持つので、Webアプリケーションやサイト開発者がページ間で情報を渡す際によく使用されます。
 title: クエリ文字列について
-topic: Data workbench
 uuid: 7403277d-fbce-4e98-bd42-894142e38d0d
+exl-id: b5281e5f-3eb7-4d6a-a7b3-9958cb430621
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 2%
 
 ---
 
-
 # クエリ文字列について{#understanding-the-query-string}
 
-クエリ文字列(cs-uri-query)は、HTTPのステートレスな性質上、Webアプリケーションやサイト開発者がページ間で情報を渡す際によく使用されます。
+クエリ文字列(cs-uri-クエリ)は、HTTPのステートレスな特性を持つので、Webアプリケーションやサイト開発者がページ間で情報を渡す際によく使用されます。
 
-多くの場合、Webサーバーで取得した情報がクエリ文字列に渡さ [!DNL Sensor] れる可能性があります。 このような情報は、サイトの真の構 [!DNL Site] 造、サイトを通る訪問者のパス、およびその他の情報を照らすために使用できます。
+多くの場合、Webサーバーで[!DNL Sensor]が情報を取得したときに、クエリ文字列に情報が渡されます。 このような情報は、[!DNL Site]がサイトの真の構造や、サイトを通る訪問者のパス、その他の情報を照らすのに使用できます。
 
-一部の動的なWebサイトでは、訪問者が実際にリクエストするページを決定する際に、クエリ文字列内のname=valueのペア（変数）が重要です。 この場合、URLは次のような方法で構造化されます。
+一部の動的なWebサイトでは、訪問者がリクエストする実際のページを決定するために、クエリ文字列内のname=valueのペア（変数）が重要です。 このような場合、URLは次のように構造化されているか、類似した方法で表示されます。
 
 ```
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME
 ```
 
-この例では、PAGENAMEは実際に、このURLの要求者にどのページが提供されるかを示すインジケーターです。 多くのWebログ分析ツールやサービスでは、サイトのURLのクエリ文字列で発生するクエリ文字列変数に基づいて、サイト運営者がサイト内のページを定義する機能を制限しています。 Data WorkbenchサーバーおよびData Workbenchは、このようなクエリー名を使用して一意のページを定義するように設定できます。 多くのシステムでは、次のURLが同じページとして解釈されますが、解釈されないので、この [!DNL Site] 方法が重要です。
+この例では、PAGENAMEは実際に、このURLの要求者にどのページが提供されるかを示すインジケータです。 多くのWebログ分析ツールやサービスでは、サイトのURLのクエリ文字列で発生するクエリ文字列変数に基づいて、サイト運営者がサイトのどのページを定義するかを制限しています。 Data WorkbenchサーバーおよびData Workbenchは、このようなクエリ名を使用して一意のページを定義するように設定できます。 多くのシステムでは次のURLが同じページとして解釈されますが、[!DNL Site]では解釈されないので、これは重要です。
 
 ```
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME2
 ```
 
-同様に、サイト開発者やアプリケーションは、多くの場合、リクエストされる実際のページの識別とは関係ない、多くのクエリ文字列変数をサイトのURLに追加します。 以下に例を示します。
+同様に、サイト開発者やアプリケーションは、多くの場合、リクエストされる実際のページの識別とは無関係なクエリ文字列変数をサイトのURLに追加します。 次に例を示します。
 
 ```
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME&CAMPAIGN=10001
@@ -37,9 +38,8 @@ http://www.myserver.com/pageserved.asp?PAGENAME=HOME&CAMPAIGN=10002
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME&CAMPAIGN=10003
 ```
 
-この例では、クエリ文字列変数CAMPAIGN=がURLに追加されています。 このCAMPAIGN変数は、訪問者がこのURLを選択したマーケティングキャンペーンを示すために使用されています。 [!DNL Site] このキャンペーン情報を使用するように設定できますが、訪問者が閲覧したページの定義とは別に、レポートや分析の目的でページのリストに次の情報が表示されるようにします。
+この例では、クエリ文字列変数キャンペーン=がURLに追加されています。 このキャンペーン変数は、訪問者がこのURLを選択した原因となったマーケティングキャンペーンを示すために使用されます。 [!DNL Site] は、このキャンペーン情報を使用するように設定できますが、訪問者が閲覧したページの定義とは切り離して、レポートや分析を目的としたページのリストに次のように表示されるようにします。
 
 ```
 http://www.myserver.com/pageserved.asp?PAGENAME=HOME
 ```
-
