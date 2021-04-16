@@ -1,16 +1,15 @@
 ---
 description: Insightサーバーまたはリピーター用の通信を設定する手順です。
-solution: Analytics
 title: 通信の設定
 uuid: 03297cf0-eb55-4db0-b692-eba24fcf947c
+exl-id: a35788d1-de36-4350-a107-eee392e44503
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 5%
 
 ---
-
 
 # 通信の設定{#communications-configuration-settings}
 
@@ -34,11 +33,11 @@ Insightサーバーまたはリピーター用の通信を設定する手順で�
  <tbody> 
   <tr> 
    <td colname="col1"> アクセス制御ファイル </td> 
-   <td colname="col2"> <p>アクセス制御 <span class="filepath"> .cfg </span> ファイルの場所。 デフォルトの場所は、 <span class="filepath"> Insightサーバー </span> または <span class="keyword"> リピーターのインストールディレクトリ内のアクセス制御 </span><span class="wintitle"></span> フォルダーです。 </p> <p>例：<code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
+   <td colname="col2"> <p><span class="filepath">アクセス制御.cfg </span>ファイルの場所。 デフォルトの場所は、<span class="keyword"> Insight Server </span>または<span class="wintitle"> Repeater </span>インストールディレクトリ内の<span class="filepath">アクセス制御</span>フォルダーです。 </p> <p>例：<code>Access Control File = Path: Access Control\\Access Control.cfg</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> アクセスログディレクトリ </td> 
-   <td colname="col2"> <p>監査ログのマップ先フォルダー。 </p> <p>例：<code>Access Log Directory = string: Audit\\</code> </p> <p> <p>注意： 監査ログを別のローカルドライブにマップできます(例： <span class="filepath"> string:P:\\Audit\\ </span>)。ただし、監査ログをネットワークドライブにマップしないでください。 </p> </p> </td> 
+   <td colname="col2"> <p>監査ログのマップ先フォルダー。 </p> <p>例：<code>Access Log Directory = string: Audit\\</code> </p> <p> <p>注意： 監査ログを別のローカルドライブにマップできます(例：<span class="filepath">文字列：P:\\Audit\\ </span>)を使用しますが、監査ログをネットワークドライブにマップしないでください。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> アクセスログの詳細 </td> 
@@ -50,7 +49,7 @@ Insightサーバーまたはリピーター用の通信を設定する手順で�
   </tr> 
   <tr> 
    <td colname="col1"> Port </td> 
-   <td colname="col2"> <p>Insightサーバー <span class="keyword"> または </span> リピーターがリスンする、安全でない(HTTP)ポート <span class="wintitle"></span> 。 デフォルトポートは 80 です。値0を入力すると、セキュリティで保護されていない接続が無効になります。 </p> <p>例：<code>Port = int: 80</code> </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Insightサーバー</span>または<span class="wintitle">リピーター</span>がリッスンする安全でない(HTTP)ポート。 デフォルトポートは 80 です。値0を入力すると、セキュリティで保護されていない接続が無効になります。 </p> <p>例：<code>Port = int: 80</code> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL暗号 </td> 
@@ -58,7 +57,7 @@ Insightサーバーまたはリピーター用の通信を設定する手順で�
   </tr> 
   <tr> 
    <td colname="col1"> SSLポート </td> 
-   <td colname="col2"> <p>Insightサーバー <span class="keyword"> または </span> リピーターがリスンする安全な（SSL経由の）ポート <span class="wintitle"></span> 。 デフォルトポートは 443 です。値0を入力すると、セキュリティで保護された接続が無効になります。 </p> <p>例：<span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
+   <td colname="col2"> <p><span class="keyword"> Insightサーバー</span>または<span class="wintitle">リピーター</span>がリッスンするセキュアな（SSL経由の）ポート。 デフォルトポートは 443 です。値0を入力すると、セキュリティで保護された接続が無効になります。 </p> <p>例：<span class="filepath"></span> </p> <code>SSL Port = int: 443</code> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>LoggingServer: </td> 
@@ -72,20 +71,20 @@ Insightサーバーまたはリピーター用の通信を設定する手順で�
   <tr> 
    <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Local Path = string:ログ\\ </p> </td> 
    <td colname="col2"> <p>ログファイルを格納するフォルダー。 </p> <p>例： </p> <code> 9&nbsp;=&nbsp;FileServer:&nbsp; 
-     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p>サー <span class="wintitle"> バーファイルマネージャーからこのフォルダーにアクセスするには、このパラメーターで指定する場所 </span>が、Log Processing.cfgファイルのLog Pathsパラメーターで指定する場所と一致している必要があり <span class="filepath"></span> ます。 Log Processing.cfgファイル内のLogsディレクトリの変更について詳しくは、『デー <span class="filepath"> タセット設定ガイド </span> 』の「ログ処理設定ファイル」という章を参照してください <i></i>。 </p> </td> 
+     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Logs\\ </code> <p><span class="wintitle">サーバーファイルマネージャー</span>からこのフォルダーにアクセスするには、このパラメーターで指定する場所が、<span class="filepath"> Log Processing.cfg </span>ファイルのLog Pathsパラメーターで指定する場所と一致している必要があります。 <span class="filepath"> Log Processing.cfg </span>ファイル内のLogsディレクトリの変更について詳しくは、『<i>データセット設定ガイド</i>』の「ログ処理設定ファイル」という章を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>FileServer: </p> <p> Local Path = string:監査\\ </p> </td> 
    <td colname="col2"> <p>監査ログのマップ先フォルダー。 </p> <p>例： </p> <code> 5&nbsp;=&nbsp;FileServer:&nbsp; 
-     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>注釈:  <p>監査ログを別のローカルドライブにマップできます(例： <span class="filepath"> string:P:\\Audit\\ </span>)。ただし、監査ログをネットワークドライブにマップしないでください。 </p> <p>サーバーファイルマネージャーからこのフォルダーにアクセスするには、この <span class="wintitle"> パラメーターで指定する場所 </span>が、このファイルのAccess Log Directoryパラメーターで指定する場所と一致している必要があります。 </p> </p> </td> 
+     &nbsp;&nbsp;Local&nbsp;Path&nbsp;=&nbsp;string:&nbsp;Audit\\ </code> <p>注釈:  <p>監査ログを別のローカルドライブにマップできます(例：<span class="filepath">文字列：P:\\Audit\\ </span>)を使用しますが、監査ログをネットワークドライブにマップしないでください。 </p> <p><span class="wintitle">サーバーファイルマネージャー</span>からこのフォルダーにアクセスするには、このパラメーターで指定する場所が、このファイルのAccess Log Directoryパラメーターで指定する場所と一致している必要があります。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>n=</i>NormalizeServer: </td> 
-   <td colname="col2"> <p>このパラメーターは、 <span class="keyword"> Insightサーバーにのみ適用され </span>ます。 </p> <p>Insightサーバークラスターに対して中央の正規化サーバーを指定する方法について詳しくは、『デー <span class="keyword"> タセット設定ガイド </span><i></i>』の「ログ処理設定ファイル」という章を参照してください。 </p> </td> 
+   <td colname="col2"> <p>このパラメーターは、<span class="keyword"> Insightサーバー</span>にのみ適用されます。 </p> <p><span class="keyword"> Insight Server </span>クラスターに対して中央の正規化サーバーを指定する方法について詳しくは、『<i>データセット設定ガイド</i>』の「ログ処理設定ファイル」の章を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p> <i>n=</i>ReportStatusServer: </p> <p> URI = string:/ReportStatus.vsp </p> </td> 
-   <td colname="col2"> <p>このパラメーターは、 <span class="keyword"> Insightサーバーにのみ適用され </span>ます。 </p> <p><span class="keyword"> Insightサーバーの詳細なステータスインターフェイスで、 </span> レポートのステータスを表示でき <span class="keyword"></span>ます。 </p> </td> 
+   <td colname="col2"> <p>このパラメーターは、<span class="keyword"> Insightサーバー</span>にのみ適用されます。 </p> <p><span class="keyword"> Insight Server </span>の詳細なステータスインターフェイスで、<span class="keyword">レポートの</span>ステータスを表示できます。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
