@@ -1,16 +1,15 @@
 ---
 description: Sensorのエラーをできるだけ早く検出し、重大な問題や障害が発生する前に修復するには、イベントログを定期的に監視する必要があります。
-solution: Analytics
 title: 管理イベントの監視
 uuid: c43d6509-6950-4436-8d6c-be7b00664f05
+exl-id: 70894074-b8aa-4f6c-87d1-d0403f4c3319
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 1%
 
 ---
-
 
 # 管理イベントの監視{#monitoring-administrative-events}
 
@@ -18,9 +17,9 @@ Sensorのエラーをできるだけ早く検出し、重大な問題や障害�
 
 **推奨頻度：** 少なくとも1時間
 
-これらのイベントは、WindowsイベントビューアまたはUnix Syslogファイルを使用して監視できます。また、デフォルトでは、インストー [!DNL *.sensor-log] ルディレクトリ内の [!DNL Logs][!DNL Sensor] フォルダーにあるファイルも監視できます。 これらのファイルは、データ収集中にエラーが発生したことを示します。特に、がターゲットに接続できない場合、および開始がデータをキューに入れている [!DNL Sensor][!DNL data workbench server] 場合に、エラーが発生します。
+これらのイベントは、WindowsイベントビューアまたはUnix Syslogファイルと、デフォルトで[!DNL Sensor]インストールディレクトリ内の[!DNL Logs]フォルダーにある[!DNL *.sensor-log]ファイルを使用して監視できます。 これらのファイルは、データ収集中にエラーが発生したことを示します。特に、[!DNL Sensor]がターゲット[!DNL data workbench server]に接続できず、開始がデータをキューに入れている場合に、そのエラーが発生します。
 
-## Windowsでのイベントの監視 {#section-7c0443a356af4381bf22259654f5cd17}
+## Windowsでイベントを監視する{#section-7c0443a356af4381bf22259654f5cd17}
 
 Sensorは、「Adobe」のソースを持つWindowsイベントViewerのアプリケーションログにエラーを記録します。
 
@@ -28,21 +27,21 @@ Sensorは、「Adobe」のソースを持つWindowsイベントViewerのアプ�
 
 **Windowsイベントビューアを開くには**:
 
-* **開始/Campaign コントロールパネル/管理ツール/イベントビューアをクリックします**。
+* **開始/Campaign コントロールパネル/管理ツール/イベントビューア**&#x200B;をクリックします。
 
-## Unixでのイベントの監視 {#section-5de3947891fb47ac88b7c855e545d54a}
+## Unixでのイベントの監視{#section-5de3947891fb47ac88b7c855e545d54a}
 
-センサーは、デー [!DNL syslog] モンにエラーを記録します。
+センサーは、[!DNL syslog]デーモンにエラーを記録します。
 
 syslogデーモンは、syslog.confファイルで指定した規則に基づいて、ログファイルにエラーメッセージを書き込みます。 エラーは、「LOG_DAEMON」というフラグと、重大度に応じて「LOG_NOTICE」または「LOG_ERR」というフラグで記録されます。
 
 **Unixのsyslogを開くには**
 
-Unixのsyslogは、通常、またはにあ [!DNL /var/adm/messages] り [!DNL /var/log/messages]ます。
+Unixのsyslogは通常、[!DNL /var/adm/messages]または[!DNL /var/log/messages]にあります。
 
 適切な場所を参照し、syslogを開きます。
 
-## メッセージ形式について {#section-a0899add30fd4b2da58a23b9e3324693}
+## メッセージ形式について{#section-a0899add30fd4b2da58a23b9e3324693}
 
 すべてのSensorメッセージには文字列「Sensor」が含まれ、表示中のメッセージの重要性を反映するように番号が付けられます。
 
@@ -60,13 +59,13 @@ Unixのsyslogは、通常、またはにあ [!DNL /var/adm/messages] り [!DNL /
 
 ネットワーク管理ツールは、「Sensor」ソースに関するエラーが発生した場合に5 ～ 10分ごとにメッセージを監視し、介入が必要な問題に関する適切な担当者に警告するように設定できます。 「Sensor Error」文字列など、特定の種類のイベントメッセージについてのみ、システムを監視するように選択できます。 また、「Sensor Info」、「Sensor Warning」および「Sensor Error」の文字列が前に付いたイベントに別のルールを適用することもできます。
 
-## 重要なメッセージの識別 {#section-5a20f5dc18ca4012931d194db855e54e}
+## 重要なメッセージの識別{#section-5a20f5dc18ca4012931d194db855e54e}
 
 イベントログ内では、キューサイズに関するメッセージに特に注意し、直ちに対処する必要があります。
 
-例えば、「 [!DNL Sensor Info 1012: Adobe disk queue is #% full]」などのメッセージは注意が必要です。
+例えば、「[!DNL Sensor Info 1012: Adobe disk queue is #% full]」などのメッセージは注意が必要です。
 
-## センサーイベントメッセージへの応答 {#section-0004c4a169dc4a8882d9bd87dd326ad4}
+## センサーイベントメッセージへの応答{#section-0004c4a169dc4a8882d9bd87dd326ad4}
 
 サポートされるWebサーバープラットフォームに対するSensorのイベントと推奨されるアクションを示す表です。
 
@@ -195,10 +194,10 @@ Unixのsyslogは、通常、またはにあ [!DNL /var/adm/messages] り [!DNL /
 
 | イベントメッセージ | 推奨されるアクション |
 |---|---|
-| Sensorエラー3015:ns/server/[server]/module/[module] sectionがAOLServer設定ファイルにありません。 | これは設定エラーです。 誤って記載されたとおりに訂正しなさい。 |
+| Sensorエラー3015:ns/server/[server]/module/[module]セクションがAOLServer設定ファイルにありません。 | これは設定エラーです。 誤って記載されたとおりに訂正しなさい。 |
 | Sensorエラー3019:vys-cookieは、vys-logの前に呼び出されませんでした。 サポートにお問い合わせください。 AdobeのClientCareにお問い合わせください。 | サポートにお問い合わせください。 AdobeのClientCareにお問い合わせください。 |
-| センサーエラー3020:AOLServer設定ファイルの [セクション] セクションにVisualSciencesConfigが最初のエントリとして見つかりません。 | これは設定エラーです。 誤って記載されたとおりに訂正しなさい。 |
-| センサーエラー3021:AOLServer構成ファイルの [section] セクションにVisualSciencesConfigの値がありません。 | これは設定エラーです。 誤って記載されたとおりに訂正しなさい。 |
+| センサーエラー3020:AOLServer構成ファイルの[セクション]セクションにVisualSciencesConfigが最初のエントリとして見つかりません。 | これは設定エラーです。 誤って記載されたとおりに訂正しなさい。 |
+| センサーエラー3021:VisualSciencesConfigの値がAOLServer構成ファイルの[section]セクションにありません。 | これは設定エラーです。 誤って記載されたとおりに訂正しなさい。 |
 
 **iPlanetおよびJavaシステムWebサーバ**
 
@@ -207,4 +206,3 @@ Unixのsyslogは、通常、またはにあ [!DNL /var/adm/messages] り [!DNL /
 | Sensorエラー3011:初期ディレクティブが必要です。 例：Init fn=vys-init config-file=&quot;/mypath/myfile&quot; | これは設定エラーです。 iPlanet initディレクティブがありません。 |
 | Sensorエラー3015:config-fileがiPlanet Initディレクティブで指定されていません | これは設定エラーです。 構成ファイルへのパスがiPlanet Initディレクティブで指定されていません。 |
 | Sensorエラー3019:vys-cookieは、vys-logの前に呼び出されませんでした。 構成ファイルを確認してください | vys-cookieは、各ソフトウェア仮想サーバの最初のNameTransディレクティブとして指定する必要があります。 |
-
