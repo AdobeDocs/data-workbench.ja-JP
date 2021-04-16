@@ -1,20 +1,21 @@
 ---
 description: 「データセットのスキーマ」インターフェイスには、変換データセット設定ファイルで定義されている拡張ディメンション（可算、シンプル、多対多、数値、非正規、時間の各ディメンション）とそれらのディメンション間の関係が表示されます。
-solution: Analytics
 title: データセットのスキーマ
-topic: Data workbench
 uuid: 4ef5f14b-dc19-4118-a2f2-d680ded8092c
+exl-id: b80e6e8e-9147-46ec-8602-2d7e5d33f077
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 76%
 
 ---
-
 
 # データセットのスキーマ{#dataset-schema}
 
 「データセットのスキーマ」インターフェイスには、変換データセット設定ファイルで定義されている拡張ディメンション（可算、シンプル、多対多、数値、非正規、時間の各ディメンション）とそれらのディメンション間の関係が表示されます。
 
-In addition, the [!DNL Dataset Schema] interface shows any derived dimensions that you have defined, as well as any extended dimensions that are configured to be hidden.
+さらに、[!DNL Dataset Schema]インターフェイスには、定義済みの派生ディメンションと、非表示に設定されている拡張ディメンションが表示されます。
 
 ![](assets/vis_DatasetSchema_Example.png)
 
@@ -26,13 +27,13 @@ In addition, the [!DNL Dataset Schema] interface shows any derived dimensions th
 
 ## 「データセットのスキーマ」インターフェイスでディメンションのタイプを判別するには{#section-16a0a12b11334c07bec558c0b7d260b1}
 
-The following table lists the dimension types and the colors in which their names appear in the [!DNL Dataset Schema] interface. （上記の例の）サンプルディメンションの親についても記述しています。
+次の表に、[!DNL Dataset Schema]インターフェイスに名前が表示されるディメンションタイプと色をリストします。 （上記の例の）サンプルディメンションの親についても記述しています。
 
 <table id="table_20D1A9EAAED247338476C475C63255F5"> 
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> ディメンションタイプ </th> 
-   <th colname="col2" class="entry"> 色 </th> 
+   <th colname="col2" class="entry"> Color </th> 
    <th colname="col3" class="entry"> サンプルディメンションと親 </th> 
   </tr> 
  </thead>
@@ -44,12 +45,12 @@ The following table lists the dimension types and the colors in which their name
   </tr> 
   <tr> 
    <td colname="col1"> 非正規 </td> 
-   <td colname="col2"> イエロー </td> 
+   <td colname="col2"> 黄色 </td> 
    <td colname="col3"> DenormalPage：親は Page View。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 派生 </td> 
-   <td colname="col2"> ブルー </td> 
+   <td colname="col2"> 青 </td> 
    <td colname="col3"> Next Page：親は Page View。 </td> 
   </tr> 
   <tr> 
@@ -80,15 +81,14 @@ The following table lists the dimension types and the colors in which their name
  </tbody> 
 </table>
 
-## ディメンションのデフォルトのビジュアライゼーションを表示するには {#section-1bbb73a5cbb34ffb844eb1932db85318}
+## ディメンションのデフォルトのビジュアライゼーションを表示するには  {#section-1bbb73a5cbb34ffb844eb1932db85318}
 
-* In the [!DNL Dataset Schema] interface, click the desired dimension. デフォルトのビジュアライゼーションが表示されます。例えば、デフォルトのビジュアライゼーションが、セッションと選択ディメンションを表示するテーブルである場合、URI ディメンションをクリックすると、セッションごとの URI のテーブルが Data Workbench に表示されます。
+* [!DNL Dataset Schema]インターフェイスで、目的のディメンションをクリックします。 デフォルトのビジュアライゼーションが表示されます。例えば、デフォルトのビジュアライゼーションが、セッションと選択ディメンションを表示するテーブルである場合、URI ディメンションをクリックすると、セッションごとの URI のテーブルが Data Workbench に表示されます。
 
 >[!NOTE]
 >
->If you want to change the default visualization that displays, see the Configuring Interface and Analysis Features chapter in the *Data Workbench User Guide*.
+>表示されるデフォルトのビジュアライゼーションを変更する場合は、『*Data Workbenchユーザーガイド*』の「インターフェイスと分析の機能の設定」という章を参照してください。
 
 ## ディメンションの特定のビジュアライゼーションを表示するには {#section-d46626df90bc4c44ae60c4b71eaeac7f}
 
-* インターフ [!DNL Dataset Schema] ェイスで、目的のディメンションを右クリックし、「>」を **[!UICONTROL Add Visualization]** クリッ *クし&#x200B;**[!UICONTROL visualization type]**ます*。
-
+* [!DNL Dataset Schema]インターフェイスで、目的のディメンションを右クリックし、**[!UICONTROL Add Visualization]**/*&lt;**[!UICONTROL visualization type]**>*&#x200B;をクリックします。
