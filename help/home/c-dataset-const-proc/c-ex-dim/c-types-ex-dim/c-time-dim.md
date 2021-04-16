@@ -1,14 +1,15 @@
 ---
 description: 時間ディメンションを使用すると、Input Time (1970 epoch) パラメーターに指定した任意のタイムスタンプフィールドに基づいて、定期的または絶対的なローカル時間ディメンション（日、曜日、時間帯、予約時刻など）のグループを作成できます。
-solution: Analytics
 title: 時間ディメンション
-topic: Data workbench
 uuid: b633cf4f-0db4-4378-9e59-43b6ad8f772d
+exl-id: f9534b24-3a16-4220-bac2-bc541e121005
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 100%
 
 ---
-
 
 # 時間ディメンション{#time-dimensions}
 
@@ -33,8 +34,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments </td> 
-   <td colname="col2"> (オプション)拡張ディメンションについてのメモ。 </td> 
+   <td colname="col1"> コメント </td> 
+   <td colname="col2"> （オプション）拡張ディメンションについてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -76,4 +77,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 この例では、ユーザー定義の入力フィールド x-time-1970 に基づいて時間ディメンションのグループを作成します。この時間ディメンションのグループ名は「Session Time」です。各ディメンションの親は Session ディメンションであるので、時間ディメンションの各エレメントは、セッション期間の開始時間と対応します。Week ディメンションの各週の始まりは、Week Start Day パラメーターにより月曜日に指定されています。
 
 ![](assets/cfg_Transformation_Dim_TimeDim.png)
-
