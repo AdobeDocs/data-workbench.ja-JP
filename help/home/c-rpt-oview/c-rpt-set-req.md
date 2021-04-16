@@ -1,14 +1,15 @@
 ---
 description: レポートセットの要件に関する概念情報です。
-solution: Analytics
 title: レポートセットの要件
-topic: Data workbench
 uuid: 81d79a8f-cde1-4d86-b8b4-1b71313bac24
+exl-id: 58a2a142-8927-4300-997b-b94d0bf2e896
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 5%
 
 ---
-
 
 # レポートセットの要件{#report-set-requirements}
 
@@ -16,12 +17,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 すべてのレポートセットは、次の条件を満たす必要があります。
 
-* &lt;working profile name **>\Reportsフォルダー内のサブフォルダーに保存します。 これらは、のタブに表示 [!DNL Reports] される必要がありま [!DNL Worktop]す。
+* *&lt;working folder name*>\Reportsフォルダー内のサブプロファイルーに保存します。 これらは[!DNL Worktop]の[!DNL Reports]タブに表示される必要があります。
 
-* レポートセッ [!DNL Report.cfg] トフォルダー内のファイルを含みます。
-* 1つ以上のワークスペースを含む（または参照する）。
+* レポートセットフォルダーに[!DNL Report.cfg]ファイルを含めます。
+* 少なくとも1つのワークスペースを含む（または参照する）。
 
 >[!NOTE]
 >
->を使用して表示するには、レ [!DNL Report Portal]ポートは特定の命名規則に従う必要があります。 また、レポートの保存先のディレクトリは、所定の構造に従う必要があります。 これらの要件の詳細については、「レポートセッ [トがレポートポータルと互換性があることを確認する」を参照してください。](../../home/c-rpt-oview/c-install-rpt-port/c-rpt-port-user-inter.md#section-2b141e5d198a4bbea455699126c24706).
-
+>[!DNL Report Portal]を使用して表示するには、レポートは特定の命名規則に従う必要があります。 また、レポートの保存先ディレクトリは、所定の構造に従う必要があります。 これらの要件の説明については、[レポートセットとレポートポータルとの互換性の確保を参照してください。](../../home/c-rpt-oview/c-install-rpt-port/c-rpt-port-user-inter.md#section-2b141e5d198a4bbea455699126c24706).
