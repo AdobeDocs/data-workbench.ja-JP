@@ -1,16 +1,15 @@
 ---
 description: Insightサーバーにインストールされるアドレスファイルには、4つの定義済みのネットワークの場所が含まれています。
-solution: Analytics
 title: Insight サーバーにインストールされるアドレスファイル
 uuid: a58d36d8-e1a3-43e7-91c5-c57351e1be49
+exl-id: 12e9bfa2-99ac-4584-b761-38401d1bc3d1
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 2%
 
 ---
-
 
 # Insight サーバーにインストールされるアドレスファイル{#the-address-file-installed-on-insight-server}
 
@@ -41,23 +40,23 @@ Locations = vector: 4 items
     Parent = string:
 ```
 
-* NetworkLocation 0は、IPアドレスにの共通名を関連付けるために編集する、空の名前のないネットワークの場所 [!DNL Insight Server] です。 サーバーに複数のIPアドレスがある場合は、NetworkLocationsを追加作成します。
-* NetworkLocation 1は、ネット [!DNL Insight] ワークの場所です。 NetworkLocationパラメーターを明示的に設定しない場合、は、このネットワークの場所を通じて共通名を [!DNL Insight] 解決します。
+* NetworkLocation 0は空の名前のないネットワークの場所で、[!DNL Insight Server]の共通名をIPアドレスに関連付けるために編集します。 サーバーに複数のIPアドレスがある場合は、NetworkLocationsを追加作成します。
+* NetworkLocation 1は[!DNL Insight]ネットワークの場所です。 NetworkLocationパラメーターを明示的に設定しない場合、[!DNL Insight]は、このネットワークの場所を通じて共通名を解決します。
 
-* NetworkLocation 2は、 [!DNL Insight Server] ネットワークの場所です。 クラスターで [!DNL Insight Servers] 動作する場合は、このネットワークの場所を使用して、サーバー間通信の共通名を解決します。
+* NetworkLocation 2は[!DNL Insight Server]ネットワークの場所です。 [!DNL Insight Servers]がクラスター内で動作する場合は、このネットワークの場所を使用して、サーバー間通信の共通名を解決します。
 
-* NetworkLocation 3は、 [!DNL Report] サーバーのネットワークの場所です。 NetworkLocationパラメーターを明示的に設定しない場合、は、このネットワークの場所を通じて共通名を [!DNL Report] 解決します。
+* NetworkLocation 3は、[!DNL Report]サーバーのネットワークの場所です。 NetworkLocationパラメーターを明示的に設定しない場合、[!DNL Report]は、このネットワークの場所を通じて共通名を解決します。
 
-## アドレスファイルを設定するには {#section-10caab9854a244e39b09071946f7bd27}
+## アドレスファイルを構成するには{#section-10caab9854a244e39b09071946f7bd27}
 
-次の手順では、アドレスファイルを構成して、のネットワークの場所（またはネットワークの場所）を定義する方法を説明し [!DNL Insight Server]ます。
+次の手順では、[!DNL Insight Server]のネットワークの場所（またはネットワークの場所）を定義するアドレスファイルを構成する方法を説明します。
 
-1. インストールしたディレクトリ内の [!DNL Addresses] フォルダーに移動し [!DNL Insight Server] ます(例えば、 [!DNL C:\Adobe\Server\Addresses)])。
+1. [!DNL Insight Server]をインストールしたディレクトリの[!DNL Addresses]フォルダーに移動します（例：[!DNL C:\Adobe\Server\Addresses)]）。
 
-1. ファイルを探し、この [!DNL server.address] ファイルの名前を変更して、サーバーの共通名を反映します。 例えば、共通名がの場合 [!DNL server.mycompany.com]は、ファイル名を変更し [!DNL server.mycompany.com.address]ます。
+1. [!DNL server.address]ファイルを探し、このファイルの名前を変更してサーバーの共通名を反映します。 例えば、共通名が[!DNL server.mycompany.com]の場合は、ファイル名を[!DNL server.mycompany.com.address]に変更します。
 
 1. 名前を変更したファイルをメモ帳などのテキストエディターで開きます。
-1. NetworkLocation 0を編集し、次に示すように、の共通名とIPアドレス [!DNL Insight Server] を指定します。 サーバーに複数のIPアドレスがある場合は、NetworkLocation 0を使用して、ルーティング不可能なローカルネットワーク上のサーバーのIPアドレス（内部ネットワーク上のサーバーの場所など）を指定します。
+1. NetworkLocation 0を編集し、次に示すように[!DNL Insight Server]の共通名とIPアドレスを指定します。 サーバーに複数のIPアドレスがある場合は、NetworkLocation 0を使用して、ルーティング不可能なローカルネットワーク上のサーバーのIPアドレス（内部ネットワーク上のサーバーの場所など）を指定します。
 
    ```
    Locations = vector: 3 items 
@@ -80,22 +79,22 @@ Locations = vector: 4 items
  <tbody> 
   <tr> 
    <td colname="col1"> <i>IP アドレス</i> </td> 
-   <td colname="col2"> <p>Insightサーバーコンピューターの数値のIPアドレス <span class="keyword"> で </span> す。 </p> <p>例: 192.168.124.176 </p> </td> 
+   <td colname="col2"> <p><span class="keyword"> Insightサーバー</span>マシンの数値のIPアドレス。 </p> <p>例: 192.168.124.176 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <i>共通名 </i> </td> 
-   <td colname="col2"> <p>Insightサーバーのデジタル証明書に割り当てられる共通名 <span class="keyword"> で </span>す。 </p> <p>例： <span class="filepath"> server.mycompany.com </span></p> <p>注意：この名前は、証明書に表示されるとおりに入力してください。 </p> </td> 
+   <td colname="col1"> <i>共通名  </i> </td> 
+   <td colname="col2"> <p><span class="keyword"> Insight Server </span>のデジタル証明書に割り当てられる共通名です。 </p> <p>例：<span class="filepath"> server.mycompany.com </span></p> <p>注意：この名前は、証明書に表示されるとおりに入力してください。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <i>ネットワークの場所名 </i> </td> 
+   <td colname="col1"> <i>ネットワークの場所名  </i> </td> 
    <td colname="col2"> <p>このNetworkLocationが表す共通名とIPアドレスのコレクションに割り当てる名前です。 名前は、アドレスファイル内で一意である必要があります。 </p> <p>例：社内イントラネット </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-1. 追加のIPアドレス [!DNL Insight Server] がある場合は、各アドレスに対してNetworkLocationを追加作成します。 （これを簡単に行うには、上記で作成したNetworkLocationのコピーを作成し、そのコピー内のIPアドレスを更新します）。
+1. [!DNL Insight Server]に追加のIPアドレスがある場合は、各アドレスに対してNetworkLocationを追加作成します。 （これを簡単に行うには、上記で作成したNetworkLocationのコピーを作成し、そのコピー内のIPアドレスを更新します）。
 
-   新しいNetworkLocationは、アドレスファイルの末尾に追加するか、既存のNetworkLocation定義の間に挿入できます。 (アドレスファイル内でのNetworkLocationの位置は重要ではありません。ただし、 [!DNL Insight]、、 [!DNL Insight Server]および [!DNL Report] Server NetworkLocationsは、通常、ファイルの末尾に配置されます)。
+   新しいNetworkLocationは、アドレスファイルの末尾に追加するか、既存のNetworkLocation定義の間に挿入できます。 (アドレスファイル内でのNetworkLocationの位置は重要ではありません。ただし、[!DNL Insight]、[!DNL Insight Server]、[!DNL Report] Server NetworkLocationsは通常、ファイルの末尾に配置されます)。
 
    必要なNetworkLocationsを追加した後、次の手順を実行してファイル内の項目を再番号付けします。
 
@@ -106,9 +105,9 @@ Locations = vector: 4 items
       ```
 
    1. NetworkLocationsに連続番号が付けられるよう（0から始まる）に、NetworkLocation項目番号を更新します。
-   2つのIPアドレスを持つアドレスを定義するアドレスファイルの例につ [!DNL Insight Server] いては、この節の例を参照してください。
+   2つのIPアドレスを持つ[!DNL Insight Server]を定義するアドレスファイルの例については、この節の例を参照してください。
 
-1. お [!DNL Insight] よび [!DNL Report] サーバーのネットワークの場所で、次に示すようにParentパラメーターを編集して、NetworkLocationの名前を指定します。この名前は、デフォルトのネットワークの場所 [!DNL Insight] として [!DNL Report] 使用されます。 （Parentパラメーターを設定した場合の外観の例については、この節の例を参照してください）。
+1. [!DNL Insight]と[!DNL Report]サーバーのネットワークの場所で、次に示すようにParentパラメーターを編集し、[!DNL Insight]と[!DNL Report]がデフォルトのネットワークの場所として使用するNetworkLocationの名前を指定します。 （Parentパラメーターを設定した場合の外観の例については、この節の例を参照してください）。
 
    ```
    1 = NetworkLocation:  
@@ -122,9 +121,9 @@ Locations = vector: 4 items
      Parent = string: ClientDefaultNetworkLocation
    ```
 
-   IPアドレス [!DNL Insight Server] が1つで、したがってNetworkLocationが1つだけの場合は、ParentパラメーターにそのNetworkLocationを指定します。 複数のIPアドレス [!DNL Insight Server] がある場合は、Parentパラメーターに、最も頻繁に接続するアドレスを定義するNetworkLocationを指定し [!DNL Insight] ま [!DNL Report] す。
+   [!DNL Insight Server]のIPアドレスが1つだけで、したがって、NetworkLocationが1つだけの場合は、ParentパラメーターにそのNetworkLocationを指定します。 [!DNL Insight Server]に複数のIPアドレスがある場合は、Parentパラメーターに、[!DNL Insight]および[!DNL Report]クライアントが最も頻繁に接続するアドレスを定義するNetworkLocationを指定します。
 
-1. ネットワークの場所で、次に示すようにParentパラメーターを編集し、クラスター内で動作している場合に、サーバーが他ののの共通名を解決するために使用するNetworkLocation [!DNL Insight Server][!DNL Insight Servers] を指し示します。 （このネットワークの場所は、クラスター内で動作しない限り使用しませんが、単一のサーバー設定でも、Parentパラメーターに、サーバーの内部IPアドレスを識別するネットワークの場所を示すことをお勧めします）。 [!DNL Insight Server]
+1. [!DNL Insight Server]ネットワークの場所で、次に示すようにParentパラメーターを編集し、他の[!DNL Insight Servers]の共通名を解決するためにサーバーが使用するNetworkLocationを、クラスター内で動作しているときに参照します。 （このネットワークの場所は、[!DNL Insight Server]がクラスター内で動作しない限り使用しませんが、単一のサーバー設定でも、Parentパラメーターにサーバーの内部IPアドレスを識別するネットワークの場所を示すことをお勧めします）。
 
    ```
    2 = NetworkLocation:  
@@ -135,12 +134,12 @@ Locations = vector: 4 items
 
 次の例は、完了したアドレスファイルを示しています。 このファイルは、5つのネットワークの場所を定義します。
 
-* NetworkLocation項目0と1は、「MyCorporateIntranet」および「Internet」という名前のネットワークの場所を定義します。 これらのネットワークの場所では、という名前のサーバーに対して2つの異なるIPアドレスを定義 [!DNL VS01.myCompany.com]します。
-* NetworkLocation項目2は、ネット [!DNL Insight] ワークの場所です。 これは、で使用される既定のネットワークの場所で [!DNL Insight]す。 この例では、ネット [!DNL Insight] ワークの場所は、「インターネット」のNetworkLocationからAddressDefinitionsを継承します。
+* NetworkLocation項目0と1は、「MyCorporateIntranet」および「Internet」という名前のネットワークの場所を定義します。 これらのネットワークの場所は、[!DNL VS01.myCompany.com]という名前のサーバーに対して2つの異なるIPアドレスを定義しています。
+* NetworkLocation項目2は[!DNL Insight]ネットワークの場所です。 これは[!DNL Insight]が使用するデフォルトのネットワークの場所です。 この例では、[!DNL Insight]ネットワークの場所は、&quot;Internet&quot; NetworkLocationからAddressDefinitionsを継承します。
 
-* NetworkLocation項目3は、ネット [!DNL Insight Server] ワークの場所です。 これは、クラスター内の他のサーバーと通信する場合に [!DNL Insight Server] 使用されるデフォルトのネットワークの場所です。 この例では、ネット [!DNL Insight Server] ワークの場所は、「MyCorporate Intranet」のNetworkLocationからAddressDefinitionsを継承します。
+* NetworkLocation項目3は[!DNL Insight Server]ネットワークの場所です。 これは、クラスター内の他のサーバーと通信する場合に[!DNL Insight Server]が使用するデフォルトのネットワークの場所です。 この例では、[!DNL Insight Server]ネットワークの場所は、「MyCorporate Intranet」のNetworkLocationからAddressDefinitionsを継承しています。
 
-* NetworkLocation項目4は、 [!DNL Report] Serverのネットワークの場所です。 これは、で使用される既定のネットワークの場所で [!DNL Report]す。 この例では、サー [!DNL Report] バーのネットワークの場所は、「インターネット」のNetworkLocationからAddressDefinitionsを継承します。
+* NetworkLocation項目4は、[!DNL Report] Serverのネットワークの場所です。 これは[!DNL Report]が使用するデフォルトのネットワークの場所です。 この例では、[!DNL Report]サーバーのネットワークの場所は、&quot;Internet&quot; NetworkLocationからAddressDefinitionsを継承します。
 
    ```
    Locations = vector: 5 items 
@@ -175,4 +174,3 @@ Locations = vector: 4 items
        Name = string: Report Server 
        Parent = string: Internet
    ```
-
