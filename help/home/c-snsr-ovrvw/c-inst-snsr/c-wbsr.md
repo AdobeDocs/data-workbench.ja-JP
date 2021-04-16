@@ -1,28 +1,27 @@
 ---
 description: AIX 5.1以降で実行するWebSphere 5.x用Sensorのインストールおよび設定の詳細な手順。
-solution: Analytics
 title: WebSphere（AIX）
 uuid: a5a3fd79-a7f0-4861-adca-8da3a185d0df
+exl-id: e560d265-dc84-4ff2-ac86-7a2ac5261451
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1645'
 ht-degree: 1%
 
 ---
 
-
 # WebSphere（AIX）{#websphere-on-aix}
 
 AIX 5.1以降で実行するWebSphere 5.x用Sensorのインストールおよび設定の詳細な手順。
 
-のプログラムファイル [!DNL Sensor] は、Adobeのダウンロードサイトから取得したインストールファイルにパッケージ化されます。 お使いのWebサーバーの [!DNL Sensor] インストールファイルがまだない場合は、次の手順を開始する前に、ダウンロード(またはAdobeの担当者から入手)してください。
+[!DNL Sensor]のプログラムファイルは、Adobeのダウンロードサイトから取得したインストールファイルにパッケージ化されています。 ご使用のWebサーバーの[!DNL Sensor]インストールファイルがまだない場合は、次の手順を開始する前に、ダウンロード(またはAdobeの担当者から入手)してください。
 
 >[!NOTE]
 >
->WebSphereサーバ [!DNL Sensor] ー用は、対照実験をサポートしていません。 対照実験の詳細については、『 *Data Workbench制御実験ガイド』を参照してください。*
+>WebSphereサーバーの[!DNL Sensor]は、対照実験をサポートしていません。 実験の制御については、『*Data Workbench制御実験ガイド』を参照してください。*
 
-## Install the Program Files {#section-86f69127278c41bc90b97b68bb40bc6e}
+## プログラムファイルのインストール{#section-86f69127278c41bc90b97b68bb40bc6e}
 
 Sensorのプログラムファイルを抽出し、サーバーマシンにインストールする手順です。
 
@@ -101,7 +100,7 @@ Sensorのプログラムファイルを抽出し、サーバーマシンにイ�
 
 推奨されるデフォルト値以外の権限を使用する場合は、「Sensor UNIX File Permissions」の情報を確認し、これらのファイルの使用方法を確認してください。
 
-## Edit the Sensor Configuration file {#section-283c8a92fa8841c1b6034e5f834ef4e7}
+## Sensor設定ファイル{#section-283c8a92fa8841c1b6034e5f834ef4e7}を編集します
 
 txlogd.confファイルには、Sensorの設定パラメーターが含まれています。
 
@@ -117,7 +116,7 @@ txlogd.confファイルには、Sensorの設定パラメーターが含まれて
 1. /etc/txlogd.confファイルをテキストエディターで開き、必要なパラメーターと必要なオプションのパラメーターを設定します。
 1. ファイルを保存して閉じます。
 
-## 送信機の開始とディスク・キューの作成 {#section-63285a2328604f20a2cb31b3d5cb80e6}
+## 送信機の開始とディスク・キューの作成{#section-63285a2328604f20a2cb31b3d5cb80e6}
 
 txlogd.confファイルを設定した後のディスクキューの作成手順。
 
@@ -140,14 +139,14 @@ txlogd.confファイルを設定した後のディスクキューの作成手順
    1. ディスクキューが割り当てられているデバイスが動作していて、QueueSizeパラメーターで指定されたサイズのファイルを保持するのに十分な領域があることを確認してください。
    1. 必要な修正を加え、この手順を繰り返します。
 
-## Web アプリケーション追加の収集者 {#section-d17297b1193f4e3cb150fb41f754ef12}
+## Web アプリケーション追加{#section-d17297b1193f4e3cb150fb41f754ef12}のコレクタ
 
 WebSphereサーバーの場合、コレクタはサーブレットコンテナのフィルタとして機能します。
 
 Webアプリケーションにコレクターを追加するには、Webアプリケーションのweb.xmlデプロイメント記述子にフィルターを追加し、Webアプリケーションを再起動します。
 
 1. テキストエディターを使用して、イベントSensorが取得したWebサーバーのweb.xmlファイルを開きます。
-1. 次の追加要素 `<filter>` と、記述子ファイル `<filter-mapping>` の要素。 /etcディレクトリにtxlogd.confをインストールしなかった場合は、このファイルへの正しいパスを `<param-value>` 要素に入力する必要があります。
+1. 次の追加`<filter>`要素と`<filter-mapping>`要素を記述子ファイルに追加します。 /etcディレクトリにtxlogd.confをインストールしなかった場合は、`<param-value>`要素にこのファイルへの正しいパスを入力する必要があります。
 
    ```
    <filter>
@@ -175,7 +174,7 @@ Webアプリケーションにコレクターを追加するには、Webアプ�
 
 1. Webアプリケーションを再起動します。 コレクタはアプリケーションと共に読み込まれ、イベントデータの収集とディスクキューへの書き込みを開始します。
 
-## コレクタと共有オブジェクト・ファイルの場所の宣言 {#section-e641f08999d34a648aaee2111b69ca25}
+## コレクタと共有オブジェクトファイルの場所を宣言{#section-e641f08999d34a648aaee2111b69ca25}
 
 Websphere起動スクリプトを編集して、J2EECollector.jarファイルとlibvisual_sciences.soファイルの場所を宣言する手順。
 
@@ -192,9 +191,9 @@ Websphere起動スクリプトを編集して、J2EECollector.jarファイルと
    WAS_LIBPATH="$WAS_LIBPATH":/usr/local/visual_sciences
    ```
 
-1. Save the [!DNL setupCmdLine.sh] file.
+1. [!DNL setupCmdLine.sh]ファイルを保存します。
 
-## センサーのテスト {#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}
+## センサーをテスト{#section-07f2da5c4caa46bf9dd1cb4ae4b61af5}
 
 送信機を開始し、Insightサーバーに接続して、イベントデータを送信できるかどうかを確認する手順です。
 
@@ -216,7 +215,7 @@ Websphere起動スクリプトを編集して、J2EECollector.jarファイルと
    * txtlogd.confでは、ServerAddressパラメーターとServerPortパラメーターが正しく設定されています。 サーバー名を使用してServerAddressを指定した場合は、代わりに数値のIPアドレスを使用してみてください。
    * CertNameパラメーターの値は、ターゲットインサイトサーバーのデジタル証明書に表示される共通名と完全に一致します。
 
-## シ追加ステム起動スクリプトへの送信機 {#section-23bb905100d04f018af93873dd4d5f68}
+## シ追加ステム起動スクリプトへの送信機{#section-23bb905100d04f018af93873dd4d5f68}
 
 Webサーバーコンピューターの再起動時に、送信機が自動的に読み込まれるようにする情報です。
 
@@ -228,7 +227,7 @@ Webサーバーコンピューターの再起動時に、送信機が自動的�
 
 このコマンドは、送信機をデーモンとして開始します。 送信機が生成する動作メッセージとエラーメッセージは、syslogに書き込まれます。
 
-## 追加データの取得 {#section-d5ccf8ee50914a87938e0c17480757e6}
+## 追加データの取り込み{#section-d5ccf8ee50914a87938e0c17480757e6}
 
 すべてのプラットフォームのセンサーは、HTTPリクエストヘッダーおよび応答ヘッダーで使用可能な任意のデータを収集できます。
 
@@ -242,7 +241,7 @@ J2EEプラットフォーム用のSensorは、他のプラットフォームで�
 
 J2EEプラットフォーム用のセンサーは、要求を受け取ると、appendToLog関数をインポートするコレクタークラスを呼び出します。 appendToLog関数は、最初のリクエストにappendToLog関数で指定されたクエリ文字列パラメータを追加します。 この結果、最初のリクエストのURIには、取り込まれるデータの名前と値に対応する、追加のクエリ文字列の名前と値のペアが含まれます。 例えば、特定の広告プレースメントまたはクリックスルーリンクの値が20セントの場合、CPC=20が初期リクエストに追加されます。 Insight Serverは、これらの値を分析用のデータセットに処理します。 この収集方法のもう1つの利点は、ページタギング手法を使用して作成されるように、追加のログエントリを作成することなく追加のデータを収集できる点です。
 
-For more information about processing, see the *Dataset Configuration Guide*.
+処理について詳しくは、『*データセット設定ガイド*』を参照してください。
 
 1. 次追加のコードは、データを取り込む.jspページの先頭に配置します。
 
@@ -268,4 +267,3 @@ For more information about processing, see the *Dataset Configuration Guide*.
    結果の要求URIは/index.jsp?A=1&amp;B=2です。
 
 1. 追加のデータを取り込む各.jspページに対して、この手順を繰り返します。
-
