@@ -1,27 +1,26 @@
 ---
 description: クラスターを使用するには、クラスター内の1つのInsightサーバーを、マスターInsightサーバーとして機能するように指定する必要があります。
-solution: Analytics
 title: マスター Insight サーバーのインストール
 uuid: a73214f3-b175-4e9e-8802-7a8451d86d3a
+exl-id: 710f1ffe-f620-4920-b4f9-a644cc68d4cc
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 5%
 
 ---
 
-
 # マスター Insight サーバーのインストール{#installing-the-master-insight-server}
 
 クラスターを使用するには、クラスター内の1つのInsightサーバーを、マスターInsightサーバーとして機能するように指定する必要があります。
 
-セッションの開始時に、 [!DNL Insight] またはマスターに [!DNL Report] 接続するなどのクライアントコンポーネント [!DNL Insight Server] 。 セッション中の後続のポイントでは、クライアントは、クエリを実行するためにクラスター [!DNL Insight Servers] 内の他のクラスターと接続する場合があります。 クライアントとクラスター内の他方との間の以降の接続 [!DNL Insight Servers] は、マスターによってブロークされ、クライアント [!DNL Insight Server] に対して透過的に行われます。
+[!DNL Insight]や[!DNL Report]などのクライアントコンポーネントは、セッションの開始時にマスター[!DNL Insight Server]に接続します。 セッション中の後続のポイントでは、クライアントはクラスター内の他の[!DNL Insight Servers]に接続してクエリを実行する場合があります。 クライアントとクラスター内の他の[!DNL Insight Servers]との接続は、マスター[!DNL Insight Server]によってブロークされ、クライアントに対して透過的になります。
 
-クライアントとクラスター内の他のクラスター間のブローカリング接続 [!DNL Insight Servers] に加え、マスターは、クラスター全体の中央管理ポイント [!DNL Insight Server] として機能します。 クラスターを管理する場合は、マスターを更新し [!DNL Insight Server]ます。 マスターに対して行った管理上の変更は、クラスター内 [!DNL Insight Server] の他のユーザー [!DNL Insight Servers] によって取得されます。
+クライアントとクラスター内の他の[!DNL Insight Servers]間の接続の分離に加え、マスター[!DNL Insight Server]は、クラスター全体の中央管理ポイントとして機能します。 クラスターを管理する場合は、マスター[!DNL Insight Server]を更新します。 マスター[!DNL Insight Server]に対して行った管理上の変更は、クラスター内の他の[!DNL Insight Servers]によって取得されます。
 
 **マスターをインストールするには[!DNL Insight Server]**
 
-1. どのマシンがマスターとして機能するかを決定し [!DNL Insight Server]ます。
-1. このマシンに(通常 [!DNL Insight Server] は [!DNL Insight Server] FSU)をインストールし、設定します( [Insightサーバーを参照](../../../../../../home/c-inst-svr/c-msr-server/c-msr-server.md))。
-1. 「 [!DNL Insight] ユーザガイド [!DNL Insight Server]*[!DNL Insight]*」の説明に従って、マスターへの接続をインストールし、設定します。
+1. どのマシンがマスター[!DNL Insight Server]として機能するかを決定します。
+1. [Insight Server](../../../../../../home/c-inst-svr/c-msr-server/c-msr-server.md)の説明に従って、このマシンに[!DNL Insight Server]（通常は[!DNL Insight Server] FSU）をインストールし、設定します。
+1. [!DNL Insight]をインストールし、*[!DNL Insight]ユーザーガイド*&#x200B;の説明に従って、マスター[!DNL Insight Server]への接続を設定します。
