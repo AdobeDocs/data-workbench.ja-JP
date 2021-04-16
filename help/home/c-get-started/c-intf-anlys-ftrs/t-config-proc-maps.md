@@ -1,27 +1,28 @@
 ---
 description: プロセスマップは、アプリケーションとデータセットに対して意味を持つベースディメンション、グループディメンション、レベルディメンションおよび指標の任意の組み合わせを使用するように設定できます。
-solution: Analytics
 title: プロセスマップの設定
-topic: Data workbench
 uuid: e629191e-48b9-4b58-b6aa-3705ff7b387e
+exl-id: 0b37e942-4596-45cc-bc31-db147626f4eb
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 63%
 
 ---
-
 
 # プロセスマップの設定{#configure-a-process-map}
 
 プロセスマップは、アプリケーションとデータセットに対して意味を持つベースディメンション、グループディメンション、レベルディメンションおよび指標の任意の組み合わせを使用するように設定できます。
 
-After you configure a process map, it is listed with other process maps in the [!DNL Add Visualization menu].
+設定したプロセスマップは、他のプロセスマップと共に[!DNL Add Visualization menu]に表示されます。
 
-1. In the [!DNL Profile Manager], click **[!UICONTROL Menu]**, click **[!UICONTROL Add Visualization]**, then click the type of process map type that you want to configure (2D Metric Map, 2D Process Map, or 3D Process Map).
+1. [!DNL Profile Manager]で「**[!UICONTROL Menu]**」をクリックし、「**[!UICONTROL Add Visualization]**」をクリックして、設定するプロセスマップのタイプ（2D指標マップ、2Dプロセスマップまたは3Dプロセスマップ）をクリックします。
 
-   At least one [!DNL *.vw] file resides in the directory.
+   ディレクトリ内には少なくとも1つの[!DNL *.vw]ファイルが存在します。
 
-1. Right-click the check mark for the desired file and click **[!UICONTROL Make Local]**.
-1. Right-click the check mark for the file in the [!DNL User] column and click **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
+1. 目的のファイルのチェックマークを右クリックし、「**[!UICONTROL Make Local]**」をクリックします。
+1. [!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Notepad]**&#x200B;をクリックします。
 1. 次のサンプルのファイルと表を参考にして、ファイルのパラメーターを編集します。
 
    ```
@@ -80,14 +81,14 @@ After you configure a process map, it is listed with other process maps in the [
 
 >[!NOTE]
 >
->For more information about the base dimension, group dimension, level dimension, and metric for a process map, see [Process Maps](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e).
+>プロセスマップのベースディメンション、グループディメンション、レベルディメンションおよび指標について詳しくは、[プロセスマップ](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e)を参照してください。
 
-1. In Notepad, click **[!UICONTROL File]** > **[!UICONTROL Save As]** to save the file with a new name based on the base dimension, that is, *Base dimension name*.vw.
+1. メモ帳で、**[!UICONTROL File]**/**[!UICONTROL Save As]**&#x200B;をクリックして、ベースディメンションに基づく新しい名前（*ベースディメンション名*.vw）でファイルを保存します。
 
    （2D 指標マップを設定する場合は、指標マップの指標名に基づいた名前でファイルを保存します。つまり、「*Metric name for metric map*.vw」として保存します）。ファイルは、適切なプロセスマップディレクトリに保存してください。
 
    >[!NOTE]
    >
-   >To make sure that your process map is saved as a [!DNL *.vw] file, in the [!DNL Save As] window, set Save as type to All Files.
+   >プロセスマップを[!DNL *.vw]ファイルとして保存するには、[!DNL Save As]ウィンドウで、「保存するファイルの種類」を「すべてのファイル」に設定します。
 
-1. (Optional) To make the changes available to all users of the working profile, in the [!DNL Profile Manager], right-click the check mark for the file in the [!DNL User] column and click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. （オプション）作業プロファイルのすべてのユーザーが変更を利用できるようにするには、[!DNL Profile Manager]で、[!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL working profile name]**>*&#x200B;をクリックします。
