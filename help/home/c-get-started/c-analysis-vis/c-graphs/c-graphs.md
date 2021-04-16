@@ -1,14 +1,15 @@
 ---
 description: グラフには、1 つまたは 2 つのデータのディメンションにまたがる 1 つ以上の指標を表示できます。
-solution: Analytics
 title: グラフ
-topic: Data workbench
 uuid: 6029cd1a-4fe1-41fa-9594-2c5cee1f4882
+exl-id: 39fadfd8-646b-4959-b016-87ff201c66e7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '290'
+ht-degree: 100%
 
 ---
-
 
 # グラフ{#graphs}
 
@@ -40,4 +41,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 グラフのビジュアライゼーションに引き出し線を追加するには、ビジュアライゼーションの下部（ベース軸）を右クリックしてメニューを表示し、「**引き出し線を追加**」を選択する必要があります。
 
 ![](assets/visualization_callout_linegraph.png)
-
