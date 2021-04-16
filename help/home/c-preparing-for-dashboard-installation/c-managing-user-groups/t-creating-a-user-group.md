@@ -1,18 +1,19 @@
 ---
-description: 'null'
-solution: Analytics
+description: ユーザーグループの作成
 title: ユーザーグループの作成
-topic: Data workbench
 uuid: 8a474480-81fa-4a86-9937-2fb82e949436
+exl-id: 8af9d635-ff07-486f-845a-44541d577fad
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '183'
+ht-degree: 9%
 
 ---
 
-
 # ユーザーグループの作成{#creating-a-user-group}
 
-1. をクリッ **[!UICONTROL Create Group]** クして、フォームを表示 **[!UICONTROL New Group]** します。
+1. **[!UICONTROL Create Group]**&#x200B;をクリックして&#x200B;**[!UICONTROL New Group]**&#x200B;フォームを表示します。
 
    ![](assets/create_user_group.png)
 
@@ -37,14 +38,14 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>権限</strong></td> 
-    <td class="chdesc stentry"> <p> <span class="uicontrol"> 管理者</span>:すべてのプロファイルのすべてのダッシュボードを保存、表示、変更および削除します。 管理者権限を使用すると、ユーザーは管理領域にログインし、すべての管理機能を実行できます。 </p> <p> <span class="uicontrol"> 読み取り専用</span>:ダッシュボードの権限を読み取り専用に制限する。 ユーザーは、ビジュアライゼーションを追加または変更したり、ダッシュボードを保存したりできません。 </p> <p> <b>権限がチェックされてい </b>ません（デフォルト）:権限がチェックされていない場合、通常のユーザー権限がグループに付与されます。 これらのユーザーは、ビジュアライゼーションの作成と変更、ダッシュボードの保存、アクセス権を持つダッシュボードの表示を行うことができます。 </p> </td> 
+    <td class="chdesc stentry"> <p> <span class="uicontrol"> 管理者</span>:すべてのプロファイルのすべてのダッシュボードを保存、表示、変更および削除します。管理者権限を使用すると、ユーザーは管理領域にログインし、すべての管理機能を実行できます。 </p> <p> <span class="uicontrol"> 読み取り専用</span>:権限をダッシュボードの読み取り専用に制限するビジュアライゼーションの追加や変更、ダッシュボードの保存はできません。 </p> <p> <b>権限がチェックされていま </b>せん（デフォルト）:権限がチェックされていない場合、通常のユーザーに対する権限がグループに付与されます。これらのユーザーは、ビジュアライゼーションの作成と変更、ダッシュボードの保存、アクセス権のあるダッシュボードの表示を行うことができます。 </p> </td> 
     </tr> 
     <tr class="chrow strow"> 
     <td class="choption"><strong>利用可能なユーザー/グループメンバー</strong></td> 
-    <td class="chdesc stentry">「使用可能なユーザー」のリストから「グループメンバー」セクシ <span class="uicontrol"> ョンに</span> 、ユーザーをドラ <span class="uicontrol"> ッグ&amp;ドロ </span>ップします。 グループメンバーは、いつでも変更できます。 </td> 
+    <td class="chdesc stentry">「<span class="uicontrol">利用可能なユーザー</span>」のリストから「<span class="uicontrol">グループメンバー</span>」セクションにユーザーをドラッグ&amp;ドロップします。 グループメンバーはいつでも変更できます。 </td> 
     </tr> 
     </table>
 
-1. をクリック **[!UICONTROL Create Group]** して、ユーザーグループを作成します。
+1. **[!UICONTROL Create Group]**&#x200B;をクリックして、ユーザーグループを作成します。
 
-   操作が正常に完了すると、ユーザーグループが正常に作成されたことを示すメッセージが表示されます。
+   操作が成功した場合は、ユーザーグループが正常に作成されたことを示すメッセージが表示されます。
