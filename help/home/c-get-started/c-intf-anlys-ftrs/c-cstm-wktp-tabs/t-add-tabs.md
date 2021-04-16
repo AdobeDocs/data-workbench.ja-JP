@@ -1,28 +1,29 @@
 ---
 description: ワークスペースにすばやくアクセスできるようにワークトップにタブを追加できます。
-solution: Analytics
 title: ワークトップへのタブの追加
-topic: Data workbench
 uuid: 3c8b459d-4824-4678-871d-1a577235957a
+exl-id: 30201eb9-1006-42b0-9d73-0962e41192ce
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '224'
+ht-degree: 58%
 
 ---
-
 
 # ワークトップへのタブの追加{#add-a-tab-to-the-worktop}
 
 ワークスペースにすばやくアクセスできるようにワークトップにタブを追加できます。
 
-ワークトップ上のタブとしてワークスペースを追加できます。 例えば、トラフィックの概要にすばやくアクセスするための「**訪問者**」タブを追加できます。
+ワークトップのタブとしてワークスペースを追加できます。 例えば、トラフィックの概要にすばやくアクセスするための「**訪問者**」タブを追加できます。
 
 ![](assets/client-tab.png)
 
-**プロファイルマネージャーでのフォルダーの追加**
+**プロファイルマネージャ追加ーのフォルダー**
 
-1. 新しいタブに関連付けるワークスペースを開き、右クリックして管理者 **/プロファイルマネー** ジャーを選択します ****。
-1. In the [!DNL Profile Manager], click **[!UICONTROL Workspaces]** to view its contents.
-1. の列を右クリックし [!DNL User] 、「/」 [!DNL Workspaces] を選択 **[!UICONTROL Create]** します **[!UICONTROL Folder]**。
+1. 新しいタブに関連付けるワークスペースを開き、**管理者**/**プロファイルマネージャー**&#x200B;を右クリックします。
+1. [!DNL Profile Manager]の&#x200B;**[!UICONTROL Workspaces]**&#x200B;をクリックして、内容を表示します。
+1. [!DNL Workspaces]の[!DNL User]列を右クリックし、**[!UICONTROL Create]**/**[!UICONTROL Folder]**&#x200B;を選択します。
 
    ![](assets/tabs_on_worktop.png)
 
@@ -35,6 +36,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/tabs_on_workto_2.png)
 
-1. (Optional) To make the changes available to all users of the working profile, right-click the white check mark for the [!DNL .vw] file in the [!DNL User] column and click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. （オプション）作業プロファイルのすべてのユーザーが変更を利用できるようにするには、[!DNL User]列の[!DNL .vw]ファイルの白いチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL working profile name]**>*&#x200B;をクリックします。
 
-   説明ワークスペースのフルサイズバージョンのみを表示し、このワークスペースのサムネールを表示しない場合は、ワークスペースを作業プロファイルに保存する必要があります。これを行うには、で、列 [!DNL Profile Manager]内のファイルの白いチェックマークを右ク [!DNL description.vw] リックし、 [!DNL User] / **[!UICONTROL Save to]** &lt; *>をクリックします&#x200B;**[!UICONTROL working profile name]***。
+   説明ワークスペースのフルサイズバージョンのみを表示し、このワークスペースのサムネールを表示しない場合は、ワークスペースを作業プロファイルに保存する必要があります。これを行うには、[!DNL Profile Manager]で、[!DNL User]列の[!DNL description.vw]ファイルの白いチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL working profile name]**>*&#x200B;をクリックします。
