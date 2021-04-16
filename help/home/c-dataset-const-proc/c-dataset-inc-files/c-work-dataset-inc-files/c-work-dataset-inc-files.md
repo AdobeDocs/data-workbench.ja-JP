@@ -1,14 +1,15 @@
 ---
 description: データセットインクルードファイルによって、データセットの柔軟な設定が可能です。
-solution: Analytics
 title: データセットインクルードファイルの操作
-topic: Data workbench
 uuid: 258226c4-22e5-4d9d-9044-8312709e0460
+exl-id: 94044c85-030c-4912-9546-d4a34b4115e0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 100%
 
 ---
-
 
 # データセットインクルードファイルの操作{#working-with-dataset-include-files}
 
