@@ -1,69 +1,69 @@
 ---
 description: ワークスペース内で、ビジュアライゼーションにはクエリー結果のセットが表示されます。
-solution: Analytics
 title: 選択による他のビジュアライゼーションへの影響について
-topic: Data workbench
 uuid: d46f4e8d-df6f-4a7f-a796-eb9f11536ae5
+exl-id: 7756646b-9309-41aa-a098-8988f6c065c8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 26%
 
 ---
-
 
 # 選択による他のビジュアライゼーションへの影響について{#understanding-how-a-selection-affects-other-visualizations}
 
 ワークスペース内で、ビジュアライゼーションにはクエリー結果のセットが表示されます。
 
-選択を行うと、Data Workbenchは、クエリーの結果をフィルタリングして、ワークスペース内のビジュアライゼーションを生成します。 具体的なフィルターは、ビジュアライゼーションごとに異なります。
+選択を行うと、Data Workbenchフィルターは、ワークスペース内のビジュアライゼーションの生成に使用されるクエリの結果を選択します。 具体的なフィルターは、ビジュアライゼーションごとに異なります。
 
-次の例では、Data Workbenchが3種類のビジュアライゼーションに選択を適用する方法を示します。 これらの例を確認すると、ビジュアライゼーションに対する選択のフィルタリング効果がわかります。また、フィルタリングされたビジュアライゼーションに表示される結果の解釈方法についても説明します。
+以下の例では、Data Workbenchが3種類のビジュアライゼーションに選択を適用する方法を示します。 これらの例を確認すると、ビジュアライゼーションに対する選択のフィルタリング効果がわかります。また、フィルタリングされたビジュアライゼーションに表示される結果の解釈方法についても説明します。
 
 * [Sessions 指標でビジュアライゼーションをフィルタリングする](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-aff-vis.md#section-7cc06493ecb34cd4a696dbf0f0a7aaef)
 * [Visitors 指標でビジュアライゼーションをフィルタリングする](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-aff-vis.md#section-97d38c7f03e8457189a9c72d69514ed2)
 * [Visitors-by-Session 指標でビジュアライゼーションをフィルタリングする](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-aff-vis.md#section-f746182311d648dcb98716b0fe846e25)
 
-## Sessions 指標でビジュアライゼーションをフィルタリングする {#section-7cc06493ecb34cd4a696dbf0f0a7aaef}
+## Sessions 指標でビジュアライゼーションをフィルタリングする  {#section-7cc06493ecb34cd4a696dbf0f0a7aaef}
 
-In this example, the [!DNL /direct.asp/?ldPage=hme] URI in the visualization on the left is filtering the metric for Sessions displayed in the visualization on the right.
+この例では、左側のビジュアライゼーションの[!DNL /direct.asp/?ldPage=hme] URIによって、右側のビジュアライゼーションに表示されているセッションの指標がフィルタリングされています。
 
 ![](assets/client-vis1.png)
 
-* **クエリーに対する選択の効果：** Data Workbenchは、選択したURIのセッションをフィルタリングします。 In this example, the query that generates the value for the [!DNL /pops/disclosure_pop.asp] element is filtered as follows:
+* **クエリに対する選択の効果：** Data Workbenchは、選択したURIのセッションをフィルターします。この例では、[!DNL /pops/disclosure_pop.asp]要素の値を生成するクエリが次のようにフィルタリングされます。
 
    ```
    Sessions[ URI="/pops/disclosure_pop.asp" AND URI="/direct.asp
    /?ldPage=hme"] by Page View by Session
    ```
 
-* **ビジュアライゼーションの解釈：** フィルター適用済みのビジュアライゼーションは、ビジュアライゼーションにリストされたURIを含むセッションの数とを表しま [!DNL /direct.asp/?ldPage=hme]す。 This example shows that there were 1,113 sessions during which visitors viewed both [!DNL /pops/disclosure_pop.asp] page and [!DNL /direct.asp/?ldPage=hme] in the same session.
+* **ビジュアライゼーションの解釈：フィルタ** ー適用されたビジュアライゼーションは、ビジュアライゼーションにリストされたURIと、を含むセッションの数を表し [!DNL /direct.asp/?ldPage=hme]ます。この例では、訪問者が同じセッション内で[!DNL /pops/disclosure_pop.asp]ページと[!DNL /direct.asp/?ldPage=hme]の両方を表示したセッションが1,113個あったことを示しています。
 
 ## Visitors 指標でビジュアライゼーションをフィルタリングする {#section-97d38c7f03e8457189a9c72d69514ed2}
 
-In this example, the [!DNL /direct.asp/?ldPage=home] URI in the visualization on the left is filtering the metric for Visitors in the visualization on the right.
+この例では、左側のビジュアライゼーションの[!DNL /direct.asp/?ldPage=home] URIによって、右側のビジュアライゼーションの訪問者の指標がフィルタリングされています。
 
 ![](assets/client-vis2.png)
 
-* **クエリーに対する選択の効果：** Data Workbenchは、選択したURIに対して訪問者をフィルタリングします。 In this example, the query that generates the value for the [!DNL /pops/disclosure_pop.asp] URI is filtered as follows:
+* **クエリに対する選択の効果：** Data Workbenchは、選択したURIの訪問者をフィルターします。この例では、[!DNL /pops/disclosure_pop.asp] URIの値を生成するクエリが次のようにフィルタリングされます。
 
    ```
    Visitors[ URI="/pops/disclosure_pop.asp" by Page View by Visitor 
      AND URI="/direct.asp/?ldPage=hme" by Page View by Visitor ]
    ```
 
-* **ビジュアライゼーションの解釈：** フィルタリングされたビジュアライゼーションは、ビジュアライゼーションおよび（同じセッション中に限らないが） [!DNL /direct.asp/?ldPage=hme] リストされたURIを表示した訪問者を表します。 The example above shows that 2,041 visitors have viewed both [!DNL /pops/disclosure_pop.asp] and [!DNL /direct.asp/?ldPage=hme].
+* **ビジュアライゼーションの解釈：** フィルタリングされたビジュアライゼーションは、ビジュアライゼーションに一覧表示されたURIと [!DNL /direct.asp/?ldPage=hme] （同じセッション中に限らず）を表示した訪問者を表します。上の例では、2,041人の訪問者が[!DNL /pops/disclosure_pop.asp]と[!DNL /direct.asp/?ldPage=hme]の両方を表示したことがわかります。
 
 ## Visitors-by-Session 指標でビジュアライゼーションをフィルタリングする {#section-f746182311d648dcb98716b0fe846e25}
 
-In this example, the [!DNL /direct.asp/?ldPage=hme] URI in the visualization on the left is filtering the metric for visitor-by-session in the visualization on the right.
+この例では、左側のビジュアライゼーションの[!DNL /direct.asp/?ldPage=hme] URIによって、右側のビジュアライゼーションのセッション別訪問者の指標がフィルタリングされています。
 
 ![](assets/client-vis3.png)
 
-* **クエリーに対する選択の効果：** Data Workbenchは、選択したURIに対して、セッション別の訪問者をフィルタリングします。 For example, the query that generates the value for the [!DNL /pops/disclosure_pop.asp] URI is filtered as follows:
+* **クエリに対する選択の効果：** Data Workbenchは、選択したURIに対する訪問者をセッション別にフィルターします。例えば、[!DNL /pops/disclosure_pop.asp] URIの値を生成するクエリは、次のようにフィルタリングされます。
 
    ```
    Visitors[ ( URI="/pops/disclosure_pop.asp" by Page View 
      AND URI="/direct.asp/?ldPage=hme" by Page View ) by Session ]
    ```
 
-* **ビジュアライゼーションの解釈：** フィルタリングされたビジュアライゼーションは、ビジュアライゼーションにリストされたURIと同じセッション中に両方のURIを表 [!DNL /direct.asp/?ldPage=hme] 示した訪問者を表します。 This example shows that 1,069 visitors saw both [!DNL /pops/disclosure_pop.asp] and [!DNL /direct.asp/?ldPage=hme] during a single session.
-
+* **ビジュアライゼーションの解釈：** フィルタリングされたビジュアライゼーションは、ビジュアライゼーションに一覧表示されたURIと同じセッション [!DNL /direct.asp/?ldPage=hme] 中に表示されたURIの両方を表す訪問者を表します。この例では、1,069人の訪問者が1回のセッション中に[!DNL /pops/disclosure_pop.asp]と[!DNL /direct.asp/?ldPage=hme]の両方を見たことを示しています。
