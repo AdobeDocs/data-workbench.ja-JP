@@ -1,11 +1,12 @@
 ---
 description: Data Workbench のファインダーパネルを使用して、指標、ディメンションおよびフィルターを選択できます。これらのパネルは、検索をサポートしており、並べ替えオプションとドラッグ＆ドロップ機能を備えています。
-solution: Analytics
 title: ファインダー
-topic: Data workbench
 uuid: 7a4144f5-133f-48ed-9613-1e42b1313120
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '640'
+ht-degree: 96%
 
 ---
 
@@ -37,11 +38,11 @@ Data Workbench のファインダーパネルを使用して、指標、ディ�
 
 **ファインダーを開くには：**
 
-* ワークスペース内で右クリックし、/を選 **[!UICONTROL Tools]** 択しま **[!UICONTROL Finder]**&#x200B;す。
+* ワークスペース内で右クリックし、**[!UICONTROL Tools]**/**[!UICONTROL Finder]**&#x200B;を選択します。
 
    「指標」、「ディメンション」および「フィルター」のタブを含むファインダーペインがワークスペース内に開きます。
 
-* Right-click in the left sidebar and select **[!UICONTROL Add]** > **[!UICONTROL Finder]**.
+* 左側のサイドバーを右クリックし、**[!UICONTROL Add]**/**[!UICONTROL Finder]**&#x200B;を選択します。
 
    ファインダーペインが左側のパネルに開きます。
 
@@ -69,7 +70,7 @@ Data Workbench のファインダーパネルを使用して、指標、ディ�
    <td colname="col2">ファインダーパネルの「<span class="uicontrol">検索</span>」ボックスでは、ディメンション、指標およびフィルターの名前をフィルターできます。 
     <ul id="ul_0F6F377E9906472E99008EBE7483F689"> 
      <li id="li_75857895EDB045C8B2960393854B257D"> <p>パターン一致（単純なグローバル検索）。「検索」フィールドに目的のディメンション、指標またはフィルターエンティティの名前を入力すると、一致する文字列を含む名前だけがフィルターされ、ファインダーペインに表示されます。 </p> <p>例えば、次のように入力します。 </p> <code><b>Search:</b>click</code> <p>ディメンションファインダーでは、次のような結果を得ることができます。 </p> <p><img placement="break" id="image_7CBAAABA92BB47658B7F9F5C0263CF20" src="assets/finders_glob_search.png" /> </p> <p>標準のパターン一致では、「.」（ドット）、「?」、「*」（スター）などのワイルドカード文字を使用することができます。 </p> </li> 
-     <li id="li_044F9EC1399B44CD81E1852F85137704"> <p>正規表現。追加された検索機能では、より複雑な正規表現もサポートされています。検索語句の前にプレフィックス「re:」を（スペースなしで）追加すると、正規表現として解釈されます。 </p> <p>例えば、次のように入力します。 </p> <code><b>Search:</b>re.*ip</code> <p>ディメンションファインダーでは、次のような結果を得ることができます。 </p> <p><img placement="break" id="image_F47DB90B36504997AA1C509855B89A47" src="assets/finders_regex_search.png" /> </p> </li> 
+     <li id="li_044F9EC1399B44CD81E1852F85137704"> <p>正規表現. 追加された検索機能では、より複雑な正規表現もサポートされています。検索語句の前にプレフィックス「re:」を（スペースなしで）追加すると、正規表現として解釈されます。 </p> <p>例えば、次のように入力します。 </p> <code><b>Search:</b>re.*ip</code> <p>ディメンションファインダーでは、次のような結果を得ることができます。 </p> <p><img placement="break" id="image_F47DB90B36504997AA1C509855B89A47" src="assets/finders_regex_search.png" /> </p> </li> 
     </ul> <p>検索について詳しくは、<a href="https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-reg-exp.html" format="http" scope="external">正規表現</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
@@ -106,7 +107,7 @@ Data Workbench のファインダーパネルを使用して、指標、ディ�
    <td colname="col2">ファインダーパネルから選択したディメンション、指標またはフィルターのリストをエクスポートするには、ファインダーバーを右クリックし、メニューから「<span class="uicontrol">エクスポート</span>」を選択します。 <p> 名前を追加し、Microsoft Excel にエクスポートします。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"><b>コピー</b> </td> 
+   <td colname="col1"><b>Copy</b> </td> 
    <td colname="col2"> ディメンション、指標またはフィルターのリストをコピーします。ファイルとしてコピーすることや、暗い背景、明るい背景またはモノクロのグラフィックとしてコピーすることができます。 </td> 
   </tr> 
   <tr> 
