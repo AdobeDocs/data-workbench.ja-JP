@@ -1,14 +1,15 @@
 ---
 description: ワークトップからのワークスペースの削除に関する情報です。
-solution: Analytics
 title: ワークスペースの削除
-topic: Data workbench
 uuid: 85fd84d6-0602-4ff4-a55a-44077f3f3151
+exl-id: 17ea8b7b-9ecb-44a5-844c-f7daec52dc8e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '118'
+ht-degree: 45%
 
 ---
-
 
 # ワークスペースの削除{#deleting-a-workspaces}
 
@@ -18,17 +19,16 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **ローカルワークスペースを[!DNL Worktop]**
 
-Right-click the workspace that you want to delete and click **[!UICONTROL Revert to server version]** > **[!UICONTROL Yes]**. ローカルバージョンは削除されますが、サーバーバージョンは残っています。
+削除するワークスペースを右クリックし、**[!UICONTROL Revert to server version]**/**[!UICONTROL Yes]**&#x200B;をクリックします。 ローカルバージョンは削除されますが、サーバーバージョンは残っています。
 
 ![](assets/client-del.png)
 
 >[!NOTE]
 >
->サーバーワークスペースのローカルバージョンがある場合は、サーバーバージョンに戻して変更を失ってから、サーバーワークスペースの更新バージョンをダウンロードする必要があります。
+>サーバーワークスペースのローカルバージョンがある場合、サーバーバージョンに戻して変更を失ってから、サーバーワークスペースの更新バージョンをダウンロードする必要があります。
 
 **ユーザーワークスペースを[!DNL Worktop]**
 
-Right-click the workspace that you want to delete and click **[!UICONTROL Delete]**.
+削除するワークスペースを右クリックし、「**[!UICONTROL Delete]**」をクリックします。
 
 ![](assets/mnu_workspaceManager_Deletewksp.png)
-
