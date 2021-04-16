@@ -1,24 +1,24 @@
 ---
 description: 各要素をワークスペース内の他のビジュアライゼーション間でより容易に追跡できるよう、ディメンション内の要素をシリーズとして色分けできます。
-solution: Analytics
-title: シリーズの凡例を有効にする
-topic: Data workbench
+title: シリーズの凡例の有効化
 uuid: 7c9cb699-940b-47f3-ae6f-e9a8023b8501
+exl-id: c8c3f327-13b2-494d-b7d1-8a7a49e301c0
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '105'
+ht-degree: 84%
 
 ---
 
-
-# シリーズの凡例を有効にする{#enable-a-series-legend}
+# シリーズの凡例の有効化{#enable-a-series-legend}
 
 各要素をワークスペース内の他のビジュアライゼーション間でより容易に追跡できるよう、ディメンション内の要素をシリーズとして色分けできます。
 
 **シリーズの凡例の有効／無効を切り替えるには**
 
-* Right-click an element or the label of the dimension that you want to color-code and click **[!UICONTROL Series Legend]**.
+* 色分けするディメンションの要素またはラベルを右クリックし、「**[!UICONTROL Series Legend]**」をクリックします。
 
    シリーズの凡例が有効になっている場合、メニューオプションの横に X が表示され、ディメンション内の要素が異なる色で表示されます。
 
    ![](assets/vis_Graph_SeriesLegend.png)
-
