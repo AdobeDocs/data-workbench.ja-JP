@@ -1,16 +1,17 @@
 ---
 description: User Groups パラメーターを定義するテーブルです。
-solution: Analytics
-title: クエリーキューのユーザーグループ
-topic: Data workbench
+title: クエリキューのユーザーグループ
 uuid: 90d9058c-1809-4579-a8c6-930a07affc83
+exl-id: e9586ad4-4c0b-48b7-b533-4d23a0f4a216
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 100%
 
 ---
 
-
-# クエリーキューのユーザーグループ{#query-queue-user-groups}
+# クエリキューのユーザーグループ{#query-queue-user-groups}
 
 User Groups パラメーターを定義するテーブルです。
 
@@ -29,7 +30,7 @@ User Groups パラメーターを定義するテーブルです。
    <td colname="col3"> <p>ユーザーグループのユーザー定義名（Analysts など）。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Policies </p> </td> 
+   <td colname="col1"> <p>ポリシー </p> </td> 
    <td colname="col2"> <p>vector </p> </td> 
    <td colname="col3"> <p>ポリシータイプを指定します。右クリックして、「Standard Policy」または「Daily Schedule」を選択します。 </p> </td> 
   </tr> 
@@ -53,7 +54,7 @@ User Groups パラメーターを定義するテーブルです。
    <td colname="col3"> <p>1 日の特定の時間に優先順位を変更できます。このスケジュールは、<span class="wintitle">レポートサーバー</span>などの自動化されたクライアントおよびシステムのユーザーが様々なタイムゾーンにいる場合に役立ちます。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Changes </p> </td> 
+   <td colname="col1"> <p>変更点 </p> </td> 
    <td colname="col2"> <p>int </p> </td> 
    <td colname="col3"> <p>右クリックして、スケジュール済みの優先順位の変更を追加します。Change Time は、変更が行われる時刻です。形式は hour:minutes AM/PM です。AM または PM を入力しない場合は、24 時間制が使用されます。 </p> </td> 
   </tr> 
@@ -63,10 +64,9 @@ User Groups パラメーターを定義するテーブルです。
    <td colname="col3"> <p>変更によって得られる優先順位の最大値。Priority Change は、優先順位に追加される量です。例えば、値 0 はデフォルトの優先順位に戻ります。その他すべての値の場合は、デフォルトの優先順位にこの数値が付加された優先順位になります。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Users </p> </td> 
-   <td colname="col2"> <p>vector </p> </td> 
+   <td colname="col1"> <p>ユーザー </p> </td> 
+   <td colname="col2"> <p>ベクトル </p> </td> 
    <td colname="col3"> <p>グループのメンバーであるユーザーをリストします。 </p> <p> <b>Name：</b>ユーザーの証明書の「Common Name」フィールドに表示されるユーザーの名前。 </p> <p> <b>Extra Priority：</b>そのユーザーの開始優先順位を決定するため、ユーザーグループのベースの優先順位に付加する優先順位を指定します。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
-
