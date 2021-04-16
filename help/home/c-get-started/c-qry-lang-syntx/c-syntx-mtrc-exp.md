@@ -1,31 +1,29 @@
 ---
 description: 指標は、指標エディターを使用して編集し、プロファイルの Metrics ディレクトリに保存できます。
-solution: Analytics
 title: 指標式の構文
-topic: Data workbench
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
+exl-id: 27d86fea-6500-4608-aadb-f39058fd3a6e
 translation-type: tm+mt
-source-git-commit: a276b16565634fea9b693206c8a55b528fada977
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 91%
 
 ---
 
-
 # 指標式の構文{#syntax-for-metric-expressions}
 
 指標は、指標エディターを使用して編集し、プロファイルの Metrics ディレクトリに保存できます。
 
-詳しくは、「派生指標の [作成と編集](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)」を参照してください。 指標式はワークシートで使用することもできます。詳しくは、「 [ワークシート](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). 指標式を定義するには、次の構文を使用します。
+詳しくは、[派生指標の作成と編集](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)を参照してください。 指標式はワークシートで使用することもできます。詳しくは、「 [ワークシート](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). 指標式を定義するには、次の構文を使用します。
 
 メモ:
 
 1. 下線を引いた語句は、式のテキストにそのまま入力する必要があります。
-1. フォームはオプションのテキストを `{TEXT}?` 表します。
-1. The form `{TEXT}*` represents text that may occur zero or more times.
-1. The form `{A | B | C |...}` represents text that consists of exactly one of the given options, such as A or B or C....
-1. The form `[A,B)` represents a range of numbers, from A up to but not including B.
+1. `{TEXT}?`の形式はオプションのテキストを表します。
+1. `{TEXT}*`の形式は、0回以上発生する可能性のあるテキストを表します。
+1. `{A | B | C |...}`の形式は、A、B、Cなど、指定されたオプションの1つだけから成るテキストを表します。.
+1. `[A,B)`の形式は、AからBまでの数値の範囲を表します。
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
@@ -50,7 +48,7 @@ ht-degree: 91%
    <td colname="col2"> <p>指標 A と指標 B の結果の積。 </p> <p>例：Dollars = Cents * 0.01 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>A / B </p> </td> 
+   <td colname="col1"> <p>A/B </p> </td> 
    <td colname="col2"> <p>指標 A と指標 B の結果の比。 </p> <p>例：Revenue_per_Session = Revenue / Sessions </p> </td> 
   </tr> 
   <tr> 
@@ -119,4 +117,3 @@ ht-degree: 91%
   </tr> 
  </tbody> 
 </table>
-
