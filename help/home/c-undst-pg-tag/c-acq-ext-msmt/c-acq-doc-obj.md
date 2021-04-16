@@ -1,20 +1,21 @@
 ---
-description: JavaScriptドキュメントオブジェクトモデルを使用すると、zig.jsファイルの要求を拡張する追加のスクリプティングメソッドを使用できます。
-solution: Analytics
+description: JavaScriptドキュメントオブジェクトモデルを使用すると、zig.jsファイルの要求を拡張するために追加のスクリプティングメソッドを使用できます。
 title: ドキュメントオブジェクトの取得
-topic: Data workbench
 uuid: 7681c337-b147-4937-9d9c-0ff48d9bdd00
+exl-id: eae6609c-be86-44cf-a1a1-69ffb43231fa
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 5%
 
 ---
 
-
 # ドキュメントオブジェクトの取得{#acquiring-document-objects}
 
-JavaScriptドキュメントオブジェクトモデルを使用すると、zig.jsファイルの要求を拡張する追加のスクリプティングメソッドを使用できます。
+JavaScriptドキュメントオブジェクトモデルを使用すると、zig.jsファイルの要求を拡張するために追加のスクリプティングメソッドを使用できます。
 
-METAタグの値、DIVタグのID値などの情報は、名前で参照し、分析に使用する変数として収集できます。 例えば、HTMLドキュメントのMETA要素に含まれる情報を動的に取り込むには、次のJavaScript構文を使用します。
+METAタグの値、DIVタグのID値などの情報は、名前で参照し、分析で使用する変数として収集できます。 例えば、HTMLドキュメントのMETA要素に含まれる情報を動的に取り込むには、次のJavaScript構文を使用できます。
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -39,4 +40,4 @@ v["_1"] = metacontent;
 |---|---|---|
 | v_1= | METAVALUEクエリ文字列変数に関連付けられた値。 この値は、HTMLドキュメントのMETA要素内のデータを表します。 | v_1=このページは、「ご注文ありがとうございました」ページに関連するコンテンツを提供します。 |
 
-データの収集後、Data Workbenchサーバーを設定して、分析とレポートの目的でこの測定データを処理できます。
+データが収集されたら、分析とレポートの目的でこの測定データを処理するように、Data Workbenchサーバーを設定できます。
