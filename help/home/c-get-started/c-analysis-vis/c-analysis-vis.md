@@ -1,22 +1,23 @@
 ---
-description: Data Workbenchで使用できる多数の分析ビジュアライゼーションに関する情報です。
-solution: Analytics
+description: Data Workbenchで使用できる多数の分析のビジュアライゼーションに関する情報です。
 title: 分析のビジュアライゼーション
-topic: Data workbench
 uuid: db003afa-b971-4510-b762-3ef9b29e0910
+exl-id: a455d3cc-8133-4a08-9656-91332765c6c3
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '90'
+ht-degree: 52%
 
 ---
 
+# 分析のビジュアライゼーション{#analysis-visualizations}
 
-# Analysis visualizations{#analysis-visualizations}
-
-Data Workbenchで使用できる多数の分析ビジュアライゼーションに関する情報です。
+Data Workbenchで使用できる多数の分析のビジュアライゼーションに関する情報です。
 
 * ワークスペース内で右クリックして目的のメニューオプションを選択するか、**Ctrl** + **n** キーをクリックすることによって、任意のビジュアライゼーションを開けます。
 
-* ビジュアライゼーションは、ワークスペースのようにインポートすることができません。When you right-click in the worktop and select **[!UICONTROL Import]**, you can import an existing workspace, but not a visualization residing outside of the workspace.
+* ビジュアライゼーションは、ワークスペースのようにインポートすることができません。ワークトップ内で右クリックし、**[!UICONTROL Import]**&#x200B;を選択すると、既存のワークスペースを読み込むことはできますが、ワークスペースの外側にあるビジュアライゼーションを読み込むことはできません。
 
    ![](assets/import_workspace.png)
 
