@@ -1,14 +1,15 @@
 ---
 description: 時間ディメンション、時刻の変換（x-local-timestring フィールドの定義など）、データセットプロファイル内の全ローカル時間の書式設定は、Transformation.cfg ファイルの Time Zone パラメーターによって制御されます。
-solution: Analytics
 title: タイムゾーン
-topic: Data workbench
 uuid: 7b253c5a-f2b1-410c-9433-f13ed1d7a8b3
+exl-id: c8dc49d5-3245-428a-bfb9-42970df73d3e
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '396'
+ht-degree: 85%
 
 ---
-
 
 # タイムゾーン{#time-zones}
 
@@ -16,7 +17,7 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 
 >[!NOTE]
 >
->Time Zoneパラメーターは、ステータスやイベントログのタイムスタンプなど、システムレベルの機能には影響しません。この機能は、システムのローカル時間で表されます。
+>Time Zoneパラメーターは、ステータスやイベントログのタイムスタンプなど、システムレベルの機能には影響しません。システムレベルの機能は、システムのローカル時間で表されます。
 
 Time Zone パラメーターでは、システムに依存しない、次のタイムゾーン形式（「協定世界時」）がサポートされます。
 
@@ -39,5 +40,4 @@ Data Workbench のユーザーに表示されるデータには、そのシス�
 
 >[!NOTE]
 >
->You can specify a Time Zone parameter in the [!DNL Log Processing.cfg] file, where it is used for time conversions during log processing. ファイル内のTime Zoneパラメーターについて詳しくは、 [!DNL Log Processing.cfg] Log Processing Configuration Fileを参 [照してください](../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)。
-
+>Time Zoneパラメーターは[!DNL Log Processing.cfg]ファイルで指定できます。このパラメーターは、ログ処理中の時間の変換に使用されます。 [!DNL Log Processing.cfg]ファイルのTime Zoneパラメーターについて詳しくは、[ログ処理設定ファイル](../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)を参照してください。
