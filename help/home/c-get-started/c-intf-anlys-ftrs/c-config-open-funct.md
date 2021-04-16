@@ -1,16 +1,17 @@
 ---
 description: 「開く」機能を使用すると、ドキュメントや URI などの項目をテキストエディターや Web ブラウザーなどの外部アプリケーションで開けます。
-solution: Analytics
-title: 開く機能の設定
-topic: Data workbench
+title: 「開く」機能の設定
 uuid: dfa79a2b-e9ff-4e62-b15b-ae7911adeafd
+exl-id: c807a284-b544-41cf-958b-27b47d2142ce
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 48%
 
 ---
 
-
-# 開く機能の設定{#configure-open-functionality}
+# 「開く」機能の設定{#configure-open-functionality}
 
 「開く」機能を使用すると、ドキュメントや URI などの項目をテキストエディターや Web ブラウザーなどの外部アプリケーションで開けます。
 
@@ -18,14 +19,14 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 [!DNL Site] では、ページオーバーレイまたはテーブルから URI を右クリックすると、フォーマット対象のアプリケーションでその URI が表示されます。例えば、URI テーブルのビジュアライゼーションから URI をクリックすると、Web ブラウザーに Web ページが表示されます。
 
-To open a URI from a visualization, you first must edit the [!DNL Open URI.cfg] file for the URI dimension to identify the location and naming conventions that Data Workbench uses to open the URI. URIをネイティブ形式（HTMLなど）で表示するには、Data Workbenchが参照先の場所と、その項目を開くのに必要なアプリケーションにアクセスできる必要があります。 例えば、Webページを表示するには、Data Workbenchがインターネットにアクセスでき、Webブラウザーがインストールされている必要があります。
+ビジュアライゼーションからURIを開くには、まず、URIディメンションの[!DNL Open URI.cfg]ファイルを編集して、URIを開く際にData Workbenchが使用する場所と命名規則を指定する必要があります。 ネイティブ形式（HTMLなど）でURIを表示するには、参照先の場所と、その項目を開くのに必要なData Workbenchにアクセスできる必要があります。 例えば、Webページを表示するには、Data Workbenchがインターネットにアクセスでき、Webブラウザーがインストールされている必要があります。
 
 **Open URI.vw を編集するには**
 
-1. In the [!DNL Profile Manager], click **[!UICONTROL Context]** > **[!UICONTROL Dimension Element]** > **[!UICONTROL URI]**.
-1. In the URI folder, right-click the check mark next to the [!DNL Open URI.vw]file and click **[!UICONTROL Make Local]**. このファイル用のチェックマークが [!DNL User] 列に表示されます。
-1. 新しく作成されたチェックマークを右クリックし、ファイルがファ **[!UICONTROL Open]** イルの場合は/を、ファイルの場合は//をクリックします。ファイルの場合は//（ファイルの場合は/）をクリックします。/（ファイルの場合は/）をクリ **[!UICONTROL in Insight]** ックし [!DNL .cfg]**[!UICONTROL Open]****[!UICONTROL in Notepad]**[!DNL .vw] てください。
-1. Click **[!UICONTROL Command]**, then **[!UICONTROL Parameters]** to view the contents of the file.
+1. [!DNL Profile Manager]で、**[!UICONTROL Context]** > **[!UICONTROL Dimension Element]** > **[!UICONTROL URI]**&#x200B;をクリックします。
+1. URIフォルダーで、[!DNL Open URI.vw]ファイルの横のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 このファイル用のチェックマークが [!DNL User] 列に表示されます。
+1. 新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Insight]**（ファイルが[!DNL .cfg]ファイルの場合）をクリックします。**[!UICONTROL Open]**/**[!UICONTROL in Notepad]**（ファイルが[!DNL .vw]ファイルの場合）をクリックします。
+1. **[!UICONTROL Command]**、**[!UICONTROL Parameters]**&#x200B;の順にクリックして、ファイルの内容を表示します。
 1. 必要に応じて、[!DNL Site] パラメーターと Template パラメーターを変更します。
 
 <table id="table_CDB316DB271F476AB9F9B557B86AFD25"> 
@@ -42,11 +43,10 @@ To open a URI from a visualization, you first must edit the [!DNL Open URI.cfg] 
   </tr> 
   <tr> 
    <td colname="col1"> <p>テンプレート </p> </td> 
-   <td colname="col2"> <p>Data WorkbenchがURIを検索して開くために使用する必要があるパラメーター。 </p> <p>例：<span class="filepath">http://%Site%%URI%</span> </p> <p>The default template shown in the example tells Data Workbench to open a web browser, look for the location defined in the <span class="wintitle"> Site</span> parameter, then locate the URI dimension element you are attempting to open. </p> </td> 
+   <td colname="col2"> <p>Data WorkbenchがURIを探して開くために使用するパラメーター。 </p> <p>例：<span class="filepath">http://%Site%%URI%</span> </p> <p>この例のデフォルトのテンプレートは、Webブラウザーを開き、<span class="wintitle"> Site</span>パラメーターで定義された場所を探し、開こうとしているURIディメンション要素を探すようData Workbenchに指示します。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 1. ファイルを保存します。
-1. To make this change available to all users of the working profile, right-click the check mark for the [!DNL .vw] file in the [!DNL User] column and click **[!UICONTROL Save to]** > **[!UICONTROL working profile name]**.
-
+1. この変更を作業プロファイルのすべてのユーザーが利用できるようにするには、[!DNL User]列の[!DNL .vw]ファイルのチェックマークを右クリックし、**[!UICONTROL Save to]**/**[!UICONTROL working profile name]**&#x200B;をクリックします。
