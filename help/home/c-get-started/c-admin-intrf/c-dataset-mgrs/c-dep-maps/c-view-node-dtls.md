@@ -1,14 +1,15 @@
 ---
 description: プロファイルコンポーネントの識別情報の表示に関する情報です。
-solution: Analytics
 title: ノードの詳細の表示
-topic: Data workbench
 uuid: 2016a650-b021-4295-8313-d6287578ed10
+exl-id: f8ce7741-8ba2-484d-ac35-5c286b65f098
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 78%
 
 ---
-
 
 # ノードの詳細の表示{#view-node-details}
 
@@ -36,7 +37,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->Performance information for the transformation is displayed only if the [!DNL Show Performance Data] option is enabled for the dependency map. 詳しくは、「パフォーマンスデータの [表示」を参照してくださ](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)い。
+>依存関係マップに対して[!DNL Show Performance Data]オプションが有効になっている場合にのみ、変換のパフォーマンス情報が表示されます。 詳しくは、「[パフォーマンスデータの表示](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)」を参照してください。
 
 **拡張ディメンション**
 
@@ -46,7 +47,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->Performance information for the extended dimension is displayed only if the [!DNL Show Performance Data] option is enabled for the dependency map. 詳しくは、「パフォーマンスデータの [表示」を参照してくださ](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)い。
+>拡張ディメンションのパフォーマンス情報は、依存関係マップに対して[!DNL Show Performance Data]オプションが有効な場合にのみ表示されます。 詳しくは、「[パフォーマンスデータの表示](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)」を参照してください。
 
 **指標**
 
@@ -80,5 +81,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **プロファイルコンポーネントの入力または出力を表示するには**
 
-* Right-click the desired node and click **[!UICONTROL Inputs]** or **[!UICONTROL Outputs]**. 入力または出力のリストが表示されます。
-
+* 目的のノードを右クリックし、**[!UICONTROL Inputs]**&#x200B;または&#x200B;**[!UICONTROL Outputs]**&#x200B;をクリックします。 入力または出力のリストが表示されます。
