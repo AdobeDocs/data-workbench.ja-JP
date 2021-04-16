@@ -1,14 +1,15 @@
 ---
 description: ワークトップのタブまたはサブタブはそれぞれ、ダッシュボード、アクティビティ、獲得など特定のタイプの情報に対応しています。
-solution: Analytics
 title: ワークトップタブのカスタマイズ
-topic: Data workbench
 uuid: f1f557c8-f4cb-4789-8162-39cc7c52c943
+exl-id: 529c6d8d-fc42-4c2b-a111-b8eea4665d8b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '162'
+ht-degree: 42%
 
 ---
-
 
 # ワークトップタブのカスタマイズ{#customize-a-worktop-tab}
 
@@ -16,9 +17,8 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 例えば、「[!DNL Acquisition]（獲得）」タブには、参照ドメイン、検索エンジン、キャンペーンに関するデータを提供するワークスペースを含めることができます。
 
-Each tab that appears in the [!DNL Worktop] corresponds to a folder in the *working profile name*\Workspaces folder within the Data Workbench installation directory. The order of the tabs in the [!DNL Worktop] is controlled by the [!DNL order.txt] file in that same folder. For example, if you have an Acquisition subfolder in the Workspaces folder and then you add Acquisition as the first entry in the [!DNL order.txt] file, [!DNL Acquisition] is the first tab in the [!DNL Worktop] and everything in that subfolder displays in the [!DNL Acquisition] tab.
+[!DNL Worktop]に表示される各タブは、Data Workbenchインストールディレクトリ内の&#x200B;*workingプロファイル名*\Workspacesフォルダー内のフォルダーに対応します。 [!DNL Worktop]内のタブの順序は、同じフォルダー内の[!DNL order.txt]ファイルによって制御されます。 例えば、WorkspacesフォルダーにAcquisitionサブフォルダーがあり、[!DNL order.txt]ファイルの最初のエントリとしてAcquisitionを追加した場合、[!DNL Acquisition]は[!DNL Worktop]の最初のタブになり、[!DNL Acquisition]タブにはサブフォルダー内のすべてが表示されます。
 
 >[!NOTE]
 >
->For information about using the [!DNL order.txt] file to customize the workspace window menu, see [Customizing Menus](../../../../home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-ctm-menus.md#concept-93d4c09cb7f34cd293b7b64fba1cf894).
-
+>[!DNL order.txt]ファイルを使用してワークスペースウィンドウメニューをカスタマイズする方法については、「[メニューのカスタマイズ](../../../../home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/c-ctm-menus.md#concept-93d4c09cb7f34cd293b7b64fba1cf894)」を参照してください。
