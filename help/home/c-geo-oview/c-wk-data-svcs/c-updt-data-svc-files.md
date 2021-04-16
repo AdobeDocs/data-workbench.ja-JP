@@ -1,87 +1,88 @@
 ---
-description: いずれかのデータサービスを購読する場合は、アドビが提供するデータサービスファイルを定期的に更新する必要があります。
-solution: Analytics
+description: いずれかのデータサービスをサブスクライブする場合は、Adobeが提供するデータサービスファイルを定期的に更新する必要があります。
 title: データサービスファイルの更新
-topic: Data workbench
 uuid: 8c14be34-fde3-4c4c-9c22-739863317d6e
+exl-id: bb92d40c-cc8d-4ecf-bd48-ed962fd5d73b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '577'
+ht-degree: 5%
 
 ---
 
-
 # データサービスファイルの更新{#updating-data-service-files}
 
-いずれかのデータサービスを購読する場合は、アドビが提供するデータサービスファイルを定期的に更新する必要があります。
+いずれかのデータサービスをサブスクライブする場合は、Adobeが提供するデータサービスファイルを定期的に更新する必要があります。
 
-これを行うには、Data Workbenchサーバー上のファイルにアクセスできる必要があります。
+そのためには、Data Workbenchサーバー上のファイルにアクセスできる必要があります。
 
-データファイル [!DNL IP Geo-location] を読み込む [!DNL IP Geo-intelligence] には、次の手順を実行する必要があります。
+[!DNL IP Geo-location]または[!DNL IP Geo-intelligence]データファイルを読み込むには、次の手順を実行する必要があります。
 
-## データファイルの置換 {#section-2b53c2951ae04c6fa8b3bdf080469ff6}
+## データファイルの置き換え{#section-2b53c2951ae04c6fa8b3bdf080469ff6}
 
-1. Data Workbenchの「/」タブで、サムネ [!DNL Admin] ールをク [!DNL Dataset and Profile] リックしてワ **[!UICONTROL Servers Manager]** ークスペースを開 [!DNL Servers Manager] きます。
+1. Data Workbenchの「[!DNL Admin]/[!DNL Dataset and Profile]」タブで、**[!UICONTROL Servers Manager]**&#x200B;サムネールをクリックして[!DNL Servers Manager]ワークスペースを開きます。
 
-1. ウィンドウ [!DNL Servers Manager] 内で、ファイルを読み込むData Workbenchサーバーのアイコンを右クリックし、をクリックしま **[!UICONTROL Server Files]**&#x200B;す。
+1. [!DNL Servers Manager]ウィンドウ内で、ファイルの読み込み先のdata workbenchサーバーのアイコンを右クリックし、「**[!UICONTROL Server Files]**」をクリックします。
 
-1. で、ま [!DNL Server Files Manager]たはの列を右クリックし、/ **[!UICONTROL Temp]****[!UICONTROL Lookups\IP Geo-location]** &lt; **[!UICONTROL Lookups\IP Geo-intelligence]****[!UICONTROL Open]*****[!UICONTROL folder]*** right>をクリックします。
+1. [!DNL Server Files Manager]で、**[!UICONTROL Lookups\IP Geo-location]**&#x200B;または&#x200B;**[!UICONTROL Lookups\IP Geo-intelligence]**&#x200B;の&#x200B;**[!UICONTROL Temp]**&#x200B;列を右クリックし、**[!UICONTROL Open]**/***[!UICONTROL folder]**>*&#x200B;をクリックします。
 
-1. アドビから提 [!DNL .bin] 供されたデータファイルを、Lookups\IP Geo-locationまたはLookups\IP Geo-intelligenceフォルダーウィンドウにコピーします。
-1. データファイルの列を右クリックし、/ [!DNL Temp] &lt; **[!UICONTROL Save to]** >をクリックして、Data Workbenchサーバーコンピューターにファイルを保存します ***[!UICONTROL server name]***。
+1. Adobeから提供された[!DNL .bin]データファイルをLookups\IP Geo-locationまたはLookups\IP Geo-intelligenceフォルダーウィンドウにコピーします。
+1. データファイルの[!DNL Temp]列を右クリックし、**[!UICONTROL Save to]**/*&lt;**[!UICONTROL server name]**>*&#x200B;をクリックして、Data Workbenchサーバーコンピューターにファイルを保存します。
 
    クラスターを実行している場合は、クラスター内のマスターData Workbenchサーバーにファイルをアップロードします。
 
-## IPLookup変換の更新 {#section-a8b99afe3eb04afabe88e15bd465f935}
+## IPLookup変換の更新{#section-a8b99afe3eb04afabe88e15bd465f935}
 
-1. で、、、 [!DNL Profile Manager]およびを **[!UICONTROL Dataset]**&#x200B;クリ **[!UICONTROL Transformation]**&#x200B;ックしま **[!UICONTROL Geography]**&#x200B;す。
+1. [!DNL Profile Manager]で、**[!UICONTROL Dataset]**、**[!UICONTROL Transformation]**、**[!UICONTROL Geography]**&#x200B;の順にクリックします。
 
-1. の横のチェックマークを右クリックし、をク [!DNL IP Lookup.cfg] リックしま **[!UICONTROL Make Local]**&#x200B;す。 このファイル用のチェックマークが [!DNL User] 列に表示されます。
+1. [!DNL IP Lookup.cfg]の横のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 このファイル用のチェックマークが [!DNL User] 列に表示されます。
 
-1. 新しいチェックマークを右クリックし、/をクリッ **[!UICONTROL Open]** クしま **[!UICONTROL from the workbench]**&#x200B;す。 変換設定ウィンドウが表示されます。
+1. 新しいチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL from the workbench]**&#x200B;をクリックします。 変換設定ウィンドウが表示されます。
 
-1. ウィンドウでをクリックし、 **[!UICONTROL Transformation]**&#x200B;をクリックしま **[!UICONTROL Transformations]**&#x200B;す。
+1. ウィンドウで&#x200B;**[!UICONTROL Transformation]**&#x200B;をクリックし、**[!UICONTROL Transformations]**&#x200B;をクリックします。
 
-1. またはを探してクリッ **[!UICONTROL IPLookup Quova]** クしま **[!UICONTROL IPLookup Digital Envoy]**&#x200B;す。
+1. **[!UICONTROL IPLookup Quova]**&#x200B;または&#x200B;**[!UICONTROL IPLookup Digital Envoy]**&#x200B;を探してクリックします。
 
-1. Fileパラメーターの場合は、ファイルの名前を、アドビが提供する新しいデータ( [!DNL .bin])ファイルの名前と一致するように更新します。
-1. 変換設定ファイルを保存します。保存するには、設定ウ **[!UICONTROL (modified)]** ィンドウの上部にある右クリックし、をクリックしま **[!UICONTROL Save]**&#x200B;す。
+1. Fileパラメーターの場合は、ファイル名を、Adobeが提供する新しいデータ([!DNL .bin])ファイルの名前と一致するように更新します。
+1. 設定ウィンドウの上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、「**[!UICONTROL Save]**」をクリックして、変換設定ファイルを保存します。
 
-1. 変更した設定ファイルを、列の横のチェックマークを右クリックし、/ [!DNL IP Lookup.cfg] &lt; [!DNL User] >をクリ **[!UICONTROL Save to]** ックして、データサービスを使用する各プ *ロファイルに保存します&#x200B;**[!UICONTROL profile name]***。 データセットプロファイルの同期後、データの再変換が開始されます。
+1. [!DNL User]列の[!DNL IP Lookup.cfg]の横のチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL profile name]**>*&#x200B;をクリックして、変更した設定ファイルを、データサービスを使用する各プロファイルに保存します。 データセットプロファイルの同期後、データの再変換が開始されます。
 
-   データセットの再変換について詳しくは、『データセット設定ガイド』の「再処理と再変換」という章を *参照してください*。
+   データセットの再変換について詳しくは、『データセット設定ガイド&#x200B;*』の「再処理と再変換」という章を参照してください。*
 
    >[!NOTE]
    >
-   >Do not save the modified configuration file to any of the internal profiles provided by Adobe (including the [!DNL IP Geo-location] or [!DNL IP Geo-intelligence] profile), as your changes are overwritten when you install updates to these profiles.
+   >変更した設定ファイルは、Adobeが提供する内部プロファイル([!DNL IP Geo-location]や[!DNL IP Geo-intelligence]プロファイルを含む)には一切保存しないでください。これらのプロファイルに対するアップデートをインストールすると変更内容が上書きされます。
 
-バージョン5.1以 [!DNL IP Geo-intelligence] 降のお [!DNL IP Geo-location] よびデータサービスをインストールした場合は、データサービスの更新が完了しています。 ただし、バージョン5.1より前のバ [!DNL IP Geo-intelligence] ージョ [!DNL IP Geo-location] ンでとデータサービスをインストールした場合は、次の追加の手順を実行する必要があります。
+バージョン5.1以降用の[!DNL IP Geo-intelligence]および[!DNL IP Geo-location]データサービスをインストールした場合は、データサービスの更新が完了しています。 ただし、バージョン5.1より前のバージョン[!DNL IP Geo-intelligence]および[!DNL IP Geo-location]データサービスをインストールした場合は、次の追加の手順を実行する必要があります。
 
-## 参照ファイルの置換 {#section-ced1efa38a76419d812edd35423dbff7}
+## 参照ファイルの置き換え{#section-ced1efa38a76419d812edd35423dbff7}
 
-バージョン5.1より前のバージョンとデータサービスをインス [!DNL IP Geo-intelligence] トールし [!DNL IP Geo-location] た場合にのみ、次の手順を実行してください。
+バージョン5.1より前のバージョン[!DNL IP Geo-intelligence]および[!DNL IP Geo-location]データサービスをインストールした場合にのみ、次の手順を実行してください。
 
-1. で、「/」ま [!DNL Server Files Manager]たは「/」をクリ **[!UICONTROL Profiles]** ック **[!UICONTROL IP Geo-intelligence]** し、をクリ **[!UICONTROL Profiles]****[!UICONTROL IP Geo-location]****[!UICONTROL Maps]** ックして内容を表示します。
+1. [!DNL Server Files Manager]で、**[!UICONTROL Profiles]** > **[!UICONTROL IP Geo-intelligence]**&#x200B;または&#x200B;**[!UICONTROL Profiles]** > **[!UICONTROL IP Geo-location]**&#x200B;のいずれかをクリックし、**[!UICONTROL Maps]**&#x200B;をクリックしてその内容を表示します。
 
-1. の列を右クリックし、 **[!UICONTROL Temp]** 「>」 **[!UICONTROL Maps]** をク **[!UICONTROL Open]** リック *し&#x200B;**[!UICONTROL folder]**ます*。
+1. **[!UICONTROL Maps]**&#x200B;の&#x200B;**[!UICONTROL Temp]**&#x200B;列を右クリックし、**[!UICONTROL Open]**/***[!UICONTROL folder]**>*&#x200B;をクリックします。
 
-1. アドビから提供され [!DNL .txt] た新しいファイルをMapsフォルダーウィンドウにコピーします。
-1. ファイルの列のチェックマークを右クリックし、/ [!DNL Temp] &lt; [!DNL .txt] >をクリックして、ファイルをData Workbenchサーバ **[!UICONTROL Save to]** ーコンピューターに *保存し&#x200B;**[!UICONTROL server name]**ます*。
+1. Adobeが提供する新しい[!DNL .txt]ファイルをMapsフォルダウィンドウにコピーします。
+1. [!DNL .txt]ファイルの[!DNL Temp]列のチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL server name]**>*&#x200B;をクリックして、ファイルをData Workbenchサーバーコンピューターに保存します。
 
 >[!NOTE]
 >
 >クラスターを実行している場合は、クラスター内のマスターData Workbenchサーバーにファイルをアップロードします。
 
-## レイヤファイルを更新する {#section-8b84e7099bad40c9a69665a4890fe66e}
+## レイヤーファイルの更新{#section-8b84e7099bad40c9a69665a4890fe66e}
 
 >[!NOTE]
 >
->バージョン5.1より前のバージョンとデータサービスをインス [!DNL IP Geo-intelligence] トールし [!DNL IP Geo-location] た場合にのみ、次の手順を実行してください。
+>バージョン5.1より前のバージョン[!DNL IP Geo-intelligence]および[!DNL IP Geo-location]データサービスをインストールした場合にのみ、次の手順を実行してください。
 
-または参照( [!DNL .layer])ファイルを参照するすべてのレイヤ( [!DNL IP Geo-intelligence] )フ [!DNL IP Geo-location] ァイルに [!DNL .txt]対して次の手順を実行します。
+[!DNL IP Geo-intelligence]または[!DNL IP Geo-location]参照([!DNL .txt])ファイルを参照するすべてのレイヤー([!DNL .layer])ファイルに対して、次の手順を実行します。
 
-1. Data Workbenchサーバーのインストールディレクトリ内のProfiles\*data service name*\Mapsフォルダーにあるメモ帳などのテキス [!DNL .layer] トエディターでファイルを開きます。
+1. Data Workbenchサーバーのインストールディレクトリ内のプロファイル\*Data Service name*\Mapsフォルダーにある[!DNL .layer]ファイルをメモ帳などのテキストエディターで開きます。
 
-1. 次のファ [!DNL Data Paths] イルのサンプルで強調表示されてい [!DNL .txt] るように、ベクトル内で、参照ファイルの名前を、アドビが提供する新し [!DNL .txt] いファイルの名前と一致するように更新します。
+1. [!DNL Data Paths]ベクトル内で、[!DNL .txt]ルックアップファイルの名前を、Adobeが提供する新しい[!DNL .txt]ファイルの名前と一致するように更新します。次のファイル例を参照してください。
 
    ```
    Layer = ElementPointLayer:
@@ -96,5 +97,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    ```
 
 1. 更新した画層ファイルを保存します。
-1. またはファイルを参照するすべてのファ [!DNL .layer] イルに対して、手順2と3 [!DNL IP Geo-intelligence] を繰り返 [!DNL IP Geo-location][!DNL .txt] します。
-
+1. [!DNL IP Geo-intelligence]または[!DNL IP Geo-location] [!DNL .txt]ファイルを参照する[!DNL .layer]ファイルごとに手順2と3を繰り返します。
