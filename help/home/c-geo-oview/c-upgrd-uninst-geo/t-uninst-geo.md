@@ -1,40 +1,41 @@
 ---
 description: data workbenchGeographyをアンインストールする手順です。
-solution: Analytics
-title: Data Workbench地域のアンインストール
-topic: Data workbench
+title: Data Workbench Geography のアンインストール
 uuid: 038b2dfb-4db2-42c6-85c3-bc5d776e7736
+exl-id: e3898423-3b28-4786-834a-1d1ff9deb7c6
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 8%
 
 ---
 
-
-# Data Workbench地域のアンインストール{#uninstalling-data-workbench-geography}
+# Data Workbench Geography のアンインストール{#uninstalling-data-workbench-geography}
 
 data workbenchGeographyをアンインストールする手順です。
 
 >[!NOTE]
 >
->Data Workbenchを使用しているプロファイルがData Workbenchサーバークラスター上で実 [!DNL Geography] 行されている場合は、クラスター内のマスターData Workbenchサーバー [!DNL Geography] からプロファイルをアンインストールします。
+>Data Workbench [!DNL Geography]を使用しているプロファイルーがData Workbenchサーバークラスター上で実行されている場合は、クラスター内のマスターData Workbenchサーバーから[!DNL Geography]プロファイルーをアンインストールします。
 
-1. 次の手順を使用して、Data Workbenchを使 [!DNL profile.cfg] 用していた各プロファイルのファイルを更新しま [!DNL Geography]す。
+1. 次の手順を使用して、data workbench [!DNL Geography]を使用していた各プロファイルの[!DNL profile.cfg]ファイルを更新します。
 
    1.  [!DNL Profile Manager].
-   1. の横のチェックマークを右クリックし、をク [!DNL profile.cfg] リックしま **[!UICONTROL Make Local]**&#x200B;す。 このファイル用のチェックマークが [!DNL User] 列に表示されます。
+   1. [!DNL profile.cfg]の横のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 このファイル用のチェックマークが [!DNL User] 列に表示されます。
 
-   1. 新しく作成されたチェックマークを右クリックし、/をクリ **[!UICONTROL Open]** ックしま **[!UICONTROL from the workbench]**&#x200B;す。 The [!DNL profile.cfg] window appears.
+   1. 新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL from the workbench]**&#x200B;をクリックします。 [!DNL profile.cfg]ウィンドウが表示されます。
 
-   1. ウィンドウ [!DNL profile.cfg] で、ベクトルからプロ [!DNL Geography] ファイルエントリを削除 [!DNL Directories] します。
+   1. [!DNL profile.cfg]ウィンドウで、[!DNL Directories]ベクトルから[!DNL Geography]プロファイルエントリを削除します。
 
-   1. データサービスを使用している場合は、ベクトルから [!DNL IP Geo-intelligence] またはプ [!DNL IP Geo-location] ロファイルエントリを削除 [!DNL Directories] します。
+   1. データサービスを使用している場合は、[!DNL Directories]ベクトルから[!DNL IP Geo-intelligence]または[!DNL IP Geo-location]プロファイルエントリを削除します。
 
-   1. ウィンドウ上部 **[!UICONTROL (modified)]** のを右クリックし、をクリックしま **[!UICONTROL Save]**&#x200B;す。
+   1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
 
-   1. で、列 [!DNL Profile Manager]のチェックマークを右クリ [!DNL profile.cfg] ックし [!DNL User] 、/ **[!UICONTROL Save to]** &lt; *>をクリック&#x200B;**[!UICONTROL profile name]**します*。
+   1. [!DNL Profile Manager]で、[!DNL User]列の[!DNL profile.cfg]のチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL profile name]**>*&#x200B;をクリックします。
 
-1. Data WorkbenchサーバーのインストールディレクトリにあるProfilesフォルダーからGeographyフォルダーを削除します。
-1. データサービスを使用している場合は、Data WorkbenchサーバーのインストールディレクトリにあるProfilesフォルダーからIP Geo-IntelligenceフォルダーまたはIP Geo-Locationフォルダーを削除します。
+1. Data WorkbenchサーバーのインストールディレクトリにあるプロファイルフォルダーからGeographyフォルダーを削除します。
+1. Data Serviceを使用している場合は、Data WorkbenchサーバーのインストールディレクトリにあるプロファイルフォルダーからIP Geo-IntelligenceフォルダーまたはIP Geo-locationフォルダーを削除します。
 1. Data WorkbenchサーバーのインストールディレクトリにあるLookupsフォルダーからGeographyフォルダーを削除します。
-1. データサービスを使用している場合は、Data WorkbenchサーバーのインストールディレクトリにあるLookupsフォルダーからIP Geo-IntelligenceフォルダーまたはIP Geo-Locationフォルダーを削除します。
-1. 新しい地形画像を作成した場合は、Data Workbenchサーバーのイ [!DNL Terrain Images.cfg] ンストールディレクトリにあるComponentsフォルダーからファイルを削除します。
+1. データサービスを使用している場合は、Data WorkbenchサーバーのインストールディレクトリにあるLookupsフォルダーからIP Geo-IntelligenceフォルダーまたはIP Geo-locationフォルダーを削除します。
+1. 新しい地形画像を作成した場合は、Data Workbenchサーバーのインストールディレクトリ内のComponentsフォルダーから[!DNL Terrain Images.cfg]ファイルを削除します。
