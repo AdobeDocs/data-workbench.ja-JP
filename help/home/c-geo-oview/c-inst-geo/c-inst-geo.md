@@ -1,18 +1,19 @@
 ---
-description: この章では、Data WorkbenchサーバーにData WorkbenchGeographyをインストールする手順を説明します。
-solution: Analytics
-title: Data Workbench地域のインストール
-topic: Data workbench
+description: この章では、data workbenchサーバーにdata workbenchGeographyをインストールする手順を説明します。
+title: Data Workbench Geography のインストール
 uuid: 2c3d2e4a-97a7-4afc-b72d-c012db77e535
+exl-id: 3f32672c-e62b-4b8b-84f7-11ff732519ad
 translation-type: tm+mt
-source-git-commit: fd3afa80250d5ae20b7758ba840fd4d436545cf2
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 13%
 
 ---
 
+# Data Workbench Geography のインストール{#installing-data-workbench-geography}
 
-# Data Workbench地域のインストール{#installing-data-workbench-geography}
-
-この章では、Data WorkbenchサーバーにData WorkbenchGeographyをインストールする手順を説明します。
+この章では、data workbenchサーバーにdata workbenchGeographyをインストールする手順を説明します。
 
 これらの手順を実行するには、Data Workbenchサーバー上のファイルにアクセスできる必要があります。
 
@@ -20,14 +21,14 @@ source-git-commit: fd3afa80250d5ae20b7758ba840fd4d436545cf2
 
 Data Workbench[!DNL Geography] をインストール、設定および操作するための必要システム構成について詳しくは、*必要システム構成*&#x200B;のドキュメントを参照してください。
 
-アドビは、Data Workbenchソフトウェア製 [!DNL Geography] 品をファイルとして配布し [!DNL .zip] ています。 このファイルには2つのフォルダー（LookupsとProfiles）が含まれています。 Data WorkbenchをData Workbenchサーバーにイ [!DNL Geography] ンストールするには、次の手順を実行する必要があります。
+Adobeは、data workbench [!DNL Geography]ソフトウェア製品を[!DNL .zip]ファイルとして配布します。 このファイルには、2つのフォルダー(ルックアップとプロファイルー)が含まれています。 Data Workbench [!DNL Geography]をData Workbenchサーバーにインストールするには、次の手順を実行する必要があります。
 
-* プロファイルをインス [!DNL Geography] トールします。 「Geographyプロフ [ァイルのインストール」を参照してくださ](../../../home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md)い。
+* [!DNL Geography]プロファイルをインストールします。 [Geographyプロファイルのインストール](../../../home/c-geo-oview/c-inst-geo/t-inst-geo-prof.md)を参照してください。
 
-* 検索をインストール [!DNL Geography] します。 「地域参 [照ファイルのインストール」を参照してくださ](../../../home/c-geo-oview/c-inst-geo/t-inst-lkp-files.md)い。
+* [!DNL Geography]ルックアップをインストールします。 [Geographyルックアップファイルのインストール](../../../home/c-geo-oview/c-inst-geo/t-inst-lkp-files.md)を参照してください。
 
-* （オプション）ファイルをインストー [!DNL Terrain Images.cfg] ルします。 See [Installing the Terrain Images.cfg File](../../../home/c-geo-oview/c-inst-geo/t-inst-trn-imgs-file.md).
+* （オプション）[!DNL Terrain Images.cfg]ファイルをインストールします。 [Terrain Images.cfgファイルのインストール](../../../home/c-geo-oview/c-inst-geo/t-inst-trn-imgs-file.md)を参照してください。
 
 >[!NOTE]
 >
->Data Workbenchのファイルは、データセットプロファイ [!DNL Geography] ルを処理および実行するData Workbenchサーバーコンピューターにインストールする必要があります。 Data Workbenchサーバークラスターを実行している場合は、マスターサーバーにファイルをインストールする必要があります。 For information about dataset profiles, see the *Dataset Configuration Guide*.
+>データセットプロファイルを処理して実行するData Workbenchサーバーコンピューターに、Data Workbench [!DNL Geography]のファイルをインストールする必要があります。 Data Workbenchサーバークラスターを実行している場合は、マスターサーバーにファイルをインストールする必要があります。 データセットのプロファイルについて詳しくは、『*データセット設定ガイド*』を参照してください。
