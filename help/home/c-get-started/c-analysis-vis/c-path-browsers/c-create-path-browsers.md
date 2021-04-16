@@ -1,16 +1,17 @@
 ---
 description: グラフ、テーブルまたはプロセスマップからパスブラウザーを作成できます。
-solution: Analytics
 title: パスブラウザーの作成
-topic: Data workbench
 uuid: 84a5e587-fb02-461b-aec8-1b6ad473ebc3
+exl-id: 9fa11b84-da73-447a-8b10-7eab381e3f66
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 72%
 
 ---
 
-
-# Creating path browsers{#creating-path-browsers}
+# パスブラウザーの作成{#creating-path-browsers}
 
 グラフ、テーブルまたはプロセスマップからパスブラウザーを作成できます。
 
@@ -22,18 +23,17 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->要素をパスブラウザーにドラッグすると、パスブラウザーに関連付けられたベースディメンションが変更される場合がありますが、レベルディメンション、グループディメンションまたは指標は変更されません。 そのため、パスブラウザーのレベルディメンション、グループディメンション、指標と一緒に使用すると意味を持つベースディメンションの選択には注意が必要です。To change the level dimension, group dimension, or metric, you must edit the path browser’s [!DNL *.vw] file in a text editor such as Notepad. See [Configuring Path Browsers](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3).
+>要素をパスブラウザーにドラッグして、パスブラウザーに関連付けられたベースディメンションを変更できますが、レベルディメンション、グループディメンションまたは指標は変更されません。 そのため、パスブラウザーのレベルディメンション、グループディメンション、指標と一緒に使用すると意味を持つベースディメンションの選択には注意が必要です。レベルディメンション、グループディメンションまたは指標を変更するには、パスブラウザーの[!DNL *.vw]ファイルをメモ帳などのテキストエディターで編集する必要があります。 「[パスブラウザーの設定](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)」を参照してください。
 
 **プロセスマップからパスブラウザーを作成するには**
 
 >[!NOTE]
 >
->プロセスマップから作成されたパスブラウザーには、プロセスマップに表示される要素のみが表示されます。 ベースディメンションの他の要素は表示されません。
+>プロセスマップから作成されたパスブラウザーには、プロセスマップに表示されている要素のみが表示されます。 ベースディメンションの他の要素は表示されません。
 
-1. プロセスマップを作成します。「 [プロセスマップの作成](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-create-proc-maps.md#concept-daf5b14dae7a442191611b1b9c1122bf).
+1. プロセスマップの作成. 「[プロセスマップの作成](../../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-create-proc-maps.md#concept-daf5b14dae7a442191611b1b9c1122bf)」を参照してください。
 1. 目的の要素をプロセスマップからパスブラウザーにドラッグします。この要素がパスブラウザーのルートになります。
 
 >[!NOTE]
 >
 >プロセスマップからパスブラウザーを作成する場合、パスブラウザーは、ベースディメンション要素が関連付けられていないレベルディメンションの要素を無視します。 ノードをプロセスマップからパスブラウザーにドラッグすると、パスブラウザーのベースディメンション（名前付きマップ）がプロセスマップによって定義され、その要素はプロセスマップ上の要素に限定されます。その結果、パスブラウザーのレベルディメンションの一部の要素には、ベースディメンション要素が関連付けられていないので、パスブラウザーに表示されません。
-
