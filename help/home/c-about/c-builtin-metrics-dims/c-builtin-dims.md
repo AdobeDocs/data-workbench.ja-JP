@@ -1,18 +1,19 @@
 ---
-description: Data Workbenchには、組み込みディメンションが含まれています。
-solution: Analytics
+description: Data Workbenchには、組み込みのディメンションが含まれています。
 title: 組み込みディメンション
-topic: Data workbench
 uuid: 0aabbc52-266d-46c1-a4b3-dd575c0f2c72
+exl-id: c08a487d-60b8-4db7-8776-7ae1b9f1f27c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '100'
+ht-degree: 15%
 
 ---
 
-
 # 組み込みディメンション{#built-in-dimensions}
 
-Data Workbenchには、組み込みディメンションが含まれています。
+Data Workbenchには、組み込みのディメンションが含まれています。
 
 次の表に、Data Workbenchで使用できる組み込みディメンションを示します。
 
@@ -30,14 +31,13 @@ Data Workbenchには、組み込みディメンションが含まれています
    <td colname="col1"> なし </td> 
    <td colname="col2"> 派生 </td> 
    <td colname="col3"> 該当なし </td> 
-   <td colname="col4">すべてのディメンションのすべての要素に関連する単一の要素「」を持ちます。 指標を「なし」で評価するのは、ディメンションなしで評価するのと似ています。 <p>[ <span class="filepath"> None=""]フィルタは</span> 、[True]と <span class="filepath"> 同じです</span>。 </p></td> 
+   <td colname="col4">すべてのディメンションのすべての要素に関連する単一の要素""を持ちます。 「なし」に対して指標を評価することは、ディメンションがない場合に評価するのと似ています。 <p><span class="filepath">フィルター[なし=""]</span>は、<span class="filepath"> [True]</span>と等価です。 </p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> 1（非表示） </td> 
    <td colname="col2"> 数値 </td> 
    <td colname="col3"> 該当なし </td> 
-   <td colname="col4">要素「1」は、同じく序数値 <span class="filepath"> = 1で、すべてのディメンションのすべての</span>要素に関連しています。 通常、Oneディメンションは、次の構文を使用してカウントを作成するために使用されます。 <p><span class="filepath"> sum(one,Countable_Dimension)</span></p></td> 
+   <td colname="col4">要素「1」（同時に序数値<span class="filepath"> = 1</span>も持つ）は、すべてのディメンションのすべての要素に関連します。 通常、Oneディメンションは、次の構文を使用してカウントを作成するために使用されます。 <p><span class="filepath"> sum(one,Countable_Dimension)</span></p></td> 
   </tr> 
  </tbody> 
 </table>
-
