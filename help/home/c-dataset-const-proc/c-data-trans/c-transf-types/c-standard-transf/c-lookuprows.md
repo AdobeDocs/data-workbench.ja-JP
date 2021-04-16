@@ -1,22 +1,23 @@
 ---
 description: LookupRows 変換は、同じ追跡 ID を持った他のログエントリを調べ、出力フィールドの値を、入力行に指定されたフィールドの値に設定します。
-solution: Analytics
 title: LookupRows
-topic: Data workbench
 uuid: 4cff7cf1-00c8-4ab1-8adc-3805518226d3
+exl-id: caa9a311-b056-4fe8-bb11-1605cc690375
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 92%
 
 ---
-
 
 # LookupRows{#lookuprows}
 
 LookupRows 変換は、同じ追跡 ID を持った他のログエントリを調べ、出力フィールドの値を、入力行に指定されたフィールドの値に設定します。
 
-調べる対象がルックアップファイルではなくログエントリであるという点で、[!DNL LookupRows] 変換は [!DNL CrossRows] 変換とよく似ています。CrossRowsを参照し [てください](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md#concept-fcace08804f54db397ed631cc13ff4f2)。
+調べる対象がルックアップファイルではなくログエントリであるという点で、[!DNL LookupRows] 変換は [!DNL CrossRows] 変換とよく似ています。[CrossRows](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md#concept-fcace08804f54db397ed631cc13ff4f2)を参照してください。
 
-[!DNL LookupRows] 変換が正しく動作するためには、ソースデータにおいて、データが時系列順に並んでおり、追跡 ID ごとにグループ化されている必要があります。したがって、 [!DNL LookupRows] はファイルまたはファイルで定義さ [!DNL Transformation.cfg] れている場合にのみ機能 [!DNL Transformation Dataset Include] します。
+[!DNL LookupRows] 変換が正しく動作するためには、ソースデータにおいて、データが時系列順に並んでおり、追跡 ID ごとにグループ化されている必要があります。したがって、[!DNL LookupRows]は[!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイルで定義されている場合にのみ機能します。
 
 以降、次の点を踏まえて、表内のパラメーターの説明をお読みください。
 
@@ -38,12 +39,12 @@ LookupRows 変換は、同じ追跡 ID を持った他のログエントリを�
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments </td> 
-   <td colname="col2"> (オプション)変換についてのメモ。 </td> 
+   <td colname="col1"> コメント </td> 
+   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 変換の出力を特定のログエントリに限定します。特定のログエントリがその条件を満たしていない場合、Output Row Value Output パラメーターのフィールドは変更されません。ただし、その入力内容が引き続き使用され、他のログエントリに影響を及ぼす可能性はあります。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -63,7 +64,7 @@ LookupRows 変換は、同じ追跡 ID を持った他のログエントリを�
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Operation </td> 
+   <td colname="col1"> 操作 </td> 
    <td colname="col2"> <p>それぞれの出力行について特定の出力を得るために、<span class="wintitle">Input</span> Condition パラメーターと Input Row Key Input パラメーターで定義された全条件を満たしたすべての入力行に適用される演算。 
      <ul id="ul_16FB152CB558497794DDED72A2F05CDD"> 
       <li id="li_22DA9F814E4E42D0B21E90B63A2A7A0E"> FIRST は、（出力行より後ろの最初に一致した行ではなく）データ内で最初に一致した入力行から、Input Row Value Input パラメーターで指定されたフィールドの値を出力します。 </li> 
@@ -98,13 +99,13 @@ Input Row Key Input、Input Row Value Input、Input Condition のすべてのパ
 
 * そのうえで、出力行の Output Row Value Output を入力行の Input Row Value Input に設定します。
 
-考慮事項： [!DNL LookupRows]
+[!DNL LookupRows]の考慮事項
 
-* ブランクのキー値は、どのような値とも一致しません。Even if there are input rows with blank keys and nonblank values that match the [!DNL Input Condition], an [!DNL Output Row Key Input] of &quot;&quot; will always produce an [!DNL Output Row Value Output] of &quot;&quot;.
+* ブランクのキー値は、どのような値とも一致しません。空白のキーと[!DNL Input Condition]に一致するブランク以外の値を持つ入力行が存在する場合でも、&quot;&quot;の[!DNL Output Row Key Input]は常に&quot;&quot;の[!DNL Output Row Value Output]を生成します。
 
-* If not forbidden by the [!DNL Input Condition], a row may look up itself if its [!DNL Input Row Key Input] and [!DNL Output Row Key Input] values are the same.
+* [!DNL Input Condition]で禁止されていない場合、[!DNL Input Row Key Input]と[!DNL Output Row Key Input]の値が同じであれば、行はそれ自体を参照することができます。
 
-複数のキー値がある場合は、変換を適用する前に、変換を使用し [!DNL Format] て組み合わせるこ [とができま](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md#concept-3de04869181e4694ab072b092186684b)[!DNL LookupRows] す（Formatを参照）。
+複数のキー値がある場合は、[!DNL Format]変換を適用する前に、[!DNL LookupRows]変換（[形式](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md#concept-3de04869181e4694ab072b092186684b)を参照）を使用してキー値を組み合わせることができます。
 
 ペットの登録ページを設けた Web サイトがあるとします。登録ページで名前と品種を入力すると、後から、そのペットの名前に特化した「おもちゃの購入」ページが表示されます。この場合、登録ページに入力されたペットの品種に対してペットの名前をリンクさせるしくみが必要です。そのためには、次のような [!DNL LookupRows] 変換を作成することが考えられます。
 
