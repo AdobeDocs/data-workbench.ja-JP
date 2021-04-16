@@ -1,23 +1,24 @@
 ---
-description: レポートを電子メールで再送信する手順です。
-solution: Analytics
+description: 電子メールでレポートを再送信する手順です。
 title: 電子メールによるレポートの再送信
-topic: Data workbench
 uuid: 384dfa1f-6a72-4fef-886e-bf2290f5993f
+exl-id: eb37fd3e-6e7b-4672-bcf0-fffa9f10997d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 6%
 
 ---
 
-
 # 電子メールによるレポートの再送信{#resending-reports-by-email}
 
-レポートを電子メールで再送信する手順です。
+電子メールでレポートを再送信する手順です。
 
-ファイル内 **[!UICONTROL Allow Report Regeneration]** のパラメー [!DNL Report.cfg] タがに設定され [!DNL True][!DNL Report.cfg] ている場合、ファイルに変更を加え、そのファイルをサーバーに保存すると、Report Serverはそのセット内のレポートを自動的に再生成します。 電子メールでのレポートの再送信は行われません。
+[!DNL Report.cfg]ファイルの&#x200B;**[!UICONTROL Allow Report Regeneration]**&#x200B;パラメーターが[!DNL True]に設定されている場合、[!DNL Report.cfg]ファイルに変更を加え、そのファイルをサーバーに保存すると、Report Serverはそのセット内のレポートを自動的に再生成します。 電子メールでのレポートの再送信は行いません。
 
-1. タブで、 [!DNL Reports] 再送信するレポートセットのサブフォルダ（タブまたはドロップダウンサブディレクトリ）を選択します。
-1. クリック **[!UICONTROL Report.cfg]**. このレポートセットの [!DNL Report.cfg] のパラメータが表示されます。
-1. このパラメ **[!UICONTROL Start Date]** ーターを、レポートを再送する未来の時刻に変更します。
-1. Save the file by right-clicking **[!UICONTROL Report.cfg (modified)]** at the top of the parameters and clicking **[!UICONTROL Save to]***&lt; **[!UICONTROL server location]**>*.
+1. [[!DNL Reports]]タブで、再送信するレポートセットのサブフォルダ（タブまたはドロップダウンサブディレクトリ）を選択します。
+1. 「**[!UICONTROL Report.cfg]**」をクリックします。このレポートセットの[!DNL Report.cfg]のパラメーターが表示されます。
+1. **[!UICONTROL Start Date]**&#x200B;パラメーターを、レポートを再送する将来の時刻に変更します。
+1. パラメーターの上部の&#x200B;**[!UICONTROL Report.cfg (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save to]***&lt;**[!UICONTROL server location]**>*をクリックして、ファイルを保存します。
 このセット内のレポートは再生成され、指定した受信者に電子メールで送信されます。
