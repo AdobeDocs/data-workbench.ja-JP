@@ -1,35 +1,35 @@
 ---
 description: 依存関係マップにデータセットコンポーネントを表示する場合、「ファイルブロックを含める」表示オプションを有効にできます。
-solution: Analytics
 title: ファイルブロック
-topic: Data workbench
 uuid: 079dccba-ef19-4895-90bb-6c56f26e8beb
+exl-id: 04b0faf1-a16d-4e46-b790-5fe2023f2ba1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '318'
+ht-degree: 51%
 
 ---
-
 
 # ファイルブロック{#file-blocks}
 
 依存関係マップにデータセットコンポーネントを表示する場合、「ファイルブロックを含める」表示オプションを有効にできます。
 
-このオプションを有効にすると、マップには、1 つのデータセット設定ファイルに定義された変換すべてに対して青のノードが 1 つ表示され、1 つのデータセット設定ファイルに定義された拡張ディメンションすべてに対して緑のノードが 1 つ表示されます。For example, if a [!DNL log processing dataset include] file includes the definitions of three transformations, the map displays one blue node representing the three transformations. Similarly, if a [!DNL transformation dataset include] file includes the definitions of two extended dimensions, the map displays one green node representing the two extended dimensions.
+このオプションを有効にすると、マップには、1 つのデータセット設定ファイルに定義された変換すべてに対して青のノードが 1 つ表示され、1 つのデータセット設定ファイルに定義された拡張ディメンションすべてに対して緑のノードが 1 つ表示されます。例えば、[!DNL log processing dataset include]ファイルに3つの変換の定義が含まれている場合、マップには3つの変換を表す青いノードが1つ表示されます。 同様に、[!DNL transformation dataset include]ファイルに2つの拡張ディメンションの定義が含まれている場合、マップには2つの拡張ディメンションを表す緑のノードが1つ表示されます。
 
-## Transformation blocks {#section-c442730394264a0b850792a32eaaa2da}
+## 変換ブロック{#section-c442730394264a0b850792a32eaaa2da}
 
 青のノードはそれぞれ変換ブロックであり、次のオプションがあります。
 
-* To view the input fields of the transformation block, right-click the node for the block and click **[!UICONTROL Inputs]**.
-* To view the output fields of the transformation block, right-click the node for the block and click **[!UICONTROL Outputs]**.
-* To edit any of the transformations in the block, right-click the node for the block and click **[!UICONTROL Edit Configuration]**. 表示される引き出し線には設定ファイル全体が含まれ、ここにすべての変換が定義されています。ここで必要に応じてパラメーターを編集できます。これらのパラメーターについて詳しくは、『*データセット設定ガイド*』を参照してください。
+* 変換ブロックの入力フィールドを表示するには、ブロックのノードを右クリックし、**[!UICONTROL Inputs]**&#x200B;をクリックします。
+* 変換ブロックの出力フィールドを表示するには、ブロックのノードを右クリックし、**[!UICONTROL Outputs]**&#x200B;をクリックします。
+* ブロック内の変換を編集するには、ブロックのノードを右クリックし、**[!UICONTROL Edit Configuration]**&#x200B;をクリックします。 表示される引き出し線には設定ファイル全体が含まれ、ここにすべての変換が定義されています。ここで必要に応じてパラメーターを編集できます。これらのパラメーターについて詳しくは、『*データセット設定ガイド*』を参照してください。
 
-* To see all of the transformations in the block, right-click the node for the transformation block and click **[!UICONTROL Show Details]**. 表示される引き出し線には、別の依存関係マップが含まれ、ブロック内のすべての変換に対するノードが表示されます。
+* ブロック内のすべての変換を表示するには、変換ブロックのノードを右クリックし、**[!UICONTROL Show Details]**&#x200B;をクリックします。 表示される引き出し線には、別の依存関係マップが含まれ、ブロック内のすべての変換に対するノードが表示されます。
 
-## Dimension blocks {#section-0dd581ac6dfc4153bee5300b3cfae2a0}
+## Dimensionブロック{#section-0dd581ac6dfc4153bee5300b3cfae2a0}
 
 緑のノードはそれぞれディメンションブロックであり、次のオプションがあります。
 
-* To view the input fields or the parent dimension of the dimension block, right-click the node for the block and click **[!UICONTROL Inputs]**.
-* To view the output dimensions of the dimension block, right-click the node for the block and click **[!UICONTROL Outputs]**.
-
+* 入力フィールドまたはディメンションブロックの親ディメンションを表示するには、ブロックのノードを右クリックし、**[!UICONTROL Inputs]**&#x200B;をクリックします。
+* ディメンションブロックの出力ディメンションを表示するには、ブロックのノードを右クリックし、**[!UICONTROL Outputs]**&#x200B;をクリックします。
