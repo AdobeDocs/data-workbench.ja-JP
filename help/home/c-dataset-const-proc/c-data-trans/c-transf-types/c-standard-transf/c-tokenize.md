@@ -1,28 +1,29 @@
 ---
 description: Tokenize 変換は、入力文字列に対して反復的に正規表現を適用します。
-solution: Analytics
 title: Tokenize
-topic: Data workbench
 uuid: f8430e6c-ec14-4ba6-aeae-92c9f2520a63
+exl-id: c1f39b5b-4717-44f6-99c7-4e6a215f3542
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 89%
 
 ---
-
 
 # Tokenize{#tokenize}
 
 Tokenize 変換は、入力文字列に対して反復的に正規表現を適用します。
 
-However, unlike [!DNL RETransform], [!DNL Tokenize] does not have to match the entire string: the regular expression used for the [!DNL Tokenize] transformation can match a subset of the input. [!DNL Tokenize] は、一致が見つかった後、最後の一致に続く文字から再度、正規表現を適用します。
+ただし、[!DNL RETransform]と異なり、[!DNL Tokenize]は文字列全体と一致する必要はありません。[!DNL Tokenize]変換に使用される正規式は、入力のサブセットと一致する場合があります。 [!DNL Tokenize] は、一致が見つかった後、最後の一致に続く文字から再度、正規表現を適用します。
 
 | パラメーター | 説明 | デフォルト |
 |---|---|---|
 | 名前 | 変換のわかりやすい名前。ここには任意の名前を入力することができます。 |  |
 | Case Sensitive | true または false。マッチングで大文字と小文字を区別するかどうかを指定します。 |  |
-| Comments | (オプション)変換についてのメモ。 |  |
-| Condition | この変換が適用される条件。 |  |
-| Default | デフォルト値。条件が満たされたが、入力値が利用できない場合、または正規表現が入力値と一致しない場合に使用されます。 |  |
+| コメント | （オプション）変換についてのメモ。 |  |
+| 条件 | この変換が適用される条件。 |  |
+| デフォルト | デフォルト値。条件が満たされたが、入力値が利用できない場合、または正規表現が入力値と一致しない場合に使用されます。 |  |
 | 式 | マッチングに使用する正規表現。 |  |
 | Outputs | 出力文字列の名前。特定の入力文字列から複数の出力結果を得ることができます。出力結果の数は、正規表現で捕捉するサブパターンの数に相当します。 |  |
 
