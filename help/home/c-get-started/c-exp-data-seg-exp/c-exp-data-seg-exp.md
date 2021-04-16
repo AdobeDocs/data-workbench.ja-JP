@@ -1,16 +1,17 @@
 ---
 description: セグメントエクスポート機能を使用すると、任意の可算ディメンションの要素からなるセグメントを作成してから、そのセグメントのデータをバッチまたは継続的なリアルタイムベースでタブ区切りファイルに出力できます。
-solution: Analytics
 title: セグメントエクスポートを使用したデータのエクスポート
-topic: Data workbench
 uuid: a6468e76-fe5a-4807-806e-015063f9627a
+exl-id: 46540d63-3b6e-4cfc-ba34-8caffadab99c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 100%
 
 ---
 
-
-# Exporting data using segment export{#exporting-data-using-segment-export}
+# セグメントエクスポートを使用したデータのエクスポート{#exporting-data-using-segment-export}
 
 セグメントエクスポート機能を使用すると、任意の可算ディメンションの要素からなるセグメントを作成してから、そのセグメントのデータをバッチまたは継続的なリアルタイムベースでタブ区切りファイルに出力できます。
 
