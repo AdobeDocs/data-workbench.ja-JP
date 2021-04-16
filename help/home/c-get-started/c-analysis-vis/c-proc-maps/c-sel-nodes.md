@@ -1,14 +1,15 @@
 ---
 description: ノードをクリックして選択すると、ハイライトされたノードに入る矢印とノードから出る矢印が見やすくなるよう、他のノードが暗くなります。
-solution: Analytics
 title: ノードの選択
-topic: Data workbench
 uuid: d63b39f6-edec-4b4c-b36b-f6e6881d3419
+exl-id: a483547f-e338-4d13-8a0b-6cb7971b7790
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 90%
 
 ---
-
 
 # ノードの選択{#select-a-node}
 
@@ -18,7 +19,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->ノードをクリックして選択しても、データはフィルターされません。
+>ノードをクリックして選択しても、データのフィルタリングは行われません。
 
 **1 つのノードを選択するには**
 
@@ -33,4 +34,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 **ノードまたはノードのグループを選択から削除するには**
 
 * Shift キーを押しながらノードをクリックするか、Shift キーを押しながら複数のノード全体をドラッグします。
-
