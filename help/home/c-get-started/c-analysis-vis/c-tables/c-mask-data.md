@@ -1,14 +1,15 @@
 ---
 description: マスクとは、データのサブセットまたはディメンション内の要素のサブセットを選択することです。
-solution: Analytics
 title: データのマスク
-topic: Data workbench
 uuid: 81b5f4e0-826c-4803-9169-66a424a4ea9f
+exl-id: 3029e08e-827f-40d7-b5a1-45630876a097
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 66%
 
 ---
-
 
 # データのマスク{#mask-data}
 
@@ -16,11 +17,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 分析に含めたくない要素をマスクまたは非表示にします。
 
-Data Workbenchには、ディメンション要素をマスクする2つの方法が用意されています。 The first method employs the options available in the [!DNL Mask] menu. Using the [!DNL Mask] menu options, you can use your mouse to select those elements to show or to mask, or you can show top-ranked elements when you sort the data by metric. ディメンション要素をマスクする第二の方法では、検索を使用します。
+Data Workbenchには、ディメンション要素をマスクする方法が2つ用意されています。 1つ目の方法は、[!DNL Mask]メニューにあるオプションを使用します。 [!DNL Mask]メニューオプションを使用して、マウスで表示またはマスクする要素を選択したり、指標でデータを並べ替える際にトップランクの要素を表示したりできます。 ディメンション要素をマスクする第二の方法では、検索を使用します。
 
 **データをマスクするには**
 
-1. Right-click an element or the label of the desired dimension and click **[!UICONTROL Mask]**.
+1. 目的のディメンションの要素またはラベルを右クリックし、**[!UICONTROL Mask]**&#x200B;をクリックします。
 
    ![](assets/mnu_Table_Mask.png)
 
@@ -29,36 +30,36 @@ Data Workbenchには、ディメンション要素をマスクする2つの方�
    * **[!UICONTROL Show all]**
    * **[!UICONTROL Show selected only]**
    * **[!UICONTROL Hide selected]**
-   * **[!UICONTROL Show top > 5, 10, 25, 50, 100]**&#x200B;または指標で並べ **[!UICONTROL 500]** 替えられた表示された要素の
+   * **[!UICONTROL Show top > 5, 10, 25, 50, 100]**、または指標 **[!UICONTROL 500]** で並べ替えられた表示要素
    * **[!UICONTROL Show top > All Positive]** ゼロ(0)より大きい値のみを表示するには
    * **[!UICONTROL Display “X more”]** 現在マスクされている要素の数を表示するには
-   * **[!UICONTROL At least one >]***&lt; **[!UICONTROL countable dimension name]**>*（非正規ディメンションを使用する場合のみ使用可能）
+   * **[!UICONTROL At least one >]***&lt;>>*（非正規ディメンションを使用している場合のみ有効）**[!UICONTROL countable dimension name]**
 
       非正規ディメンションを使用している場合、このオプションを選択すると、可算ディメンションでディメンションをマスクできます。このオプションを選択すると、選択した可算ディメンションの要素を 1 つ以上持つ要素のみがテーブルに表示されます。テーブルには最大 1,023 個の要素が表示されます。
 
 >[!NOTE]
 >
->Because the Adobe [!DNL Platform] processes data in random order, when At least one masking results in more than 1,023 elements, the more common and larger elements have a greater chance of being included in the table.
+>Adobe[!DNL Platform]はデータをランダムな順序で処理するので、[少なくとも1つのマスキング結果が1,023個を超える場合、より一般的でより大きな要素がテーブルに含まれる可能性が高くなります。
 
-「トップ」または「1 つ以上」でマスクすると、デフォルトでは、テーブル内の順序はその時点での選択範囲に影響を受けた値に対応します。後で選択範囲を変更した場合、テーブルを再度並べ替えるか、動的選択を有効にしない限り、順序はオリジナルの順序から変更されません。When you click **[!UICONTROL Mask]** > **[!UICONTROL Dynamic Selection]**, the table is resorted each time you change the selection.
+「トップ」または「1 つ以上」でマスクすると、デフォルトでは、テーブル内の順序はその時点での選択範囲に影響を受けた値に対応します。後で選択範囲を変更した場合、テーブルを再度並べ替えるか、動的選択を有効にしない限り、順序はオリジナルの順序から変更されません。**[!UICONTROL Mask]** > **[!UICONTROL Dynamic Selection]**&#x200B;をクリックすると、選択を変更するたびにテーブルの並べ替えが行われます。
 
 **検索を使用してデータをマスクするには**
 
 * 以下の検索オプションのどちらかを使用して、データをマスクできます。
 
-   * Right-click an element or the label of the desired dimension, click **[!UICONTROL Mask]**, then in the [!DNL Search] box type the phrase for which you want to search.
+   * 目的のディメンションの要素またはラベルを右クリックし、「**[!UICONTROL Mask]**」をクリックしてから、「[!DNL Search]」ボックスに検索するフレーズを入力します。
 
       ![](assets/mnu_Table_MaskSearch.png)
 
-   * Right-click an element or the label of the desired dimension, click **[!UICONTROL Mask]** > **[!UICONTROL Display search bar]**, then in the search box that displays in the dimension label cell, type the phrase for which you want to search.
+   * 目的のディメンションの要素またはラベルを右クリックし、**[!UICONTROL Mask]**/**[!UICONTROL Display search bar]**&#x200B;をクリックして、ディメンションラベルのセルに表示される検索ボックスに、検索するフレーズを入力します。
 
       ![](assets/vis_Table_Mask_searchBar.png)
 
-      検索フレーズを入力すると、Data Workbenchは一致を反映するようにディメンションを更新します。
+      検索フレーズを入力すると、Data Workbenchは、一致を反映するようにディメンションを更新します。
 
 以下の方法を使用して、検索時のマスキングをさらに制約できます。
 
-* You can type “re:” in the [!DNL search] box or bar to have the search phrase interpreted as a regular expression. 正規表現に関連付けられた任意の構文を検索フレーズに使用できます。正規表現について詳しくは、『*データセット設定ガイド*』の付録「正規表現」を参照してください。
+* 「[!DNL search]」ボックスまたはバーに「re:」と入力すると、検索語を正規式として解釈させることができます。 正規表現に関連付けられた任意の構文を検索フレーズに使用できます。正規表現について詳しくは、『*データセット設定ガイド*』の付録「正規表現」を参照してください。
 * 記号 $ を検索文字列の先頭文字として入力すると、入力した文字列で始まるフレーズを探せます。検索文字列の最終文字として入力すると、入力した文字列で終わるフレーズを探せます。
 * スペースを検索文字列の先頭文字として入力すると、入力した文字列で始まるフレーズ内の任意の単語を探せます。検索文字列の最終文字として入力すると、入力した文字列で終わるフレーズ内の任意の単語を探せます。
 
@@ -84,4 +85,3 @@ Data Workbenchには、ディメンション要素をマスクする2つの方�
 * 「 on 」を使用すると、文字列「on」を単語として含むすべてのフレーズが表示されます。例：
 
    「**on** line banking」、「bank **on** line」
-
