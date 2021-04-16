@@ -1,25 +1,26 @@
 ---
-description: レポートポータルで使用可能にするプロファイルを指定するには、profiles.xmlファイルを設定する必要があります。
-solution: Analytics
-title: Profiles.xmlファイルの編集
-topic: Data workbench
+description: レポートポータルで使用するプロファイルを指定するには、プロファイル.xmlファイルを設定する必要があります。
+title: Profiles.xml ファイルの編集
 uuid: 3640552b-bc46-4b4f-8524-e021b0ca2bfc
+exl-id: 7a3900e4-e472-4295-80f7-ce755958bc18
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '113'
+ht-degree: 11%
 
 ---
 
+# Profiles.xml ファイルの編集{#edit-the-profiles-xml-file}
 
-# Profiles.xmlファイルの編集{#edit-the-profiles-xml-file}
+レポートポータルで使用するプロファイルを指定するには、プロファイル.xmlファイルを設定する必要があります。
 
-レポートポータルで使用可能にするプロファイルを指定するには、profiles.xmlファイルを設定する必要があります。
+[!DNL profiles.xml]ファイルは、出力用に指定したフォルダーにあります。 デフォルトでは\*PortalName*\PortalFiles\Output folderにあります。
 
-ファイ [!DNL profiles.xml] ルは、出力用に指定したフォルダーに存在します。 デフォルトでは、\*PortalName*\PortalFiles\Output folderディレクトリ内に存在します。
+**プロファイル名をプロファイル.xmlファイルに追加するには**
 
-**profiles.xmlファイルにプロファイル名を追加するには**
-
-1. IISが実行されているマシン上で、メモ帳などのテキ [!DNL profiles.xml] ストエディターでファイルを開きます。
-1. 次の例のように、ポータルの各ユ [!DNL Profile] ーザーのプロファイル要素とタグを追加します。
+1. IISが実行されているマシン上で、[!DNL profiles.xml]ファイルをメモ帳などのテキストエディターで開きます。
+1. 次の追加例のように、ポータルの各[!DNL Profile]のプロファイル要素とタグを指定します。
 
    ```
    <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
