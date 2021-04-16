@@ -1,14 +1,15 @@
 ---
 description: Math 変換すると、ログエントリ内のフィールドに対して算術演算を適用できます。
-solution: Analytics
 title: Math
-topic: Data workbench
 uuid: 9e1a5950-8fb2-48e9-b9a1-82c5165fba10
+exl-id: d8b9cacd-67d1-447c-94dd-7028aa371dfa
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '256'
+ht-degree: 97%
 
 ---
-
 
 # Math{#math}
 
@@ -31,24 +32,24 @@ Math 変換すると、ログエントリ内のフィールドに対して算術
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments </td> 
-   <td colname="col2"> (オプション)変換についてのメモ。 </td> 
+   <td colname="col1"> コメント </td> 
+   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> この変換が適用される条件。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
    <td colname="col1"> 式 </td> 
-   <td colname="col2"> <p>実行する計算を表す演算式。 </p> <p> 以下に示した任意の演算および関数を使用でき、式にはフィールド名を含めることができます。 </p> <p> 演算 
+   <td colname="col2"> <p>実行する計算を表す演算式。 </p> <p> 以下に示した任意の演算および関数を使用でき、式にはフィールド名を含めることができます。 </p> <p> 運用 
      <ul id="ul_DB5915FADA0A41A3B11F1F48615F40A9">
       <li id="li_CA9EA97243F04760A81313C17EE057B3"> 加算（+） </li>
       <li id="li_908A272EBA2340098C20F22AA8D9ED26"> 減算（-） </li>
       <li id="li_C62257FF3AAB436D9148BBEA441621D7"> 乗算（*） </li>
       <li id="li_B5A9EAB3E49D4CB9A297172199F23542"> 除算（/） </li>
-      <li id="li_D2D2B51DB2C8412A9B6F9D5F3CC03F8A"> 剰余（%） </li>
+      <li id="li_D2D2B51DB2C8412A9B6F9D5F3CC03F8A"> 剰余 (%) </li>
       <li id="li_07E7E368FFD2437A852B785E159848E5"> 累乗法 (^) </li>
      </ul></p> <p>関数 
      <ul id="ul_E335AE8D684340AA998C4A2633FFDEE1">
@@ -74,4 +75,4 @@ Math 変換すると、ログエントリ内のフィールドに対して算術
 
 ![](assets/cfg_TransformationType_Math.png)
 
-条件について詳しくは、「 [!DNL Not Empty] 条件」を参照して [ください](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)。
+[!DNL Not Empty]条件について詳しくは、[条件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)を参照してください。
