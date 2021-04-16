@@ -1,16 +1,17 @@
 ---
 description: ビジュアライゼーション内で要素を選択すると、データセットが動的にフィルタリングされます。
-solution: Analytics
 title: ビジュアライゼーションでの選択
-topic: Data workbench
 uuid: 3900354f-826b-41e8-9bc2-e4856928bad5
+exl-id: bb1dd7e4-a9f8-48b5-a12d-433c601b455b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '279'
+ht-degree: 100%
 
 ---
 
-
-# Make selections in visualizations{#make-selections-in-visualizations}
+# ビジュアライゼーションでの選択{#make-selections-in-visualizations}
 
 ビジュアライゼーション内で要素を選択すると、データセットが動的にフィルタリングされます。
 
@@ -30,7 +31,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 | 設定値... | 使用するシーケンス |
 |---|---|
-| 1 つの要素を選択 | ズーム後に  |
+| 1 つの要素を選択 | クリック |
 | ある範囲の要素を選択 | クリックしながらドラッグ |
 | 現在の選択に要素を追加 | Ctrl キーを押しながらクリック |
 | 1 つの選択を解除 | Shift キーを押しながらクリック |
@@ -44,4 +45,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 |---|---|
 | 1 つの選択を解除 | Shift キーを押しながらクリック |
 | すべての選択を解除（つまり、すべての要素を再選択） | ビジュアライゼーション内の任意の値を右クリック |
-
