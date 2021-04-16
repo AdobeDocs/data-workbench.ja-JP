@@ -1,14 +1,15 @@
 ---
 description: 既存のビジュアライゼーションを追加または変更して既存のワークスペースをカスタマイズしたり、新しいワークスペースを作成したりできます。
-solution: Analytics
 title: ワークスペースの作成
-topic: Data workbench
 uuid: 8669b70f-5ddf-4424-9269-0e4860eac498
+exl-id: 9c1fb9e6-6cc8-4894-800b-187b047c41d2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 84%
 
 ---
-
 
 # ワークスペースの作成{#create-a-workspace}
 
@@ -24,13 +25,13 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 * [既存のワークスペースのコピーと貼り付け](../../../home/c-get-started/c-work-worksp/c-create-worksp.md#section-f91ae89b845640c9a4a52820a6110e65)
 * [ワークスペース名の変更](../../../home/c-get-started/c-work-worksp/c-create-worksp.md#section-ca7edb913e4e4630a856f45a2536ffad)
 
-## 新しいワークスペースの作成 {#section-4236ae30e2884ea08f0885bf329f0778}
+## 新しいワークスペースの作成  {#section-4236ae30e2884ea08f0885bf329f0778}
 
-On the desired [!DNL Worktop] tab, right-click a blank area within the tab and click one of the following options:
+目的の[!DNL Worktop]タブで、タブ内の空白の領域を右クリックし、次のいずれかのオプションをクリックします。
 
-* **[!UICONTROL New]** > **[!UICONTROL Blank Workspace]**. 標準サイズの空白のワークスペースが表示されます。
+* **[!UICONTROL New]** > **[!UICONTROL Blank Workspace]**。標準サイズの空白のワークスペースが表示されます。
 
-* **[!UICONTROL New]** > **[!UICONTROL Report Template]**. レポートの作成に使用できる、標準サイズのテンプレートが表示されます。
+* **[!UICONTROL New]** > **[!UICONTROL Report Template]**。レポートの作成に使用できる、標準サイズのテンプレートが表示されます。
 
 ![](assets/mnu_workspaceManager.png)
 
@@ -48,11 +49,11 @@ On the desired [!DNL Worktop] tab, right-click a blank area within the tab and c
 
 **既存のワークスペースをコピーして貼り付けるには**
 
-1. On the desired [!DNL Worktop] tab, right-click the workspace that you want to copy and click **[!UICONTROL Copy]**.
+1. 目的の[!DNL Worktop]タブで、コピーするワークスペースを右クリックし、「**[!UICONTROL Copy]**」をクリックします。
 
    ![](assets/mnu_workspaceManager_Copywksp.png)
 
-1. Go to the tab in which you want to paste the workspace, right-click a blank area within the tab, then click **[!UICONTROL Paste]**.
+1. ワークスペースを貼り付けるタブに移動し、タブ内の空白の領域を右クリックして、**[!UICONTROL Paste]**&#x200B;をクリックします。
 
    次の例は、サーバーバージョンを含むワークスペースタブに貼り付けられたワークスペースです。
 
@@ -62,15 +63,15 @@ On the desired [!DNL Worktop] tab, right-click a blank area within the tab and c
 
 ![](assets/mnu_workspaceManager_Copywksp_PasteSameNameLocalWks.png)
 
-## ワークスペース名の変更 {#section-ca7edb913e4e4630a856f45a2536ffad}
+## ワークスペース名の変更  {#section-ca7edb913e4e4630a856f45a2536ffad}
 
 **ワークスペース名を変更するには**
 
-1. On the desired [!DNL Worktop] tab, click the thumbnail of the workspace you want to display.
+1. 目的の[!DNL Worktop]タブで、表示するワークスペースのサムネールをクリックします。
 1. 次の例に示すように、ワークスペース内で、タイトルバーのタイトルテキストをクリックし、新しいタイトルを入力します。
 
    ![](assets/wsp_changeTitle.png)
 
-## ワークスペースの削除 {#section-fb04cc195e1a4a5491ff634f5f3ca972}
+## ワークスペースの削除  {#section-fb04cc195e1a4a5491ff634f5f3ca972}
 
 **ワークスペース名を変更するには**
