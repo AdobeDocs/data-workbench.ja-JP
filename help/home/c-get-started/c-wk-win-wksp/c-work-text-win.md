@@ -1,35 +1,35 @@
 ---
 description: ウィンドウ内でテキストを入力できる場所ならどこでも、任意のテキストエディター（メモ帳、Microsoft Word など）で実行できる機能のほとんどを実行できます。
-solution: Analytics
-title: ウィンドウ内のテキストの操作
-topic: Data workbench
+title: ウィンドウでのテキストの使用
 uuid: c0766fe3-3433-4409-bfae-325ec2f4c5ef
+exl-id: f786014d-c784-44f8-a399-f1d58bbb5f3d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 55%
 
 ---
 
-
-# Work with text in windows{#work-with-text-in-windows}
+# ウィンドウでのテキストの使用{#work-with-text-in-windows}
 
 ウィンドウ内でテキストを入力できる場所ならどこでも、任意のテキストエディター（メモ帳、Microsoft Word など）で実行できる機能のほとんどを実行できます。
 
-Data Workbenchは、切り取り(Ctrl+x)、コピー(Ctrl+c)、貼り付け(V)、元に戻す(Ctrl+z)、やり直し(Ctrl+Shift+z)、セクションを選択（クリック+ドラッグ）、すべてを選択(Ctrl+a)など、基本的な編集機能をサポートしています。
+Data Workbenchでは、切り取り(Ctrl + x)、コピー(Ctrl + c)、貼り付け(Ctrl + v)、元に戻す(Ctrl + z)、やり直し(Ctrl + Shift + z)、セクションを選択（クリック+ドラッグ）、すべてを選択(Ctrl + a)など、基本的な編集機能をサポートしています。
 
-In addition to basic copying and pasting of text, you can copy and paste text within and between configuration files ( [!DNL .cfg]).
+テキストの基本的なコピー&amp;ペーストだけでなく、設定ファイル([!DNL .cfg])内および設定ファイル間でテキストをコピー&amp;ペーストできます。
 
-**設定ファイル内のパラメーターとノードをコピーして貼り付けるには([!DNL .cfg])**
+**設定ファイル内でパラメーターとノードをコピーして貼り付けるには([!DNL .cfg])**
 
 パラメーターをコピー＆ペーストする場合、両方が同じタイプ（例えば文字列から文字列）である必要があります。
 
-1. Right-click a node or parameter label and click **[!UICONTROL Copy]**.
+1. ノードまたはパラメーターのラベルを右クリックし、**[!UICONTROL Copy]**&#x200B;をクリックします。
 1. 次のいずれかの手順を実行します。
 
-   * ベクトルを右クリックし、をクリックしま **[!UICONTROL Paste as child]**&#x200B;す。 ノードは、ベクトル内の最初のノードの上に貼り付けられます。
-   * Right-click the node below which you want to paste the node and click **[!UICONTROL Paste]**.
+   * ベクトルを右クリックし、**[!UICONTROL Paste as child]**&#x200B;をクリックします。 ノードは、ベクトル内の最初のノードの上に貼り付けられます。
+   * ノードを貼り付ける位置の下のノードを右クリックし、**[!UICONTROL Paste]**&#x200B;をクリックします。
 
 **テキストエディターにノードをコピー＆ペーストするには**
 
-1. Right-click a vector or node and click **[!UICONTROL Copy]**.
+1. ベクトルまたはノードを右クリックし、**[!UICONTROL Copy]**&#x200B;をクリックします。
 1. テキストエディターファイル内の適切な場所で、**[!UICONTROL Ctrl+v]** キーを押します。
-
