@@ -1,25 +1,24 @@
 ---
 description: ネットワークファイアウォールがInsightマシンからリピーターサーバーにアクセスできない場合は、リピーターサーバーとInsightの間に接続を作成して、Insightを使用してリピーターサーバーを管理できます。
-solution: Analytics
 title: Insight とリピーターとの接続の作成
 uuid: dccce83a-8708-4763-a19a-64d905a9f624
+exl-id: 81e81db5-0517-41d4-a958-d08cd3975096
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '341'
 ht-degree: 9%
 
 ---
 
-
 # Insight とリピーターとの接続の作成{#creating-a-connection-between-insight-and-repeater}
 
 ネットワークファイアウォールがInsightマシンからリピーターサーバーにアクセスできない場合は、リピーターサーバーとInsightの間に接続を作成して、Insightを使用してリピーターサーバーを管理できます。
 
-**リピータサーバとの接続[!DNL Insight]を作成するには**
+**リピータサーバとの接続 [!DNL Insight] を作成するには**
 
-1. で、 [!DNL Insight]タブの [!DNL Admin]**[!UICONTROL Configure Connections to Servers]** サムネールをクリックして、サーバーへの接続を設定ワークスペースを開きます。
-1. ウィンドウで右クリックし、「 [!DNL Insight.cfg] >」 **[!UICONTROL Servers]** をクリックし **[!UICONTROL Add new]** ま **[!UICONTROL Server]**&#x200B;す。
+1. [!DNL Insight]の「[!DNL Admin]」タブで、**[!UICONTROL Configure Connections to Servers]**&#x200B;サムネールをクリックして「サーバーへの接続を設定」ワークスペースを開きます。
+1. [!DNL Insight.cfg]ウィンドウで&#x200B;**[!UICONTROL Servers]**&#x200B;を右クリックし、**[!UICONTROL Add new]**/**[!UICONTROL Server]**&#x200B;をクリックします。
 1. 新しいサーバーに対して、次のパラメーターを入力します。
 
 <table id="table_DD79587255134B5A888A0F57CF10E5B0"> 
@@ -32,15 +31,15 @@ ht-degree: 9%
  <tbody> 
   <tr> 
    <td colname="col1"> 名前 </td> 
-   <td colname="col2">（オプション）この <span class="keyword"> Insightのユーザーインターフェイスでリピーターサーバーを表すために使用する名前</span> 。 </td> 
+   <td colname="col2">（オプション）この<span class="keyword"> Insight</span>でユーザーインターフェイスのリピーターサーバーを表すために使用する名前。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Address </td> 
-   <td colname="col2"> <p>リピータサーバのホスト名または数値のIPアドレス。 </p> <p>例： <span class="filepath"> Repeater.mycompany.com</span> または192.168.1.90 </p> </td> 
+   <td colname="col2"> <p>リピータサーバのホスト名または数値のIPアドレス。 </p> <p>例：<span class="filepath"> Repeater.mycompany.com</span>または192.168.1.90 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SSL Client Certificate </td> 
-   <td colname="col2"> <p>複数の証明書がある場合を除いてオプションです。The name of the file that contains the digital certificate for this copy of <span class="keyword"> Insight</span>. (これは、 <span class="keyword"> Insightのインストール時にダウンロードしたファイルです</span>)。 </p> <p>例：<span class="filepath">Samantha Smith.pem</span></p> <p>If you leave this parameter blank, <span class="keyword"> Insight</span> uses whatever certificate is present. </p> </td> 
+   <td colname="col2"> <p>複数の証明書がある場合を除いてオプションです。<span class="keyword"> Insight</span>のこのコピーのデジタル証明書を含むファイルの名前です。 （これは、<span class="keyword"> Insight</span>のインストール時にダウンロードしたファイルです）。 </p> <p>例：<span class="filepath">Samantha Smith.pem</span></p> <p>このパラメーターを空白のままにすると、<span class="keyword"> Insight</span>は存在する証明書を何でも使用します。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>SSL Server </p> <p>共通名 </p> </td> 
@@ -49,7 +48,6 @@ ht-degree: 9%
  </tbody> 
 </table>
 
-1. Save the file by right-clicking **[!UICONTROL (modified)]** at the top of the window and clicking **[!UICONTROL Save]**. [!DNL Insight] は、指定した設定を使用してリピーターサーバーに接続を試みます。 接続が確立されると、インター [!DNL Servers Manager] フェイスに緑のサーバーアイコンが表示されます。 接続を確立できない場合は、赤いアイコンが表示されます。
+1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックして、ファイルを保存します。 [!DNL Insight] は、指定した設定を使用してリピーターサーバーに接続を試みます。接続が確立されると、[!DNL Servers Manager]インターフェイスに緑のサーバーアイコンが表示されます。 接続を確立できない場合は、赤いアイコンが表示されます。
 
-   For more information about the [!DNL Servers Manager] interface, see the * [!DNL Insight] User Guide*.
-
+   [!DNL Servers Manager]インターフェイスについて詳しくは、* [!DNL Insight]ユーザーガイド*を参照してください。
