@@ -1,24 +1,24 @@
 ---
 description: 選択内容はいつでも削除できます。
-solution: Analytics
-title: 選択の削除
-topic: Data workbench
+title: 選択項目の削除
 uuid: d424ef19-a4f9-4d2c-bd0c-d1cc3ab2f409
+exl-id: 0c715ba0-0025-46e7-9778-e2b8c0da07f1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '57'
+ht-degree: 7%
 
 ---
 
-
-# 選択の削除{#removing-selections}
+# 選択項目の削除{#removing-selections}
 
 選択内容はいつでも削除できます。
 
-[選択]メニューの対 **[!UICONTROL X]** 応する選択項目内のアイコンをクリックするだけです。
+「選択」メニューで、対応する選択項目内の&#x200B;**[!UICONTROL X]**&#x200B;アイコンをクリックします。
 
 ![](assets/selection_remove.png)
 
-ビジュアライゼーションの選択がロックされている場合は、アイコンの代わりに小さい南京錠のアイコンが表示さ **[!UICONTROL X]** れます。 ロックされた選択は、最初にビジュアライゼーションのロックを解除しない限り削除できません。
+ビジュアライゼーションの選択範囲がロックされている場合は、**[!UICONTROL X]**&#x200B;アイコンの代わりに小さな南京錠のアイコンが表示されます。 ロックされた選択は、最初にビジュアライゼーションのロックを解除しないと削除できません。
 
 ![](assets/selection_remove_locked.png)
-
