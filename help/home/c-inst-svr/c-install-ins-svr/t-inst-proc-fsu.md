@@ -1,36 +1,34 @@
 ---
 description: InsightサーバーFSUのインストールと管理用の設定の手順は、InsightサーバーDPUのインストールおよび設定の手順と非常に似ています。
-solution: Analytics
 title: Insight サーバー FSU のインストール手順
 uuid: ffed5095-f83c-4641-9ccc-4b94f51c3f95
+exl-id: 7373af97-0ecf-47a2-bc27-dbfeb7ca3eaa
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 8%
 
 ---
 
-
 # Insight サーバー FSU のインストール手順{#installation-procedures-for-an-insight-server-fsu}
 
 InsightサーバーFSUのインストールと管理用の設定の手順は、InsightサーバーDPUのインストールおよび設定の手順と非常に似ています。
 
-Windows 2012 Serverの *MS System Center Endpoint Protection* の場合、次の実行可能ファイルを **除外されたプロセスに追加する必要があります。**
+Windows 2012 Serverの&#x200B;*MS System Center Endpoint Protection*&#x200B;の場合、これらの実行可能ファイルを&#x200B;**除外されたプロセスに追加する必要があります：**
 
 * [!DNL InsightServer64.exe]
 * [!DNL ReportServer.exe]
 * [!DNL ExportIntegration.exe]
 
-FSUをインストールして設定するには、次のタスクを実行する必要があり [!DNL Insight Server] ます。
+[!DNL Insight Server] FSUをインストールして構成するには、次のタスクを実行する必要があります。
 
-1. プログラムファイルをインストールし [!DNL Insight Server] ます。
-1. デジタル証明書をインスト [!DNL Insight Server] ールします。
-1. ファイル内のポート設定を確認し [!DNL Communications.cfg] ます。
-1. からの管理アクセスを許可する [!DNL Access Control.cfg] ファイルを変更 [!DNL the Server] し [!DNL the Client]ます。
-1. サーバーのネットワークの場所を定義する [!DNL server.address] ファイルを変更します。
+1. [!DNL Insight Server]プログラムファイルをインストールします。
+1. [!DNL Insight Server]デジタル証明書をインストールします。
+1. [!DNL Communications.cfg]ファイルのポート設定を確認します。
+1. [!DNL Access Control.cfg]ファイルを変更して、[!DNL the Client]から[!DNL the Server]への管理アクセスを許可します。
+1. [!DNL server.address]ファイルを変更して、サーバーのネットワークの場所を定義します。
 1. 説明に従って、Windowsのメモリ使用率のパラメータを設定します。
-1. 説明 [!DNL Insight Server] に従って、Windowsサービスとして登録します。
+1. [!DNL Insight Server]をWindowsサービスとして登録します。
 
-   FSU用のデータソース、権限および通信を設定する手順については、『デー [!DNL Insight Server] タセット設定ガイド **』を参照してください。
-
+   [!DNL Insight Server] FSU用のデータソース、権限および通信を設定する手順については、『*データセット設定ガイド*』を参照してください。
