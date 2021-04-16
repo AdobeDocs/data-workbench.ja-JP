@@ -1,14 +1,15 @@
 ---
 description: データセットを構築する際に Data Workbench サーバーで処理できるデータフィールドについて取り上げます。
-solution: Analytics
 title: イベントデータレコードフィールド
-topic: Data workbench
 uuid: b0232bfa-0a3b-4e3d-876e-6a15a3764eae
+exl-id: 35433b87-991a-4fb9-ba6a-3217e89eb769
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1092'
+ht-degree: 88%
 
 ---
-
 
 # イベントデータレコードフィールド{#event-data-record-fields}
 
@@ -18,17 +19,17 @@ source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
 * [ベースラインイベントデータレコードフィールド](../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#section-a882ed7aa6af41eeb45a55bf8c1ca3d7)
 * [派生フィールド](../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#section-b6c57ee2aa31469fbd5dab90e52bc677)
 
-## イベントデータについて {#section-3a0705f8c1824017aa4effed9903efbe}
+## イベントデータについて  {#section-3a0705f8c1824017aa4effed9903efbe}
 
 データセット構築用のイベントデータは、ログソースと呼ばれるファイル内に存在します。各データレコードが 1 件のトランザクションレコード、またはタイムスタンプを持った 1 回のイベントの発生を表していることから、ログソース内のデータは「イベントデータ」と呼ばれます。
 
-A log source&#39;s event data is collected in real-time by [!DNL Sensors]. Event data collected by [!DNL Sensors] from HTTP and application servers is transmitted to data workbench servers, which convert the data into compressed log ( [!DNL .vsl]) files. フラットファイル、XML ファイルまたは ODBC データソースに存在するイベントデータを読み取る Data Workbench サーバーは、こうした様々な形式のファイルから決まった一連のデータフィールドを抽出するよう設定されたデコーダーの役割を担います。
+ログソースのイベントデータは[!DNL Sensors]によってリアルタイムに収集されます。 [!DNL Sensors]によってHTTPサーバーやアプリケーションサーバーから収集されたイベントデータはData Workbenchサーバーに送信され、そこで、圧縮されたログ( [!DNL .vsl])ファイルに変換されます。 フラットファイル、XML ファイルまたは ODBC データソースに存在するイベントデータを読み取る Data Workbench サーバーは、こうした様々な形式のファイルから決まった一連のデータフィールドを抽出するよう設定されたデコーダーの役割を担います。
 
-The following sections provide information about the data fields (referred to as event data record fields or log entry fields ) that are collected by [!DNL Sensors] or read and made available to the data workbench server.
+以下の節では、[!DNL Sensors]によって収集され、Data Workbenchサーバーで読み取って使用できるデータフィールド(イベントデータレコードフィールドまたはログエントリフィールドと呼ばれます)について説明します。
 
 >[!NOTE]
 >
->フィールドの名前は、通常、W3C拡張ログファイル形式の命名規則に従います。 多くのフィールドには、その情報の取得元を表すプレフィックスが付いています。
+>フィールド名は、通常、W3C拡張ログファイル形式の命名規則に従います。 多くのフィールドには、その情報の取得元を表すプレフィックスが付いています。
 
 * cs は、クライアントからサーバーへの通信を表します。
 * sc は、サーバーからクライアントへの通信を表します。
@@ -38,7 +39,7 @@ The following sections provide information about the data fields (referred to as
 
 ## ベースラインイベントデータレコードフィールド {#section-a882ed7aa6af41eeb45a55bf8c1ca3d7}
 
-Log ( [!DNL .vsl]) files contain the fields of event data that are collected from servers by [!DNL Sensors] and used by the data workbench server in the dataset construction process. 次の表は、[!DNL Sensor] によって記録される代表的なイベントデータレコードのフィールドの一覧です。
+ログ([!DNL .vsl])ファイルには、[!DNL Sensors]によってサーバーから収集され、イベントセット構築プロセスでData Workbenchサーバーが使用するサーバーデータのフィールドが含まれます。 次の表は、[!DNL Sensor] によって記録される代表的なイベントデータレコードのフィールドの一覧です。
 
 <table id="table_98E135FE4EAF44D6ADEB3C6C1C0BF6A4"> 
  <thead> 
@@ -102,12 +103,12 @@ Log ( [!DNL .vsl]) files contain the fields of event data that are collected fro
   </tr> 
   <tr> 
    <td colname="col1"> x-trackingid </td> 
-   <td colname="col2"> <p>持続 Cookie に検出されたブラウザーの一意識別子を表す 64 ビットの 16 進数値。<span class="wintitle">Sensor</span> によって設定され、サーバーへのリクエストとともにクライアントから提供されます。 </p> <p> 例：42FDF66DE610CF36 </p> </td> 
+   <td colname="col2"> <p>持続 Cookie に検出されたブラウザーの一意の ID を表す 64 ビットの 16 進数値。<span class="wintitle">Sensor</span> によって設定され、サーバーへのリクエストとともにクライアントから提供されます。 </p> <p> 例：42FDF66DE610CF36 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 派生フィールド {#section-b6c57ee2aa31469fbd5dab90e52bc677}
+## 派生フィールド  {#section-b6c57ee2aa31469fbd5dab90e52bc677}
 
 次の表は、ベースラインイベントデータレコードのフィールドから Data Workbench サーバーが生成する派生フィールドの例を示しています。
 
@@ -152,7 +153,7 @@ Log ( [!DNL .vsl]) files contain the fields of event data that are collected fro
    <td colname="col2"> 1970 年 1 月 1 日からの秒数で表される x-timestamp。このフィールドは、x-unixtime と呼ばれることもあります。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> date </td> 
+   <td colname="col1"> 日付 </td> 
    <td colname="col2"> YYYY-MM-DD 形式の x-timestamp。 </td> 
   </tr> 
   <tr> 
@@ -161,11 +162,11 @@ Log ( [!DNL .vsl]) files contain the fields of event data that are collected fro
   </tr> 
   <tr> 
    <td colname="col1"> x-local-timestring </td> 
-   <td colname="col2"> <p>データセットの <span class="filepath">Transformation.cfg</span> ファイルに指定されたローカルタイムゾーンに変換した x-timestamp。YYYY-MM-DD HH:MM:SS.mmm という形式になります。 </p> <p> <p>注意：<span class="filepath">Log Processing.cfg</span> ファイルで時刻変換（x-local-timestring など）を定義することもできます。詳しくは、ログ処理設定フ <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> ァイルを参照してくださ </a>い。 </p> </p> </td> 
+   <td colname="col2"> <p>データセットの <span class="filepath">Transformation.cfg</span> ファイルに指定されたローカルタイムゾーンに変換した x-timestamp。YYYY-MM-DD HH:MM:SS.mmm という形式になります。 </p> <p> <p>注意：<span class="filepath">Log Processing.cfg</span> ファイルで時刻変換（x-local-timestring など）を定義することもできます。詳しくは、<a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md">ログ処理設定ファイル</a>を参照してください。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> x-log-source-id </td> 
-   <td colname="col2"> <p>特定のログエントリのログソースに対応する識別子。この識別子を記録するためには、<span class="wintitle">Sensor</span>、ログファイルまたは ODBC データソースを定義するときに、<span class="filepath">Log Processing.cfg</span> ファイルの <span class="wintitle">Log Source ID</span> フィールドに識別子を指定する必要があります。詳しくは、ログ処理設定ファ <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> イルを参照してくださ </a>い。 </p> <p> 例：from VSensor01 </p> </td> 
+   <td colname="col2"> <p>特定のログエントリのログソースに対応する識別子。この識別子を記録するためには、<span class="wintitle">Sensor</span>、ログファイルまたは ODBC データソースを定義するときに、<span class="filepath">Log Processing.cfg</span> ファイルの <span class="wintitle">Log Source ID</span> フィールドに識別子を指定する必要があります。詳しくは、<a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md">ログ処理設定ファイル</a>を参照してください。 </p> <p> 例：from VSensor01 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> x-mask </td> 
@@ -182,4 +183,4 @@ Log ( [!DNL .vsl]) files contain the fields of event data that are collected fro
  </tbody> 
 </table>
 
-サーバー上の [!DNL Sensor] は、有効な HTTP リクエスト（または応答）ヘッダーから、またはサーバーの API を介して提供される変数から、イベントデータのフィールドを収集することができます。こうしたデータフィールドを収集するには、[!DNL txlogd.conf] の [!DNL Sensor] 設定ファイルに目的のヘッダーフィールドまたは変数を指定する必要があります。詳しくは、『*Data Workbench[!DNL Sensor]ガイド*』を参照してください。
+サーバー上の [!DNL Sensor] は、有効な HTTP リクエスト（または応答）ヘッダーから、またはサーバーの API を介して提供される変数から、イベントデータのフィールドを収集することができます。こうしたデータフィールドを収集するには、[!DNL txlogd.conf] の [!DNL Sensor] 設定ファイルに目的のヘッダーフィールドまたは変数を指定する必要があります。詳しくは、『*Data Workbench [!DNL Sensor] ガイド*』を参照してください。
