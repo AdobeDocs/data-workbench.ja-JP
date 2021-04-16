@@ -1,14 +1,15 @@
 ---
 description: 可算ディメンションのエレメントは、システムによってカウントすることができます。
-solution: Analytics
 title: 可算ディメンション
-topic: Data workbench
 uuid: 3312f5eb-69b9-43af-b32a-5c40e3050b29
+exl-id: c607c15d-de85-4daf-af76-79b460f51b38
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '685'
+ht-degree: 96%
 
 ---
-
 
 # 可算ディメンション{#countable-dimensions}
 
@@ -20,7 +21,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->何かのカウントのみを提供するディメンションが必要な場合は、数値ディメンションをCOUNTの演算と共に使用する必要があります。 数値ディメ [ンションを参照](../../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md#concept-8513b9afaff447c8b334410b565b91ed)。
+>ディメンションが必要な場合は、数値ディメンションとCOUNT演算を使用する必要があります。 [数値Dimension](../../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md#concept-8513b9afaff447c8b334410b565b91ed)を参照してください。
 
 可算ディメンションは、以下のパラメーターによって定義します。
 
@@ -39,12 +40,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Comments </td> 
-   <td colname="col2"> (オプション)拡張ディメンションについてのメモ。 </td> 
+   <td colname="col1"> コメント </td> 
+   <td colname="col2"> （オプション）拡張ディメンションについてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Condition </td> 
+   <td colname="col1"> 条件 </td> 
    <td colname="col2"> 入力フィールドが可算ディメンションの作成に寄与する条件。ディメンションという切り口から見えるログエントリとその（データセットスキーマにおける）すべての子の集合が、指定された条件によって制限されます。 </td> 
    <td colname="col3"> </td> 
   </tr> 
@@ -55,7 +56,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> キー </td> 
-   <td colname="col2"> <p>(オプション)キーとして使用するフィールドの名前。このパラメーターを定義した場合、可算ディメンションのエレメントは、その親のエレメントと、キーとして指定したフィールドの個別の値との組み合わせごとに存在することになります。 </p> <p> 可算ディメンションの各エレメントは、連続性を持ったログエントリの集合に関連付けられている必要があります。そのため、ログエントリがキーごとに並んでいなかった場合、キーフィールドが変化するたびに、可算ディメンションのエレメントが作成されます。そのような状況を回避するために、時系列に連続した一意のキーを使用することをお勧めします。 </p> </td> 
+   <td colname="col2"> <p>（オプション）キーとして使用するフィールドの名前。このパラメーターを定義した場合、可算ディメンションのエレメントは、その親のエレメントと、キーとして指定したフィールドの個別の値との組み合わせごとに存在することになります。 </p> <p> 可算ディメンションの各エレメントは、連続性を持ったログエントリの集合に関連付けられている必要があります。そのため、ログエントリがキーごとに並んでいなかった場合、キーフィールドが変化するたびに、可算ディメンションのエレメントが作成されます。そのような状況を回避するために、時系列に連続した一意のキーを使用することをお勧めします。 </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -73,4 +74,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 次の例も、Web サイトトラフィックから収集されたイベントデータを使用する可算ディメンションの定義を示しています。先ほどとの違いは、Key パラメーターが定義されていることです。可算ディメンションである Session には、そのキーとして x-session-key フィールドが使用されています（x-session-key フィールドは、[!DNL Sessionize] 変換の出力であり、セッションごとに一意の値を持ちます）。Visitor ディメンション（親）のエレメントと x-session-key フィールドの一意の組み合わせが、それぞれ Session ディメンションのエレメントとなります。
 
 ![](assets/cfg_Transformation_Dim_Countable2.png)
-
