@@ -1,25 +1,26 @@
 ---
 description: 特定のテキストを検索したり、空白行を除外したりして、フィールドビューアに表示される値をフィルタリングできます。
-solution: Analytics
-title: フィールドビューア内のフィルタ
-topic: Data workbench
+title: フィールドビューア内でのフィルタリング
 uuid: 3788fa03-c898-4e9d-81a0-ecf90376cac6
+exl-id: 0bb781e7-8c1c-4a74-882f-410470782ad2
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 79%
 
 ---
 
-
-# Filter within a field viewer{#filter-within-a-field-viewer}
+# フィールドビューア内でのフィルタリング{#filter-within-a-field-viewer}
 
 特定のテキストを検索したり、空白行を除外したりして、フィールドビューアに表示される値をフィルタリングできます。
 
-**フィールドビューア内でフィルターを適用するには**
+**フィールドビューア内でフィルタリングするには**
 
 1. 値を検索するフィールドの列内で右クリックします。
 1. I
 
-   n the text box under [!DNL Search for rows with], type the text for which to search. パターンマッチング用の正規表現を入力することもできます。
+   [!DNL Search for rows with]の下のテキストボックスに、検索するテキストを入力します。 パターンマッチング用の正規表現を入力することもできます。
 
 ![](assets/vis_FieldViewer_Search.png)
 
@@ -29,6 +30,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **空白行を除外するには**
 
-* Right-click within the column for the field for which you want to filter out blank rows and click **[!UICONTROL Filter out blank rows]**.
+* 空白行を除外するフィールドの列内で右クリックし、「**[!UICONTROL Filter out blank rows]**」をクリックします。
 
 このオプションを有効にすると、左側に X が表示され、列名が赤でハイライトされます。
