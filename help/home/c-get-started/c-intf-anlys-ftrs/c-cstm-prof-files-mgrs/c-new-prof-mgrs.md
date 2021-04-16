@@ -1,42 +1,43 @@
 ---
 description: プロファイルマネージャーには、作業プロファイルに関連付けられたすべてのディレクトリが表示されます。
-solution: Analytics
 title: プロファイルマネージャーの作成
-topic: Data workbench
 uuid: e16741e2-740b-4f57-861d-e2f57d30abbc
+exl-id: 43b95473-ab3e-4a80-9b91-7c221e74b096
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '392'
+ht-degree: 25%
 
 ---
-
 
 # プロファイルマネージャーの作成{#create-a-profile-manager}
 
 プロファイルマネージャーには、作業プロファイルに関連付けられたすべてのディレクトリが表示されます。
 
-You may want to access a subdirectory of the [!DNL Profile Manager] without having to navigate its entire directory structure. For example, the [!DNL Metrics] and [!DNL Workspaces] menu options available on the [!DNL Manage] menu of the workspace window menu enable you to open the Profile Manager Metrics and Workspaces folders, respectively.
+ディレクトリ構造全体をナビゲートすることなく、[!DNL Profile Manager]のサブディレクトリにアクセスしたい場合があります。 例えば、ワークスペースウィンドウメニューの[!DNL Manage]メニューで使用できる[!DNL Metrics]と[!DNL Workspaces]のメニューオプションを使用すると、それぞれプロファイルマネージャーの指標フォルダーとWorkspacesフォルダーを開くことができます。
 
-について詳しくは、プロファイルマ [!DNL Profile Manager]ネージャー [を参照してください](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)。
+[!DNL Profile Manager]について詳しくは、[プロファイルマネージャ](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)を参照してください。
 
 デフォルトでは、以下のマネージャーにアクセスできます。
 
-* **[!DNL Metrics Manager]:**プロファイルマネージャーのMetricsフォルダーの内容を表示します。 各プロファイル内で定義された指標を開いたり、編集したり、削除したり、コピーしたりできます。
-* **[!DNL Reports Manager]:**プロファイルマネージャーのReportsフォルダーの内容を表示します。 レポートのワークスペースまたは[!DNL report.cfg]ファイルを開いたり、編集したり、削除したり、コピーしたりできます。
+* **[!DNL Metrics Manager]:** プロファイルマネージャのMetricsフォルダの内容を表示します。各プロファイル内で定義された指標を開いたり、編集したり、削除したり、コピーしたりできます。
+* **[!DNL Reports Manager]:** プロファイルマネージャのReportsフォルダの内容を表示します。レポートのワークスペースまたは [!DNL report.cfg] ファイルを開いたり、編集したり、削除したり、コピーしたりできます。
 
-* **[!DNL Workspaces Manager]:**プロファイルマネージャーのWorkspacesフォルダーの内容を表示します。 All of the files for configuring the[!DNL Worktop]’s tabs are located here. See[Customizing Worktop Tabs](../../../../home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md).
+* **[!DNL Workspaces Manager]:** プロファイルマネージャのWorkspacesフォルダの内容を表示します。[!DNL Worktop]のタブを設定するためのファイルは、すべてここにあります。 「[ワークトップタブのカスタマイズ](../../../../home/c-get-started/c-intf-anlys-ftrs/c-cstm-wktp-tabs/c-cstm-wktp-tabs.md)」を参照してください。
 
-Data Workbench enables you to create additional profile managers that display one subdirectory from the [!DNL Profile Manager]. Each manager that you create must have a [!DNL .vw] file that specifies the [!DNL Profile Manager] directory whose contents it shows and the properties of that window. You can use the [!DNL .vw] file for any of the provided managers as a template.
+Data Workbenchを使用すると、[!DNL Profile Manager]の1つのサブディレクトリを表示する追加のプロファイルマネージャーを作成できます。 作成する各マネージャには、その内容を表示する[!DNL Profile Manager]ディレクトリとそのウィンドウのプロパティを指定する[!DNL .vw]ファイルが必要です。 指定されたマネージャーの[!DNL .vw]ファイルは、テンプレートとして使用できます。
 
 **プロファイルマネージャーを作成するには**
 
-1. In the [!DNL Profile Manager], click the **[!UICONTROL Menu]** directory to view its contents.
-1. Menu ディレクトリ内で、**[!UICONTROL Admin]** ディレクトリをクリックしてから、**[!UICONTROL Profile]** ディレクトリをクリックします。The [!DNL .vw] files for the existing managers are located here.
-1. In the *profile name* column, right-click the check mark for the one of the [!DNL .vw] files (for example, [!DNL Workspaces.vw]), then click **[!UICONTROL Make Local]**.
+1. [!DNL Profile Manager]の&#x200B;**[!UICONTROL Menu]**&#x200B;ディレクトリをクリックして、その内容を表示します。
+1. Menu ディレクトリ内で、**[!UICONTROL Admin]** ディレクトリをクリックしてから、**[!UICONTROL Profile]** ディレクトリをクリックします。既存のマネージャー用の[!DNL .vw]ファイルは、ここにあります。
+1. *プロファイル名*&#x200B;列で、[!DNL .vw]ファイルの1つ（例：[!DNL Workspaces.vw]）のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。
 
    [!DNL User] 列にそのファイルのチェックマークが表示されます。
 
-1. Right-click the check mark for the [!DNL .vw] file in the [!DNL User] column and click **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**.
-1. In the [!DNL Profile Path] field, type the [!DNL Profile Manager] directory for which you want to create a new manager. ディレクトリ名の後に必ずスラッシュ（/）を含めてください。
+1. [!DNL User]列の[!DNL .vw]ファイルのチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Notepad]**&#x200B;をクリックします。
+1. [!DNL Profile Path]フィールドに、新しいマネージャーを作成する[!DNL Profile Manager]ディレクトリを入力します。 ディレクトリ名の後に必ずスラッシュ（/）を含めてください。
 
    ```
    window = simpleBorderWindow:
@@ -50,9 +51,8 @@ Data Workbench enables you to create additional profile managers that display on
      size = v3d: (830, 900, 0)
    ```
 
-1. In Notepad, click **[!UICONTROL File]** > **[!UICONTROL Save As]** to save the edited file to the *Data Workbench installation folder*\User\*working profile name*\Menu\Admin\Profile Management.
+1. メモ帳で、**[!UICONTROL File]**/**[!UICONTROL Save As]**&#x200B;をクリックして、編集したファイルを&#x200B;*Data Workbenchのインストールフォルダー*\User\*workingプロファイルー名*\Menu\Admin\Profile Managementに保存します。
 
-   Be sure to change the name of the [!DNL .vw] file to reflect the directory in the [!DNL Profile Manager] to which it corresponds.
+   [!DNL .vw]ファイルの名前は、対応する[!DNL Profile Manager]内のディレクトリを反映するように変更してください。
 
-1. (Optional) To make the changes available to all users of the working profile, right-click the check mark for the [!DNL .vw] file in the [!DNL User] column and click **[!UICONTROL Save to]** > &lt; **[!UICONTROL working profile name]**>.
-
+1. （オプション）作業プロファイルのすべてのユーザーが変更を利用できるようにするには、[!DNL User]列の[!DNL .vw]ファイルのチェックマークを右クリックし、**[!UICONTROL Save to]** > **[!UICONTROL working profile name]**&#x200B;をクリックします。
