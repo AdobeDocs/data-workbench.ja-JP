@@ -1,14 +1,15 @@
 ---
 description: Data Workbench サーバー（InsightServer64.exe）は、ドライバーが ODBC 3.0 に準拠していれば SQL データベース（Oracle、Microsoft SQL Server など）からイベントデータを読み取ることもできます。
-solution: Analytics
 title: ODBC データソース
-topic: Data workbench
 uuid: 5b37cd41-2d79-472c-8e6d-00ff894991a9
+exl-id: b22b1e27-9b6c-4708-b45c-a9605807689a
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1245'
+ht-degree: 91%
 
 ---
-
 
 # ODBC データソース{#odbc-data-sources}
 
@@ -22,14 +23,14 @@ Data Workbench サーバーの ODBC 対応は、Sensor から、または外部�
 
    >[!NOTE]
    >
-   >It is possible for multiple rows to have the same value in the [!DNL Increasing ID] column. 例えば、タイムスタンプ列の有効桁数が不十分だとそのようなことが起こります。
+   >[!DNL Increasing ID]列には、複数の行の値が同じである可能性があります。 例えば、タイムスタンプ列の有効桁数が不十分だとそのようなことが起こります。
 
 * Data Workbench サーバーは、長大なデータ（実際に使用するデータベースアプリケーションで決められた長さを超えるデータ）が格納された列を読み込むことができません。
 * データベースからのデータ取得は、ディスクファイルからの読み取りに比べて低速です。ODBC ソースからデータを読み込むデータセットは、Sensor や他のディスクファイルのデータから構築される同じサイズのデータセットと比べて、処理（特に再処理時）に時間がかかります。
 
-データの再処理について詳しくは、[再処理と再変換](../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)を参照してください。
+データの再処理について詳しくは、 [再処理と再変換](../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md).
 
-**ODBC用にInsightサーバーを設定するには[!DNL event data]**
+**Insight ServerでODBCを設定するには[!DNL event data]**
 
 SQL データベースからデータを読み込むように Data Workbench サーバーを設定するにはまず、次の作業を順に実行する必要があります。
 
@@ -43,7 +44,7 @@ SQL データベースからデータを読み込むように Data Workbench サ
 
    Data Workbench サーバー（InsightServer64.exe）は、Windows サービスとして実行されることに注意してください。したがって、Data Workbench サーバーがデータソースを使用するためには、通常そのデータセットが、「ユーザー DSN」ではなく「システム DSN」として設定されている必要があります。この設定作業について詳しくは、データベースソフトウェアのドキュメントを参照してください。
 
-After installing the database client software on the appropriate data workbench server machine, you can configure the dataset to use the ODBC data source by editing the appropriate parameters in the [!DNL Log Processing] configuration file for the desired profile.
+適切なData Workbenchサーバーコンピューターにデータベースクライアントソフトウェアをインストールした後、必要なプロファイルーの[!DNL Log Processing]設定ファイルの適切なパラメーターを編集して、ODBCデータソースを使用するようにデータセットを設定できます。
 
 ## パラメーター {#section-15c0218d93364693a565f2609a12f73e}
 
@@ -88,7 +89,7 @@ ODBC（Open Database Connectivity）標準に準拠したデータベースか�
   </tr> 
   <tr> 
    <td colname="col1"> Log Source ID </td> 
-   <td colname="col2"> <p>このパラメーターには、任意の文字列を値として指定できます。このパラメーターの値が指定されていると、異なるログソースからのログエントリを区別して、ログの生成元を特定したり、処理の対象を絞り込んだりすることができます。x-log-source-id フィールドには、ログソースを識別する値がログエントリごとに格納されます。例えば、ODBCSource01 という ODBC ソースからのログエントリを識別したい場合、「<span class="filepath">from ODBCSource01</span>」と入力すれば、このソースから収集されるすべてのログエントリの x-log-source-id フィールドにその文字列が渡されます。 </p> <p> x-log-source-id フィールドについて詳しくは、<a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f">イベントデータレコードフィールド</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>このパラメーターには、任意の文字列を値として指定できます。このパラメーターの値が指定されていると、異なるログソースからのログエントリを区別して、ログの生成元を特定したり、処理の対象を絞り込んだりすることができます。x-log-source-id フィールドには、ログソースを識別する値がログエントリごとに格納されます。例えば、ODBCSource01 という ODBC ソースからのログエントリを識別したい場合、「<span class="filepath">from ODBCSource01</span>」と入力すれば、このソースから収集されるすべてのログエントリの x-log-source-id フィールドにその文字列が渡されます。 </p> <p> x-log-source-id フィールドについて詳しくは、 <a href="../../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#concept-06bda4be1a4649a2905a4422e9e6c42f"> イベントデータレコードフィールド</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Run On Server </td> 
@@ -101,7 +102,6 @@ ODBC（Open Database Connectivity）標準に準拠したデータベースか�
  </tbody> 
 </table>
 
-ここに示したのは、Data Workbench の [!DNL Log Processing] 設定ウィンドウで ODBC データソースを指定する例です。This Data Source takes data from a table called [!DNL VISUAL.VSL] in a database with [!DNL Data Source Name] &quot;VSTestO.&quot; 5 つの列オブジェクト（[!DNL Fields]）によって、データベースのデータ列から Data Workbench サーバーにデータをマッピングしています。
+ここに示したのは、Data Workbench の [!DNL Log Processing] 設定ウィンドウで ODBC データソースを指定する例です。このデータソースは、[!DNL Data Source Name] &quot;VSTestO&quot;を持つデータベース内の[!DNL VISUAL.VSL]というテーブルからデータを取得します。 5 つの列オブジェクト（[!DNL Fields]）によって、データベースのデータ列から Data Workbench サーバーにデータをマッピングしています。
 
 ![](assets/cfg_LogProcessing_LogSources_ODBC.png)
-
