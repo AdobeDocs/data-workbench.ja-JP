@@ -1,14 +1,15 @@
 ---
 description: Data Workbench 6.0.4 で導入された新機能、バグの修正および既知の問題が含まれています。
-solution: Analytics
 title: Data Workbench 6.0 のリリースノート
-topic: Data workbench
 uuid: b348425e-3304-4db7-a280-479a34452bdb
+exl-id: be69b3be-24e7-4a8c-9dc8-1360a9b6fb3a
 translation-type: tm+mt
-source-git-commit: 27600561841db3705f4eee6ff0aeb8890444bbc9
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1679'
+ht-degree: 88%
 
 ---
-
 
 # Data Workbench 6.0 のリリースノート
 
@@ -25,7 +26,7 @@ Data Workbench（Insight 6.0）には、追加されたレポート機能と予�
 | [相関分析](../../../home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-analysis.md#concept-a7c8766b40be43aaa4084612689b630c) | 相関分析を使用すると、関連するデータの関係をすばやく特定して、分析を拡張および強化できます。 |
 | [更新された DeviceAtlas の配布](../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md#concept-28b7bd5c0d854e73834261c431bed1e0) | DeviceAtlas JSON ファイルは、DeviceAtlas.dll と DeviceAtlas64.dll と共に .bundle ファイル（.tar.gz に名前が変更）で配布されます。 |
 
-## クライアントのアップグレード要件 {#section-f316103b48374b6eac77e8feb5c47ecf}
+## クライアントのアップグレード要件  {#section-f316103b48374b6eac77e8feb5c47ecf}
 
 Data Workbench（Insight 6.0）のクライアント機能のために、次のアップグレードタスクを実行します。
 
@@ -51,7 +52,7 @@ Data Workbench では、現在、補助的なテキスト入力プロセスと�
    ```
 
 1. Insight クライアントを再起動します。
-1. Navigate to the Software and Docs profile (SoftDocs profile) and download the required **[!UICONTROL Insight.zbin]** file: [!DNL Software\Insight Client\v6.00\Insight_6.00.zip]
+1. ソフトウェアおよびドキュメントプロファイル(SoftDocsプロファイル)に移動し、必要な&#x200B;**[!UICONTROL Insight.zbin]**&#x200B;ファイルをダウンロードします。[!DNL Software\Insight Client\v6.00\Insight_6.00.zip]
 
 1. Insight.exe ファイルと同じフォルダーに Insight.zbin ファイルをコピーします。
 1. Insight クライアントが Insight Server から更新されるように、Insight.cfg ファイル引数を true に変更します。
@@ -78,7 +79,7 @@ Data Workbench では、現在、補助的なテキスト入力プロセスと�
 
    この問題を解決するには、Insight.exe を削除し、最新バージョンの Insight.exe.old の名前を Insight.exe に変更した後、上記の手順 1 から再度開始します。
 
-## サーバーのアップグレード要件 {#section-d6edba8b36234957ba8d06b555667a5a}
+## サーバーのアップグレード要件  {#section-d6edba8b36234957ba8d06b555667a5a}
 
 Insight 6.0 のサーバー機能のために、次のアップグレードタスクを実行します。
 
@@ -86,13 +87,13 @@ Insight 6.0 のサーバー機能のために、次のアップグレードタ�
 
 >[!IMPORTANT]
 >
->更新時に、Insight Server 6.0を新規インストールしてサーバークラスターをアップグレードすることをお勧めします。
+>更新する際に、Insight Server 6.0を新規インストールしてサーバークラスターをアップグレードすることをお勧めします。
 
 また、クライアントで Insight Server 6.0 を新規インストールしてサーバークラスターをアップグレードすることもお勧めします。
 
 ## サーバークラスターのアップグレード
 
-**言語ファイル（.zbin ファイル）を準備します。** Insightの管理者は、必要な言 `<language>.zbin` 語のファイルを選択します(例：en-us.zbin、zh-cn.zbin)がフォルダー内にあり `/localization/<language>.zbin` ます。 次に、言語ファイルをコピーし、名前を「insight.zbin」に変更します。
+**言語ファイル（.zbin ファイル）を準備します。** Insightの管理者は、必要な言語の `<language>.zbin` ファイルを選択します(例：en-us.zbin 、zh-cn.zbin)が `/localization/<language>.zbin` フォルダー内にあります。次に、言語ファイルをコピーし、名前を「insight.zbin」に変更します。
 
 言語ファイル（.zbin）の準備ができたら、Insight Client と Report Server の両方を更新する必要があります。Insight Client は、[クライアントのアップグレード処理](../../../home/c-release-notes-insight/release-notes.md)中に更新されますが、Report Server は、ほとんどの場合、Insight の管理者が更新します。
 
@@ -122,7 +123,7 @@ Report Server の言語ファイルを更新します。
 
    >[!NOTE]
    >
-   >ロケールを指定しない場合、Report Serverはinsight.zbinファイルで選択された言語をデフォルトで使用します。
+   >ロケールを指定しない場合、Report Serverは、insight.zbinファイルで選択された言語をデフォルトにします。
 
    次の手順に従って、Locale パラメーターを使用して、ReportServer をサービスとして開始します。
 
@@ -130,13 +131,14 @@ Report Server の言語ファイルを更新します。
    1. ReportServer のフォルダーに移動します。
    1. 次のコマンドを入力して、サービスを開始します。
 
-      * 英語の場合： [!DNL ReportServer.exe -RegServer -Locale -en-us]
-      * 中国語の場合： [!DNL ReportServer.exe -RegServer -Locale -zh-cn]
+      * 英語の場合：[!DNL ReportServer.exe -RegServer -Locale -en-us]
+      * 中国語の場合：[!DNL ReportServer.exe -RegServer -Locale -zh-cn]
 
 1. ReportServer が正しいパラメーターで実行されていることを確認するには：
 
    1. Windows サービスマネージャーを開きます。
-   1. Right-click [!DNL Adobe Insight Report Server - Properties].
+   1. [!DNL Adobe Insight Report Server - Properties]を右クリックします。
+
    実行可能ファイルのパスには、次のパラメーターが含まれています。
 
    ```
@@ -172,7 +174,7 @@ Profile = profileInfo:
 前提条件:
 
 * Insight の管理者は、Report Server 6.0 にアップグレードする前に、Insight Server 6.0 にアップグレードする必要があります。
-* どの言語でも、Report Server 6.0 では、Insight.zbin を Report Server のルートフォルダーに追加する必要があります。Make sure the `base/localization/<language>.zbin` is copied and renamed to &quot;insight.zbin&quot;. Report Server ディレクトリのルートにコピーします。
+* どの言語でも、Report Server 6.0 では、Insight.zbin を Report Server のルートフォルダーに追加する必要があります。`base/localization/<language>.zbin`がコピーされ、名前が「insight.zbin」に変更されていることを確認します。 Report Server ディレクトリのルートにコピーします。
 
 フォントと起動パラメーターを更新します。
 
@@ -204,7 +206,7 @@ Profile = profileInfo:
 Report Server が正しいパラメーターで実行されていることを確認するには：
 
 1. Windows サービスマネージャーを開きます。
-1. Right-click [!DNL Adobe Insight Report Server - Properties].
+1. [!DNL Adobe Insight Report Server - Properties]を右クリックします。
 1. 実行可能ファイルのパスには、次のパラメーターが含まれています。
 
    ```
@@ -227,7 +229,7 @@ YYYYMMDD-RSID_HH0000.tsv.gz
 
 >[!NOTE]
 >
->This change does not affect users currently deployed with the *wbench/ecom* version of the SiteCatalyst data feed.
+>この変更は、SiteCatalystデータフィードの&#x200B;*wbench/ecom*&#x200B;バージョンを使用して現在デプロイされているユーザーには影響しません。
 
 ファイル名の形式の変更は、ログ処理中の Insight の開始時刻と終了時刻の宣言をフルに使用できるようにするためのものです。これにより、処理中に、1 行ずつ検索してすべてのソースファイルをフィルターせずに、ファイルの内容を読み込む必要があるかどうかを評価できます。
 
@@ -251,13 +253,13 @@ YYYYMMDD-RSID_HH0000.tsv.gz
 
 ## 修正点 {#section-203f917dd6224114a1f801309c4c2cee}
 
-* Now, the key combination to leave a workspace without saving changes has been updated to **[!UICONTROL `<Ctrl>`+`<Backspace>`]**. Previously, you voided changes and closed a workspace by pressing`<Ctrl>`+`<Delete>`.
+* 現在は、変更を保存せずにワークスペースを離れるためのキーの組み合わせが&#x200B;**[!UICONTROL `<Ctrl>`+`<Backspace>`]**&#x200B;に更新されました。 以前は、変更を無効にし、ワークスペースを閉じるには、`<Ctrl>` + `<Delete>`を押しました。
 
 ## Data Workbench 6.0.4 のリリースノート{#data-workbench-release-notes}
 
 Data Workbench 6.0.4 で導入された新機能、バグの修正および既知の問題が含まれています。
 
-以前の各リリースに基づいた以前の機能や修正を確認するには、[リリースノートのアーカイブ](https://docs.adobe.com/content/help/en/data-workbench/using/release-notes/release-notes.html)を参照してください。
+以前の各リリースに基づいた以前の機能や修正を確認するには、[リリースノートのアーカイブ](https://docs.adobe.com/content/help/ja-JP/data-workbench/using/release-notes/release-notes.html)を参照してください。
 
 ## 新機能 {#section-2-1225066ea8f44cf68e42e019d0bca816}
 
@@ -306,13 +308,13 @@ Log Source ID = string: <Name your ID Here>
 
 **FSU リソースを委任する機能**
 
-In [!DNL Profiles/`<profilename>`/dataset/Cluster.cfg], you can now specify separate File Server Units (FSU) for the Normalize and Source List servers. これらのサービスがマスター FSU に関連付けられることはなくなりました。
+[!DNL Profiles/`<profilename>`/dataset/Cluster.cfg]で、正規化サーバーとソースリストサーバーに個別のファイルサーバーユニット(FSU)を指定できるようになりました。 これらのサービスがマスター FSU に関連付けられることはなくなりました。
 
 >[!NOTE]
 >
->リストサーバーが指定されていない場合、リストサーバーは正規化サーバーの設定を継承します。
+>リストサーバーが指定されていない場合、リストサーバーは正規化サーバーの構成設定を継承します。
 
-Example in the [!DNL cluster.cfg] file.
+[!DNL cluster.cfg]ファイル内の例。
 
 ```
 Cluster = ClusterConfig: 
