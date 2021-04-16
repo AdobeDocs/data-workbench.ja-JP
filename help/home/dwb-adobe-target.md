@@ -1,59 +1,60 @@
 ---
-description: Data WorkbenchとAdobe Targetの統合を参照してください。 データセグメントを書き出し、書き出しファイルを自動的に埋め込みます。
-solution: Analytics
-title: Data WorkbenchとAdobe Targetの統合
-topic: Data workbench
+description: Data WorkbenchとAdobe Targetを統合。 データセグメントを書き出し、書き出しファイルを自動的に埋め込みます。
+title: Data Workbench と Adobe Target の統合
+exl-id: e7c41e7a-aae6-4b5c-8b14-7ae97b62d70b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 1%
 
 ---
 
+# Data Workbench と Adobe Target の統合
 
-# Data WorkbenchとAdobe Targetの統合
+データセグメントの書き出しと書き出しファイルの自動入力のData Workbench機能により、AdobeData WorkbenchのAdobe Targetとの統合が容易になりました。
 
-Data Workbenchの機能を使用して、Adobe Data WorkbenchとAdobe Targetの統合が容易になりました。Data Workbenchの機能を使用して、データセグメントを書き出し、書き出しファイルを自動的に埋め込むことができます。
+AdobeData Workbenchは、データの共有とレポートの生成を行うために、Adobe Targetとのクローズドループ統合を提供します。 Data Workbench内では、電話、店舗などのチャネルを介したオフラインコンバージョンを含む、利用可能なすべてのデータを使用して、訪問者を意味のあるセグメントに分類できます。
 
-Adobe Data Workbenchは、データの共有とレポートの生成を行うために、Adobe Targetとのクローズループ統合を提供します。 Data Workbench内では、電話、店舗などのチャネルを介したオフラインコンバージョンを含む、使用可能なすべてのデータを使用して、訪問者の意味のあるセグメントを分析できます。
+例えば、Webサイト上で訪問者が靴を探してもコンバージョンが行われないとします。 訪問者は、次の購入時に20%引きのクーポンをダウンロードし、店頭でシャツを購入します。 Data Workbenchを使用して、そのデータを収集し、そのプロファイルデータをターゲットに戻して、訪問者がオフラインでシャツを購入したことを示すことができます。 その訪問者に靴を売り込もうとすると、通常はターゲットが靴の再売り込みを試みても、ネクタイを提供するキャンペーンをターゲットできます。
 
-例えば、訪問者がWebサイトで靴を探しても、コンバージョンが行われないとします。 その代わり、訪問者は次回の購入時に20%引きのクーポンをダウンロードし、店頭でシャツを購入します。 Data Workbenchを使用すると、そのデータを収集し、そのプロファイルデータをTargetにプッシュして、訪問者がオフラインでシャツを購入したことを示すことができます。 その後、ネクタイを提供するキャンペーンをターゲットに設定できます。通常、Targetは靴をその訪問者に再マーケティングしようとします。
+## Adobe TargetとのData Workbenchの設定
 
-## Data WorkbenchとAdobe Targetの設定
-
-1. ウィンドウのヘッダーを右クリック [!UICONTROL Detail Table] します。
+1. [!UICONTROL Detail Table]ウィンドウのヘッダーを右クリックします。
 
    ![](assets/insight-to-tnt.png)
 
-1. を選択 **[!UICONTROL New Target Export]** し、メニューのコマンドの下に新しい書き出しファイルの **[!UICONTROL Save As]** 名前を入力します。
+1. **[!UICONTROL New Target Export]**&#x200B;を選択し、メニューの&#x200B;**[!UICONTROL Save As]**&#x200B;コマンドの下に新しいエクスポートファイルの名前を入力します。
 
-1. クリック **[!UICONTROL Save Export File]**.
+1. 「**[!UICONTROL Save Export File]**」をクリックします。
 
    書き出しテンプレートウィンドウが開きます。
 
-   すべてのAdobe Target情報が自動的に入力されます。 セグメントエクスポートの内容に基づいて、パラメータリストが作成されます。 完了すると、Data WorkbenchはデータをAdobe Targetサーバーに送信します。
+   すべてのAdobe Target情報が自動的に入力されます。 セグメントエクスポートに入力した内容に基づいて、パラメーターのリストが構築されます。 完了すると、Data WorkbenchはデータをAdobe Targetサーバに送信します。
 
-   **注意：** テンプレートファイルは、で設定する必要がありま [!UICONTROL Profile Architect]す。 、、 [!UICONTROL Client Name]およ [!UICONTROL Domain Postfix]びを入 [!UICONTROL Mbox Host]力する [!UICONTROL Mbox Name] 必要があります。 複数のサイトがある場合は、複数のテンプレートに入力し、サーバーに保存します。 プロファイルマネージャーのテンプレートは、にありま `Context\FileNew\Detail Table\Export\Copy`す。
+   **注意：テンプレ** ートファイルは、で設定する必要があり [!UICONTROL Profile Architect]ます。[!UICONTROL Client Name]、[!UICONTROL Domain Postfix]、[!UICONTROL Mbox Host]、および[!UICONTROL Mbox Name]を入力する必要があります。 複数のサイトがある場合は、複数のテンプレートに入力し、サーバーに保存します。 プロファイルマネージャのテンプレートは`Context\FileNew\Detail Table\Export\Copy`にあります。
 
    ![](assets/insight-to-tnt1.png)
 
-1. クエリパラメータ [!UICONTROL mboxPC] ーを指定します。
+1. [!UICONTROL mboxPC]クエリパラメーターを指定します。
 
-   Data Workbench属性の名前が以外の名前の場合は、適切なクエリパラメ [!UICONTROL mboxPC]ーターを編集し、名前をmboxPCに変更する必要があ _ります_。
+   Data Workbench属性の名前が[!UICONTROL mboxPC]以外の値の場合は、適切なクエリパラメーターを編集し、_mboxPC_&#x200B;に名前を変更する必要があります。
 
    ![](assets/insight-to-tnt2.png)
 
-   エクスポートファイルをサーバーに保存すると、エクスポートが開始されます。 完了すると、アプリケーシ [!UICONTROL TnTSend.exe] ョンが起動し、Targetアカウントへのデータの送信が開始されます。
+   エクスポートファイルをサーバーに保存すると、エクスポートが開始されます。 完了すると、[!UICONTROL TnTSend.exe]アプリケーションが起動し、ターゲットアカウントへのデータの送信が開始されます。
 
-## Target用のData Workbenchの設定
+## ターゲット用のData Workbenchの設定
 
 Adobe Targetで次のタスクを実行します。
 
-Data Workbenchは、ユーザープロファイルをAdobe Targetに渡します。 Targetへの書き出しを設定するには、APIを設定して有効にし、書き出し設定ファイルのパラメ **[!UICONTROL clientname]** ーターと **[!UICONTROL domain postfix]** パラメーターを指定する必要があり`export.cfg`ます()。
+Data WorkbenchがユーザープロファイルをAdobe Targetに渡しています。 ターゲットへの書き出しを設定するには、そのAPIを設定して有効にし、書き出し設定ファイルの&#x200B;**[!UICONTROL clientname]**&#x200B;パラメーターと&#x200B;**[!UICONTROL domain postfix]**&#x200B;パラメーター(`export.cfg`)を指定する必要があります。
 
-セグメントエクスポートファイルに、という **[!UICONTROL Oneshot]** 新しいブール値オプションが追加されました。 このオプションは、新しいプロファイルと共に配布されるテンプレートファイルに含まれます。 を [!UICONTROL Oneshot] trueに設定すると _、エクスポートの完了後_`.export``.export.done-TIMESTAMP` にファイル名がに変更され、セグメントが複数回エクスポートされないようになります。 これは、Adobe Targetに書き出す場合に重要です。
+セグメントエクスポートファイルに、**[!UICONTROL Oneshot]**&#x200B;という新しいブール値オプションが追加されました。 このオプションは、新しいプロファイルと共に配布されるテンプレートファイルに含まれます。 [!UICONTROL Oneshot]を&#x200B;_true_&#x200B;に設定した場合、`.export`ファイルは、エクスポートの完了後に`.export.done-TIMESTAMP`に名前が変更され、セグメントが複数回エクスポートされなくなります。 これは、Adobe Targetに書き出す際に重要です。
 
-**注意：** Data WorkbenchからAdobe Targetへの呼び出しは、1回の呼び出しとしてカウントされ、送 [!UICONTROL mbox] 信される各プロファイルに対して1回の呼び出しが必要になります。 その結果、2つのソリューション間で複数の呼び出しが必要な場合は、コストが増加します。
+**注意：Data WorkbenchからAdobe Target** への呼び出しは、 [!UICONTROL mbox] 呼び出しとしてカウントされ、送信されたプロファイルごとに1回の呼び出しが必要となります。その結果、2つのソリューション間で複数の呼び出しが必要な場合は、コストが増加します。
 
-設定が不完全な場合、ログに次のエラーメッセージが表示されます。
+設定が不完全なとき、ログに次のエラーメッセージが表示されます。
 
 ```
 TNT-040615-133212-Adobe-Target-Product-Test.log:
@@ -63,18 +64,18 @@ ClientName,MboxHost,MboxName
 
 ## Data Workbench用のAdobe Targetの設定
 
-Adobe Target内では、顧客がプロファイルデータを送信する際に特別な設定は必要ありません。 通常、ユーザーのプロファイル情報は通常のリクエストで渡され、サーバーは、追加の設定を行わなくても、ターゲットキャンペーンの設定で使用できるプロファイルパラメーターを標準機能として使用できます。 [!UICONTROL mbox]
+Adobe Target内では、お客様がプロファイルデータを送信する際に特別な設定は必要ありません。 通常、ユーザーのプロファイル情報は通常の[!UICONTROL mbox]リクエストに渡され、サーバーは、追加の設定なしに、ターゲットキャンペーンの設定に対して標準機能としてプロファイルパラメーターを使用できるようにします。
 
-Adobe TargetにはData Workbench統合が組み込まれており、これはスーパーユーザーのクライアントの詳細ページで有効にできます。 このオプションを有効にすると、Adobe Target内のData Workbenchから共有されるセグメントが表示され、ターゲット設定で使用できるようになります。
+Adobe TargetにはData Workbench統合が組み込まれており、「スーパーユーザーのクライアントの詳細」ページから有効にできます。 このオプションを有効にすると、Adobe Target内のData Workbenchから共有されるセグメントが表面化され、ターゲティングで使用できるようになります。
 
-## ExportIntegration.exeでHTTPログレポートを設定します。
+## ExportIntegration.exeにHTTPログレポートを設定します
 
-を使用してAdobe Target統合ファイルを書き [!UICONTROL HTTP.log] 出す場合に、 [!UICONTROL ExportIntegration.exe] 長いレポートを減らします。
+[!UICONTROL ExportIntegration.exe]を使用してAdobe Target統合ファイルをエクスポートする場合、長いレポートを[!UICONTROL HTTP.log]に減らします。
 
-新しい設定フ [!UICONTROL httpLoggingEI.cfg] ァイル(にあ `server\Admin\Export\httpLoggingEI.cfg`ります)を使用すると、を使用してデータを書き出す際に、ファイルに対 [!UICONTROL HTTP.log] する詳細ログを減らすことができま [!UICONTROL ExportIntegration.exe]す。 これにより、詳細な要求/応答のログを停止できます。
+新しい[!UICONTROL httpLoggingEI.cfg]設定ファイル（`server\Admin\Export\httpLoggingEI.cfg`にあります）を使用すると、[!UICONTROL ExportIntegration.exe]を使用してデータを書き出す際に、[!UICONTROL HTTP.log]ファイルに対する詳細ログを減らすことができます。 これにより、詳細な要求/応答のログ記録を停止できます。
 
-詳細ログは既にファイルに取り込まれ [!UICONTROL TnTSend.log] ています。
+詳細ログは既に[!UICONTROL TnTSend.log]ファイルにキャプチャされています。
 
-_Trueを指定すると_ 、詳細ログの記録が行われ、 _Falseを指定すると_ 、ファイルへの詳細ログの記録が停止 [!UICONTROL HTTP.log] されます。
+__ Trueset詳細ログを記録し、Falseを __ 指定すると、 [!UICONTROL HTTP.log] ファイルへの詳細ログの記録を停止します。
 
-「False」設定の場合、警告メッセージのみがファイルに送信さ [!UICONTROL HTTP.log] れます（情報の内容は送信されません）。
+False設定の場合、警告メッセージのみが[!UICONTROL HTTP.log]ファイルに送信されます（情報の内容は送信されません）。
