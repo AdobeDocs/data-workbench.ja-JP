@@ -1,28 +1,29 @@
 ---
 description: 待ち時間テーブルのビジュアライゼーションは、待ち時間ディメンションを含むテーブルです。このディメンションは一種の派生ディメンションで、特定のイベントの発生から経過した時間を測定します。
-solution: Analytics
 title: 待ち時間テーブル
-topic: Data workbench
 uuid: 8081540c-f96c-424e-802d-05d1be5a728d
+exl-id: 22f6d52f-e1c2-430a-9e69-3440be0ecdea
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '800'
+ht-degree: 75%
 
 ---
 
-
-# Latency tables{#latency-tables}
+# 待ち時間テーブル{#latency-tables}
 
 待ち時間テーブルのビジュアライゼーションは、待ち時間ディメンションを含むテーブルです。このディメンションは一種の派生ディメンションで、特定のイベントの発生から経過した時間を測定します。
 
 1 つ以上のビジュアライゼーション内に選択範囲を作成し、イベントを設定コンテキストメニューオプションを使用してその選択範囲をイベントとして設定することにより、イベントを定義します。待ち時間テーブルは、時間との相関を探しているキャンペーンや特定の顧客の注文に関連するアクティビティの追跡に特に役立ちます。
 
-[!DNL Site] では、待ち時間テーブルには、イベントの前またはイベントの後 7 日間に発生した訪問者セッションに関する情報が表示されますが、様々な可算ディメンションや時間ディメンションに関する情報を表示するように設定できます。See [Configuring Latency Tables](../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/c-config-ltcy-tbls.md#concept-7175c3defec64556994f0dfcccb7d15c).
+[!DNL Site] では、待ち時間テーブルには、イベントの前またはイベントの後 7 日間に発生した訪問者セッションに関する情報が表示されますが、様々な可算ディメンションや時間ディメンションに関する情報を表示するように設定できます。「[待ち時間テーブルの設定](../../../home/c-get-started/c-intf-anlys-ftrs/c-config-ltcy-tbls/c-config-ltcy-tbls.md#concept-7175c3defec64556994f0dfcccb7d15c)」を参照してください。
 
 選択した特定のイベントの一部である、セッションなどの親ディメンションの要素の待ち時間はゼロです。その他すべての要素には、イベントからの（適切な時間ディメンションにおける）距離を反映した待ち時間が割り当てられます。
 
 以下の例では、待ち時間テーブルの使用方法について説明します。
 
-**キャンペーンに関連するバリューイベントの特定**
+**キャンペーンに関連する価値イベントの特定**
 
 特定の広告キャンペーンに反応する前 7 日間および反応した後 7 日間の顧客のアクティビティを追跡するものとします。特定の広告キャンペーンの待ち時間を表示するには、関心のあるキャンペーンを待ち時間テーブルのイベントとして設定します。
 
@@ -36,9 +37,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 「+7 日」という待ち時間は、顧客がキャンペーンに反応した 7 日後に発生した、同じ顧客のセッションを識別します。
 
-以降の節に示す手順に加え、要素の並べ替え、要素のマスク、シリーズの凡例の追加、データのエクスポートなど、テーブル内で実行できる作業と同じ作業をすべて実行できます。詳しくは、「 [テーブル](../../../home/c-get-started/c-analysis-vis/c-tables/c-tables.md#concept-c632cb8ad9724f90ac5c294d52ae667f).
+以降の節に示す手順に加え、要素の並べ替え、要素のマスク、シリーズの凡例の追加、データのエクスポートなど、テーブル内で実行できる作業と同じ作業をすべて実行できます。詳しくは、「 [表](../../../home/c-get-started/c-analysis-vis/c-tables/c-tables.md#concept-c632cb8ad9724f90ac5c294d52ae667f).
 
-## 待ち時間テーブルの作成 {#section-31a03031d9854ef7acc2462d4f37678d}
+## 待ち時間テーブル{#section-31a03031d9854ef7acc2462d4f37678d}を作成
 
 待ち時間テーブルを作成するには、まず選択範囲を作成し、待ち時間を追跡するイベントとしてその選択範囲を設定します。
 
@@ -48,51 +49,51 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 1. 空白の待ち時間テーブルを開きます。
 1. ワークスペース内に選択範囲を作成します。
-1. Right-click within the latency table and click **[!UICONTROL Set Event]**.
+1. 待ち時間テーブル内で右クリックし、「**[!UICONTROL Set Event]**」をクリックします。
 
 ![](assets/vis_Latency_SetEvent.png)
 
 >[!NOTE]
 >
->選択したイベントは、選択したイベントを待ち時間ディメンションとして保存しない限り保持されません。 手順については、「[待ち時間テーブルの再利用](../../../home/c-get-started/c-analysis-vis/c-lat-tbls.md#section-29c6483bf9ba476fb1c24ad1df253f46)」を参照してください。
+>選択したイベントは、選択範囲を待ち時間ディメンションとして保存しない限り保持されません。 手順については、「[待ち時間テーブルの再利用](../../../home/c-get-started/c-analysis-vis/c-lat-tbls.md#section-29c6483bf9ba476fb1c24ad1df253f46)」を参照してください。
 
-## 待ち時間テーブルの再利用 {#section-05f741169d204213b6537dce553e4f73}
+## 待ち時間テーブル{#section-05f741169d204213b6537dce553e4f73}を再利用する
 
 同じ待ち時間テーブルを再利用する場合は、待ち時間テーブルをローカルに保存できます。適切な権限がある場合は、待ち時間テーブルをサーバーに保存して、特定のプロファイルのすべてのユーザーがアクセスできるようにすることも可能です。
 
 **待ち時間テーブルを保存して他のワークスペースで使用できるようにするには**
 
-1. Right-click the top border of the visualization and click **[!UICONTROL Save]**. The [!DNL Save] window appears. デフォルトの保存場所は、User\*profile name*\Workフォルダーです。
-1. In the [!DNL File name] field, type a descriptive name for the visualization and click **[!UICONTROL Save]**.
+1. ビジュアライゼーションの上の枠を右クリックし、「**[!UICONTROL Save]**」をクリックします。 [!DNL Save]ウィンドウが表示されます。 デフォルトの保存場所は、User\*プロファイル名*\Workフォルダーです。
+1. 「[!DNL File name]」フィールドにビジュアライゼーションを説明する名前を入力し、「**[!UICONTROL Save]**」をクリックします。
 
 **保存されている待ち時間テーブルを取得するには**
 
-1. ワークスペース内で右クリックし、/をクリッ **[!UICONTROL Open]** クしま **[!UICONTROL File]**&#x200B;す。 The [!DNL Open Visualization] window appears.
+1. ワークスペース内で右クリックし、**[!UICONTROL Open]**/**[!UICONTROL File]**&#x200B;をクリックします。 [!DNL Open Visualization]ウィンドウが表示されます。
 1. 保存した待ち時間テーブルに移動します。
-1. Select the latency table visualization file ( [!DNL *.vw]) and click **[!UICONTROL Open]**.
+1. 待ち時間テーブルのビジュアライゼーションファイル([!DNL *.vw])を選択し、「**[!UICONTROL Open]**」をクリックします。
 
-## 待ち時間ディメンションの再利用 {#section-29c6483bf9ba476fb1c24ad1df253f46}
+## 待ち時間ディメンション{#section-29c6483bf9ba476fb1c24ad1df253f46}の再利用
 
 同じ待ち時間ディメンションを再利用する場合は、待ち時間ディメンションをローカルに保存できます。適切な権限がある場合は、待ち時間ディメンションをサーバーに保存して、特定のプロファイルのすべてのユーザーがアクセスできるようにすることも可能です。
 
-Any latency dimensions that you create are saved in the profile’s Dimensions directory and are available in the [!DNL Change Dimension] drop-down list within Data Workbench.
+作成した待ち時間ディメンションは、プロファイルのDimensionディレクトリに保存され、Data Workbench内の[!DNL Change Dimension]ドロップダウンリストに表示されます。
 
 **待ち時間ディメンションを保存して他のワークスペースで使用できるようにするには**
 
-1. Right-click the [!DNL Latency] column label or one of its elements and click **[!UICONTROL Save Dimension]**. The [!DNL Save Dimension As] window appears.
+1. [!DNL Latency]列のラベルまたはその要素の1つを右クリックし、**[!UICONTROL Save Dimension]**&#x200B;をクリックします。 [!DNL Save Dimension As]ウィンドウが表示されます。
 1. Dimensions ディレクトリ内の適切なサブディレクトリを選択または作成します。
-1. フィールド [!DNL File name] に、ディメンションを説明する名前（例：）を入力し、をク [!DNL Latency for Campaign 11565.dim]リックしま **[!UICONTROL Save]**&#x200B;す。
+1. 「[!DNL File name]」フィールドにディメンションを説明する名前（例：[!DNL Latency for Campaign 11565.dim]）を入力し、「**[!UICONTROL Save]**」をクリックします。
 
 **保存されている待ち時間ディメンションを取得するには**
 
-1. ワークスペース内で右クリックし、/をクリッ **[!UICONTROL Open]** クしま **[!UICONTROL File]**&#x200B;す。 The [!DNL Open Visualization] window appears.
-1. User\*profile name*\Dimensionsフォルダーに保存した待ち時間のビジュアライゼーションに移動します。
-1. Select the latency dimension file ( [!DNL *.dim]) and click **[!UICONTROL Open]**.
+1. ワークスペース内で右クリックし、**[!UICONTROL Open]**/**[!UICONTROL File]**&#x200B;をクリックします。 [!DNL Open Visualization]ウィンドウが表示されます。
+1. User\*プロファイル名*\Dimensionフォルダーに保存した待ち時間ビジュアライゼーションに移動します。
+1. 待ち時間ディメンションファイル([!DNL *.dim])を選択し、「**[!UICONTROL Open]**」をクリックします。
 
-## Microsoft Excelにエクスポート {#section-3dffa5c3aab14cdaa40c78b81b08fe53}
+## Microsoft Excel へのエクスポート {#section-3dffa5c3aab14cdaa40c78b81b08fe53}
 
-ウィンドウの書き出しの詳細については、「ウィンドウデータの書き [出し」を参照してくださ](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)い。
+ウィンドウのエクスポートについては、「[ウィンドウデータのエクスポート](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)」を参照してください。
 
-## Export to a TSV file {#section-fd921f351c994ed0a94f63d3bd5b5a87}
+## TSV ファイルへのエクスポート {#section-fd921f351c994ed0a94f63d3bd5b5a87}
 
-ウィンドウの書き出しの詳細については、「ウィンドウデータの書き [出し」を参照してくださ](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)い。
+ウィンドウのエクスポートについては、「[ウィンドウデータのエクスポート](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)」を参照してください。
