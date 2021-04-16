@@ -1,16 +1,17 @@
 ---
 description: 棒グラフ、テーブル、階層ビューから空白のマップに要素をドラッグアンドドロップすることにより、2D プロセスマップや 3D プロセスマップを作成できます。
-solution: Analytics
 title: プロセスマップの作成
-topic: Data workbench
 uuid: dbcde637-0411-4296-99ca-5510e0285e4b
+exl-id: 2e417a8e-5b1c-4dce-9e4e-ac7ed044564c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 79%
 
 ---
 
-
-# Create a process map{#create-a-process-map}
+# プロセスマップの作成{#create-a-process-map}
 
 棒グラフ、テーブル、階層ビューから空白のマップに要素をドラッグアンドドロップすることにより、2D プロセスマップや 3D プロセスマップを作成できます。
 
@@ -30,18 +31,18 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->分析する階層の最上位レベルのノードを追加することをお勧めします。
+>Adobeでは、分析する階層の最上位レベルからノードを追加することをお勧めします。
 
-1. From any table or bar graph with the same base dimension as the process map, right-click an element or the label of the base dimension and click **[!UICONTROL Hierarchy View]**.
+1. プロセスマップと同じベースディメンションを持つ任意のテーブルまたは棒グラフから、ベースディメンションの要素またはラベルを右クリックし、「**[!UICONTROL Hierarchy View]**」をクリックします。
 1. Ctrl + Alt キーを押しながら、要素をクリックしてプロセスマップにドラッグします。マウスがプロセスマップに達するまで、マウスカーソルには「No」という語が表示されます。
 
    >[!NOTE]
    >
    >追加できる要素は、プロセスマップのベースディメンションの要素でなければなりません。
 
-   1 つの要素をプロセスマップにドラッグすると、その要素のみに対して 1 つのマップノードが作成されますが、複数の要素（グループ）または複数の要素を含むフォルダーを選択して階層からドラッグすると、そのグループまたはフォルダーに対して 1 つのノードが作成されます。For example, if you are working with website data, dragging a folder named [!DNL site.com/cgi-bin] onto a map makes a node called [!DNL site.com/cgi-bin/*], which represents all pages and directories that are children of that folder.
+   1 つの要素をプロセスマップにドラッグすると、その要素のみに対して 1 つのマップノードが作成されますが、複数の要素（グループ）または複数の要素を含むフォルダーを選択して階層からドラッグすると、そのグループまたはフォルダーに対して 1 つのノードが作成されます。例えば、Webサイトデータを扱う場合、[!DNL site.com/cgi-bin]という名前のフォルダーをマップにドラッグすると、[!DNL site.com/cgi-bin/*]というノードが作成されます。このノードは、そのフォルダーの子であるすべてのページとディレクトリを表します。
 
-ページ階層ビューの詳細は、「階層ビューの適用」を [参照してください](../../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff)。
+ページ階層表示の詳細については、[階層表示の適用](../../../../home/c-get-started/c-analysis-vis/c-tables/c-hier-vews.md#concept-b461183424a841eb94f8143a0eaf9bff)を参照してください。
 
 **別のプロセスマップからノードをプロセスマップに追加するには**
 
@@ -53,4 +54,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    * 個々のノードをコピーするには、ノードごとにクリックし、2 つ目のプロセスマップにドラッグします。
    * 複数のノードをコピーするには、Ctrl キーを押しながらクリックしてドラッグし、コピーするノードの周囲にボックスを作成します。次に、ボックスをクリックして、ハイライトされているノードを 2 つ目のプロセスマップにドラッグします。ハイライトされているノードがすべて 2 つ目のプロセスマップにコピーされます。
-
