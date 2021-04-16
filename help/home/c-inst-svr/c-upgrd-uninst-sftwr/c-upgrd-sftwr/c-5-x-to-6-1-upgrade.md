@@ -1,14 +1,15 @@
 ---
 description: Insight v5.5x インストールから Data Workbench v6.1 にアップデートするには、ここに記載されている手順に従います。
-solution: Analytics
 title: Data Workbench 5.5 から 6.1 へのアップグレード
-topic: Data workbench
 uuid: 14e3612e-11a2-402a-9478-904ec55df23c
+exl-id: c730f6d5-2171-4d97-a967-509dc2517c86,3f25917b-b929-4e3b-84f0-1a81b30ba641
 translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '767'
+ht-degree: 58%
 
 ---
-
 
 # Data Workbench 5.5 から 6.1 へのアップグレード{#data-workbench-to-upgrade}
 
@@ -22,41 +23,41 @@ Insight v5.5x インストールから Data Workbench v6.1 にアップデート
 
 >[!IMPORTANT]
 >
->サーバ、レポートサーバ、クライアントの各コンポーネントは、64ビットWindowsオペレーティングシステムで実行するようにアップグレードされます。
+>アップグレード後のサーバー、レポートサーバー、クライアントコンポーネントは、64ビットWindowsオペレーティングシステム上で動作します。
 
 ## サーバーのアップグレード {#section-08bd6fe3da8740fcb19688e8cac6f223}
 
-Follow these steps to update the **[!UICONTROL Server v6.1]** components:
+**[!UICONTROL Server v6.1]**&#x200B;コンポーネントを更新するには、次の手順に従います。
 
-1. Using the **[!UICONTROL Software and Docs]** profile, open the **[!UICONTROL Start Here]** workspace and download all needed server packages to a local folder.
+1. **[!UICONTROL Software and Docs]**&#x200B;プロファイルーを使用して&#x200B;**[!UICONTROL Start Here]**&#x200B;ワークスペースを開き、必要なすべてのサーバーパッケージをローカルフォルダーにダウンロードします。
 
-   * Download **[!UICONTROL Server Packages]** \ **[!UICONTROL v6.1]** zip folders and extract all files.
+   * **[!UICONTROL Server Packages]** \ **[!UICONTROL v6.1]** zipフォルダーをダウンロードし、すべてのファイルを展開します。
 
-      The **[!UICONTROL Server]** package includes **[!UICONTROL Lookup]** and **[!UICONTROL Profile]** folders with the **[!UICONTROL Base]** and **[!UICONTROL Transform]** lookup files to add and replace to update the server.
+      **[!UICONTROL Server]**&#x200B;パッケージには、**[!UICONTROL Base]**&#x200B;および&#x200B;**[!UICONTROL Transform]**&#x200B;参照ファイルを含む&#x200B;**[!UICONTROL Lookup]**&#x200B;フォルダーと&#x200B;**[!UICONTROL Profile]**&#x200B;フォルダーが含まれており、これらをおよび参照ファイルに置き換えてサーバーを更新します。
 
-   * Download new **[!UICONTROL Profiles]** folders.
-   * Download updated **[!UICONTROL Lookup]** folders.
-   * \パッケージをダ **[!UICONTROL Report Server]** ウンロ **[!UICONTROL v6.1]** ードします。
-   * Download additional **[!UICONTROL Sensor]**, **[!UICONTROL Documentation]**, and **[!UICONTROL Dashboard]** files as needed for your system.
+   * 新しい&#x200B;**[!UICONTROL Profiles]**&#x200B;フォルダーをダウンロードします。
+   * 更新された&#x200B;**[!UICONTROL Lookup]**&#x200B;フォルダーをダウンロードします。
+   * **[!UICONTROL Report Server]** \ **[!UICONTROL v6.1]**&#x200B;パッケージをダウンロードします。
+   * 必要に応じて、追加の&#x200B;**[!UICONTROL Sensor]**、**[!UICONTROL Documentation]**、および&#x200B;**[!UICONTROL Dashboard]**&#x200B;ファイルをダウンロードします。
 
-1. Stop the **[!UICONTROL Adobe Insight Server]** service.
+1. **[!UICONTROL Adobe Insight Server]**&#x200B;サービスを停止します。
 
    ![](assets/install_server_download1.png)
 
-1. From the downloaded **[!UICONTROL Server]** package:
+1. ダウンロードした&#x200B;**[!UICONTROL Server]**&#x200B;パッケージから、次の操作を行います。
 
-   1. Replace the [!DNL Server\Bin] folder to update the [!DNL InsightServer64.exe] and supporting files.
+   1. [!DNL Server\Bin]フォルダーを置き換えて、[!DNL InsightServer64.exe]とサポートファイルを更新します。
 
-   1. Replace the [!DNL Server\Profiles] folder. ファイルはすべて上書きして構いません。
-   1. Update the [!DNL Server\Lookups] folder. 既にフォルダー内にあるカスタムファイルに、新しくダウンロードしたファイルを追加する必要があります。
-   1. Replace the [!DNL Server\Software] folder to update [!DNL Insight.exe] and [!DNL ReportServer.exe]
+   1. [!DNL Server\Profiles]フォルダーを置き換えます。 ファイルはすべて上書きして構いません。
+   1. [!DNL Server\Lookups]フォルダーを更新します。 既にフォルダー内にあるカスタムファイルに、新しくダウンロードしたファイルを追加する必要があります。
+   1. [!DNL Server\Software]フォルダーを置き換えて[!DNL Insight.exe]と[!DNL ReportServer.exe]を更新します
 
-   1. Update the [!DNL Server\Scripts] folder to update [!DNL TnTSend.exe].
+   1. [!DNL Server\Scripts]フォルダーを更新して[!DNL TnTSend.exe]を更新します。
 
-1. を使用する場 **[!UICONTROL DeviceAtlas]**&#x200B;合は、フォルダー内のバ [ンドルを更新する](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html) 必要があり [!DNL Server\Lookups] ます。
+1. **[!UICONTROL DeviceAtlas]**&#x200B;を採用する場合は、[!DNL Server\Lookups]フォルダーにあるバンドル](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html)を[更新する必要があります。
 1. ベクターが更新されて各プロファイルのアイテム数が反映されるように [!DNL Directories] ファイルの [!DNL Profile.cfg] を設定します。
 
-   For example, to enable the **[!UICONTROL Predictive Analytics]** profile you will need to update this setting.
+   例えば、**[!UICONTROL Predictive Analytics]**&#x200B;プロファイルを有効にするには、この設定を更新する必要があります。
 
    ```
    Directories = vector: 5 items 
@@ -73,9 +74,9 @@ Follow these steps to update the **[!UICONTROL Server v6.1]** components:
 
    サイトの実装に基づいて [!DNL PAServer.cfg] を設定して保存できるように、カスタムプロファイルは予測分析設定プロファイルから設定を継承する必要があります。
 
-1. Define the **[!UICONTROL Log Source ID]**.
+1. **[!UICONTROL Log Source ID]**&#x200B;を定義します。
 
-   は、一 **[!UICONTROL Recording of Rows per Log Source]** 意の名前を **[!UICONTROL v6.04]** 付けてカスタムプロファイルのフ [!DNL Log Processing.cfg] ァイルに追加し、定義しました **[!UICONTROL Log Source ID]**。
+   **[!UICONTROL Recording of Rows per Log Source]**&#x200B;は&#x200B;**[!UICONTROL v6.04]**&#x200B;に追加され、カスタムプロファイルの[!DNL Log Processing.cfg]ファイルで一意の&#x200B;**[!UICONTROL Log Source ID]**&#x200B;を追加することによって定義されます。
 
    ```
    Log Processing.cfg
@@ -94,26 +95,26 @@ Follow these steps to update the **[!UICONTROL Server v6.1]** components:
    * [!DNL InsightServer64.exe /unregserver]
    * [!DNL InsightServer64.exe /regserver]
 
-1. Start the **[!UICONTROL Adobe Insight Server]** service across the cluster.
+1. クラスター全体で&#x200B;**[!UICONTROL Adobe Insight Server]**&#x200B;サービスを開始します。
 
 これで、サーバーのインストールは完了です。
 
-## レポートサーバーのアップグレード {#section-afd9560a446242e9b06490e5f98aaaec}
+## レポートサーバーのアップグレード  {#section-afd9560a446242e9b06490e5f98aaaec}
 
 >[!IMPORTANT]
 >
->にアップグレードする前 **[!UICONTROL Report Server v6.1]**&#x200B;に、にアップグレードする必要がありま **[!UICONTROL Server v6.1]**&#x200B;す。
+>**[!UICONTROL Report Server v6.1]**&#x200B;にアップグレードする前に、まず&#x200B;**[!UICONTROL Server v6.1]**&#x200B;にアップグレードする必要があります。
 
-1. プロファイル **[!UICONTROL Software and Docs]** を使用して、パッケ **[!UICONTROL v6.1]** ージからロー **[!UICONTROL Report Server]** カルフォルダーにダウンロードします。
+1. **[!UICONTROL Software and Docs]**&#x200B;プロファイルーを使用して、**[!UICONTROL Report Server]**&#x200B;パッケージから&#x200B;**[!UICONTROL v6.1]**&#x200B;をローカルフォルダーにダウンロードします。
 1. ダウンロードしたパッケージから **[!UICONTROL Report Server 6.1]** をコピーし、プロファイルパッケージを置き換えます。
 
    >[!NOTE]
    >
-   >The [!DNL Insight.zbin] file in the [!DNL install] folder is a backup file used for localization, and must be present in the [!DNL install] directory. This file or other [!DNL .zbin] files will be used depending on the command-line settings passed when starting up.
+   >[!DNL install]フォルダー内の[!DNL Insight.zbin]ファイルは、ローカライゼーションに使用するバックアップファイルで、[!DNL install]ディレクトリに存在する必要があります。 このファイルまたは他の[!DNL .zbin]ファイルは、起動時に渡されるコマンドライン設定に応じて使用されます。
 
 1. （オプション）全角文字をサポートするようにレポートサーバーの設定ファイルを変更します。
 
-   Data Workbenchは現在、英語(-en-us)と中国語(-zh-cn)をサポートしています。 半角文字と全角文字をサポートするフォントを設定する必要があります。
+   Data Workbenchでは、現在、英語(-en-us)と中国語(-zh-cn)をサポートしています。 半角文字と全角文字をサポートするフォントを設定する必要があります。
 
    ```
    Report Server.cfg - Add Fonts 
@@ -126,7 +127,7 @@ Follow these steps to update the **[!UICONTROL Server v6.1]** components:
 
 1. 設定 [!DNL Report Server v6.1].
 
-   1. Stop the **[!UICONTROL Adobe Insight Report Server]** service.
+   1. **[!UICONTROL Adobe Insight Report Server]**&#x200B;サービスを停止します。
    1. 「管理者」としてコマンドプロンプトを起動します。
    1. Report Server の [!DNL install] フォルダーに移動します。
    1. 次のコマンドを使用して、Report Server サービスを削除します。
@@ -142,7 +143,7 @@ Follow these steps to update the **[!UICONTROL Server v6.1]** components:
    ReportServer.exe -RegServer -Locale -zh-cn (Simplified Chinese)
    ```
 
-1. Report Serverが正しい設定で実行されていることを確認するには、を開い **[!UICONTROL Windows Service Manager]** て右クリックしま **[!UICONTROL Adobe Insight Report Server - Properties]**&#x200B;す。 実行可能ファイルのパスに、更新されたコマンドライン設定が表示されます。
+1. Report Serverが正しい設定で実行されていることを確認するには、**[!UICONTROL Windows Service Manager]**&#x200B;を開き、**[!UICONTROL Adobe Insight Report Server - Properties]**&#x200B;を右クリックします。 実行可能ファイルのパスに、更新されたコマンドライン設定が表示されます。
 
 これで、レポートサーバーのインストールは完了です。
 
@@ -150,7 +151,7 @@ Follow these steps to update the **[!UICONTROL Server v6.1]** components:
 
 >[!IMPORTANT]
 >
->Before upgrading to **[!UICONTROL Client v6.1]**, the administrator must first upgrade to **[!UICONTROL Server v6.1.]**
+>**[!UICONTROL Client v6.1]**&#x200B;にアップグレードする前に、管理者はまず&#x200B;**[!UICONTROL Server v6.1.]**&#x200B;にアップグレードする必要があります
 
 1. [!DNL Insight.exe] を起動しますが、どのプロファイルにも接続しないでください。
 1. ソフトウェアが自動的に更新されないように [!DNL Insight.cfg] ファイルを編集します。
@@ -159,7 +160,7 @@ Follow these steps to update the **[!UICONTROL Server v6.1]** components:
    Update Software = bool: false
    ```
 
-1. プロファイル( **[!UICONTROL Software and Docs]** softdocs)に接続します。
+1. **[!UICONTROL Software and Docs]**&#x200B;プロファイル(softdocs)に接続します。
 1. ダウンロード [!DNL Software\Insight Client\v6.10].
 1. （オプション）全角文字をサポートするように [!DNL insight.cfg] を変更します。
 
@@ -176,11 +177,12 @@ Follow these steps to update the **[!UICONTROL Server v6.1]** components:
 
    >[!NOTE]
    >
-   >The [!DNL Insight.zbin] file in the install folder is a backup file used for localization, and must be present in the install directory. This file or other [!DNL .zbin] files will be used depending on the command-line settings passed when starting up.
+   >installフォルダー内の[!DNL Insight.zbin]ファイルは、ローカライゼーションに使用するバックアップファイルで、installディレクトリに存在する必要があります。 このファイルまたは他の[!DNL .zbin]ファイルは、起動時に渡されるコマンドライン設定に応じて使用されます。
    >
    >例えば、簡体字中国語で起動するには、コマンドライン設定で渡すショートカットを作成します。
    >
-   >```
+   >
+   ```
    >Insight.exe -zh-cn
    >```
    >
@@ -203,6 +205,6 @@ Follow these steps to update the **[!UICONTROL Server v6.1]** components:
    ```
 
    IME の実装手順を参照してください。
-1. Restart again after the profile synchronization to employ the most recent [!DNL .zbin] file.
+1. 最新の[!DNL .zbin]ファイルを使用するには、プロファイルの同期後に再起動します。
 
 これで、クライアントのインストールは完了です。
