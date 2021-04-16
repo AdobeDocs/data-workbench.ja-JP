@@ -1,16 +1,17 @@
 ---
 description: パスブラウザーを使用すると、特定のディメンションの要素にアクセスしたシーケンスを分析できます。
-solution: Analytics
 title: パスブラウザー
-topic: Data workbench
 uuid: 548091dc-935f-41ac-b67c-39080988f1ea
+exl-id: 563cf0e3-39d7-49b7-b808-b0233169fb1a
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 94%
 
 ---
 
-
-# Path browsers{#path-browsers}
+# パスブラウザー{#path-browsers}
 
 パスブラウザーを使用すると、特定のディメンションの要素にアクセスしたシーケンスを分析できます。
 
@@ -32,7 +33,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    * 1 つのベースディメンションの要素から次の要素へとパスをたどると、1 つのレベルディメンションの要素から次の要素へと移動することになります。例えば、Web サイトのページを表示するパスブラウザーを作成したとしましょう。各ページは Page ディメンションの要素で、Page のレベルディメンションは Page View です。1 つのページから次のページへと移動すると、1 つのページビューから次のページビューへと移動することになります。
    * パスブラウザー内でベースディメンション要素のパスを選択すると、レベルディメンションの対応する要素のデータを選択することになります。選択範囲にはルートに関連付けられたレベルディメンションの要素が必ず含まれており、パスに要素を追加することによって絞り込みます。例えば、ルート > A > B のようなページのパスを選択すると、次のページが A でその次のページが B であるルートに関連付けられたページビューのデータを選択することになります。
 
-      パスブラウザー内でのパスの選択については、「 [パスの選択](../../../../home/c-get-started/c-analysis-vis/c-path-browsers/t-sel-paths.md#task-bf44d08c71954ef2adec4b82f840adeb). 選択範囲について詳しくは、ビジュアライゼーシ [ョンでの選択を参照してくださ](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746)い。
+      パスブラウザー内でのパスの選択については、「 [パスの選択](../../../../home/c-get-started/c-analysis-vis/c-path-browsers/t-sel-paths.md#task-bf44d08c71954ef2adec4b82f840adeb). 選択範囲について詳しくは、[ビジュアライゼーションでの選択](../../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746)を参照してください。
    >[!NOTE]
    >
    >パスブラウザーは、ベースディメンション要素が関連付けられていないレベルディメンションの要素を無視します。 プロセスマップからパスブラウザーを作成する場合、このような状況が発生する可能性があります。「 [パスブラウザーの作成](../../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-create-path-browsers.md#concept-e120de6a740d4b6f98dda9e2b638f6ff).
@@ -53,5 +54,4 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->パスブラウザーのデフォルトのディメンションと指標を変更できます。 パスブラウザーのビジュアライゼーションを設定する手順については、「パスブラウザーの [設定」を参照してくださ](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)い。
-
+>パスブラウザーのデフォルトのディメンションと指標を変更できます。 パスブラウザーのビジュアライゼーションを設定する手順については、[パスブラウザーの設定](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)を参照してください。
