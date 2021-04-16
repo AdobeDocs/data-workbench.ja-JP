@@ -1,17 +1,15 @@
 ---
 description: 指標、ディメンション、フィルターは、Data Workbench データセットへと処理されるデータに関する計算のフレームワークを提供します。
-solution: Analytics
 title: Data Workbench 指標、ディメンション、フィルター
-topic: Data workbench
 uuid: 3c0300a0-ae19-4817-aab8-7294e0eabdd9
-translation-type: ht
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
-workflow-type: ht
+exl-id: 687d9695-e70c-49ff-ac11-1537e6309e16
+translation-type: tm+mt
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 100%
 
 ---
-
 
 # Data Workbench 指標、ディメンション、フィルター {#data-workbench-metrics-dimensions-and-filters}
 
