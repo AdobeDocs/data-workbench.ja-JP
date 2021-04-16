@@ -1,17 +1,18 @@
 ---
-description: 'null'
-solution: Analytics
+description: Data Workbenchダッシュボードユーザーガイド
 title: Data Workbenchダッシュボードユーザーガイド
-topic: Data workbench
 uuid: 1d577535-feb4-4fae-aadd-2ad233e565f7
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '102'
+ht-degree: 0%
 
 ---
 
 
 # Data Workbenchダッシュボードユーザーガイド{#data-workbench-dashboard-user-guide}
 
-Adobe Data Workbenchダッシュボードは、Webベースの分析とシンクライアント機能をData Workbenchに提供するインタラクティブな分析アプリケーションです。 Data Workbenchのデータを簡単に視覚化し、特定のニーズに合わせてカスタマイズされたブラウザーベースのインターフェイスからビジネストレンドを分析できます。
+AdobeData Workbenchダッシュボードは、Webベースの解析機能とシンクライアント機能をData Workbenchに導くインタラクティブな解析アプリケーションです。 Data Workbenchデータを容易に視覚化し、特定のニーズに合わせてカスタマイズされたブラウザベースのインターフェイスからビジネス傾向を分析できます。
 
-ビジネスプロフェッショナルは、Data Workbenchダッシュボードを使用して、理解しやすく、重要なデータフィード全体で動的にセグメント化された、Webベースの分析情報のビューにアクセスできます。 これらのダッシュボードは、Adobe Data Workbenchで取り込まれ、コンテキストが与えられたビジネスインテリジェンスデータと分析データを統合するように最適化されています。
+Data Workbenchダッシュボードを使用すると、ビジネスの専門家は、分かりやすく、重要なデータフィード全体で動的にセグメント化された分析表示のWebベースの情報にアクセスできます。 これらのダッシュボードは、AdobeData Workbenchを通じて取り込まれ、状況に応じて与えられたビジネスインテリジェンスデータと分析データを統合するように最適化されています。
