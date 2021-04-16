@@ -1,17 +1,15 @@
 ---
 description: ページのHTMLがブラウザによって要求された後、ブラウザは、そのページのHTMLで参照されている埋め込みオブジェクトをWebサーバに要求し、ブラウザが示すページに入力します。
-solution: Analytics
 title: 埋め込みオブジェクトリクエスト（ページタグ）の取得
-topic: Data workbench
 uuid: 7fe561d1-aa5a-4ac9-82ba-aa27c7d208dd
+exl-id: 593e49bc-9619-4e85-8ce3-2e9d23d175c9
 translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 6%
 
 ---
-
 
 # 埋め込みオブジェクトリクエスト（ページタグ）の取得{#acquiring-embedded-object-requests-page-tags}
 
@@ -19,11 +17,11 @@ ht-degree: 6%
 
 このような埋め込みオブジェクトの要求は、イメージファイルやJavaScriptファイルの要求として最も一般的ですが、現在インターネット上で使用されている埋め込みオブジェクトの数は数百、何千もです。 これらの埋め込みオブジェクトリクエストの多くは、インターネットサイトのビジネスアクティビティの分析やレポートに役立ちません。広告の提示やサイトアクティビティの測定など、特定のビジネス目的を持たない限り、このような要求の多くは獲得に望ましくありません。
 
-例えば、画像が広告であり、その広告が訪問者に印象付けられたことを知りたい場合があります。 特定のブラウザーに特定の特性がある測定を行い、その特性をに返して獲得用に渡すために、JavaScriptスニペットが使用されている場合があ [!DNL Sensor] ります。 サイトの各ページには、10または100個の埋め込みオブジェクトリクエストが含まれます。 サイトがこれらの各リクエストのログストレージを保存している場合、今後の分析に使用できるログデータを維持するために必要なデータ情報の量に、要求された各ページの埋め込みオブジェクト要求の数を掛けます。 このため、 [!DNL Site] 不要なストレージコストが発生する前に、分析にとって重要なリクエストを維持し、他のリクエストを破棄できます。
+例えば、画像が広告であり、その広告が訪問者に印象付けられたことを知りたい場合があります。 特定のブラウザーに特有の特性がある測定を行い、それを[!DNL Sensor]に渡して獲得するために、JavaScriptスニペットを使用している場合があります。 サイトの各ページには、10または100個の埋め込みオブジェクトリクエストが含まれます。 サイトがこれらの各リクエストのログストレージを保存している場合、今後の分析に使用できるログデータを維持するために必要なデータ情報の量に、要求された各ページの埋め込みオブジェクト要求の数を掛けます。 このため、[!DNL Site]では、不要なストレージコストが発生する前に、分析にとって重要なリクエストを維持し、他のリクエストを破棄することができます。
 
-コンテンツタイプのフィルタリング機能に備わるオーバーライド機能(埋め込みオブジェクトリクエストURLのクエリ列に「Log=1」を付加)を使用すると、サイト管理者がそのタイプのリクエスト（例えば、全てのリクエスト）を保存する必要なく、特定の埋め込みオブジェクトリクエストと関連する測定データを取得できる。 [!DNL Sensor]`<image>`
+[!DNL Sensor]のコンテンツタイプフィルタリング機能に備わるオーバーライド機能(埋め込みオブジェクトリクエストURLのクエリ文字列に「Log=1」を付加)を使用すると、サイト管理者がそのタイプのリクエスト（例えば、すべての`<image>`リクエスト）を保存する必要がなく、特定の埋め込みオブジェクトリクエストと関連測定データを取得できます。
 
-[!DNL Sensor] webサーバーで行われる埋め込みオブジェクトリクエストごとに、次の表の測定データを収集します。これは、このリクエストをフィルター処理するように設定されていないか、フィルターが上書きされている場合です。 [!DNL Sensor] 収集された情報は、x-trackingidまたはcs(cookie)ログフィールドエントリを通じて、訪問者、セッション、および以降のセッションに関連します。
+[!DNL Sensor] webサーバーで行われる埋め込みオブジェクトリクエストごとに、次の表の測定データを収集します。これ [!DNL Sensor] は、このリクエストをフィルターしないか、フィルターが上書きされた場合に想定されます。収集された情報は、x-trackingidまたはcs(cookie)ログフィールドエントリを通じて、訪問者、セッション、および以降のセッションに関連します。
 
 <table id="table_11BE08A798E743EC8E76F738F0CE5884"> 
  <thead> 
@@ -38,7 +36,7 @@ ht-degree: 6%
   <tr> 
    <td colname="col1"> x-trackingid </td> 
    <td colname="col2"> 追跡識別子(一意の訪問者) </td> 
-   <td colname="col3"> 最初のリクエスト時にSensorによってユーザーのブラウザーに配置されたcookieから読み取ら <span class="wintitle"></span> れた識別子 </td> 
+   <td colname="col3"> 最初のリクエスト時に<span class="wintitle"> Sensor </span>がユーザーのブラウザーに配置したcookieから読み取った識別子 </td> 
    <td colname="col4"> V1st=3C94007B4E01F9C2 </td> 
   </tr> 
   <tr> 
@@ -75,13 +73,13 @@ ht-degree: 6%
    <td colname="col1"> s-dns </td> 
    <td colname="col2"> サーバードメイン名 </td> 
    <td colname="col3"> 要求を処理するWebサーバーのドメイン名 </td> 
-   <td colname="col4"> <span class="filepath"> www.domain.com </span> </td> 
+   <td colname="col4"> <span class="filepath"> www.domain.com  </span> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(referrer) </td> 
    <td colname="col2"> 参照 URL </td> 
    <td colname="col3"> クライアントから送信されるHTTP転送者フィールドの内容 </td> 
-   <td colname="col4"> <span class="filepath"> http://www.referringsite.com </span> </td> 
+   <td colname="col4"> <span class="filepath"> http://www.referringsite.com  </span> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(user-agent) </td> 
@@ -103,4 +101,3 @@ ht-degree: 6%
   </tr> 
  </tbody> 
 </table>
-
