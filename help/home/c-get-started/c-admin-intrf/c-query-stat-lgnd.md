@@ -1,22 +1,23 @@
 ---
 description: クエリーステータスの凡例には、実行中のクエリーに関する詳細情報が表示されます。
-solution: Analytics
-title: クエリーステータスの凡例
-topic: Data workbench
+title: クエリステータスの凡例
 uuid: 6a0285c8-3ced-4c12-8f0c-e86d70d9e044
+exl-id: 9580ee7f-3575-4e73-b7df-5b61f6ce8e1e
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '168'
+ht-degree: 92%
 
 ---
 
-
-# クエリーステータスの凡例{#query-status-legend}
+# クエリステータスの凡例{#query-status-legend}
 
 クエリーステータスの凡例には、実行中のクエリーに関する詳細情報が表示されます。
 
 ![](assets/vis_StatusLegend.png)
 
-The following table lists the tasks that can be completed using the [!DNL Query Status Legend].
+次の表に、[!DNL Query Status Legend]を使用して完了できるタスクを示します。
 
 <table id="table_BD9330D4B3014A84B24EF0E71872F627"> 
  <thead> 
@@ -44,4 +45,3 @@ The following table lists the tasks that can be completed using the [!DNL Query 
   </tr> 
  </tbody> 
 </table>
-
