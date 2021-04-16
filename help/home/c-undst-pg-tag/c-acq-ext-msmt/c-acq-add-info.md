@@ -1,14 +1,15 @@
 ---
 description: クエリ文字列変数をJavaScriptリクエストに追加して、リクエストが行われたときに追加の測定値を収集できます。
-solution: Analytics
 title: 追加情報の取得
-topic: Data workbench
 uuid: 0a8075e9-4986-42c4-b505-3985b433cf8e
+exl-id: ad4f5e08-b7b7-4de3-b0c2-71440facb2d1
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '173'
+ht-degree: 4%
 
 ---
-
 
 # 追加情報の取得{#acquiring-additional-information}
 
@@ -16,7 +17,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 これらの変数は、手動で追加するか、ページ自体のスクリプトで追加できます。
 
-次のコードを例として使用し、ページから取得できる追加情報をスクリプトを使用して埋め込みオブジェクトに追加できます。
+次のコード例を使用して、ページから取得できる追加情報を埋め込みオブジェクトにスクリプトを使用して追加できます。
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -36,11 +37,10 @@ v["_2"] = "visa";
 <!-- END REFERENCE PAGE TAG-->
 ```
 
-この例では、v_1およびv_2のスクリプト変数は、Webページ内の別の関数から派生させることができます。 変数が例として挿入されています。 各リクエストで取得したベースライン測定に加え、上記のURLのリクエストを使用して、次の拡張測定が取得されます。
+この例では、v_1およびv_2のスクリプト変数は、Webページ内の別の関数から派生できます。 変数は例として挿入されています。 各リクエストで取得されるベースライン測定に加えて、上記のURLのリクエストを使用して、次の拡張測定値が取得されます。
 
 | 収集されたデータ | 説明 | 例 |
 |---|---|---|
-| v_pn= | v_pnクエリ文字列変数に関連付けられた値 | v_pn=申込フォーム |
+| v_pn= | v_pnクエリ文字列変数に関連付けられた値 | v_pn=Application Form |
 | v_1= | v_1クエリ文字列変数に関連付けられた値 | v_1=99.99 |
 | v_2= | v_2クエリ文字列変数に関連付けられた値 | v_2=visa |
-
