@@ -1,14 +1,15 @@
 ---
 description: 統計コールアウトでは、オーディエンスクラスタリングや訪問者の反応スコアリングにおけるより高度なデータマイニング機能のために、意味のある関係を測定して、隠れた機会や関心のある変数を特定します。
-solution: Analytics
 title: 統計コールアウト
-topic: Data workbench
 uuid: 04911ac4-bc3f-4813-800b-087d9668a782
+exl-id: d4ed540e-f837-4db9-a81e-b8a30c15f270
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '273'
+ht-degree: 95%
 
 ---
-
 
 # 統計コールアウト{#statistical-callouts}
 
@@ -19,7 +20,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 統計コールアウトを追加するには：
 
 1. テーブルで、指標ヘッダーを右クリックします。
-1. Select **[!UICONTROL Statistics]** and then select or clear the checkmarks for each required setting. デフォルト設定では、「引き出し線を表示」のすべてが選択されています。
+1. **[!UICONTROL Statistics]**&#x200B;を選択し、必要な各設定のチェックマークを選択または選択解除します。 デフォルト設定では、「引き出し線を表示」のすべてが選択されています。
 
    ![](assets/statistical_callouts.png)
 
@@ -34,15 +35,15 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  </thead>
  <tbody>
   <tr>
-   <td colname="col1"> カウント数 </td>
+   <td colname="col1"> Count </td>
    <td colname="col2"><p>データセットの行数を返します。 </p></td>
   </tr>
   <tr>
-   <td colname="col1"> 最大 </td>
+   <td colname="col1"> Maximum </td>
    <td colname="col2"><p> ディメンションのすべてのエレメントの最大指標値を示します。 </p></td>
   </tr>
   <tr>
-   <td colname="col1"> 最小 </td>
+   <td colname="col1"> Minimum </td>
    <td colname="col2"><p> ディメンションのすべてのエレメントの最小指標値を示します。 </p></td>
   </tr>
   <tr>
@@ -63,4 +64,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr>
  </tbody>
 </table>
-
