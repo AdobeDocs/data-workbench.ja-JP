@@ -1,20 +1,20 @@
 ---
 description: ワークスペースにフィルターを適用する手順です。
-solution: Analytics
 title: ワークスペースへのフィルターの適用
-topic: Data workbench
 uuid: e5108204-8a25-4a36-a5c6-57fc4ac9ba41
+exl-id: e8ed1693-d5af-4902-8761-400c370a81c8
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '55'
+ht-degree: 89%
 
 ---
-
 
 # ワークスペースへのフィルターの適用{#apply-a-filter-to-a-workspace}
 
 ワークスペースにフィルターを適用する手順です。
 
-* In the filter editor window, click **[!UICONTROL Apply Filter]**.
+* フィルタエディターウィンドウで&#x200B;**[!UICONTROL Apply Filter]**&#x200B;をクリックします。
 
    フィルターエディターウィンドウの枠が黄色に変わり、フィルターがワークスペースに選択を適用したことを示します。
-
