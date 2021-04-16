@@ -1,31 +1,31 @@
 ---
 description: プロファイルマネージャーを使用して、ビジュアライゼーション、セグメント、指標、ディメンションなどを管理できます。
-solution: Analytics
 title: 作業プロファイルへのファイルの公開
-topic: Data workbench
 uuid: c8810e7e-e659-44f6-8175-babefd2a59f6
+exl-id: 7706a5e7-dade-4b50-9167-ed56d1e99273
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 30%
 
 ---
 
-
-# Publish files to your working profile{#publish-files-to-your-working-profile}
+# 作業プロファイルへのファイルの公開{#publish-files-to-your-working-profile}
 
 プロファイルマネージャーを使用して、ビジュアライゼーション、セグメント、指標、ディメンションなどを管理できます。
 
-例えば、他のユーザーに役立つ指標を作成する場合、この指標をData Workbenchサーバーに公開（またはアップロード）することで、このプロファイルを使用する他のData Workbenchユーザーと共有できます。
+例えば、他のユーザーに役立つ指標を作成した場合、この指標をData Workbenchサーバーに公開（アップロード）することで、このプロファイルを使用している他のData Workbenchユーザーと共有できます。
 
-Although you can save workspaces to your working profile on the Data Workbench server using the [!DNL Profile Manager], you can do so directly from the [!DNL Worktop] by right-clicking a workspace thumbnail and selecting **[!UICONTROL Save to server]**, which is the suggested method.
+[!DNL Profile Manager]を使用して、ワークスペースをData Workbenchサーバーの作業プロファイルに保存できますが、ワークスペースのサムネールを右クリックし、推奨される方法である&#x200B;**[!UICONTROL Save to server]**&#x200B;を選択すると、[!DNL Worktop]から直接保存できます。
 
 >[!NOTE]
 >
->適切な権限を持つユーザーのみが、Data Workbenchサーバーにワークスペースを保存できます。 詳細については、システム管理者にお問い合わせください。
+>適切な権限を持つユーザーのみが、ワークスペースをData Workbenchサーバーに保存できます。 詳細については、システム管理者にお問い合わせください。
 
 **保存したファイルを発行するには**
 
-1. In the [!DNL Profile Manager], open the necessary folders and subfolders in the [!DNL Profile Manager] to locate the file that you want to publish. The [!DNL Profile Manager] displays a white check mark in the [!DNL User] column next to the file indicating that a local copy of this file now resides in the User\*profile name* folder on your computer.
-1. Right-click the white check mark for the file in the [!DNL User] column and click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL profile name]**>*.
+1. [!DNL Profile Manager]で、[!DNL Profile Manager]内の必要なフォルダーとサブフォルダーを開き、発行するファイルを見つけます。 [!DNL Profile Manager]は、ファイルの横の[!DNL User]列に白いチェックマークを表示します。これは、このファイルのローカルコピーが、コンピューター上のUser\*プロファイル名*フォルダーに存在することを示します。
+1. [!DNL User]列のファイルの白いチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL profile name]***&#x200B;をクリックします。
 
-   The [!DNL Profile Manager] displays a check mark next to the file name in the selected profile’s column and removes the white check mark in the [!DNL User] column. これで、ファイルはすべてのユーザーが使用できるようになり、プロファイルが次回読み込まれたときにユーザーに自動的にダウンロードされます。
-
+   [!DNL Profile Manager]は、選択したプロファイルの列のファイル名の横にチェックマークを表示し、[!DNL User]列の白いチェックマークを削除します。 これで、ファイルはすべてのユーザーが使用できるようになり、プロファイルが次回読み込まれたときにユーザーに自動的にダウンロードされます。
