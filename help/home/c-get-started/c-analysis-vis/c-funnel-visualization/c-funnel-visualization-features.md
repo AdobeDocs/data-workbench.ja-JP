@@ -1,14 +1,15 @@
 ---
 description: ファンネルビジュアライゼーションには、複数のディメンション、生の訪問者数、各手順における訪問者の割合および個別のスコープを使用してファンネルを構築できる機能が用意されています。
-solution: Analytics
-title: ファンネルの機能
-topic: Data workbench
+title: ファネル機能
 uuid: 7d2f5ff9-95d3-41f5-931c-689f140714c2
+exl-id: e78dcefe-6f92-45de-9990-0beac09ad82f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '552'
+ht-degree: 83%
 
 ---
-
 
 # ファネル機能{#funnel-features}
 
@@ -54,7 +55,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->ファネルのビジュアライゼーションには、適用できる手順の数が8個まで制限されています。
+>ファンネルビジュアライゼーションには、適用できる手順は8個までに制限されています。
 
 ## ファンネルのその他の機能 {#section-22a3582db8114ca8bce77f50bbbf296a}
 
@@ -62,7 +63,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    ![](assets/funnel_path_browser_9.png)
 
-* **複数のエレメントをドラッグします**。Add more elements to your funnel by dragging and dropping them from the Dimension table to the funnel using the `<Ctrl>` + `<Alt>` keys. You can drag multiple steps at the same time from the Dimension table by selecting multiple items (using `<Ctrl>` + click) and then dragging them to the Funnel visualization using the `<Ctrl>` + `<Alt>` keys..
+* **複数のエレメントをドラッグします**。&lt;a0/追加> + `<Alt>`キーを押しながら、Dimensionテーブルからファネルに要素をドラッグ&amp;ドロップして、ファネルに追加します。 `<Ctrl>`複数のDimensionを選択し（`<Ctrl>`キーを押しながらクリック）、`<Ctrl>` + `<Alt>`キーを使用してファネルのビジュアライゼーションにドラッグすることで、項目テーブルから複数の手順を同時にドラッグできます。
 * **ステップを削除**：ビジュアライゼーション内のステップを右クリックし、「**はい**」をクリックして、要素を削除します。
 
    ![](assets/funnel_path_browser_4.png)
@@ -72,6 +73,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 * **複数の手順を追加します**。各ファンネルビジュアライゼーションには、最大で 8 個の手順を追加できます。
 * **指標を変更します**。各手順での訪問回数などの指標をカウントするために、指標を変更できます。利用可能なオプションは、データセットによって異なります。
-* **表形式ビューで表示します**。Right-click the title to display the Funnel Visualization menu and click **[!UICONTROL Show Tabular View]**. Once in tabular view, you can select **[!UICONTROL Show Graph View]** to return to graphic representation of the funnel. 表形式ビューを開くには、タイトルを右クリックし、メニューから「表形式ビューを表示」を選択します。
+* **表形式ビューで表示します**。タイトルを右クリックしてファネルのビジュアライゼーションメニューを表示し、**[!UICONTROL Show Tabular View]**&#x200B;をクリックします。 表形式の表示にしたら、**[!UICONTROL Show Graph View]**&#x200B;を選択して、ファネルのグラフィック表現に戻ることができます。 表形式ビューを開くには、タイトルを右クリックし、メニューから「表形式ビューを表示」を選択します。
 
 * **配列を比較します**。2 つの類似したシーケンスを比較する効率的な方法は、2 つのビジュアライゼーションを並べて表示することです。複製機能を使用すると、表形式ビューとグラフビューの両方を並べて表示できます。開くには、タイトルを右クリックし、メニューから「複製」を選択します。
