@@ -1,16 +1,15 @@
 ---
 description: イベントデータは、会社の通常のバックアップシステムと災害復旧手順を使用して毎日バックアップする必要があります。
-solution: Analytics
 title: イベントデータのバックアップ
 uuid: 1b9e5dfe-0bf2-4ee9-bf70-1dd320a678d6
+exl-id: 5afeb3a2-a2e7-4155-8fb9-1abc9c22c3c6
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 5%
 
 ---
-
 
 # イベントデータのバックアップ{#backing-up-event-data}
 
@@ -18,9 +17,9 @@ ht-degree: 5%
 
 **推奨頻度：** 毎日
 
-[!DNL Insight Server] 新しいログファイルが毎日午前12時(GMT)に開始されます。 Adobeでは、前日のデータをすべて取り込むために、ログファイルを毎日午前12:00 GMT直後にバックアップすることをお勧めします。 例えば、12月15日の午前12時05分にすべてのログファイルをバックアップすると、12月14日からすべてのデータが取り込まれます。 [!DNL Insight Server] ログファイルのバックアップ中に停止する必要はなく、すべての機能が引き続き使用可能です。
+[!DNL Insight Server] 新しいログファイルが毎日午前12時(GMT)に開始されます。Adobeでは、前日のデータをすべて取り込むために、ログファイルを毎日午前12:00 GMT直後にバックアップすることをお勧めします。 例えば、12月15日の午前12時05分にすべてのログファイルをバックアップすると、12月14日からすべてのデータが取り込まれます。 [!DNL Insight Server] ログファイルのバックアップ中に停止する必要はなく、すべての機能が引き続き使用可能です。
 
-## 統合、オペレーティング・システム、出力、システム・データのバックアップ {#section-217e52a99f944d8e83a3cc98f3d06e7e}
+## 統合、オペレーティングシステム、出力、およびシステムデータのバックアップ{#section-217e52a99f944d8e83a3cc98f3d06e7e}
 
 **推奨頻度：** 毎日
 
