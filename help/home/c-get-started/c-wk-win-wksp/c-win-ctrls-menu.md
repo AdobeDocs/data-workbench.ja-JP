@@ -1,16 +1,17 @@
 ---
 description: ウィンドウコントロールメニューにより、個々のウィンドウを制御できます。
-solution: Analytics
-title: ウィンドウコントロールメニュー
-topic: Data workbench
+title: ウィンドウ制御メニュー
 uuid: 9a7c24a7-c591-4d73-94f5-bba79b2aa848
+exl-id: abbd6545-0b80-45a2-88d7-f0687249583d
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 93%
 
 ---
 
-
-# ウィンドウコントロールメニュー{#window-controls-menu}
+# ウィンドウ制御メニュー{#window-controls-menu}
 
 ウィンドウコントロールメニューにより、個々のウィンドウを制御できます。
 
@@ -34,7 +35,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> 保存 </td> 
-   <td colname="col2">ビジュアライゼーションを（<span class="filepath">.vw</span> ファイルとして）現在の状態で保存します。表示されるダイアログボックスにより、ビジュアライゼーションを別の名前や別の場所に保存できます。The default location is the User\<i>profile name</i>\Work folder within the Data Workbench installation directory. </td> 
+   <td colname="col2">ビジュアライゼーションを（<span class="filepath">.vw</span> ファイルとして）現在の状態で保存します。表示されるダイアログボックスにより、ビジュアライゼーションを別の名前や別の場所に保存できます。デフォルトの場所は、Data Workbenchのインストールディレクトリ内のUser\<i>プロファイル名</i>\Workフォルダーです。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 表示形式 </td> 
@@ -46,10 +47,10 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> ウィンドウに合わせる </td> 
-   <td colname="col2">ウィンドウのサイズを変更するたびに、ウィンドウのコンテンツを自動的に拡大または縮小してウィンドウに合わせられます。詳しくは、「 画像注 <a href="../../../home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md#concept-02081ed7d91c4fdcb8fc863f2a51c962"> 釈とウィンドウへの</a> データの調整を使用する <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md#concept-b812b1171fc240d9a4cf6d6d57f621a6"></a>。 </td> 
+   <td colname="col2">ウィンドウのサイズを変更するたびに、ウィンドウのコンテンツを自動的に拡大または縮小してウィンドウに合わせられます。詳しくは、「  <a href="../../../home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md#concept-02081ed7d91c4fdcb8fc863f2a51c962"> 画像</a> 注釈の操作とウィンドウ <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md#concept-b812b1171fc240d9a4cf6d6d57f621a6"> へのデータの調整</a>。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 順序 </td> 
+   <td colname="col1"> Order </td> 
    <td colname="col2"> <p>ワークスペース内のウィンドウのレイヤーを構成します。「順序」コマンドには、次のものがあります。 
      <ul id="ul_90391B26719040AE8E0F80FE33B106FD"> 
       <li id="li_D1B38998C8CC452D8B642132B94F92F7">前面へ：そのウィンドウを前面に表示します。 </li> 
@@ -58,7 +59,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
      </ul> </p> <p>現在有効になっているオプションの左に X が表示されます。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> コピー </td> 
+   <td colname="col1"> Copy </td> 
    <td colname="col2">サードパーティのアプリケーションで使用するために、個々のウィンドウをクリップボードにコピーします。ウィンドウは、クリップボードにコピーした後、Microsoft Word、Microsoft PowerPoint、Microsoft Outlook の電子メールメッセージなど、一般的なオフィスアプリケーションに貼り付けられます。ウィンドウをコピーするには、上部の枠を右クリックして、「<span class="uicontrol">コピー</span>」をクリックし、次のうち適切なオプションをクリックします。 
     <ul id="ul_ECCD6A70729E40998C64714E01504995"> 
      <li id="li_21D375DAE7BC4F449C8A3225296A6D26">暗い背景：ワークスペースを、表示されているとおりにコピーします。 </li> 
