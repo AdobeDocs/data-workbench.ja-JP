@@ -1,24 +1,25 @@
 ---
 description: ワークスペースとビジュアライゼーションに関する概念情報です。
-solution: Analytics
 title: ワークスペースとビジュアライゼーション
-topic: Data workbench
 uuid: dc7fab6c-d8b4-4ed7-bad6-b3df14b9ebbf
+exl-id: a70748dd-8190-4d1b-9ee1-1011b73a1a86
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '163'
+ht-degree: 47%
 
 ---
 
-
-# Workspaces and visualizations{#workspaces-and-visualizations}
+# ワークスペースとビジュアライゼーション{#workspaces-and-visualizations}
 
 ワークスペースとビジュアライゼーションに関する概念情報です。
 
-次の図に依存関係マップを示します。このマップのノードは、プロファイルで定義されたワークスペース、レポート、メニューオプションおよびグローブレイヤーを表します。This option works only if the [!DNL Query Model] display option is enabled.
+次の図に依存関係マップを示します。このマップのノードは、プロファイルで定義されたワークスペース、レポート、メニューオプションおよびグローブレイヤーを表します。このオプションは、[!DNL Query Model]表示オプションが有効な場合にのみ機能します。
 
 >[!NOTE]
 >
->表示オプション [!DNL Query Model] を選択したときに表示オプションが有効になっていな [!DNL Workspaces and Visualizations] い場合は、エラーメッセージが表示されます。
+>[!DNL Workspaces and Visualizations]表示オプションを選択したときに[!DNL Query Model]表示オプションが有効になっていない場合は、エラーメッセージが表示されます。
 
 ![](assets/vis_DependencyMap_QueryModelandWorkspaces.png)
 
@@ -28,6 +29,6 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->依存関係マップは非循環依存関係を収容するように設計されているので、循環依存関係に含まれるノードはマップ上で正しく表示されない場合があります。 You can search for circular dependencies by typing “circular dependency” in the [!DNL Search] text box. この機能の詳細については、「 [!DNL Search] マップ内で検索 [する」を参照してください](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-srch-map.md#task-a1e7065a538d46c78a7d28676d880dfb)。
+>依存関係マップは非循環依存関係を受け入れるように設計されているので、循環依存関係に含まれるノードはマップ上で正しく表示されない場合があります。 「[!DNL Search]」テキストボックスに「circular dependency」と入力して、循環依存関係を検索できます。 [!DNL Search]機能の詳細については、[マップ内での検索](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-srch-map.md#task-a1e7065a538d46c78a7d28676d880dfb)を参照してください。
 
-マップ上の他のノードの説明は、「クエリーモデルのコンポーネ [ント」を参照してくださ](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-qry-mod-comp.md#concept-32c6dadd32f74179b026c7e96d47710f)い。
+マップ上の他のノードの説明については、「[クエリモデルコンポーネント](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-qry-mod-comp.md#concept-32c6dadd32f74179b026c7e96d47710f)」を参照してください。
