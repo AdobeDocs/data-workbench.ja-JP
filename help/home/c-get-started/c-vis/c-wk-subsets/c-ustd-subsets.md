@@ -1,26 +1,27 @@
 ---
 description: サブセットに関する概念的な情報です。
-solution: Analytics
 title: サブセットについて
-topic: Data workbench
 uuid: ed185b63-dbb3-4ed4-9403-cf4dc8be2ff1
+exl-id: a75b36f9-d34d-4a4a-8a2c-15ae5461823c
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '333'
+ht-degree: 67%
 
 ---
 
-
-# Understanding subsets{#understanding-subsets}
+# サブセットについて{#understanding-subsets}
 
 サブセットに関する概念的な情報です。
 
 サブセットを使用する場合は、次の点に注意してください。
 
 * すべてのベンチマークが、データセット全体ではなく、サブセットに関するものになります。これは特定のサブセットを分析するときに非常に役に立ちます。詳しくは、「 [ベンチマークについて](../../../../home/c-get-started/c-vis/c-ustd-benchmks.md#concept-c7b0f4102e92458096f8c4765cbe2914).
-* サブセットはData Workbenchにグローバルに適用されるので、サブセットを使用すると、すべてのワークスペースに影響します。
+* サブセットはData Workbenchにグローバルに適用されるので、サブセットを使用すると、すべてのワークスペースに影響が及びます。
 * サブセットは、指標と非正規ディメンションにのみ影響を与え、正規ディメンションには影響を与えません。
-* When using [!DNL Report], subsets do not affect the data in reports published for others to view.
-* 適用したサブセットは、次にData Workbenchのこのインスタンスを開くときを含め、削除するまで、プロファイル内の後続のすべての作業に対して有効になります。
+* [!DNL Report]を使用する場合、サブセットは、他のユーザーが表示できるように公開されたレポート内のデータに影響を与えません。
+* 適用したサブセットは、次回このData Workbenchインスタンスを開くときを含め、削除するまで、プロファイル内の以降のすべての作業に対して有効になります。
 * サブセットが適用されていることを示す場所は、ワークスペース内で右クリックしたときに表示されるコンテキストメニューだけです。
 
    ![](assets/mnu_Subset.png)
@@ -29,11 +30,10 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    >[!NOTE]
    >
-   >サブセットのサイズは、単一のData Workbenchサーバー上に存在するフィルター内のデータ量に制限されます。 したがって、データセットがData Workbenchサーバークラスターにまたがる場合、サブセットのデータは、クラスター内の1つのData Workbenchサーバーのみから取得されます。
+   >サブセットのサイズは、単一のData Workbenchサーバーに存在するフィルター内のデータ量に制限されます。 したがって、データセットがData Workbenchサーバークラスターにまたがる場合、サブセットのデータは、クラスター内の1台のData Workbenchサーバーからのみ取得されます。
 
 大規模小売業のユーザーの場合、特定の週のデータから成るサブセット（ローカルキャッシュ）を作成して、その週のデータだけでクエリーを実行したい場合があります。これを行うには、関心のある日付のサブセットを作成します。
 
 次の例は、日時に対する訪問者の棒グラフとトラフィック指標の凡例を示しています。第 1 の図では選択を行っていません。データセット内のすべてのデータを示しています。第 2 の図では、Days = {...} by Visitors のサブセットのデータを示しています。このサブセットでは、Days が Day ディメンション内の 4 月 1 日から 4 月 5 日の要素の選択に基づいています。
 
 ![](assets/client-sub1.png)
-
