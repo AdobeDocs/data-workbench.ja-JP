@@ -1,16 +1,15 @@
 ---
 description: Sensorは、サーバー上で使用する場合、有効なHTTPリクエストまたは応答ヘッダー、またはサーバーのAPI経由で利用可能な変数からイベントデータのフィールドを収集できます。
-solution: Analytics
 title: 拡張可能なフィールド
 uuid: 91b9857e-44a4-497f-b157-51afd30306fe
+exl-id: e783d073-cf06-4415-80e1-567b55fdee12
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 7%
 
 ---
-
 
 # 拡張可能なフィールド{#extensible-fields}
 
@@ -21,21 +20,21 @@ Sensorは、サーバー上で使用する場合、有効なHTTPリクエスト�
 * [リクエストヘッダー](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-22766692b45546d8bfc93dbe3bc9368f)
 * [サーバー変数](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-74b258bc3e8a4a93a0ee9fb01c067e4b)
 
-## リクエストヘッダー {#section-22766692b45546d8bfc93dbe3bc9368f}
+## 要求ヘッダー{#section-22766692b45546d8bfc93dbe3bc9368f}
 
-収集するリクエストヘッダーフィールド（Host、Accept-Encoding、Keep-Aliveなど）を指定する構文を次に示し [!DNL txlogd.conf]ます。
+[!DNL txlogd.conf]で収集するリクエストヘッダーフィールド（Host、Accept-Encoding、Keep-Aliveなど）を指定するための構文を次に示します。
 
 ```
 LogHeader RequestHeaderName
 ```
 
-収集されたデータは、によって作成さ [!DNL Sensor] れた [!DNL .vsl] ファイル内の「cs(RequestHeaderName)」というフィールドに記録され [!DNL data workbench server]ます。 例えば、リクエストヘッダー「Host」から特定のリクエストヘッダー値を収集するには、に「LogHeader Host」と入力し [!DNL txlogd.conf]ます。 データは、イベントデータレコード内のフィールド「cs(Host)」に記録されます。
+収集されたデータは、[!DNL Sensor]によって、[!DNL data workbench server]によって作成された[!DNL .vsl]ファイル内の&quot;cs(RequestHeaderName)&quot;というフィールドに記録されます。 例えば、リクエストヘッダー「Host」から特定のリクエストヘッダー値を収集するには、[!DNL txlogd.conf]に「LogHeader Host」と入力します。 データは、イベントデータレコード内のフィールド「cs(Host)」に記録されます。
 
-## サーバー変数 {#section-74b258bc3e8a4a93a0ee9fb01c067e4b}
+## サーバー変数{#section-74b258bc3e8a4a93a0ee9fb01c067e4b}
 
-[!DNL Sensor] は、 [!DNL txlogd.conf] ファイルに含めるSpecialLogFieldエントリを使用して、応答ヘッダーまたはAPIアクセス可能なサーバー変数からデータのフィールドを収集できます。 「LogHeader」エントリに加えて、または「LogHeader」エントリの代わりに「SpecialLogField」エントリを使用して、リクエストヘッダーを収集することもできます。 詳しくは、 [リクエストヘッダーを参照してください](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-22766692b45546d8bfc93dbe3bc9368f)。 リクエストヘッダーオプションは、後方互換性を維持するために使用できます。
+[!DNL Sensor] は、 [!DNL txlogd.conf] ファイルに含めるSpecialLogFieldエントリを使用して、応答ヘッダーまたはAPIアクセス可能なサーバー変数からデータのフィールドを収集できます。「LogHeader」エントリに加えて、または「LogHeader」エントリの代わりに「SpecialLogField」エントリを使用して、リクエストヘッダーを収集することもできます。 「[リクエストヘッダー](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-22766692b45546d8bfc93dbe3bc9368f)」を参照してください。 リクエストヘッダーオプションは、後方互換性を維持するために使用できます。
 
-次に、 [!DNL txlogd.conf]
+次に、[!DNL txlogd.conf]で「SpecialLogField」を指定する構文を示します。
 
 ```
 SpecialLogField cs(log field) = serverVariable stage
@@ -53,11 +52,11 @@ SpecialLogField cs(log field) = serverVariable stage
  <tbody> 
   <tr> 
    <td colname="col1"> cs（logフィールド） </td> 
-   <td colname="col2"> 収集したデータがイベントデータレコードに記録されるフィールドの名前、および <span class="filepath"> Data Workbenchサーバーによって作成された </span> .vsl <span class="keyword"> ファイル </span>。 </td> 
+   <td colname="col2"> 収集したデータがイベントデータレコードに記録されるフィールドの名前、および<span class="keyword"> data workbenchサーバー</span>によって作成された<span class="filepath"> .vsl </span>ファイル。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> serverVariable </td> 
-   <td colname="col2"> <p>サーバーのAPI経由で <span class="wintitle"> Sensor </span> で使用できるサーバー変数 </p> <p>例：response.p3p </p> </td> 
+   <td colname="col2"> <p><span class="wintitle"> Sensor </span>がサーバーのAPIを介して使用できるサーバー変数 </p> <p>例：response.p3p </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> stage </td> 
@@ -66,4 +65,4 @@ SpecialLogField cs(log field) = serverVariable stage
  </tbody> 
 </table>
 
-拡張可能なイベントデータレコードフィールド [!DNL Sensor] を収集するための設定については、Adobeコンサルティングサービスにお問い合わせください。
+拡張可能なイベントデータレコードフィールドを収集するための[!DNL Sensor]の設定については、Adobeコンサルティングサービスにお問い合わせください。
