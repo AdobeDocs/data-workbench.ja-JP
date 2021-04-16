@@ -2,24 +2,23 @@
 description: 目標、仮説、テストの詳細を定義し、テストコンテンツを作成した後は、制御されたテストを導入するようにSensorを設定する必要があります。
 solution: Analytics,Analytics
 title: 実験の設定とデプロイ
-topic: Data workbench
 uuid: 460d3ea4-a6c8-4ac4-9a3f-eab71f65b096
+exl-id: 957c2ea2-72a5-4bb2-af1d-65187613c26d
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 1%
 
 ---
 
-
 # 実験の設定とデプロイ{#configuring-and-deploying-the-experiment}
 
 目標、仮説、テストの詳細を定義し、テストコンテンツを作成した後は、制御されたテストを導入するようにSensorを設定する必要があります。
 
-## テスト設定ファイルの設定 {#section-037fe7dea9c94aee9cdc354dafdb7c03}
+## テスト構成ファイルの設定{#section-037fe7dea9c94aee9cdc354dafdb7c03}
 
-テストを設定するには、Adobeが提供する（デフォルトで名前が付けられている）テスト設定スプレッドシートを完成させ [!DNL TestExperiment.xls] る必要があります。 このファイルは、テスト [!DNL Sensor] を実行するように設定され、ExpFileパラメータの [変更で指定したExcelバージョンのテキスト・ファイル](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)。
+テストを設定するには、Adobeが提供する（デフォルトでは[!DNL TestExperiment.xls]という名前の）テスト設定スプレッドシートを完成させる必要があります。 このファイルは、[!DNL Sensor]がテストを実行するように設定され、[ExpFileパラメータの変更](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)で指定したExcelバージョンのテキストファイルです。
 
 このファイルには複数の実験に関する情報を含めることができ、同じ時間や異なる時間に実行し、異なるグループや割合を使用できますが、これらの実験はどのような相関関係もありません。
 
@@ -37,9 +36,9 @@ ht-degree: 1%
 >
 >実験の開始後に実験の定義が変わると、実験は即座に無効になります。
 
-1. Webサーバーまたはアプリケーションサーバーに管理者アクセス権を持っている場合は、Webクラスター内の任意の [!DNL Sensor] マシン上の [!DNL Sensor] インストールフォルダーに移動して、 [!DNL TestExperiment.xls] ファイルにアクセスします。 管理者アクセス権がない場合は、Adobeのアカウントマネージャーに問い合わせて、 [!DNL TestExperiment.xls] ファイルを要求してください。
+1. Webサーバーまたはアプリケーションサーバーに管理者アクセスできる場合は、Webクラスター内の任意の[!DNL Sensor]マシンの[!DNL Sensor]インストールフォルダーに移動して、[!DNL TestExperiment.xls]ファイルにアクセスします。 管理者アクセス権がない場合は、Adobeのアカウントマネージャーに問い合わせて[!DNL TestExperiment.xls]ファイルを要求してください。
 
-1. ファイルを開き（必要に応じてこのファイルの名前を変更できます）、次のフィールドに入力します。 [!DNL TestExperiment.xls]
+1. [!DNL TestExperiment.xls]ファイルを開き（必要に応じてこのファイルの名前を変更できます）、次のフィールドに入力します。
 
 <table id="table_FDD6AE631C614F97AD7AE8829E53CCAC"> 
  <thead> 
@@ -51,7 +50,7 @@ ht-degree: 1%
  <tbody> 
   <tr> 
    <td colname="col1"> Experiment </td> 
-   <td colname="col2"> <p>テストを説明する名前。 各実験名は一意にする必要があり、スペースを含めることはできません。 </p> <p>テスト名は、 <span class="keyword"> Insightで実験の結果を表示する際に使用され </span>ます。 名前は、制御実験ディメンションの要素名の前半に表示されます。 要素名の後半は、このファイルの「グループ」フィールドのグループ名です。 各グループには次の形式で名前が付けられ、テスト名の後にグループ名が続きます。 </p> <p><i>EstriptName.Group Name</i> </p> <p>次に例を示します。 <span class="filepath"> New_Homepage.Control </span> </p> </td> 
+   <td colname="col2"> <p>テストを説明する名前。 各実験名は一意にする必要があり、スペースを含めることはできません。 </p> <p>テスト名は、<span class="keyword"> Insight </span>で実験の結果を表示する際に使用されます。 名前は、制御実験ディメンションの要素名の前半に表示されます。 要素名の後半は、このファイルの「グループ」フィールドのグループ名です。 各グループには次の形式で名前が付けられ、テスト名の後にグループ名が続きます。 </p> <p><i>EstriptName.Group Name</i> </p> <p>次に例を示します。<span class="filepath"> New_Homepage.Control </span> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 開始 </td> 
@@ -65,11 +64,11 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> Stop </td> 
-   <td colname="col2"> <p>テストを終了する日時。 停止日時が発生すると、 <span class="wintitle"></span> Sensorは、テストグループとして指定されたcookie値をテストURIに送信するのを停止し、すべてのcookieをコントロール母集団URIに送信します。 </p> <p>形式：MM/DD/YYYY H:MM </p> <p>「 <span class="wintitle"> 開始」 </span> フィールドの注意を参照してください。 </p> </td> 
+   <td colname="col2"> <p>テストを終了する日時。 停止日時が発生すると、<span class="wintitle">センサー</span>は、テストグループとして指定されたcookie値をテストURIに送信するのを停止し、すべてのcookieをコントロール母集団URIに送信します。 </p> <p>形式：MM/DD/YYYY H:MM </p> <p>「<span class="wintitle">開始</span>」フィールドの注意事項を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> グループ </td> 
-   <td colname="col2"> <p>テスト内の各訪問者グループを説明する名前。 グループ名にスペースを含めることはできません。 </p> <p>グループ名は、 <span class="keyword"> Insightで実験の結果を表示する際に使用され </span>ます。 詳しくは、「テスト」フィールドの説明を参照してください。 </p> <p>コントロール母集団は、「割合」フィールドに入力した値に基づいて、暗黙的または明示的に定義できます。 </p> <p> <p>注意： テストが統計的に有効となるために、定義した期間中に必要な訪問者数を満たすには、信頼性レベルを下げるか期間を長くする必要があります。 例えば、期間が5日で、信頼性レベルが98%で、必要な訪問者数がその期間の予想数を超える場合は、期間を長くするか、予測数が統計的に有効な実験を行うのに必要な訪問者数を超えるまで信頼性レベルを低くします。 </p> </p> </td> 
+   <td colname="col2"> <p>テスト内の各訪問者グループを説明する名前。 グループ名にスペースを含めることはできません。 </p> <p>グループ名は、<span class="keyword"> Insight </span>での実験の結果を表示する際に使用されます。 詳しくは、「テスト」フィールドの説明を参照してください。 </p> <p>コントロール母集団は、「割合」フィールドに入力した値に基づいて、暗黙的または明示的に定義できます。 </p> <p> <p>注意： テストが統計的に有効となるために、定義した期間中に必要な訪問者数を満たすには、信頼性レベルを下げるか期間を長くする必要があります。 例えば、期間が5日で、信頼性レベルが98%で、必要な訪問者数がその期間の予想数を超える場合は、期間を長くするか、予測数が統計的に有効な実験を行うのに必要な訪問者数を超えるまで信頼性レベルを低くします。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 割合（％） </td> 
@@ -77,7 +76,7 @@ ht-degree: 1%
   </tr> 
   <tr> 
    <td colname="col1"> 元のURL </td> 
-   <td colname="col2"> <p>再マップするコンテンツのURIの後に$が続きます。 この値では大文字と小文字が区別されます。 </p> <p>形式：index.asp$ </p> <p>元のURIは、URIの末尾にドル記号($)を使用して指定でき、ファイル名と完全に一致する必要があることを示します。 例えば、/product/product_view.asp$という式ー <span class="filepath"> はそのページのみと一致し、 </span> /product <span class="filepath"> は </span> /product <span class="filepath"></span> ディレクトリ内の任意のページと一致し、サブツリー全体の再マップに使用できます。 ファイル名の末尾に$文字を指定しない元のURLエントリは、ExpPartialMatchパラメータが「on」に設定されていない限り、テストでは無視されます。 このパラメータの詳細は、ExpPartialMatchパラメータの <a href="../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md#concept-9c817c4c49b74287b0f70d6a1a37655e"> 変更（オプション）を参照してくだ </a>さい。 </p> <p>制御実験機能は、URIステムに追加されたクエリ文字列を無視します。 例えば、ページ </p> <p> <span class="filepath"> /product/product_view.asp?productid=53982 </span> は有効なURIではありませんが、ページ/product/product_view.asp <span class="filepath"></span> は有効なURIです。 </p> </td> 
+   <td colname="col2"> <p>再マップするコンテンツのURIの後に$が続きます。 この値では大文字と小文字が区別されます。 </p> <p>形式：index.asp$ </p> <p>元のURIは、URIの末尾にドル記号($)を使用して指定でき、ファイル名と完全に一致する必要があることを示します。 例えば、式<span class="filepath"> /product/product_view.asp$ </span>は完全一致のページのみと一致し、<span class="filepath"> /product </span>は<span class="filepath"> /product </span>ディレクトリ内の任意のページと一致し、サブツリー全体の再マップに使用できます。 ファイル名の末尾に$文字を指定しない元のURLエントリは、ExpPartialMatchパラメータが「on」に設定されていない限り、テストでは無視されます。 このパラメータの詳細は、<a href="../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md#concept-9c817c4c49b74287b0f70d6a1a37655e"> ExpPartialMatchパラメータの変更（オプション） </a>を参照してください。 </p> <p>制御実験機能は、URIステムに追加されたクエリ文字列を無視します。 例えば、ページ </p> <p> <span class="filepath"> /product/product_view.asp?productid=53982 </span> は有効なURIではありませんが、ページ/product/product_view.asp <span class="filepath">  </span> は有効なURIです。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 再マップされたURL </td> 
@@ -86,7 +85,7 @@ ht-degree: 1%
  </tbody> 
 </table>
 
-以下は、完成したスプレッドシートの例で [!DNL TextExperiment.xls] す。
+以下は、完成した[!DNL TextExperiment.xls]スプレッドシートの例です。
 
 ![](assets/TestExperimentSpreadsheet.png)
 
@@ -101,7 +100,7 @@ ht-degree: 1%
 >上記のサンプルファイルには明示的なコントロール母集団が定義されていますが、コントロール母集団を明示的に定義する必要はありません。テストによって自動的にコントロール母集団が作成されます。 テスト内のすべてのグループの割合の合計が100%未満の場合、明示的なグループの1つに分類されないコントロール母集団に暗黙的なユーザーが割り当てられます。
 
 1. 特定の実験に関する追加情報を提供するコメントを挿入するには、セルの先頭に番号記号(#)を付け、コメントに従います。 コメントはファイル内の任意の場所に挿入できます。
-1. テスト設定スプレッドシートの変数を完成させたら、変更を保存し、設定ファイルのExpFileパラメータで指定した名前を使用して、タブ区切りのテキスト形式( [!DNL *.txt][!DNL Sensor] )でファイルを保存します。 See [Modifying the ExpFile Parameter](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
+1. テスト設定スプレッドシートの変数を完成させたら、変更を保存し、タブ区切りのテキスト形式([!DNL *.txt])でファイルを保存します。その際、[!DNL Sensor]設定ファイルのExpFileパラメータで指定した名前を使用します。 [ExpFileパラメータの変更](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)を参照してください。
 
    次に、テスト設定テキストファイルの例を示します。
 
@@ -113,15 +112,15 @@ ht-degree: 1%
 
 開始時間と停止時間を定義した場合は、テスト設定ファイルからテストを削除する理由はありません。 実験の設定ファイルにすべての実験を一覧表示しておくのは、実際には各実験の定義を記録しておくのに適しています。
 
-## 設定ファイルとテストコンテンツのデプロイ {#section-34ff29649f584b93bc6129b75084b37c}
+## 設定ファイルとテストコンテンツの展開{#section-34ff29649f584b93bc6129b75084b37c}
 
-テストの設定ファイルは、Webクラスター内の、テストに関係するページを実行して提供する各マシンにデプロイする必要があ [!DNL Sensor] ります。 これは、手動の手順または既存のコンテンツ管理システムを使用して行うことができます。
+[!DNL Sensor]を実行し、テストに関わるページを提供するWebクラスター内の各マシンに、テスト設定ファイルを展開する必要があります。 これは、手動の手順または既存のコンテンツ管理システムを使用して行うことができます。
 
 **テストコンテンツを展開するには**
 
-* テストに関与するページを提供するアプリケーションまたはWebサーバー [!DNL Sensor] を実行するたびに、既存の公開プロセスを使用して、テストコンテンツを適切な場所に配置します。
+* テストに関与するページを提供する[!DNL Sensor]を実行する各アプリケーションまたはWebサーバーで、既存の公開プロセスを使用して、テストコンテンツを適切な場所に配置します。
 
-   例えば、テストグループページをWebサイトのテストフォルダ [!DNL index2.asp] ー( [!DNL mysite.com])に公開する場合は、ファイルをに公開し [!DNL www.mysite.com/test]ます。
+   例えば、テストグループページ[!DNL index2.asp]をWebサイトのテストフォルダー([!DNL mysite.com])に公開する場合は、ファイルを[!DNL www.mysite.com/test]に公開します。
 
    >[!NOTE]
    >
@@ -129,6 +128,6 @@ ht-degree: 1%
 
 **テストを導入するには**
 
-* テストに関与するページを提供するアプリケーションまたはWebサーバーを実行 [!DNL Sensor][!DNL Sensor] する各アプリケーションまたはWebサーバー上で、テスト設定テキストファイルを、設定ファイルのExpFileパラメータで指定したディレクトリに配置します。 See [Modifying the ExpFile Parameter](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28).
+* テストに関与するページを提供する[!DNL Sensor]を実行する各アプリケーションまたはWebサーバー上で、テスト設定テキストファイルを[!DNL Sensor]設定ファイルのExpFileパラメーターで指定したディレクトリに配置します。 [ExpFileパラメータの変更](../../../home/c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md#concept-25232b386a654870becc789d4f1fcc28)を参照してください。
 
 [!DNL Sensor] ファイル内で定義した割合に基づいて、各グループのWebサイト訪問者をランダムに選択し、必要に応じてテストまたはコントロール母集団のコンテンツを提供します。
