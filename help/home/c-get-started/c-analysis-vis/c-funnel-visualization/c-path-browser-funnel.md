@@ -1,14 +1,15 @@
 ---
 description: ファンネルビジュアライゼーションから、パスブラウザーを開いて、さらに詳細な訪問者のフォールアウトとフォールスルーのパスを特定できます。
-solution: Analytics
 title: パスブラウザーの追加
-topic: Data workbench
 uuid: 6b6879bf-81e5-4c6f-a4a6-eecac1ab0a29
+exl-id: d9ecb982-3b9d-497f-9cae-5c4220a5204f
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '266'
+ht-degree: 100%
 
 ---
-
 
 # パスブラウザーの追加{#adding-a-path-browser}
 
@@ -32,4 +33,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 1. パスブラウザーの下部にある「**次より多い**」ボタンをクリックすると、テーブルが開き、以前と現在のすべての訪問が表形式ビューで表示されます。
 
    ![](assets/path_browser_more.png)
-
