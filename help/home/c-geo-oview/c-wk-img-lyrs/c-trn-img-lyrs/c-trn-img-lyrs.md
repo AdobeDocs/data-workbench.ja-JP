@@ -1,24 +1,25 @@
 ---
 description: data workbenchでは、地形画像レイヤーに地球の地形画像が表示されます。
-solution: Analytics
 title: 地形画像レイヤーの操作
-topic: Data workbench
 uuid: 2f23a2c8-f551-4b84-bd87-5d7053910ab3
+exl-id: 22026b41-4e12-4247-b019-461ae223bd07
 translation-type: tm+mt
-source-git-commit: 948c6dd04819e939b45745db573a53c8be51ce37
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '1021'
+ht-degree: 67%
 
 ---
-
 
 # 地形画像レイヤーの操作{#working-with-terrain-image-layers}
 
 data workbenchでは、地形画像レイヤーに地球の地形画像が表示されます。
 
-Terrain image layers are stored in the [!DNL Geography] profile, in a custom format. これらの画像レイヤーはアドビが生成できます。また、data workbenchサーバーは、ユーザーが提供した地形画像を、グローブビジュアライゼーションでの使用に適した地形レイヤーに変換できます。
+地形画像レイヤーは、カスタム形式で[!DNL Geography]プロファイルに保存されます。 これらの画像レイヤーはAdobeが生成できます。または、data workbenchサーバーが、ユーザーが提供した地形画像を、グローブビジュアライゼーションでの使用に適した地形レイヤーに変換できます。
 
 >[!NOTE]
 >
->To work with terrain image layers, you must install the [!DNL Terrain Images.cfg] file provided by Adobe. インストール手順については、「Data Workbenchの [地域のインストール」を参照してくださ](../../../../home/c-geo-oview/c-inst-geo/c-inst-geo.md)い。
+>地形画像レイヤーを操作するには、Adobeから提供される[!DNL Terrain Images.cfg]ファイルをインストールする必要があります。 インストール手順については、[Data Workbench地域のインストール](../../../../home/c-geo-oview/c-inst-geo/c-inst-geo.md)を参照してください。
 
 地形画像レイヤーを定義するには、次のファイルが必要です。
 
@@ -35,40 +36,40 @@ Terrain image layers are stored in the [!DNL Geography] profile, in a custom for
  <tbody> 
   <tr> 
    <td colname="col1"> Raw unprojected bitmap </td> 
-   <td colname="col2"> <p>緯度-経度で並べた（投影されていない）24 ビットのヘッダーなしの RGB ファイルから地形画像レイヤーを作成します。このファイルでは画像の上が北で、右が東です。 </p> <p>サポートされている画像形式：RAW </p> <p> <p>注意：このソースには投影情報が必要です。投影形式について詳しくは、地形画像の投影 <a href="../../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-proj-info-trn-imgs/c-proj-info-trn-imgs.md#concept-69b0c668038f4de9bf430a3a468a2abd"> 情報の指定を参照してください</a>。 </p> </p> </td> 
+   <td colname="col2"> <p>緯度-経度で並べた（投影されていない）24 ビットのヘッダーなしの RGB ファイルから地形画像レイヤーを作成します。このファイルでは画像の上が北で、右が東です。 </p> <p>サポートされている画像形式：RAW </p> <p> <p>注意：このソースには投影情報が必要です。投影形式について詳しくは、<a href="../../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-proj-info-trn-imgs/c-proj-info-trn-imgs.md#concept-69b0c668038f4de9bf430a3a468a2abd">地形画像の投影情報の指定</a>を参照してください。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> General image, unprojected </td> 
-   <td colname="col2"> <p>緯度-経度で並べた（投影されていない）24 ビットの画像形式から地形画像レイヤーを作成します。このファイルでは画像の上が北で、右が東です。 </p> <p>サポートされている画像形式：BMP、JPG、PNG、TIFF </p> <p> <p>注意：このソースには投影情報が必要です。投影形式について詳しくは、地形画像の投影 <a href="../../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-proj-info-trn-imgs/c-proj-info-trn-imgs.md#concept-69b0c668038f4de9bf430a3a468a2abd"> 情報の指定を参照してください</a>。 </p> </p> </td> 
+   <td colname="col2"> <p>緯度-経度で並べた（投影されていない）24 ビットの画像形式から地形画像レイヤーを作成します。このファイルでは画像の上が北で、右が東です。 </p> <p>サポートされている画像形式：BMP、JPG、PNG、TIFF </p> <p> <p>注意：このソースには投影情報が必要です。投影形式について詳しくは、<a href="../../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-proj-info-trn-imgs/c-proj-info-trn-imgs.md#concept-69b0c668038f4de9bf430a3a468a2abd">地形画像の投影情報の指定</a>を参照してください。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Image with embedded projection </td> 
-   <td colname="col2"> <p>画像ファイルに測地データが埋め込まれている画像形式から、地形画像レイヤーを作成します。投影情報は画像から抽出されます。 </p> <p>サポートされている画像形式：Erdas（IMG）、GeoTIFF </p> <p> <p>注意：通常このソースでは投影情報を必要としませんが、必要であれば、こうした情報の追加もサポートされています。投影形式について詳しくは、地形画像の投影 <a href="../../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-proj-info-trn-imgs/c-proj-info-trn-imgs.md#concept-69b0c668038f4de9bf430a3a468a2abd"> 情報の指定を参照してください</a>。 </p> </p> </td> 
+   <td colname="col2"> <p>画像ファイルに測地データが埋め込まれている画像形式から、地形画像レイヤーを作成します。投影情報は画像から抽出されます。 </p> <p>サポートされている画像形式：Erdas（IMG）、GeoTIFF </p> <p> <p>注意：通常このソースでは投影情報を必要としませんが、必要であれば、こうした情報の追加もサポートされています。投影形式について詳しくは、<a href="../../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-proj-info-trn-imgs/c-proj-info-trn-imgs.md#concept-69b0c668038f4de9bf430a3a468a2abd">地形画像の投影情報の指定</a>を参照してください。 </p> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 **地形画像レイヤー**&#x200B;を定義するには
 
-1. Data Workbenchの「/」タブで、サムネ [!DNL Admin] ールをク [!DNL Dataset and Profile] リックしてワ **[!UICONTROL Servers Manager]** ークスペースを開 [!DNL Servers Manager] きます。
+1. Data Workbenchの「[!DNL Admin]/[!DNL Dataset and Profile]」タブで、**[!UICONTROL Servers Manager]**&#x200B;サムネールをクリックして[!DNL Servers Manager]ワークスペースを開きます。
 
-1. Within the [!DNL Servers Manager] window, right-click the icon of the desired data workbench server and click **[!UICONTROL Server Files]**.
+1. [!DNL Servers Manager]ウィンドウ内で、目的のdata workbenchサーバーのアイコンを右クリックし、**[!UICONTROL Server Files]**&#x200B;をクリックします。
 
-1. In the [!DNL Server Files Manager], click **[!UICONTROL Components]** to view its contents. [!DNL Terrain Images.cfg] ファイルは、このディレクトリ内に格納されています。
+1. [!DNL Server Files Manager]の&#x200B;**[!UICONTROL Components]**&#x200B;をクリックして、内容を表示します。 [!DNL Terrain Images.cfg] ファイルは、このディレクトリ内に格納されています。
 
-1. Right-click the check mark in the server name column for [!DNL Terrain Images.cfg], then click **[!UICONTROL Make Local]**. A check mark appears in the [!DNL Temp] column for [!DNL Terrain Images.cfg.]
+1. [!DNL Terrain Images.cfg]のサーバー名列のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 [!DNL Terrain Images.cfg.]の[!DNL Temp]列にチェックマークが表示されます
 
-1. Right-click the newly created check mark in the [!DNL Temp] column and click **[!UICONTROL Open]** > **[!UICONTROL from the workbench]**. The [!DNL Terrain Images.cfg]window appears.
+1. [!DNL Temp]列に新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL from the workbench]**&#x200B;をクリックします。 [!DNL Terrain Images.cfg]ウィンドウが表示されます。
 
-1. In the [!DNL Terrain Images] window, click **[!UICONTROL component]** to view its contents.
+1. [!DNL Terrain Images]ウィンドウで、**[!UICONTROL component]**&#x200B;をクリックして内容を表示します。
 
-1. Right-click **[!UICONTROL Sources]** > **[!UICONTROL Add new]** and choose one of the following source types:
+1. **[!UICONTROL Sources]**/**[!UICONTROL Add new]**&#x200B;を右クリックし、次のソースタイプのいずれかを選択します。
 
-   * **[!UICONTROL Raw unprojected bitmap]**&#x200B;をインストールします。（このソースタイプは、一旦追加されると、[!DNL Terrain Images] ウィンドウで RawTerrainSource というラベルが付きます。）
+   * **[!UICONTROL Raw unprojected bitmap]**&#x200B;に移動します。（このソースタイプは、一旦追加されると、[!DNL Terrain Images] ウィンドウで RawTerrainSource というラベルが付きます。）
 
-   * **[!UICONTROL General image, unprojected]**&#x200B;をインストールします。（このソースタイプは、一旦追加されると、[!DNL Terrain Images] ウィンドウで GDALTerrainSource というラベルが付きます。）
+   * **[!UICONTROL General image, unprojected]**&#x200B;に移動します。（このソースタイプは、一旦追加されると、[!DNL Terrain Images] ウィンドウで GDALTerrainSource というラベルが付きます。）
 
-   * **[!UICONTROL Image with embedded projection]**&#x200B;をインストールします。（このソースタイプは、一旦追加されると、[!DNL Terrain Images] ウィンドウで GDALTerrainSource というラベルが付きます。）
+   * **[!UICONTROL Image with embedded projection]**&#x200B;に移動します。（このソースタイプは、一旦追加されると、[!DNL Terrain Images] ウィンドウで GDALTerrainSource というラベルが付きます。）
 
 1. 必要に応じて、次のサンプルファイルとパラメーター表をガイドとして使用し、ソースのパラメーターを編集します。
 
@@ -92,15 +93,15 @@ Terrain image layers are stored in the [!DNL Geography] profile, in a custom for
   </tr> 
   <tr> 
    <td colname="col1"> Projection Info </td> 
-   <td colname="col2"> <p>Raw unprojected bitmap 画像と General image, unprojected 画像に対して必須ですが、Image with embedded projection 画像に対してもサポートされています。Data workbench<span class="wintitle"> Geography</span> supports latitude-longitude projections and Transverse Mercator (TM) projections for terrain image layers. デフォルトの投影形式は、緯度-経度図法（LatLonProjection）です。 </p> <p>投影形式について詳しくは、「 <a href="../../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-proj-info-trn-imgs/c-proj-info-trn-imgs.md#concept-69b0c668038f4de9bf430a3a468a2abd"> 地形画像の投影情報の指定</a>. </p> </td> 
+   <td colname="col2"> <p>Raw unprojected bitmap 画像と General image, unprojected 画像に対して必須ですが、Image with embedded projection 画像に対してもサポートされています。Data Workbench<span class="wintitle">地域</span>は、地形画像レイヤー用に緯度 — 経度投影法と横メルカトル(TM)投影法をサポートしています。 デフォルトの投影形式は、緯度-経度図法（LatLonProjection）です。 </p> <p>投影形式について詳しくは、「 <a href="../../../../home/c-geo-oview/c-wk-img-lyrs/c-trn-img-lyrs/c-proj-info-trn-imgs/c-proj-info-trn-imgs.md#concept-69b0c668038f4de9bf430a3a468a2abd"> 地形画像の投影情報の指定</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Source Image </td> 
-   <td colname="col2">すべてのソースに対して必須です。ソース画像ファイルの名前を指定します。ファイル名またはワイルドカードパターンを使用できます。パターンの使用は、例えば、異なる日付で同じ地域の画像がアップロードされ、関連するメタデータが変更されない場合に役に立ちます。Therefore a pattern like “<span class="filepath"> Tysons Corner *.raw</span>” would create layers from <span class="filepath"> Tysons Corner 050211.raw</span>, <span class="filepath"> Tysons Corner 050218.raw</span>, and so on as new images are added, with no additional configuration necessary if the parameters for the files are otherwise identical. </td> 
+   <td colname="col2">すべてのソースに対して必須です。ソース画像ファイルの名前を指定します。ファイル名またはワイルドカードパターンを使用できます。パターンの使用は、例えば、異なる日付で同じ地域の画像がアップロードされ、関連するメタデータが変更されない場合に役に立ちます。したがって、「<span class="filepath"> Tysons Corner *.raw</span>」のようなパターンは、新しいイメージが追加され、設定がない新しいイメージが追加されると、<span class="filepath"> Tysons Corner 050211.raw</span>、<span class="filepath"> Tysons Corner 05002100210000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ファイルのパラメーターがそれ以外同じである場合に必要です。</span> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Tile Compression Quality </td> 
-   <td colname="col2"> <p>すべてのソースに対してオプションです。JPEG 圧縮用に、0 ～ 100 の整数で画像サイズと画質のバランスを指定します。（デフォルト値は 0 です。）数値が高いほど画質が良くなりますが、大きな画像が生成され、data workbench ユーザーのダウンロード時間が長くなります。 </p> <p>70未満の画像を圧縮すると、画像が劣化する場合があります。 </p> </td> 
+   <td colname="col2"> <p>すべてのソースに対してオプションです。JPEG 圧縮用に、0 ～ 100 の整数で画像サイズと画質のバランスを指定します。（デフォルト値は 0 です。）数値が高いほど画質が良くなりますが、大きな画像が生成され、data workbench ユーザーのダウンロード時間が長くなります。 </p> <p>70未満で画像を圧縮すると、画質劣化が発生する場合があります。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Tile Compressor </td> 
@@ -118,10 +119,9 @@ Terrain image layers are stored in the [!DNL Geography] profile, in a custom for
    | パラメーター | 説明 |
    |---|---|
    | Source Image Location | 必須。地形レイヤーに変換する画像をスキャンするディレクトリ。絶対パスでない場合、data workbench サーバーのインストールディレクトリに対する相対パスと解釈されます。 |
-   | Temp Image Storage | (オプション)ソース画像を地形レイヤーに変換する際に使用する一時ファイルの記憶に使用するディレクトリの名前。絶対パスでない場合、data workbench サーバーのインストールディレクトリに対する相対パスと解釈されます。デフォルトの場所は Temp ディレクトリです。 |
-   | Write Layers To | 必須。地形レイヤーが出力されるディレクトリ。 Ordinarily, this is the Maps subdirectory of a profile directory, so that the [!DNL Globe] visualization can find the layers. |
+   | Temp Image Storage | （オプション）ソース画像を地形レイヤーに変換する際に使用する一時ファイルの記憶に使用するディレクトリの名前。絶対パスでない場合、data workbench サーバーのインストールディレクトリに対する相対パスと解釈されます。デフォルトの場所は Temp ディレクトリです。 |
+   | Write Layers To | 必須。地形レイヤーの出力先ディレクトリ。 通常は、[!DNL Globe]ビジュアライゼーションがレイヤーを見つけられるように、プロファイルディレクトリのMapsサブディレクトリです。 |
 
-1. Save the file by right-clicking **[!UICONTROL (modified)]** at the top of the window and clicking **[!UICONTROL Save]**.
+1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックして、ファイルを保存します。
 
-1. 更新したファイルをData Workbenchサーバーコンピューターに保存するに [!DNL Server Files Manager]は、で、列のチェックマークを右クリックし、列内 [!DNL Terrain Images.cfg] の [!DNL Temp] チェックマークを右クリッ **[!UICONTROL Save to]** クして、/ *&lt;**[!UICONTROL server name]**>をクリックしま*&#x200B;す。
-
+1. 更新したファイルをdata workbenchサーバーコンピューターに保存するには、[!DNL Server Files Manager]で、[!DNL Temp]列の[!DNL Terrain Images.cfg]のチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL server name]**>*&#x200B;をクリックします。
