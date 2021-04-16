@@ -1,24 +1,25 @@
 ---
-description: リファレンスページタグを使用してリンククリックの収集を容易にする手順です。
-solution: Analytics
-title: リンククリックの追跡
-topic: Data workbench
+description: リファレンスページタグを使用したリンククリックの収集を容易にする手順です。
+title: リンククリック数の追跡
 uuid: e4c492d2-9c90-4ed7-b997-6c50bdf98f93
+exl-id: 0cb743e6-5c6e-4f80-bc77-83d1e706c92b
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 3%
 
 ---
 
+# リンククリック数の追跡{#tracking-link-clicks}
 
-# リンククリックの追跡{#tracking-link-clicks}
+リファレンスページタグを使用したリンククリックの収集を容易にする手順です。
 
-リファレンスページタグを使用してリンククリックの収集を容易にする手順です。
+[!DNL Reference Page Tag]の導入により、特定のページを訪問中に訪問者がクリックしたリンク（またはhref値）を示す測定データを収集できます。 通常、このコレクションでは、HTMLページに追加のリンク識別子を導入する必要はありません。
 
-の導入により、訪問者が [!DNL Reference Page Tag]特定のページを訪問する際にクリックしたリンク（またはhref値）を示す測定データを収集できます。 通常、このコレクションには、HTMLページへの追加のリンク識別子の実装は含まれません。
+[!DNL Reference Page Tag]を使用したリンククリックの収集を容易にするには、次の手順を実行します。
 
-を使用してリンククリック数を収集しやすくするに [!DNL Reference Page Tag]は、次の手順を実行します。
-
-1. 次のコードを、という名前の既存のファイルにコピーしま [!DNL zig.js]す。
+1. 次のコードを[!DNL zig.js]という名前の既存のファイルにコピーします。
 
    ```
    //REFERENCE LINK AND FORM CLICK PAGE TAG 
@@ -77,12 +78,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    //END FORM CLICK CAPTURE PAGE TAG
    ```
 
-1. Webサーバー上のディレクトリに、1ピクセルx 1ピクセルの画像ファイルを [!DNL zag2.gif] 作成するか、このファイルを配置します。
-1. 変数を変更 [!DNL lc.src] して、ファイルの参照元のWebサイトの適切なドメインを [!DNL zag2.gif]参照するようにします。
+1. [!DNL zag2.gif]という名前の1ピクセルx 1ピクセルの画像ファイルを作成するか、Webサーバー上のディレクトリに配置します。
+1. [!DNL lc.src]変数を変更して、[!DNL zag2.gif]ファイルの参照元であるWebサイトの適切なドメインを参照します。
 
-1. およびファイルに対して適切なキャッシュ制御ヘッダーが確立されてい [!DNL zag.gif] ることを確 [!DNL zig.js] 認します。
+1. [!DNL zag.gif]ファイルと[!DNL zig.js]ファイルに対して、適切なキャッシュ制御ヘッダーが確立されていることを確認します。
 
-1. リンククリック値の収集元のHTMLファイル内で、ページのリンククリックを取 [!DNL Reference Page Tag Execution Call] り込むようにを変更 [!DNL Page Tag Execution Script] する必要があります。 これを行うには、次のコード例で強調表示されているように、vlc変数の値を「1」に変更します。
+1. リンククリック値の収集元となるHTMLファイル内で、[!DNL Reference Page Tag Execution Call]を変更して、そのページのリンククリック数を取り込むように[!DNL Page Tag Execution Script]に通知する必要があります。 これを行うには、次のコード例で示すように、vlc変数の値を「1」に変更します。
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -104,4 +105,3 @@ var v = {};
 | 収集されたデータ | 説明 | 例 |
 |---|---|---|
 | v_ln= | インプレッションキャンペーンを示す値 | v_ln=&quot;About%20Us&quot; |
-
