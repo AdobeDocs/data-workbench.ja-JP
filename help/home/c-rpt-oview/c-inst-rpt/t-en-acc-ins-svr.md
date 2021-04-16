@@ -1,16 +1,17 @@
 ---
 description: Data Workbenchサーバーに接続するには、Report Serverにそのサーバーへのアクセス権が必要です。
-solution: Analytics
-title: Data Workbenchサーバーへのアクセスの有効化
-topic: Data workbench
+title: Data Workbench サーバーへのアクセスの有効化
 uuid: e112ac2a-34fe-40a2-9324-262f5cb1f681
+exl-id: bf409413-470e-4e05-9bd2-b5b511bbe4a5
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 6%
 
 ---
 
-
-# Data Workbenchサーバーへのアクセスの有効化{#enabling-access-to-the-data-workbench-server}
+# Data Workbench サーバーへのアクセスの有効化{#enabling-access-to-the-data-workbench-server}
 
 Data Workbenchサーバーに接続するには、Report Serverにそのサーバーへのアクセス権が必要です。
 
@@ -18,22 +19,22 @@ Data Workbenchサーバーへのアクセスを許可するには、Report Serve
 
 >[!NOTE]
 >
->クラスター環境で作業する場合は、同期の問題を回避するために、マスターData WorkbenchサーバーにアクセスするようにReport Serverを設定する必要があります。 In data workbench you can view information about processing servers in your cluster using the [!DNL Related Servers] menu item in the [!DNL Servers Manager]. For more information about the [!DNL Servers Manager], see the Administrative Interfaces chapter of the *Data Workbench User Guide*.
+>クラスター環境で作業する場合、同期の問題を回避するために、Report Serverを設定してマスターData Workbenchサーバーにアクセスする必要があります。 Data Workbenchでは、[!DNL Servers Manager]の[!DNL Related Servers]メニュー項目を使用して、クラスター内のサーバー処理に関する表示を実行できます。 [!DNL Servers Manager]について詳しくは、『Data Workbenchユーザーガイド&#x200B;*』の「管理インターフェイス」という章を参照してください。*
 
 次の手順では、Data Workbenchサーバー上のアクセス制御ファイルにReport Serverを手動で追加する方法を説明します。 この方法でアクセス制御ファイルを更新するには、Data Workbenchサーバーがインストールされているマシン上のファイルシステムアクセス権が必要です。
 
-また、Data Workbenchのを使用して、サーバーのアクセス制御ファイルを更 [!DNL Server Files Manager] 新することもできます。 これを行うには、Data Workbenchクライアントがサーバー上での管理権限を持っている必要があります。
+また、Data Workbenchの[!DNL Server Files Manager]を使用してサーバーのアクセス制御ファイルを更新することもできます。 これを行うには、Data Workbenchクライアントにサーバー上の管理者権限が必要です。
 
-For more information about the [!DNL Server Files Manager], see the Administrative Interfaces chapter of the *Data Workbench User Guide*.
+[!DNL Server Files Manager]について詳しくは、『Data Workbenchユーザーガイド&#x200B;*』の「管理インターフェイス」という章を参照してください。*
 
 **Data Workbenchサーバーへのアクセスを設定するには**
 
-1. Data Workbenchサーバー(InsightServer64.exe)をインストールしたディレクトリ内のAccess Controlフォルダーに移動します。
+1. Data Workbenchサーバー(InsightServer64.exe)をインストールしたアクセス制御ーフォルダーに移動します。
 
    例：[!DNL C:\Adobe\Server\Access Control]
 
-1. メモ帳 [!DNL Access Control.cfg] などのテキストエディターで開きます。
-1. を探し、次のフ [!DNL Report Server AccessGroup] ァイルフ [!DNL Report Server’s] ラグメントでハイライト表示されている通りに、このグループに共通名を追加します。 (共通名は、デジタル証明書に表示されるとおりに [!DNL Report Server’s] 入力します)。
+1. メモ帳などのテキストエディターで[!DNL Access Control.cfg]を開きます。
+1. [!DNL Report Server AccessGroup]を探し、次のファイルフラグメントで強調表示されているように、このグループに[!DNL Report Server’s]共通名を追加します。 （[!DNL Report Server’s]デジタル証明書に表示されるとおりに、共通名を入力します）。
 
    ```
    . . .
