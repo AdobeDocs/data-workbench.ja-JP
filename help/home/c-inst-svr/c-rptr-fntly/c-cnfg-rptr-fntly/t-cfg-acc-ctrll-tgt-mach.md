@@ -1,31 +1,30 @@
 ---
 description: Insight Server Replication Serviceを実行するターゲットインサイトサーバーコンピューターは、このリピーターサーバー上のログファイルを読み取れる必要があります。
-solution: Analytics
 title: ターゲットマシンのアクセス制御の設定
 uuid: 35e032cf-6c1d-4348-88ce-4f4a6a30b16f
+exl-id: 2d0b554a-30e9-4344-9aec-a68fd5f57304
 translation-type: tm+mt
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 6%
 
 ---
 
-
 # ターゲットマシンのアクセス制御の設定{#configuring-access-control-for-target-machines}
 
 Insight Server Replication Serviceを実行するターゲットインサイトサーバーコンピューターは、このリピーターサーバー上のログファイルを読み取れる必要があります。
 
-ターゲットマシンへのアクセスは、 [!DNL Access Control.cfg] ファイルを使用して許可されます。
+ターゲットマシンへのアクセスは[!DNL Access Control.cfg]ファイルを使って許可されます。
 
-**ターゲット[!DNL Insight Server]マシンからのアクセス用にアクセス制御を構成するには**
+**ターゲット [!DNL Insight Server] マシンからのアクセス用にアクセス制御を構成するには**
 
-1. リピータ機能をインストールしたディレクトリ内の [!DNL Access Control] フォルダに移動します。
+1. リピーター機能をインストールしたディレクトリの[!DNL Access Control]フォルダーに移動します。
 
    例：[!DNL D:\Adobe\Repeater\Access Control]
 
-1. メモ帳 [!DNL Access Control.cfg] などのテキストエディターで開きます。
-1. このリピーターサーバーのログファイルにアクセスする [!DNL Insight Server] 必要があるコンピューターのアクセスグループを作成します。 このアクセスグループに「レプリケーションターゲット」などの名前を付けます。
+1. メモ帳などのテキストエディターで[!DNL Access Control.cfg]を開きます。
+1. [!DNL Insight Server]マシン用に、このリピーターサーバー上のログファイルにアクセスする必要のあるアクセスグループを作成します。 このアクセスグループに「レプリケーションターゲット」などの名前を付けます。
 
    次のファイルフラグメントは、アクセスグループの見え方を示しています。
 
@@ -46,7 +45,7 @@ Insight Server Replication Serviceを実行するターゲットインサイト�
 
    1. 「Members」セクションで、各マシンのIPアドレスを指定します。
    1. Membersベクトルの項目数を更新して、挿入したマシンのIPアドレスの数を反映します。
-   1. [読み取り専用アクセス]セクションで、レプリケーションターゲットがアクセスするイベントデータの場所を指定します。 パスの指定にはスラッシュ(/)を使用してください。 デフォルトの場所は、リピータマシン(/Logs/)の [!DNL Logs] フォルダです。
+   1. [読み取り専用アクセス]セクションで、レプリケーションターゲットがアクセスするイベントデータの場所を指定します。 パスの指定にはスラッシュ(/)を使用してください。 デフォルトの場所は、リピーターマシンの[!DNL Logs]フォルダー(/Logs/)です。
    1. 読み取り専用アクセスベクトルの項目数を更新し、挿入した場所の数を反映します。
 
 1. ファイルの上部にあるアクセス制御グループベクトル内のアクセスグループ数を更新し、新しいアクセスグループの追加を反映します。
