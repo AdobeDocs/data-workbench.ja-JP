@@ -1,22 +1,23 @@
 ---
 description: デフォルトのビジュアライゼーションを変更する手順です。
-solution: Analytics
 title: データセットスキーマインターフェイスの設定
-topic: Data workbench
 uuid: 953909e8-3382-43cf-98c0-d4785c6d1dda
+exl-id: 0227663f-4789-4780-b753-d0deb35f6144
 translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '265'
+ht-degree: 46%
 
 ---
 
-
-# Configure the Dataset Schema Interface{#configure-the-dataset-schema-interface}
+# データセットスキーマインターフェイスの設定{#configure-the-dataset-schema-interface}
 
 デフォルトのビジュアライゼーションを変更する手順です。
 
-You can control which type of visualization displays when you click a dimension name in a [!DNL Dataset Schema Interface] by adding files to the Profiles\*profile name*\Context\Dimension Legend folder of the Data Workbench server installation folder. このフォルダーにある [!DNL Default.1d] ファイルによって、すべてのディメンションのデフォルトのビジュアライゼーションのタイプが制御されます。このフォルダーに「*ディメンション名*. ファイル」（[!DNL Hour.1d].1d など）を追加して、その特定のディメンションのデフォルトのビジュアライゼーションを制御できます。
+プロファイル\*プロファイル名*\Context\Dimension Legend folder of the Data Workbench server installation folderにファイルを追加することで、[!DNL Dataset Schema Interface]のディメンション名をクリックしたときに表示されるビジュアライゼーションのタイプを制御できます。 このフォルダーにある [!DNL Default.1d] ファイルによって、すべてのディメンションのデフォルトのビジュアライゼーションのタイプが制御されます。このフォルダーに「*ディメンション名*. ファイル」（[!DNL Hour.1d].1d など）を追加して、その特定のディメンションのデフォルトのビジュアライゼーションを制御できます。
 
-詳しくは、「データセットスキ [!DNL Dataset Schema Interfaces]ーマインタ [ーフェイス」を参照してくださ](../../../home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md#concept-e147b3a5b542453ca2b121e1c85bb175)い。
+[!DNL Dataset Schema Interfaces]について詳しくは、[データセットスキーマインターフェイス](../../../home/c-get-started/c-admin-intrf/c-dtst-sch-intrf.md#concept-e147b3a5b542453ca2b121e1c85bb175)を参照してください。
 
 **デフォルトのビジュアライゼーションを変更するには**
 
@@ -24,21 +25,20 @@ You can control which type of visualization displays when you click a dimension 
 
    例えば、横向き棒グラフでディメンションを表示する場合は、目的の指標およびディメンションを表示する横向き棒グラフのビジュアライゼーションを作成します。
 
-1. Right-click the top border of the callout window and click **[!UICONTROL Save]**.
-1. In the [!DNL Save] window, click ![](assets/btn_folder_up.png), double-click **[!UICONTROL Context]**, then double-click **[!UICONTROL Dimension Legend]**.
-1. In the [!DNL File Name] field, type the dimension name.
+1. 引き出し線ウィンドウの上の枠を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
+1. [!DNL Save]ウィンドウで![](assets/btn_folder_up.png)をクリックし、**[!UICONTROL Context]**&#x200B;を重複クリックしてから&#x200B;**[!UICONTROL Dimension Legend]**&#x200B;を重複クリックします。
+1. [!DNL File Name]フィールドにディメンション名を入力します。
 
-   The name of the [!DNL .1d] file must match the name of the dimension exactly. 例：[!DNL Hour.1d]。
+   [!DNL .1d]ファイルの名前は、ディメンションの名前と完全に一致する必要があります。 例：[!DNL Hour.1d]。
 
-1. Change the file extension to “1d” and click **[!UICONTROL Save]**.
+1. ファイル拡張子を「1d」に変更し、**[!UICONTROL Save]**&#x200B;をクリックします。
 
-   ファイルはUser\*working profile name*\Context\Dimension Legend folderに保存されます。
+   ファイルはUser\*workingプロファイル名*\Context\Dimension Legend folderに保存されます。
 
-   The next time that you click that dimension from in a [!DNL Dataset Schema Interface], the visualization that you specified displays.
+   次に[!DNL Dataset Schema Interface]内でそのディメンションをクリックすると、指定したビジュアライゼーションが表示されます。
 
 1. （オプション）この変更を作業プロファイルのすべてのユーザーが利用できるようにするには、次のようにします。
 
-   1. で、をクリ [!DNL Profile Manager]ックし、を **[!UICONTROL Context]**&#x200B;クリックしま **[!UICONTROL Dimension Legend]**&#x200B;す。
+   1. [!DNL Profile Manager]の&#x200B;**[!UICONTROL Context]**&#x200B;をクリックし、**[!UICONTROL Dimension Legend]**&#x200B;をクリックします。
 
-   1. Right-click the check mark next to the file name of the new callout in the [!DNL User] column and click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
-
+   1. [!DNL User]列の新しい引き出し線のファイル名の横のチェックマークを右クリックし、**[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*&#x200B;をクリックします。
