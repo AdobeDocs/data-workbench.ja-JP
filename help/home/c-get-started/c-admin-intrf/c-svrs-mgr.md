@@ -1,14 +1,15 @@
 ---
 description: システム管理者が使用する主要ツールはサーバーマネージャーです。
-solution: Analytics
 title: サーバーマネージャー
-topic: Data workbench
 uuid: 96c8f060-ffd4-46b9-b039-b2ac024400b6
+exl-id: e8b22d9f-3f1b-4a97-942a-85786bd3c547
 translation-type: tm+mt
-source-git-commit: 948c6dd04819e939b45745db573a53c8be51ce37
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '649'
+ht-degree: 41%
 
 ---
-
 
 # サーバーマネージャー{#servers-manager}
 
@@ -16,7 +17,7 @@ source-git-commit: 948c6dd04819e939b45745db573a53c8be51ce37
 
 サーバーマネージャーは、システム全体のステータスを決定し、システム設定、ファイル管理、エラー監視機能を実行するためのメインインターフェイスです。
 
-The Servers Manager displays a colored dot (node) for each Data Workbench server and [!DNL Sensor] installation in your system and provides at-a-glance system status for each installation. また、Data Workbenchのインストール用のノードも表示されます。
+サーバーマネージャーでは、システム内の各Data Workbenchサーバーと[!DNL Sensor]インストールに色付きの点（ノード）が表示され、各インストールのシステムステータスが一目でわかります。 また、Data Workbenchのインストールに使用するノードも表示されます。
 
 緑のノードはアクティブな接続を表し、赤のノードは無効またはアクセス不可の接続を表し、灰色のノードはステータスが未確定の接続を表します。
 
@@ -24,7 +25,7 @@ The Servers Manager displays a colored dot (node) for each Data Workbench server
 
 ノードを右クリックすると、接続しているコンポーネントに関する情報が表示され、関連メニューにアクセスできます。
 
-The following tables describe the information provided when you right-click a node for Data Workbench, Data Workbench server (including a master Data Workbench server in a cluster), or [!DNL Sensor].
+次の表に、Data Workbench、Data Workbenchサーバー(クラスター内のマスターData Workbenchサーバーを含む)、または[!DNL Sensor]のノードを右クリックしたときに表示される情報を示します。
 
 <table id="table_C459CAAB07D34144B5BFFCCC84C2BB37"> 
  <thead> 
@@ -35,8 +36,8 @@ The following tables describe the information provided when you right-click a no
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>製品         </p> </td> 
-   <td colname="col2"> <p>製品名、バージョン、ビルド番号。 </p> <p>例：Data Workbench 5.3 (00000001) </p> </td> 
+   <td colname="col1"> <p>製品             </p> </td> 
+   <td colname="col2"> <p>製品名、バージョン、ビルド番号。 </p> <p>例：Data Workbench5.3 (00000001) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Address </p> </td> 
@@ -44,51 +45,51 @@ The following tables describe the information provided when you right-click a no
   </tr> 
   <tr> 
    <td colname="col1"> <p>設定 </p> </td> 
-   <td colname="col2"> <p>A link to your <span class="keyword"> Data Workbench’s </span> configuration file. Click <span class="uicontrol"> Configure </span> &gt; <span class="uicontrol"> Insight.cfg </span> to display the Data Workbench configuration window. Any changes that you make and save in this window are reflected in the <span class="filepath"> Insight.cfg </span> file in your Data Workbench installation directory. </p> </td> 
+   <td colname="col2"> <p><span class="keyword">Data Workbenchの</span>設定ファイルへのリンク。 <span class="uicontrol">設定</span>/<span class="uicontrol"> Insight.cfg </span>をクリックして、Data Workbench設定ウィンドウを表示します。 このウィンドウで行った変更や保存は、Data Workbenchーのインストールディレクトリ内の<span class="filepath"> Insight.cfg </span>ファイルに反映されます。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>製品         </p> </td> 
+   <td colname="col1"> <p>製品             </p> </td> 
    <td colname="col2"> <p>製品名、バージョン、ビルド番号。 </p> <p>例：Data Workbenchサーバー5.3 (00000001) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>CN </p> </td> 
-   <td colname="col2"> <p>Data Workbenchサーバーコンピューターの共通名。 </p> <p>例：<span class="filepath">myserver1.mycompany.com </span> </p> </td> 
+   <td colname="col2"> <p>Data Workbenchサーバーコンピューターの共通名です。 </p> <p>例：<span class="filepath">myserver1.mycompany.com </span> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Address </p> </td> 
+   <td colname="col1"> <p>住所 </p> </td> 
    <td colname="col2"> <p>コンピューター上のアドレスファイルや、<span class="filepath">Insight.cfg</span> ファイルの Network Location パラメーターに設定されるサーバーの IP アドレスまたは完全修飾ドメイン名。 </p> <p>例：100.0.0.1 </p> <p>アドレスファイルについて詳しくは、『<i>サーバー製品のインストールと管理ガイド</i>』を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ステータス </p> </td> 
-   <td colname="col2"> <p>Data Workbenchサーバーの現在のステータス。 Data Workbenchサーバーが正常に実行されている場合、このフィールドには「OK」が表示されます。 エラーが発生し、Data Workbenchサーバーノードが赤の場合は、エラー（例：「403 Forbidden」）が表示されます。 </p> </td> 
+   <td colname="col2"> <p>Data Workbenchサーバーの現在のステータス。 Data Workbenchサーバーが正常に動作している場合、このフィールドには「OK」が表示されます。 エラーが発生し、Data Workbenchサーバーノードが赤の場合は、このフィールドにエラーが表示されます（例：「403 Forbidden」）。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>詳細なステータス </p> </td> 
-   <td colname="col2"> <p>A link to the <span class="keyword"> Data Workbench server </span> <span class="wintitle"> Detailed Status </span> interface, which is useful for troubleshooting errors or other issues with the Data Workbench server. </p> <p>詳しくは、「詳細なステータスインタ <a href="../../../home/c-get-started/c-admin-intrf/c-det-stat-interf.md"> ーフェイス」を参照してくださ</a>い。 </p> </td> 
+   <td colname="col2"> <p><span class="keyword">Data Workbenchサーバー</span> <span class="wintitle">詳細ステータス</span>インターフェイスへのリンク。Data Workbenchサーバーのエラーや他の問題のトラブルシューティングに役立ちます。 </p> <p>詳しくは、<a href="../../../home/c-get-started/c-admin-intrf/c-det-stat-interf.md">詳細なステータスインターフェイス</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>リモートデスクトップ </p> </td> 
-   <td colname="col2"> <p>Opens a <span class="wintitle"> Remote Desktop </span> session to the Data Workbench server computer. </p> <p>詳しくは、「リモートデスクトッ <a href="../../../home/c-get-started/c-admin-intrf/t-rmt-dsktp-opt.md#task-dc0bdb4630474a17af67b931bc22d9ef"> プオプション」を参照してくださ </a>い。 </p> </td> 
+   <td colname="col2"> <p>Data Workbenchサーバーコンピューターに対して<span class="wintitle">リモートデスクトップ</span>セッションを開きます。 </p> <p>詳しくは、<a href="../../../home/c-get-started/c-admin-intrf/t-rmt-dsktp-opt.md#task-dc0bdb4630474a17af67b931bc22d9ef">リモートデスクトップオプション</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>サーバーファイル </p> </td> 
-   <td colname="col2"> <p>A link to the <span class="wintitle"> Server Files Manager </span>, which displays the directories and files in the Data Workbench server installation directory. </p> <p>詳しくは、サーバーファイルマネージ <a href="../../../home/c-get-started/c-admin-intrf/c-svr-files-mgr.md#concept-73a0808487c8424285ae7302f53bc5f4"> ャーを参照してくださ </a>い。 </p> </td> 
+   <td colname="col2"> <p><span class="wintitle"> Server Files Manager </span>へのリンク。Data Workbenchサーバーのインストールディレクトリ内のディレクトリとファイルが表示されます。 </p> <p>詳しくは、<a href="../../../home/c-get-started/c-admin-intrf/c-svr-files-mgr.md#concept-73a0808487c8424285ae7302f53bc5f4">サーバーファイルマネージャー</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>サーバーモニター </p> </td> 
-   <td colname="col2"> <p><span class="wintitle">サーバーモニター</span>インターフェイスへのリンク。このインターフェイスは、トラブルシューティングやパフォーマンスパラメーターの追跡に役立ちます。 </p> <p>詳しくは、「サーバーモニターイン <a href="../../../home/c-get-started/c-admin-intrf/c-svr-mtr-intfc.md#concept-3bea7441de20409585e63060d5489f45"> ターフェイス」を参照してくださ </a>い。 </p> </td> 
+   <td colname="col2"> <p><span class="wintitle">サーバーモニター</span>インターフェイスへのリンク。このインターフェイスは、トラブルシューティングやパフォーマンスパラメーターの追跡に役立ちます。 </p> <p>詳しくは、<a href="../../../home/c-get-started/c-admin-intrf/c-svr-mtr-intfc.md#concept-3bea7441de20409585e63060d5489f45">サーバーモニターインターフェイス</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>関連サーバー </p> </td> 
-   <td colname="col2"> <p>Data Workbenchサーバークラスターの場合のみ。 </p> <p>A menu that lists the common names of the computers listed in the master <span class="filepath"> Data Workbench server’s *.address </span> file. This list usually includes all of the processing <span class="keyword"> Data Workbench servers </span> in the cluster. This menu appears only if Data Workbench has a copy of the master <span class="filepath"> Data Workbench server’s *.address </span> file. </p> <p>「<span class="uicontrol">関連サーバー</span>」をクリックすると、次のどちらかをクリックできます。 
+   <td colname="col2"> <p>Data Workbenchサーバークラスター専用。 </p> <p>マスター<span class="filepath">Data Workbenchサーバーの*.address </span>ファイルに指定されているコンピューターの共通名をリストするメニュー。 このリストには、通常、クラスター内のすべての処理<span class="keyword">Data Workbenchサーバー</span>が含まれます。 このメニューは、Data Workbenchにマスター<span class="filepath">Data Workbenchサーバーの*.address </span>ファイルのコピーがある場合にのみ表示されます。 </p> <p>「<span class="uicontrol">関連サーバー</span>」をクリックすると、次のどちらかをクリックできます。 
      <ul id="ul_3B28B8579B1945FD80669EDFDFDA84A6"> 
       <li id="li_90094B46CB304C179136BB75FF0D6DBD"> <span class="uicontrol">サーバーモニターリスト</span>：すべての関連サーバーの詳細を一覧表示する<span class="wintitle">サーバーモニター</span>インターフェイスが表示されます。 </li> 
-      <li id="li_CD6FF5BB52874ABCB536C2DE2376587A">任意のData Workbenchサーバーの共通名。特定のサーバーに関する次のいずれかを開くためのコンテキストメニューが表示されます。 
+      <li id="li_CD6FF5BB52874ABCB536C2DE2376587A">任意のData Workbenchサーバーの共通名。コンテキストメニューが表示され、その特定のサーバーに関する次のいずれかを開くことができます。 
        <ul id="ul_928510D1DE68471583F2EE7547AEB824"> 
-        <li id="li_8399338137354A59B9B4D24AF7EEE868"> <span class="uicontrol">詳細なステータス</span>。See <a href="../../../home/c-get-started/c-admin-intrf/c-det-stat-interf.md"> The Detailed Status Interface </a>. </li> 
-        <li id="li_0FE569C56B3F4583BC1F3DF3B4F55765"> <span class="uicontrol">リモートデスクトップ</span>。See <a href="../../../home/c-get-started/c-admin-intrf/t-rmt-dsktp-opt.md#task-dc0bdb4630474a17af67b931bc22d9ef"> The Remote Desktop Option </a>. </li> 
-        <li id="li_2B6F8419CB5945C9B411F6A7C2C859FF"> <span class="uicontrol">サーバーファイルマネージャー</span>。サーバーフ <a href="../../../home/c-get-started/c-admin-intrf/c-svr-files-mgr.md#concept-73a0808487c8424285ae7302f53bc5f4"> ァイルマネージャーを参照してくだ </a>さい。 </li> 
-        <li id="li_F22F974EB4DE4F0F93623AE98C7DCEBC"> <span class="uicontrol">サーバーモニター</span>。See <a href="../../../home/c-get-started/c-admin-intrf/c-svr-mtr-intfc.md#concept-3bea7441de20409585e63060d5489f45"> The Server Monitor Interface </a>. </li> 
+        <li id="li_8399338137354A59B9B4D24AF7EEE868"> <span class="uicontrol">詳細なステータス</span>。<a href="../../../home/c-get-started/c-admin-intrf/c-det-stat-interf.md">詳細なステータスインターフェイス</a>を参照してください。 </li> 
+        <li id="li_0FE569C56B3F4583BC1F3DF3B4F55765"> <span class="uicontrol">リモートデスクトップ</span>。「<a href="../../../home/c-get-started/c-admin-intrf/t-rmt-dsktp-opt.md#task-dc0bdb4630474a17af67b931bc22d9ef">リモートデスクトップオプション</a>」を参照してください。 </li> 
+        <li id="li_2B6F8419CB5945C9B411F6A7C2C859FF"> <span class="uicontrol"> サーバーファイルマネージャー </span>. 「<a href="../../../home/c-get-started/c-admin-intrf/c-svr-files-mgr.md#concept-73a0808487c8424285ae7302f53bc5f4">サーバーファイルマネージャ</a>」を参照してください。 </li> 
+        <li id="li_F22F974EB4DE4F0F93623AE98C7DCEBC"> <span class="uicontrol">サーバーモニター</span>。「<a href="../../../home/c-get-started/c-admin-intrf/c-svr-mtr-intfc.md#concept-3bea7441de20409585e63060d5489f45">サーバーモニターインターフェイス</a>」を参照してください。 </li> 
        </ul> </li> 
      </ul> </p> </td> 
   </tr> 
@@ -104,7 +105,7 @@ The following tables describe the information provided when you right-click a no
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>製品         </p> </td> 
+   <td colname="col1"> <p>製品             </p> </td> 
    <td colname="col2"> <p>製品名、バージョン、ビルド番号。 </p> <p>例：Sensor 3.76; J3.67 </p> </td> 
   </tr> 
   <tr> 
@@ -121,11 +122,11 @@ The following tables describe the information provided when you right-click a no
   </tr> 
   <tr> 
    <td colname="col1"> <p>SSL </p> </td> 
-   <td colname="col2"> <p>Whether <span class="wintitle"> Sensor </span> and the Data Workbench server communicate using SSL. </p> </td> 
+   <td colname="col2"> <p><span class="wintitle">センサー</span>とData WorkbenchサーバーがSSLを使用して通信するかどうか。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>時間 </p> </td> 
-   <td colname="col2"> <p>時間 (HH:MM:SS) that the <span class="wintitle"> Sensor </span> last established a connection with the Data Workbench server. </p> </td> 
+   <td colname="col2"> <p>時間 (HH:MM:SS)<span class="wintitle"> Sensor </span>が最後にData Workbenchサーバーとの接続を確立しました。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
