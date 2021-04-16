@@ -1,28 +1,29 @@
 ---
 description: ページオーバーレイは Site アプリケーションでのみ設定できますが、他のアプリケーション用にも設定可能です。
-solution: Analytics
 title: ページオーバーレイの設定
-topic: Data workbench
 uuid: c4c612ed-5154-4b20-96ab-24b74fba19a2
+exl-id: 4e0dfce8-def2-49f3-93e8-41d82922fb88
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '857'
+ht-degree: 64%
 
 ---
 
-
-# Configure a page overlay{#configure-a-page-overlay}
+# ページオーバーレイの設定{#configure-a-page-overlay}
 
 ページオーバーレイは Site アプリケーションでのみ設定できますが、他のアプリケーション用にも設定可能です。
 
 別のアプリケーション用のページオーバーレイの設定については、Adobe Consulting Services にお問い合わせください。
 
-ページオーバーレイのビジュアライゼーションは、HTML リンク分析のためのツールです。特定のページのオーバーレイをリクエストすると、Data Workbenchは、Webブラウザーに表示される実際のページのスナップショットを取り、定義した正規表現のリストに従って、リンクを表すHTMLコードを解析します。 選択されたページ上のリンクごとに、data workbench は最初の一致が見つかるまでリストを下方向に探し、正規表現パターンの一致を見つけようと試みます。一致が見つかった場合、そのリンクはページオーバーレイでハイライト表示されます。
+ページオーバーレイのビジュアライゼーションは、HTML リンク分析のためのツールです。特定のページのオーバーレイをリクエストすると、Data WorkbenchはWebブラウザーに表示される実際のページのスナップショットを作成し、定義した正規式のリストに従って、リンクを表すHTMLコードを解析します。 選択されたページ上のリンクごとに、data workbench は最初の一致が見つかるまでリストを下方向に探し、正規表現パターンの一致を見つけようと試みます。一致が見つかった場合、そのリンクはページオーバーレイでハイライト表示されます。
 
 ページオーバーレイを含むワークスペースに色凡例を追加すると、ページオーバーレイにはデータのみが表示されます。
 
 >[!NOTE]
 >
->ページオーバーレイの設定は慎重に行う必要があり、リンクが不適切にデータにマッピングされている場合、誤った結果が生じる可能性があります。 特定のサイトのページオーバーレイの設定に伴う作業は、そのサイトのページの HTML コード内でリンクがどのように表されるかによって異なります。
+>ページオーバーレイの設定は慎重に行う必要があり、リンクが不適切にデータにマッピングされると誤った結果が生じる可能性があります。 特定のサイトのページオーバーレイの設定に伴う作業は、そのサイトのページの HTML コード内でリンクがどのように表されるかによって異なります。
 
 本来、ページオーバーレイは、「クリックする場所」を表示するメンタルモデルをユーザーに示します。ビジュアライゼーションの背後にあるデータがこのモデルに一致しない場合、混同が生じる可能性が高くなります。
 
@@ -30,27 +31,27 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->ページオーバーレイに対するページディメンションの使用はお勧めしません。 ユーザーは Page（ページ）ディメンションの要素名を変更できるので、その結果、ページオーバーレイ機能が依存するリンク構文も変更されます。
+>ページオーバーレイに対してページディメンションを使用することはお勧めしません。 ユーザーは Page（ページ）ディメンションの要素名を変更できるので、その結果、ページオーバーレイ機能が依存するリンク構文も変更されます。
 
 [!DNL Site] 用のページオーバーレイを設定するには、次の 2 つのファイルを編集する必要があります。
 
-* **[!DNL Page Overlay.vw]:**このファイルは、ページオーバーレイのビジュアライゼーションを作成するためのテンプレートファイルです。 ページオーバーレイを設定するプロファイル内に、少なくとも 1 つのテンプレートファイルが必要です。
-* **[!DNL Page Overlay Link Templates.cfg]:**ページオーバーレイビジュアライゼーションは、ページを読み込むと、ページ内のリンクとそのリンク先を自動的に識別します。 これらのリンクをデータ内の要素に関連付けるには、このファイルに一連の正規表現を定義する必要があります。
+* **[!DNL Page Overlay.vw]:** このファイルは、ページオーバーレイのビジュアライゼーションを作成するためのテンプレートファイルです。ページオーバーレイを設定するプロファイル内に、少なくとも 1 つのテンプレートファイルが必要です。
+* **[!DNL Page Overlay Link Templates.cfg]：ページオーバーレイビジュアライゼーションがページを読み込むと、ページ内のリンクとそのリンク先が自動的に識別されます。** これらのリンクをデータ内の要素に関連付けるには、このファイルに一連の正規表現を定義する必要があります。
 
-   ディメンションの要素と照合する複数の正規表現を定義できます。表現を定義する順序が重要です。特定のページのオーバーレイをリクエストすると、Data Workbenchは、Webブラウザーに表示される実際のページのスナップショットを取り、定義した正規表現のリストに従って、リンクを表すHTMLコードを解析します。 選択されたページ上のリンクごとに、data workbench は最初の一致が見つかるまでリストを下方向に探し、正規表現パターンの一致を見つけようと試みます。ディメンション要素に最初に一致した表現が使用されます。したがって、最も限定的な照合パターンを最初に、あまり限定的でない表現が後になるように、正規表現をリストする方法が最適です。一致が見つかった場合、そのリンクはページオーバーレイのビジュアライゼーションでハイライト表示されます。
+   ディメンションの要素と照合する複数の正規表現を定義できます。表現を定義する順序が重要です。特定のページのオーバーレイをリクエストすると、Data WorkbenchはWebブラウザーに表示される実際のページのスナップショットを作成し、定義した正規式のリストに従って、リンクを表すHTMLコードを解析します。 選択されたページ上のリンクごとに、data workbench は最初の一致が見つかるまでリストを下方向に探し、正規表現パターンの一致を見つけようと試みます。ディメンション要素に最初に一致した表現が使用されます。したがって、最も限定的な照合パターンを最初に、あまり限定的でない表現が後になるように、正規表現をリストする方法が最適です。一致が見つかった場合、そのリンクはページオーバーレイのビジュアライゼーションでハイライト表示されます。
 
 **Site** 用のページオーバーレイを設定するには
 
 1. I
 
-   で、// [!DNL Profile Manager]に移 **[!UICONTROL Context]** 動し **[!UICONTROL Dimension Element]** ます **[!UICONTROL URI]**。
+   [!DNL Profile Manager]で、**[!UICONTROL Context]** > **[!UICONTROL Dimension Element]** > **[!UICONTROL URI]**&#x200B;に移動します。
 
    >[!NOTE]
    >
-   >ディメンション要素ディレクトリには、ディメンション要素を右クリックすると表示されるコンテキストメニュー項目が含まれます。 例えば、URI テーブルを開いてから、URI 要素を選択します。URI を右クリックすると、ページオーバーレイが表示されます。
+   >Dimension要素ディレクトリには、ディメンション要素を右クリックしたときに表示されるコンテキストメニュー項目が含まれます。 例えば、URI テーブルを開いてから、URI 要素を選択します。URI を右クリックすると、ページオーバーレイが表示されます。
 
-1. In the URI folder, right-click the check mark next to the [!DNL Page Overlay.vw] file and click **[!UICONTROL Make Local]**. このファイル用のチェックマークが [!DNL User] 列に表示されます。
-1. 新しく作成されたチェックマークを右クリックし、/をクリ **[!UICONTROL Open]** ックしま **[!UICONTROL in Notepad]**&#x200B;す。
+1. URIフォルダーで、[!DNL Page Overlay.vw]ファイルの横のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 このファイル用のチェックマークが [!DNL User] 列に表示されます。
+1. 新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Notepad]**&#x200B;をクリックします。
 1. ドメイン（および必要に応じてブラウザーの高さ）を指定します。
 
    ```
@@ -74,18 +75,18 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    ```
 
 1. ファイルを保存します。
-1. To make this change available to all users of the working profile, in the [!DNL Profile Manager], right-click the check mark for the [!DNL .vw] file in the [!DNL User] column and click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
+1. この変更を作業プロファイルのすべてのユーザーが利用できるようにするには、[!DNL Profile Manager]で、[!DNL User]列の[!DNL .vw]ファイルのチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL working profile name]***&#x200B;をクリックします。
 
    >[!NOTE]
    >
-   >他のサイトやサブドメイン用の追加のテンプレートファイルを作成できます。 作成した各テンプレートがに表示されま [!DNL Page Overlay menu]す。
+   >他のサイトやサブドメイン用に、追加のテンプレートファイルを作成できます。 作成した各テンプレートは[!DNL Page Overlay menu]に表示されます。
 
-1. のContextフォルダで、ファ [!DNL Profile Manager]イルの横のチェックマークを右クリックし、を [!DNL Page Overlay Link Templates.cfg] クリックしま **[!UICONTROL Make Local]**&#x200B;す。
+1. [!DNL Profile Manager]のコンテキストフォルダーで、[!DNL Page Overlay Link Templates.cfg]ファイルの横のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。
 
    このファイル用のチェックマークが [!DNL User] 列に表示されます。
 
-1. 新しく作成されたチェックマークを右クリックし、/をクリ **[!UICONTROL Open]** ックしま **[!UICONTROL from the workbench]**&#x200B;す。
-1. 右クリックし、/ **[!UICONTROL Link Templates]** をクリ **[!UICONTROL Add new]** ックしま **[!UICONTROL Regular Expression]**&#x200B;す。
+1. 新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL from the workbench]**&#x200B;をクリックします。
+1. **[!UICONTROL Link Templates]**&#x200B;を右クリックし、**[!UICONTROL Add new]**/**[!UICONTROL Regular Expression]**&#x200B;をクリックします。
 1. 必要に応じて、LinkRegex ベクトルのパラメーターを編集します。
 
 <table id="table_24DD4BB5009542F7BB1DA3318E2E6E2B"> 
@@ -97,7 +98,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>Dimension </p> </td> 
+   <td colname="col1"> <p>ディメンション </p> </td> 
    <td colname="col2"> <p>リンクが表すディメンション（通常は次の URI ディメンション）。 </p> </td> 
   </tr> 
   <tr> 
@@ -115,6 +116,5 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 ![](assets/cfg_PageOverlayLinkTemplates_Example.png)
 
-1. To save the file, right-click **[!UICONTROL (modified)]** at the top of the window and click **[!UICONTROL Save]**.
-1. To make this change available to all users of the working profile, right-click the check mark for [!DNL Page Overlay Link Templates.cfg] in the [!DNL User] column and click **[!UICONTROL Save to]** > *&lt;**[!UICONTROL working profile name]**>*.
-
+1. ファイルを保存するには、ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
+1. この変更を作業プロファイルのすべてのユーザーが利用できるようにするには、[!DNL User]列の[!DNL Page Overlay Link Templates.cfg]のチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL working profile name]**>*&#x200B;をクリックします。
