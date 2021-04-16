@@ -1,14 +1,15 @@
 ---
 description: デフォルトでは、グラフのビジュアライゼーションにはバーが表示されますが、バーを折れ線として表示したり、折れ線をバーとして表示することもできます。
-solution: Analytics
 title: グラフ表示の変更
-topic: Data workbench
 uuid: 8448afab-a2b0-4f96-a0e5-920013e83905
+exl-id: b8d8d403-0432-42e1-8019-2d2d0a891e55
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 92%
 
 ---
-
 
 # グラフ表示の変更{#change-a-graph-display}
 
@@ -20,7 +21,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 **表示タイプを選択するには**
 
-グラフの下部にあるディメンションラベルを右クリックし、/ま **[!UICONTROL Display]** たは/ **[!UICONTROL Draw lines]** をクリ **[!UICONTROL Display]** ックしま **[!UICONTROL Draw bars]**&#x200B;す。 有効な表示モードの左側には X が表示されます。
+グラフの下部にあるディメンションラベルを右クリックし、**[!UICONTROL Display]** > **[!UICONTROL Draw lines]**&#x200B;または&#x200B;**[!UICONTROL Display]** > **[!UICONTROL Draw bars]**&#x200B;をクリックします。 有効な表示モードの左側には X が表示されます。
 
 ![](assets/mnu_Graph_Draw.png)
 
@@ -34,4 +35,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 * **左からの背景**：すべてのバーを左から右へのカラーグラデーションで表示します。
 * **右からの背景**：すべてのバーを右から左へのカラーグラデーションで表示します。
 * **円柱**：各バーをバーの中心からバーの端へのカラーグラデーションで表示します。
-
