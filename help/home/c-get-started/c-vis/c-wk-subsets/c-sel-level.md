@@ -1,14 +1,15 @@
 ---
 description: サブセットを作成するときには、レベルを指定する必要があります。
-solution: Analytics
 title: レベルの選択
-topic: Data workbench
 uuid: 18c2bee7-a70f-4510-978f-830b56780f47
+exl-id: 39d8407c-e2ec-4080-8918-26cafbf988df
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 100%
 
 ---
-
 
 # レベルの選択{#select-a-level}
 
@@ -27,4 +28,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 * **Day of Week=“Tue” by Visitor：**&#x200B;訪問者レベルでは、火曜日にサイトを訪問したすべての訪問者が表示されますが、同じ訪問者がそのサイトを訪問した別の日も表示されます。
 
    ![](assets/vis_Subset_byVisitor.png)
-
