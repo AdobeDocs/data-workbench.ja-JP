@@ -1,23 +1,21 @@
 ---
 description: ワークスペースファイルメニューで利用できるメニューオプションに関する情報です。
-solution: Analytics
 title: ' ワークスペースファイルメニュー'
-topic: Data workbench
 uuid: abbdb2db-d918-4edf-977c-1daaf8a71721
+exl-id: b2bb7d89-249c-40f5-85aa-02fea0b0fc61
 translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '518'
 ht-degree: 58%
 
 ---
-
 
 #  ワークスペースファイルメニュー{#workspace-file-menu}
 
 ワークスペースファイルメニューで利用できるメニューオプションに関する情報です。
 
-ワークスペースで「**[!UICONTROL ファイル]**」をクリックします。
+ワークスペースで、**[!UICONTROL File]**&#x200B;をクリックします。
 
 ![](assets/mnu_file.png)
 
@@ -43,11 +41,11 @@ ht-degree: 58%
 
 ワークスペースの作業ページサイズを設定します。「画面にフィット」、「標準」またはコンピューター画面、印刷ページおよびレポート用の特定のサイズを選択できます。「画面にフィット」を選択すると、ご使用の特定の画面にフィットします。「標準」は、お客様の会社の標準的な画面サイズに合わせることのできる設定です。デフォルトの「標準」設定では、1024 x 768 の解像度を使用する画面にフィットします。
 
-Workspaces that are copied, saved as [!DNL .png] files, or printed also use this page size for output. Data Workbenchのビジュアライゼーションよりも大きいページサイズではスクロールバーを使用しますが、小さいサイズは画面の中央に配置され、ワークスペースの周囲に明るいグレーの境界線が表示されます。
+ワークスペースをコピー、[!DNL .png]ファイルとして保存、または印刷した場合も、出力にこのページサイズが使用されます。 Data Workbenchのビジュアライゼーションよりも大きいページサイズではスクロールバーを使用しますが、小さいサイズは画面の中央に配置され、ワークスペースの周囲に明るいグレーの境界線が表示されます。
 
 **説明**
 
-ワークスペースのテキストの説明を作成したり編集したりできます。This text appears on the [!DNL Worktop] below the thumbnail. See [Adding a Description to a Workspace](../../../home/c-get-started/c-work-worksp/t-add-wksp-desc.md#task-163734487e8848dfa0a4d8da6323a963).
+ワークスペースのテキストの説明を作成したり編集したりできます。このテキストは、サムネールの下の[!DNL Worktop]に表示されます。 「[ワークスペースへの説明の追加](../../../home/c-get-started/c-work-worksp/t-add-wksp-desc.md#task-163734487e8848dfa0a4d8da6323a963)」を参照してください。
 
 **バックグラウンドで計算**
 
@@ -62,15 +60,15 @@ Workspaces that are copied, saved as [!DNL .png] files, or printed also use this
 
 **閉じる**
 
-ワークスペースを閉じます。Click **[!UICONTROL Close]** > **[!UICONTROL Save]** to save the changes you have made in the workspace, or click **[!UICONTROL Close]** > **[!UICONTROL Don’t Save]** to return to the [!DNL Worktop] without saving the changes you have made in the workspace.
+ワークスペースを閉じます。**[!UICONTROL Close]**/**[!UICONTROL Save]**&#x200B;をクリックしてワークスペースで行った変更を保存するか、**[!UICONTROL Close]**/**[!UICONTROL Don’t Save]**&#x200B;をクリックしてワークスペースで行った変更を保存せずに[!DNL Worktop]に戻ります。
 
-You also can save your changes, close the workspace, and return to the [!DNL Worktop] using any of the following methods:
+また、次のいずれかの方法を使用して、変更を保存し、ワークスペースを閉じて、[!DNL Worktop]に戻ることもできます。
 
 * ワークスペースの左上隅にあるData Workbenchロゴをクリックします。
 * マウスにナビゲーションボタンがある場合、マウスの「戻る」ボタンをクリックします。
 
-You also can void your changes by closing the workspace without saving by pressing **Ctrl+Backspace**.
+また、**Ctrl+Backspace**&#x200B;キーを押さずにワークスペースを閉じると、変更を無効にできます。
 
 **テンプレートからエクスポート**
 
-If Microsoft Excel is installed on the Data Workbench machine, automatically starts Microsoft Excel and exports the data from certain visualizations, certain legends, and text annotations to the template Excel file ( [!DNL .xls]or [!DNL .xlsx]) that you select. 詳しくは、「[テンプレート Excel ファイルにエクスポートする](../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302)」を参照してください。
+Microsoft ExcelがData Workbenchマシンにインストールされている場合は、Microsoft Excelを自動的に開始し、特定のビジュアライゼーション、特定の凡例、テキスト注釈のデータを、選択したテンプレートExcelファイル（[!DNL .xls]または[!DNL .xlsx]）にエクスポートします。 詳しくは、「[テンプレート Excel ファイルにエクスポートする](../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302)」を参照してください。
