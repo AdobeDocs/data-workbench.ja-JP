@@ -1,16 +1,15 @@
 ---
 description: 電子証明書に関する一般的な情報、および電子証明書をダウンロードしてインストールする手順について説明します。
-solution: Analytics
 title: 電子証明書のダウンロードとインストール
 uuid: ac484e96-21dc-4643-ae74-01ac957e30ee
-translation-type: ht
-source-git-commit: 34cdcfc83ae6bb620706db37228e200cff43ab2c
-workflow-type: ht
+exl-id: 8aae9b63-7df0-4725-9833-711246bbe746
+translation-type: tm+mt
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 100%
 
 ---
-
 
 # 電子証明書のダウンロードとインストール {#downloading-and-installing-the-digital-certificates}
 
@@ -86,4 +85,3 @@ ht-degree: 100%
 1. ダウンロードした証明書ファイルの名前を次の名前に変更します。
 
 [!DNL server_cert.pem]
-
