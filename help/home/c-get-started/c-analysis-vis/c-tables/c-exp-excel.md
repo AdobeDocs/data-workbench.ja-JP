@@ -1,16 +1,17 @@
 ---
 description: Microsoft Excel へのエクスポートに関する情報です。
-solution: Analytics
-title: Microsoft Excelにエクスポート
-topic: Data workbench
+title: Microsoft Excel へのエクスポート
 uuid: a54578b1-f468-41bf-b098-70eed305b496
+exl-id: 52f1f899-08aa-4850-a821-851b0acc1471
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '31'
+ht-degree: 100%
 
 ---
 
-
-# Microsoft Excelにエクスポート{#export-to-microsoft-excel}
+# Microsoft Excel へのエクスポート{#export-to-microsoft-excel}
 
 Microsoft Excel へのエクスポートに関する情報です。
 
