@@ -1,24 +1,24 @@
 ---
 description: プロセスマップからディメンションを保存する手順です。
-solution: Analytics
 title: プロセスマップからのディメンションの保存
-topic: Data workbench
 uuid: 9af8e5c5-9c20-47c5-8c30-221583b0b3c2
+exl-id: bd328918-1b5b-4c58-9d14-693f92e88c69
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '145'
+ht-degree: 46%
 
 ---
 
-
-# Save a dimension from a process map{#save-a-dimension-from-a-process-map}
+# プロセスマップからのディメンションの保存{#save-a-dimension-from-a-process-map}
 
 プロセスマップからディメンションを保存する手順です。
 
-1. 選択したノードを右クリックし、をクリックしま **[!UICONTROL Save Dimension]**&#x200B;す。 The [!DNL Save Dimension As] window appears. デフォルトの保存場所は、User\*profile name*\Dimensionsフォルダーです。
+1. 選択したノードを右クリックし、**[!UICONTROL Save Dimension]**&#x200B;をクリックします。 [!DNL Save Dimension As]ウィンドウが表示されます。 デフォルトの保存場所は、User\*プロファイル名*\Dimensionフォルダーです。
 
-   複数のノードに基づいて新しいディメンションを作成するには、Ctrl キーを押しながらクリックし、そのままドラッグして、選択する項目の周りを四角で囲みます。ボックスを右クリックし、をクリックしま **[!UICONTROL Collapse to a single node]**&#x200B;す。 Right-click the collapsed node and click **[!UICONTROL Save Dimension]**.
+   複数のノードに基づいて新しいディメンションを作成するには、Ctrl キーを押しながらクリックし、そのままドラッグして、選択する項目の周りを四角で囲みます。ボックスを右クリックし、**[!UICONTROL Collapse to a single node]**&#x200B;をクリックします。 折りたたまれたノードを右クリックし、**[!UICONTROL Save Dimension]**&#x200B;をクリックします。
 
-1. In the [!DNL File name] field, type a more descriptive name for the dimension and click **[!UICONTROL Save]**. これで、任意のディメンションリストからこのディメンションにアクセスできるようになります。
+1. 「[!DNL File name]」フィールドに、ディメンションのわかりやすい名前を入力し、「**[!UICONTROL Save]**」をクリックします。 これで、任意のディメンションリストからこのディメンションにアクセスできるようになります。
 
-   If you would like all users of a profile to use the dimensions that you save, you must upload them to the appropriate profile using the [!DNL Profile Manager]. See [Publishing Files to Your Working Profile](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9).
-
+   保存したサイズをプロファイルのすべてのユーザーが使用できるようにする場合は、[!DNL Profile Manager]を使用して、適切なプロファイルにアップロードする必要があります。 [作業プロファイルへのファイルの公開](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9)を参照してください。
