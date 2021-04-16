@@ -1,32 +1,33 @@
 ---
-description: 1つのレポートセットに対して複数のワークスペースをワークトップで直接作成できます。
-solution: Analytics
+description: ワークトップで、1つのレポートセットに対して複数のワークスペースを直接作成できます。
 title: レポートサーバーワークスペースの作成
-topic: Data workbench
 uuid: 818569c7-fff9-4277-996b-8c47e4ef1dbc
+exl-id: 2bc068f1-c32f-4c14-b3fa-6b46e950abc7
 translation-type: tm+mt
-source-git-commit: 2e4991206394ca0c463210990ea44dfb700341a5
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '187'
+ht-degree: 10%
 
 ---
 
-
 # レポートサーバーワークスペースの作成{#create-the-report-server-workspaces}
 
-1つのレポートセットに対して複数のワークスペースをワークトップで直接作成できます。
+ワークトップで、1つのレポートセットに対して複数のワークスペースを直接作成できます。
 
-Data Workbenchとインターフェイスの使用について詳しくは、『 [Data Workbenchクライアントガイド』を参照してください](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html)。
+Data Workbenchとそのインターフェイスの使用について詳しくは、『[Data Workbenchクライアントガイド](https://docs.adobe.com/content/help/ja-JP/data-workbench/using/client/t-open-ins.html)』を参照してください。
 
 **レポートワークスペースを作成するには、[!DNL Worktop]**
 
-1. Data Workbenchのタブで、新し [!DNL Reports] いレポートを追加するレポートセットフォルダー（タブまたはドロップダウンサブディレクトリ）を選択します。
-1. 次のいずれかの方法を使用して、レポートワークスペースを追加します。
+1. Data Workbenchの「[!DNL Reports]」タブで、新しいレポートを追加するレポートセットフォルダー（タブまたはドロップダウンサブディレクトリ）を選択します。
+1. 次のい追加ずれかの方法を使用したレポートワークスペース：
 
-   * 目的のレポートセットサブディレクトリ内で右クリックし、/ま **[!UICONTROL New]** たは/ **[!UICONTROL Blank Workspace]** をクリ **[!UICONTROL New]** ックしま **[!UICONTROL Report Template]**&#x200B;す。
+   * 目的のレポートセットサブディレクトリ内で右クリックし、**[!UICONTROL New]**/**[!UICONTROL Blank Workspace]**&#x200B;または&#x200B;**[!UICONTROL New]**/**[!UICONTROL Report Template]**&#x200B;をクリックします。
 
-      - または -
+      -or-
 
-   * 別の場所からワークスペースをコピーし、タブ上の適切なレポートセットフォルダーに貼り付 [!DNL Reports] けます。
+   * ワークスペースを別の場所からコピーし、「[!DNL Reports]」タブの適切なレポートセットフォルダーに貼り付けます。
 
 1. サムネールをクリックしてワークスペースを開き、目的のビジュアライゼーション、凡例および注釈をレポートに追加します。
 1. レポートに名前を付けるには、レポートのタイトルバーのテキストをクリックして編集モードに入り、新しいタイトルを入力します。
-1. レポートを保存するには、レポートのタイトルバーを右クリックし、をクリックしま **[!UICONTROL Save]**&#x200B;す。
+1. レポートを保存するには、レポートのタイトルバーを右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
