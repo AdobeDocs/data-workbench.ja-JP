@@ -1,20 +1,21 @@
 ---
 description: フィルターエディターは、フィルターを作成および編集するための特殊なビジュアライゼーションです。
-solution: Analytics
 title: フィルターエディター
-topic: Data workbench
 uuid: c4e99e44-1927-4131-92e9-111c76bdc3e2
+exl-id: 9009c760-8726-4234-b85b-727aeae761bd
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '275'
+ht-degree: 76%
 
 ---
 
-
-# Filter editors{#filter-editors}
+# フィルターエディター{#filter-editors}
 
 フィルターエディターは、フィルターを作成および編集するための特殊なビジュアライゼーションです。
 
-Data Workbenchの他のビジュアライゼーションではデータセットのデータを表示しますが、フィルターエディターを使用して、ビジュアライゼーションに表示するデータの一部またはサブセットを指定できます。
+Data Workbench内の他のビジュアライゼーションではデータセットのデータを表示できますが、フィルターエディターを使用して、ビジュアライゼーションに表示するデータの一部またはサブセットを指定できます。
 
 ![](assets/filter_edit_toolbar.png)**フィルターを保存ボタン。**&#x200B;詳細テーブル、ビジュアライゼーション、フィルターなどのアイテムをワークスペース内で選択すると、**フィルターを保存**&#x200B;ボタンがツールバーに表示され、選択したアイテムに対してフィルターを作成できます。フィルターを保存アイコンをクリックすると、名前を入力するためのオプションが表示されます。その後、このフィルターをプロファイルに保存できます。
 
@@ -22,9 +23,8 @@ Data Workbenchの他のビジュアライゼーションではデータセット
 
 ![](assets/vis_FilterEditor_Blank.png)
 
-In addition, you can use the filter editor to open and edit any [!DNL .filter] file.
+さらに、フィルタエディタを使用して[!DNL .filter]ファイルを開き、編集することもできます。
 
 >[!NOTE]
 >
->初めてフィルターを開くと、フィルターエディターはフィルターの定義をフィルターエディターの形式に合わせて更新します。
-
+>初めてフィルターを開くと、フィルターエディターの形式に合わせてフィルターの定義が更新されます。
