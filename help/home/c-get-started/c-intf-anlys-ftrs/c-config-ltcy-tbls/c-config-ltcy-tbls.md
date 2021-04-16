@@ -1,19 +1,20 @@
 ---
 description: 待ち時間テーブルは、待ち時間ディメンションを含むテーブルです。待ち時間ディメンションは一種の派生ディメンションで、特定のイベントの発生から経過した時間を測定します。
-solution: Analytics
 title: 待ち時間テーブルの設定
-topic: Data workbench
 uuid: fe2de2b8-b10f-403b-8d2e-b29042541df7
+exl-id: 0fb5a772-4c84-491b-a188-6293e83a0251
 translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+workflow-type: tm+mt
+source-wordcount: '151'
+ht-degree: 73%
 
 ---
-
 
 # 待ち時間テーブルの設定{#configure-a-latency-table}
 
 待ち時間テーブルは、待ち時間ディメンションを含むテーブルです。待ち時間ディメンションは一種の派生ディメンションで、特定のイベントの発生から経過した時間を測定します。
 
-You define the event for measuring latency by making selections within one or more visualizations and setting those selections as the event using the [!DNL Set Event menu] option within the latency table. For instructions to create and reuse latency tables, see [Latency Tables](../../../../home/c-get-started/c-analysis-vis/c-lat-tbls.md#concept-7c7339e257ff4727afdda8e692bbba44).
+待ち時間の測定イベントを定義するには、1つ以上のビジュアライゼーション内に選択範囲を作成し、待ち時間テーブル内の[!DNL Set Event menu]オプションを使用してそれらの選択範囲をイベントとして設定します。 待ち時間テーブルを作成して再利用する手順については、[待ち時間テーブル](../../../../home/c-get-started/c-analysis-vis/c-lat-tbls.md#concept-7c7339e257ff4727afdda8e692bbba44)を参照してください。
 
 デフォルトでは、待ち時間テーブルには、イベントの前または後 7 日間に発生した訪問者のセッション数に関する情報が表示されます。以下の節の説明を参照して、様々な可算ディメンションと時間ディメンションに関する情報を表示するように、待ち時間テーブルを設定できます。
