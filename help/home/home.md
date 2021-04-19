@@ -1,14 +1,14 @@
 ---
 description: Data Workbenchドキュメント
 title: Data Workbench ヘルプ
-topic: Reports & Analytics
+feature: Reports & Analyticsの基本事項
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
 translation-type: tm+mt
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 3223733866e82b4ce439ee55fe96fed89a02c5c4
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
