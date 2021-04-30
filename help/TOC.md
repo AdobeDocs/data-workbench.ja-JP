@@ -5,7 +5,7 @@ audience: end-user
 feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Data Workbench ヘルプ
-user-guide-description: Data Workbench のマルチチャネル機能について学びます。Data Workbench クライアント、インストール、データセット設定ガイドなどが含まれます。
+user-guide-description: Data Workbench のマルチチャネル機能について学びます。Data Workbench クライアント、インストール、データセット設定に関するガイドなどが含まれます。
 translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
