@@ -3,7 +3,6 @@ description: PullNameValues 変換は、cs-uri-query フィールドに含まれ
 title: PullNameValues
 uuid: b24db987-78e8-4afc-9113-89aedc0170b2
 exl-id: 3660ff6e-87dc-42cf-a897-0e2e0e021c07
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '232'
@@ -29,7 +28,7 @@ PullNameValues 変換は、cs-uri-query フィールドに含まれる値を受�
 
 ![](assets/cfg_TransformationType_PullNameValues.png)
 
-上述の変換を使用した場合、cs-uri-stemフィールドが[!DNL /search.php]ページと一致し、cs-uri-クエリに次の内容が含まれているとします。
+上記の変換を使用して、cs-uri-stemフィールドが[!DNL /search.php]ページと一致し、cs-uri-queryに次の値が含まれている場合：
 
 * Searchfor=Bob&amp;State=Virginia&amp;isMale=true
 
