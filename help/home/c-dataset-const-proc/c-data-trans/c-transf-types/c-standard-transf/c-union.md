@@ -3,7 +3,6 @@ description: Union 変換は、一連の入力を受け取り、出力として�
 title: Union
 uuid: 2f8bd332-727e-4a4e-a3e7-a52ea2b0a33a
 exl-id: 841b5133-d587-409c-b39e-47169beb2ddf
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '262'
@@ -11,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Union{#union}
+# 和集合{#union}
 
 Union 変換は、一連の入力を受け取り、出力として文字列ベクトルを作成します。
 
