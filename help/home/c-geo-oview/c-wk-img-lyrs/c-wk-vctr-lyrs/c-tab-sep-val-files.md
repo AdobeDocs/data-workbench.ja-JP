@@ -3,7 +3,6 @@ description: タブ区切り値（.tsv）ファイルを参照するベクトル
 title: タブ区切り値ファイルを参照するベクターレイヤー
 uuid: 42607b34-e9f2-420a-ba5a-05562598b480
 exl-id: be16ba73-4a98-472b-98f1-1b32e671b763,7b0b0286-072b-4b31-b6ec-ced322da5236
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '352'
@@ -15,15 +14,15 @@ ht-degree: 63%
 
 タブ区切り値（.tsv）ファイルを参照するベクトルレイヤーを作成すると、描画手順および経度と緯度のデータを .tsv ファイルから取得することによってベクトルデータが得られます。
 
-[!DNL .tsv]ファイルを参照するベクトルレイヤーを定義するには、次のファイルが必要です。
+[!DNL .tsv]ファイルを参照するベクトルレイヤーを定義するには、次の条件を満たす必要があります。
 
-* **経度と緯度のデータなど、グローブ上にベクトルを描くために使用するデータを含む [!DNL .tsv]** ファイルです。[!DNL .tsv]ファイルに必要な形式について詳しくは、[ベクトルTSVファイルの形式](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-a29012c9ff4444ac8a6d41c68482828e)を参照してください。
+* **経度と [!DNL .tsv]** 緯度のデータを含む、グローブ上にベクトルを描くためのデータを含むファイル。[!DNL .tsv]ファイルに必要な形式について詳しくは、 [Vector TSV File Format](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-a29012c9ff4444ac8a6d41c68482828e)を参照してください。
 
-* **フ** ァイルの場所を指定するレイヤー [!DNL .tsv] ファイル。レイヤーファイルの必要な形式について詳しくは、「[ベクトルレイヤーファイルの形式](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-c430923f341f4c93852e9f24b61e82bf)」を参照してください。
+* **ファイル** の場所を指定するレイヤーフ [!DNL .tsv] ァイル。レイヤーファイルの必要な形式について詳しくは、「[ベクトルレイヤーファイルの形式](../../../../home/c-geo-oview/c-wk-img-lyrs/c-wk-vctr-lyrs/c-tab-sep-val-files.md#section-c430923f341f4c93852e9f24b61e82bf)」を参照してください。
 
 ## ベクトルTSVファイル形式{#section-a29012c9ff4444ac8a6d41c68482828e}
 
-[!DNL .tsv]ファイルには、次の3つのタブ区切り列を含める必要があります。
+[!DNL .tsv]ファイルには、次の3つのタブ区切りの列が含まれている必要があります。
 
 * **[!DNL Begin]:** この列は、新しい行を開始するかどうかを示す必要があります。この列の値は、0（新しい行を開始しない）か 1（新しい行を開始する）です。
 * **[!DNL Longitude]:** この列には経度の値を含める必要があります。
@@ -33,7 +32,7 @@ ht-degree: 63%
 >
 >その他の列は無視されます。
 
-次に、ベクトルレイヤーのデータを含むサンプル[!DNL .tsv]ファイルを示します。
+ベクトルレイヤーのデータを含むサンプルの[!DNL .tsv]ファイルを次に示します。
 
 ![](assets/tsv_vectorlayer.png)
 
