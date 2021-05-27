@@ -3,7 +3,6 @@ description: プロファイルコンポーネントの設定を編集する手�
 title: プロファイルコンポーネントの編集
 uuid: e71adfae-afaa-4cd4-b7c5-a71e6a1b5459
 exl-id: 6a4d9e0f-1536-4d39-a27d-5b6805c19c8e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '180'
@@ -27,5 +26,5 @@ ht-degree: 74%
 
    データセットコンポーネントのパラメーターの詳細については、『*データセット設定ガイド*』を参照してください。
 
-1. ファイルをローカルに保存するには、ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;または&#x200B;**[!UICONTROL (New)]**&#x200B;を右クリックし、**[!UICONTROL Save]**をクリックします。
+1. ファイルをローカルに保存するには、ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;または&#x200B;**[!UICONTROL (New)]**&#x200B;を右クリックし、「**[!UICONTROL Save]**」をクリックします。
 変更を有効にするには、[!DNL Profile Manager]を使用してファイルをサーバーに保存します。 [作業プロファイルへのファイルの公開](../../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9)を参照してください。
