@@ -3,7 +3,6 @@ description: 2D プロセスマップには、マップ上のノードへのア�
 title: 指標の数量の表示
 uuid: ec336af1-ff5b-4c0a-86a5-8186d76cdf07
 exl-id: fbe40dfa-0597-4d78-8673-4e9b63581c47
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '161'
@@ -27,7 +26,7 @@ ht-degree: 89%
 
 **数量の表示方法を選択するには**
 
-1. ノードを右クリックし、**[!UICONTROL Options]**/**[!UICONTROL Quantify Links]**&#x200B;をクリックします。
+1. ノードを右クリックし、**[!UICONTROL Options]** > **[!UICONTROL Quantify Links]**&#x200B;をクリックします。
 1. **[!UICONTROL Percentage]**、**[!UICONTROL Absolute Value]**、または&#x200B;**[!UICONTROL Off]**&#x200B;をクリックします。
 
    ![](assets/mnu_2DProcessMap_quantifyLinks.png)
