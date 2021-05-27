@@ -3,7 +3,6 @@ description: Data Workbench 6.0.4 で導入された新機能、バグの修正�
 title: Data Workbench 6.0 のリリースノート
 uuid: b348425e-3304-4db7-a280-479a34452bdb
 exl-id: be69b3be-24e7-4a8c-9dc8-1360a9b6fb3a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1679'
@@ -26,7 +25,7 @@ Data Workbench（Insight 6.0）には、追加されたレポート機能と予�
 | [相関分析](../../../home/c-get-started/c-analysis-vis/c-correlation-analysis/c-correlation-analysis.md#concept-a7c8766b40be43aaa4084612689b630c) | 相関分析を使用すると、関連するデータの関係をすばやく特定して、分析を拡張および強化できます。 |
 | [更新された DeviceAtlas の配布](../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md#concept-28b7bd5c0d854e73834261c431bed1e0) | DeviceAtlas JSON ファイルは、DeviceAtlas.dll と DeviceAtlas64.dll と共に .bundle ファイル（.tar.gz に名前が変更）で配布されます。 |
 
-## クライアントのアップグレード要件  {#section-f316103b48374b6eac77e8feb5c47ecf}
+## クライアントのアップグレード要件 {#section-f316103b48374b6eac77e8feb5c47ecf}
 
 Data Workbench（Insight 6.0）のクライアント機能のために、次のアップグレードタスクを実行します。
 
@@ -52,7 +51,7 @@ Data Workbench では、現在、補助的なテキスト入力プロセスと�
    ```
 
 1. Insight クライアントを再起動します。
-1. ソフトウェアおよびドキュメントプロファイル(SoftDocsプロファイル)に移動し、必要な&#x200B;**[!UICONTROL Insight.zbin]**&#x200B;ファイルをダウンロードします。[!DNL Software\Insight Client\v6.00\Insight_6.00.zip]
+1. ソフトウェアおよびドキュメントプロファイル（SoftDocsプロファイル）に移動し、必要な&#x200B;**[!UICONTROL Insight.zbin]**&#x200B;ファイルをダウンロードします。[!DNL Software\Insight Client\v6.00\Insight_6.00.zip]
 
 1. Insight.exe ファイルと同じフォルダーに Insight.zbin ファイルをコピーします。
 1. Insight クライアントが Insight Server から更新されるように、Insight.cfg ファイル引数を true に変更します。
@@ -93,7 +92,7 @@ Insight 6.0 のサーバー機能のために、次のアップグレードタ�
 
 ## サーバークラスターのアップグレード
 
-**言語ファイル（.zbin ファイル）を準備します。** Insightの管理者は、必要な言語の `<language>.zbin` ファイルを選択します(例：en-us.zbin 、zh-cn.zbin)が `/localization/<language>.zbin` フォルダー内にあります。次に、言語ファイルをコピーし、名前を「insight.zbin」に変更します。
+**言語ファイル（.zbin ファイル）を準備します。** Insight管理者は、必要な言 `<language>.zbin` 語のファイル(例：en-us.zbin 、 zh-cn.zbin)は、フォルダー内にあり `/localization/<language>.zbin` ます。次に、言語ファイルをコピーし、名前を「insight.zbin」に変更します。
 
 言語ファイル（.zbin）の準備ができたら、Insight Client と Report Server の両方を更新する必要があります。Insight Client は、[クライアントのアップグレード処理](../../../home/c-release-notes-insight/release-notes.md)中に更新されますが、Report Server は、ほとんどの場合、Insight の管理者が更新します。
 
@@ -123,7 +122,7 @@ Report Server の言語ファイルを更新します。
 
    >[!NOTE]
    >
-   >ロケールを指定しない場合、Report Serverは、insight.zbinファイルで選択された言語をデフォルトにします。
+   >ロケールが指定されていない場合、Report Serverはinsight.zbinファイルで選択された言語をデフォルトにします。
 
    次の手順に従って、Locale パラメーターを使用して、ReportServer をサービスとして開始します。
 
@@ -229,7 +228,7 @@ YYYYMMDD-RSID_HH0000.tsv.gz
 
 >[!NOTE]
 >
->この変更は、SiteCatalystデータフィードの&#x200B;*wbench/ecom*&#x200B;バージョンを使用して現在デプロイされているユーザーには影響しません。
+>この変更は、SiteCatalystデータフィードの&#x200B;*wbench/ecom*&#x200B;バージョンで現在デプロイされているユーザーには影響しません。
 
 ファイル名の形式の変更は、ログ処理中の Insight の開始時刻と終了時刻の宣言をフルに使用できるようにするためのものです。これにより、処理中に、1 行ずつ検索してすべてのソースファイルをフィルターせずに、ファイルの内容を読み込む必要があるかどうかを評価できます。
 
@@ -253,7 +252,7 @@ YYYYMMDD-RSID_HH0000.tsv.gz
 
 ## 修正点 {#section-203f917dd6224114a1f801309c4c2cee}
 
-* 現在は、変更を保存せずにワークスペースを離れるためのキーの組み合わせが&#x200B;**[!UICONTROL `<Ctrl>`+`<Backspace>`]**&#x200B;に更新されました。 以前は、変更を無効にし、ワークスペースを閉じるには、`<Ctrl>` + `<Delete>`を押しました。
+* 現在は、変更を保存せずにワークスペースを終了するためのキーの組み合わせが&#x200B;**[!UICONTROL `<Ctrl>`+`<Backspace>`]**&#x200B;に更新されています。 以前は、変更を無効にし、`<Ctrl>` + `<Delete>`を押してワークスペースを閉じていました。
 
 ## Data Workbench 6.0.4 のリリースノート{#data-workbench-release-notes}
 
@@ -308,13 +307,13 @@ Log Source ID = string: <Name your ID Here>
 
 **FSU リソースを委任する機能**
 
-[!DNL Profiles/`<profilename>`/dataset/Cluster.cfg]で、正規化サーバーとソースリストサーバーに個別のファイルサーバーユニット(FSU)を指定できるようになりました。 これらのサービスがマスター FSU に関連付けられることはなくなりました。
+[!DNL Profiles/`<profilename>`/dataset/Cluster.cfg]で、正規化リストサーバーとソースリストサーバーに別々のファイルサーバーユニット(FSU)を指定できるようになりました。 これらのサービスがマスター FSU に関連付けられることはなくなりました。
 
 >[!NOTE]
 >
 >リストサーバーが指定されていない場合、リストサーバーは正規化サーバーの構成設定を継承します。
 
-[!DNL cluster.cfg]ファイル内の例。
+[!DNL cluster.cfg]ファイルの例。
 
 ```
 Cluster = ClusterConfig: 
