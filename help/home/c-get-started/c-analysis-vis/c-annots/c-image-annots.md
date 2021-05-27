@@ -3,7 +3,6 @@ description: 画像注釈を使用して、任意のソースから画像をコ�
 title: 画像注釈
 uuid: 62a655f6-120b-4cf4-adaa-aa04f721a7dc
 exl-id: 905d3e9e-0d24-456e-af45-c29f12ed986d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '202'
@@ -17,9 +16,9 @@ ht-degree: 48%
 
 その後、サイズを変更したり、カラースキームを反転させたり、画像を暗くしたりできます。
 
-## 追加画像{#section-bcb71217e75f4135a90a222b27479c9a}
+## 画像{#section-bcb71217e75f4135a90a222b27479c9a}の追加
 
-1. 画像を右クリックし、**[!UICONTROL Copy]**&#x200B;をクリックして、画像をクリップボードにコピーします。
+1. 画像を右クリックし、「**[!UICONTROL Copy]**」をクリックして、画像をクリップボードにコピーします。
 1. 画像注釈内で右クリックし、「**[!UICONTROL Paste Image]**」をクリックします。
 
 ![](assets/mnu_Image_Paste.png)
@@ -32,7 +31,7 @@ ht-degree: 48%
 
 * クリックしながら注釈の枠または角をドラッグします。
 
-## 画像を反転{#section-6248ca0f729f4397ac200fae0eef9d9a}
+## 画像の反転{#section-6248ca0f729f4397ac200fae0eef9d9a}
 
 * 注釈内で右クリックし、**[!UICONTROL Display Mode]** > **[!UICONTROL Invert (white to black)]**&#x200B;または&#x200B;**[!UICONTROL Display Mode]** > **[!UICONTROL Invert (black to white)]**&#x200B;をクリックします。
 
@@ -42,7 +41,7 @@ ht-degree: 48%
 
 ## 元の表示モードに戻る{#section-044fad7278bd4947b463deca1b94acfd}
 
-* 注釈内で右クリックし、**[!UICONTROL Display Mode]**/**[!UICONTROL Original]**&#x200B;をクリックします。
+* 注釈内で右クリックし、**[!UICONTROL Display Mode]** > **[!UICONTROL Original]**&#x200B;をクリックします。
 
 ## ウィンドウに合わせる{#section-904eb9aed20947749bc35525efeb4bda}
 
@@ -50,4 +49,4 @@ ht-degree: 48%
 
 [!DNL Fit to Window]オプションを選択すると、画像サイズに合わせて注釈が自動的に拡大または縮小されます。 [!DNL Fit to Window]オプションはデフォルトで有効になっています。
 
-* 注釈内で右クリックし、**[!UICONTROL Fit to Window]**&#x200B;をクリックします。 有効にすると、[!DNL Fit to Window]の左側にXが表示されます。
+* 注釈内で右クリックし、「**[!UICONTROL Fit to Window]**」をクリックします。 有効にすると、[!DNL Fit to Window]の左側にXが表示されます。
