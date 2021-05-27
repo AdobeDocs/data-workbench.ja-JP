@@ -3,7 +3,6 @@ description: 2 次元（2D）グラフには、2 つのディメンションに�
 title: 2D グラフ
 uuid: f8860fff-4614-4b1a-b217-760bf4d48f20
 exl-id: 9767124b-8507-4b25-842b-8e2729e57461
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '137'
