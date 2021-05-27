@@ -3,7 +3,6 @@ description: 詳細テーブルを使用すると、他のビジュアライゼ�
 title: 詳細テーブル
 uuid: 2becff5e-c78d-4ac7-8cda-814ad0193efd
 exl-id: d7f0b768-f341-41e8-904b-ec98a25f7aa9
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '498'
@@ -54,41 +53,41 @@ Web サイトデータを扱っていて、特定の都市または特定のド�
 
 上述の詳細を表示するには、以下の手順を実行する必要があります。
 
-1. 詳細テーブル内で右クリックし、**[!UICONTROL Add Level]**/**[!UICONTROL Visitor]**&#x200B;をクリックします。
-1. 詳細テーブル内で右クリックし、**[!UICONTROL Add Level]**/**[!UICONTROL Page View]**&#x200B;をクリックします。
-1. **[!UICONTROL Visitors]**&#x200B;レベルの見出しを右クリックし、**[!UICONTROL Add Attribute]**/**[!UICONTROL Geography]**/**[!UICONTROL Domain]**&#x200B;をクリックします。
-1. 訪問者レベルの見出し内で右クリックし、**[!UICONTROL Add Attribute]**/**[!UICONTROL Geography]**/**[!UICONTROL City]**&#x200B;をクリックします。
-1. 訪問者レベルの見出し内で右クリックし、**[!UICONTROL Add Metric]**/**[!UICONTROL Page Views]**&#x200B;をクリックします。
-1. ページ表示レベルの見出し内で右クリックし、**[!UICONTROL Add Attribute]**/**[!UICONTROL Page]**/**[!UICONTROL Page]**&#x200B;をクリックします。
+1. 詳細テーブル内で右クリックし、 **[!UICONTROL Add Level]** > **[!UICONTROL Visitor]**&#x200B;をクリックします。
+1. 詳細テーブル内で右クリックし、 **[!UICONTROL Add Level]** > **[!UICONTROL Page View]**&#x200B;をクリックします。
+1. **[!UICONTROL Visitors]**&#x200B;レベルの見出しを右クリックし、**[!UICONTROL Add Attribute]** / **[!UICONTROL Geography]** / **[!UICONTROL Domain]**&#x200B;をクリックします。
+1. 訪問者レベルの見出し内で右クリックし、 **[!UICONTROL Add Attribute]** / **[!UICONTROL Geography]** / **[!UICONTROL City]**&#x200B;をクリックします。
+1. 訪問者レベルの見出し内で右クリックし、**[!UICONTROL Add Metric]** / **[!UICONTROL Page Views]**&#x200B;をクリックします。
+1. ページビュー数レベルの見出し内で右クリックし、 **[!UICONTROL Add Attribute]** / **[!UICONTROL Page]** / **[!UICONTROL Page]**&#x200B;をクリックします。
 
 次のワークスペースの例は、指定した期間中のサイトへの訪問者をランダムサンプリングした 6 人の訪問者に関連する詳細を示しています。
 
 ![](assets/client-tab1.png)
 
-## 追加レベル{#section-f948d3361fd84906ac4d9ebce520bfd0}
+## レベル{#section-f948d3361fd84906ac4d9ebce520bfd0}を追加します。
 
-* 詳細テーブル内で右クリックし、**[!UICONTROL Add Level]** > *&lt;**[!UICONTROL dimension name]**>*&#x200B;をクリックします。
+* 詳細テーブル内で右クリックし、 **[!UICONTROL Add Level]** > *&lt;**[!UICONTROL dimension name]**>*&#x200B;をクリックします。
 
 ![](assets/mnu_DetailsTable_AddLevel.png)
 
-## レベル{#section-a8c820e0b656451e98e5ea75373edefc}を削除
+## レベル{#section-a8c820e0b656451e98e5ea75373edefc}を削除します。
 
-* 既存のレベルの見出しを右クリックし、**[!UICONTROL Remove Level]**/*&lt;**[!UICONTROL dimension name]**>*&#x200B;をクリックします。
+* 既存のレベル見出しを右クリックし、**[!UICONTROL Remove Level]** > *&lt;**[!UICONTROL dimension name]**>*&#x200B;をクリックします。
 
 ![](assets/mnu_DetailsTable_Level.png)
 
-## 追加属性と指標{#section-cdda2df3c9a448d5b9770686c8b8efb3}
+## 属性と指標の追加{#section-cdda2df3c9a448d5b9770686c8b8efb3}
 
-* 属性または指標の見出しを右クリックし、**[!UICONTROL Add Attribute]**/*&lt;**[!UICONTROL attribute name]**>*&#x200B;または&#x200B;**[!UICONTROL Add Metric]**/***[!UICONTROL metric name]**>*&#x200B;をクリックします。
+* 属性または指標の見出しを右クリックし、**[!UICONTROL Add Attribute]** > *&lt;**[!UICONTROL attribute name]***&#x200B;または&#x200B;**[!UICONTROL Add Metric]** > *&lt;**[!UICONTROL metric name]***&#x200B;をクリックします。
 
 ![](assets/mnu_DetailsTable.png)
 
 ## 属性と指標を削除{#section-4002ac957a2846678f9940270987d651}
 
-* 削除する列を右クリックし、**[!UICONTROL Remove Attribute]** > *&lt;**[!UICONTROL attribute name]**>*&#x200B;または&#x200B;**[!UICONTROL Remove Metric]** > ***[!UICONTROL metric name]**>*&#x200B;をクリックします。
+* 削除する列を右クリックし、 **[!UICONTROL Remove Attribute]** > *&lt;**[!UICONTROL attribute name]***&#x200B;または&#x200B;**[!UICONTROL Remove Metric]** > *&lt;**[!UICONTROL metric name]**>*&#x200B;をクリックします。
 
 ![](assets/mnu_DetailsTable.png)
 
 ## Microsoft Excel へのエクスポート {#section-a9eaba63c88a4598836a34669ba8cac1}
 
-ウィンドウのエクスポートについては、「[ウィンドウデータのエクスポート](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)」を参照してください。
+ウィンドウのエクスポートについては、[ウィンドウデータのエクスポート](../../../home/c-get-started/c-wk-win-wksp/c-exp-win-data.md#concept-8df61d64ed434cc5a499023c44197349)を参照してください。
