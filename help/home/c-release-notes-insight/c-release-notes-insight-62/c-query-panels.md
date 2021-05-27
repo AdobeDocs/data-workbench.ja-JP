@@ -2,7 +2,6 @@
 description: Data Workbench のファインダーパネルを使用して、指標、ディメンションおよびフィルターを選択できます。これらのパネルは、検索をサポートしており、並べ替えオプションとドラッグ＆ドロップ機能を備えています。
 title: ファインダー
 uuid: 7a4144f5-133f-48ed-9613-1e42b1313120
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '640'
@@ -38,11 +37,11 @@ Data Workbench のファインダーパネルを使用して、指標、ディ�
 
 **ファインダーを開くには：**
 
-* ワークスペース内で右クリックし、**[!UICONTROL Tools]**/**[!UICONTROL Finder]**&#x200B;を選択します。
+* ワークスペース内で右クリックし、**[!UICONTROL Tools]** > **[!UICONTROL Finder]**&#x200B;を選択します。
 
    「指標」、「ディメンション」および「フィルター」のタブを含むファインダーペインがワークスペース内に開きます。
 
-* 左側のサイドバーを右クリックし、**[!UICONTROL Add]**/**[!UICONTROL Finder]**&#x200B;を選択します。
+* 左側のサイドバーを右クリックし、**[!UICONTROL Add]** > **[!UICONTROL Finder]**&#x200B;を選択します。
 
    ファインダーペインが左側のパネルに開きます。
 
