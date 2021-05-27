@@ -3,7 +3,6 @@ description: ChangeCase 変換は、Action パラメーターの指定に従っ�
 title: ChangeCase
 uuid: 676e79e6-324e-43d1-8982-b44596d0eeac
 exl-id: 2002fe22-d31c-4286-9f73-59ef205f1384
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '145'
