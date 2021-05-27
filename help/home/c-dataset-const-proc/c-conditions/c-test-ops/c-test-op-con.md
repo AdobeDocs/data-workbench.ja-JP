@@ -3,7 +3,6 @@ description: Compare、Not Empty、Range、Regular Expression、String Match な
 title: テスト演算の条件
 uuid: 6a117569-1372-4095-972b-76289a45f19e
 exl-id: 6c1f521b-a6b9-4bb7-bdfa-56c615b0c916
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1114'
@@ -21,7 +20,7 @@ Compare、Not Empty、Range、Regular Expression、String Match など、テス�
 * [正規表現](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-ae9c016502cb44128760c58f2d2d5297)
 * [String Match](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-f8d132085c6b4500bfbe4515b848142f)
 
-## Compare  {#section-fb2bdb3838504099b324b9838cdeeaac}
+## Compare {#section-fb2bdb3838504099b324b9838cdeeaac}
 
 [!DNL Compare] は、文字列値または数値を比較する条件です。文字列値を比較する場合、大文字と小文字を区別するかどうかを指定できます。
 
@@ -71,7 +70,7 @@ Compare、Not Empty、Range、Regular Expression、String Match など、テス�
   </tr> 
   <tr> 
    <td colname="col1"> タイプ </td> 
-   <td colname="col2">実行する比較のタイプ。<span class="wintitle">LEXICAL</span>、<span class="wintitle">NUMERIC</span>、<span class="wintitle">DATETIME</span> のいずれかを選択できます。これらのタイプの説明については、「<a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a">テスト演算のテストタイプ</a>」を参照してください。 </td> 
+   <td colname="col2">実行する比較のタイプ。<span class="wintitle">LEXICAL</span>、<span class="wintitle">NUMERIC</span>、<span class="wintitle">DATETIME</span> のいずれかを選択できます。タイプの説明については、<a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a">テスト演算のテストタイプ</a>を参照してください。 </td> 
    <td colname="col3"> <span class="wintitle"> LEXICAL</span> </td> 
   </tr> 
  </tbody> 
@@ -112,7 +111,7 @@ Compare、Not Empty、Range、Regular Expression、String Match など、テス�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> 大文字と小文字を区別 </td> 
+   <td colname="col1"> 大文字と小文字の区別 </td> 
    <td colname="col2">true または false。<span class="wintitle">Type</span> が <span class="wintitle">LEXICAL</span> の場合にのみ使用されます。false に設定した場合、大文字と小文字は区別されません。 </td> 
    <td colname="col3"> true </td> 
   </tr> 
@@ -138,25 +137,25 @@ Compare、Not Empty、Range、Regular Expression、String Match など、テス�
   </tr> 
   <tr> 
    <td colname="col1"> タイプ </td> 
-   <td colname="col2">実行する比較のタイプ。<span class="wintitle">LEXICAL</span>、<span class="wintitle">NUMERIC</span>、<span class="wintitle">DATETIME</span> のいずれかを選択できます。これらのタイプの説明については、「<a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a">テスト演算のテストタイプ</a>」を参照してください。 </td> 
+   <td colname="col2">実行する比較のタイプ。<span class="wintitle">LEXICAL</span>、<span class="wintitle">NUMERIC</span>、<span class="wintitle">DATETIME</span> のいずれかを選択できます。タイプの説明については、<a href="../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-types.md#concept-a9fca97a2f03464cb0cbab8b5f809d0a">テスト演算のテストタイプ</a>を参照してください。 </td> 
    <td colname="col3"> </td> 
   </tr> 
  </tbody> 
 </table>
 
-この例では、[!DNL Range]条件を使用して[!DNL Log Entry Condition]を定義しています。 Data Workbenchサーバーは、各[!DNL event data]レコードを読み取る際、数値x-ageと55を比較します。 特定のログエントリについて、x-age が 55 以上である場合、そのログエントリはデータセットの構築プロセスに含められます。この例で実行される機能は、[!DNL Compare] 条件で取り上げた例と同じです。[Compare](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-fb2bdb3838504099b324b9838cdeeaac) を参照してください。
+この例では、[!DNL Range]条件を使用して[!DNL Log Entry Condition]を定義しています。 Data Workbenchサーバーは、各[!DNL event data]レコードを読み取る際に、x-ageと55の数値を比較します。 特定のログエントリについて、x-age が 55 以上である場合、そのログエントリはデータセットの構築プロセスに含められます。この例で実行される機能は、[!DNL Compare] 条件で取り上げた例と同じです。[Compare](../../../../home/c-dataset-const-proc/c-conditions/c-test-ops/c-test-op-con.md#section-fb2bdb3838504099b324b9838cdeeaac) を参照してください。
 
 >[!NOTE]
 >
->MinまたはMaxパラメーターを空白のままにした場合、使用可能な最小または最大の整数値が代わりに使用されます。 最小値はゼロ（0）で、最大値は無限です。
+>MinまたはMaxパラメーターが空白の場合、使用可能な最小または最大の整数値が代わりに使用されます。 最小値はゼロ（0）で、最大値は無限です。
 
 ![](assets/cfg_Condition_RangeCondition.png)
 
 ## 正規表現 {#section-ae9c016502cb44128760c58f2d2d5297}
 
-[!DNL Regular Expression]条件テストでは、正規式のパターンマッチング([正規式](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c)を参照)を使用して、Matchesパラメーターで指定されたパターンのいずれかに一致する文字列が指定された入力フィールドの値に含まれているかどうかを判定します。
+[!DNL Regular Expression]条件テストでは、正規表現のパターンマッチング（[正規表現](../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c)を参照）を使用して、指定した入力フィールドの値に、 Matchesパラメーターで指定したパターンの1つに一致する文字列が含まれているかどうかを判定します。
 
-入力データが文字列ベクトルである場合、ベクトル内の 1 つ目の値だけがテストに使用されます。[!DNL Regular Expression]条件は、文字列全体を比較します。 文字列を部分的に識別する必要がある場合は、文字列の前後に「.*」を付加する必要があります。
+入力データが文字列ベクトルである場合、ベクトル内の 1 つ目の値だけがテストに使用されます。[!DNL Regular Expression]条件は、完全な文字列の比較を実行します。 文字列を部分的に識別する必要がある場合は、文字列の前後に「.*」を付加する必要があります。
 
 [!DNL Regular Expression] 条件のパラメーターについて次の表で説明します。
 
@@ -170,7 +169,7 @@ Compare、Not Empty、Range、Regular Expression、String Match など、テス�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> 大文字と小文字を区別 </td> 
+   <td colname="col1"> 大文字と小文字の区別 </td> 
    <td colname="col2"> true または false。false に設定した場合、大文字と小文字は区別されません。 </td> 
    <td colname="col3"> true </td> 
   </tr> 
@@ -197,7 +196,7 @@ Compare、Not Empty、Range、Regular Expression、String Match など、テス�
  </tbody> 
 </table>
 
-以下に示したのは、Web サイトトラフィックから収集したデータのフィールドに、[!DNL Regular Expression] 条件を適用して、一致しているかどうかを判断する例です。この条件は、cs(転送者クエリ)フィールドに、正規式`campaign=C[1-9][0-9]{4}`と一致する文字列が含まれている場合にのみtrueを返します。 この正規式は、`campaign=C12345`を含む任意の文字列と一致します。 ただし、`C`の後の最初の文字が`1-9`の範囲にないので、`campaign=C0123&`という文字列とは一致しません。
+以下に示したのは、Web サイトトラフィックから収集したデータのフィールドに、[!DNL Regular Expression] 条件を適用して、一致しているかどうかを判断する例です。この条件は、cs(referrer-query)フィールドに正規表現`campaign=C[1-9][0-9]{4}`と一致する文字列が含まれている場合にのみtrueを返します。 この正規表現は、`campaign=C12345`を含む任意の文字列と一致します。 ただし、`C`の後の最初の文字が`1-9`の範囲に含まれていないので、このパターンは文字列`campaign=C0123&`と一致しません。
 
 ![](assets/cfg_Condition_RegularExpression.png)
 
@@ -215,7 +214,7 @@ Compare、Not Empty、Range、Regular Expression、String Match など、テス�
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> 大文字と小文字を区別 </td> 
+   <td colname="col1"> 大文字と小文字の区別 </td> 
    <td colname="col2"> true または false。false に設定した場合、大文字と小文字は区別されません。 </td> 
    <td colname="col3"> true </td> 
   </tr> 
@@ -242,6 +241,6 @@ Compare、Not Empty、Range、Regular Expression、String Match など、テス�
  </tbody> 
 </table>
 
-以下に示したのは、Web サイトトラフィックから収集したデータに [!DNL String Match] 条件を適用する例です。この条件は、入力フィールド(cs-uri-stem)がMatchesパラメーターで指定された2つの文字列のいずれかに一致するかどうかをテストし、フィールドcs-uri-stemが正確な文字列[!DNL /navigation/footer.asp]または完全な文字列[!DNL /navigation/header.asp]のいずれかである場合に成功します。
+以下に示したのは、Web サイトトラフィックから収集したデータに [!DNL String Match] 条件を適用する例です。この条件は、入力フィールド(cs-uri-stem)がMatchesパラメータで指定された2つの文字列のいずれかと一致するかどうかをテストし、フィールドcs-uri-stemが正確な文字列[!DNL /navigation/footer.asp]か正確な文字列[!DNL /navigation/header.asp]のどちらかである場合に成功します。
 
 ![](assets/cfg_Condition_StringMatch.png)
