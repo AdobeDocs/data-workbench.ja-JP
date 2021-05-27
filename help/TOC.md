@@ -6,9 +6,8 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Data Workbench ヘルプ
 user-guide-description: Data Workbench のマルチチャネル機能について学びます。Data Workbench クライアント、インストール、データセット設定に関するガイドなどが含まれます。
-translation-type: ht
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 100%
 
@@ -412,7 +411,7 @@ ht-degree: 100%
             + [CrossRows](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-crossrows.md)
             + [ExtractValue](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-exvalue.md)
             + [Flatten](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md)
-            + [Format](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md)
+            + [形式](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-format.md)
             + [Hash](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-hash.md)
             + [Haversine](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-haversine.md)
             + [IPLookup](home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-iplookup.md)
@@ -518,7 +517,7 @@ ht-degree: 100%
       + [レポートプログラムファイルのインストール](home/c-rpt-oview/c-inst-rpt/t-install-rpt-prg-files.md)
       + 電子証明書 {#digital-certs}
          + [デジタル証明書のダウンロードとインストール](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-install-dig-cert.md)
-         + [デジタル証明書について](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-underst-dig-cert.md)
+         + [電子証明書について](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-underst-dig-cert.md)
          + [電子証明書のインストール手順](home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/t-dig-cert-install-proc.md)
       + [Insight サーバーへの接続の設定](home/c-rpt-oview/c-inst-rpt/t-config-conn-ins-svr.md)
       + [言語ファイル（.zbin ファイル）を使用したレポートサーバーの更新](home/c-rpt-oview/c-inst-rpt/c-zbin-file-update.md)
@@ -847,7 +846,7 @@ ht-degree: 100%
          + [縦棒グラフ](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-column-charts.md)
          + [棒グラフ](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-bar-charts.md)
          + [折れ線グラフ](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-line-charts.md)
-         + [表](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-dashboard-tables.md)
+         + [テーブル](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-dashboard-tables.md)
          + [指標の凡例](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-metric-legends.md)
          + [円グラフ](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-dashboard-pie-chart.md)
          + [散布図](home/c-adobe-data-workbench-dashboard/c-visualizations/c-visualization-types/c-scatter-plot.md)
