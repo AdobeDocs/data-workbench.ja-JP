@@ -3,7 +3,6 @@ description: UnescapeURI 変換は、文字列の中のエスケープされた�
 title: UnescapeURI
 uuid: 25e87cc7-812d-4d77-be94-16093e8955fe
 exl-id: abf20906-5052-4bbe-9ffb-522b850669a6
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '160'
@@ -17,7 +16,7 @@ UnescapeURI 変換は、文字列の中のエスケープされたすべての�
 
 >[!NOTE]
 >
->URI文字列内の安全でない文字は、エスケープされた文字で置き換えられます。 エスケープ文字は、パーセント記号に続く 2 桁の 16 進数で表されます（例：%20）。
+>エスケープ文字は、URI文字列内の安全でない文字を置き換えます。 エスケープ文字は、パーセント記号に続く 2 桁の 16 進数で表されます（例：%20）。
 
 | パラメーター | 説明 | デフォルト |
 |---|---|---|
