@@ -1,9 +1,8 @@
 ---
-description: 特定のData Workbenchのみが特定のワークスペースを変更できるように設定できます。
+description: Data Workbenchは、特定のユーザーのみが特定のワークスペースを変更できるように設定できます。
 title: ロックされているワークスペースの設定
 uuid: 0bb264f6-20b9-43d9-903e-1b2422af21d5
 exl-id: e31a786e-064e-4f2c-9bf4-7ceafde814c0
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '201'
@@ -13,7 +12,7 @@ ht-degree: 75%
 
 # ロックされているワークスペースの設定{#configure-a-locked-workspace}
 
-特定のData Workbenchのみが特定のワークスペースを変更できるように設定できます。
+Data Workbenchは、特定のユーザーのみが特定のワークスペースを変更できるように設定できます。
 
 ワークスペースがロックされていても、ユーザーは大部分のビジュアライゼーション内に選択範囲を作成したり、テーブルのデータを並べ替えたりできますが、それ以外のワークスペースの変更はできません。この機能は、ユーザーがワークスペースに意図しない変更を行うことを防ぎます。
 
