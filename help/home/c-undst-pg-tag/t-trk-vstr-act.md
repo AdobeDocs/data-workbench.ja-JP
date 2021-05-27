@@ -1,9 +1,8 @@
 ---
-description: Flashを使用して構築されたWebサイトは、リッチメディアコンテンツ内で実行される訪問者アクションのキャプチャに関して、特別な注意を払う必要があります。
+description: Flashを使用して設計されたWebサイトでは、リッチメディアコンテンツ内で実行される訪問者のアクションのキャプチャに関して特に注意が必要です。
 title: Flash リッチメディアコンテンツ内の訪問者アクティビティの追跡
 uuid: fe2e75eb-0897-4f63-b582-b4f1fdce02a1
 exl-id: f51c7034-a7fd-4575-80e1-18fc6513ca2b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '713'
@@ -13,13 +12,13 @@ ht-degree: 7%
 
 # Flash リッチメディアコンテンツ内の訪問者アクティビティの追跡{#tracking-visitor-activity-within-flash-rich-media-content}
 
-Flashを使用して構築されたWebサイトは、リッチメディアコンテンツ内で実行される訪問者アクションのキャプチャに関して、特別な注意を払う必要があります。
+Flashを使用して設計されたWebサイトでは、リッチメディアコンテンツ内で実行される訪問者のアクションのキャプチャに関して特に注意が必要です。
 
-[!DNL Flash]ActionScriptを使用すると、既存の[!DNL Flash]ムービーに簡単な変更を加えて、ボタンのクリックやマウスの動きなど、訪問者とムービーとのすべての操作を追跡できます。
+[!DNL Flash]ActionScriptを使用すると、既存の[!DNL Flash]ムービーに簡単な変更を加えて、ボタンのクリックやマウスの動きなど、ムービーに対するすべての訪問者のインタラクションを追跡できます。
 
-[!DNL Flash]ムービー内での訪問者アクティビティの追跡を容易にするには、次の手順に従ってください。
+[!DNL Flash]ムービー内で訪問者のアクティビティの追跡を容易にするには、次の手順に従います。
 
-1. 次追加のActionScriptコードをムービーに追加します。 このコードは、追跡する[!DNL Flash]ムービー内のイベントが呼び出すことのできる関数を表します。
+1. ムービーに次のActionScriptコードを追加します。 このコードは、追跡する[!DNL Flash]ムービー内のイベントによって呼び出される関数を表します。
 
    ```
    // FLASH TAG CODE BEGIN 
@@ -37,37 +36,37 @@ Flashを使用して構築されたWebサイトは、リッチメディアコン
    var FLASHTAGURI = http://www.mysite.com/flashtag/flashtag.txt”;
    ```
 
-1. 追加次のActionScriptコードを、トラッキング対象のすべてのイベントに送信します。 次のコードは、イベントに関するデータを取り込むための関数呼び出しを表します。
+1. 次のActionScriptコードを、追跡するすべてのイベントに追加します。 このコードは、イベントに関するデータを取得するための関数呼び出しを表します。
 
    ```
    on(release) {tag("[PUT_PAGE_NAME_HERE]","[PUT_ADDITIONAL_VAR_HERE]");}
    ```
 
-   次の例は、on(release)イベントの使用方法を示します。ただし、tag()関数は、on(press)、on(rollover)、on(rollout)、on(keypress)イベントなど、追跡する任意のイベントを通じて参照できます。
+   この例では、 on(release)イベントの使用方法を示します。ただし、tag()関数は、on(press)、on(rollover)、on(rollout)、on(keypress)イベントなど、追跡する任意のイベントを通じて参照できます。
 
-   プレースホルダー\[[!DNL PUT_PAGE_NAME_HERE]\]は、追跡するページまたはイベントの名前を表す文字列に置き換える必要があります。 \[[!DNL PUT_PAGE_NAME_HERE]\]変数は、手動または変数参照を使用して変更でき、[!DNL Flash]アプリケーション内のページまたはイベントの一意の名前を示します。 \[[!DNL PUT_PAGE_NAME_HERE]\]プレースホルダを置き換える値は、単純な名前で構成することも、完全なURIと同様の階層構造を表すように構造化することもできます。 次に例を示します。
+   \[[!DNL PUT_PAGE_NAME_HERE]\]プレースホルダーは、追跡するページまたはイベントの名前を表す文字列に置き換える必要があります。 \[[!DNL PUT_PAGE_NAME_HERE]\]変数は、手動で、または変数参照を使用して、[!DNL Flash]アプリケーション内のページまたはイベントの一意の名前を示すように変更できます。 \[[!DNL PUT_PAGE_NAME_HERE]\]プレースホルダーに代わる値は、単純な名前で構成することも、完全なURIと同様の階層構造を表すように構造化することもできます。 次に例を示します。
 
    ```
    on(release) {tag(“/about_us/index.swf","[PUT_ADDITIONAL_VAR_HERE]");}
    ```
 
-   Adobeでは、コードの導入前に、ビジネス要件と開発タスクの調整を容易にし、追加の開発サイクルの可能性を減らすために、ページ名とイベント名の仕様書をコンパイルすることをお勧めします。
+   Adobeでは、コードのデプロイメント前に、ビジネス要件と開発タスクの整合を容易にし、追加の開発サイクルの可能性を減らすために、ページ名とイベント名の仕様書をコンパイルすることをお勧めします。
 
-1. 必要に応じて、[!DNL Flash]ムービーのページやイベントに追加の変数を収集して関連付けることができます。 これを行うには、\[[!DNL PUT_ADDITIONAL_VAR_HERE]\]プレースホルダーをアンパサンド(&amp;)で区切ったname=valueのペアのセットに置き換えます。 次に例を示します。
+1. 必要に応じて、追加の変数を収集し、[!DNL Flash]ムービーのページやイベントに関連付けることができます。 そのためには、\[[!DNL PUT_ADDITIONAL_VAR_HERE]\]プレースホルダーをアンパサンド(&amp;)で区切ったname=valueのペアのセットに置き換えます。 次に例を示します。
 
    ```
    on(release) {tag(“/about_us/index.swf"," var1=value1&var2=value2");}
    ```
 
-   変数は、手動または変数参照を使用して変更でき、収集してページやイベントに関連付ける追加の属性を示します。 該当する追加の変数が収集されない場合は、\[[!DNL PUT_ADDITIONAL_VAR_HERE]\]を削除します。
+   変数は、手動で、または変数参照を使用して変更でき、収集してページまたはイベントに関連付ける追加の属性を示します。 収集する該当する追加の変数がない場合は、\[[!DNL PUT_ADDITIONAL_VAR_HERE]\]を削除します。
 
-   [!DNL Flash]リッチメディアコンテンツ内での訪問者追跡の設定が完了しました。 イベントを呼び出すと、[!DNL (PAGENAME,VARIABLES)]タグ関数が呼び出され、次のファイルに対するHTTPリクエストが行われます。 この関数は、[!DNL Flash]ムービー内で定義されたとおりにトリガされる他の関数に加えて呼び出されます。
+   これで、[!DNL Flash]リッチメディアコンテンツ内の訪問者トラッキングの設定が完了しました。 イベントが呼び出されると、タグ[!DNL (PAGENAME,VARIABLES)]関数が呼び出され、次のファイルに対するHTTPリクエストが実行されます。 この関数は、[!DNL Flash]ムービー内で定義されたようにトリガーされる他の関数に加えて呼び出されます。
 
    ```
    http://www.mysite.com/flashtag/flashtag.txt?PAGENAME=/about_us/index.swf&var1=value1&var2=value2
    ```
 
-[!DNL Flash]タグActionScript関数から得られるHTTPリクエストは、[!DNL Flash]ムービー内の各イベントに関して次の情報を収集します。 テーブルの最後の行(W3C名cs-uri-クエリ)は、関数呼び出しで指定された追加の変数に対して収集された情報を表します。
+[!DNL Flash]タグActionScript関数によって生成されるHTTPリクエストにより、 [!DNL Flash]ムービー内の各イベントに関して次の情報が収集されます。 表の最後の行（W3C名前cs-uri-query）は、関数呼び出しで指定された追加の変数に対して収集された情報を表します。
 
 <table id="table_A7ED9D38F36B4405947B2F48EA94D3C4"> 
  <thead> 
@@ -81,26 +80,26 @@ Flashを使用して構築されたWebサイトは、リッチメディアコン
  <tbody> 
   <tr> 
    <td colname="col1"> x-trackingid </td> 
-   <td colname="col2"> 追跡識別子(一意の訪問者) </td> 
-   <td colname="col3"> 訪問者の初期リクエスト時に<span class="wintitle"> Sensor </span>によってユーザーのブラウザーに配置されたcookieから読み取られた識別子 </td> 
+   <td colname="col2"> トラッキング識別子（個別訪問者） </td> 
+   <td colname="col3"> 訪問者の最初のリクエストに対して<span class="wintitle">センサー</span>がユーザーのブラウザーに配置したCookieから読み取った識別子 </td> 
    <td colname="col4"> v1st=3C94007B4E01F9C2 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>日付 </p> <p>時間 </p> </td> 
    <td colname="col2"> タイムスタンプ </td> 
-   <td colname="col3"> リクエストがサーバーによって処理された時刻（精度100ナノ秒）精度はサーバの環境とNTPに依存) </td> 
+   <td colname="col3"> リクエストがサーバーによって処理された時刻（100 nsの精度）。精度は、サーバ環境とNTPに依存します。 </td> 
    <td colname="col4"> 2002-11-21 17:21:45.123 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> sc(content-type) </td> 
    <td colname="col2"> コンテンツタイプ </td> 
    <td colname="col3"> サーバーから返されるオブジェクトのタイプ </td> 
-   <td colname="col4"> Text/html </td> 
+   <td colname="col4"> テキスト/HTML </td> 
   </tr> 
   <tr> 
    <td colname="col1"> sc-status </td> 
    <td colname="col2"> HTTP応答ステータスコード </td> 
-   <td colname="col3"> HTTPサーバーの応答のステータスを示す、サーバーによって生成される数値コード </td> 
+   <td colname="col3"> HTTPサーバーの応答のステータスをメモする、サーバーによって生成される数値コード </td> 
    <td colname="col4"> 200 </td> 
   </tr> 
   <tr> 
@@ -117,32 +116,32 @@ Flashを使用して構築されたWebサイトは、リッチメディアコン
   </tr> 
   <tr> 
    <td colname="col1"> s-dns </td> 
-   <td colname="col2"> サーバードメイン名 </td> 
+   <td colname="col2"> サーバーのドメイン名 </td> 
    <td colname="col3"> 要求を処理するWebサーバーのドメイン名 </td> 
    <td colname="col4"> www.mysite.com </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(referrer) </td> 
    <td colname="col2"> 参照 URL </td> 
-   <td colname="col3"> クライアントから送信されるHTTP転送者フィールドの内容 </td> 
+   <td colname="col3"> クライアントから送信されたHTTPリファラーフィールドの内容 </td> 
    <td colname="col4"></td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(user-agent) </td> 
    <td colname="col2"> ユーザーエージェント </td> 
-   <td colname="col3"> HTTPサーバーにリクエストを行うために使用するデバイス </td> 
-   <td colname="col4"> Mozilla/4.0+(compatible;+MSIE+6.0;+Windows+NT+5.1) </td> 
+   <td colname="col3"> HTTPサーバーに要求を送信するために使用するデバイス </td> 
+   <td colname="col4"> Mozilla/4.0以降(互換；+MSIE+6.0;+Windows+NT+5.1) </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs(cookie) </td> 
-   <td colname="col2"> ドメインからのクライアントcookie </td> 
-   <td colname="col3"> サイトに対するすべてのユーザーのCookieの内容 </td> 
+   <td colname="col2"> ドメインのクライアントcookie </td> 
+   <td colname="col3"> サイトに対するユーザーのCookieの内容 </td> 
    <td colname="col4"> <p>KL_TC1 1038058778312 </p> <p>KL972x1038058778312282052 </p> <p>KL_PVKL972 0 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> cs-uri-query </td> 
    <td colname="col2"> クエリー文字列 </td> 
-   <td colname="col3"> クライアントが要求したURIのクエリ文字列部分（存在する場合） </td> 
+   <td colname="col3"> クライアントが要求したURIのクエリー文字列部分（ある場合） </td> 
    <td colname="col4"> PAGENAME=/about_us/index.swf&amp;var1=value1&amp;var2=value2 </td> 
   </tr> 
  </tbody> 
