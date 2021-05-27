@@ -3,7 +3,6 @@ description: 継承プロファイルの変換データセットインクルー�
 title: 変換データセットインクルードファイル
 uuid: 46756f68-843c-4b0d-a79e-f107ef85db6c
 exl-id: 58793f82-162a-4d43-aea9-163716c82db6
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '529'
@@ -17,15 +16,15 @@ ht-degree: 69%
 
 ファイルの先頭行には、Extended Dimensions、Parameters、Reprocess、Stage、Transformations の各パラメーターをすべてサポートする [!DNL TransformationInclude] 型が定義されます。その他のパラメーターはすべて、データセットプロファイルの Dataset ディレクトリにある [!DNL Transformation.cfg] ファイルの中で定義する必要があります。
 
-[!DNL Transformation Dataset Include]ファイルに拡張Dimension、パラメーター、再処理、ステージ、変換以外のパラメーターを含めるとエラーが発生します。
+拡張Dimension、パラメーター、再処理、ステージ、変換以外のパラメーターを[!DNL Transformation Dataset Include]ファイルに含めると、エラーが発生します。
 
-[!DNL Transformation Dataset Include]ファイルには好きな名前を付けることができますが、ファイル拡張子は[!DNL .cfg]にする必要があります。 ファイルは、*inherited profile name*\Dataset\Transformation ディレクトリ内に格納されていることが必要です。データセット構築の変換段階でファイルが再帰的に読み込まれるので、[!DNL Transformation Dataset Include]ファイルは、ディレクトリ内の任意のレベルに格納できます(例：*inheritedプロファイル名*\Dataset\Transformation\*フォルダ名*\*include file name*.cfg)。
+[!DNL Transformation Dataset Include]ファイルには任意の名前を付けることができますが、ファイルの拡張子は[!DNL .cfg]にする必要があります。 ファイルは、*inherited profile name*\Dataset\Transformation ディレクトリ内に格納されていることが必要です。データセット構築の変換段階でファイルが再帰的に読み込まれるので、[!DNL Transformation Dataset Include]ファイルはディレクトリ内の任意のレベルに格納できます(例えば、*inherited profile name*\Dataset\Transformation\*folder name*\*include file name*.cfg)。
 
 >[!NOTE]
 >
->SiteのWeb固有の設定パラメーターの多くは、[!DNL Transformation Dataset Include]ファイルで定義されています。 これらのパラメーターについて詳しくは、[Webデータの構成設定](../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)を参照してください。
+>Site用のWeb固有の設定パラメーターの多くは、[!DNL Transformation Dataset Include]ファイルで定義されます。 これらのパラメーターについて詳しくは、[Webデータの設定](../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)を参照してください。
 
-次の表に、[!DNL Transformation Dataset Include]ファイルで使用できるパラメーターを示します。
+次の表に、[!DNL Transformation Dataset Include]ファイルで使用できるパラメータを示します。
 
 <table id="table_7BD343888D9145BCBA889B531A4D18F8"> 
  <thead> 
@@ -65,7 +64,7 @@ ht-degree: 69%
 [!DNL Transformation Dataset Include]ファイルを扱う際は、次の点に注意してください。
 
 * このファイルに含まれるいずれかのパラメーターを変更した場合、データの再変換が必要となります。
-* [!DNL CrossRows]、 [!DNL ODBCLookup]、、 [!DNL Sessionize]および [!DNL AppendURI] 変換は、 [!DNL Transformation Dataset Configuration] ファイル内で定義されている場合にのみ機能します。これらの変換について詳しくは、[データ変換](../../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md)を参照してください。
+* [!DNL CrossRows]、  [!DNL ODBCLookup]、  [!DNL Sessionize]、および変換 [!DNL AppendURI] は、ファイル内で定義されている場合にのみ機 [!DNL Transformation Dataset Configuration] 能します。これらの変換について詳しくは、[データ変換](../../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md)を参照してください。
 
 * 前述のパラメーターはいずれも [!DNL Transformation Dataset Include] ファイルをメモ帳で開いて編集することによって追加することができます。編集後、保存した内容は、Data Workbench でファイルを開き直すと表示されます。新しいパラメーターを追加する際は、（Tab キーではなく）スペースキーで空白を 2 つ追加し、前の見出しレベルの右にインデントします。
 
