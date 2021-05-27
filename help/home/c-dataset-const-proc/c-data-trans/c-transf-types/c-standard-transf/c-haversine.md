@@ -3,7 +3,6 @@ description: Haversine（半正矢）式とは、緯度と経度から特定さ�
 title: Haversine
 uuid: 835fa9dd-db70-4498-a03e-59595bc041fe
 exl-id: e700c0a0-1a1a-4c56-bb4f-1deb1b39b059
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '235'
@@ -15,7 +14,7 @@ ht-degree: 79%
 
 Haversine（半正矢）式とは、緯度と経度から特定される球体上の 2 点間の大圏距離を導く数式です。
 
-[!DNL Haversine]変換は、数式と同様に、2組の[!DNL Latitude]と[!DNL Longitude]の設定を必要とします。これら4つの入力を使用して、2つの場所の間の地球の真の距離を計算します。
+この式と同様に、[!DNL Haversine]変換には[!DNL Latitude]と[!DNL Longitude]の2組の設定が必要です。これらの4つの入力を使用して、2つの場所の間の地球の真の距離を計算します。
 
 この距離は、「In Kilometers」フラグを（false または true に）変更することによってマイルまたはキロメートルで表すことができます。
 
@@ -36,4 +35,4 @@ Haversine（半正矢）式とは、緯度と経度から特定される球体�
 
 >[!NOTE]
 >
->他の場所の距離を識別したい場合は、それぞれの場所に、緯度と経度のフィールドが割り当てられている必要があります。
+>他の場所の距離を識別する場合は、それぞれの場所に、緯度と経度のフィールドが独自に設定されている必要があります。
