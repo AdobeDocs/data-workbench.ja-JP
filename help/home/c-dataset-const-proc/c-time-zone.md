@@ -3,7 +3,6 @@ description: タイムゾーンのコードと形式について取り上げま�
 title: タイムゾーンのコード
 uuid: 5698882a-9682-41d8-88d3-8471578a22cc
 exl-id: 2829c4ca-af6f-4ddb-acce-b33c3b552ba7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '376'
@@ -39,7 +38,7 @@ dstrules を指定する場合、[!DNL dstrules.dst] という名前のタブ区
 
 ## タイムゾーンコード表 {#section-b4f965b872c543e2ac52a3c94410d076}
 
-夏時間などの時計シフトポリシーを導入する場合は、適切なルールを含む[!DNL .dst]ファイルをData Workbenchサーバーコンピューターのプロファイル名[!DNL \Dataset\Timezone]ディレクトリに保存する必要があります。
+夏時間などの時計調整ポリシーを導入する場合は、適切なルールを含んだ[!DNL .dst]ファイルをData Workbenchサーバーコンピューターのprofile名[!DNL \Dataset\Timezone]ディレクトリに保存する必要があります。
 
 | コード | タイムゾーン | GMT からのオフセット |
 |---|---|---|
