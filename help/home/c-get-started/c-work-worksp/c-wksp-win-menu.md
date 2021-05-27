@@ -3,7 +3,6 @@ description: このメニューにより、利用できるビジュアライゼ�
 title: ワークスペースウィンドウメニューの使用
 uuid: 0fa153c1-5d68-4777-98ee-9682fd4adc41
 exl-id: 1077087b-b985-4339-b465-736722b917a5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '365'
@@ -21,7 +20,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->Data Workbenchの実装は完全にカスタマイズ可能なので、表示されるメニュー項目は、この節に記載されているものと異なる場合があります。
+>Data Workbenchの実装は完全にカスタマイズ可能なので、表示されるメニュー項目は、この節に記載されている内容と異なる場合があります。
 
 次の表で、各メニュー項目について説明します。
 
@@ -35,19 +34,19 @@ ht-degree: 88%
  <tbody> 
   <tr> 
    <td colname="col1"> テーブル </td> 
-   <td colname="col2"> 選択したディメンションに基づいてワークスペースにテーブルを追加します。詳しくは、「  <a href="../../../home/c-get-started/c-vis/c-vis.md#concept-f6c7728d5aaa4304bbf2e4dfaed48739"> ビジュアライゼ</a> ーションと <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-tables.md#concept-c632cb8ad9724f90ac5c294d52ae667f"> テーブルの操作」を参照 </a>してください。 </td> 
+   <td colname="col2"> 選択したディメンションに基づいてワークスペースにテーブルを追加します。詳しくは、「  <a href="../../../home/c-get-started/c-vis/c-vis.md#concept-f6c7728d5aaa4304bbf2e4dfaed48739"> ビジュアライゼーショ</a> ンとテーブル <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-tables.md#concept-c632cb8ad9724f90ac5c294d52ae667f"> の操作 </a>。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ビジュアライゼーション </td> 
-   <td colname="col2"> 選択したビジュアライゼーションタイプ（例えば、グラフやテーブル）と選択したディメンションに基づいてワークスペースにビジュアライゼーションを追加します。詳しくは、「  <a href="../../../home/c-get-started/c-vis/c-vis.md#concept-f6c7728d5aaa4304bbf2e4dfaed48739"> ビジュアライゼーション </a> と <a href="../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md#concept-cb5b9716d3404b2b888a55b3efec1fa5"> 分析ビジュアライゼーションの操作」を参照して </a>ください。 </td> 
+   <td colname="col2"> 選択したビジュアライゼーションタイプ（例えば、グラフやテーブル）と選択したディメンションに基づいてワークスペースにビジュアライゼーションを追加します。詳しくは、「  <a href="../../../home/c-get-started/c-vis/c-vis.md#concept-f6c7728d5aaa4304bbf2e4dfaed48739"> ビジュアライゼーションと分析ビ </a> ジュアライゼ <a href="../../../home/c-get-started/c-analysis-vis/c-analysis-vis.md#concept-cb5b9716d3404b2b888a55b3efec1fa5"> ーションの操作 </a>。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 凡例 </td> 
-   <td colname="col2"> ワークスペースに凡例を追加します。<a href="../../../home/c-get-started/c-analysis-vis/c-legends/c-legends.md#concept-ba7a886967314ee5aa358f5949665494">凡例</a>を参照してください。 </td> 
+   <td colname="col2"> ワークスペースに凡例を追加します。<a href="../../../home/c-get-started/c-analysis-vis/c-legends/c-legends.md#concept-ba7a886967314ee5aa358f5949665494">凡例</a>を参照。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 注釈 </td> 
-   <td colname="col2"> 画像、テキストまたは動的タイトルウィンドウをワークスペースに追加します。「<a href="../../../home/c-get-started/c-analysis-vis/c-annots/c-annots.md#concept-ab80edcbc4204dd78c73630511f75ab0">注釈</a>」を参照してください。 </td> 
+   <td colname="col2"> 画像、テキストまたは動的タイトルウィンドウをワークスペースに追加します。<a href="../../../home/c-get-started/c-analysis-vis/c-annots/c-annots.md#concept-ab80edcbc4204dd78c73630511f75ab0">注釈</a>を参照してください。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Open </td> 
