@@ -3,7 +3,6 @@ description: パスブラウザー内でパスを選択して、パスの要素�
 title: パスの選択
 uuid: 3131df2f-674f-44b8-9006-d8cb1ecf3874
 exl-id: c560dfd0-ccaf-4a60-88a1-29a33f8aa014
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '259'
@@ -21,14 +20,14 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->パスブラウザーのデフォルトのレベルディメンションを変更できます。 パスブラウザーを設定する手順については、「[パスブラウザーの設定](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)」を参照してください。
+>パスブラウザーのデフォルトレベルディメンションを変更できます。 パスブラウザーの設定手順については、「[パスブラウザーの設定](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-path-brwsr.md#task-bbb3ddaa140a414f984b697c2b8202a3)」を参照してください。
 
 1. 表示されているパスをルートの左側または右側に拡張するには、パスブラウザー内の要素をクリックします。
 1. 目的の要素を右クリックし、「**[!UICONTROL Select path]**」をクリックします。 選択されたパスに白い輪郭線が表示されます。
 
    >[!NOTE]
    >
-   >開始またはエンドノードは選択できません。
+   >開始ノードまたは終了ノードは選択できません。
 
 1. パスを追加する各エレメントに対して、手順 1 を繰り返します。
 
