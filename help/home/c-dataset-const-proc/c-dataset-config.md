@@ -3,7 +3,6 @@ description: 設定ファイルを編集することで、データセットの�
 title: データセット設定について
 uuid: 813933d1-f52d-4584-8edd-ce9cd4aed74a
 exl-id: 1358d08e-d81c-453d-a3a3-c1f279f38192
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '916'
@@ -35,9 +34,9 @@ c_req_config_files.xml
 
 * **Dataset\Transformation.cfg：**&#x200B;データセット構築プロセスの変換段階を制御します。[変換](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-88f72e0897a744b5bc03df5039264dda)を参照してください。 プロファイル固有の分析に使用するデータセットは通常、[!DNL Transformation.cfg] ファイルで設定します。[!DNL Transformation.cfg]ファイルについて詳しくは、[変換設定ファイル](../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md)を参照してください。
 
-* **データセットインクルードファイル：デ** ータセット [!DNL dataset include] プロファイル用の [!DNL Log Processing.cfg] または [!DNL Transformation.cfg] ファイルに含まれているパラメーターのサブセットが含まれていますが、継承プロファイル内に格納、管理されています。[!DNL Dataset include] ファイルは、メインのデータセット設定ファイルを補完するものです。詳しくは、[データセットインクルードファイル](../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)を参照してください。
+* **データセットインクルードファイル：** ファイ [!DNL dataset include] ルには、データセットプロファイルのまたはファイルに含まれるパラメーターのサブセットが含まれま [!DNL Log Processing.cfg] す [!DNL Transformation.cfg] が、継承されたプロファイル内で保存および管理されます。[!DNL Dataset include] ファイルは、メインのデータセット設定ファイルを補完します。詳しくは、[データセットインクルードファイル](../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)を参照してください。
 
-Adobeアプリケーションの導入時に提供されるデータセットプロファイルには、[!DNL Profile Manager]を使用して開いたり、編集したり、保存したりできるデータセット設定ファイルのセットが含まれています。
+Adobeアプリケーションの実装時に提供されるデータセットプロファイルには、[!DNL Profile Manager]を使用して開いたり、編集したり、保存したりできるデータセット設定ファイルが含まれています。
 
 [!DNL Profile Manager]について詳しくは、『*Insightユーザーガイド*』を参照してください。
 
@@ -47,9 +46,9 @@ c_addl_config_files.xml
 
 これらは必須ではありませんが、これらのファイルを使用することで、より細かくデータセット構築プロセスを制御することができます。
 
-* **：**[!DNL Log Processing Mode.cfg]データセットに組み入れるデータの処理を一時停止したり、オフラインソースを指定したりすることができます。Data Workbench サーバーの状態ファイルが保存される頻度を指定することもできます。「[追加の設定ファイル](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004)」を参照してください。
+* **：**[!DNL Log Processing Mode.cfg]データセットに組み入れるデータの処理を一時停止したり、オフラインソースを指定したりすることができます。Data Workbench サーバーの状態ファイルが保存される頻度を指定することもできます。[追加の設定ファイル](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004)を参照してください。
 
-* **：**[!DNL Server.cfg]Data Workbench サーバーに接続する Data Workbench コンピューターのデフォルトのデータキャッシュサイズ（バイト単位）を指定します。「[追加の設定ファイル](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004)」を参照してください。
+* **：**[!DNL Server.cfg]Data Workbench サーバーに接続する Data Workbench コンピューターのデフォルトのデータキャッシュサイズ（バイト単位）を指定します。[追加の設定ファイル](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004)を参照してください。
 
 * **Transform.cfg と Transform Mode.cfg：**&#x200B;データ変換機能を使用するためのライセンスを持っている場合にのみ、これらのファイルを利用できます。[!DNL Transform.cfg] ファイルには、変換機能で使用されるデータ変換とログのソースを定義するパラメーターが含まれています。そこで定義した変換によってソースデータが加工され、指定した形式で出力されます。[!DNL Insight Transform Mode.cfg] ファイルでは、データセットに組み入れるデータの処理を一時停止したり、オフラインソースを指定したりすることができます。変換機能を実行する Insight サーバーの状態ファイルが保存される頻度を指定することもできます。[変換機能](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/transform/t-config-tfm.html)を参照してください。
 
