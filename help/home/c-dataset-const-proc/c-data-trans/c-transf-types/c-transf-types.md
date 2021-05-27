@@ -3,7 +3,6 @@ description: Insight サーバーには、標準変換と URI 変換が用意さ
 title: 変換のタイプ
 uuid: 94392104-9789-4b11-a266-4dfc1b74fcc6
 exl-id: 477fa592-7a05-4001-876a-786af413ed6a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '24'
