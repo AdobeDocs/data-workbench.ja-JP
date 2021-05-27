@@ -3,7 +3,6 @@ description: 指標エディターを使用して、新しい指標（派生指�
 title: 派生指標の使用
 uuid: 9767c170-e0cb-47b4-94f1-e9f6950b5926
 exl-id: 83467c64-4b9a-44ab-91a2-202c76c89979
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '468'
@@ -15,13 +14,13 @@ ht-degree: 36%
 
 指標エディターを使用して、新しい指標（派生指標）を定義したり、既存の指標定義を編集したりできます。
 
-この節および[クエリ言語構文](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)に記載されている指標よりも詳しい情報については、『*指標、Dimension、フィルターガイド*』を参照してください。
+この節および[クエリ言語構文](../../../../home/c-get-started/c-qry-lang-syntx/c-qry-lang-syntx.md#concept-15d1d3f5164a47d49468c5acb7299d9f)で提供されている指標の詳細については、『*指標、Dimension、フィルターに関するガイド*』を参照してください。
 
 ## 派生指標{#section-d57b98bf0a9940daba4920ff7efc808d}の作成
 
-[!DNL Metric Editor]を使用して、名前、数式、形式で新しい指標を定義します。この指標は、後で使用するためにUser\*プロファイル名*\Metricsフォルダーに保存されます。
+[!DNL Metric Editor]を使用して、名前、数式および形式で新しい指標を定義します。この指標は、後で使用するためにUser\*profile_name*\Metricsフォルダーに保存されます。
 
-1. **[!UICONTROL Admin]**/**[!UICONTROL Profile]**&#x200B;メニューオプションを使用するか、指標を作成するフォルダーの&#x200B;**[!UICONTROL User]**&#x200B;列を右クリックし、**[!UICONTROL Create]**/**[!UICONTROL New Metric]**&#x200B;をクリックして、新しい[!DNL Metric Editor]を開きます。
+1. **[!UICONTROL Admin]** / **[!UICONTROL Profile]**&#x200B;メニューオプションを使用するか、指標を作成するフォルダーの&#x200B;**[!UICONTROL User]**&#x200B;列を右クリックして、**[!UICONTROL Create]** / **[!UICONTROL New Metric]**&#x200B;をクリックして、新しい[!DNL Metric Editor]を開きます。
 
    [!DNL Metric Editor]が表示されます。
 
@@ -33,9 +32,9 @@ ht-degree: 36%
 
    ![](assets/vis_MetricEditor_NewAndEditing.png)
 
-1. 数式パラメーターに、新しい指標の式を入力します。フィルターは角括弧[内に定義する必要があります ] 式に
+1. 数式パラメーターに、新しい指標の式を入力します。フィルターは角括弧[内で定義する必要があります。 ] 」と入力します。
 
-   指標式のその他の構文ルールについては、[指標式の構文](../../../../home/c-get-started/c-qry-lang-syntx/c-syntx-mtrc-exp.md#concept-bbf440a0307549e088df491b51b51d66)を参照してください。
+   追加の指標式の構文ルールについては、[指標式の構文](../../../../home/c-get-started/c-qry-lang-syntx/c-syntx-mtrc-exp.md#concept-bbf440a0307549e088df491b51b51d66)を参照してください。
 
    以下の表に、拡張指標の式の例を示します。
 
@@ -68,7 +67,7 @@ ht-degree: 36%
 
 1. **[!UICONTROL (New)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
 
-   指標を保存すると、新しい指標を表すファイルがData Workbenchーのインストールディレクトリ\User\*プロファイル名*\Metricsフォルダー内に作成されます。
+   指標を保存すると、新しい指標を表すファイルがData Workbenchのインストールディレクトリ\User\*profile name*\Metricsフォルダーに作成されます。
 
    ![](assets/vis_MetricEditor_NewAndEditing.png)
 
@@ -78,13 +77,13 @@ ht-degree: 36%
 
 ## 派生指標の編集{#section-db6d924cf4e14bcc8d57cfe1059fc797}
 
-1. [!DNL Profile Manager]または[!DNL Metrics Manager]の&#x200B;*プロファイル名*&#x200B;列で、編集する指標ファイルのチェックマークを右クリックし、「**[!UICONTROL Make Local]**」をクリックします。
-1. [!DNL User]列の指標ファイルのチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL from the workbench]**&#x200B;をクリックします。
+1. [!DNL Profile Manager]または[!DNL Metrics Manager]の&#x200B;*profile name*&#x200B;列で、編集する指標ファイルのチェックマークを右クリックし、「**[!UICONTROL Make Local]**」をクリックします。
+1. [!DNL User]列の指標ファイルのチェックマークを右クリックし、**[!UICONTROL Open]** / **[!UICONTROL from the workbench]**&#x200B;をクリックします。
 
    >[!NOTE]
    >
-   >ビジュアライゼーション内の指標関連領域を右クリックして[!DNL Metric Editor]を開き、指標メニューを表示することもできます。 詳しくは、[指標とDimensionメニューの操作](../../../../home/c-get-started/c-vis/c-met-dim-menus.md#concept-50f07ae47c3e4f94ad7d3d7f8293ccac)を参照してください。
+   >また、ビジュアライゼーション内の指標関連領域を右クリックして[!DNL Metric Editor]を開き、指標メニューを表示することもできます。 詳しくは、[指標メニューとDimensionメニューの操作](../../../../home/c-get-started/c-vis/c-met-dim-menus.md#concept-50f07ae47c3e4f94ad7d3d7f8293ccac)を参照してください。
 
-1. [!DNL Metric Editor]で、[新しい派生指標の作成](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-d57b98bf0a9940daba4920ff7efc808d)の手順2 ～ 4を使用して、必要に応じて指標定義を編集し、保存します。
+1. [!DNL Metric Editor]で、[新しい派生指標の作成](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#section-d57b98bf0a9940daba4920ff7efc808d)の手順2～4を使用して、必要に応じて指標定義を編集し、保存します。
 
    編集した指標をプロファイルのすべてのユーザーが使用できるようにする場合は、[!DNL Profile Manager]を使用して、その指標を作業プロファイルに公開する必要があります。 [作業プロファイルへのファイルの公開](../../../../home/c-get-started/c-admin-intrf/c-prof-mgr/t-pub-files-wkg-prof.md#task-a0106e010c834d16bd60eef4721b6af9)を参照してください。
