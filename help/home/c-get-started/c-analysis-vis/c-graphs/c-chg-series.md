@@ -3,7 +3,6 @@ description: 各要素をワークスペース内の他のビジュアライゼ�
 title: シリーズの変更
 uuid: 4e9630c6-a663-486d-ae82-f6d25f74a41c
 exl-id: 7a639a7f-e526-4916-a957-b005277bdd2d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '156'
@@ -23,8 +22,8 @@ ht-degree: 85%
 
 **シリーズを有効にするには**
 
-* ディメンションの要素またはラベルを右クリックし、**[!UICONTROL Change Series]**/*&lt;**[!UICONTROL dimension name]**>*&#x200B;をクリックします。
+* ディメンションの要素またはラベルを右クリックし、**[!UICONTROL Change Series]** > *&lt;**[!UICONTROL dimension name]**>*&#x200B;をクリックします。
 
 **シリーズを無効にするには**
 
-* ディメンションの要素またはラベルを右クリックし、**[!UICONTROL Change Series]**/**[!UICONTROL None]**&#x200B;をクリックします。
+* ディメンションの要素またはラベルを右クリックし、**[!UICONTROL Change Series]** > **[!UICONTROL None]**&#x200B;をクリックします。
