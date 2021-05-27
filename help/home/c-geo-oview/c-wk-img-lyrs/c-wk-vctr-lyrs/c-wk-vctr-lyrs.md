@@ -3,7 +3,6 @@ description: data workbench では、ベクトルレイヤーはグローブ上�
 title: ベクターレイヤーの操作
 uuid: db104a91-05b3-4db7-ba1c-6e4afc01893b
 exl-id: 668ce90c-e9e0-4e7c-98e5-0e5bf2a87a8e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '58'
