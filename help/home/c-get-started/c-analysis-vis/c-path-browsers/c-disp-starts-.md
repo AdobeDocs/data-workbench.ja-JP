@@ -3,7 +3,6 @@ description: パスの開始と終了をパスブラウザーに表示できま�
 title: パスの開始と終了の表示
 uuid: b5294111-393c-44d9-a641-18ecd566797f
 exl-id: 08604c56-f151-49e6-8290-50f8fa04c802
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '200'
@@ -19,7 +18,7 @@ ht-degree: 84%
 
 **開始と終了の表示を有効または無効にするには**
 
-* パスブラウザーの上の枠を右クリックし、**[!UICONTROL Display]**/*&lt;**[!UICONTROL Group dimension name]*** **[!UICONTROL starts and ends]**&#x200B;をクリックします。 有効にすると、*Group dimension name* の開始と終了の左側に X が表示されます。
+* パスブラウザーの上の枠を右クリックし、 **[!UICONTROL Display]** > *&lt;**[!UICONTROL Group dimension name]*** **[!UICONTROL starts and ends]**&#x200B;をクリックします。 有効にすると、*Group dimension name* の開始と終了の左側に X が表示されます。
 
 例えば、パスブラウザーにセッションごとのページのシーケンスを表示する場合、セッションの開始と終了を表示できます。
 
@@ -27,4 +26,4 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->開始ーまたは終了ノードをパスブラウザーのルートとして設定したり、開始ーまたは終了ノードを選択したりすることはできません。
+>開始ノードまたは終了ノードをパスブラウザーのルートとして設定したり、開始ノードまたは終了ノードを選択したりすることはできません。
