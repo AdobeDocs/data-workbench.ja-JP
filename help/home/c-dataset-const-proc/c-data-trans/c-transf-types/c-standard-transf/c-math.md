@@ -3,7 +3,6 @@ description: Math 変換すると、ログエントリ内のフィールドに�
 title: Math
 uuid: 9e1a5950-8fb2-48e9-b9a1-82c5165fba10
 exl-id: d8b9cacd-67d1-447c-94dd-7028aa371dfa
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '256'
@@ -11,7 +10,7 @@ ht-degree: 97%
 
 ---
 
-# Math{#math}
+# 数学{#math}
 
 Math 変換すると、ログエントリ内のフィールドに対して算術演算を適用できます。
 
