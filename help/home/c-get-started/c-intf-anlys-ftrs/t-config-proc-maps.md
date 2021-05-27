@@ -3,7 +3,6 @@ description: プロセスマップは、アプリケーションとデータセ�
 title: プロセスマップの設定
 uuid: e629191e-48b9-4b58-b6aa-3705ff7b387e
 exl-id: 0b37e942-4596-45cc-bc31-db147626f4eb
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '449'
@@ -17,12 +16,12 @@ ht-degree: 63%
 
 設定したプロセスマップは、他のプロセスマップと共に[!DNL Add Visualization menu]に表示されます。
 
-1. [!DNL Profile Manager]で「**[!UICONTROL Menu]**」をクリックし、「**[!UICONTROL Add Visualization]**」をクリックして、設定するプロセスマップのタイプ（2D指標マップ、2Dプロセスマップまたは3Dプロセスマップ）をクリックします。
+1. [!DNL Profile Manager]で「**[!UICONTROL Menu]**」をクリックし、「**[!UICONTROL Add Visualization]**」をクリックして、設定するプロセスマップのタイプ（2D指標マップ、2Dプロセスマップ、または3Dプロセスマップ）をクリックします。
 
-   ディレクトリ内には少なくとも1つの[!DNL *.vw]ファイルが存在します。
+   少なくとも1つの[!DNL *.vw]ファイルがディレクトリに存在します。
 
 1. 目的のファイルのチェックマークを右クリックし、「**[!UICONTROL Make Local]**」をクリックします。
-1. [!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Notepad]**&#x200B;をクリックします。
+1. [!DNL User]列でファイルのチェックマークを右クリックし、**[!UICONTROL Open]** / **[!UICONTROL in Notepad]**&#x200B;をクリックします。
 1. 次のサンプルのファイルと表を参考にして、ファイルのパラメーターを編集します。
 
    ```
@@ -81,14 +80,14 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->プロセスマップのベースディメンション、グループディメンション、レベルディメンションおよび指標について詳しくは、[プロセスマップ](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e)を参照してください。
+>プロセスマップのベースディメンション、グループディメンション、レベルディメンションおよび指標について詳しくは、「[プロセスマップ](../../../home/c-get-started/c-analysis-vis/c-proc-maps/c-proc-maps.md#concept-880aee224404429785b733a4e80d275e)」を参照してください。
 
-1. メモ帳で、**[!UICONTROL File]**/**[!UICONTROL Save As]**&#x200B;をクリックして、ベースディメンションに基づく新しい名前（*ベースディメンション名*.vw）でファイルを保存します。
+1. メモ帳で、 **[!UICONTROL File]** / **[!UICONTROL Save As]**&#x200B;をクリックして、ベースディメンションに基づいて新しい名前でファイルを保存します。つまり、 *ベースディメンション名*.vwです。
 
    （2D 指標マップを設定する場合は、指標マップの指標名に基づいた名前でファイルを保存します。つまり、「*Metric name for metric map*.vw」として保存します）。ファイルは、適切なプロセスマップディレクトリに保存してください。
 
    >[!NOTE]
    >
-   >プロセスマップを[!DNL *.vw]ファイルとして保存するには、[!DNL Save As]ウィンドウで、「保存するファイルの種類」を「すべてのファイル」に設定します。
+   >プロセスマップを[!DNL *.vw]ファイルとして保存するには、[!DNL Save As]ウィンドウで、「ファイルの種類として保存」を「すべてのファイル」に設定します。
 
-1. （オプション）作業プロファイルのすべてのユーザーが変更を利用できるようにするには、[!DNL Profile Manager]で、[!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL working profile name]**>*&#x200B;をクリックします。
+1. （オプション）作業プロファイルのすべてのユーザーが変更を利用できるようにするには、[!DNL Profile Manager]で、[!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]** / *&lt;**[!UICONTROL working profile name]***&#x200B;をクリックします。
