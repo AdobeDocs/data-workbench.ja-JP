@@ -3,7 +3,6 @@ description: Log Processing.cfg ファイル内の特定のパラメーターに
 title: ログ処理パラメーター
 uuid: 97b25665-f588-4f44-8f71-2382600d1b6f
 exl-id: f373e954-6827-4afa-9557-73e0a884a602
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '717'
@@ -41,11 +40,11 @@ c_log_entry_con.xml
 
 基本的には、ログエントリの候補に対するフィルタリング処理と考えることができます。[!DNL Log Entry Condition] から false が返されたログエントリは候補から除外されます。
 
-[!DNL Log Entry Condition]は条件演算（[条件](../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)を参照）を使用して記述され、[!DNL Sensor]が収集した入力フィールド(*Data Workbench[!DNL Sensor]ガイド*&#x200B;を参照)や、[!DNL Log Processing.cfg]ファイル内の変換が生成した拡張フィールドを使用してテスト条件を定義できます。 [!DNL Log Entry] の条件はログ処理時に適用されるほか、必要に応じて変換時に適用することもできます。
+[!DNL Log Entry Condition]は、条件演算（[条件](../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)を参照）を使用して記述され、[!DNL Sensor]( *Data Workbench[!DNL Sensor]ガイド*&#x200B;を参照)または[!DNL Log Processing.cfg]ファイル内の変換で生成された拡張フィールドを使用してテスト条件を定義できます。 [!DNL Log Entry] の条件はログ処理時に適用されるほか、必要に応じて変換時に適用することもできます。
 
 この例は、Webサイトデータに対する[!DNL log entry condition]の使用方法を示しています。 Web サイトの一部分に注目したデータセットや、そのサイトで特定のアクションを実行する訪問者に注目したデータセットを、[!DNL Log Entry Condition] を使用して作成できます。
 
-この例の [!DNL Log Entry Condition] では、サイトの店舗に属するログエントリのみを含んだデータセットを作成しています。正規式への入力として[!DNL RECondition test]と一致するパターン[!DNL "/store/.*"]と[!DNL cs-uri-stem]フィールドを使用すると、文字列[!DNL "/store/"]を含む開始を持つWebページのみがデータセットに含まれます。
+この例の [!DNL Log Entry Condition] では、サイトの店舗に属するログエントリのみを含んだデータセットを作成しています。一致パターン[!DNL "/store/.*"]で[!DNL RECondition test]を使用し、正規表現の入力として[!DNL cs-uri-stem]フィールドを使用すると、文字列[!DNL "/store/"]で始まるWebページのみがデータセットに含まれます。
 
 ![](assets/cfg_LogProcessing_LogEntryCondition.png)
 
@@ -53,7 +52,7 @@ c_log_entry_con.xml
 c_key_split.xml
 -->
 
-## キーの分割{#key-split}
+## キー分割{#key-split}
 
 データセットに含まれる追跡 ID の数は人為的に増やされますが、Data Workbench サーバーによって処理されるログエントリの総数が増えることはありません。つまり、データセット内の可算イベント（指標）の合計数は維持されます。単一データが分割されると、以後、それらのデータには、2 つの異なる追跡 ID が永続的に割り当てられ、両者を関連付けることはできません。
 
@@ -70,8 +69,8 @@ c_key_split.xml
 | Split Key Bytes | 0 | 1e6 |
 | Split Key Space Ratio | 10 | 10 |
 
-[!DNL Group Maximum Key Bytes] は、1つの追跡IDで処理できるイベントデータの最大量を指定します。この制限を超えるデータは、データセット構築プロセスから除外されます。[!DNL Split Key Bytes] は、1 つの追跡 ID を複数のエレメントに分割するときの単位となるバイト数を表します。エレメントは、確率分布に従い、おおよそこのバイト数で分割されます。[!DNL Split Key Space Ratio] キー分割のメモリ使用率と障害率を [!DNL Split Key Bucket Space] 制御します。
+[!DNL Group Maximum Key Bytes] は、1つの追跡IDに対して処理できるイベントデータの最大量を指定します。この制限を超えるデータは、データセット構築プロセスから除外されます。[!DNL Split Key Bytes] は、1 つの追跡 ID を複数のエレメントに分割するときの単位となるバイト数を表します。エレメントは、確率分布に従い、おおよそこのバイト数で分割されます。[!DNL Split Key Space Ratio] キー [!DNL Split Key Bucket Space] 分割のメモリ使用率と失敗率を制御します。
 
 >[!NOTE]
 >
->[!DNL Group Maximum Key Bytes]、 [!DNL Split Key Bytes]、、 [!DNL Split Key Space Ratio]および [!DNL Split Key Bucket Space] すべてを宣言し、キー分割が正しく機能するようにする必要があります。これらのパラメーターの値は変更しないでください（変更が必要な場合は必ずアドビまでご相談ください）。
+>[!DNL Group Maximum Key Bytes]キー分割が正しく機能するに [!DNL Split Key Bytes]は、 、  [!DNL Split Key Space Ratio] [!DNL Split Key Bucket Space] 、およびすべてを宣言する必要があります。これらのパラメーターの値は変更しないでください（変更が必要な場合は必ずアドビまでご相談ください）。
