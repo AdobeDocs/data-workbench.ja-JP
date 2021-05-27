@@ -3,7 +3,6 @@ description: data workbench は、検索および並べ替え操作に正規表�
 title: 正規表現
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
 exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '134'
@@ -15,7 +14,7 @@ ht-degree: 67%
 
 data workbench は、検索および並べ替え操作に正規表現（regex）を利用します。
 
-**[!UICONTROL Search]**&#x200B;フィールド内で、「re:」ステートメントの後に、一般的な式を使用して検索を実行できます。例：
+**[!UICONTROL Search]**&#x200B;フィールド内で、「re:」ステートメントに続いて検索を実行できます。次に例を示します。
 
 ```
 <b>re: *.s</b>
@@ -44,6 +43,6 @@ data workbench は、検索および並べ替え操作に正規表現（regex）
  </tbody> 
 </table>
 
-このほか、一般的な正規表現を使用して、さらに複雑な検索文字列を作成することもできます。正規式は、クエリエンティティパネルを含むすべてのData Workbench検索フィールドで使用されます。
+このほか、一般的な正規表現を使用して、さらに複雑な検索文字列を作成することもできます。正規表現は、クエリエンティティパネルを含むすべてのData Workbench検索フィールドで使用されます。
 
 詳しくは、[正規表現](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions)の説明を参照してください。
