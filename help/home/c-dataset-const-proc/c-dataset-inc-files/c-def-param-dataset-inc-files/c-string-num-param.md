@@ -3,7 +3,6 @@ description: 文字列パラメーターおよび数値パラメーターは、�
 title: 文字列パラメーターと数値パラメーター
 uuid: 2840967e-dd9e-40b2-91e4-3fdfa38f88e7
 exl-id: 37d004da-cde7-4b67-b0cb-0acbb6d8ad68
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '147'
