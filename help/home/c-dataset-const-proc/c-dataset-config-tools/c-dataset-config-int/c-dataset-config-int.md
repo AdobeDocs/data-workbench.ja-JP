@@ -3,7 +3,6 @@ description: データセット設定インターフェイスには、データ�
 title: データセット設定インターフェイスの操作
 uuid: c29faccd-0402-4982-9e5b-7379e2590246
 exl-id: cc2b876f-8d65-4b36-920a-dde3928795bd
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '109'
@@ -21,8 +20,8 @@ ht-degree: 77%
 
 データセット設定のインターフェイスは、次のいずれかの方法で表示できます。
 
-* **管理者メニュー：ワークスペース内で** 右クリックし、をクリックして、適切なメニューオプション **[!UICONTROL Admin]**&#x200B;をクリックします。
+* **管理メニュー：** ワークスペース内で右クリックし、「 」をクリックし **[!UICONTROL Admin]**&#x200B;て、適切なメニューオプションをクリックします。
 
    -OR-
 
-* **「管理者」タブ：** をクリックして、適切なワークスペースのサムネールを **[!UICONTROL Admin]** >で開き **[!UICONTROL Dataset and Profile tab]**&#x200B;ます。
+* **「管理」タブ：**  /で適切なワークスペースのサムネールをクリックして開 **[!UICONTROL Admin]** きま **[!UICONTROL Dataset and Profile tab]**&#x200B;す。
