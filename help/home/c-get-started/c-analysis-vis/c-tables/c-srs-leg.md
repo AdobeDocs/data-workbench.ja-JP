@@ -3,7 +3,6 @@ description: 各要素をワークスペース内の他のビジュアライゼ�
 title: シリーズの凡例の有効化
 uuid: 7c9cb699-940b-47f3-ae6f-e9a8023b8501
 exl-id: c8c3f327-13b2-494d-b7d1-8a7a49e301c0
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '105'
@@ -17,7 +16,7 @@ ht-degree: 84%
 
 **シリーズの凡例の有効／無効を切り替えるには**
 
-* 色分けするディメンションの要素またはラベルを右クリックし、「**[!UICONTROL Series Legend]**」をクリックします。
+* 色分けするディメンションの要素またはラベルを右クリックし、**[!UICONTROL Series Legend]**&#x200B;をクリックします。
 
    シリーズの凡例が有効になっている場合、メニューオプションの横に X が表示され、ディメンション内の要素が異なる色で表示されます。
 
