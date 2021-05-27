@@ -3,7 +3,6 @@ description: リフトチャートとゲインチャートは、スコアリン�
 title: 傾向のゲインチャートとリフトチャート
 uuid: 4f08277e-deea-48d3-ab15-214c43ad6664
 exl-id: 5ac08512-ac9c-4e85-a4f9-ea6d819095d8
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '806'
@@ -20,7 +19,7 @@ ht-degree: 99%
 **リフトチャートまたはゲインチャートを開くには**
 
 1. [!DNL Add Visualization > Predictive Analytics > Scoring] を選択します。
-1. 保存されたスコアの&#x200B;**[!UICONTROL Model Complete]**&#x200B;の上にカーソルを置きます。
+1. 保存されたスコアの&#x200B;**[!UICONTROL Model Complete]**&#x200B;の上にマウスポインターを置きます。
 
 ![](assets/propensity_lift_gain_1.png)
 
