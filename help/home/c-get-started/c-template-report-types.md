@@ -3,7 +3,6 @@ description: 分析レポートは、Adobe SC プロファイルのユーザー�
 title: 分析レポート
 uuid: 5fc26922-0687-464f-8c5d-d72d2a6078f0
 exl-id: 03bbf4a0-767c-4258-9512-2887f346bf0e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '581'
@@ -19,11 +18,11 @@ Adobe Analytics のユーザーは、これらのテンプレートにより、�
 
 >[!NOTE]
 >
->このメニューは、AdobeSCプロファイルを実装しているユーザーに対してのみ表示されます。
+>このメニューは、AdobeSCプロファイルを実装したユーザーに対してのみ表示されます。
 
 **レポートを開くには**
 
-ワークトップで右クリックし、**[!UICONTROL New]**&#x200B;を選択して表示し、レポートテンプレートを開きます。
+ワークトップで、右クリックし、「**[!UICONTROL New]**」を選択してレポートテンプレートを表示し、開きます。
 
 ![](assets/template_reports.png)
 
