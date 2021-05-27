@@ -3,7 +3,6 @@ description: Data Workbench のルールに基づく新しいアトリビュー�
 title: アトリビューションプロファイル
 uuid: 500e9e86-cffc-4f0d-a397-6521b493bf9a
 exl-id: 29946f22-1d39-44ca-9474-13dbe228751c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '465'
@@ -21,9 +20,9 @@ Data Workbench のルールに基づく新しいアトリビューションプ�
 
 >[!IMPORTANT]
 >
->アトリビューションプロファイルは、Analytics(SC/Insight)のデータフィードを使用するAdobeSCプロファイルを実装しているユーザーがすぐに使用できるように設定されています。 デフォルトでは、マーケティングイベントとコンバージョンイベントが、提供されたルールベースモデルで評価されるデフォルトのインタラクションタイプとして使用されます。
+>アトリビューションプロファイルは、Analytics(SC/Insight)のデータフィードを使用するAdobeSCプロファイルを実装したユーザーがすぐに使用できるように設定されます。 デフォルトでは、マーケティングイベントとコンバージョンイベントが、提供されたルールベースモデルで評価されるデフォルトのインタラクションタイプとして使用されます。
 
-詳しくは、「  [アトリビューション](../../../../home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-profile-deploy.md#concept-fbcb5800cd6a40cc901e61f3882988c0) プロファイルとアトリビューション [](../../../../home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-models.md#concept-e209c7e86a5c4008ad6d78fdf4ea032d) モデルのデプロイを参照してください。
+詳しくは、「  [アトリビューションプロファ](../../../../home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-profile-deploy.md#concept-fbcb5800cd6a40cc901e61f3882988c0) イルおよびアトリビ [ューシ](../../../../home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-models.md#concept-e209c7e86a5c4008ad6d78fdf4ea032d) ョンモデルのデプロイを参照してください。
 
 ## アーキテクトワークスペースとアナリストワークスペース {#section-27c6aff70ba147cca6e11451e127afb4}
 
@@ -41,7 +40,7 @@ Data Workbench のルールに基づく新しいアトリビューションプ�
 
 ![](assets/attribution_profile_arch_step1.png)
 
-**アナリスト** ワークスペース **[!UICONTROL Analyst]** **[!UICONTROL Workspaces]** タブをクリックすると、アトリビューションプロファイルで提供されるディメンションと指標を利用して事前に作成された分析を開くことができます。
+**アナリス** トワークスペース「 」 **[!UICONTROL Analyst]** **[!UICONTROL Workspaces]** タブをクリックすると、アトリビューションプロファイルで提供されるディメンションと指標を利用して分析を事前に作成したワークスペースが開きます。
 
 これらのワークスペースは、4 つのカテゴリーに分類されます。
 
@@ -52,6 +51,6 @@ Data Workbench のルールに基づく新しいアトリビューションプ�
 
 ![](assets/attribution_profile_analyst.png)
 
-アナリストタブには、レポートを使用して事前設定されたワークスペースが含まれています。例えば、**[!UICONTROL First Attribution]**&#x200B;では、**[!UICONTROL Campaign]**&#x200B;テーブルから選択して、**[!UICONTROL Time]**&#x200B;に基づく&#x200B;**[!UICONTROL Revenue]**&#x200B;アトリビューションを表示できます。
+アナリストタブには、レポートを使用して事前設定されたワークスペースが含まれています。例えば、**[!UICONTROL First Attribution]**&#x200B;を使用すると、**[!UICONTROL Campaign]**&#x200B;テーブルから選択して、**[!UICONTROL Time]**&#x200B;に基づく&#x200B;**[!UICONTROL Revenue]**&#x200B;アトリビューションを表示できます。
 
 ![](assets/attribution_profile_analyst_step1.png)
