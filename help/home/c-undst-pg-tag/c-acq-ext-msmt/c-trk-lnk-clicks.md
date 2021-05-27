@@ -1,9 +1,8 @@
 ---
-description: リファレンスページタグを使用したリンククリックの収集を容易にする手順です。
+description: 参照ページタグを使用してリンククリック数を収集しやすくする手順です。
 title: リンククリック数の追跡
 uuid: e4c492d2-9c90-4ed7-b997-6c50bdf98f93
 exl-id: 0cb743e6-5c6e-4f80-bc77-83d1e706c92b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '207'
@@ -13,13 +12,13 @@ ht-degree: 3%
 
 # リンククリック数の追跡{#tracking-link-clicks}
 
-リファレンスページタグを使用したリンククリックの収集を容易にする手順です。
+参照ページタグを使用してリンククリック数を収集しやすくする手順です。
 
-[!DNL Reference Page Tag]の導入により、特定のページを訪問中に訪問者がクリックしたリンク（またはhref値）を示す測定データを収集できます。 通常、このコレクションでは、HTMLページに追加のリンク識別子を導入する必要はありません。
+[!DNL Reference Page Tag]のデプロイメントを通じて、特定のページを訪問中に訪問者がクリックしたリンク（またはhref値）を示す測定データを収集できます。 通常、このコレクションには、追加のリンク識別子をHTMLページに実装する必要はありません。
 
-[!DNL Reference Page Tag]を使用したリンククリックの収集を容易にするには、次の手順を実行します。
+[!DNL Reference Page Tag]を使用してリンククリック数を容易に収集するには、次の手順を実行します。
 
-1. 次のコードを[!DNL zig.js]という名前の既存のファイルにコピーします。
+1. 次のコードを、[!DNL zig.js]という名前の既存のファイルにコピーします。
 
    ```
    //REFERENCE LINK AND FORM CLICK PAGE TAG 
@@ -78,12 +77,12 @@ ht-degree: 3%
    //END FORM CLICK CAPTURE PAGE TAG
    ```
 
-1. [!DNL zag2.gif]という名前の1ピクセルx 1ピクセルの画像ファイルを作成するか、Webサーバー上のディレクトリに配置します。
-1. [!DNL lc.src]変数を変更して、[!DNL zag2.gif]ファイルの参照元であるWebサイトの適切なドメインを参照します。
+1. [!DNL zag2.gif]という名前の1ピクセルx 1ピクセルの画像ファイルを作成するか、Webサーバー上に存在するディレクトリに配置します。
+1. [!DNL lc.src]変数を変更して、[!DNL zag2.gif]ファイルの参照元となるWebサイトの適切なドメインを参照します。
 
-1. [!DNL zag.gif]ファイルと[!DNL zig.js]ファイルに対して、適切なキャッシュ制御ヘッダーが確立されていることを確認します。
+1. [!DNL zag.gif]ファイルと[!DNL zig.js]ファイルに対して適切なキャッシュ制御ヘッダーが確立されていることを確認します。
 
-1. リンククリック値の収集元となるHTMLファイル内で、[!DNL Reference Page Tag Execution Call]を変更して、そのページのリンククリック数を取り込むように[!DNL Page Tag Execution Script]に通知する必要があります。 これを行うには、次のコード例で示すように、vlc変数の値を「1」に変更します。
+1. リンククリック値の収集元となるHTMLファイル内で、[!DNL Reference Page Tag Execution Call]を変更して、そのページのリンククリック数を取り込むように[!DNL Page Tag Execution Script]に通知する必要があります。 これをおこなうには、次のコード例で示すように、vlc変数の値を「1」に変更します。
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG--> 
@@ -104,4 +103,4 @@ var v = {};
 
 | 収集されたデータ | 説明 | 例 |
 |---|---|---|
-| v_ln= | インプレッションキャンペーンを示す値 | v_ln=&quot;About%20Us&quot; |
+| v_ln= | インプレッションキャンペーンを示す値 | v_ln=&quot;約%20Us&quot; |
