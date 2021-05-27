@@ -3,7 +3,6 @@ description: CrossRows 変換は、他の変換と同様、ログソース内の
 title: CrossRows
 uuid: 5910c150-6bec-4d98-b116-9b382fd54d3c
 exl-id: 321f986e-44a9-454c-9311-0ae37a11a088
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1137'
@@ -21,7 +20,7 @@ CrossRows 変換は、他の変換と同様、ログソース内のデータ行�
 
 >[!NOTE]
 >
->[!DNL CrossRows] 変換が正しく動作するためには、ソースデータにおいて、データが時系列順に並んでおり、追跡 ID ごとにグループ化されている必要があります。したがって、[!DNL CrossRows]は[!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイルで定義されている場合にのみ機能します。
+>[!DNL CrossRows] 変換が正しく動作するためには、ソースデータにおいて、データが時系列順に並んでおり、追跡 ID ごとにグループ化されている必要があります。したがって、[!DNL CrossRows]は、[!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイルで定義されている場合にのみ機能します。
 
 以降、次の点を踏まえて、表内のパラメーターの説明をお読みください。
 
