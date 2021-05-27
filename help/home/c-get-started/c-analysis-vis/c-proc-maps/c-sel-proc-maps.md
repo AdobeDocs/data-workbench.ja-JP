@@ -3,7 +3,6 @@ description: プロセスマップ内で選択範囲を作成して、特定の�
 title: プロセスマップからの選択
 uuid: 7fd00090-c9ab-4bb6-8584-7de7b6f4b68c
 exl-id: 8ede395f-906a-49e0-8ff8-b43a326275e5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '393'
@@ -19,7 +18,7 @@ ht-degree: 81%
 
 >[!NOTE]
 >
->プロセスマップのデフォルトのグループディメンションを変更できます。 「[プロセスマップの設定](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-proc-maps.md#task-4a95730b18a14bc790a77c013832b2d6)」を参照してください。
+>プロセスマップのデフォルトのグループディメンションを変更できます。 [プロセスマップの設定](../../../../home/c-get-started/c-intf-anlys-ftrs/t-config-proc-maps.md#task-4a95730b18a14bc790a77c013832b2d6)を参照してください。
 
 プロセスマップ内のノードに基づいて選択範囲を作成すると、そのノードを含むグループディメンションのすべての要素を選択することになります。グループディメンションの役割を理解するため、次の例を考えます。
 
@@ -31,9 +30,9 @@ ht-degree: 81%
 1. プロセスマップのノードを右クリックします。
 1. ノードに基づいて選択を行うには、次のオプションのうちどちらかをクリックします。
 
-   * **[!UICONTROL Select]***  **[!UICONTROL group dimension name +s]***  **[!UICONTROL through node name]**:フィルターは、そのノードを通過しなかったすべてのセッションを除外することで、そのノードを通過したグループディメンションのすべての要素を含めるデータです。
+   * **[!UICONTROL Select]***  **[!UICONTROL group dimension name +s]***  **[!UICONTROL through node name]**:ノードを通過しなかったすべてのセッションを除外することで、そのノードを通過したグループディメンションのすべての要素を含めるようにデータをフィルタリングします。
 
-   * **[!UICONTROL Select]***  **[!UICONTROL group dimension name +s]***  **[!UICONTROL NOT through node name]**:フィルターは、そのノードを通過したすべてのセッションを除外することで、そのノードを通過しなかったグループディメンションのすべての要素を含めるデータです。
+   * **[!UICONTROL Select]***  **[!UICONTROL group dimension name +s]***  **[!UICONTROL NOT through node name]**:ノードを通過したすべてのセッションを除外することで、そのノードを通過しなかったグループディメンションのすべての要素を含めるようにデータをフィルタリングします。
 
 ![](assets/vis_2DProcessMap_Selections_Movie.png)
 
