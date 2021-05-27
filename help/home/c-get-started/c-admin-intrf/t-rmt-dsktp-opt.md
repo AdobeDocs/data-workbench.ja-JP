@@ -1,9 +1,8 @@
 ---
-description: 「リモートデスクトップ」オプションを使用すると、管理者はData WorkbenchのIPアドレスを使用してData Workbenchから直接、コンピューターサーバーまたはレポートコンピューターにアクセスできます。
+description: '[リモートデスクトップ]オプションを使用すると、管理者は、Data WorkbenchのIPアドレスを使用して、Data Workbenchから直接コンピューターまたはレポートコンピューターにアクセスできます。'
 title: リモートデスクトップオプション
 uuid: c5914eff-4554-41d1-b5a7-6a598354eeb4
 exl-id: c4b4f59d-191c-4daa-affa-20a3e89f9fd2
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '176'
@@ -13,11 +12,11 @@ ht-degree: 21%
 
 # リモートデスクトップオプション{#remote-desktop-option}
 
-「リモートデスクトップ」オプションを使用すると、管理者はData WorkbenchのIPアドレスを使用してData Workbenchから直接、コンピューターサーバーまたはレポートコンピューターにアクセスできます。
+[リモートデスクトップ]オプションを使用すると、管理者は、Data WorkbenchのIPアドレスを使用して、Data Workbenchから直接コンピューターまたはレポートコンピューターにアクセスできます。
 
-Adobe製品以外の他のリモートデスクトップ機能と同様に、リモートからアクセスするData Workbenchには、ネットワークアクセス権が必要です。 これには、Data Workbenchサーバーのリモートデスクトップポート（デフォルトではポート3389）が開いていて、接続をリッスンする必要があります。
+Adobe製品以外の他のリモートデスクトップ機能と同様に、リモートからアクセスするコンピューターにData Workbenchがネットワークアクセスできる必要があります。 これには、Data Workbenchサーバー上のリモートデスクトップポート（デフォルトではポート3389）が開いていて、接続をリッスンする必要があります。
 
-Data Workbenchサーバーの詳細については、『*サーバー製品のインストールと管理に関するガイド』を参照してください。* 詳しくは、『 [!DNL Report]Data Workbenchレポートガイド **』を参照してください。
+Data Workbench・サーバの詳細については、『*サーバ製品のインストールと管理に関するガイド』を参照してください。* について詳しくは、『 [!DNL Report] *Data Workbench・レポート・ガイド*』を参照してください。
 
 **リモートデスクトップを表示するには**
 
