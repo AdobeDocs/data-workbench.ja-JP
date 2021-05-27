@@ -1,9 +1,8 @@
 ---
-description: Data Workbenchクライアントユーザーインターフェイスのリストとショートカットキーを表示します。
+description: Data Workbenchクライアントユーザーインターフェイスの操作とショートカットキーの一覧を表示します。
 title: クイックリファレンス
 uuid: d4563f21-4a0c-4ba5-844a-700b03a7f56e
 exl-id: 59ac0cc7-e7c7-4ce1-889a-9a65a0faa853
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '477'
@@ -13,11 +12,11 @@ ht-degree: 88%
 
 # クイックリファレンス{#quick-reference}
 
-Data Workbenchクライアントユーザーインターフェイスのリストとショートカットキーを表示します。
+Data Workbenchクライアントユーザーインターフェイスの操作とショートカットキーの一覧を表示します。
 
 「[キーボードショートカット](../../../home/c-get-started/c-vis/c-qk-ref.md#section-0597bf92e1af4bcf9f1c8ceffe52649a)」も参照してください。
 
-## Data Workbenchクライアントの操作{#section-dfea35452c2e4f0b92229a4974bc24fa}
+## Data Workbench・クライアントのアクション{#section-dfea35452c2e4f0b92229a4974bc24fa}
 
 クライアントユーザーインターフェイス内で作業を実行する時に、以下のアクションを使用します。
 
@@ -37,7 +36,7 @@ Data Workbenchクライアントユーザーインターフェイスのリスト
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> ワークスペースの左上隅にあるData Workbenchロゴをクリックします </td> 
+   <td colname="col1"> ワークスペースの左上隅にあるData Workbenchロゴをクリックします。 </td> 
    <td colname="col2"> <p>変更を保存 </p> </td> 
   </tr> 
   <tr> 
@@ -66,7 +65,7 @@ Data Workbenchクライアントユーザーインターフェイスのリスト
 | Ctrl キーを押しながら選択 | 選択範囲にテキストを追加 |
 | Shift キーを押しながら選択 | 選択範囲からテキストを削除 |
 
-## Data Workbenchクライアントのキーボードショートカット{#section-0597bf92e1af4bcf9f1c8ceffe52649a}
+## Data Workbench・クライアントのキーボード・ショートカット{#section-0597bf92e1af4bcf9f1c8ceffe52649a}
 
 ワークスペースと設定ファイルには以下のショートカットキーを使用します。
 
