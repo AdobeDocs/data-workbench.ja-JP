@@ -3,7 +3,6 @@ description: ワークスペースウィンドウメニュー（ワークスペ�
 title: メニューのカスタマイズ
 uuid: 8c409c50-40b3-4de3-8048-a825ef4d75f5
 exl-id: 7a377d9c-d339-43d8-a71a-a322416b2e60
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '206'
@@ -21,4 +20,4 @@ ht-degree: 71%
 * **[!DNL order.txt] ファイル：**&#x200B;このファイルでは、メニューに項目が表示される順序を指定します。
 * **サブディレクトリ：**&#x200B;各サブディレクトリはサブメニューを表します。サブディレクトリごとに、独自のファイル、サブディレクトリ、[!DNL order.txt] ファイルを含めることができます。
 
-例えば、[!DNL Add Legend]メニューには、指標、色、値、信頼性の各メニュー項目がこの順序で含まれています。 一方、[!DNL Profile Manager]のMenu\追加Legendディレクトリには、[!DNL Color.vw]、[!DNL Confidence.vw]、[!DNL Metric.vw]、[!DNL Value.vw]の各ファイルと、他のファイルの順序を制御する[!DNL order.txt]ファイルがアルファベット順に含まれています。
+例えば、[!DNL Add Legend]メニューには、指標、色、値、信頼性の各メニュー項目がこの順序で含まれます。 これに対し、 [!DNL Profile Manager]のMenu\Add Legendディレクトリには、[!DNL Color.vw]、[!DNL Confidence.vw]、[!DNL Metric.vw]、[!DNL Value.vw]の各ファイルと、他のファイルの順序を制御する[!DNL order.txt]ファイルがアルファベット順に格納されます。
