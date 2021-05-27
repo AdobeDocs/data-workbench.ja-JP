@@ -3,7 +3,6 @@ description: RETransform（正規表現）変換は、入力データから検�
 title: RETransform
 uuid: 60b5b60e-678a-416d-b5c3-57b1bbefce7d
 exl-id: 2595f782-0efb-4a2a-84bd-fdb04baf0852
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '430'
@@ -19,7 +18,7 @@ RETransform（正規表現）変換は、入力データから検索して捕捉
 
 >[!NOTE]
 >
->[!DNL RETransform]変換の動作は[!DNL REMatch]変換と同じです（[REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)を参照）。この変換は、正規式で捕捉するサブパターンごとに出力フィールドを作成します。 [!DNL RETransform]は、[!DNL REMatch]変換と[!DNL Format]変換の組み合わせと考えることができます。 Action パラメーター（以下の表の「Action」を参照）が「RESULTS」に設定されている場合、[!DNL RETransform] は、[!DNL REMatch] 変換と [!DNL Union] 変換を組み合わせたような動作になります。
+>[!DNL RETransform]変換は[!DNL REMatch]変換と同様に動作します（[REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)を参照）。この変換は、正規表現で捕捉するサブパターンごとに出力フィールドを作成します。 [!DNL RETransform]は、[!DNL REMatch]変換と[!DNL Format]変換の組み合わせと考えることができます。 Action パラメーター（以下の表の「Action」を参照）が「RESULTS」に設定されている場合、[!DNL RETransform] は、[!DNL REMatch] 変換と [!DNL Union] 変換を組み合わせたような動作になります。
 
 <table id="table_51B7342E6A5E4E31913BD0F6A6ACC424"> 
  <thead> 
@@ -75,7 +74,7 @@ RETransform（正規表現）変換は、入力データから検索して捕捉
 
 >[!NOTE]
 >
->[!DNL RETransform] 変換は非常に遅くなる可能性があり、データの処理時間の大部分が、変換に費やされる可能性があります。
+>[!DNL RETransform] 変換は非常に遅くなる可能性があり、データ処理時間の大部分がこの変換に費やされる可能性があります。
 
 次の例では、Web サイトの訪問者が使用している Windows オペレーティングシステムのバージョンを抽出し、その値から x-windows-version フィールドを作成します。このケースでは、バージョン番号だけが出力値として得られます。
 
