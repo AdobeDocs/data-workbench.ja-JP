@@ -3,7 +3,6 @@ description: Data Workbench の Transform.cfg ファイルには、ログのソ�
 title: Transform.cfg ファイル
 uuid: eab5bb70-6de7-4f08-85db-a6cb00abd3ed
 exl-id: e84f2536-cb22-4c47-a7a8-270b3c37ece6
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1336'
@@ -15,9 +14,9 @@ ht-degree: 79%
 
 Data Workbench の Transform.cfg ファイルには、ログのソース、データ変換およびエクスポーターを定義するパラメーターが含まれています。
 
-定義した変換は、Sensor（[!DNL .vsl]ファイル）によって収集された生データ、テキストファイル、XMLファイル、ODBC準拠のデータベースに含まれる生データを操作し、既存のフィールドに出力したり、現在のデータを上書きしたり、新しく定義したフィールドに出力したりします。
+定義した変換は、Sensor（[!DNL .vsl]ファイル）で収集された生データや、テキストファイル、XMLファイル、ODBC準拠のデータベースに含まれる生データを操作し、既存のフィールドに出力したり、現在のデータを上書きしたり、新しく定義されたフィールドに出力します。
 
-変換機能を設定するには、イベントデータのエクスポートに使用するプロファイルの Dataset フォルダーに存在する、Data Workbench の [!DNL Transform.cfg] ファイルを編集します。通常、変換機能には、このプロファイルがメインで使用されます（つまり、実行するデータ処理は、主に Data Workbench の [!DNL Transform.cfg] ファイルで定義します）。継承されたプロファイルの[!DNL Log Processing Dataset Include]ファイルに指定された処理命令は、Data Workbenchの[!DNL Transform.cfg]ファイルに指定された処理命令に加えて適用されることに注意してください。
+変換機能を設定するには、イベントデータのエクスポートに使用するプロファイルの Dataset フォルダーに存在する、Data Workbench の [!DNL Transform.cfg] ファイルを編集します。通常、変換機能には、このプロファイルがメインで使用されます（つまり、実行するデータ処理は、主に Data Workbench の [!DNL Transform.cfg] ファイルで定義します）。継承されたプロファイルの[!DNL Log Processing Dataset Include]ファイルに指定された処理命令は、Data Workbenchの[!DNL Transform.cfg]ファイルに指定された処理命令に加えて適用されることに注意する必要があります。
 
 データセットインクルードファイルについて詳しくは、[データセットインクルードファイル](../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)を参照してください。
 
@@ -25,9 +24,9 @@ Data Workbench の Transform.cfg ファイルには、ログのソース、デ�
 
 **Data Workbench の Transform.cfg ファイルを編集するには**
 
-1. データを書き出すプロファイルで[!DNL Profile Manager]を開き、**[!UICONTROL Dataset]**&#x200B;をクリックしてディレクトリの内容を表示します。
-1. data workbench [!DNL Transform.cfg]の横のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 このファイル用のチェックマークが [!DNL User] 列に表示されます。
-1. 新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL from the workbench]**&#x200B;をクリックします。 data workbench [!DNL Transform.cfg]ウィンドウが表示されます。
+1. データを書き出すプロファイル内で[!DNL Profile Manager]を開き、**[!UICONTROL Dataset]**&#x200B;をクリックしてディレクトリの内容を表示します。
+1. data workbench [!DNL Transform.cfg]の横のチェックマークを右クリックし、 **[!UICONTROL Make Local]**&#x200B;をクリックします。 このファイル用のチェックマークが [!DNL User] 列に表示されます。
+1. 新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]** / **[!UICONTROL from the workbench]**&#x200B;をクリックします。 Data Workbenchの[!DNL Transform.cfg]ウィンドウが表示されます。
 1. 次の表を参考にして、設定ファイルのパラメーターを編集します。
 
 <table id="table_91D9C4C1BE2E43158D9D06C6284EE3C7"> 
@@ -61,7 +60,7 @@ Data Workbench の Transform.cfg ファイルには、ログのソース、デ�
     </tr> 
     <tr> 
     <td colname="col1"> Log Entry Condition </td> 
-    <td colname="col2"> （オプション）ログエントリをエクスポート候補とするかどうかの判断基準となるルールを定義します。<span class="wintitle">ログエントリ条件</span>について詳しくは、<a href="../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md">ログ処理設定ファイル</a>を参照してください。 </td> 
+    <td colname="col2"> （オプション）ログエントリをエクスポート候補とするかどうかの判断基準となるルールを定義します。<span class="wintitle"> Log Entry Condition </span>の詳細については、 <a href="../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> Log Processing Configuration File </a>を参照してください。 </td> 
     </tr> 
     <tr> 
     <td colname="col1"> ログソース </td> 
@@ -73,7 +72,7 @@ Data Workbench の Transform.cfg ファイルには、ログのソース、デ�
     </tr> 
     <tr> 
     <td colname="col1"> Reprocess </td> 
-    <td colname="col2"> <p>（オプション）ここには任意の文字またはその組み合わせを入力できます。このパラメーターに変更を加えて <span class="wintitle">Transform</span> コンピューターにファイルを保存すると、データの再処理が開始されます。 </p> <p> データの再処理について詳しくは、<a href="../../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md">再処理と再変換</a>を参照してください。 </p> </td> 
+    <td colname="col2"> <p>（オプション）ここには任意の文字またはその組み合わせを入力できます。このパラメーターに変更を加えて <span class="wintitle">Transform</span> コンピューターにファイルを保存すると、データの再処理が開始されます。 </p> <p> データの再処理について詳しくは、 <a href="../../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md">再処理と再変換</a>を参照してください。 </p> </td> 
     </tr> 
     <tr> 
     <td colname="col1"> Stages </td> 
@@ -84,14 +83,14 @@ Data Workbench の Transform.cfg ファイルには、ログのソース、デ�
       </ul> <p> <b>既存の処理ステージを削除するには</b> </p> 
       <ul id="ul_4950BC26E0CD4837A4CB377605A52D3C"> 
       <li id="li_A61E2C17966E4F96A1256B8390623B0F"> 削除するステージに対応する番号を右クリックし、「<span class="uicontrol">&lt;</span>#stage_number<i>&gt;<span class="uicontrol"></span> を削除</i>」をクリックします。 </li> 
-      </ul> <p> <p>注意：<span class="wintitle">ログ処理データセットインクルード</span>ファイルで Stage を指定するときは、ここに入力したステージの名前と完全に一致させる必要があります。データセットインクルードファイルについて詳しくは、<a href="../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md">データセットインクルードファイル</a>を参照してください。 </p> </p> </td> 
+      </ul> <p> <p>注意：<span class="wintitle">ログ処理データセットインクルード</span>ファイルで Stage を指定するときは、ここに入力したステージの名前と完全に一致させる必要があります。データセットインクルードファイルについて詳しくは、 <a href="../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md">データセットインクルードファイル</a>を参照してください。 </p> </p> </td> 
     </tr> 
     <tr> 
     <td colname="col1"> Start Time </td> 
     <td colname="col2"> <p>（オプション）データのフィルター。タイムスタンプがこの時刻以後（この時刻を含む）のログエントリを抽出します。この時刻には、次のいずれかの形式を使用することをお勧めします。 </p> 
       <ul id="ul_8F9B82A8AE7F45BE8C7949D2E96C7BEC"> 
        <li id="li_8F7BCFF251CB4F1B87DDA1A259FA9C7B"> January 1 2013 HH:MM:SS EDT </li> 
-       <li id="li_4BCE317EE1914074B3642687CFED5FC2"> Jan 1 2013 HH:MM:SS GMT </li> 
+       <li id="li_4BCE317EE1914074B3642687CFED5FC2"> 2013年1月1日HH:MM:SS GMT </li> 
       </ul> <p> 例えば、July 29 2013 00:00:00 EDT を Start Time として指定した場合、米国東部夏時間の 2013 年 7 月 29 日 12:00:00 AM 以降のデータが対象となります。 </p> <p> タイムゾーンの指定は必須です。タイムゾーンを指定しなかった場合に、デフォルトで GMT に設定されることはありません。Data Workbench サーバーでサポートされるタイムゾーンの略称一覧については、 <a href="../../../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> タイムゾーンのコード </a>. </p> <p> <p>注意：Sensor ソースやログファイルソースのパラメーターである Use Start/End Times は、このパラメーターと連動します。 </p> </p> </td> 
     </tr> 
     <tr> 
@@ -109,18 +108,18 @@ Data Workbench の Transform.cfg ファイルには、ログのソース、デ�
 
 >[!NOTE]
 >
->出力ファイルを閉じた後にさらに別のデータを受信した場合（前掲の表の「[!DNL Log Sources]」と「[!DNL Offline Mode]」を参照）、[!DNL Transform] は、その追加データを使用して新しい出力ファイルを作成します。新しい出力ファイルの名前は、元の出力ファイル名の拡張子の前に、バージョン番号を括弧で囲んで追加することによって生成されます。例えば、元の出力ファイルが[!DNL 20070701-ABC.vsl]の場合、以降のバージョンのこのファイルは[!DNL 20070701-ABC(1).vsl]、[!DNL 20070701-ABC(2).vsl]のように名前が付けられます。 複数バージョンのファイルを Data Workbench サーバーの入力として使用すると、処理エラーとなる場合があります。
+>出力ファイルを閉じた後にさらに別のデータを受信した場合（前掲の表の「[!DNL Log Sources]」と「[!DNL Offline Mode]」を参照）、[!DNL Transform] は、その追加データを使用して新しい出力ファイルを作成します。新しい出力ファイルの名前は、元の出力ファイル名の拡張子の前に、バージョン番号を括弧で囲んで追加することによって生成されます。例えば、元の出力ファイルが[!DNL 20070701-ABC.vsl]の場合、このファイルの後続のバージョンの名前は[!DNL 20070701-ABC(1).vsl]、[!DNL 20070701-ABC(2).vsl]のようになります。 複数バージョンのファイルを Data Workbench サーバーの入力として使用すると、処理エラーとなる場合があります。
 >
 >
->複数バージョンの出力ファイルが作成されるのは好ましくありません。辞書式順序に基づいて並べられた入力ファイル内ですべてのソースデータが時系列順になっていることを確認し、さらに、[!DNL Offline Mode] を true に設定する場合は、すべてのソースデータが処理の開始時点で存在することを確認してください。詳しくは、前述の表の[!DNL Log Sources]と[!DNL Offline Mode]の項目を参照してください。
+>複数バージョンの出力ファイルが作成されるのは好ましくありません。辞書式順序に基づいて並べられた入力ファイル内ですべてのソースデータが時系列順になっていることを確認し、さらに、[!DNL Offline Mode] を true に設定する場合は、すべてのソースデータが処理の開始時点で存在することを確認してください。詳しくは、前述の表の[!DNL Log Sources]と[!DNL Offline Mode]のエントリを参照してください。
 
-1. **[!UICONTROL Transformations]**&#x200B;追加を右クリックし、**[!UICONTROL Add new]**/**[!UICONTROL Transformation type]**&#x200B;をクリックして変換を行います。 変換のフィールドに必要事項を入力します。
+1. **[!UICONTROL Transformations]**&#x200B;を右クリックし、**[!UICONTROL Add new]** / **[!UICONTROL Transformation type]**&#x200B;をクリックして、変換を追加します。 変換のフィールドに必要事項を入力します。
 
-   変換機能で使用できる変換の説明と例については、[Data Transformations](../../../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md)を参照してください。
+   変換機能で使用できる変換の説明と例については、[データ変換](../../../../../home/c-dataset-const-proc/c-data-trans/c-abt-transf.md)を参照してください。
 
-1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
-1. ローカルに適用した変更を有効にするには、[!DNL Profile Manager]で、[!DNL User]列のdata workbench [!DNL Transform.cfg]のチェックマークを右クリックし、**[!UICONTROL Save to]**/**[!UICONTROL profile name]**&#x200B;をクリックします。プロファイル名は、データを書き出すプロファイルの名前です。 プロファイルの同期後、データの再処理が開始されます。
+1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、「**[!UICONTROL Save]**」をクリックします。
+1. ローカルで作成した変更を有効にするには、[!DNL Profile Manager]で、[!DNL User]列のdata workbench [!DNL Transform.cfg]のチェックマークを右クリックし、**[!UICONTROL Save to]** / **[!UICONTROL profile name]**&#x200B;をクリックします。profile nameは、データをエクスポートするプロファイルの名前です。 プロファイルの同期後、データの再処理が開始されます。
 
    >[!NOTE]
    >
-   >エクスポート用データの再処理について詳しくは、[再処理と再変換](../../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)を参照してください。
+   >書き出し用のデータの再処理について詳しくは、[再処理と再変換](../../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)を参照してください。
