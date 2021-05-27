@@ -3,7 +3,6 @@ description: DeviceAtlas JSON ファイルは、DeviceAtlas.dll と DeviceAtlas6
 title: DeviceAtlas の配布
 uuid: 1eb76c61-6696-4e6c-a3fd-61c00cc17b0a
 exl-id: e9671810-d32c-4ec4-a1cb-54b71c6f101c,333507bb-3e8b-4da1-8218-b35fcf8d5f80,aa811c7b-ef80-4f23-b395-0cbb7d2677a9
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '443'
@@ -19,11 +18,11 @@ DeviceAtlas JSON ファイルは、DeviceAtlas.dll と DeviceAtlas64.dll ファ�
 
 [!DNL Server Packages > v6.00 > Server_6.00.zip]
 
-DeviceAtlas.bundleファイルが[!DNL Server\Lookups\DeviceAtlas]に抽出されます。
+DeviceAtlas.bundleファイルは[!DNL Server\Lookups\DeviceAtlas]に抽出されます。
 
 DeviceAtlas.bundle ファイルは、DPU と同期されるディレクトリに配置する必要があります。新しい DeviceAtlasComponent に対応する DeviceAtlas.cfg ファイルは、同期マスター上の「Components for Processing Servers」ディレクトリに配置する必要があります。DeviceAtlas.bundle ファイルが変更されると、そのすぐ次の DeviceAtlas ルックアップの呼び出しでは、更新された API または JSON ファイルに基づいた結果が返されます。
 
-## Transformation.cfg ファイルの変更  {#section-394823348f5740028666e62e2bd42754}
+## Transformation.cfg ファイルの変更 {#section-394823348f5740028666e62e2bd42754}
 
 DeviceAtlas 変換では、JSON ファイルのパスを指定する必要がなくなりました。transformation.cfg ファイルに定義されている以前のどの DeviceAtlasTransformation にも不明化された JSON ファイルを指す File パラメーターが含まれている必要はありません。
 
@@ -79,7 +78,7 @@ component = DeviceAtlasComponent:
 
 変換を 2 回実行します。
 
-1. [!DNL mobile id]フィールドだけを調べ、
+1. [!DNL mobile id]フィールドのみを検索し、
 1. [!DNL mobile id] を無視する条件を作成して、残りのフィールドを検索します。
 
 **Transformation.cfg を使用してデプロイする場合**：
