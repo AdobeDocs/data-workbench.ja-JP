@@ -3,7 +3,6 @@ description: イベントデータを出力するための命令は、エクス�
 title: エクスポーターの定義
 uuid: 565d4482-6c25-407c-bda7-0d116180902a
 exl-id: 5de6266a-e959-414c-9512-5e9f4011881b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1120'
@@ -15,11 +14,11 @@ ht-degree: 90%
 
 イベントデータを出力するための命令は、エクスポーターから与えられます。
 
-変換機能には、[!DNL .vsl]ファイル、ログファイル、XMLファイル、ODBCデータを[!DNL .vsl]ファイル、テキストファイル、または区切り文字付きテキストファイルとして書き出す3種類のエクスポーターがあり、DataWarehouse読み込みルーチンや監査機関などのターゲットで使用できます。
+変換機能には、[!DNL .vsl]ファイル、ログファイル、XMLファイル、ODBCデータを[!DNL .vsl]ファイル、テキストファイル、区切り文字付きテキストファイルとしてエクスポートする、3種類のエクスポーターが用意されています。
 
 >[!NOTE]
 >
->エクスポーターが正しく動作するためには、ログソースが[ログ処理設定ファイル](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)の[ログソース](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea)セクションで説明されている適切な要件を満たしている必要があります。
+>エクスポーターが正しく動作するには、ログソースが[ログ処理設定ファイル](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)の[ログソース](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea)で説明されている適切な要件を満たしている必要があります。
 
 **エクスポーターを定義するには**
 
@@ -33,7 +32,7 @@ ht-degree: 90%
 
    >[!NOTE]
    >
-   >[!DNL ExportVSLFile]オプションの場合、入力ファイル内のすべての拡張フィールドと、cs(*header*)という形式のすべてのユーザー定義フィールドが、常にVSL出力ファイルに書き込まれます。 既存の拡張フィールドを上書きした場合、出力ファイルに新しい値が書き込まれます。そのフィールドがブランクであったとしても同様です。
+   >[!DNL ExportVSLFile]オプションの場合、入力ファイル内のすべての拡張フィールドと、cs(*header*)形式のすべてのユーザー定義フィールドが常にVSL出力ファイルに書き込まれます。 既存の拡張フィールドを上書きした場合、出力ファイルに新しい値が書き込まれます。そのフィールドがブランクであったとしても同様です。
 
 1. 次の表を参考にして、設定ファイルの Exporters パラメーターを編集します。
 
