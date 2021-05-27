@@ -3,7 +3,6 @@ description: Web データを扱う際、クエリー文字列や cookie など�
 title: ExtractValue
 uuid: 305827a2-04e6-421f-82cb-923d62b02e70
 exl-id: 5bafe64f-081a-49ec-997e-68e8f6915a71
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '235'
