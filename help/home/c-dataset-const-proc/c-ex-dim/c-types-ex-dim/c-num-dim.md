@@ -3,7 +3,6 @@ description: 数値ディメンションは、順序付け可能な数値エレ�
 title: 数値ディメンション
 uuid: 19fab770-1535-41b2-bad1-811eba5f3575
 exl-id: 69a4dfa6-8402-4c2b-8b04-e6e1a0fd5ccb
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '990'
@@ -111,7 +110,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->[!DNL Operation]から値が得られなかった場合、または[!DNL Clip Values]がfalseで、値が[!DNL Min]と[!DNL Max]の間でない場合、数値ディメンションの要素は親ディメンションの要素に関連付けられません。
+>[!DNL Operation]で値が得られない場合、または[!DNL Clip Values]がfalseで、値が[!DNL Min]と[!DNL Max]の間でない場合、数値ディメンションの要素は親ディメンションの要素に関連付けられません。
 
 次の例は、Web サイトトラフィックから収集されたイベントデータを使用する数値ディメンションの定義です。この数値ディメンション（Ad View Counter）は、特定のセッション期間中に訪問者が広告を閲覧した回数をカウントします。Web サーバーからの広告リソース要求がすべて、「ad=」を含んだ cs-uri-query で行われることを前提としています。この例で関心の対象となっているのは、フィールドの実際の値ではなく、訪問者に広告が表示された回数（COUNT）です。
 
