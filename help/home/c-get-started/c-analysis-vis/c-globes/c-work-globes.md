@@ -3,7 +3,6 @@ description: マップ上でマウスを動かすと、ポインター位置の�
 title: グローブの操作
 uuid: 8aa3ad86-8129-47f6-8af9-d645ff9c566b
 exl-id: 2dc410fd-e452-4d03-88b9-fe1027b54e9c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '227'
@@ -37,6 +36,6 @@ ht-degree: 93%
 
 **グローブの明るさを切り替えるには**
 
-時刻による太陽の位置に基づいたグローブの明るさをオン／オフすることができます。時間はData Workbenchサーバーによって設定されます。
+時刻による太陽の位置に基づいたグローブの明るさをオン／オフすることができます。時刻は、Data Workbench・サーバで設定
 
-* ビジュアライゼーション内で右クリックし、**[!UICONTROL Toggle Lighting]**&#x200B;をクリックします。 メニュー項目の左にある X は、太陽の位置に基づいた明るさが有効になっていることを示します。
+* ビジュアライゼーション内で右クリックし、「**[!UICONTROL Toggle Lighting]**」をクリックします。 メニュー項目の左にある X は、太陽の位置に基づいた明るさが有効になっていることを示します。
