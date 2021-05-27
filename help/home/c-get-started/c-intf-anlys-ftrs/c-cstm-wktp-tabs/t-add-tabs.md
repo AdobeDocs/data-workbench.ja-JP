@@ -3,7 +3,6 @@ description: ワークスペースにすばやくアクセスできるように�
 title: ワークトップへのタブの追加
 uuid: 3c8b459d-4824-4678-871d-1a577235957a
 exl-id: 30201eb9-1006-42b0-9d73-0962e41192ce
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '224'
@@ -15,15 +14,15 @@ ht-degree: 58%
 
 ワークスペースにすばやくアクセスできるようにワークトップにタブを追加できます。
 
-ワークトップのタブとしてワークスペースを追加できます。 例えば、トラフィックの概要にすばやくアクセスするための「**訪問者**」タブを追加できます。
+ワークトップ上のタブとしてワークスペースを追加できます。 例えば、トラフィックの概要にすばやくアクセスするための「**訪問者**」タブを追加できます。
 
 ![](assets/client-tab.png)
 
-**プロファイルマネージャ追加ーのフォルダー**
+**プロファイルマネージャーでのフォルダーの追加**
 
-1. 新しいタブに関連付けるワークスペースを開き、**管理者**/**プロファイルマネージャー**&#x200B;を右クリックします。
-1. [!DNL Profile Manager]の&#x200B;**[!UICONTROL Workspaces]**&#x200B;をクリックして、内容を表示します。
-1. [!DNL Workspaces]の[!DNL User]列を右クリックし、**[!UICONTROL Create]**/**[!UICONTROL Folder]**&#x200B;を選択します。
+1. 新しいタブに関連付けるワークスペースを開き、**管理者** /**プロファイルマネージャー**&#x200B;を右クリックします。
+1. [!DNL Profile Manager]で、**[!UICONTROL Workspaces]**&#x200B;をクリックして内容を表示します。
+1. [!DNL Workspaces]の[!DNL User]列を右クリックし、**[!UICONTROL Create]** / **[!UICONTROL Folder]**&#x200B;を選択します。
 
    ![](assets/tabs_on_worktop.png)
 
@@ -36,6 +35,6 @@ ht-degree: 58%
 
    ![](assets/tabs_on_workto_2.png)
 
-1. （オプション）作業プロファイルのすべてのユーザーが変更を利用できるようにするには、[!DNL User]列の[!DNL .vw]ファイルの白いチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL working profile name]**>*&#x200B;をクリックします。
+1. （オプション）作業プロファイルのすべてのユーザーが変更を利用できるようにするには、[!DNL User]列の[!DNL .vw]ファイルの白いチェックマークを右クリックし、**[!UICONTROL Save to]** / *&lt;**[!UICONTROL working profile name]***&#x200B;をクリックします。
 
-   説明ワークスペースのフルサイズバージョンのみを表示し、このワークスペースのサムネールを表示しない場合は、ワークスペースを作業プロファイルに保存する必要があります。これを行うには、[!DNL Profile Manager]で、[!DNL User]列の[!DNL description.vw]ファイルの白いチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL working profile name]**>*&#x200B;をクリックします。
+   説明ワークスペースのフルサイズバージョンのみを表示し、このワークスペースのサムネールを表示しない場合は、ワークスペースを作業プロファイルに保存する必要があります。そのためには、[!DNL Profile Manager]で、[!DNL User]列の[!DNL description.vw]ファイルの白いチェックマークを右クリックし、**[!UICONTROL Save to]** / *&lt;**[!UICONTROL working profile name]***&#x200B;をクリックします。
