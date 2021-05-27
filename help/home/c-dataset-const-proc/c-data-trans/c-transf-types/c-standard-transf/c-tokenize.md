@@ -3,7 +3,6 @@ description: Tokenize 変換は、入力文字列に対して反復的に正規�
 title: Tokenize
 uuid: f8430e6c-ec14-4ba6-aeae-92c9f2520a63
 exl-id: c1f39b5b-4717-44f6-99c7-4e6a215f3542
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '237'
@@ -15,7 +14,7 @@ ht-degree: 89%
 
 Tokenize 変換は、入力文字列に対して反復的に正規表現を適用します。
 
-ただし、[!DNL RETransform]と異なり、[!DNL Tokenize]は文字列全体と一致する必要はありません。[!DNL Tokenize]変換に使用される正規式は、入力のサブセットと一致する場合があります。 [!DNL Tokenize] は、一致が見つかった後、最後の一致に続く文字から再度、正規表現を適用します。
+ただし、[!DNL RETransform]とは異なり、[!DNL Tokenize]は文字列全体と一致する必要はありません。[!DNL Tokenize]変換に使用される正規表現は、入力のサブセットと一致します。 [!DNL Tokenize] は、一致が見つかった後、最後の一致に続く文字から再度、正規表現を適用します。
 
 | パラメーター | 説明 | デフォルト |
 |---|---|---|
