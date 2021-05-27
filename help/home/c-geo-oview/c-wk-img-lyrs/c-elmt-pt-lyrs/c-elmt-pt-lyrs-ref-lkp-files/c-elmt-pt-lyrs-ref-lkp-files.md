@@ -3,7 +3,6 @@ description: 参照ファイルを参照して緯度と経度のデータを取�
 title: 参照ファイルを参照する要素ポイントレイヤーの定義
 uuid: 99d08d43-bdbb-42e1-927a-edf320686c79
 exl-id: b6928821-c825-43e2-8c7b-2ce0f49aa67e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '304'
@@ -15,7 +14,7 @@ ht-degree: 70%
 
 参照ファイルを参照して緯度と経度のデータを取得する要素ポイントレイヤーを作成すると、各要素および関連付けられた緯度と経度を参照ファイルから取得することによって、ポイントの位置を取得できます。
 
-参照ファイルを使用する代わりに、[!DNL Dynamic Points]機能を使用できます。この機能は、ディメンションの各要素の名前に場所の緯度と経度を埋め込みます。 「[動的ポイントを使用した要素ポイントレイヤーの定義](../../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyr-file-frmt/c-dyn-pts.md#concept-77ae65bedc3f465489bc135ae7e3c2f3)」を参照してください。
+参照ファイルを使用する代わりに、[!DNL Dynamic Points]機能を使用して、ディメンションの各要素の名前に場所の緯度と経度を埋め込むことができます。 [動的ポイントを使用した要素ポイントレイヤーの定義](../../../../../home/c-geo-oview/c-wk-img-lyrs/c-elmt-pt-lyrs/c-elmt-pt-lyrs-ref-lkp-files/c-elmt-pt-lyr-file-frmt/c-dyn-pts.md#concept-77ae65bedc3f465489bc135ae7e3c2f3)を参照してください。
 
 参照ファイルを参照する要素ポイントレイヤーを定義するには、以下のものを作成するか、既に利用可能でなければなりません。
 
@@ -27,4 +26,4 @@ ht-degree: 70%
 
 >[!NOTE]
 >
->[!DNL Geography]プロファイルに付属する[!DNL Zip Points.layer]ファイルは、[!DNL Zipcode.dim]ファイル、[!DNL Sessions.metric]ファイル、[!DNL Zip Points.txt]参照ファイル、および参照ファイル内のキー、経度、緯度、名前列の名前を識別する要素ポイントレイヤーです。
+>[!DNL Zip Points.layer]ファイル（[!DNL Geography]プロファイルと共に提供）は、 [!DNL Zipcode.dim]ファイル、 [!DNL Sessions.metric]ファイル、 [!DNL Zip Points.txt]ルックアップファイル、およびルックアップファイル内のキー、経度、緯度、名前の列の名前を識別する要素ポイントレイヤーです。
