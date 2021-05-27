@@ -3,7 +3,6 @@ description: ピアソン相関係数は、2 つの変数間の線形依存性�
 title: ピアソン相関係数について
 uuid: d4c37302-3d0e-4411-b4e2-fc4b0c53cbcd
 exl-id: 92a030c7-406a-4ffa-b279-fc60d207496c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '153'
