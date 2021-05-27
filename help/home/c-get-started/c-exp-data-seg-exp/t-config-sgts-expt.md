@@ -3,7 +3,6 @@ description: 任意の可算ディメンションの要素からなるセグメ�
 title: セグメントのエクスポート用の設定
 uuid: 651be834-ee41-4487-8c5a-30d94580f6a0
 exl-id: 4f53e02c-3f00-44b3-9f6d-a2f23903b3fa
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '865'
@@ -19,9 +18,9 @@ ht-degree: 70%
 
 >[!NOTE]
 >
->レポートディメンションは、参照用に[!DNL report time.metric]ファイルを使用しているので、エクスポートできません。 回避策として、ハードコーディングした [!DNL report time.metric] をプロファイルに配置すると、セグメントのエクスポートで、そのファイルをレポートディメンションの参照ポイントとして使用できます。ただし、[!DNL report time.metric] は、プロファイルの基準時刻に基づいて自動的に更新されないので、レポートディメンションの参照を変更する場合は、ハードコーディングされた [!DNL report time.metric] ファイルを変更する必要があります。
+>レポートディメンションは、参照用に[!DNL report time.metric]ファイルを使用するので、エクスポートできません。 回避策として、ハードコーディングした [!DNL report time.metric] をプロファイルに配置すると、セグメントのエクスポートで、そのファイルをレポートディメンションの参照ポイントとして使用できます。ただし、[!DNL report time.metric] は、プロファイルの基準時刻に基づいて自動的に更新されないので、レポートディメンションの参照を変更する場合は、ハードコーディングされた [!DNL report time.metric] ファイルを変更する必要があります。
 
-セグメントをエクスポート用に設定するには、[!DNL .export]ファイルを開いて編集する必要があります。
+セグメントのエクスポートを設定するには、[!DNL .export]ファイルを開いて編集する必要があります。
 
 1. [!DNL Profile Manager]で、[!DNL File]列の&#x200B;**[!UICONTROL Export]**&#x200B;ディレクトリをクリックして、その内容を表示します。
 
@@ -31,16 +30,16 @@ ht-degree: 70%
    1. 作業しているプロファイルのディレクトリを開きます。
    1. プロファイルディレクトリ内に、「Export」という名前の新しいディレクトリを作成します。
 
-1. [!DNL Profile Manager]で、Exportディレクトリの[!DNL User]列の空のセルを右クリックし、**[!UICONTROL Create]**/**[!UICONTROL New Segment Export]**&#x200B;をクリックします。
+1. [!DNL Profile Manager]で、Exportディレクトリの[!DNL User]列の空のセルを右クリックし、**[!UICONTROL Create]** / **[!UICONTROL New Segment Export]**&#x200B;をクリックします。
 
    [!DNL New Segment Export.export]という名前のファイルが、エクスポートの[!DNL File]列に表示されます。
 
 1. ファイルの[!DNL User]列を右クリックし、Fileパラメーターに新しい名前を入力して、新しいファイルの名前を変更します。
-1. ファイルの[!DNL User]列を右クリックし、**[!UICONTROL Open]**/**[!UICONTROL from the workbench]**&#x200B;をクリックして、新しいファイルを開きます。
+1. ファイルの[!DNL User]列を右クリックし、**[!UICONTROL Open]** / **[!UICONTROL from the workbench]**&#x200B;をクリックして、新しいファイルを開きます。
 
    [!DNL .export]ファイルの設定ウィンドウが表示されます。
 
-1. **[!UICONTROL Query]**&#x200B;をクリックし、次の表の説明に従って[!DNL .export]ファイルのフィールドを変更します。
+1. **[!UICONTROL Query]**&#x200B;をクリックし、次の表に示すように[!DNL .export]ファイルのフィールドを変更します。
 
 <table id="table_C2EC8FCD3FA04DE78D2CADFA3F7FD8E3"> 
  <thead> 
@@ -56,7 +55,7 @@ ht-degree: 70%
   </tr> 
   <tr> 
    <td colname="col1"> フィルター </td> 
-   <td colname="col2"> <p>（オプション）名前付きのフィルターまたはフィルター式。フィルターエディターを使用して名前付きのフィルターを作成し、そのフィルターの名前をここに入力するか、またはフィルター式自体を入力できます。 </p> <p>フィルターエディターの詳細については、「 <a href="../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3"> フィルターエディター </a>. フィルター式の構文について詳しくは、「<a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-fltr-exp.md#concept-72f2563f809747a2a3cff7ec72462a15">フィルター式の構文</a>」を参照してください。 </p> <p>フィルターに一致するレベルのエレメントがエクスポートされます。その他すべてのエレメントはエクスポートされません。 </p> </td> 
+   <td colname="col2"> <p>（オプション）名前付きのフィルターまたはフィルター式。フィルターエディターを使用して名前付きのフィルターを作成し、そのフィルターの名前をここに入力するか、またはフィルター式自体を入力できます。 </p> <p>フィルターエディターの詳細については、「 <a href="../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3"> フィルターエディター </a>. フィルター式の構文の詳細については、「 <a href="../../../home/c-get-started/c-qry-lang-syntx/c-syntx-fltr-exp.md#concept-72f2563f809747a2a3cff7ec72462a15">フィルター式の構文</a> 」を参照してください。 </p> <p>フィルターに一致するレベルのエレメントがエクスポートされます。その他すべてのエレメントはエクスポートされません。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Level </td> 
@@ -64,7 +63,7 @@ ht-degree: 70%
   </tr> 
   <tr> 
    <td colname="col1"> Output File </td> 
-   <td colname="col2"> <p>エクスポートされたデータのパスとファイル名。プロファイルがData Workbenchサーバークラスター上で実行されている場合、各Data Workbenchサーバーはデータの一部を含む出力ファイルを書き込みます。 </p> <p>Data Workbenchサーバーのインストールディレクトリには、出力ファイルを保存できるExportsディレクトリが含まれています。 例えば、<span class="filepath">Exports\訪問者セグメント.txt</span> と入力できます。ここで、<span class="filepath">訪問者セグメント.txt</span> はエクスポートされたデータを含むファイルの名前です。 </p> </td> 
+   <td colname="col2"> <p>エクスポートされたデータのパスとファイル名。プロファイルがData Workbenchサーバークラスターで実行されている場合、各Data Workbenchサーバーはデータの一部を含む出力ファイルを書き込みます。 </p> <p>Data Workbenchサーバーのインストールディレクトリには、出力ファイルを保存できるExportsディレクトリが含まれています。 例えば、<span class="filepath">Exports\訪問者セグメント.txt</span> と入力できます。ここで、<span class="filepath">訪問者セグメント.txt</span> はエクスポートされたデータを含むファイルの名前です。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Output Format </td> 
@@ -89,12 +88,12 @@ ht-degree: 70%
  </tbody> 
 </table>
 
-1. ウィンドウ上部の&#x200B;**[!UICONTROL (New)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
-1. 作業プロファイルのすべてのユーザーがこのファイルを利用できるようにするには、[!DNL User]列に作成した[!DNL .export]ファイルのチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL working profile name]**>*&#x200B;をクリックします。
+1. ウィンドウ上部の&#x200B;**[!UICONTROL (New)]**&#x200B;を右クリックし、「**[!UICONTROL Save]**」をクリックします。
+1. このファイルを作業プロファイルのすべてのユーザーが使用できるようにするには、[!DNL User]列で作成した[!DNL .export]ファイルのチェックマークを右クリックし、**[!UICONTROL Save to]** / *&lt;**[!UICONTROL working profile name]***&#x200B;をクリックします。
 
    >[!NOTE]
    >
-   >[!DNL .export]ファイルをData Workbenchサーバーに保存すると、スケジュール開始時間が未来の日時に設定されている場合でも、エクスポートは直ちに1回実行されます。
+   >[!DNL .export]ファイルをData Workbenchサーバーに保存すると、Schedule Start Timeが将来の日時に設定されている場合でも、エクスポートが即座に1回実行されます。
 
    以下はサンプルの[!DNL .export]ファイルです。
 
@@ -102,4 +101,4 @@ ht-degree: 70%
 
    >[!NOTE]
    >
-   >サンプルの[!DNL Visitor Segment.export]ファイルは、訪問者セグメントフィルターを参照しています。 このフィルターの定義を変更すると、エクスポートの定義も変更されます。
+   >このサンプルの[!DNL Visitor Segment.export]ファイルは、訪問者セグメントフィルターを参照しています。 このフィルターの定義を変更すると、エクスポートの定義も変更されます。
