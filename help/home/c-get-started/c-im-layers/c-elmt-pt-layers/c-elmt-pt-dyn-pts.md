@@ -3,7 +3,6 @@ description: 動的ポイントを使用して要素ポイントレイヤーを�
 title: 動的ポイントを使用した要素ポイントレイヤーの定義
 uuid: f4b41969-329a-4c33-a8db-8d85597fa577
 exl-id: 5f6e264c-5804-47fa-a3ca-8608a3f7e9d3
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '454'
@@ -17,7 +16,7 @@ ht-degree: 89%
 
 動的ポイントを使用して要素ポイントレイヤーを定義するには、以下のものを作成するか、既に利用可能でなければなりません。
 
-* ディメンション。[!DNL Transformation.cfg]ファイルまたは[!DNL transformation dataset include]ファイルで定義され、各要素に文字列「latitude,longitude」または「latitude,longitude,name」が含まれます。
+* [!DNL Transformation.cfg]ファイルまたは[!DNL transformation dataset include]ファイルで定義されるディメンション。各要素には、「latitude,longitude」または「latitude,longitude,name」という文字列が含まれます。
 
    ディメンションを作成する手順については、『*データセット設定ガイド*』を参照してください。
 
@@ -27,9 +26,9 @@ ht-degree: 89%
 
 >[!NOTE]
 >
->[!DNL Dynamic Points]を使用する場合、レイヤーファイルで指定したディメンションのカーディナリティが妥当であることを確認する必要があります。 データセットの行ごとに緯度と経度が異なる場合、ディメンションはすぐにいっぱいになり、大部分の行は小さい要素に分類されます。小さい要素は緯度と経度を持たないので、グローブ上に表示されません。
+>[!DNL Dynamic Points]を使用する場合は、レイヤーファイルで指定したディメンションの基数が妥当であることを確認する必要があります。 データセットの行ごとに緯度と経度が異なる場合、ディメンションはすぐにいっぱいになり、大部分の行は小さい要素に分類されます。小さい要素は緯度と経度を持たないので、グローブ上に表示されません。
 
-## 要素ポイントレイヤーファイルの形式{#section-0645fbc761c14bb986f3d6f02df407a0}
+## 要素ポイントレイヤーファイル形式{#section-0645fbc761c14bb986f3d6f02df407a0}
 
 動的ポイントを使用する各要素ポイントレイヤーファイルは、以下のテンプレートを使用してフォーマットする必要があります。
 
