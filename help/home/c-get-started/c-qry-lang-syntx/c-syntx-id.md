@@ -3,7 +3,6 @@ description: 指標、ディメンション、フィルターの式では、識�
 title: 識別子の構文
 uuid: 9cfa188a-05ca-4163-a268-e33fce9a1929
 exl-id: 79bc5585-7b21-4a9d-b044-28ff4bc5a885
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '168'
