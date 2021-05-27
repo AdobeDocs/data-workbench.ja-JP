@@ -1,9 +1,8 @@
 ---
-description: すべての言語で、Report Server 6.0以降では、「insight.zbin」ファイルをReport Serverのルートフォルダーにコピーする必要があります。
+description: すべての言語で、Report Server 6.0以降では、レポートサーバーのルートフォルダーにコピーされた「insight.zbin」ファイルが必要です。
 title: 言語ファイル（.zbin ファイル）を使用したレポートサーバーの更新
 uuid: 2ecf2afc-bb5f-4fc7-8fb8-a904fb7ed407
 exl-id: a76b7c01-83f0-4cf2-97a9-07d51cc75b3c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '186'
@@ -13,7 +12,7 @@ ht-degree: 70%
 
 # 言語ファイル（.zbin ファイル）を使用したレポートサーバーの更新{#update-report-server-with-a-language-file-zbin-file}
 
-すべての言語で、Report Server 6.0以降では、「insight.zbin」ファイルをReport Serverのルートフォルダーにコピーする必要があります。
+すべての言語で、Report Server 6.0以降では、レポートサーバーのルートフォルダーにコピーされた「insight.zbin」ファイルが必要です。
 
 Report Server の言語ファイルを更新します。
 
@@ -37,7 +36,7 @@ Report Server の言語ファイルを更新します。
 
    >[!NOTE]
    >
-   >ロケールを指定しない場合、Report Serverはデフォルトで英語に設定されます。
+   >ロケールが指定されていない場合、レポートサーバーはデフォルトで英語に設定されます。
 
    次の手順に従って、Locale パラメーターを使用して、ReportServer をサービスとして開始します。
 
