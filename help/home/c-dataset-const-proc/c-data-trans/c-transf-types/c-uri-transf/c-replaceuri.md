@@ -3,7 +3,6 @@ description: ReplaceURI 変換は、内部 URI ディメンション内の値を
 title: ReplaceURI
 uuid: f9fc6d51-6eb6-4ace-8c19-2c0200555363
 exl-id: 03a6f306-5e2e-488c-8d79-a14938dcd635
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '189'
@@ -28,7 +27,7 @@ ReplaceURI 変換は、内部 URI ディメンション内の値を新しい値�
 
 >[!NOTE]
 >
->[!DNL ReplaceURI]変換を適用する前に、cs-uri-stemまたはcs-uriのコピーから、親[!DNL Page View]を持つ新しいシンプルディメンションを作成する必要があります。 これに関して不明な点がありましたらアドビにお問い合わせください。
+>[!DNL ReplaceURI]変換を適用する前に、cs-uri-stemまたはcs-uriのコピーから[!DNL Page View]の親を持つ新しいシンプルディメンションを作成する必要があります。 これに関して不明な点がありましたらアドビにお問い合わせください。
 
 この例では、「page=[!DNL ReplaceURI]pageid *」というクエリー文字列の* pageid[!DNL homepage.html] で示される閲覧ページが、Web サイトのホームページであった場合、*を使用して、すべて「*」に置き換えます。その結果、より見やすい形式の URI が得られます。
 
