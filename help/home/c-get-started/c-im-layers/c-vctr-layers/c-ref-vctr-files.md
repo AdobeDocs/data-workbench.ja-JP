@@ -3,7 +3,6 @@ description: 1 つ以上のベクトル（.vec）ファイルを参照するベ�
 title: ベクターファイルを参照するベクターレイヤーの定義
 uuid: fe6639fb-98fb-4246-9cc1-1a928df6ae0a
 exl-id: d78fa7ea-e2a9-42b7-9071-5f72409c5b7a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '281'
@@ -15,19 +14,19 @@ ht-degree: 66%
 
 1 つ以上のベクトル（.vec）ファイルを参照するベクトルレイヤーを作成できます。ベクトルファイルには、グローブ上に描画するベクトルを定義するデータが格納されています。
 
-1つ以上の[!DNL .vec]ファイルを参照するベクトルレイヤーを定義するには、次のファイルが必要です。
+1つ以上の[!DNL .vec]ファイルを参照するベクトルレイヤーを定義するには、次の条件を満たす必要があります。
 
-* **グローブ上にベクトルを描画するために使用するデータを含む1つ以上の [!DNL .vec]** ファイル。
-
-   >[!NOTE]
-   >
-   >ベクトルレイヤーと共に使用する[!DNL .vec]ファイルを取得するには、Adobeにお問い合わせください。
-
-* **フ** ァイルの場所を指定するレイヤー [!DNL .vec] ファイル。レイヤーファイルの必要な形式について詳しくは、「[ベクトルレイヤーファイルの形式](../../../../home/c-get-started/c-im-layers/c-vctr-layers/c-ref-vctr-files.md#section-83a0077cf0c8479b9e7b2939bc761af1)」を参照してください。
+* **グローブ上にベ [!DNL .vec]** クトルを描くために使用されるデータを含む1つ以上のファイル。
 
    >[!NOTE]
    >
-   >[!DNL Geography]プロファイルーに付属する[!DNL Boundaries.layer]ファイルは、[!DNL mwnation.vec]、[!DNL mwstate.vec]、[!DNL mwcoast.vec]、[!DNL mwlake.vec]、[!DNL mwisland.vec]ファイルを参照するベクトルレイヤーです。
+   >ベクトルレイヤーで使用する[!DNL .vec]ファイルを取得するには、Adobeに連絡します。
+
+* **ファイル** の場所を指定するレイヤーフ [!DNL .vec] ァイル。レイヤーファイルの必要な形式について詳しくは、「[ベクトルレイヤーファイルの形式](../../../../home/c-get-started/c-im-layers/c-vctr-layers/c-ref-vctr-files.md#section-83a0077cf0c8479b9e7b2939bc761af1)」を参照してください。
+
+   >[!NOTE]
+   >
+   >[!DNL Boundaries.layer]ファイルは、[!DNL Geography]プロファイルと共に提供され、[!DNL mwnation.vec]、[!DNL mwstate.vec]、[!DNL mwcoast.vec]、[!DNL mwlake.vec]および[!DNL mwisland.vec]ファイルを参照するベクトルレイヤーです。
 
 ## ベクトルレイヤーファイル形式{#section-83a0077cf0c8479b9e7b2939bc761af1}
 
