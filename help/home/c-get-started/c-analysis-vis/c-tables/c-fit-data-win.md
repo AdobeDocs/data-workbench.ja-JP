@@ -3,7 +3,6 @@ description: 「ウィンドウに合わせる」オプションを使用する�
 title: ウィンドウへのデータの適合化
 uuid: a45283e1-56df-4110-a052-2135baeaf709
 exl-id: 79eb1177-11bd-44ad-aafc-4de6f961f78f
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '122'
@@ -15,7 +14,7 @@ ht-degree: 34%
 
 「ウィンドウに合わせる」オプションを使用すると、ウィンドウのサイズを変更するたびに、テーブルのデータ列が自動的に拡大または縮小されます。
 
-[!DNL Fit to Window]が無効な場合、データ列は手動でサイズ変更する必要があります。
+[!DNL Fit to Window]が無効になっている場合は、データ列のサイズを手動で設定する必要があります。
 
 **「ウィンドウに合わせる」オプションを有効または無効にするには**
 
