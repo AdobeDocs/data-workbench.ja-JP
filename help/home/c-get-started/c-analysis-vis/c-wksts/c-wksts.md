@@ -1,9 +1,8 @@
 ---
-description: Data Workbenchには、現在のビジュアライゼーションのアドホックフィルターと指標を作成するためのワークシートが用意されています。
+description: Data Workbenchは、現在のビジュアライゼーションのアドホックフィルターおよび指標を作成するためのワークシートを提供します。
 title: ワークシート
 uuid: 4e498150-3e44-4a19-8d8a-8be0d32693a6
 exl-id: 73f3e400-648c-4659-8e55-d3bd27ccceb6
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '90'
@@ -13,7 +12,7 @@ ht-degree: 25%
 
 # ワークシート{#worksheets}
 
-Data Workbenchには、現在のビジュアライゼーションのアドホックフィルターと指標を作成するためのワークシートが用意されています。
+Data Workbenchは、現在のビジュアライゼーションのアドホックフィルターおよび指標を作成するためのワークシートを提供します。
 
 ワークシートは通常のスプレッドシートと同様ですが、スプレッドシートとは異なり、式を含むセルはすべて指標を定義できます。
 
