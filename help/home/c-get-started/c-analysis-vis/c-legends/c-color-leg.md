@@ -3,7 +3,6 @@ description: 色凡例は、コンバージョンや定着などの指標別に�
 title: カラー凡例
 uuid: 4f5ad93e-9128-464c-b5b7-9db454fa71a6
 exl-id: 0ecf5237-8d64-46a6-b73b-e59de69e5988
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '141'
@@ -19,9 +18,9 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->色凡例で指標を選択しない場合、すべてのビジュアライゼーションが青で表示されます。
+>色凡例で指標を選択しない場合、すべてのビジュアライゼーションが青色で表示されます。
 
-## 指標をアクティブ化または変更{#section-694234fc79fd44c2a2ea2f677f74b3dc}
+## 指標{#section-694234fc79fd44c2a2ea2f677f74b3dc}をアクティブ化または変更する
 
 * 指標名を右クリックして、目的の指標をクリックします。
 
