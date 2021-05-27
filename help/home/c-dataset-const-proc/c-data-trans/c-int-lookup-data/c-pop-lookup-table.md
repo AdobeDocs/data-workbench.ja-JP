@@ -3,7 +3,6 @@ description: Categorize 変換または FlatFileLookup 変換を使用した場�
 title: ルックアップテーブルへのデータ投入
 uuid: a11f3902-8853-4d22-bbfd-b2a3d143cb7b
 exl-id: e83d9feb-44fe-4fa1-b559-e1f5606637b5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '280'
