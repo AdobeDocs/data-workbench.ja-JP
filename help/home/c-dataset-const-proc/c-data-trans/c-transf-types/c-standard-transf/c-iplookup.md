@@ -3,7 +3,6 @@ description: IPLookup 変換は、IP Geo-Location データまたは IP Geo-Inte
 title: IPLookup
 uuid: 6fccee39-761f-4854-a7fd-3f8b453e0698
 exl-id: 3e9dba44-8d31-49af-8ce0-fecaf92edeb7
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '257'
@@ -15,11 +14,11 @@ ht-degree: 88%
 
 IPLookup 変換は、IP Geo-Location データまたは IP Geo-Intelligence データ（各種ベンダーによって提供され、アドビ独自の形式に変換される）を受け取って、そのデータを分析用の地理情報に変換します。
 
-新しい> *Transformation type *メニューには、追加2つの[!DNL IPLookup]変換が表示されます。
+新規追加メニューには、2つの[!DNL IPLookup]変換が表示されます。
 
-* [!DNL IPLookup] Quova( [!DNL IP geo-location] データ)
+* [!DNL IPLookup] Quova(データの [!DNL IP geo-location] 場合)
 
-* [!DNL IPLookup] Digital Envoy for  [!DNL IP geo-intelligence] data
+* [!DNL IPLookup] Digital Envoy(データ [!DNL IP geo-intelligence] 用)
 
 [!DNL IPLookup]変換を定義する場合は、[!DNL IP geo-location]データまたは[!DNL IP geo-intelligence]データに適した変換を選択します。
 
