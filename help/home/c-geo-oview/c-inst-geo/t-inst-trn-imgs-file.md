@@ -3,7 +3,6 @@ description: Terrain Images.cfgファイルをData Workbenchサーバーにイ�
 title: Terrain Images.cfg ファイルのインストール
 uuid: b692bff9-9356-4047-a2f7-f44310bf85fa
 exl-id: 4cc91839-ea36-4476-846a-59af4c5f684c
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '91'
@@ -17,7 +16,7 @@ Terrain Images.cfgファイルをData Workbenchサーバーにインストール
 
 >[!NOTE]
 >
->グローブビジュアライゼーションに表示する新しい地形画像レイヤーを作成する場合にのみ、[!DNL Terrain Images.cfg]ファイルをインストールする必要があります。
+>新しい地形画像レイヤーをグローブビジュアライゼーションに表示する場合にのみ、[!DNL Terrain Images.cfg]ファイルをインストールする必要があります。
 
 1. Adobeから提供された[!DNL .zip]ファイルから[!DNL Terrain Images.cfg]ファイルをコピーします。
 1. Data Workbenchサーバーのインストールディレクトリ内のComponentsフォルダーにファイルを貼り付けます。
