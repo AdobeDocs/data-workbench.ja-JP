@@ -3,7 +3,6 @@ description: Data Workbench サーバーは再処理中、ログ処理と変換�
 title: 再処理と再変換について
 uuid: 0253bc8c-8883-41eb-8a9f-e0685613ff5c
 exl-id: 12c69935-a981-492c-9124-71f6f06ff77b
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '368'
@@ -26,7 +25,7 @@ Data Workbench サーバーは再処理中、ログ処理と変換のデータ�
 * 新しいデータソースを追加する。
 * [!DNL Profile.cfg] ファイルで新しい Data Workbench サーバーをクラスターに追加する。
 * [!DNL Cluster.cfg]ファイルを変更します。
-* [!DNL Log Processing.cfg]ファイルまたは[!DNL Log Processing Dataset Include]ファイルを変更します。次のファイルを変更できます。
+* [!DNL Log Processing.cfg]ファイルまたは[!DNL Log Processing Dataset Include]ファイルを変更します（以下を含みますが、これらに限定されません）。
 
    * 新しいパラメーターの追加
    * 変換の変更
@@ -38,10 +37,10 @@ Data Workbench サーバーは再処理中、ログ処理と変換のデータ�
 
 >[!NOTE]
 >
->再処理を行うには、[!DNL Log Processing Mode.cfg]ファイルのPauseパラメーターをfalseに設定する必要があります。 このパラメーターの値はデフォルトで false になっているので、通常、変更は不要です。[!DNL Log Processing Mode.cfg]について詳しくは、[追加の構成ファイル](/help/home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md)を参照してください。
+>再処理を行うには、[!DNL Log Processing Mode.cfg]ファイルのPauseパラメーターをfalseに設定する必要があります。 このパラメーターの値はデフォルトで false になっているので、通常、変更は不要です。[!DNL Log Processing Mode.cfg]について詳しくは、[追加の設定ファイル](/help/home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md)を参照してください。
 
 ## 再変換 {#section-02446744549940ada8eba0573ec5575f}
 
-変換の変更や新しいディメンションの定義など、[!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイル内の情報を変更するたびに、自動的に変換が実行されます。
+[!DNL Transformation.cfg]ファイル内または[!DNL Transformation Dataset Include]ファイル内の情報（変換の変更や新しいディメンションの定義など）を変更するたびに、変換が自動的に実行されます。
 
-[!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイル（[!DNL Categorize]、[!DNL FlatFileLookup]、[!DNL ODBCLookup]変換の参照ファイルを含む）で参照されている参照ファイルを変更するたびに、[!DNL Transformation.cfg]ファイルのReprocessパラメーターに任意の文字または文字の組み合わせを入力し、ファイルを保存します。
+[!DNL Transformation.cfg]ファイル内または[!DNL Transformation Dataset Include]ファイル内で参照されているルックアップファイル（[!DNL Categorize]、[!DNL FlatFileLookup]、[!DNL ODBCLookup]変換のルックアップファイルを含む）を変更するたびに、[!DNL Transformation.cfg]ファイルのReprocessパラメーターに任意の文字または組み合わせを入力し、ファイルを保存します。
