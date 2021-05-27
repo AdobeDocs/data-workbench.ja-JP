@@ -1,9 +1,8 @@
 ---
-description: Data WorkbenchインストールディレクトリのWorkspacesフォルダー内のfolder.lockファイルでは、特定のフォルダー内のワークスペースをロックするかどうかを指定し、workspace name.lockファイルでは、特定のワークスペースをロックするかどうかを指定します。
+description: Data WorkbenchインストールディレクトリのWorkspacesフォルダ内で、folder.lockファイルは特定のフォルダ内のワークスペースをロックするかどうかを指定し、workspace name.lockファイルは特定のワークスペースをロックするかどうかを指定します。
 title: Folder.lock ファイルと workspace name.lock ファイル
 uuid: d4c69e16-0596-4542-854f-bc614167ae80
 exl-id: 980b8692-8aa5-481f-b6bc-33836d8a3a76
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '601'
@@ -13,7 +12,7 @@ ht-degree: 35%
 
 # Folder.lock ファイルと workspace name.lock ファイル{#folder-lock-and-workspace-lock-files}
 
-Data WorkbenchインストールディレクトリのWorkspacesフォルダー内のfolder.lockファイルでは、特定のフォルダー内のワークスペースをロックするかどうかを指定し、workspace name.lockファイルでは、特定のワークスペースをロックするかどうかを指定します。
+Data WorkbenchインストールディレクトリのWorkspacesフォルダ内で、folder.lockファイルは特定のフォルダ内のワークスペースをロックするかどうかを指定し、workspace name.lockファイルは特定のワークスペースをロックするかどうかを指定します。
 
 フォルダー全体をロックする場合、Workspaces フォルダーレベルまたはサブフォルダー（タブ）レベルでロックできます。すべてのフォルダーを（Workspaces フォルダーレベルで）ロックまたはロック解除してから、特定のサブフォルダー（[!DNL folder.lock] ファイルを使用）または特定のワークスペース（*workspace name*.lock ファイルを使用）に対して例外を指定することもできます。
 
@@ -30,13 +29,13 @@ Data WorkbenchインストールディレクトリのWorkspacesフォルダー�
 
 ## .lock ファイルの作成{#section-c4f78b4b43c347368a376904effb41d2}
 
-[!DNL Profile Manager]または[!DNL Workspaces Manager]の[!DNL Create menu]オプションを使用して、[!DNL new folder.lock]ファイルを作成できます。 また、既存の[!DNL .lock]ファイルを適切なフォルダーにコピー&amp;ペーストし、ファイル名を変更（*workspace name*.lockファイルのみ）し、必要に応じてファイル内の設定を変更することで、[!DNL folder.lock]または&#x200B;*workspace name*.lockファイルを作成できます。
+[!DNL Profile Manager]または[!DNL Workspaces Manager]の[!DNL Create menu]オプションを使用して、[!DNL new folder.lock]ファイルを作成できます。 [!DNL folder.lock]または&#x200B;*workspace name*.lockファイルを作成するには、既存の[!DNL .lock]ファイルを適切なフォルダーにコピー&amp;ペーストし、ファイル名を変更し（*workspace name*.lockファイルの場合のみ）、必要に応じてファイル内の設定を変更します。
 
 **新しい folder.lock ファイルを作成するには**
 
-1. Data Workbenchで、ワークスペース内で右クリックし、**[!UICONTROL Manage]**/**[!UICONTROL Profile]**/**[!UICONTROL Workspaces Manager]**&#x200B;をクリックして、[!DNL Workspaces Manager]を開きます。
+1. Data Workbenchで、ワークスペース内で右クリックし、**[!UICONTROL Manage]** / **[!UICONTROL Profile]** / **[!UICONTROL Workspaces Manager]**&#x200B;をクリックして[!DNL Workspaces Manager]を開きます。
 1. [!DNL folder.lock] ファイルを作成するフォルダーをクリックします。
-1. そのフォルダーの[!DNL User]列で、セル内を右クリックし、**[!UICONTROL Create]**/**[!UICONTROL folder.lock]**&#x200B;をクリックします。 [!DNL new folder.lock]ファイルが表示されます。 [!DNL New folder.lock] ファイルは、デフォルトでは [] unlockedに設定されています。
+1. そのフォルダーの[!DNL User]列で、セル内を右クリックし、**[!UICONTROL Create]** / **[!UICONTROL folder.lock]**&#x200B;をクリックします。 [!DNL new folder.lock]ファイルが表示されます。 [!DNL New folder.lock] ファイルはデフォルトでunlockedに設 [] 定されています。
 1. （オプション）ファイル内の設定を変更する必要がある場合：
 
    1. ファイルのチェックマークを右クリックします。
@@ -45,17 +44,17 @@ Data WorkbenchインストールディレクトリのWorkspacesフォルダー�
    1. 設定を[locked]に変更します。
    1. ファイルを保存して閉じます。
 
-1. この設定を同じ作業プロファイルで作業しているすべてのユーザーに対して設定するには、ファイルのチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL working profile name]***&#x200B;をクリックします。
+1. この設定を同じ作業プロファイルを使用するすべてのユーザーに対して行うには、ファイルのチェックマークを右クリックし、 **[!UICONTROL Save to]** / *&lt;**[!UICONTROL working profile name]***&#x200B;をクリックします。
 
 このフォルダー内のワークスペースが、新しいファイル内の設定に従ってロックまたはロック解除されます。
 
 **既存のファイルから .lock ファイルを作成するには**
 
 1. [!DNL Profile Manager]または[!DNL Workspaces Manager]で、既存の[!DNL .lock]ファイルのチェックマークを右クリックし、**[!UICONTROL Copy]**&#x200B;をクリックします。
-1. [!DNL .lock]ファイルを貼り付けるフォルダーの[!DNL User]列で、セル内を右クリックし、**[!UICONTROL Paste]**&#x200B;をクリックします。
-1. このファイルを使用して個々のワークスペースをロックする場合は、[!DNL User]列の[!DNL .lock]ファイルのチェックマークを右クリックし、[!DNL File]フィールドの名前をロックするワークスペースの名前に合わせて変更します。
+1. [!DNL .lock]ファイルを貼り付けるフォルダーの[!DNL User]列で、セル内を右クリックし、「**[!UICONTROL Paste]**」をクリックします。
+1. このファイルを使用して個々のワークスペースをロックする場合は、[!DNL User]列の[!DNL .lock]ファイルのチェックマークを右クリックし、[!DNL File]フィールドの名前を、ロックするワークスペースの名前に合わせて変更します。
 
-   例えば、[!DNL Monthly Numbers.vw]ワークスペースをロックするには、ファイルに「[!DNL Monthly Numbers.lock]」という名前を付けます。このファイルを使用して個々のワークスペースをロックする場合は、[!DNL User]列の[!DNL .lock]ファイルのチェックマークを右クリックし、[!DNL File]フィールドの名前をロックするワークスペースの名前に合わせて変更します。 例えば、[!DNL Monthly Numbers.vw]ワークスペースをロックするには、ファイルに「[!DNL Monthly Numbers.lock]」という名前を付けます。
+   例えば、[!DNL Monthly Numbers.vw]ワークスペースをロックするには、ファイルに「[!DNL Monthly Numbers.lock]」と名前を付けます。このファイルを使用して個々のワークスペースをロックする場合は、[!DNL User]列の[!DNL .lock]ファイルのチェックマークを右クリックし、[!DNL File]フィールドの名前を、ロックするワークスペースの名前に合わせて変更します。 例えば、[!DNL Monthly Numbers.vw]ワークスペースをロックするには、ファイルに「[!DNL Monthly Numbers.lock]」と名前を付けます。
 
 1. ファイル内の設定を変更するには、次のようにします。
 
@@ -65,6 +64,6 @@ Data WorkbenchインストールディレクトリのWorkspacesフォルダー�
    1. 設定を[locked]または[unlocked]に変更します。
    1. ファイルを保存して閉じます。
 
-1. この設定を同じ作業プロファイルで作業しているすべてのユーザーに対して設定するには、ファイルのチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL working profile name]***&#x200B;をクリックします。
+1. この設定を同じ作業プロファイルを使用するすべてのユーザーに対して行うには、ファイルのチェックマークを右クリックし、 **[!UICONTROL Save to]** / *&lt;**[!UICONTROL working profile name]***&#x200B;をクリックします。
 
 新しいファイル内の設定に従って、選択したワークスペースがロックまたはロック解除されます。
