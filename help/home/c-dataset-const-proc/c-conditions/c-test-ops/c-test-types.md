@@ -3,7 +3,6 @@ description: Compare 条件と Range 条件では、使用する比較のタイ�
 title: テスト演算のタイプ
 uuid: dc0433dd-a35e-472e-8975-f58347512c11
 exl-id: 8abed46e-e76d-47c0-bbe9-cf98cf2d61e8
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '425'
