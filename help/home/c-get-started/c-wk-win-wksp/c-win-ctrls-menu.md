@@ -3,7 +3,6 @@ description: ウィンドウコントロールメニューにより、個々の�
 title: ウィンドウ制御メニュー
 uuid: 9a7c24a7-c591-4d73-94f5-bba79b2aa848
 exl-id: abbd6545-0b80-45a2-88d7-f0687249583d
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '418'
@@ -35,7 +34,7 @@ ht-degree: 93%
   </tr> 
   <tr> 
    <td colname="col1"> 保存 </td> 
-   <td colname="col2">ビジュアライゼーションを（<span class="filepath">.vw</span> ファイルとして）現在の状態で保存します。表示されるダイアログボックスにより、ビジュアライゼーションを別の名前や別の場所に保存できます。デフォルトの場所は、Data Workbenchのインストールディレクトリ内のUser\<i>プロファイル名</i>\Workフォルダーです。 </td> 
+   <td colname="col2">ビジュアライゼーションを（<span class="filepath">.vw</span> ファイルとして）現在の状態で保存します。表示されるダイアログボックスにより、ビジュアライゼーションを別の名前や別の場所に保存できます。デフォルトの場所は、Data Workbenchインストールディレクトリ内のUser\<i>profile name</i>\Workフォルダーです。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 表示形式 </td> 
@@ -47,7 +46,7 @@ ht-degree: 93%
   </tr> 
   <tr> 
    <td colname="col1"> ウィンドウに合わせる </td> 
-   <td colname="col2">ウィンドウのサイズを変更するたびに、ウィンドウのコンテンツを自動的に拡大または縮小してウィンドウに合わせられます。詳しくは、「  <a href="../../../home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md#concept-02081ed7d91c4fdcb8fc863f2a51c962"> 画像</a> 注釈の操作とウィンドウ <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md#concept-b812b1171fc240d9a4cf6d6d57f621a6"> へのデータの調整</a>。 </td> 
+   <td colname="col2">ウィンドウのサイズを変更するたびに、ウィンドウのコンテンツを自動的に拡大または縮小してウィンドウに合わせられます。詳しくは、「  <a href="../../../home/c-get-started/c-analysis-vis/c-annots/c-image-annots.md#concept-02081ed7d91c4fdcb8fc863f2a51c962"> 画像注釈とウィ</a> ンドウ <a href="../../../home/c-get-started/c-analysis-vis/c-tables/c-fit-data-win.md#concept-b812b1171fc240d9a4cf6d6d57f621a6"> へのデータの適合の操作</a> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Order </td> 
