@@ -1,9 +1,8 @@
 ---
-description: data workbenchの詳細なステータスインターフェイスは、Data WorkbenchサーバーのクライアントであるData Workbenchサーバーとレポートサーバーのコンピューターに関するエラーや他の問題のトラブルシューティングに役立ちます。
+description: Data Workbenchの詳細なステータスインターフェイスは、Data WorkbenchサーバーのクライアントであるData Workbenchサーバーとレポートサーバーのコンピューターに関するエラーやその他の問題のトラブルシューティングに役立ちます。
 title: レポートサーバーのステータスの表示
 uuid: 5260266d-5bd1-4905-9619-f67f6e1bc54c
 exl-id: 3a717a81-7c5d-432d-b214-4ae0455b19b5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '198'
@@ -13,11 +12,11 @@ ht-degree: 6%
 
 # レポートサーバーのステータスの表示{#displaying-report-server-status}
 
-data workbenchの詳細なステータスインターフェイスは、Data WorkbenchサーバーのクライアントであるData Workbenchサーバーとレポートサーバーのコンピューターに関するエラーや他の問題のトラブルシューティングに役立ちます。
+Data Workbenchの詳細なステータスインターフェイスは、Data WorkbenchサーバーのクライアントであるData Workbenchサーバーとレポートサーバーのコンピューターに関するエラーやその他の問題のトラブルシューティングに役立ちます。
 
-[!DNL Master Server Detailed Status]インターフェイスでレポートのステータスを表示するには、data workbenchサーバーの[!DNL Communications.cfg]ファイル内の[!DNL Servers]ベクトルにレポートステータスサーバーを追加する必要があります。 次の手順では、[!DNL Communications.cfg]ファイルにレポートステータスサーバーを追加する方法を説明します。
+[!DNL Master Server Detailed Status]インターフェイスでレポートのステータスを表示するには、Data Workbenchサーバーの[!DNL Communications.cfg]ファイルの[!DNL Servers]ベクトルにレポートステータスサーバーを追加する必要があります。 次の手順では、[!DNL Communications.cfg]ファイルにレポートステータスサーバーを追加する方法を説明します。
 
-[!DNL Detailed Status]インターフェイスの詳細については、『*Data Workbenchユーザーガイド*』の「管理インターフェイス」という章を参照してください。
+[!DNL Detailed Status]インターフェイスの詳細については、『*Data Workbenchユーザーガイド*』の「管理インターフェイス」の章を参照してください。
 
 **を追加するには[!DNL Report Status Server]**
 
@@ -25,7 +24,7 @@ data workbenchの詳細なステータスインターフェイスは、Data Work
 
    例：[!DNL C:\Adobe\Server\Components]
 1. メモ帳などのテキストエディターで[!DNL Communications.cfg]を開きます。
-1. [!DNL Servers]ベクトルを探し、次のファイルフラグメントで強調表示されているように、このベクトルにレポートステータスサーバーを追加します。
+1. [!DNL Servers]ベクトルを探し、次のファイルフラグメントでハイライト表示されているように、このベクトルにレポートステータスサーバーを追加します。
 
    ```
     . . .
@@ -44,5 +43,5 @@ data workbenchの詳細なステータスインターフェイスは、Data Work
          URI = string: /ReportStatus.vsp
    ```
 
-1. 前の手順のファイルフラグメントで強調表示されているように、[!DNL Servers]ベクトルの項目数を更新します（つまり、項目の値を1ずつ増分します）。
+1. [!DNL Servers]ベクトルの項目数を更新します（つまり、項目の値を1ずつ増やします）。前の手順のファイルフラグメントでハイライト表示されています。
 1. ファイルを保存します。
