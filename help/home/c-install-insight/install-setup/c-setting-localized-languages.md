@@ -3,7 +3,6 @@ description: insight.zbin ファイルを設定して、クライアントアプ
 title: ローカライズされた言語の設定
 uuid: 7735e183-7ba3-4e11-bfe2-7f87e4c55fc8
 exl-id: bb57887f-f213-48a4-9a10-8da7ea33eda5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '468'
@@ -21,9 +20,9 @@ insight.zbin ファイルを設定して、クライアントアプリケーシ�
 
 1. **Data Workbench サーバー 6.x への更新**[!DNL base\localization\*.zbin] ファイルを更新することにより、Data Workbench サーバーをローカリゼーション用に更新する必要があります。次に、この [!DNL insight.zbin] ファイルはクライアントにコピーされます。
 
-   [!DNL insight.zbin] ファイルは、[!DNL insight.exe] ファイルと共にインストールフォルダーに含まれています。言語固有の[!DNL .zbin]ファイルが提供されないサーバーに接続すると、data workbenchはこのファイルの使用に進みます。
+   [!DNL insight.zbin] ファイルは、[!DNL insight.exe] ファイルと共にインストールフォルダーに含まれています。言語固有の[!DNL .zbin]ファイルを提供しないサーバーに接続すると、Data Workbenchは引き続きこのファイルを使用します。
 
-   バックアップファイルの [!DNL insight.zbin] は、どの言語でも提供できます。その結果、Data Workbenchを中国語で使用し、この言語をサポートしないサーバーに接続した場合、サーバーが基本プロファイルーを変更して[!DNL Base/Localization]フォルダーから[!DNL .zbin]ファイルを削除しても、Data Workbenchクライアントは中国語のままです。
+   バックアップファイルの [!DNL insight.zbin] は、どの言語でも提供できます。その結果、Data Workbenchを中国語で使用し、この言語をサポートしないサーバーに接続した場合、サーバーが基本プロファイルを変更して[!DNL Base/Localization]フォルダーから[!DNL .zbin]ファイルを削除しても、Data Workbenchクライアントは中国語のままになります。
 
 1. **Data Workbench レポートサーバーの更新** Data Workbench レポートサーバーのルートフォルダーにある [!DNL insight.zbin] は、デフォルトでは英語です。管理者は、更新されたレポートサーバーパッケージから[!DNL .zbin]ファイルを選択してコピーし、Data Workbenchレポートサーバーのルートディレクトリに配置する必要があります。 クライアント同様、レポートサーバーでも、選択した言語に適した引数（[!DNL Insight.exe -zh-cn] など）を指定する必要があります。
 
@@ -31,10 +30,10 @@ insight.zbin ファイルを設定して、クライアントアプリケーシ�
    1. 新しいレポートサーバーパッケージから [!DNL Localization] フォルダーをコピーします。
    1. [!DNL Localization] フォルダーから、[!DNL Insight.zbin] ファイルをコピーして、[!DNL Insight.exe] が存在するレポートサーバーのルートディレクトリに配置します。
 
-   1. 追加[!DNL insight.exe -zh-cn]などの必須の引数
+   1. 必要な引数（[!DNL insight.exe -zh-cn]など）を追加します。
    1. レポートサーバーを再起動します。
 
-## Data Workbench クライアントの更新  {#section-9653d3fcaf2a4337a97b685857e7aeac}
+## Data Workbench クライアントの更新 {#section-9653d3fcaf2a4337a97b685857e7aeac}
 
 サーバーを更新した後で、以下の手順を実行して各クライアントを更新します。
 
@@ -45,9 +44,9 @@ insight.zbin ファイルを設定して、クライアントアプリケーシ�
    ```
 
 1. クライアントを再開します。
-1. ソフトウェアおよびドキュメントプロファイル(SoftDocsプロファイル)に移動し、必要な&#x200B;**[!UICONTROL insight.zbin]**&#x200B;ファイルをクライアントパッケージからダウンロードします。[!DNL Software\Insight Client\Insight_6.1.zip]
+1. ソフトウェアおよびドキュメントプロファイル（SoftDocsプロファイル）に移動し、必要な&#x200B;**[!UICONTROL insight.zbin]**&#x200B;ファイルをクライアントパッケージからダウンロードします。[!DNL Software\Insight Client\Insight_6.1.zip]
 
-1. [!DNL insight.zbin]ファイルを[!DNL insight.exe]のあるフォルダーに移動します。
+1. [!DNL insight.zbin]ファイルを、[!DNL insight.exe]があるフォルダーに移動します。
 
 1. クライアントファイルがサーバーから更新されるように、[!DNL Insight.cfg] ファイル引数を True に設定します。
 
