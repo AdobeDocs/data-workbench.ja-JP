@@ -3,7 +3,6 @@ description: データセット構築用ログエントリから取得された�
 title: AppendURI
 uuid: 8334d4f9-2bf6-4bd0-af65-8f2b0959652d
 exl-id: 0d5901c0-bd13-4499-8e26-44839aeb7413
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '557'
@@ -40,4 +39,4 @@ modelview という ASP ページは、すべてのトラフィックが集ま�
 
 ![](assets/cfg_TransformationType_AppendURI.png)
 
-この例のシステムは、[!DNL modelview.asp] と [!DNL xmlmodelview.asp] という 2 つのページですべてのリクエストを処理しています。一方のページはブラウザートラフィック用で、もう一方のページはシステム間の XML 通信用です。アプリケーションサーバープロセスは、実行するアクションを cs-uri-query の id 名に基づいて決定します。したがって、id フィールドから値を抽出して、URI に付加することが可能です。結果、Web サイト訪問者のトラフィックを反映した、様々なバリエーションの URI を収集することができます。この例の [!DNL String Match] 条件は、変換の適用先となるログエントリを決定するものです。cs-uri-stem フィールドから目的の 2 つの Web ページを探し、それ以外はすべて無視しています。入力（名前と値のペアの値）は、cs-uri-query(id) の結果、つまり「login」です。Query String Key パラメーターの指定に従って、「id」という名前が付加されます。したがって、この例のcs-uri値から得られる値の場合、[!DNL URI]ディメンションで使用される結果のURIは[!DNL /modelview.asp&id=login]になります。
+この例のシステムは、[!DNL modelview.asp] と [!DNL xmlmodelview.asp] という 2 つのページですべてのリクエストを処理しています。一方のページはブラウザートラフィック用で、もう一方のページはシステム間の XML 通信用です。アプリケーションサーバープロセスは、実行するアクションを cs-uri-query の id 名に基づいて決定します。したがって、id フィールドから値を抽出して、URI に付加することが可能です。結果、Web サイト訪問者のトラフィックを反映した、様々なバリエーションの URI を収集することができます。この例の [!DNL String Match] 条件は、変換の適用先となるログエントリを決定するものです。cs-uri-stem フィールドから目的の 2 つの Web ページを探し、それ以外はすべて無視しています。入力（名前と値のペアの値）は、cs-uri-query(id) の結果、つまり「login」です。Query String Key パラメーターの指定に従って、「id」という名前が付加されます。したがって、この例の受信cs-uri値では、[!DNL URI]ディメンションで使用される結果のURIは[!DNL /modelview.asp&id=login]になります。
