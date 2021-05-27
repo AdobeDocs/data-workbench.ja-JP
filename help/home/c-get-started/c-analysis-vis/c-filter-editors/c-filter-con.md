@@ -3,7 +3,6 @@ description: 新しいフィルターの作成や、新しいフィルターへ�
 title: フィルター条件の使用
 uuid: a75fcb21-be5c-452a-8632-86cd78db15cb
 exl-id: 15745b0c-2754-4f8b-acfd-a6bd5886ecf8
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '852'
@@ -17,19 +16,19 @@ ht-degree: 81%
 
 ## フィルターの作成 {#section-70ba51ae625e493fa3ca70b93ffba406}
 
-* ワークスペースでフィルターエディターを開くには、**[!UICONTROL Add Visualization]**/**[!UICONTROL Filter Editor]**&#x200B;を右クリックします。
+* **[!UICONTROL Add Visualization]** / **[!UICONTROL Filter Editor]**&#x200B;を右クリックして、ワークスペースでフィルターエディターを開きます。
 
    -or-
 
-* 既にフィルターエディターが開いていて、フィルターが読み込まれている場合は、現在のフィルターの名前を右クリックし、「**[!UICONTROL New Blank Filter]**」をクリックします。
+* 既にフィルタエディターが開いていて、フィルターが読み込まれている場合は、現在のフィルターの名前を右クリックし、「**[!UICONTROL New Blank Filter]**」をクリックします。
 
-## 追加新しいフィルタ{#section-50986db80f1148c489630a8a63fe9f28}の条件
+## 新しいフィルター{#section-50986db80f1148c489630a8a63fe9f28}に条件を追加します。
 
 1. 新しいフィルターを作成します。（「フィルターを適用」ではなく）「フィルターを作成」がハイライトされていて、フィルターを作成モードで作業していることを確認します。
-1. **[!UICONTROL Right-click to build filter]**&#x200B;とマークされた領域内で右クリックし、次のオプションの1つを選択します。
+1. **[!UICONTROL Right-click to build filter]**&#x200B;とマークされた領域内を右クリックし、次のいずれかのオプションを選択します。
 
    * インクルージョンフィルターを作成するには、**[!UICONTROL Include group with]**&#x200B;をクリックします。
-   * 除外フィルターを作成するには、**[!UICONTROL Exclude group with]**&#x200B;をクリックします。
+   * 除外フィルターを作成するには、「**[!UICONTROL Exclude group with]**」をクリックします。
 
 1. フィルターを追加する条件のタイプを選択します。
 
@@ -79,7 +78,7 @@ ht-degree: 81%
  </tbody> 
 </table>
 
-次の例のフィルターは、最後のページ表示が[!DNL /hme/rts/Our Rates]であったユーザーの最初/最後のフィルターを定義します。
+この例のフィルターは、最後のページビューが[!DNL /hme/rts/Our Rates]のユーザーの最初と最後のフィルターを定義します。
 
 ![](assets/client-fil2.png)
 
@@ -96,11 +95,11 @@ ht-degree: 81%
 
 ![](assets/vis_FilterEditor_ExampleMovies.png)
 
-## フィルター条件の削除{#section-3092e0d7ac624885b8fe24616279de13}
+## フィルター条件{#section-3092e0d7ac624885b8fe24616279de13}の削除
 
 >[!NOTE]
 >
->フィルターを作成モードで作業している場合にのみ、条件を削除できます。 ワークスペースにフィルターを適用していた場合、そのフィルターの 1 つ以上の条件を削除するには、「フィルターを作成」をクリックしてフィルターを作成モードに戻る必要があります。
+>条件を削除できるのは、フィルターを作成モードで作業している場合のみです。 ワークスペースにフィルターを適用していた場合、そのフィルターの 1 つ以上の条件を削除するには、「フィルターを作成」をクリックしてフィルターを作成モードに戻る必要があります。
 
 * 条件の左側の **x** をクリックして、条件を削除します。
 
