@@ -3,7 +3,6 @@ description: Copy 変換は、指定された出力フィールドに入力フ�
 title: Copy
 uuid: 073f53bf-befb-4fba-a8f8-260ffcdd007c
 exl-id: 04e97006-1e8e-4123-bbbc-b90a5231170f
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '176'
@@ -11,7 +10,7 @@ ht-degree: 76%
 
 ---
 
-# Copy{#copy}
+# コピー{#copy}
 
 Copy 変換は、指定された出力フィールドに入力フィールドの値を単純にコピーするものです。入力フィールドが文字列ベクトルとなる可能性がある場合、出力フィールドの名前は「x-」で始める必要があります。
 
@@ -24,6 +23,6 @@ Copy 変換は、指定された出力フィールドに入力フィールドの
 | Input | コピー元のフィールドの名前。 |  |
 | Output | 出力フィールドの名前。 |  |
 
-次の例は、Webサイトトラフィックから収集されたデータのフィールドを使用するもので、cs-uri-stemが[!DNL /checkout/confirmed.php]と一致するたびに、出力フィールドx-purchase-successにリテラル値「1」が与えられます。 [!DNL Condition]が満たされない（つまり、cs-uri-stemが[!DNL /checkout/confirmed.php]と一致しない）場合、x-purchase-successは変更されません。
+この例では、Webサイトトラフィックから収集されたデータのフィールドを使用し、cs-uri-stemが[!DNL /checkout/confirmed.php]と一致するたびに、出力フィールドx-purchase-successにリテラル値「1」が与えられます。 [!DNL Condition]が満たされない場合（つまり、cs-uri-stemが[!DNL /checkout/confirmed.php]と一致しない場合）、x-purchase-successは変更されません。
 
 ![](assets/cfg_TransformationType_Copy.png)
