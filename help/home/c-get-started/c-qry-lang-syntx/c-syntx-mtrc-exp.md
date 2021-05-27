@@ -3,7 +3,6 @@ description: 指標は、指標エディターを使用して編集し、プロ�
 title: 指標式の構文
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
 exl-id: 27d86fea-6500-4608-aadb-f39058fd3a6e
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '851'
@@ -20,10 +19,10 @@ ht-degree: 91%
 メモ:
 
 1. 下線を引いた語句は、式のテキストにそのまま入力する必要があります。
-1. `{TEXT}?`の形式はオプションのテキストを表します。
+1. フォーム`{TEXT}?`はオプションのテキストを表します。
 1. `{TEXT}*`の形式は、0回以上発生する可能性のあるテキストを表します。
-1. `{A | B | C |...}`の形式は、A、B、Cなど、指定されたオプションの1つだけから成るテキストを表します。.
-1. `[A,B)`の形式は、AからBまでの数値の範囲を表します。
+1. フォーム`{A | B | C |...}`は、A、B、Cなど、指定されたオプションの1つで構成されるテキストを表します。.
+1. `[A,B)`の形式は、AからBまでの範囲の数値を表します。
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
@@ -48,7 +47,7 @@ ht-degree: 91%
    <td colname="col2"> <p>指標 A と指標 B の結果の積。 </p> <p>例：Dollars = Cents * 0.01 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>A/B </p> </td> 
+   <td colname="col1"> <p>A / B </p> </td> 
    <td colname="col2"> <p>指標 A と指標 B の結果の比。 </p> <p>例：Revenue_per_Session = Revenue / Sessions </p> </td> 
   </tr> 
   <tr> 
@@ -69,7 +68,7 @@ ht-degree: 91%
   </tr> 
   <tr> 
    <td colname="col1"> <p>log (B, X) </p> </td> 
-   <td colname="col2"> <p>数学的な対数関数。指標 X はパラメーターで、指標 B が底です。 </p> <p>例：dB = 20*log(Amplitude,10) </p> </td> 
+   <td colname="col2"> <p>数学的な対数関数。指標 X はパラメーターで、指標 B が底です。 </p> <p>例：dB = 20*log（振幅，10） </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Metric[Filter] </p> </td> 
