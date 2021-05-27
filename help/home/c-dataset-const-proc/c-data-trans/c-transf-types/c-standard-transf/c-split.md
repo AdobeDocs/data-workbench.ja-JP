@@ -3,7 +3,6 @@ description: Split 変換は、特定の区切り文字に基づいて 1 つの�
 title: Split
 uuid: 116e8465-8fb1-41eb-9a28-412cee54ab87
 exl-id: ea85b095-1306-4938-906d-35d421db6c98
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '319'
@@ -11,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Split{#split}
+# 分割{#split}
 
 Split 変換は、特定の区切り文字に基づいて 1 つの文字列を複数のサブ文字列のベクトルに分割します。
 
