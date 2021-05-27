@@ -3,7 +3,6 @@ description: パスブラウザーでのパスの拡張に関する情報です�
 title: パスの拡張
 uuid: 335fe6c2-4d8a-46f8-8e4e-d496f8e34373
 exl-id: 8b00e903-5318-456e-b439-56bbfb1308da
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '44'
