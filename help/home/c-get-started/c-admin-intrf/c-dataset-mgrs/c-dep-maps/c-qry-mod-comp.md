@@ -3,7 +3,6 @@ description: クエリーモデルコンポーネントに関する概念情報�
 title: クエリモデルコンポーネント
 uuid: 708fab0b-dc10-4306-b410-49268069ac3b
 exl-id: 1f5d0a3a-6647-4762-ab20-9d80e467d48f
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '160'
@@ -27,4 +26,4 @@ ht-degree: 70%
 
 >[!NOTE]
 >
->依存関係マップは非循環依存関係を受け入れるように設計されているので、循環依存関係に含まれるノードはマップ上で正しく表示されない場合があります。 「[!DNL Search]」テキストボックスに「circular dependency」と入力して、循環依存関係を検索できます。 [!DNL Search]機能の詳細については、[マップ内での検索](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-srch-map.md#task-a1e7065a538d46c78a7d28676d880dfb)を参照してください。
+>依存関係マップは非循環依存関係に対応するように設計されているので、循環依存関係に関係するノードがマップ上に正しく表示されない場合があります。 「[!DNL Search]」テキストボックスに「circular dependency」と入力して、循環依存関係を検索できます。 [!DNL Search]機能の詳細については、「[マップ内での検索](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/t-srch-map.md#task-a1e7065a538d46c78a7d28676d880dfb)」を参照してください。
