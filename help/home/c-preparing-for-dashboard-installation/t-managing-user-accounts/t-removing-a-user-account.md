@@ -3,7 +3,6 @@ description: ユーザーアカウントの削除
 title: ユーザーアカウントの削除
 uuid: 9cbb0e65-2251-420e-bde4-2ca9e8387f58
 exl-id: a2bb2bc1-68f4-4f5d-beec-bbbc57de29e9
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '67'
