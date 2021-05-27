@@ -3,7 +3,6 @@ description: 変換または拡張ディメンションのパフォーマンス�
 title: パフォーマンスデータの表示
 uuid: 7149c565-79a6-4e01-acae-d6eea1f5fa39
 exl-id: 665716c7-08e2-4797-9e98-7b5dba5facb5
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '103'
