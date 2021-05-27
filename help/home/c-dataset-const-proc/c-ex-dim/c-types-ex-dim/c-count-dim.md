@@ -3,7 +3,6 @@ description: 可算ディメンションのエレメントは、システムに�
 title: 可算ディメンション
 uuid: 3312f5eb-69b9-43af-b32a-5c40e3050b29
 exl-id: c607c15d-de85-4daf-af76-79b460f51b38
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '685'
@@ -21,7 +20,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->ディメンションが必要な場合は、数値ディメンションとCOUNT演算を使用する必要があります。 [数値Dimension](../../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md#concept-8513b9afaff447c8b334410b565b91ed)を参照してください。
+>何かのカウントのみを提供するディメンションが必要な場合は、数値ディメンションとCOUNTの演算を使用する必要があります。 [数値Dimension](../../../../home/c-dataset-const-proc/c-ex-dim/c-types-ex-dim/c-num-dim.md#concept-8513b9afaff447c8b334410b565b91ed)を参照してください。
 
 可算ディメンションは、以下のパラメーターによって定義します。
 
