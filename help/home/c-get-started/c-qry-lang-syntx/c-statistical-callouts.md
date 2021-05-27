@@ -3,7 +3,6 @@ description: 統計コールアウトでは、オーディエンスクラスタ�
 title: 統計コールアウト
 uuid: 04911ac4-bc3f-4813-800b-087d9668a782
 exl-id: d4ed540e-f837-4db9-a81e-b8a30c15f270
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '273'
@@ -20,7 +19,7 @@ ht-degree: 95%
 統計コールアウトを追加するには：
 
 1. テーブルで、指標ヘッダーを右クリックします。
-1. **[!UICONTROL Statistics]**&#x200B;を選択し、必要な各設定のチェックマークを選択または選択解除します。 デフォルト設定では、「引き出し線を表示」のすべてが選択されています。
+1. **[!UICONTROL Statistics]**&#x200B;を選択し、必要な各設定のチェックマークをオンまたはオフにします。 デフォルト設定では、「引き出し線を表示」のすべてが選択されています。
 
    ![](assets/statistical_callouts.png)
 
