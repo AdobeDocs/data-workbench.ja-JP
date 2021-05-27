@@ -5,7 +5,6 @@ solution: Analytics
 type: Documentation
 git-repo: https://git.corp.adobe.com/AdobeDocs/data-workbench.ja-JP
 index: true
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '111'
