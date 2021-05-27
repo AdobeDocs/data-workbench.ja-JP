@@ -3,7 +3,6 @@ description: 変換機能には、データの読み取りと書き出しに必�
 title: 変換の設定ファイル
 uuid: abb5b7a4-ade6-4658-b3a1-7ce4c2c17507
 exl-id: 9cd5ae3a-e3fc-466f-a6ab-20582001fb4a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '103'
@@ -21,4 +20,4 @@ ht-degree: 54%
 
 >[!NOTE]
 >
->変換機能の実装を設定する前に、Data Workbench [!DNL Transform.cfg]とData Workbench T [!DNL ransform Mode.cfg]ファイル、および実装に必要なすべてのAdobeソフトウェア製品とアプリケーションが正しくインストールされていることを確認してください。 インストール手順については、『*サーバー製品のインストールと管理に関するガイド*』を参照してください。
+>変換機能の実装を設定する前に、Data Workbench [!DNL Transform.cfg]ファイルとData Workbench T [!DNL ransform Mode.cfg]ファイル、および実装に必要なすべてのAdobeソフトウェア製品とアプリケーションが適切にインストールされていることを確認してください。 インストール手順については、『*サーバー製品のインストールと管理に関するガイド*』を参照してください。
