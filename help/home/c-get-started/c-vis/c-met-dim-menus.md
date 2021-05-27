@@ -3,7 +3,6 @@ description: ビジュアライゼーション内の指標領域またはディ�
 title: 指標メニューとディメンションメニュー
 uuid: 0dfae2bd-6c33-4496-83ea-f7f6de960259
 exl-id: 59bed6c1-74b2-49e2-ac68-f22c8bed668a
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '554'
@@ -43,7 +42,7 @@ ht-degree: 96%
   </tr> 
   <tr> 
    <td colname="col1"> <p>選択範囲をズーム </p> </td> 
-   <td colname="col2"> <p>折れ線グラフで選択したデータのサブセットにズームインします。「<a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530">ビジュアライゼーションへのズーム</a>」を参照してください。選択範囲について詳しくは、<a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746">ビジュアライゼーションでの選択</a>を参照してください。 </p> </td> 
+   <td colname="col2"> <p>折れ線グラフで選択したデータのサブセットにズームインします。「<a href="../../../home/c-get-started/c-vis/c-zoom-vis.md#concept-7e33670bb5344f78a316f1a84cc20530">ビジュアライゼーションへのズーム</a>」を参照してください。選択範囲について詳しくは、<a href="../../../home/c-get-started/c-vis/c-sel-vis/c-sel-vis.md#concept-012870ec22c7476e9afbf3b8b2515746">ビジュアライゼーションでの選択範囲の作成</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>指標エディター </p> </td> 
@@ -80,7 +79,7 @@ ht-degree: 96%
  </tbody> 
 </table>
 
-## ディメンションメニュー{#section-e09de0aa6b74459a957b627ff7d07979}を使用
+## ディメンションメニュー{#section-e09de0aa6b74459a957b627ff7d07979}を使用します。
 
 ビジュアライゼーション内のディメンション関連領域を右クリックして、ディメンションメニューにアクセスします。
 
@@ -97,7 +96,7 @@ ht-degree: 96%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> <p>追加 引き出し線 </p> </td> 
+   <td colname="col1"> <p>追加 吹き出し </p> </td> 
    <td colname="col2"> <p>選択されている要素に引き出し線を追加し、その要素に注意を向けます。「<a href="../../../home/c-get-started/c-vis/c-call-wkspc.md#concept-212b09e763044d938987b4a9c658adc0">ワークスペースへの引き出し線の追加</a>」を参照してください。 </p> </td> 
   </tr> 
   <tr> 
