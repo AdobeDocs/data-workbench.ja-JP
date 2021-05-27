@@ -3,7 +3,6 @@ description: 待ち時間ディメンションは、Sessions（セッション�
 title: 待ち時間ディメンションの作成
 uuid: 531d8bf6-a66f-4b02-9d81-05664fb9c988
 exl-id: 38b470ef-9409-455b-b2b8-b0391f80b800
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '542'
@@ -15,11 +14,11 @@ ht-degree: 88%
 
 待ち時間ディメンションは、Sessions（セッション）などの可算ディメンションや、Day（日）などの時間ディメンションである親ディメンションから作成されます。
 
-待ち時間テーブルをData Workbenchで作成すると、待ち時間ディメンションがビジュアライゼーションファイル(.vw)に自動的に追加されます。 以下の手順に従って、テーブルの待ち時間ディメンションを編集できます。
+Data Workbenchで待ち時間テーブルを作成すると、ビジュアライゼーションファイル(.vw)に待ち時間ディメンションが自動的に追加されます。 以下の手順に従って、テーブルの待ち時間ディメンションを編集できます。
 
 **待ち時間ディメンションを編集するには**
 
-1. 作成した待ち時間テーブルをメモ帳などのテキストエディターで開きます。このフォルダーは、Data Workbenchーのインストールディレクトリ内のUser/`working profile name`/Workフォルダーにあります。
+1. 作成した待ち時間テーブルをメモ帳などのテキストエディターで開きます。このフォルダーは、ユーザーのインストールディレクトリ内のUser > `working profile name` > WorkData Workbenchーにあります。
 
    定義された待ち時間ディメンションには、次の例に示すパラメーターが含まれています（待ち時間ディメンションの定義には、他のパラメーターが含まれている場合もあります）。[!DNL line entity = LatencyDim:]は、待ち時間ディメンションの定義の開始を示します。
 
@@ -64,7 +63,7 @@ ht-degree: 88%
    </tr> 
    <tr> 
       <td colname="col1"> 形式 </td> 
-      <td colname="col2"> <p>（オプション）待ち時間のビジュアライゼーションのData Workbenchでの外観を指定します。 Format パラメーターでは、次の値を編集できます。 
+      <td colname="col2"> <p>（オプション）待ち時間のビジュアライゼーションのData Workbenchを指定します。 Format パラメーターでは、次の値を編集できます。 
       <ul id="ul_ABF4C17BDE2E4F6C9CBDD933674DE861"> 
          <li id="li_5ED6A7267C81444983AF8507ADC6A5AB">時間文字列。待ち時間のビジュアライゼーションに表示される時間の単位（日や週など）。時間ディメンションを変更した場合は、時間文字列も変更してください。 </li> 
          <li id="li_E3B517ECE1494221AAE90455CC0AAB42">オフセット。Time Before の値を負の値にした整数。例えば、Time Before が 7 の場合、オフセットは -7 となります。 </li> 
@@ -81,7 +80,7 @@ ht-degree: 88%
    </tbody> 
    </table>
 
-1. [!DNL .vw]ファイルをUser\*workingフォルダー名*\Workプロファイルーに保存します。
+1. [!DNL .vw]ファイルをUser\*working profile name*\Workフォルダーに保存します。
 
    次に、デフォルトの待ち時間ディメンションの設定を示します。
 
