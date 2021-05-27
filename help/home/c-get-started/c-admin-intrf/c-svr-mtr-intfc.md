@@ -3,7 +3,6 @@ description: サーバーモニターインターフェイスは、トラブル�
 title: サーバーモニターインターフェイス
 uuid: 609dd8ea-31a9-44c1-ab75-ca783ec85650
 exl-id: fb8baae9-ac1e-4355-ba38-fef6621e22bb
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '362'
@@ -19,13 +18,13 @@ ht-degree: 63%
 
 サーバーモニターインターフェイスの下部には、利用できる各プロファイルの処理ステータスと、コンピューターに関するパフォーマンスの詳細が一覧表示されます。
 
-[!DNL Data Workbench servers]の詳細については、『*サーバー製品のインストールと管理に関するガイド*』を参照してください。 [!DNL Report]について詳しくは、*Data Workbenchレポートガイド*&#x200B;を参照してください。
+[!DNL Data Workbench servers]の詳細については、『*サーバー製品のインストールと管理に関するガイド*』を参照してください。 [!DNL Report]について詳しくは、『*Data Workbenchレポートガイド*』を参照してください。
 
 **サーバーモニターインターフェイスを開くには**
 
-* サーバーマネージャーで、Data Workbenchサーバーまたは[!DNL Report]コンピューターのノードを右クリックします。 t
+* サーバーマネージャで、Data Workbenchサーバーまたは[!DNL Report]コンピューターのノードを右クリックします。 t
 
-**[!UICONTROL Server Monitor]**&#x200B;をクリックして1台のサーバーに関する詳細を表示するか、**[!UICONTROL Related Servers]** > **[!UICONTROL Server Monitor List]**&#x200B;をクリックして関連サーバーのクラスターに関する詳細を表示します。
+**[!UICONTROL Server Monitor]**&#x200B;をクリックして1台のサーバーの詳細を表示するか、**[!UICONTROL Related Servers]** > **[!UICONTROL Server Monitor List]**&#x200B;をクリックして関連サーバーのクラスターの詳細を表示します。
 
 ![](assets/vis_ServerMonitor.png)
 
