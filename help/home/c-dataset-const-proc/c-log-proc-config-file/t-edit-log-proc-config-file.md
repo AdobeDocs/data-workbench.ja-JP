@@ -3,7 +3,6 @@ description: データセットプロファイルの Log Processing.cfg ファ�
 title: ログ処理設定ファイルの編集
 uuid: 2ffae53a-ef2f-4933-821d-13f29dcdb68d
 exl-id: 294063ef-6771-4310-8198-df57fab1e2b4
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1288'
@@ -15,26 +14,26 @@ ht-degree: 80%
 
 データセットプロファイルの Log Processing.cfg ファイルを編集するための手順について説明します。
 
-1. データセットプロファイルで[!DNL Profile Manager]を開き、**[!UICONTROL Dataset]**&#x200B;をクリックしてその内容を表示します。
+1. データセットプロファイル内で[!DNL Profile Manager]を開き、 **[!UICONTROL Dataset]**&#x200B;をクリックして内容を表示します。
 
-   [!DNL Profile Manager]を開いて操作する方法については、『*Data Workbenchユーザーガイド*』を参照してください。
+   [!DNL Profile Manager]を開いて使用する方法については、『*Data Workbenchユーザーガイド*』を参照してください。
 
    >[!NOTE]
    >
-   >Datasetディレクトリには、Log Processingサブディレクトリが存在する場合があります。 このサブディレクトリには、継承された1つ以上のプロファイルに対して作成された[!DNL Log Processing Dataset Include]ファイルが含まれます。 「[データセットインクルードファイル](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)」を参照してください。
+   >Datasetディレクトリには、ログ処理サブディレクトリが存在する場合があります。 このサブディレクトリには、継承された1つ以上のプロファイルに対して作成された[!DNL Log Processing Dataset Include]ファイルが格納されます。 [データセットインクルードファイル](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)を参照してください。
 
 1. [!DNL Log Processing.cfg]の横のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 このファイル用のチェックマークが [!DNL User] 列に表示されます。
-1. 新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Workstation]**&#x200B;をクリックします。 [!DNL Log Processing.cfg]ウィンドウが表示されます。
+1. 新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]** / **[!UICONTROL in Workstation]**&#x200B;をクリックします。 [!DNL Log Processing.cfg]ウィンドウが表示されます。
 
    [!DNL Transformation Dependency Map]から[!DNL Log Processing.cfg]ファイルを開くこともできます。 変換依存関係マップについて詳しくは、[データセット設定ツール](../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5)を参照してください。
 
 1. 次の表を参考にして、設定ファイルのパラメーターを編集します。
 
-   Data Workbench ウィンドウ内で [!DNL Log Processing.cfg] ファイルを編集するときは、基本的な編集機能にショートカットキーを使用できます。切り取り（Ctrl + X）、コピー（Ctrl + C）、貼り付け（Ctrl + V）、取り消し（Ctrl + Z）、やり直し（Ctrl + Shift + Z）、セクション選択（クリックしながらドラッグ）、すべて選択（Ctrl + A）などの操作が可能です。また、設定ファイル([!DNL .cfg])間でテキストをコピーして貼り付ける際にも、ショートカットキーを使用できます。
+   Data Workbench ウィンドウ内で [!DNL Log Processing.cfg] ファイルを編集するときは、基本的な編集機能にショートカットキーを使用できます。切り取り（Ctrl + X）、コピー（Ctrl + C）、貼り付け（Ctrl + V）、取り消し（Ctrl + Z）、やり直し（Ctrl + Shift + Z）、セクション選択（クリックしながらドラッグ）、すべて選択（Ctrl + A）などの操作が可能です。また、設定ファイル([!DNL .cfg])間でテキストをコピーして貼り付ける際にも、ショートカットを使用できます。
 
    >[!NOTE]
    >
-   >継承されたプロファイルの[!DNL Log Processing Dataset Include]ファイルには、次の表で説明するパラメーターのサブセットと、その他のパラメーターが含まれています。 「[データセットインクルードファイル](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)」を参照してください。
+   >継承されたプロファイルの[!DNL Log Processing Dataset Include]ファイルには、次の表で説明するパラメーターのサブセットと、追加のパラメーターが含まれています。 [データセットインクルードファイル](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)を参照してください。
 
    <table id="table_BC7D3635C94049A9B608463AC1DBFA69">
    <thead> 
@@ -46,7 +45,7 @@ ht-degree: 80%
    <tbody> 
    <tr> 
       <td colname="col1"> ログソース </td> 
-      <td colname="col2"> データのソース。「<a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea">ログソース</a>」を参照してください。 </td> 
+      <td colname="col2"> データのソース。<a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea">ログソース</a>を参照してください。 </td> 
    </tr> 
    <tr> 
       <td colname="col1"> End Time </td> 
@@ -54,7 +53,7 @@ ht-degree: 80%
       <ul id="ul_42613B1D2F3A4A6C9563BC9B54BE895E"> 
       <li id="li_BC6E5FC5CA204D89936845BE05DFE6E6">January 1 2013 HH:MM:SS EDT </li> 
       <li id="li_18FE1B0417AF4207B02497664F47D23F">Jan 1 2013 HH:MM:SS GMT </li> 
-      </ul> <p>例えば、July 29 2013 00:00:00 EDT を End Time として指定した場合、米国東部夏時間の 2013 年 7 月 28 日 11:59:59 PM までのデータが対象となります。詳しくは、<a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d">データフィルター</a>を参照してください。 </p> <p>タイムゾーンの指定は必須です。タイムゾーンを指定しなかった場合に、デフォルトで GMT に設定されることはありません。Data Workbench サーバーでサポートされるタイムゾーンの略称一覧については、 <a href="../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> タイムゾーンのコード </a>. </p> <p> <p>注意：<span class="wintitle">Sensor</span>、ログファイル、XML ソースのパラメーターである Use Start/End Times は、このパラメーターと連動します。<a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea"> Log Sources </a>のセクションを参照してください。これらのソースの種類について説明しています。 </p> </p> </td> 
+      </ul> <p>例えば、July 29 2013 00:00:00 EDT を End Time として指定した場合、米国東部夏時間の 2013 年 7 月 28 日 11:59:59 PM までのデータが対象となります。詳しくは、<a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d">データフィルター</a>を参照してください。 </p> <p>タイムゾーンの指定は必須です。タイムゾーンを指定しなかった場合に、デフォルトで GMT に設定されることはありません。Data Workbench サーバーでサポートされるタイムゾーンの略称一覧については、 <a href="../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> タイムゾーンのコード </a>. </p> <p> <p>注意：<span class="wintitle">Sensor</span>、ログファイル、XML ソースのパラメーターである Use Start/End Times は、このパラメーターと連動します。<a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea"> Log Sources </a>の各節で、これらのソースタイプについて説明しています。 </p> </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> Fields </td> 
@@ -66,7 +65,7 @@ ht-degree: 80%
    </tr> 
    <tr> 
       <td colname="col1"> Hash Threshold </td> 
-      <td colname="col2"> <p>（オプション）より小さな標本（データセットの行）をランダムに抽出するためのサンプリング係数。数値 n に設定した場合、n 件の追跡 ID につき 1 件のみがデータセットを入力するので、データセットの合計行数を 1/n に減らすことができます。 </p> <p>100％の精度を必要とするデータセットを作成するには（つまり、すべての行を含めるには）、Hash Threshold を 1 に設定します。 </p> <p>values: </p> <span class="filepath">Hash Threshold = 1</span>（すべての行を含む 100％のデータ。） <p> <span class="filepath">Hash Threshold = 2</span>（1/2 のデータで、半分の行を含みます。） </p> <p> <span class="filepath">Hash Threshold = 3 </span>（1/3 のデータで、3 行に 1 行を含みますが、クエリー完了で 34％に四捨五入します。） </p> <p> <span class="filepath">Hash Threshold = 4 </span>（1/4 のデータで、4 行に 1 行を含みます。） </p> <p> </p> <p> <p>注意：<span class="filepath">Hash Threshold = 8</span> を使用すると、1/8 のデータ（つまり、12.5％）になります。ただし、この値について、四捨五入した<span class="uicontrol">クエリー完了</span>の値は 13％になります。同様の例として、<span class="filepath">Hash Threshold = 6</span> は 17％のクエリー解決になります。<span class="filepath">Hash Threshold = 13</span> は 8％のクエリー解決になります。 </p> </p> <p><span class="filepath">Log Processing.cfg</span> ファイルと <span class="filepath">Transformation.cfg</span> ファイルの両方に <span class="wintitle">Hash Threshold</span> を指定した場合、それぞれの値が順に適用されるのではなく、いずれか大きい方の値だけが適用されます。「<a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d">データフィルター</a>」を参照してください。 </p> </td> 
+      <td colname="col2"> <p>（オプション）より小さな標本（データセットの行）をランダムに抽出するためのサンプリング係数。数値 n に設定した場合、n 件の追跡 ID につき 1 件のみがデータセットを入力するので、データセットの合計行数を 1/n に減らすことができます。 </p> <p>100％の精度を必要とするデータセットを作成するには（つまり、すべての行を含めるには）、Hash Threshold を 1 に設定します。 </p> <p>values: </p> <span class="filepath">Hash Threshold = 1</span>（すべての行を含む 100％のデータ。） <p> <span class="filepath">Hash Threshold = 2</span>（1/2 のデータで、半分の行を含みます。） </p> <p> <span class="filepath">Hash Threshold = 3 </span>（1/3 のデータで、3 行に 1 行を含みますが、クエリー完了で 34％に四捨五入します。） </p> <p> <span class="filepath">Hash Threshold = 4 </span>（1/4 のデータで、4 行に 1 行を含みます。） </p> <p> </p> <p> <p>注意：<span class="filepath">Hash Threshold = 8</span> を使用すると、1/8 のデータ（つまり、12.5％）になります。ただし、この値について、四捨五入した<span class="uicontrol">クエリー完了</span>の値は 13％になります。同様の例として、<span class="filepath">Hash Threshold = 6</span> は 17％のクエリー解決になります。<span class="filepath">Hash Threshold = 13</span> は 8％のクエリー解決になります。 </p> </p> <p><span class="filepath">Log Processing.cfg</span> ファイルと <span class="filepath">Transformation.cfg</span> ファイルの両方に <span class="wintitle">Hash Threshold</span> を指定した場合、それぞれの値が順に適用されるのではなく、いずれか大きい方の値だけが適用されます。<a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d">データフィルター</a>を参照してください。 </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> Log Entry Condition </td> 
@@ -104,12 +103,12 @@ ht-degree: 80%
       <td colname="col2"> <p>（オプション）データのフィルター。タイムスタンプがこの時刻以後（この時刻を含む）のログエントリを抽出します。この時刻には、次のいずれかの形式を使用することをお勧めします。 </p> <p> 
       <ul id="ul_0774889E22C24A6592809D289D1CBEC5"> 
          <li id="li_CE23541D8B584EA1AC432C5098564E46"> 2013年1月1日HH:MM:SS EDT </li> 
-         <li id="li_2EB0CF60CF12444BB744E52E9C919152"> Jan 1 2013 HH:MM:SS GMT </li> 
-      </ul> </p> <p> 例えば、「July 29 2013 00:00:00 EDT」を Start Time として指定した場合、米国東部夏時間の 2013 年 7 月 29 日 12:00:00 AM 以降のデータが対象となります。詳しくは、<a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d">データフィルター</a>を参照してください。 </p> <p> タイムゾーンの指定は必須です。タイムゾーンを指定しなかった場合に、デフォルトで GMT に設定されることはありません。Data Workbench サーバーでサポートされるタイムゾーンの略称一覧については、 <a href="../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> タイムゾーンのコード </a>. </p> <p> <p>注意：<span class="wintitle">Sensor</span>、ログファイル、XML ソースのパラメーターである Use Start/End Times は、このパラメーターと連動します。<a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea"> Log Sources </a>のセクションを参照してください。これらのソースの種類について説明しています。 </p> </p> </td> 
+         <li id="li_2EB0CF60CF12444BB744E52E9C919152"> 2013年1月1日HH:MM:SS GMT </li> 
+      </ul> </p> <p> 例えば、「July 29 2013 00:00:00 EDT」を Start Time として指定した場合、米国東部夏時間の 2013 年 7 月 29 日 12:00:00 AM 以降のデータが対象となります。詳しくは、<a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-info-log-proc-param.md#concept-41bd49bf6b64442d91c232ec67529a3d">データフィルター</a>を参照してください。 </p> <p> タイムゾーンの指定は必須です。タイムゾーンを指定しなかった場合に、デフォルトで GMT に設定されることはありません。Data Workbench サーバーでサポートされるタイムゾーンの略称一覧については、 <a href="../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> タイムゾーンのコード </a>. </p> <p> <p>注意：<span class="wintitle">Sensor</span>、ログファイル、XML ソースのパラメーターである Use Start/End Times は、このパラメーターと連動します。<a href="../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea"> Log Sources </a>の各節で、これらのソースタイプについて説明しています。 </p> </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> タイムゾーン </td> 
-      <td colname="col2"> <p>（オプション）ログ処理中の時刻の変換（x-local-timestringフィールドで表される変換など）に使用されるData Workbenchサーバーのタイムゾーン。 </p> <p> <p>注意：データセット構築のログ処理段階で、変換済みの時刻フィールドにアクセスしたい場合、Time Zone を指定する必要があります。指定しないと、Data Workbench サーバーによってイベントログにエラーが記録されます。 </p> </p> <p>詳しくは、 <a href="../../../home/c-dataset-const-proc/c-trans-config-file/c-spec-trans-param/c-time-zones.md#concept-9cf16b1cb4874f7d85e1dd950fdb4956"> タイムゾーン </a>. </p> </td> 
+      <td colname="col2"> <p>（オプション）ログ処理時の時間の変換（x-local-timestringフィールドで表される変換など）に使用されるData Workbenchサーバーのタイムゾーン。 </p> <p> <p>注意：データセット構築のログ処理段階で、変換済みの時刻フィールドにアクセスしたい場合、Time Zone を指定する必要があります。指定しないと、Data Workbench サーバーによってイベントログにエラーが記録されます。 </p> </p> <p>詳しくは、 <a href="../../../home/c-dataset-const-proc/c-trans-config-file/c-spec-trans-param/c-time-zones.md#concept-9cf16b1cb4874f7d85e1dd950fdb4956"> タイムゾーン </a>. </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> Transformations </td> 
@@ -118,8 +117,8 @@ ht-degree: 80%
    </tbody> 
    </table>
 
-1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
-1. [!DNL Profile Manager]で、[!DNL User]列の[!DNL Log Processing.cfg]のチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL dataset profile name]***&#x200B;をクリックして、ローカルに適用した変更を有効にします。 データセットプロファイルの同期後、データの再処理が開始されます。
+1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、「**[!UICONTROL Save]**」をクリックします。
+1. [!DNL Profile Manager]で、[!DNL User]列の[!DNL Log Processing.cfg]のチェックマークを右クリックし、**[!UICONTROL Save to]** / *&lt;**[!UICONTROL dataset profile name]***&#x200B;をクリックして、ローカルに適用した変更を有効にします。 データセットプロファイルの同期後、データの再処理が開始されます。
 
    >[!NOTE]
    >
