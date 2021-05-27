@@ -3,7 +3,6 @@ description: ポイントアンドクリックによりビジュアライゼー�
 title: 他の方法を使用してデータを選択する
 uuid: 0e2b8e6d-d696-4597-9f85-1968b18cfbc8
 exl-id: d6ef163e-1faa-4b0f-b69b-9e559f6f34fb
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '307'
@@ -33,4 +32,4 @@ ht-degree: 93%
 
    例：カリフォルニアの顧客のみに関するデータの詳細分析を実行する場合。
 
-   サブセットはData Workbenchにグローバルに適用されるので、サブセットを使用すると、すべてのワークスペースに影響が及びます。 [サブセットの操作](../../../../home/c-get-started/c-vis/c-wk-subsets/c-wk-subsets.md#concept-43809322b6374d5cb2536630a13e943b)を参照してください。
+   サブセットはワークスペースにグローバルに適用されるので、サブセットを使用すると、すべてのData Workbenchに影響が及びます。 [サブセットの操作](../../../../home/c-get-started/c-vis/c-wk-subsets/c-wk-subsets.md#concept-43809322b6374d5cb2536630a13e943b)を参照してください。
