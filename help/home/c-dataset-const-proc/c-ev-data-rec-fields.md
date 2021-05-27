@@ -3,7 +3,6 @@ description: データセットを構築する際に Data Workbench サーバー
 title: イベントデータレコードフィールド
 uuid: b0232bfa-0a3b-4e3d-876e-6a15a3764eae
 exl-id: 35433b87-991a-4fb9-ba6a-3217e89eb769
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1092'
@@ -19,17 +18,17 @@ ht-degree: 88%
 * [ベースラインイベントデータレコードフィールド](../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#section-a882ed7aa6af41eeb45a55bf8c1ca3d7)
 * [派生フィールド](../../home/c-dataset-const-proc/c-ev-data-rec-fields.md#section-b6c57ee2aa31469fbd5dab90e52bc677)
 
-## イベントデータについて  {#section-3a0705f8c1824017aa4effed9903efbe}
+## イベントデータについて {#section-3a0705f8c1824017aa4effed9903efbe}
 
 データセット構築用のイベントデータは、ログソースと呼ばれるファイル内に存在します。各データレコードが 1 件のトランザクションレコード、またはタイムスタンプを持った 1 回のイベントの発生を表していることから、ログソース内のデータは「イベントデータ」と呼ばれます。
 
-ログソースのイベントデータは[!DNL Sensors]によってリアルタイムに収集されます。 [!DNL Sensors]によってHTTPサーバーやアプリケーションサーバーから収集されたイベントデータはData Workbenchサーバーに送信され、そこで、圧縮されたログ( [!DNL .vsl])ファイルに変換されます。 フラットファイル、XML ファイルまたは ODBC データソースに存在するイベントデータを読み取る Data Workbench サーバーは、こうした様々な形式のファイルから決まった一連のデータフィールドを抽出するよう設定されたデコーダーの役割を担います。
+ログソースのイベントデータは、[!DNL Sensors]によってリアルタイムに収集されます。 [!DNL Sensors]がHTTPサーバーおよびアプリケーションサーバーから収集したイベントデータはData Workbenchサーバーに送信され、圧縮されたログ([!DNL .vsl])ファイルに変換されます。 フラットファイル、XML ファイルまたは ODBC データソースに存在するイベントデータを読み取る Data Workbench サーバーは、こうした様々な形式のファイルから決まった一連のデータフィールドを抽出するよう設定されたデコーダーの役割を担います。
 
-以下の節では、[!DNL Sensors]によって収集され、Data Workbenchサーバーで読み取って使用できるデータフィールド(イベントデータレコードフィールドまたはログエントリフィールドと呼ばれます)について説明します。
+以下の節では、[!DNL Sensors]によって収集され、Data Workbenchサーバーで読み取って使用できるデータフィールド（イベントデータレコードフィールドまたはログエントリフィールド）に関する情報を示します。
 
 >[!NOTE]
 >
->フィールド名は、通常、W3C拡張ログファイル形式の命名規則に従います。 多くのフィールドには、その情報の取得元を表すプレフィックスが付いています。
+>フィールドの名前は、通常、W3C拡張ログファイル形式の命名規則に従います。 多くのフィールドには、その情報の取得元を表すプレフィックスが付いています。
 
 * cs は、クライアントからサーバーへの通信を表します。
 * sc は、サーバーからクライアントへの通信を表します。
@@ -39,7 +38,7 @@ ht-degree: 88%
 
 ## ベースラインイベントデータレコードフィールド {#section-a882ed7aa6af41eeb45a55bf8c1ca3d7}
 
-ログ([!DNL .vsl])ファイルには、[!DNL Sensors]によってサーバーから収集され、イベントセット構築プロセスでData Workbenchサーバーが使用するサーバーデータのフィールドが含まれます。 次の表は、[!DNL Sensor] によって記録される代表的なイベントデータレコードのフィールドの一覧です。
+ログ( [!DNL .vsl] )ファイルには、[!DNL Sensors]によってサーバーから収集され、データセット構築プロセスでData Workbenchサーバーによって使用されるイベントデータのフィールドが含まれます。 次の表は、[!DNL Sensor] によって記録される代表的なイベントデータレコードのフィールドの一覧です。
 
 <table id="table_98E135FE4EAF44D6ADEB3C6C1C0BF6A4"> 
  <thead> 
@@ -108,7 +107,7 @@ ht-degree: 88%
  </tbody> 
 </table>
 
-## 派生フィールド  {#section-b6c57ee2aa31469fbd5dab90e52bc677}
+## 派生フィールド {#section-b6c57ee2aa31469fbd5dab90e52bc677}
 
 次の表は、ベースラインイベントデータレコードのフィールドから Data Workbench サーバーが生成する派生フィールドの例を示しています。
 
@@ -162,11 +161,11 @@ ht-degree: 88%
   </tr> 
   <tr> 
    <td colname="col1"> x-local-timestring </td> 
-   <td colname="col2"> <p>データセットの <span class="filepath">Transformation.cfg</span> ファイルに指定されたローカルタイムゾーンに変換した x-timestamp。YYYY-MM-DD HH:MM:SS.mmm という形式になります。 </p> <p> <p>注意：<span class="filepath">Log Processing.cfg</span> ファイルで時刻変換（x-local-timestring など）を定義することもできます。詳しくは、<a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md">ログ処理設定ファイル</a>を参照してください。 </p> </p> </td> 
+   <td colname="col2"> <p>データセットの <span class="filepath">Transformation.cfg</span> ファイルに指定されたローカルタイムゾーンに変換した x-timestamp。YYYY-MM-DD HH:MM:SS.mmm という形式になります。 </p> <p> <p>注意：<span class="filepath">Log Processing.cfg</span> ファイルで時刻変換（x-local-timestring など）を定義することもできます。詳しくは、 <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md">ログ処理設定ファイル</a>を参照してください。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> x-log-source-id </td> 
-   <td colname="col2"> <p>特定のログエントリのログソースに対応する識別子。この識別子を記録するためには、<span class="wintitle">Sensor</span>、ログファイルまたは ODBC データソースを定義するときに、<span class="filepath">Log Processing.cfg</span> ファイルの <span class="wintitle">Log Source ID</span> フィールドに識別子を指定する必要があります。詳しくは、<a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md">ログ処理設定ファイル</a>を参照してください。 </p> <p> 例：from VSensor01 </p> </td> 
+   <td colname="col2"> <p>特定のログエントリのログソースに対応する識別子。この識別子を記録するためには、<span class="wintitle">Sensor</span>、ログファイルまたは ODBC データソースを定義するときに、<span class="filepath">Log Processing.cfg</span> ファイルの <span class="wintitle">Log Source ID</span> フィールドに識別子を指定する必要があります。詳しくは、 <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md">ログ処理設定ファイル</a>を参照してください。 </p> <p> 例：from VSensor01 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> x-mask </td> 
