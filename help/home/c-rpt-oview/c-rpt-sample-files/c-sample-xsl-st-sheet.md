@@ -1,9 +1,8 @@
 ---
-description: XSLスタイルシートのコードサンプルです。
+description: XSLスタイルシートのコードサンプル。
 title: XSL スタイルシートのサンプル
 uuid: cac5c5ad-b0ec-45d8-901d-e39ce1f6d61a
 exl-id: 688b0ce5-999b-4cfc-9228-146450132aee
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '20'
@@ -13,7 +12,7 @@ ht-degree: 40%
 
 # XSL スタイルシートのサンプル{#sample-xsl-style-sheet}
 
-XSLスタイルシートのコードサンプルです。
+XSLスタイルシートのコードサンプル。
 
 ```
 <?xml version="1.0" encoding="ISO-8859-1"?>
