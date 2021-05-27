@@ -3,7 +3,6 @@ description: データセットプロファイルの Transformation.cfg ファ�
 title: 変換設定ファイルの編集
 uuid: 77b9e566-4a9a-4ea1-b5ab-63a4574c0fdb
 exl-id: 3fab17a4-d356-4548-b977-f5d409870753
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '1135'
@@ -15,26 +14,26 @@ ht-degree: 79%
 
 データセットプロファイルの Transformation.cfg ファイルを編集する手順について説明します。
 
-1. データセットプロファイルで[!DNL Profile Manager]を開き、**[!UICONTROL Dataset]**&#x200B;をクリックしてその内容を表示します。
+1. データセットプロファイル内で[!DNL Profile Manager]を開き、 **[!UICONTROL Dataset]**&#x200B;をクリックして内容を表示します。
 
-   [!DNL Profile Manager]を開いて操作する方法については、『*Data Workbenchユーザーガイド*』を参照してください。
+   [!DNL Profile Manager]を開いて使用する方法については、『*Data Workbenchユーザーガイド*』を参照してください。
 
    >[!NOTE]
    >
-   >Datasetディレクトリには、Transformationサブディレクトリが存在する場合があります。 このサブディレクトリには、継承された1つ以上のプロファイルに対して作成された[!DNL Transformation Dataset Include]ファイルが含まれます。 [!DNL Transformation Dataset Include]ファイルについて詳しくは、[データセットインクルードファイル](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)を参照してください。
+   >Datasetディレクトリには、 Transformationサブディレクトリが存在する場合があります。 このサブディレクトリには、継承された1つ以上のプロファイルに対して作成された[!DNL Transformation Dataset Include]ファイルが格納されます。 [!DNL Transformation Dataset Include]ファイルについて詳しくは、[データセットインクルードファイル](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)を参照してください。
 
 1. [!DNL Transformation.cfg]の横のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 このファイル用のチェックマークが [!DNL User] 列に表示されます。
-1. 新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Workstation]**&#x200B;をクリックします。 [!DNL Transformation.cfg]ウィンドウが表示されます。
+1. 新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]** / **[!UICONTROL in Workstation]**&#x200B;をクリックします。 [!DNL Transformation.cfg]ウィンドウが表示されます。
 
    [!DNL Transformation Dependency Map]から[!DNL Transformation.cfg]ファイルを開くこともできます。 [!DNL transformation dependency maps]について詳しくは、[データセット設定ツール](../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5)を参照してください。
 
 1. 次の表を参考にして、設定ファイルのパラメーターを編集します。
 
-   Data Workbench ウィンドウ内で [!DNL Transformation.cfg] ファイルを編集するときは、基本的な編集機能にショートカットキーを使用できます。切り取り（Ctrl + X）、コピー（Ctrl + C）、貼り付け（Ctrl + V）、取り消し（Ctrl + Z）、やり直し（Ctrl + Shift + Z）、セクション選択（クリックしながらドラッグ）、すべて選択（Ctrl + A）などの操作が可能です。また、設定ファイル([!DNL .cfg])間でテキストをコピーして貼り付ける際にも、ショートカットキーを使用できます。
+   Data Workbench ウィンドウ内で [!DNL Transformation.cfg] ファイルを編集するときは、基本的な編集機能にショートカットキーを使用できます。切り取り（Ctrl + X）、コピー（Ctrl + C）、貼り付け（Ctrl + V）、取り消し（Ctrl + Z）、やり直し（Ctrl + Shift + Z）、セクション選択（クリックしながらドラッグ）、すべて選択（Ctrl + A）などの操作が可能です。また、設定ファイル([!DNL .cfg])間でテキストをコピーして貼り付ける際にも、ショートカットを使用できます。
 
    >[!NOTE]
    >
-   >継承されたプロファイルの[!DNL Transformation Dataset Include]ファイルには、次の表で説明するパラメーターのサブセットと、その他のパラメーターが含まれています。 [!DNL Transformation Dataset Include]ファイルについて詳しくは、[データセットインクルードファイル](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)を参照してください
+   >継承されたプロファイルの[!DNL Transformation Dataset Include]ファイルには、次の表で説明するパラメーターのサブセットと、追加のパラメーターが含まれています。 [!DNL Transformation Dataset Include]ファイルについて詳しくは、[データセットインクルードファイル](../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)を参照してください。
 
    <table id="table_5E184F67CCEC4421B2BBD4261711A6FE"> 
    <thead> 
@@ -50,11 +49,11 @@ ht-degree: 79%
       <ul id="ul_1EC55DA4936946C98E447E1476E8280F"> 
        <li id="li_F2D862833F4B451C965E1ED6C05DCE1B"> January 1 2013 HH:MM:SS EDT </li> 
        <li id="li_EB7FFEB2E2C24EAFB8E4B14F2479DA3D"> Jan 1 2013 HH:MM:SS GMT </li> 
-      </ul> </p> <p> 例えば、「July 29 2013 00:00:00 EDT」を End Time として指定した場合、米国東部夏時間の 2013 年 7 月 28 日 11:59:59 PM までのデータが対象となります。 </p> <p> タイムゾーンの指定は必須です。タイムゾーンを指定しなかった場合に、デフォルトで GMT に設定されることはありません。Data Workbench サーバーでサポートされるタイムゾーンの略称一覧については、 <a href="../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> タイムゾーンのコード </a>. </p> <p> <p>注意：End Time の値を指定した場合、End Time という名前のパラメーターが設定され、データセット構築の変換段階全体で適用されます。パラメーターについて詳しくは、<a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-def-param-dataset-inc-files/c-def-param-dataset-inc-files.md#concept-5ad06acc8dc44bf2a99643fafdd56b50">データセットインクルードファイルでのパラメーターの定義</a>を参照してください。 </p> </p> </td> 
+      </ul> </p> <p> 例えば、「July 29 2013 00:00:00 EDT」を End Time として指定した場合、米国東部夏時間の 2013 年 7 月 28 日 11:59:59 PM までのデータが対象となります。 </p> <p> タイムゾーンの指定は必須です。タイムゾーンを指定しなかった場合に、デフォルトで GMT に設定されることはありません。Data Workbench サーバーでサポートされるタイムゾーンの略称一覧については、 <a href="../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> タイムゾーンのコード </a>. </p> <p> <p>注意：End Time の値を指定した場合、End Time という名前のパラメーターが設定され、データセット構築の変換段階全体で適用されます。パラメーターについて詳しくは、 <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-def-param-dataset-inc-files/c-def-param-dataset-inc-files.md#concept-5ad06acc8dc44bf2a99643fafdd56b50">データセットインクルードファイルでのパラメーターの定義</a>を参照してください。 </p> </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> 拡張ディメンション </td> 
-      <td colname="col2"> （オプション）拡張ディメンションは、<span class="wintitle">変換データセットインクルード</span>ファイルに定義することをお勧めします。詳しくは、<a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md#concept-c64aa78ed9ce40b8a0f4932c82ff5ace">変換データセットインクルードファイル</a>を参照してください。 </td> 
+      <td colname="col2"> （オプション）拡張ディメンションは、<span class="wintitle">変換データセットインクルード</span>ファイルに定義することをお勧めします。詳しくは、 <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md#concept-c64aa78ed9ce40b8a0f4932c82ff5ace">変換データセットインクルードファイル</a>を参照してください。 </td> 
    </tr> 
    <tr> 
       <td colname="col1"> Hash Threshold </td> 
@@ -85,19 +84,19 @@ ht-degree: 79%
       </ul> </p> <p> <b>既存の処理ステージを削除するには</b> </p> <p> 
       <ul id="ul_2EFA5A40982A48919E9946BF1955110A"> 
        <li id="li_3B3829DA34FD4774B3F9F94074099794"> 削除するステージに対応する番号を右クリックし、「<span class="uicontrol">&lt;</span>#stage_number<i>&gt;<span class="uicontrol"></span> を削除</i>」をクリックします。 </li> 
-      </ul> </p> <p> <p>注意：<span class="wintitle">変換データセットインクルード</span>ファイルで Stage を指定するときは、ここに入力したステージの名前と完全に一致させる必要があります。データセットインクルードファイルについて詳しくは、<a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md">データセットインクルードファイル</a>を参照してください。 </p> </p> </td> 
+      </ul> </p> <p> <p>注意：<span class="wintitle">変換データセットインクルード</span>ファイルで Stage を指定するときは、ここに入力したステージの名前と完全に一致させる必要があります。データセットインクルードファイルについて詳しくは、 <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md">データセットインクルードファイル</a>を参照してください。 </p> </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> Start Time </td> 
       <td colname="col2"> <p>（オプション）データのフィルター。タイムスタンプがこの時刻以後（この時刻を含む）のログエントリを抽出します。この時刻には、次のいずれかの形式を使用することをお勧めします。 
       <ul id="ul_6BC86CCB1FC447ACAC4045E08C8EF8F8"> 
        <li id="li_2151B3F7FAD54F38B6C33E25CDCACBBE"> 2013年1月1日HH:MM:SS EDT </li> 
-       <li id="li_CA1BB675C1244104915FB9ED96A3013D"> Jan 1 2013 HH:MM:SS GMT </li> 
-      </ul> </p> <p> 例えば、July 29 2013 00:00:00 EDT を <span class="wintitle">Start Time</span> として指定した場合、米国東部夏時間の 2013 年 7 月 29 日 12:00:00 AM 以降のデータが対象となります。 </p> <p> タイムゾーンの指定は必須です。タイムゾーンを指定しなかった場合に、デフォルトで GMT に設定されることはありません。Data Workbench サーバーでサポートされるタイムゾーンの略称一覧については、 <a href="../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> タイムゾーンのコード </a>. </p> <p> <p>注意：Start Time の値を指定した場合、Start Time という名前のパラメーターが設定され、データセット構築の変換段階全体で適用されます。パラメーターについて詳しくは、<a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-def-param-dataset-inc-files/c-def-param-dataset-inc-files.md#concept-5ad06acc8dc44bf2a99643fafdd56b50">データセットインクルードファイルでのパラメーターの定義</a>を参照してください。 </p> </p> </td> 
+       <li id="li_CA1BB675C1244104915FB9ED96A3013D"> 2013年1月1日HH:MM:SS GMT </li> 
+      </ul> </p> <p> 例えば、July 29 2013 00:00:00 EDT を <span class="wintitle">Start Time</span> として指定した場合、米国東部夏時間の 2013 年 7 月 29 日 12:00:00 AM 以降のデータが対象となります。 </p> <p> タイムゾーンの指定は必須です。タイムゾーンを指定しなかった場合に、デフォルトで GMT に設定されることはありません。Data Workbench サーバーでサポートされるタイムゾーンの略称一覧については、 <a href="../../../home/c-dataset-const-proc/c-time-zone.md#concept-9b540ec3e770490d94e9d5a985765477"> タイムゾーンのコード </a>. </p> <p> <p>注意：Start Time の値を指定した場合、Start Time という名前のパラメーターが設定され、データセット構築の変換段階全体で適用されます。パラメーターについて詳しくは、 <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-def-param-dataset-inc-files/c-def-param-dataset-inc-files.md#concept-5ad06acc8dc44bf2a99643fafdd56b50">データセットインクルードファイルでのパラメーターの定義</a>を参照してください。 </p> </p> </td> 
    </tr> 
    <tr> 
       <td colname="col1"> Transformations </td> 
-      <td colname="col2"> （オプション）データセット構築の変換段階における変換は、<span class="wintitle">変換データセットインクルード</span>ファイルに定義することをお勧めします。詳しくは、<a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md#concept-c64aa78ed9ce40b8a0f4932c82ff5ace">変換データセットインクルードファイル</a>を参照してください。 </td> 
+      <td colname="col2"> （オプション）データセット構築の変換段階における変換は、<span class="wintitle">変換データセットインクルード</span>ファイルに定義することをお勧めします。詳しくは、 <a href="../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-trans-dataset-inc-files.md#concept-c64aa78ed9ce40b8a0f4932c82ff5ace">変換データセットインクルードファイル</a>を参照してください。 </td> 
    </tr> 
    <tr> 
       <td colname="col1"> タイムゾーン </td> 
@@ -106,11 +105,11 @@ ht-degree: 79%
    </tbody> 
    </table>
 
-1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save]**&#x200B;をクリックします。
-1. [!DNL Profile Manager]で、[!DNL User]列の[!DNL Transformation.cfg]のチェックマークを右クリックし、**[!UICONTROL Save to]**/* **[!UICONTROL dataset profile name]**&#x200B;をクリックして、ローカルに適用した変更を有効にします。 データセットプロファイルの同期後、データの再変換が開始されます。
+1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、「**[!UICONTROL Save]**」をクリックします。
+1. [!DNL Profile Manager]で、[!DNL User]列の[!DNL Transformation.cfg]のチェックマークを右クリックし、**[!UICONTROL Save to]** / * **[!UICONTROL dataset profile name]**&#x200B;をクリックして、ローカルに適用した変更を有効にします。 データセットプロファイルの同期後、データの再変換が開始されます。
 
    >[!NOTE]
    >
    >アドビから提供される内部プロファイルには、変更した設定ファイルを一切保存しないでください。内部プロファイルに対するアップデートをインストールするときに変更内容が上書きされます。
 
-   データの再処理と再変換について詳しくは、[再処理と再変換](../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)を参照してください。
+   データの再処理または再変換について詳しくは、[再処理と再変換](../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)を参照してください。
