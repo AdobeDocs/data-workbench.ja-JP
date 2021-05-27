@@ -3,7 +3,6 @@ description: ルックアップデータをデータセットに組み入れる�
 title: ルックアップ変換の定義
 uuid: 4f7358b1-9e6a-4d03-b0c6-411e454fc11e
 exl-id: 7b1504be-8669-4340-8400-e33f9663b602
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '2288'
@@ -21,7 +20,7 @@ ht-degree: 90%
 * [FlatFileLookup](../../../../home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-def-lookup-transf.md#section-e09b2eeb96444a859b14f03cdaab31f2)
 * [ODBCLookup](../../../../home/c-dataset-const-proc/c-data-trans/c-int-lookup-data/c-def-lookup-transf.md#section-4dcc3747e42e45c0a057e85f308a83cc)
 
-## Categorize  {#section-8474376c14e54d14ae73749696ada468}
+## Categorize {#section-8474376c14e54d14ae73749696ada468}
 
 [!DNL Categorize] 変換には、パターン文字列と値のペアから成る 2 列のルックアップテーブルを使用します。この変換では、Data Workbench サーバーが個々のイベントデータレコードを順に読み取り、そのレコード内の指定されたフィールドの内容を、ルックアップテーブルの 1 列目にリストされた各パターン文字列と比較します。指定されたフィールドがいずれかのパターン文字列と一致した場合、対応する値（2 列目の内容）を、レコード内の指定された出力フィールドに書き込みます。
 
@@ -31,7 +30,7 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->[!DNL Categorize]で使用されるサブ文字列テストでは、[!DNL Case Sensitive]パラメーターで特に指定しない限り、大文字と小文字が区別されます。
+>[!DNL Categorize]で使用されるサブ文字列テストでは、[!DNL Case Sensitive]パラメーターで別途指定しない限り、大文字と小文字が区別されます。
 
 <table id="table_1773344FAAE34BD4919CC4414249FDEE"> 
  <thead> 
@@ -95,15 +94,15 @@ ht-degree: 90%
  </tbody> 
 </table>
 
-**Categorizeの考慮事項**
+**分類に関する考慮事項**
 
-* [!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイルで定義されている[!DNL Categorize]変換のルックアップファイルに変更を加えた場合、データセットの再変換が必要になります。 [!DNL Log Processing.cfg]ファイルまたは[!DNL Log Processing Dataset Include]ファイルで定義されている[!DNL Categorize]変換のルックアップファイルは、この制限の対象となりません。 データの再処理について詳しくは、[再処理と再変換](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)を参照してください。
+* [!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイルで定義されている[!DNL Categorize]変換のルックアップファイルに対する変更は、データセットの再変換が必要です。 [!DNL Log Processing.cfg]ファイルまたは[!DNL Log Processing Dataset Include]ファイルで定義されている[!DNL Categorize]変換のルックアップファイルは、この制限の対象になりません。 データの再処理について詳しくは、[再処理と再変換](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)を参照してください。
 
-* [!DNL Categorize] ファイルまたは [!DNL Log Processing.cfg]  [!DNL Log Processing Dataset Include] ファイルで定義された変換は、ルックアップファイルが変更されるたびに、そのルックアップファイルをリロードします。過去にさかのぼって変更が適用されることはありませんが、その変更が行われた後に読み込まれたログデータにはすべて変更が適用されます。
+* [!DNL Categorize] ファイルまたはファイル [!DNL Log Processing.cfg] で定義された変換 [!DNL Log Processing Dataset Include] は、ルックアップファイルが変更されるたびに、そのルックアップファイルを再読み込みします。過去にさかのぼって変更が適用されることはありませんが、その変更が行われた後に読み込まれたログデータにはすべて変更が適用されます。
 
 以下に示したのは、Web サイトトラフィックから収集したイベントデータに、[!DNL Categorize] 変換を使用してルックアップデータを統合する例です。特定の Web サイトにいくつかのビジネスセクションがあって、各セクションのトラフィックフローと生み出された価値に基づいて比較検討できるようにしたいとします。この場合、ルックアップファイルを作成して、各セクションを識別するためのサブ文字列をリストします。
 
-ルックアップファイル[!DNL Lookups\custommap.txt]には、次の表が含まれています。
+参照ファイル[!DNL Lookups\custommap.txt]には、次の表が含まれます。
 
 | /製品/ | 製品 |
 |---|---|
@@ -197,9 +196,9 @@ Multiple Values パラメーターが false に設定されていると仮定し
 **の考慮事項[!DNL FlatFileLookup]**
 
 * 入力フィールドとルックアップファイルとの比較では常に、大文字と小文字が区別されます。
-* [!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイルで定義されている[!DNL FlatFileLookup]変換のルックアップファイルに変更を加えた場合、データセットの再変換が必要になります。 [!DNL Log Processing.cfg]ファイルまたは[!DNL Log Processing Dataset Include]ファイルで定義されている[!DNL FlatFileLookup]変換のルックアップファイルは、この制限の対象となりません。 データの再処理について詳しくは、[再処理と再変換](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)を参照してください。
+* [!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイルで定義されている[!DNL FlatFileLookup]変換のルックアップファイルに対する変更は、データセットの再変換が必要です。 [!DNL Log Processing.cfg]ファイルまたは[!DNL Log Processing Dataset Include]ファイルで定義されている[!DNL FlatFileLookup]変換のルックアップファイルは、この制限の対象となりません。 データの再処理について詳しくは、[再処理と再変換](../../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md)を参照してください。
 
-* [!DNL FlatFileLookup] ルックアップファイルが変更されるたびに、 [!DNL Log Processing.cfg] ファイルまたは [!DNL Log Processing Dataset Include] ファイル内の変換によって、ルックアップファイルがリロードされます。過去にさかのぼって変更が適用されることはありませんが、その変更が行われた後に読み込まれたログデータにはすべて変更が適用されます。
+* [!DNL FlatFileLookup] ルックアップファイルが変 [!DNL Log Processing.cfg] 更される [!DNL Log Processing Dataset Include] たびに、ファイルまたはファイル内の変換のルックアップファイルをリロードします。過去にさかのぼって変更が適用されることはありませんが、その変更が行われた後に読み込まれたログデータにはすべて変更が適用されます。
 
 以下に示したのは、Web サイトトラフィックから収集したイベントデータに、[!DNL FlatFileLookup] 変換を使用してルックアップデータを統合する例です。その Web サイトへのトラフィックルーティングに寄与している Web サイトパートナーを見つけ出して、そのパートナー ID を、よりわかりやすい名前に変換したいとします。そうすると、トラフィックのルーティングに使われているサイト間の関係よりも明確にビジネス上の関係を表現する拡張ディメンションとビジュアライゼーションを、そのわかりやすい名前を使用して作成できます。
 
@@ -215,7 +214,7 @@ Multiple Values パラメーターが false に設定されていると仮定し
 | 2 | P232 | 2000 年 7 月 10 日（PT） | Microsoft |
 | 3 | P945 | 2001 年 1 月 12 日（PT） | Amazon |
 
-次の例は、次のように変換されます。
+次の例は、と変換されます。
 
 * cs(referrer)(PartnerID) から P232 が返された場合、x-partner-name フィールドには「Microsoft」という値が割り当てられます。
 * cs(referrer)(PartnerID) から P100 が返された場合、x-partner-name フィールドには「No Partner」という値が割り当てられます。
@@ -223,7 +222,7 @@ Multiple Values パラメーターが false に設定されていると仮定し
 
 ## ODBCLookup {#section-4dcc3747e42e45c0a057e85f308a83cc}
 
-[!DNL ODBCLookup]変換は、[!DNL FlatFileLookup]変換と同じ働きをします。 唯一違うのは、変換時に使用されるルックアップテーブルの内容が、フラットファイルからではなく、ODBC データベースから入力されるという点です。
+[!DNL ODBCLookup]変換は[!DNL FlatFileLookup]変換と似た動作をします。 唯一違うのは、変換時に使用されるルックアップテーブルの内容が、フラットファイルからではなく、ODBC データベースから入力されるという点です。
 
 >[!NOTE]
 >
