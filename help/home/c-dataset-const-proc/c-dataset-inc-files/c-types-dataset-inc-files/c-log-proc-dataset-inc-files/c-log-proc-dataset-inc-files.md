@@ -3,7 +3,6 @@ description: 継承プロファイルのログ処理データセットインク�
 title: ログ処理データセットインクルードファイル
 uuid: 8bf99c9a-f674-4a07-bb3e-de0d9efc9716
 exl-id: 06d8046d-6bac-4ccd-bcef-06f7c9ec7619
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '660'
@@ -15,11 +14,11 @@ ht-degree: 76%
 
 継承プロファイルのログ処理データセットインクルードファイルには、データセット構築のログ処理段階に関連したパラメーターが含まれます。
 
-[!DNL Log Processing Dataset Include]ファイルの最初の行は、Decoder Groups、Fields、Log Entry Condition、Parameters、Reprocess、Stage、Transformationsの各パラメーターをサポートする型[!DNL LogProcessingInclude]を定義します。 その他ログ処理に必要なパラメーターはすべて、データセットプロファイルの Dataset ディレクトリにある [!DNL Log Processing.cfg] ファイルの中で定義する必要があります。[!DNL Log Processing Dataset Include]ファイルには好きな名前を付けることができますが、ファイル拡張子は[!DNL .cfg]にする必要があります。 ファイルは、*inherited profile name*\Dataset\Log Processing ディレクトリ内に格納されていることが必要です。データセット構築のログ処理段階でファイルが再帰的に読み込まれるので、[!DNL Log Processing Dataset Include]ファイルは、ディレクトリ内の任意のレベルに格納できます(例：*inheritedプロファイル名*\Dataset\Log Processing\*フォルダ名*\*include file name*.cfg)。
+[!DNL Log Processing Dataset Include]ファイルの最初の行では、Decoder Groups、Fields、Log Entry Condition、Parameters、Reprocess、Stage、Transformationsの各パラメーターをサポートするタイプ[!DNL LogProcessingInclude]を定義します。 その他ログ処理に必要なパラメーターはすべて、データセットプロファイルの Dataset ディレクトリにある [!DNL Log Processing.cfg] ファイルの中で定義する必要があります。[!DNL Log Processing Dataset Include]ファイルには任意の名前を付けることができますが、ファイルの拡張子は[!DNL .cfg]にする必要があります。 ファイルは、*inherited profile name*\Dataset\Log Processing ディレクトリ内に格納されていることが必要です。データセット構築のログ処理段階でファイルが再帰的に読み込まれるので、[!DNL Log Processing Dataset Include]ファイルはディレクトリ内の任意のレベルに保存できます(例：*inherited profile name*\Dataset\Log Processing\*folder name*\*include file name*.cfg)。
 
 >[!NOTE]
 >
->SiteのWeb固有の設定パラメーターの多くは、[!DNL Log Processing Dataset Include]ファイルで定義されています。 これらのパラメーターについて詳しくは、[Webデータの構成設定](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)を参照してください。
+>Site用のWeb固有の設定パラメーターの多くは、[!DNL Log Processing Dataset Include]ファイルで定義されます。 これらのパラメーターについて詳しくは、[Webデータの設定](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)を参照してください。
 
 <table id="table_E2112652CCD443E889A529EEDC4ADF1C"> 
  <thead> 
@@ -35,7 +34,7 @@ ht-degree: 76%
      <ul id="ul_54087499003C48C8B0AD9660A2F46EA9"> 
       <li id="li_E361861E61D246DDB3964C97CC5187E9"> <span class="uicontrol">Decoder Group</span> を右クリックし、<span class="uicontrol">新規追加</span>／<span class="uicontrol">TextFileDecoderGroup</span>（または <span class="uicontrol">XMLDecoderGroup</span>）をクリックします。 </li> 
       <li id="li_B2D61A0763AD4FEDB619BF9550EF4602"> 新しいグループの Name パラメーターに、目的のデコーダーグループの名前を入力します。 </li> 
-     </ul> </p> <p> <p>注意：データセットプロファイルの <span class="filepath">Log Processing.cfg</span> ファイルで Decoder Group を指定するときは、その名前が、ここで入力する名前と完全に一致している必要があります。詳しくは、<a href="../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e">ログファイル</a>を参照してください。 </p> </p> <p> 各グループに定義できるデコーダーについて詳しくは、<a href="../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-text-file-dec-groups.md#concept-0db34988e17c41bfb1797f1d8e78aabd"> Text File Decoder Groups</a>または<a href="../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-xml-dec-grps.md#concept-5eda5ab253724674832f6951e2a0d1c3"> XMLデコーダーグループ</a>を参照してください。 </p> </td> 
+     </ul> </p> <p> <p>注意：データセットプロファイルの <span class="filepath">Log Processing.cfg</span> ファイルで Decoder Group を指定するときは、その名前が、ここで入力する名前と完全に一致している必要があります。詳しくは、<a href="../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-3d4fb817c057447d90f166b1183b461e">ログファイル</a>を参照してください。 </p> </p> <p> 各グループに定義できるデコーダーについて詳しくは、 <a href="../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-text-file-dec-groups.md#concept-0db34988e17c41bfb1797f1d8e78aabd"> Text File Decoder Groups</a>または<a href="../../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-types-dataset-inc-files/c-log-proc-dataset-inc-files/c-xml-dec-grps.md#concept-5eda5ab253724674832f6951e2a0d1c3"> XML Decoder Groups</a>を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> フィールド </td> 
