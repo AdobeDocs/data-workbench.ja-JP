@@ -3,7 +3,6 @@ description: プロファイルのデータセットコンポーネント、ク�
 title: プロファイルコンポーネントの表示
 uuid: c904dcb7-6bb9-445c-be55-0573f88928ad
 exl-id: 9d0aea02-cc24-43c2-afb8-e11ebd80e193
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '313'
@@ -20,7 +19,7 @@ ht-degree: 78%
 1. 依存関係マップ内で右クリックし、「**[!UICONTROL Display]**」をクリックします。
 1. マップ上に表示するための以下のオプションを 1 つ以上選択します。有効にした各表示オプションの左側には X が表示されます。
 
-   * データセットコンポーネントを表示するには「**データセット**」を選択します。「[データセットコンポーネント](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-dataset-comp.md#concept-4afe28ad29d14eca8a5000847254c293)」を参照してください。データセットのコンポーネントを表示する場合は、マップ上に[!DNL Include File Blocks]を指定できます。 「[ファイルブロックの操作](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-wkg-file-blocks.md#concept-3652bbabfbd34449a5f842d8aa598efc)」を参照してください。
+   * データセットコンポーネントを表示するには「**データセット**」を選択します。「[データセットコンポーネント](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-dataset-comp.md#concept-4afe28ad29d14eca8a5000847254c293)」を参照してください。データセットのコンポーネントを表示する場合は、マップに[!DNL Include File Blocks]を指定するオプションがあります。 [ファイルブロックの操作](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-wkg-file-blocks.md#concept-3652bbabfbd34449a5f842d8aa598efc)を参照してください。
 
    * クエリーモデルコンポーネントを表示するには「**クエリーモデル**」を選択します。「[クエリーモデルコンポーネント](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-qry-mod-comp.md#concept-32c6dadd32f74179b026c7e96d47710f)」を参照してください。
 
@@ -38,6 +37,6 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->依存関係マップ内でハイライトされているパスは、選択範囲を構成しません。
+>依存関係マップ内でハイライト表示されているパスは、選択範囲を構成しません。
 
 ノードを右クリックすると、マップに表示されている各コンポーネントに関する識別情報を確認したり、メニューオプションを選択して、コンポーネントに関する詳細を表示したり、コンポーネントを編集したりできます。さらに、テキスト検索を実行し、変換と拡張ディメンションに関するパフォーマンスデータを表示できます。
