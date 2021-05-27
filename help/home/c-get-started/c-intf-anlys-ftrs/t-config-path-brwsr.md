@@ -3,7 +3,6 @@ description: パスブラウザーは、アプリケーションとデータセ�
 title: パスブラウザーの設定
 uuid: 1ba3fb6e-b76f-428f-b6ec-077669c3b305
 exl-id: be6a68f7-e3e3-4207-a112-3a4fdd5c5f57
-translation-type: tm+mt
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
 source-wordcount: '422'
@@ -15,14 +14,14 @@ ht-degree: 65%
 
 パスブラウザーは、アプリケーションとデータセットに対して意味を持つベースディメンション、グループディメンション、レベルディメンションおよび指標の任意の組み合わせを使用するように設定できます。
 
-パスブラウザーを設定すると、他のパスブラウザーと共に[!DNL Add Visualization]メニューに表示されます。
+設定したパスブラウザーは、他のパスブラウザーと共に[!DNL Add Visualization]メニューに表示されます。
 
-1. [!DNL Profile Manager]の&#x200B;**[!UICONTROL Menu]**&#x200B;をクリックし、**[!UICONTROL Add Visualization]**&#x200B;と&#x200B;**[!UICONTROL Path Browser]**&#x200B;をクリックします。
+1. [!DNL Profile Manager]で「**[!UICONTROL Menu]**」をクリックし、「**[!UICONTROL Add Visualization]**」と「**[!UICONTROL Path Browser]**」をクリックします。
 
-   パスブラウザーディレクトリには、少なくとも1つの[!DNL *.vw]ファイルが存在します。
+   パスブラウザディレクトリには、少なくとも1つの[!DNL *.vw]ファイルが存在します。
 
 1. 目的のファイルのチェックマークを右クリックし、「**[!UICONTROL Make Local]**」をクリックします。
-1. [!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Open]**/**[!UICONTROL in Notepad]**&#x200B;をクリックします。
+1. [!DNL User]列でファイルのチェックマークを右クリックし、**[!UICONTROL Open]** / **[!UICONTROL in Notepad]**&#x200B;をクリックします。
 1. 次のサンプルのファイルと表を参考にして、ファイルのパラメーターを編集します。
 
    ```
@@ -68,14 +67,14 @@ ht-degree: 65%
 
 >[!NOTE]
 >
->パスブラウザーのベースディメンション、グループディメンション、レベルディメンションおよび指標について詳しくは、[パスブラウザー](../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md#concept-f2e9fdafed6e49c2bd111ab425cd6e2b)を参照してください。
+>パスブラウザーのベースディメンション、グループディメンション、レベルディメンションおよび指標について詳しくは、「[パスブラウザー](../../../home/c-get-started/c-analysis-vis/c-path-browsers/c-path-browsers.md#concept-f2e9fdafed6e49c2bd111ab425cd6e2b)」を参照してください。
 
-1. メモ帳で、**[!UICONTROL File]**/**[!UICONTROL Save As]**&#x200B;をクリックして、グループディメンションに基づいて新しい名前でファイルを保存します。つまり、*グループディメンション名*.vwという名前で保存します。
+1. メモ帳で、 **[!UICONTROL File]** / **[!UICONTROL Save As]**&#x200B;をクリックして、グループディメンションに基づいて新しい名前でファイルを保存します。つまり、 *Group dimension name*.vwという名前で保存します。
 
    ファイルは、パスブラウザーディレクトリに保存してください。
 
    >[!NOTE]
    >
-   >パスブラウザーを[!DNL *.vw]ファイルとして保存するには、[!DNL Save As]ウィンドウで、保存するファイルの種類を「すべてのファイル」に設定します。
+   >パスブラウザーを[!DNL *.vw]ファイルとして保存するには、[!DNL Save As]ウィンドウで、「ファイルの種類として保存」を「すべてのファイル」に設定します。
 
-1. （オプション）作業プロファイルのすべてのユーザーが変更を利用できるようにするには、[!DNL Profile Manager]で、[!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]**/***[!UICONTROL working profile name]**>*&#x200B;をクリックします。
+1. （オプション）作業プロファイルのすべてのユーザーが変更を利用できるようにするには、[!DNL Profile Manager]で、[!DNL User]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]** / *&lt;**[!UICONTROL working profile name]***&#x200B;をクリックします。
