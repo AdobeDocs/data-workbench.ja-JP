@@ -2,9 +2,9 @@
 description: AdobeData Workbenchは、一般データ保護規則(GDPR)に準拠するためのデータ準備のためのツールとプロセスを提供します。
 title: GDPR の Data Workbench サポート
 exl-id: fdc43567-0c57-4851-9073-e295258a8074
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '518'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ GDPR規制は、GDPRの実施を担当する様々な関係者の役割と義務
 
 * 組織は&#x200B;**データ管理者**&#x200B;として機能し、ニーズと制約に基づいて個人データのコンテキストと保持を決定します。 Adobeは、その後、お客様に代わってこのデータを処理および保存します。
 * Adobeは、**データ処理者**&#x200B;として機能し、Adobeとの契約に基づいてGDPR要件を実装するためのソフトウェアとサービスを提供します。
-* GDPRサービスとのData Workbenchの統合後、GDPR標準に従って、サイト（**データ主体**）への訪問者は、Adobe（データ処理者）によって「忘れられる権利」を行使できます。 忘れられる権利を実現するには、データ管理者が、問題のある訪問者IDをUIまたはAPIからAdobeにアップロードできます。 詳しくは、[送信アクセス要求および削除要求](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html)の節を含む、[Adobe Analytics GDPRワークフロー](https://docs.adobe.com/help/en/analytics/admin/data-governance/an-gdpr-workflow.html)のドキュメントを参照してください。
+* GDPRサービスとのData Workbenchの統合後、GDPR標準に従って、サイト（**データ主体**）への訪問者は、Adobe（データ処理者）によって「忘れられる権利」を行使できます。 忘れられる権利を実現するには、データ管理者が、問題のある訪問者IDをUIまたはAPIからAdobeにアップロードできます。 詳しくは、[送信アクセス要求および削除要求](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html)の節を含む、[Adobe Analytics GDPRワークフロー](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=en)のドキュメントを参照してください。
 
 >[!NOTE]
 >

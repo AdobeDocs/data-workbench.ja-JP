@@ -3,9 +3,9 @@ description: Data Workbench のワークステーション（クライアント�
 title: ワークステーションの要件
 uuid: 3c4ba2e8-efbc-45fe-8ac1-923d070bc710
 exl-id: 35e259e3-3d6d-45c8-a923-2f8de117489d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '525'
 ht-degree: 46%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 46%
 
 Data Workbench のワークステーション（クライアント）をインストールするための要件および推奨事項です。
 
-その他の必要なData Workbench・システム構成については、[サーバの必要システム構成](https://docs.adobe.com/help/en/data-workbench/using/server-admin-install/c-msr-server.html)を参照してください。
+その他の必要なData Workbench・システム構成については、[サーバの必要システム構成](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/c-msr-server.html?lang=en)を参照してください。
 
 >[!IMPORTANT]
 >

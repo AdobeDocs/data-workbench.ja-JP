@@ -3,9 +3,9 @@ description: DWBの設定後、これらの機能を実装できます。
 title: Data Workbench 機能の実装
 uuid: f7eec017-f27c-4ae0-bc23-45195fc08d81
 exl-id: 4b2625a6-cc44-4281-b532-fc29e8c06105
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
@@ -22,11 +22,11 @@ DWBの設定後、これらの機能を実装できます。
 
 * **グローブビジュアライゼーション**&#x200B;を実装するには、[グローブ](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/globes/c-globes.html)を参照してください。
 
-* **アトリビューション用のワークスペース**&#x200B;を実装するには、[ルールベースアトリビューション](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-rules-attrib.html)と[最適なアトリビューション](https://docs.adobe.com/help/en/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html)を参照してください。
+* **アトリビューション用のワークスペース**&#x200B;を実装するには、[ルールベースアトリビューション](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-rules-attrib.html?lang=en)と[最適なアトリビューション](https://experienceleague.adobe.com/docs/data-workbench/using/client/attribution-reports/c-attrib-algorithmic.html?lang=en)を参照してください。
 
 * **予測分析**&#x200B;ワークスペースを実装するには、[ビジュアライゼーション](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-vis.html)と以下のビジュアライゼーションを参照してください。
 
-* **Predictive Intelligenceをクラスタリングビジュアライゼーションで実装する方法**&#x200B;については、[クラスタリング](https://docs.adobe.com/help/en/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html)を参照してください。
+* **Predictive Intelligenceをクラスタリングビジュアライゼーションで実装する方法**&#x200B;については、[クラスタリング](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html?lang=en)を参照してください。
 
 * 傾向スコアリング&#x200B;**を使用した**&#x200B;予測インテリジェンスを実装するには、[傾向スコアリング](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-propensity/c-visitor-propensity.html)を参照してください。
 

@@ -2,11 +2,13 @@
 description: クラスタービルダーには、優先クラスター生成処理の中心を見つけるためのより高速な手法を使用する KMeans++ アルゴリズム（以前は KMeans アルゴリズムのみがサポートされていました）が含まれるようになりました。
 title: Clustering 2.0
 uuid: 14462bd3-06d1-4622-a2d8-f96aadb357f3
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: 6a779ddc-c8f1-4c55-9c17-1119fe1aa791
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
+workflow-type: tm+mt
+source-wordcount: '288'
+ht-degree: 87%
 
 ---
-
 
 # Clustering 2.0{#clustering}
 
@@ -14,10 +16,10 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
 ## K 平均法アルゴリズム {#section-92383a1be1d6402c95a25c902e90b850}
 
-In the [Cluster Builder](https://docs.adobe.com/help/en/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html), you can now select **[!UICONTROL Options]** > **[!UICONTROL Algorithm]** to select algorithms when defining clusters.
+[Cluster Builder](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/visitor-cluster/c-visitor-cluster.html?lang=en)で、**[!UICONTROL Options]** > **[!UICONTROL Algorithm]**&#x200B;を選択して、クラスターを定義する際にアルゴリズムを選択できるようになりました。
 
-* **[!UICONTROL KMeans]**&#x200B;をインストールします。このアルゴリズムでは、キャノピークラスターリングを使用して、クラスターの中心を定義します。
-* **[!UICONTROL KMeans++]**&#x200B;をインストールします。このアルゴリズムでは、大量のデータセットに対して実行した場合に、クラスターが迅速に構築されます。
+* **[!UICONTROL KMeans]**&#x200B;に移動します。このアルゴリズムでは、キャノピークラスターリングを使用して、クラスターの中心を定義します。
+* **[!UICONTROL KMeans++]**&#x200B;に移動します。このアルゴリズムでは、大量のデータセットに対して実行した場合に、クラスターが迅速に構築されます。
 
 <!-- <a id="section_8193A6D60C5540BB985085BE670B4544"></a> -->
 
@@ -27,5 +29,4 @@ KMeans++ のワークフローは、クラスタービルダーで&#x200B;**オ�
 
 >[!NOTE]
 >
->各DPUは、独自のデータ部分で独自のKMeans++プロシージャを実行します。 DPU に利用可能なメモリが十分にある場合（割合は PAServer.cfg ファイルで設定できます）、必要な変数のデータをメモリに読み込みます。最初の中心のうち残りの k-1 個の選択と収束するまでの反復は、すべてメモリ内で実行されます。これにより、以前の K 平均法クラスタリングよりも速く実行されます。
-
+>各DPUは、独自のデータ部分に対して独自のKMeans++プロシージャを実行します。 DPU に利用可能なメモリが十分にある場合（割合は PAServer.cfg ファイルで設定できます）、必要な変数のデータをメモリに読み込みます。最初の中心のうち残りの k-1 個の選択と収束するまでの反復は、すべてメモリ内で実行されます。これにより、以前の K 平均法クラスタリングよりも速く実行されます。

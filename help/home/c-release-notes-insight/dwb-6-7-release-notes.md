@@ -3,9 +3,9 @@ description: Data Workbench6.7の新機能、修正点および既知の問題�
 title: Data Workbench 6.7 のリリースノート
 uuid: b84f5f2b-4f1c-490c-982b-6bd8d3a63e25
 exl-id: e5ec3224-66d1-47a6-9bf3-8be9f6568b8d
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 050468bf6a9ef9c07719ded79c8ab68753d58647
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '649'
 ht-degree: 36%
 
 ---
@@ -44,7 +44,7 @@ ECDHE および DHE のサポートが追加されました。
 
 [!DNL User List.cfg]での電子メールのサポート
 
-[!DNL User List.cfg]にEメール属性のサポートを追加しました。 詳しくは、[グループメンバーのユーザー管理](https://docs.adobe.com/help/en/data-workbench/using/server-admin-install/admin-dwb-server/access-control/dwb-self-admin-member-access.html)を参照してください。
+[!DNL User List.cfg]にEメール属性のサポートを追加しました。 詳しくは、[グループメンバーのユーザー管理](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/admin-dwb-server/access-control/dwb-self-admin-member-access.html?lang=en)を参照してください。
 
 **ヘルプメニュー**
 
