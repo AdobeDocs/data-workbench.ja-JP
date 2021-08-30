@@ -2,14 +2,13 @@
 description: ステップバイステップ方式のウィザードを使用して、指標属性によって定義されるディメンション（指標ディメンション）を作成できます。作成した新しい指標ディメンションをテストし、プレビューし、ディメンションリストに保存できます。
 title: 指標ディメンションウィザード
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
-translation-type: tm+mt
-source-git-commit: 35e6e9280ab36e8b39e89039b791199d1de54e03
+exl-id: 4d283a00-409c-4d74-a558-40744caba71c
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 91%
+source-wordcount: '485'
+ht-degree: 82%
 
 ---
-
 
 # 指標ディメンションウィザード{#metric-dim-wizard}
 
@@ -21,7 +20,7 @@ ht-degree: 91%
 
 1. 指標ディメンションウィザードを開きます。
 
-   ワークスペース内で右クリックし、**[!UICONTROL ツール]**／**[!UICONTROL 指標ディメンションを作成]**&#x200B;を選択します。
+   ワークスペース内で右クリックし、**[!UICONTROL Tools]** > **[!UICONTROL Create Metric Dim]**&#x200B;を選択します。
 
 1. 指標ディメンションに名前を付けます。
 
@@ -35,7 +34,7 @@ ht-degree: 91%
 
    * クリックスルー
    * ヒット
-   * 製品         
+   * 製品            
    * 訪問
    * 訪問者。
 
@@ -51,9 +50,9 @@ ht-degree: 91%
 
    ![](assets/6_4_workstation_metricdim_create_metric.png)
 
-   独自の[指標の式](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html)の追加や、別の指標エディターまたはビジュアライゼーションからのカットアンドペーストが可能です。構文エラー、数式エラー、未定義エラーおよびその他のエラーがウィザードに報告されます。
+   独自の[指標の式](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html)の追加や、別の指標エディターまたはビジュアライゼーションからのカットアンドペーストが可能です。構文エラー、数式エラー、未定義エラーおよびその他のエラーがウィザードに報告されます。
 
-1. 「**[!UICONTROL 次へ]**」をクリックします。
+1. 「**[!UICONTROL Next]**」をクリックします。
 
 ## ステップ 2：形式の設定とグループの設定 {#section-5bddf3cd306545d7806a501637f80f77}
 
@@ -68,21 +67,21 @@ ht-degree: 91%
    % 0.2lf = % _ [flags] 0 [width] .2 [.precision] l [length] f[ specifier]
    ```
 
-   「**[!UICONTROL プレビュー]**」フィールドに、選択されている指標と形式に基づいて値が表示されます。
+   **[!UICONTROL Preview]**&#x200B;フィールドに、選択した指標と形式に基づいて値が表示されます。
 
 1. 「グループの数」の式を追加します。
 
-   様々な範囲、すなわちグループを利用して指標ディメンションを定義できます。This returns subsets of elements based on size, such as [0-4], [5-10],...). ディメンションレベルのエレメントは、範囲に指標の値を含むエレメントに関連付けられます。グループの式の説明は、「[ディメンション式の構文](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)」を参照してください。
+   様々な範囲、すなわちグループを利用して指標ディメンションを定義できます。これは、[0-4]、[5-10]、...など、サイズに基づいて要素のサブセットを返します。 ディメンションレベルのエレメントは、範囲に指標の値を含むエレメントに関連付けられます。グループの式の説明は、「[ディメンション式の構文](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)」を参照してください。
 
-1. 保存する前に、「**[!UICONTROL プレビュー]**」をクリックして指標ディメンションの値のテーブルを開きます。
+1. 保存する前に&#x200B;**[!UICONTROL Preview]**&#x200B;をクリックして、指標ディメンションの値のテーブルを開きます。
 
    ![](assets/6_4_workstation_metricdim_preview.png)
 
    このテーブルには、指標ディメンションごとの指標の値の詳細が表示されます。
 
-1. 「**[!UICONTROL ディメンションメニューに表示]**」をクリックして、新しく作成したディメンションを&#x200B;**ファインダー**&#x200B;の「**ディメンション**」タブに追加します。
+1. **[!UICONTROL Show in Dimension Menu]**&#x200B;をクリックして、新しく作成したディメンションを&#x200B;**Finder**&#x200B;の「**Dimension**」タブに追加します。
 
-1. 「**[!UICONTROL 次へ]**」をクリックします。
+1. 「**[!UICONTROL Next]**」をクリックします。
 
 ## ステップ 3：終了および保存 {#section-d9043235b18a425f9de0db668d4b1683}
 
@@ -90,11 +89,10 @@ ht-degree: 91%
 
    | フィールド | 説明 |
    |---|---|
-   | **[!UICONTROL 指標ディメンションエディターを起動]** | 指標ディメンションエディターを開きます。 |
-   | **[!UICONTROL グラフを起動]** | テーブルの PNG グラフィックを起動します。 |
-   | **[!UICONTROL テーブルを起動]** | ワークスペース内のテーブルを起動し、新しい指標ディメンションの値を選択されている指標の値と比較して列に表示します。 |
+   | **[!UICONTROL Launch Metric Dim Editor]** | 指標ディメンションエディターを開きます。 |
+   | **[!UICONTROL Launch Graph]** | テーブルの PNG グラフィックを起動します。 |
+   | **[!UICONTROL Launch Table]** | ワークスペース内のテーブルを起動し、新しい指標ディメンションの値を選択されている指標の値と比較して列に表示します。 |
 
-1. 「**[!UICONTROL 終了]**」をクリックして保存します。
+1. **[!UICONTROL Finish]**&#x200B;をクリックして保存します。
 
    保存ダイアログが開き、ファイルを保存することができます。値を表示するために選択したオプションがワークスペース内に表示されます。
-

@@ -3,9 +3,9 @@ description: この節では、Data Workbenchに組み込まれている指標�
 title: 組み込みの指標、ディメンション、フィルターについて
 uuid: 05676254-f6f5-4cb1-a664-da96d5b965db
 exl-id: d581a029-fd59-47c5-b832-64407102ace7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '144'
 ht-degree: 8%
 
 ---
@@ -18,4 +18,4 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->ログ処理段階では、すべてのイベントデータがログファイルから送信されるわけではありません。 場合によってはありますが、イベントデータはODBCデータソースなどの別のソースから取得される場合があります。 データソースについて詳しくは、『[データセット設定ガイド](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html)』を参照してください。
+>ログ処理段階では、すべてのイベントデータがログファイルから送信されるわけではありません。 場合によってはありますが、イベントデータはODBCデータソースなどの別のソースから取得される場合があります。 データソースについて詳しくは、『[データセット設定ガイド](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html)』を参照してください。

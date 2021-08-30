@@ -3,9 +3,9 @@ description: Report Server.cfgパラメーターについて取り上げます�
 title: Report Server.cfg のパラメーター
 uuid: 506f30f7-c8c6-4580-8423-7da8d00b0d57
 exl-id: 339e4219-ff4d-4df6-b45a-7144927a843b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 8%
 
 ---
@@ -42,7 +42,7 @@ Proxy User Name = string: ProxyUserName
   </tr> 
   <tr> 
    <td colname="col1"> Fonts </td> 
-   <td colname="col2"> <p>（オプション）<span class="keyword"> Report Server </span>がUTF8ベースのUnicode特殊文字をレンダリングする際に使用するフォントをリストするベクトル。 リスト内のフォント数に制限はありません。 </p> <p>先頭のフォントは常に Lucida Sans Console でなければなりません。このパラメーターが<span class="filepath"> Report Server.cfg </span>ファイルに含まれていない場合、 <span class="keyword">レポートサーバー</span>はLucida Sansコンソールのみを使用してテキストを表示します。 </p> <p> <span class="keyword"> Report Serverは、リ </span> スト内の最初のフォントを使用して、レンダリングできない文字が検出されるまで、すべての文字をレンダリングします。次に、リスト内の2番目のフォントを使用して、その文字をレンダリングします。 そのフォントが文字をレンダリングしない場合、 <span class="keyword"> Report Server </span>は、リスト内の3番目のフォントを使用してその文字をレンダリングします。その後、フォントリストの最後に達するまで同様にレンダリングします。 正しいフォントがベクトルにリストされていない場合、 <span class="keyword">レポートサーバー</span>はその文字の16進値を表示します。 </p> <p> <p>注意： <span class="keyword">レポートサーバー</span>の実行中は、このパラメーターを変更しないでください。 </p> </p> </td> 
+   <td colname="col2"> <p>（オプション。<span class="keyword"> Report Server </span>がUTF8ベースのUnicode特殊文字をレンダリングする際に使用するフォントをリストするベクトル。 リスト内のフォント数に制限はありません。 </p> <p>先頭のフォントは常に Lucida Sans Console でなければなりません。このパラメーターが<span class="filepath"> Report Server.cfg </span>ファイルに含まれていない場合、 <span class="keyword">レポートサーバー</span>はLucida Sansコンソールのみを使用してテキストを表示します。 </p> <p> <span class="keyword"> Report Serverは、リ </span> スト内の最初のフォントを使用して、レンダリングできない文字が検出されるまで、すべての文字をレンダリングします。次に、リスト内の2番目のフォントを使用して、その文字をレンダリングします。 そのフォントが文字をレンダリングしない場合、 <span class="keyword"> Report Server </span>は、リスト内の3番目のフォントを使用してその文字をレンダリングします。その後、フォントリストの最後に達するまで同様にレンダリングします。 正しいフォントがベクトルにリストされていない場合、 <span class="keyword">レポートサーバー</span>はその文字の16進値を表示します。 </p> <p> <p>注意： <span class="keyword">レポートサーバー</span>の実行中は、このパラメーターを変更しないでください。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Gamma </td> 
@@ -50,7 +50,7 @@ Proxy User Name = string: ProxyUserName
   </tr> 
   <tr> 
    <td colname="col1"> Licensing </td> 
-   <td colname="col2"> <p>（オプション）プロキシサーバーを介してAdobeのライセンスサーバーに接続する場合にのみ、このベクトルのパラメータを変更する必要があります。 </p> <p>プロキシサーバーを介してAdobeのライセンスサーバーに接続するように設定したパラメータのセクション識別子。 </p> </td> 
+   <td colname="col2"> <p>（オプション。プロキシサーバーを介してAdobeのライセンスサーバーに接続する場合にのみ、このベクトルのパラメータを変更する必要があります。 </p> <p>プロキシサーバーを介してAdobeのライセンスサーバーに接続するように設定したパラメータのセクション識別子。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Proxy Address </td> 
@@ -58,7 +58,7 @@ Proxy User Name = string: ProxyUserName
   </tr> 
   <tr> 
    <td colname="col1"> Proxy Password </td> 
-   <td colname="col2"> （オプション）<span class="wintitle">プロキシユーザー名</span>に関連付けられているパスワード。 </td> 
+   <td colname="col2"> （オプション。<span class="wintitle">プロキシユーザー名</span>に関連付けられているパスワード。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Proxy Port </td> 
@@ -66,7 +66,7 @@ Proxy User Name = string: ProxyUserName
   </tr> 
   <tr> 
    <td colname="col1"> Proxy User Name </td> 
-   <td colname="col2"> （オプション）プロキシサーバーへのアクセスに使用するユーザー名。 </td> 
+   <td colname="col2"> （オプション。プロキシサーバーへのアクセスに使用するユーザー名。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Network Location </td> 
@@ -166,7 +166,7 @@ Proxy User Name = string: ProxyUserName
   </tr> 
   <tr> 
    <td colname="col1"> ステータス間隔 </td> 
-   <td colname="col2"> <p><span class="wintitle">レポートサーバー</span>がステータス情報を生成してData Workbenchサーバーに送信し、<span class="wintitle">詳細なステータス</span>に表示する頻度（秒）です。 </p> <p>デフォルト値は 120 秒です。レポートキューの実行には数時間かかる場合があるので、この値を小さな値（2分など）に設定することはお勧めしません。 この場合、600 ～ 1200秒の設定を考えてみましょう。 </p> <p><span class="wintitle">詳細なステータス</span>について詳しくは、『<a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> Insightユーザーガイド</a>』の「管理インターフェイス」の章を参照してください。 </p> </td> 
+   <td colname="col2"> <p><span class="wintitle">レポートサーバー</span>がステータス情報を生成してData Workbenchサーバーに送信し、<span class="wintitle">詳細なステータス</span>に表示する頻度（秒）です。 </p> <p>デフォルト値は 120 秒です。レポートキューの実行には数時間かかる場合があるので、この値を小さな値（2分など）に設定することはお勧めしません。 この場合、600 ～ 1200秒の設定を考えてみましょう。 </p> <p><span class="wintitle">詳細なステータス</span>について詳しくは、『<a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/admin-ui/c-admin-intrf.html" format="http" scope="external"> Insightユーザーガイド</a>』の「管理インターフェイス」の章を参照してください。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 更新間隔 </td> 

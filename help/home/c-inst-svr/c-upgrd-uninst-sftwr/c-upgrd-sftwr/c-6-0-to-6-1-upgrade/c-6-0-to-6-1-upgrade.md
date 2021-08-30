@@ -3,9 +3,9 @@ description: Data Workbench v6.0x インストールから Data Workbench v6.1 �
 title: Data Workbench 6.0 から 6.1 へのアップグレード
 uuid: 4671c2bf-06ab-49c4-8dd1-24115facd83b
 exl-id: 559e1942-561c-4270-9670-550177730cdb,2a337d2e-c70e-4f35-a6c2-c3a7f50a0800
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '751'
 ht-degree: 56%
 
 ---
@@ -52,7 +52,7 @@ Data Workbench v6.0x インストールから Data Workbench v6.1 にアップ�
    1. [!DNL Server\Software]フォルダーを置き換えて、[!DNL Insight.exe]と[!DNL ReportServer.exe]を更新します。
    1. [!DNL Server\Scripts]フォルダーを更新して[!DNL TnTSend.exe]を更新します。
 
-1. **[!UICONTROL DeviceAtlas]**&#x200B;を採用する場合は、[!DNL Server\Lookups]フォルダーにあるbundle](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html)を[更新する必要があります。
+1. **[!UICONTROL DeviceAtlas]**&#x200B;を採用する場合は、[!DNL Server\Lookups]フォルダーにあるbundle](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html)を[更新する必要があります。
 
 1. ベクターが更新されて各プロファイルのアイテム数が反映されるように [!DNL Profile.cfg] ファイルを設定します。
 

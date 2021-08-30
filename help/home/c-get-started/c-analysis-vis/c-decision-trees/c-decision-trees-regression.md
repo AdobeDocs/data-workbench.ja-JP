@@ -2,19 +2,21 @@
 description: 新しいサンプリング機能とビジュアライゼーション機能を備えた回帰ツリーオプションを使用して、デシジョンツリーを評価します。
 title: デシジョンツリーの回帰ツリーオプション
 uuid: 1e3b5d5f-1fed-49c9-9a4d-d220c28075ac
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: e5f8d525-1530-4169-b246-cdaf30e984c0
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '429'
+ht-degree: 97%
 
 ---
 
-
-# Regression tree option for decision tree{#regression-tree-option-for-decision-tree}
+# デシジョンツリーの回帰ツリーオプション{#regression-tree-option-for-decision-tree}
 
 新しいサンプリング機能とビジュアライゼーション機能を備えた回帰ツリーオプションを使用して、デシジョンツリーを評価します。
 
 デシジョンツリーのビジュアライゼーション内で右クリックして、オプション／**回帰ツリー**&#x200B;を選択することにより、回帰ツリーオプションを使用してデシジョンツリーを評価します。
 
-**デシジョンツリービルダーの更新**：[デシジョンツリー](https://docs.adobe.com/content/help/en/data-workbench/using/client/analysis-visualizations/decision-trees/c-decision-trees.html)を作成するための新しいアルゴリズムが導入されました。より一般的なデータを扱い、より有益なビジュアライゼーションを提供して、予測の精度を向上させます。
+**デシジョンツリービルダーの更新**：[デシジョンツリー](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/decision-trees/c-decision-trees.html)を作成するための新しいアルゴリズムが導入されました。より一般的なデータを扱い、より有益なビジュアライゼーションを提供して、予測の精度を向上させます。
 
 **データサンプリングモジュールの改良**：アダプティブサンプリングスキームが更新され、デシジョンツリーと傾向スコアの精度が高まりました。
 
@@ -56,4 +58,3 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
   </tr> 
  </tbody> 
 </table>
-

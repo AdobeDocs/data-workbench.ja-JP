@@ -3,9 +3,9 @@ description: プロファイルマネージャーには、作業プロファイ�
 title: プロファイルマネージャーの作成
 uuid: e16741e2-740b-4f57-861d-e2f57d30abbc
 exl-id: 43b95473-ab3e-4a80-9b91-7c221e74b096
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '390'
 ht-degree: 25%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 25%
 
 [!DNL Profile Manager]のサブディレクトリにアクセスする場合、ディレクトリ構造全体をナビゲートする必要はありません。 例えば、ワークスペースウィンドウメニューの[!DNL Manage]メニューで使用できる[!DNL Metrics]および[!DNL Workspaces]メニューオプションを使用すると、プロファイルマネージャーのMetricsフォルダーとWorkspacesフォルダーをそれぞれ開くことができます。
 
-[!DNL Profile Manager]について詳しくは、[プロファイルマネージャー](https://docs.adobe.com/content/help/en/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)を参照してください。
+[!DNL Profile Manager]について詳しくは、[プロファイルマネージャー](https://experienceleague.adobe.com/docs/data-workbench/using/client/ui-analysis-features/cstm-prof-files-mgrs/c-new-prof-mgrs.html)を参照してください。
 
 デフォルトでは、以下のマネージャーにアクセスできます。
 

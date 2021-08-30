@@ -2,21 +2,23 @@
 description: 弦のビジュアライゼーションを使用すると、指標の比率と相関関係の両方を表示できます。弦の大きさで相関関係の強さが示されます。
 title: 弦のビジュアライゼーション
 uuid: 3f322f58-f8f5-4d91-bdf8-4b5f9d7fb072
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: d712f7b3-de2f-4ca4-a1bf-a2e4d42a084e
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 85%
 
 ---
-
 
 # 弦のビジュアライゼーション{#chord-visualization}
 
 弦のビジュアライゼーションを使用すると、指標の比率と相関関係の両方を表示できます。弦の大きさで相関関係の強さが示されます。
 
-弦のビジュアライゼーションでは、指標間の相関関係を特定し、考えられる相関を追加して、簡単に評価することができます。また、以前に作成した[相関行列](https://docs.adobe.com/content/help/en/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html)の別の表示も提供します。弦のビジュアライゼーションを使用して、指標間の正または負の相関関係を特定することはできません。特定できるのは、相関関係が存在していることだけです。場合によっては、カウンター指標を適用することで、直接または逆の関係を特定することができます。
+弦のビジュアライゼーションでは、指標間の相関関係を特定し、考えられる相関を追加して、簡単に評価することができます。また、以前に作成した[相関行列](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html)の別の表示も提供します。弦のビジュアライゼーションを使用して、指標間の正または負の相関関係を特定することはできません。特定できるのは、相関関係が存在していることだけです。場合によっては、カウンター指標を適用することで、直接または逆の関係を特定することができます。
 
-1. **ビジュアライゼーション&#x200B;**[!UICONTROL Chord]**を開きま**&#x200B;す。
+1. **ビジュアライゼーシ&#x200B;**[!UICONTROL Chord]**ョンを開きます**。
 
-   ワークスペースで右クリックしま [!DNL Visualization > Predictive Analytics > Chord]す。
+   ワークスペースで、[!DNL Visualization > Predictive Analytics > Chord]を右クリックします。
 
 1. **メニューからディメンションを選択します。**
 
@@ -28,7 +30,7 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
 1. **相関する指標を選択します**。
 
-   Drag metrics from the **[!UICONTROL Finder]** by clicking **[!UICONTROL Ctrl-Alt]** to drag metrics from the table to the chart. 2 つ以上の指標を選択すると、グラフが自動的に更新され、相関データの表示が開始されます。必要に応じて、データポイントを相関させる指標の追加を続けます。
+   **[!UICONTROL Finder]**&#x200B;から指標をドラッグします。それには、**[!UICONTROL Ctrl-Alt]**&#x200B;をクリックして、表からグラフに指標をドラッグします。 2 つ以上の指標を選択すると、グラフが自動的に更新され、相関データの表示が開始されます。必要に応じて、データポイントを相関させる指標の追加を続けます。
 
    ![](assets/chord_drag_metric.png)
 
@@ -49,4 +51,3 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 1. **設定を変更します。**&#x200B;ディメンションの変更、絶対数またはパーセンテージでのディメンションの表示、選択した指標またはすべての指標の削除、色や詳細の編集、相関行列への値のエクスポートを行うには、弦のビジュアライゼーションを右クリックして、メニューを開きます。
 
    ![](assets/chord_menu.png)
-

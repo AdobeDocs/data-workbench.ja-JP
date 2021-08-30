@@ -2,17 +2,19 @@
 description: トレンドラインを使用すると、グラフを重ねて、データを比較および解釈できます。
 title: トレンドライン
 uuid: b1d81973-2181-4507-a0a5-adf5eeb9f926
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: 3e7e9218-49b2-4877-a4bd-318b838089e8
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 93%
 
 ---
-
 
 # トレンドライン{#trend-lines}
 
 トレンドラインを使用すると、グラフを重ねて、データを比較および解釈できます。
 
-[散布グラフ](https://docs.adobe.com/content/help/en/data-workbench/using/client/analysis-visualizations/c-scat-plots.html)ビジュアライゼーションと同様に、グラフビジュアライゼーションでトレンドラインを設定して、線形回帰、指数回帰、累乗回帰または多項式回帰ラインに基づいた変化率を表示できるようになりました。トレンドライン機能を使用すると、通常は時間ディメンションに対して、トレンドラインをグラフの上に重ねることができます。
+[散布グラフ](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/c-scat-plots.html)ビジュアライゼーションと同様に、グラフビジュアライゼーションでトレンドラインを設定して、線形回帰、指数回帰、累乗回帰または多項式回帰ラインに基づいた変化率を表示できるようになりました。トレンドライン機能を使用すると、通常は時間ディメンションに対して、トレンドラインをグラフの上に重ねることができます。
 
 例えば、次のグラフの比較では、訪問回数が増加傾向であるのに対し、注文件数は減少傾向にあることがわかります。
 
@@ -21,7 +23,7 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 トレンドラインを追加するには
 
 1. グラフを開き、左上隅にある指標名を右クリックします。
-1. をクリッ **[!UICONTROL Trend Lines]** クし、オプションから選択します。
+1. **[!UICONTROL Trend Lines]**&#x200B;をクリックし、オプションから「 」を選択します。
 
    ![](assets/trend_line_graph.png)
 
@@ -30,4 +32,3 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
    トレンドが計算されてグラフ上にレンダリングされ、コールアウトが開き、トレンド式の詳細情報が表示されます。
 
    ![](assets/trend_line_detail.png)
-

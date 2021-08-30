@@ -3,10 +3,10 @@ description: Dataset ディレクトリには、ソフトウェアの動作や�
 title: その他のファイル
 uuid: 87d83fa5-df25-4da1-8b11-16639902d8d7
 exl-id: 0a1fb37c-00ac-46d4-9d0a-904ebd3ccfba
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 56%
+source-wordcount: '236'
+ht-degree: 57%
 
 ---
 
@@ -18,7 +18,7 @@ Dataset ディレクトリには、ソフトウェアの動作や、ご利用の
 
 * **[!DNL Cluster.cfg:]** プロフ [!DNL Cluster.cfg] ァイルのDatasetディレクトリ内のファイル [!DNL Base] は、ソフトウェアの操作に必要です。Data Workbench サーバークラスターでデータセットを処理するように設定する場合、[!DNL Cluster.cfg] ファイルで Normalize Server パラメーターのみを編集する必要があります。Normalize Server パラメーターを編集する方法については、[クラスターにおける中央の正規化サーバーの作成](../../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md)を参照してください。
 
-* **[!DNL Insight Transform.cfg][!DNL Insight Transform Mode.cfg]および：** 変換機能を使用する場合、プロファイルのDatasetディレクトリに、Data WorkbenchとData Workbench [!DNL Transform.cfg] の2つの追加設定ファイルがあ [!DNL TransformMode.cfg] [!DNL Transform] ります。これらのファイルとそのパラメーターについて詳しくは、[変換機能](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/transform/t-config-tfm.html)を参照してください。
+* **[!DNL Insight Transform.cfg][!DNL Insight Transform Mode.cfg]および：** 変換機能を使用する場合、プロファイルのDatasetディレクトリに、Data WorkbenchとData Workbench [!DNL Transform.cfg] の2つの追加設定ファイルがあ [!DNL TransformMode.cfg] [!DNL Transform] ります。これらのファイルとそのパラメーターについて詳しくは、[変換機能](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/transform/t-config-tfm.html)を参照してください。
 
 * **PAServer.cfg** ファイル：Insight Server に予測分析クラスタリングジョブを送信する場合は、サーバー側でクラスタリング送信を処理するように [!DNL PAServer.cfg] ファイルを設定する必要があります。カスタムプロファイルは、予測分析プロファイル([!DNL Server\Profiles\Predictive Analytics\Dataset])から[!DNL PAServer.cfg]を継承する必要があります。
 

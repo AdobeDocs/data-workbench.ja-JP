@@ -3,10 +3,10 @@ description: Data Workbench 6.0.4 で導入された新機能、バグの修正�
 title: Data Workbench 6.0 のリリースノート
 uuid: b348425e-3304-4db7-a280-479a34452bdb
 exl-id: be69b3be-24e7-4a8c-9dc8-1360a9b6fb3a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '1679'
-ht-degree: 88%
+source-wordcount: '1677'
+ht-degree: 87%
 
 ---
 
@@ -78,7 +78,7 @@ Data Workbench では、現在、補助的なテキスト入力プロセスと�
 
    この問題を解決するには、Insight.exe を削除し、最新バージョンの Insight.exe.old の名前を Insight.exe に変更した後、上記の手順 1 から再度開始します。
 
-## サーバーのアップグレード要件  {#section-d6edba8b36234957ba8d06b555667a5a}
+## サーバーのアップグレード要件 {#section-d6edba8b36234957ba8d06b555667a5a}
 
 Insight 6.0 のサーバー機能のために、次のアップグレードタスクを実行します。
 
@@ -258,7 +258,7 @@ YYYYMMDD-RSID_HH0000.tsv.gz
 
 Data Workbench 6.0.4 で導入された新機能、バグの修正および既知の問題が含まれています。
 
-以前の各リリースに基づいた以前の機能や修正を確認するには、[リリースノートのアーカイブ](https://docs.adobe.com/content/help/ja-JP/data-workbench/using/release-notes/release-notes.html)を参照してください。
+以前の各リリースに基づいた以前の機能や修正を確認するには、[リリースノートのアーカイブ](https://experienceleague.adobe.com/docs/data-workbench/using/release-notes/release-notes.html)を参照してください。
 
 ## 新機能 {#section-2-1225066ea8f44cf68e42e019d0bca816}
 

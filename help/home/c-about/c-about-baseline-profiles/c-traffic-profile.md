@@ -3,9 +3,9 @@ description: トラフィックプロファイルには、訪問者トラフィ�
 title: トラフィックプロファイルの指標
 uuid: 7dfa18ef-d2cd-44ae-8c56-a0630a9d5cf2
 exl-id: 38f191e5-5b30-4fe0-a680-bcb33fe52eca
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '711'
+source-wordcount: '709'
 ht-degree: 2%
 
 ---
@@ -96,7 +96,7 @@ ht-degree: 2%
   <tr> 
    <td colname="col1"> セッション時間 </td> 
    <td colname="col2"> <p>数式：<span class="filepath"> (sum (Exact_Page_Duration, Session)*.1/Sessions)[Session_ Duration &lt;= '01:00:00']</span></p> <p>レベル：セッション </p> </td> 
-   <td colname="col3">訪問者がセッションに滞在した平均時間(MM:SS)。 <p><p>注意：この指標は、<a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Segment_Export" format="http" scope="external">セグメントエクスポート</a>機能と共に使用できます。 </p></p></td> 
+   <td colname="col3">訪問者がセッションに滞在した平均時間(MM:SS)。 <p><p>注意：この指標は、<a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Segment_Export" format="http" scope="external">セグメントエクスポート</a>機能と共に使用できます。 </p></p></td> 
   </tr> 
   <tr> 
    <td colname="col1"> ページビュー別のセッション数 </td> 

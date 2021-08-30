@@ -2,35 +2,37 @@
 description: プレミアムメニューから最適なアトリビューションを開き、次の手順に従って、最適なアトリビューションモデルを作成します。
 title: 最適なアトリビューションの作成
 uuid: d1fd0340-1917-41bc-9a08-e78a79d084e7
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: e0a42374-2500-46a3-a72a-708ab2d228db
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '870'
+ht-degree: 57%
 
 ---
-
 
 # 最適なアトリビューションの作成{#build-a-best-fit-attribution-model}
 
 プレミアムメニューから最適なアトリビューションを開き、次の手順に従って、最適なアトリビューションモデルを作成します。
 
-最適なアトリビューションの概 [要を参照してくださ](../../../../home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-algorithmic.md#concept-237feb6e9c4d49efaf75399297dcb9d1)い。
+[最適なアトリビューション](../../../../home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-algorithmic.md#concept-237feb6e9c4d49efaf75399297dcb9d1)の概要を参照してください。
 
 1. **最適なアトリビューション**&#x200B;を開きます。
 
-   ワークスペースを開き、/をク **[!UICONTROL Premium]** リックしま **[!UICONTROL Best Fit Attribution]**&#x200B;す。
+   ワークスペースを開き、**[!UICONTROL Premium]** > **[!UICONTROL Best Fit Attribution]**&#x200B;をクリックします。
 
    ![](assets/attrib_windows_launch.png)
 
    >[!NOTE]
    >
-   >最適なアトリビューションは、プロファイルでPremiumを有効にする必要があるAdobe Analytics Premiumの機能です。 それには、証明書を更新し、profile.cfg ファイルに Premium プロファイルを追加する必要があります。「 [DWB Serverのアップグレード：DWB 6.3の場合は](https://docs.adobe.com/content/help/en/data-workbench/using/install/upgrade-dwb/c-6-2-to-6-3-upgrade.html) 、6.2 ～ 6.3。
+   >最適なアトリビューションは、Adobe Analytics Premiumの機能で、プロファイルでPremiumを有効にする必要があります。 それには、証明書を更新し、profile.cfg ファイルに Premium プロファイルを追加する必要があります。[DWBサーバーのアップグレードを参照してください。DWB 6.3の場合は6.2～6.3](https://experienceleague.adobe.com/docs/data-workbench/using/install/upgrade-dwb/c-6-2-to-6-3-upgrade.html)。
 
-1. Set the **[!UICONTROL Success]** metric.
+1. **[!UICONTROL Success]**&#x200B;指標を設定します。
 
    >[!NOTE]
    >
-   >You can either drag a metric from a **[!UICONTROL Finder]** table to the left pane of the Attribution visualization, or select from the **Inputs** menu.
+   >指標は、**[!UICONTROL Finder]**&#x200B;テーブルからアトリビューションビジュアライゼーションの左側のウィンドウにドラッグするか、**入力**&#x200B;メニューから選択します。
 
-   クリック **[!UICONTROL Inputs]** > **[!UICONTROL Set Success]**. The metric menu will open. ![](assets/attrib_set_success_metric.png)
+   クリック **[!UICONTROL Inputs]** > **[!UICONTROL Set Success]**. 指標メニューが開きます。![](assets/attrib_set_success_metric.png)
 
    コンバージョンの成功を特定する指標を選択します。
 
@@ -42,29 +44,29 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
    >[!NOTE]
    >
-   >タッチ指標の設定は、ディメンション要素をビジュアライゼーションにドラッグして成功指標を自動的に作成する場合にのみ必要です。
+   >タッチ指標の設定は、ディメンション要素をビジュアライゼーションにドラッグして成功指標を自動的に作成しようとする場合にのみ必要です。
 
-   Click the **[!UICONTROL Inputs]** menu and select **Set Touch**, or drag a metric from the Finder. ![](assets/attrib_set_touch.png)
+   **[!UICONTROL Inputs]**&#x200B;メニューをクリックし、「**タッチを設定**」を選択するか、ファインダーから指標をドラッグします。![](assets/attrib_set_touch.png)
 
    これは、ディメンションエレメントを入力として使用した場合に、チャネル指標を取得するために使用されます。
 
 1. **成功**&#x200B;ウィンドウを設定します。
 
-   クリック [!DNL Inputs > Success Window]. テーブルから日付範囲を選択し、成功ウィンドウに名前を付けます。Click **[!UICONTROL Workspace Selection]** and the selected dates will be assigned as the range of time for the Success metric.
+   「[!DNL Inputs > Success Window]」をクリックします。テーブルから日付範囲を選択し、成功ウィンドウに名前を付けます。**[!UICONTROL Workspace Selection]**&#x200B;をクリックすると、選択した日付が成功指標の時間範囲として割り当てられます。
 
    ![](assets/attrib_set_success_window.png)
 
    >[!NOTE]
    >
-   >成功ウィンドウはワークステーションの選択なので、任意のディメンションを成功ウィンドウに含めることができます。
+   >成功ウィンドウはワークステーション選択なので、任意のディメンションを成功ウィンドウに含めることができます。
 
-1. を設定しま **[!UICONTROL Touch Window]**&#x200B;す。
+1. **[!UICONTROL Touch Window]**&#x200B;を設定します。
 
-   クリック [!DNL Inputs > Touch Window]. テーブルから日付範囲を選択し、タッチウィンドウに名前を付けます。Click **[!UICONTROL Workspace Selection]** and the selected dates will be assigned as the range of time for the Success metric.
+   「[!DNL Inputs > Touch Window]」をクリックします。テーブルから日付範囲を選択し、タッチウィンドウに名前を付けます。**[!UICONTROL Workspace Selection]**&#x200B;をクリックすると、選択した日付が成功指標の時間範囲として割り当てられます。
 
    ![](assets/attrib_set_touch_window.png)
 
-   By default, the **Touch** window will be set to the same time period as the **[!UICONTROL Success]** window.
+   デフォルトでは、**タッチ**&#x200B;ウィンドウは&#x200B;**[!UICONTROL Success]**&#x200B;ウィンドウと同じ期間に設定されます。
 
 1. （オプション）トレーニングフィルターを設定します。
 
@@ -72,19 +74,19 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
    >[!NOTE]
    >
-   >成功ウィンドウとタッチウィンドウの両方を設定する場合、現在のワークスペースの選択範囲にトレーニングフィルターを適用して、データをさらに制限できます。
+   >成功ウィンドウとタッチウィンドウの両方を設定し、現在のワークスペースの選択にトレーニングフィルターを適用して、データをさらに制限できます。
 
    ![](assets/attrib_filter.png)
 
    >[!NOTE]
    >
-   >トレーニングセットは常に、成功ウィンドウを満たす訪問者から取得されます。 フィルターエディターを使用してフィルターすると、成功ウィンドウで報告された訪問者のサブセットを作成することができます。
+   >トレーニングセットは、常に、成功ウィンドウを満たす訪問者から取得されます。 フィルターエディターを使用してフィルターすると、成功ウィンドウで報告された訪問者のサブセットを作成することができます。
 
 1. タッチを表すチャネル指標を指定します。
 
-   Either drag metrics to the visualization, or choose them from the [!DNL Inputs] > [!DNL Add Channel] menu. まだキャンペーンやチャネルに対して指標を定義していないが、チャネルを表すディメンションがある場合は、ビジュアライゼーションでタッチ指標の指定を使用して指標を自動的に作成することができます。
+   指標をビジュアライゼーションにドラッグするか、[!DNL Inputs] / [!DNL Add Channel]メニューから選択します。 まだキャンペーンやチャネルに対して指標を定義していないが、チャネルを表すディメンションがある場合は、ビジュアライゼーションでタッチ指標の指定を使用して指標を自動的に作成することができます。
 
-   For example, with the Touch metric set to [!DNL Hits], and given a [!DNL dimension] called [!DNL Media Type] with elements that include things like [!DNL Email], [!DNL Press Release], [!DNL Print Ad], and [!DNL Social Media], the visualization will generate Channel metrics of the form [!DNL Hits where Media Type = Email] when you drag and drop the element(s) onto the visualization.
+   例えば、タッチ指標を[!DNL Hits]に設定し、[!DNL Email]、[!DNL Press Release]、[!DNL Print Ad]、[!DNL Social Media]などの要素を含む[!DNL dimension]を指定すると、ビジュアライゼーションに要素をドラッグ&amp;ドロップすると、[!DNL Hits where Media Type = Email]形式のチャネル指標が生成されます。[!DNL Media Type]
 
 1. 「**移動**」を押します。
 
@@ -92,7 +94,7 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
    >[!NOTE]
    >
-   >Right-click **Model Complete** on the completed analysis to see statistics for the attribution model.
+   >完了した分析で「 **モデル完了** 」を右クリックし、アトリビューションモデルの統計を表示します。
 
    ![](assets/attrib_visualization.png)
 
@@ -100,7 +102,7 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
 >[!NOTE]
 >
->**[!UICONTROL Streaming]**、およびモ **[!UICONTROL Online]** ード **[!UICONTROL Offline]** は、評価対象のデータの待ち時間に基づいてアトリビューションモデルを作成する場合に、異なる効果を生み出します。 In Streaming mode, the detail **[!UICONTROL Model Complete]** message will display. オンラインモードとオフラインモードでは、詳細が **[!UICONTROL Local Model Complete]** 表示されます。
+>**[!UICONTROL Streaming]**、モー **[!UICONTROL Online]** ドとモ **[!UICONTROL Offline]** ードは、評価対象のデータの待ち時間に基づいてアトリビューションモデルを作成する際に異なる効果を生みます。ストリーミングモードでは、詳細&#x200B;**[!UICONTROL Model Complete]**&#x200B;メッセージが表示されます。 オンラインモードとオフラインモードでは、詳細&#x200B;**[!UICONTROL Local Model Complete]**&#x200B;が表示されます。
 
 ## オプションメニュー {#section-22288867f6c8483a8a38410f4b948346}
 
@@ -158,8 +160,7 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
 | リセットと削除オプション | 説明 |
 |---|---|
-| **[!UICONTROL Reset Model]** | From the **[!UICONTROL Reset]** menu, select **[!UICONTROL Reset Model]** to clear the visualization but keep input metrics. |
-| **[!UICONTROL Reset All]** | From the **[!UICONTROL Reset]** menu, select **[!UICONTROL Reset All]** to clear the visualization and the input metrics. |
-| **[!UICONTROL Remove]** | Right-click on any input and select **[!UICONTROL Remove]** to clear the metric from the selected input. |
-| **[!UICONTROL Remove All]** | Right-click on *Channels* and select **[!UICONTROL Remove All]** to clear all input metrics. |
-
+| **[!UICONTROL Reset Model]** | **[!UICONTROL Reset]**&#x200B;メニューから&#x200B;**[!UICONTROL Reset Model]**&#x200B;を選択してビジュアライゼーションをクリアしますが、入力指標は維持します。 |
+| **[!UICONTROL Reset All]** | **[!UICONTROL Reset]**&#x200B;メニューから&#x200B;**[!UICONTROL Reset All]**&#x200B;を選択して、ビジュアライゼーションと入力指標をクリアします。 |
+| **[!UICONTROL Remove]** | 任意の入力を右クリックし、「**[!UICONTROL Remove]**」を選択して、選択した入力から指標をクリアします。 |
+| **[!UICONTROL Remove All]** | 「*チャネル*」を右クリックし、「**[!UICONTROL Remove All]**」を選択してすべての入力指標をクリアします。 |

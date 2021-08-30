@@ -3,9 +3,9 @@ description: Insight v5.5x インストールから Data Workbench v6.1 にア�
 title: Data Workbench 5.5 から 6.1 へのアップグレード
 uuid: 14e3612e-11a2-402a-9478-904ec55df23c
 exl-id: c730f6d5-2171-4d97-a967-509dc2517c86,3f25917b-b929-4e3b-84f0-1a81b30ba641
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '765'
 ht-degree: 58%
 
 ---
@@ -53,7 +53,7 @@ Insight v5.5x インストールから Data Workbench v6.1 にアップデート
 
    1. [!DNL Server\Scripts]フォルダーを更新して[!DNL TnTSend.exe]を更新します。
 
-1. **[!UICONTROL DeviceAtlas]**&#x200B;を採用する場合は、[!DNL Server\Lookups]フォルダーにあるbundle](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html)を[更新する必要があります。
+1. **[!UICONTROL DeviceAtlas]**&#x200B;を採用する場合は、[!DNL Server\Lookups]フォルダーにあるbundle](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html)を[更新する必要があります。
 1. ベクターが更新されて各プロファイルのアイテム数が反映されるように [!DNL Directories] ファイルの [!DNL Profile.cfg] を設定します。
 
    例えば、**[!UICONTROL Predictive Analytics]**&#x200B;プロファイルを有効にするには、この設定を更新する必要があります。

@@ -1,8 +1,7 @@
 ---
-source-git-commit: 60494215e7f4be3af8b5b9f81ea7ef128eb4581d
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-translation-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '429'
 ht-degree: 100%
 
 ---
@@ -16,13 +15,13 @@ ht-degree: 100%
 
 ## アドビのコンテンツへの投稿について
 
-「[Adobe Docs寄稿者ガイド](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)」を参照してください。
+[Adobe Docs 寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=ja)を参照してください。
 
 投稿方法は、誰がどのような変更を投稿するかに応じて異なります。
 
 ### マイナーな変更
 
-厳選されたマイナーな更新をおこなう場合は、記事にアクセスし、記事の GitHub ソースに移動する記事の&#x200B;**「編集」**&#x200B;リンクをクリックしてください。その後、GitHub UI を使用してアップデートをおこないます。詳しくは、一般的[アドビドキュメントのコントリビューターガイド](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)を参照してください。
+厳選されたマイナーな更新をおこなう場合は、記事にアクセスし、記事の GitHub ソースに移動する記事の&#x200B;**「編集」**&#x200B;リンクをクリックしてください。その後、GitHub UI を使用してアップデートをおこないます。詳しくは、一般的[アドビドキュメントのコントリビューターガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)を参照してください。
 
 このリポジトリのドキュメントおよびコード例については、マイナーな修正または詳細な説明をアドビの利用条件で説明しています。
 
@@ -42,11 +41,11 @@ If you submit a pull request with significant changes to documentation and code 
 
 コミュニティ寄稿者は、基本的な編集に GitHub UI を使用したり、レポをフォークしてメジャー貢献度を確保したりできます。
 
-詳しくは、[Adobe Docs 寄稿者ガイド](https://docs.adobe.com/content/help/en/contributor/contributor-guide/introduction.html)を参照してください。
+詳しくは、[Adobe Docs 寄稿者ガイド](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html)を参照してください。
 
-## markdown を使用してトピックをフォーマットする方法
+## Markdown を使用してトピックをフォーマットする方法
 
-このリポジトリのすべての記事は GitHub フレーズダウンダウンを使用します。マークダウンについて詳しくない場合は、以下を参照してください。
+このリポジトリのすべての記事は GitHub Flavored Markdown を使用します。Markdown について詳しくない場合は、以下を参照してください。
 
 * [Markdown の基本](https://help.github.com/articles/markdown-basics/)
 * [印刷可能な Markdown のクイックリファレンス](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)

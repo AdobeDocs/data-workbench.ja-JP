@@ -2,25 +2,27 @@
 description: セグメントエクスポートウィザードを使用したセグメントのエクスポート
 title: セグメントエクスポートウィザード
 uuid: 705bdf00-54e5-4992-8978-91afda8c7543
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: 6f42c5c6-a158-4ddd-8949-4ef55a44ed1c
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 78%
 
 ---
 
-
-# Segment export wizard{#segment-export-wizard}
+# セグメントエクスポートウィザード{#segment-export-wizard}
 
 セグメントエクスポートウィザードを使用したセグメントのエクスポート
 
-The segment export wizard provides a step-by-step process to configure and export segments rather than [exporting segments from a detail table](https://docs.adobe.com/content/help/en/data-workbench/using/client/export-data/c-sgmt-expt.html).
+セグメントエクスポートウィザードでは、[詳細テーブル](https://experienceleague.adobe.com/docs/data-workbench/using/client/export-data/c-sgmt-expt.html)からセグメントをエクスポートするのではなく、セグメントを設定およびエクスポートする手順を順を追って実行できます。
 
-## Export segments using the wizard {#section-b30f2699dbc7490bad18512b91cb0cb3}
+## ウィザードを使用したセグメントのエクスポート {#section-b30f2699dbc7490bad18512b91cb0cb3}
 
 ウィザードを開くには、ワークスペースを右クリックし、**管理者**／**ウィザード**／**セグメントのエクスポートウィザード**&#x200B;を選択します。
 
 >[!NOTE]
 >
->ウィザードを開く前に適用したセグメントのみがキャプチャされます。 また、ウィザードから作成されたセグメントエクスポートは外部コマンドを生成できません。
+>ウィザードを開く前に適用されたセグメントのみがキャプチャされます。 また、ウィザードから作成されたセグメントエクスポートは外部コマンドを生成できません。
 
 1. エクスポートに追加するディメンションと指標の各種親レベルを選択します。
 
@@ -51,11 +53,11 @@ The segment export wizard provides a step-by-step process to configure and expor
 
    ![](assets/seg_wizard_3_3.png)
 
-1. 選択した書き出しの種類を設定します。
+1. 選択したエクスポートタイプを設定します。
 
    ヘッダー — ヘッダーが True である場合、**出力ファイル**&#x200B;フィールドに名前を付けます。
 
-   Escape Field—Set as **True** or **False**.
+   エスケープフィールド — **True**&#x200B;または&#x200B;**False**&#x200B;に設定します。
 
    順序フィールド — フィールドを選択し、上下に移動して、エクスポートファイルの順序を設定します。
 
@@ -79,13 +81,13 @@ The segment export wizard provides a step-by-step process to configure and expor
 
 1. 「**次へ**」をクリックします。
 
-   **注意：** 選択した書き出しタイプが **Profiles and Audience Export**、 **Custom Record Service**、 **** Adobe Target Exportの場合、選択した書き出しに基づいてテキストが静的になります。
+   **注意：** 選択したエクスポートタイプが **プロファイルとオーディエンスのエクスポート**、 **カスタムレコードサービス**、および **Adobe Targetのエクスポート**&#x200B;の場合、選択したエクスポートに基づいてテキストは静的になります。
 
 1. スケジュールパラメーターを設定します。
 
    **ワンショット**&#x200B;は True または False に設定できます。
 
-   **詳細スケジュール**&#x200B;は「詳細スケジュール設定」ボタンをクリックすることで、ON または OFF にできます」と表示されます。
+   **詳細スケジュール**&#x200B;は「詳細スケジュール設定」ボタンをクリックすることで、ON または OFF にできます。
 
    ![](assets/seg_wizard_7.png)
 
@@ -122,4 +124,3 @@ The segment export wizard provides a step-by-step process to configure and expor
 * 汎用
 * FTP
 * SFTP
-

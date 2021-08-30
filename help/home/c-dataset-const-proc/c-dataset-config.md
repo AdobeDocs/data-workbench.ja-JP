@@ -3,9 +3,9 @@ description: 設定ファイルを編集することで、データセットの�
 title: データセット設定について
 uuid: 813933d1-f52d-4584-8edd-ce9cd4aed74a
 exl-id: 1358d08e-d81c-453d-a3a3-c1f279f38192
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '914'
 ht-degree: 84%
 
 ---
@@ -50,7 +50,7 @@ c_addl_config_files.xml
 
 * **：**[!DNL Server.cfg]Data Workbench サーバーに接続する Data Workbench コンピューターのデフォルトのデータキャッシュサイズ（バイト単位）を指定します。[追加の設定ファイル](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004)を参照してください。
 
-* **Transform.cfg と Transform Mode.cfg：**&#x200B;データ変換機能を使用するためのライセンスを持っている場合にのみ、これらのファイルを利用できます。[!DNL Transform.cfg] ファイルには、変換機能で使用されるデータ変換とログのソースを定義するパラメーターが含まれています。そこで定義した変換によってソースデータが加工され、指定した形式で出力されます。[!DNL Insight Transform Mode.cfg] ファイルでは、データセットに組み入れるデータの処理を一時停止したり、オフラインソースを指定したりすることができます。変換機能を実行する Insight サーバーの状態ファイルが保存される頻度を指定することもできます。[変換機能](https://docs.adobe.com/content/help/en/data-workbench/using/server-admin-install/transform/t-config-tfm.html)を参照してください。
+* **Transform.cfg と Transform Mode.cfg：**&#x200B;データ変換機能を使用するためのライセンスを持っている場合にのみ、これらのファイルを利用できます。[!DNL Transform.cfg] ファイルには、変換機能で使用されるデータ変換とログのソースを定義するパラメーターが含まれています。そこで定義した変換によってソースデータが加工され、指定した形式で出力されます。[!DNL Insight Transform Mode.cfg] ファイルでは、データセットに組み入れるデータの処理を一時停止したり、オフラインソースを指定したりすることができます。変換機能を実行する Insight サーバーの状態ファイルが保存される頻度を指定することもできます。[変換機能](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/transform/t-config-tfm.html)を参照してください。
 
 <!--
 c_next_steps.xml

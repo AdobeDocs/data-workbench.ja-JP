@@ -3,9 +3,9 @@ description: Data Workbenchを使用すると、指標、フィルターおよ�
 title: 指標、ディメンション、フィルターの拡張
 uuid: eaec0731-1916-4063-9fda-3a92ee325024
 exl-id: 5a7719a3-ba2e-4361-87e0-4d0df23196df
-source-git-commit: 92c0628b78d39a5cf75fb5cb6b63b1c95d3b7eea
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '209'
+source-wordcount: '207'
 ht-degree: 4%
 
 ---
@@ -16,4 +16,4 @@ Data Workbenchを使用すると、指標、フィルターおよびディメン
 
 新しく定義した指標は、既存のディメンションに対して評価でき、同様に、既存の指標は、新しく定義したディメンションに対して評価できます。 新しく定義した指標は、他の指標の入力としても使用できます。 指標はクライアント側で構築される（つまり、データセット処理を必要としない）ので、システムのパフォーマンスに与える影響は最小限です。 様々なレベルの指標を作成することで、分析機能を強化できます。
 
-指標、ディメンション、フィルターの操作に使用する構文について詳しくは、[言語構文](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-qry-lang-syntx.html)を参照してください。
+指標、ディメンション、フィルターの操作に使用する構文について詳しくは、[言語構文](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-qry-lang-syntx.html)を参照してください。

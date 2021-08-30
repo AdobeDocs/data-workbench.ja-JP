@@ -3,10 +3,10 @@ description: 3D 散布グラフは、x、y、z 軸が様々な指標を表す 3 
 title: 3D 散布グラフ
 uuid: 5e23547c-dbb4-490c-94bc-0731deee612e
 exl-id: 18f18cab-a31b-4ffe-89c5-412a5645af2e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 82%
+source-wordcount: '500'
+ht-degree: 83%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 82%
 
 3D 散布グラフは、x、y、z 軸が様々な指標を表す 3 次元のグリッド上にデータディメンションのエレメント（日や参照サイトなど）をグラフ化します。
 
-[2D 散布グラフ](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Scatter_Plots)と同様に、このビジュアライゼーションは、様々な指標を使用して、異なる多数のアイテムの関係を把握する場合に役立ちます。
+[2D 散布グラフ](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Scatter_Plots)と同様に、このビジュアライゼーションは、様々な指標を使用して、異なる多数のアイテムの関係を把握する場合に役立ちます。
 
 **3D 散布グラフビジュアライゼーションを利用するには：**
 

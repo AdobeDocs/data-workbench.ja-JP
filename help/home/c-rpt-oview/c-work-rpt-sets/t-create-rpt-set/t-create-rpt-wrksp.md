@@ -3,10 +3,10 @@ description: 1つのレポートセットに対して複数のワークスペー
 title: レポートサーバーワークスペースの作成
 uuid: 818569c7-fff9-4277-996b-8c47e4ef1dbc
 exl-id: 2bc068f1-c32f-4c14-b3fa-6b46e950abc7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 10%
+source-wordcount: '185'
+ht-degree: 9%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 10%
 
 1つのレポートセットに対して複数のワークスペースを直接ワークトップに作成できます。
 
-Data Workbenchとインターフェイスの使用について詳しくは、『[Data Workbenchクライアントガイド](https://docs.adobe.com/content/help/ja-JP/data-workbench/using/client/t-open-ins.html)』を参照してください。
+Data Workbenchとインターフェイスの使用について詳しくは、『[Data Workbenchクライアントガイド](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html?lang=ja)』を参照してください。
 
 **を使用してレポートワークスペースを作成するには[!DNL Worktop]**
 
@@ -23,7 +23,7 @@ Data Workbenchとインターフェイスの使用について詳しくは、『
 
    * 目的のレポートセットサブディレクトリ内で右クリックし、**[!UICONTROL New]** > **[!UICONTROL Blank Workspace]**&#x200B;または&#x200B;**[!UICONTROL New]** > **[!UICONTROL Report Template]**&#x200B;をクリックします。
 
-      -or-
+      -または-
 
    * 別の場所からワークスペースをコピーし、「[!DNL Reports]」タブの適切なレポートセットフォルダーに貼り付けます。
 

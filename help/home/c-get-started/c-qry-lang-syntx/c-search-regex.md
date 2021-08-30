@@ -3,10 +3,10 @@ description: data workbench は、検索および並べ替え操作に正規表�
 title: 正規表現
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
 exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 67%
+source-wordcount: '132'
+ht-degree: 68%
 
 ---
 
@@ -24,7 +24,7 @@ data workbench は、検索および並べ替え操作に正規表現（regex）
  <thead> 
   <tr> 
    <th colname="col1" class="entry"> メタキャラクター </th> 
-   <th colname="col2" class="entry"> 説明 </th> 
+   <th colname="col2" class="entry"> description </th> 
   </tr> 
  </thead>
  <tbody> 
@@ -45,4 +45,4 @@ data workbench は、検索および並べ替え操作に正規表現（regex）
 
 このほか、一般的な正規表現を使用して、さらに複雑な検索文字列を作成することもできます。正規表現は、クエリエンティティパネルを含むすべてのData Workbench検索フィールドで使用されます。
 
-詳しくは、[正規表現](https://docs.adobe.com/content/help/en/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions)の説明を参照してください。
+詳しくは、[正規表現](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/c-dataset-constr.html#Regular_Expressions)の説明を参照してください。

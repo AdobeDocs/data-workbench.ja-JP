@@ -2,11 +2,13 @@
 description: 指標ディメンションウィザードを使用して、新しい指標ディメンションを作成できます。
 title: 指標ディメンションウィザード
 uuid: 77b9bc8e-7625-4fef-9de4-f113f9b2debd
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: 109fbefc-5608-493d-aec9-8337f21eaa70
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 90%
 
 ---
-
 
 # 指標ディメンションウィザード{#metric-dim-wizard}
 
@@ -14,7 +16,7 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
 指標ディメンションは、指標を新しいディメンションに変換します。例えば、ページビュー数指標と訪問者レベルに基づいた指標ディメンションには、各訪問者のページビュー数合計に基づいてディメンションエレメントが表示されます。この指標ディメンションを使用して、ディメンションエレメントに基づいて現在定義されている指標を拡張し、新しいディメンションとして作成および保存することができます。
 
-## Step 1: select dimension and metric {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
+## 手順1:ディメンションと指標の選択 {#section-58b6ea7bbba5487ba1a3c264aa3dcb95}
 
 1. **指標ディメンションウィザードを開きます**。
 
@@ -30,9 +32,9 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
    * クリックスルー
    * ヒット
-   * 製品        
+   * 製品            
    * 訪問
-   * 訪問者
+   * 訪問者。
 
 1. **指標を選択します**。
 
@@ -46,11 +48,11 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
    ![](assets/6_4_workstation_metricdim_create_metric.png)
 
-   独自の[指標の式](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html)の追加や、別の指標エディターまたはビジュアライゼーションからのカットアンドペーストが可能です。構文エラー、数式エラー、未定義エラーおよびその他のエラーがウィザードに報告されます。
+   独自の[指標の式](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-mtrc-exp.html)の追加や、別の指標エディターまたはビジュアライゼーションからのカットアンドペーストが可能です。構文エラー、数式エラー、未定義エラーおよびその他のエラーがウィザードに報告されます。
 
 1. 「**次へ**」をクリックします。
 
-## Step 2: format and set buckets {#section-5bddf3cd306545d7806a501637f80f77}
+## 手順2:グループの形式と設定 {#section-5bddf3cd306545d7806a501637f80f77}
 
 指標の書式を選択し、ディメンションの式に対するグループ値を設定できます。
 
@@ -70,7 +72,7 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
 1. 「**グループの数**」の式を追加します。
 
-   様々な範囲、すなわちグループを利用して指標ディメンションを定義できます。This returns subsets of elements based on size, such as [0-4], [5-10],...). ディメンションレベルのエレメントは、範囲に指標の値を含むエレメントに関連付けられます。グループの式の説明は、「[ディメンション式の構文](https://docs.adobe.com/content/help/en/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)」を参照してください。
+   様々な範囲、すなわちグループを利用して指標ディメンションを定義できます。これは、[0-4]、[5-10]、...など、サイズに基づいて要素のサブセットを返します。 ディメンションレベルのエレメントは、範囲に指標の値を含むエレメントに関連付けられます。グループの式の説明は、「[ディメンション式の構文](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)」を参照してください。
 
 1. 保存する前に、「**プレビュー**」をクリックして指標ディメンションの値のテーブルを開きます。
 
@@ -81,7 +83,7 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 1. 「**ディメンションメニューに表示**」をクリックして、新しく作成したディメンションを&#x200B;**ファインダー**&#x200B;の「**ディメンション**」タブに追加します。
 1. 「**次へ**」をクリックします。
 
-## Step 3: finish and save {#section-d9043235b18a425f9de0db668d4b1683}
+## 手順3:終了して保存する {#section-d9043235b18a425f9de0db668d4b1683}
 
 1. 保存後の指標ディメンションエディター、グラフビジュアライゼーションまたはテーブルの起動を選択します。
 
@@ -94,4 +96,3 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 1. 「**終了**」をクリックして保存します。
 
    保存ダイアログが開き、ファイルを保存することができます。値を表示するために選択したオプションがワークスペース内に表示されます。
-

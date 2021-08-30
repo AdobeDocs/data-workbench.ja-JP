@@ -2,11 +2,10 @@
 description: Data Workbench 6.2 には、新しいユーザーインターフェイス（ブックマークパネル、ワークスペースツールバーの新しいアイコン、画面内でワークスペースをドラッグする機能、新しいクイックキー）および円グラフビジュアライゼーションが追加されました。
 title: Data Workbench クライアントの UI の更新
 uuid: 1bc18c90-8b46-4c90-b7a7-2c6710e1e28c
-translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 92%
+source-wordcount: '548'
+ht-degree: 80%
 
 ---
 
@@ -21,12 +20,12 @@ Data Workbench 6.2 には、新しいユーザーインターフェイス（ブ�
 
 **ブックマークの使用**
 
-1. ワークスペースにブックマークを追加するには、ツールバーの右上隅にあるブックマークアイコン ![](assets/bookmark_icon.png) をクリックします。
-1. 左側のペインで&#x200B;**[!UICONTROL 追加]**／**[!UICONTROL ブックマークパネル]**&#x200B;をクリックして、ブックマークのリストを開きます。
+1. ツールバーの右上隅にあるブックマークアイコン ![](assets/bookmark_icon.png) をクリックして、ワークスペースをブックマークします。
+1. 左側のウィンドウで&#x200B;**[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]**&#x200B;をクリックして、ブックマークのリストを開きます。
 
    ![](assets/bookmarks_panel.png)
 
-1. ブックマーク付きのワークスペースを開くには、**[!UICONTROL ブックマークパネル]**&#x200B;でワークスペース名をクリックします。
+1. ブックマークされたワークスペースを開くには、**[!UICONTROL Bookmark Panel]**&#x200B;内のワークスペース名をクリックします。
 
    ![](assets/bookmarks_panel_left.png)
 
@@ -34,9 +33,9 @@ Data Workbench 6.2 には、新しいユーザーインターフェイス（ブ�
 
 **ブックマークを削除するには：**
 
-* In the Bookmark Panel, right-click and select **Remove`<bookmark title>`** to delete a selected bookmark, or select **[!UICONTROL Clear All Bookmarks]** to delete all bookmarks.
+* ブックマークパネルで右クリックし、「**`<bookmark title>`**&#x200B;を削除」を選択して選択したブックマークを削除するか、「**[!UICONTROL Clear All Bookmarks]**」を選択してすべてのブックマークを削除します。
 
-* ワークトップ内のサムネールビューでワークスペースを右クリックして、「**[!UICONTROL ブックマークをクリア]**」を選択することもできます。
+* ワークトップ内のサムネールビューでワークスペースを右クリックし、「**[!UICONTROL Clear Bookmark]**」を選択することもできます。
 
 >[!IMPORTANT]
 >
@@ -46,14 +45,13 @@ Data Workbench 6.2 には、新しいユーザーインターフェイス（ブ�
 >
 
 
-
 ## ワークスペースの新しいアイコン {#section-c108bbd1661249e79c146727ff3d2470}
 
-Data Workbench 6.2 では、ワークスペース内のテキストがアイコンに置き換えられました。ただし、カーソルを上に置くと、**[!UICONTROL ファイル]**、**[!UICONTROL 追加]**、**[!UICONTROL エクスポート]**&#x200B;など、アイコンの機能を示すツールチップメッセージが表示されます。
+Data Workbench 6.2 では、ワークスペース内のテキストがアイコンに置き換えられました。引き続き、上にマウスポインターを置くと、**[!UICONTROL File]**、**[!UICONTROL Add]**、**[!UICONTROL Export]**&#x200B;など、アイコンを識別するツールチップメッセージが表示されます。
 
 ![](assets/new_icons.png)
 
-以下のリンクを含む、ドキュメントやその他のナレッジセンターにアクセスできる新しい&#x200B;**[!UICONTROL ヘルプ]**&#x200B;アイコンが追加されました。
+次のリンクを含む、ドキュメントやその他のナレッジセンターにアクセスするための新しい&#x200B;**[!UICONTROL Help]**&#x200B;アイコンが追加されました。
 
 <table id="table_64BBC67B1BB44B1197FF7E5E7B067696"> 
  <thead> 
@@ -76,7 +74,7 @@ Data Workbench 6.2 では、ワークスペース内のテキストがアイコ�
    <td colname="col2"><span class="uicontrol">Data Workbench のドキュメント</span>を開きます。 <p><span class="uicontrol">F1</span> キーを押して、ワークスペース内でヘルプを開くこともできます。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> バージョン情報 </td> 
+   <td colname="col1">  について </td> 
    <td colname="col2">Data Workbench の<span class="uicontrol">クライアントバージョン</span>が表示されます。 </td> 
   </tr> 
  </tbody> 
@@ -84,7 +82,7 @@ Data Workbench 6.2 では、ワークスペース内のテキストがアイコ�
 
 >[!NOTE]
 >
->You can also press `<F1>` to open the documentation from a workspace.
+>`<F1>`キーを押して、ワークスペースからドキュメントを開くこともできます。
 
 ## ワークスペースビューのドラッグ {#section-9129c340c21d45a3864c923884cd4382}
 
@@ -94,7 +92,7 @@ Data Workbench 6.2 では、ワークスペース内のテキストがアイコ�
 
 ## ワークスペースビューを変更するクイックキー {#section-d8322f72423f437aa2e34f2188b1341c}
 
-新しいクイックキーを使用すると、ウィンドウビューと全ページビューを切り替えてワークスペースをサイズ変更して再適合できます。キーボードクイックキーについて詳しくは、[クイックリファレンス](https://docs.adobe.com/content/help/en/data-workbench/using/client/visualizations/c-qk-ref.html)を参照してください。
+新しいクイックキーを使用すると、ウィンドウビューと全ページビューを切り替えてワークスペースをサイズ変更して再適合できます。キーボードクイックキーについて詳しくは、[クイックリファレンス](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-qk-ref.html)を参照してください。
 
 <table id="table_A01C514C99F043338D183A6839E03DEA"> 
  <thead> 

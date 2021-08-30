@@ -1,18 +1,20 @@
 ---
 description: 関連付けテーブルのビジュアライゼーションでは、クラメールの V アルゴリズムを使用して、指標を指標、ディメンションおよびディメンションエレメントと関連付けることができます。
-title: 関連付けテーブル 視覚化
+title: 関連付けテーブルのビジュアライゼーション
 uuid: 4563c336-3377-4929-8694-8c0d00866825
-translation-type: tm+mt
-source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
+exl-id: 3fc2c025-d369-45ed-8c9e-eb4a0ac412b7
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 76%
 
 ---
-
 
 # 関連付けテーブルのビジュアライゼーション{#association-table-visualization}
 
 関連付けテーブルのビジュアライゼーションでは、クラメールの V アルゴリズムを使用して、指標を指標、ディメンションおよびディメンションエレメントと関連付けることができます。
 
-関連付けテーブルは、[相関行列](https://docs.adobe.com/content/help/en/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html)および[クロス集計の弦](https://docs.adobe.com/content/help/en/data-workbench/using/client/analysis-visualizations/c-chord-visualization.html)のビジュアライゼーションで使用されるピアソン相関係数ではなく、クラメールの V 係数を使用して値を比較します（相関行列とクロス集計の弦で比較できるのは指標だけですが、関連付けテーブルと[関連付けの弦](../../../home/c-get-started/c-analysis-vis/associations-chord.md#concept-51d0bda998474dd5946cc2a9b8393445)では指標、ディメンションおよびエレメントを比較できます）。
+関連付けテーブルは、[相関行列](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html)および[クロス集計の弦](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/c-chord-visualization.html)のビジュアライゼーションで使用されるピアソン相関係数ではなく、クラメールの V 係数を使用して値を比較します（相関行列とクロス集計の弦で比較できるのは指標だけですが、関連付けテーブルと[関連付けの弦](../../../home/c-get-started/c-analysis-vis/associations-chord.md#concept-51d0bda998474dd5946cc2a9b8393445)では指標、ディメンションおよびエレメントを比較できます）。
 
 ## 関連付けテーブルの作成 {#section-87ed12ccc1af4196a1b6534e621c4cbb}
 
@@ -20,7 +22,7 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
 1. 関連付けテーブルを開きます。
 
-   Right-click [!DNL Visualization] > [!DNL Predictive Analytics] > [!DNL Association Table].
+   [!DNL Visualization] > [!DNL Predictive Analytics] > [!DNL Association Table]を右クリックします。
 
    ![](assets/association_table.png)
 
@@ -28,7 +30,7 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
    ![](assets/association_table1.png)
 
-   関連付けテーブルは、クラメールの V を対称相関として使用するので、選択した指標、ディメンションおよびエレメントの値が関連付けテーブルの列と行の両方に反映されます。For example, selecting the **Product** extended dimension uses the **[!UICONTROL Visits]** metric as the associated metric in both the row and column of the table, resulting in a perfect yet useless comparison (1.00) because the compared values are identical.
+   関連付けテーブルは、クラメールの V を対称相関として使用するので、選択した指標、ディメンションおよびエレメントの値が関連付けテーブルの列と行の両方に反映されます。例えば、**Product**&#x200B;拡張ディメンションを選択すると、**[!UICONTROL Visits]**&#x200B;指標がテーブルの行と列の両方で関連指標として使用され、比較された値が同一なので、完全で役に立たない比較(1.00)が実行されます。
 
 1. 関連付けテーブルにさらに値を追加します。
 
@@ -38,5 +40,4 @@ source-git-commit: cb3ca4b3b993f5f04f6b6cee25850600ff3d8986
 
    >[!NOTE]
    >
-   >関連付けテーブルには、10行および10列までの制限があります。
-
+   >関連付けテーブルには、10行と10列までの制限があります。

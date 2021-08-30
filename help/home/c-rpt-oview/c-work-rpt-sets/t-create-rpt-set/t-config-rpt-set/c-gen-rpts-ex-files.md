@@ -3,10 +3,10 @@ description: レポートをExcelファイルとして生成するための情�
 title: Microsoft Excel ファイルとしてのレポートの生成
 uuid: 0717a916-93d6-4b8e-a2ff-e9179ba4a66e
 exl-id: 4e644867-db5e-4ca9-a2bf-1193e031f2bf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '476'
-ht-degree: 23%
+source-wordcount: '474'
+ht-degree: 22%
 
 ---
 
@@ -36,9 +36,9 @@ ht-degree: 23%
 
 ビジュアライゼーションに[!DNL Custom Title]を指定していない限り、ウィンドウのタイプ（例：Movie Table）がワークシート名として使用されます。
 
-ビジュアライゼーションに[!DNL Custom Titles]を指定する方法について詳しくは、『[Data Workbenchクライアントガイド](https://docs.adobe.com/content/help/ja-JP/data-workbench/using/client/t-open-ins.html)』を参照してください。
+ビジュアライゼーションに[!DNL Custom Titles]を指定する方法について詳しくは、『[Data Workbenchクライアントガイド](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html?lang=ja)』を参照してください。
 
-## テンプレートファイル{#section-40ab11916f464b1a88214ab969da6751}の使用
+## テンプレートファイルの使用 {#section-40ab11916f464b1a88214ab969da6751}
 
 また、テンプレートのExcel（[!DNL .xls]または[!DNL .xlsx]）ファイルを使用して、Excelファイルとしてレポートを生成することもできます。 テンプレートファイルを使用すると、レポートが生成されるたびにデータのフォーマットに費やす時間を短縮できます。
 

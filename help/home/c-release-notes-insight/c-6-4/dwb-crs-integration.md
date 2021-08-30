@@ -2,11 +2,13 @@
 description: 顧客レコードサービス（CRS）のエクスポート機能を使用して、Data Workbench のデータを Adobe Analytics コアサービスにエクスポートし、Analytics のその他の機能（Reports & Analytics など）と統合できます。
 title: Analytics コアサービスへのエクスポート
 uuid: 8fd7e8d8-989a-4ad6-bab5-61bfd37b0201
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 573085e8-2260-4872-be90-a84ad61145bb
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+workflow-type: tm+mt
+source-wordcount: '576'
+ht-degree: 59%
 
 ---
-
 
 # Analytics コアサービスへのエクスポート{#exporting-to-analytics-core-services}
 
@@ -14,9 +16,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->CRSのエクスポート機能を動作させるには、訪問者のAnalytics IDがExperience Cloud IDサービス(ECID)に基づいている必要があります。 訪問者のECIDはData Workbenchで設定できますが、クライアントが猶予期間中の場合、または訪問者のcookieがECIDに置き換えられていない場合、CRSエクスポートはその訪問者に対しては機能しません。 詳しくは、「訪問者の識別 [と](https://docs.adobe.com/content/help/en/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-visid.html) IDサービスの猶予 [期間」を参照してください](https://docs.adobe.com/content/help/en/id-service/using/reference/analytics-reference/grace-period.html)。
+>CRSのエクスポート機能を動作させるには、訪問者のAnalytics IDがExperience CloudIDサービス(ECID)に基づいている必要があります。 ECIDは訪問者に対してData Workbenchで設定できますが、クライアントが猶予期間に入っている場合、または訪問者のCookieがECIDに置き換えられていない場合、その訪問者に対してはCRSエクスポートは機能しません。 詳しくは、 [訪問者の識別](https://experienceleague.adobe.com/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-visid.html)および[IDサービスの猶予期間](https://experienceleague.adobe.com/docs/id-service/using/reference/analytics-reference/grace-period.html)を参照してください。
 
-From a **Detail Table** (right-click **[!UICONTROL Tools]** > **[!UICONTROL Detail Table]** in a workspace), you can set attribute values and the variables required to integrate with Analytics&#39; Reports &amp; Analytics (using Adobe Pipeline Services).
+**詳細テーブル**（ワークスペースで&#x200B;**[!UICONTROL Tools]** / **[!UICONTROL Detail Table]**&#x200B;を右クリック）から、(Adobeパイプラインサービスを使用して)AnalyticsのReports &amp; Analyticsとの統合に必要な属性値と変数を設定できます。
 
 1. **テーブルのヘッダーを右クリックして、「新しい顧客レコードサービスのエクスポート」をクリックします。**
 
@@ -53,14 +55,14 @@ From a **Detail Table** (right-click **[!UICONTROL Tools]** > **[!UICONTROL Deta
       </ul> </p> </p> </td> 
       </tr> 
       <tr> 
-      <td colname="col1"> <p><b>Field Name</b> </p> </td> 
+      <td colname="col1"> <p><b>フィールド名</b> </p> </td> 
       <td colname="col2">属性値の選択元となるディメンションまたは指標の名前。 <p>注意：<i><b>CRS Attributes</b></i> の下の <i>Field Name</i> は、<b>Output<i> Fields</i>／<i>Field Name</i></b>（選択した属性に基づいて自動的に設定される）と同じにする必要があります。<i>Field Name</i> が無効な場合は、エクスポートが実行されません。 </p> </td> 
       </tr> 
     </tbody> 
    </table>
 
-1. Right-click **[!UICONTROL Report Suite]** > **[!UICONTROL Add New]**.
-1. Enter the **[!UICONTROL Report Suite ID]**.
+1. **[!UICONTROL Report Suite]** > **[!UICONTROL Add New]**&#x200B;を右クリックします。
+1. **[!UICONTROL Report Suite ID]**&#x200B;と入力します。
 
    新しいエントリを開き、エクスポートファイルの「*Report Suite*」セクションの値を入力または確認します。
 
@@ -68,15 +70,15 @@ From a **Detail Table** (right-click **[!UICONTROL Tools]** > **[!UICONTROL Deta
     <tbody> 
       <tr> 
       <td colname="col1"><b>レポートスイート</b> </td> 
-      <td colname="col2">ID of the report suite in <i>Reports &amp; Analytics</i> identifying the <i>Customer Attribute</i> variables being exported. <p> <p>注意：<i>Reports &amp; Analytics</i> を使用して複数のレポートスイートを追加することができますが、Data Workbench 6.4 は index 0<i></i> で識別される単一のレポートスイートのみをエクスポートします。 <p>このフィールドに入力されるレポートスイートの値は、レポートスイートIDです（レポートスイートの名前ではありません）。 </p> </p> </p> </td> 
+      <td colname="col2"><i>Reports &amp; Analytics</i>内のレポートスイートのID。エクスポートする<i>顧客属性</i>変数を識別します。 <p> <p>注意：<i>Reports &amp; Analytics</i> を使用して複数のレポートスイートを追加することができますが、Data Workbench 6.4 は index 0<i></i> で識別される単一のレポートスイートのみをエクスポートします。 <p>このフィールドに入力されるレポートスイートの値は、レポートスイートIDです（レポートスイートの名前ではありません）。 </p> </p> </p> </td> 
       </tr> 
     </tbody> 
    </table>
 
 1. ECID Fieldパラメーターを入力します。
 
-   **ECIDフィールド**:Adobe Experience Cloud IDを表す、プロファイル内のディメンションの名前。 これは必須フィールドで、入力した無効な分析コード値はエクスポートされません。
+   **ECIDフィールド**:Adobe Experience Cloud IDを表すプロファイル内のディメンションの名前。これは必須フィールドで、無効なディメンション値を入力してもエクスポートされません。
 
-1. （オプション）Visitor ID Fieldパラメーターに入力します。
+1. （オプション） Visitor ID Fieldパラメーターを設定します。
 
-   **訪問者IDフィールド**:ユーザーがデータ内の訪問者に対して他のカスタムIDを送信する場合は、カスタム訪問者IDを表すディメンションの名前をここに入力します。 これはオプションのフィールドで、空のままにすることができます。
+   **訪問者IDフィールド**:ユーザーがデータ内の訪問者に対して他のカスタムIDを送信する場合は、その訪問者がカスタム訪問者IDを表すディメンションの名前を入力します。これはオプションのフィールドで、空のままにすることができます。

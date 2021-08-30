@@ -3,9 +3,9 @@ description: Report.cfgパラメーターについて取り上げます。
 title: Report.cfg のパラメーター
 uuid: 7a20f4f6-99e6-401a-ba3c-c508881c0f0d
 exl-id: 31e4de5f-f7e8-4a35-b5c6-6ad8ef79a259
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '2350'
+source-wordcount: '2348'
 ht-degree: 4%
 
 ---
@@ -92,7 +92,7 @@ Report.cfgパラメーターについて取り上げます。
   </tr> 
   <tr> 
    <td colname="col1"> フィルター式 </td> 
-   <td colname="col2"> <p><i>オプション</i>. レポートセット内のすべてのワークスペースに適用されるフィルター。 </p> <p>詳しくは、フィルター</a>を作成するための<a href="https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Syntax_for_Filter_Expressions" format="http" scope="external">構文を参照してください。 </a></p> </td> 
+   <td colname="col2"> <p><i>オプション</i>. レポートセット内のすべてのワークスペースに適用されるフィルター。 </p> <p>詳しくは、フィルター</a>を作成するための<a href="https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Filter_Expressions" format="http" scope="external">構文を参照してください。 </a></p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> ガンマ補正 </td> 
@@ -138,7 +138,7 @@ Report.cfgパラメーターについて取り上げます。
   </tr> 
   <tr> 
    <td colname="col1"> 送信者名 </td> 
-   <td colname="col2"> （オプション）送信者の名前。 </td> 
+   <td colname="col2"> （オプション。送信者の名前。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> SMTP Server </td> 

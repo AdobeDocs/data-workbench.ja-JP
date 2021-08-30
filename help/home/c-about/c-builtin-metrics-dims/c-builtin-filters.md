@@ -3,9 +3,9 @@ description: プロファイルフィルターは、データセットから使�
 title: 組み込みプロファイルフィルター
 uuid: d6854d2c-4643-476e-8a44-f188e18cb115
 exl-id: bb167487-415d-44a8-9a0a-9a76d90ba5c0
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '484'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 >
 >追加のフィルターは、プロファイルのFiltersディレクトリに存在することで作成および適用できます。
 
-## データのサブセット化{#section-0defb44315d94254ab6e629ec3d6f420}
+## データのサブセット化 {#section-0defb44315d94254ab6e629ec3d6f420}
 
 データサブセットは、関心のあるデータのディメンション要素のみを選択できるので、データフィルターとして機能します。
 
@@ -37,7 +37,7 @@ ht-degree: 1%
 >
 >複数のデータサブセットを作成し、それらを切り替えてデータの異なる部分を表示できます。 すべてのデータを表示する場合は、必ずデータのサブセット化をオフにしてください。 そうしないと、指標の値がデータセット内のすべてのデータを表すわけではありません。
 
-## 壊れたセッションフィルタ{#section-1608e97da6464b11aea27cbb7f3160e4}
+## 壊れたセッションフィルタ {#section-1608e97da6464b11aea27cbb7f3160e4}
 
 Broken Session Filterは、任意のフィルター要件を満たすように簡単に変更できる指標の数式です。 デフォルトのサイトプロファイルでは、訪問者フラグが1に設定されているすべての訪問者が、壊れたセッションフィルターに含まれるように設定されています。 値1は、その訪問者のトラッキングCookieの存在を示します。
 
@@ -51,4 +51,4 @@ entity = derived_filter:
 
 デフォルトでは、ワークスペースの選択とベンチマークの両方に「中断セッション」フィルターが適用され、ワークスペース内を右クリックしてデータ/切断セッションフィルターをクリックすることで切り替えることができます。
 
-Broken Session Filterは、現在のワークスペースで有効になっていない場合でも、フィルター式でBroken_Session_Filterとして参照できます。 詳しくは、[フィルター式](https://docs.adobe.com/content/help/en/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers)を参照してください。
+Broken Session Filterは、現在のワークスペースで有効になっていない場合でも、フィルター式でBroken_Session_Filterとして参照できます。 詳しくは、[フィルター式](https://experienceleague.adobe.com/docs/data-workbench/using/client/t-open-ins.html#Syntax_for_Identifiers)を参照してください。
