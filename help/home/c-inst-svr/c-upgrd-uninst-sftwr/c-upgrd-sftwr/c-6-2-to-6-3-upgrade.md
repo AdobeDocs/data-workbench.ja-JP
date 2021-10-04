@@ -1,30 +1,32 @@
 ---
-description: Data Workbench 6.3用のサーバーコンポーネントのアップグレード
-title: DWB Server 6.2から6.3へのアップグレード
+description: Data Workbench6.3 のサーバーコンポーネントをアップグレードしています。
+title: DWB サーバーの 6.2 から 6.3 へのアップグレード
 uuid: e12b6cc1-070e-4bc7-bc64-203d11cfeae9
-translation-type: tm+mt
-source-git-commit: 79d5a2f44ade88f25f7621a4738d14c43777fc9f
+exl-id: 5106d9a3-179a-49f1-915a-c03b36ed5257
+source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 56%
 
 ---
 
+# DWB サーバーのアップグレード：6.2 から 6.3 へ{#dwb-server-upgrade-to}
 
-# DWBサーバーのアップグレード：6.2 ～ 6.3{#dwb-server-upgrade-to}
-
-Data Workbench 6.3用のサーバーコンポーネントのアップグレード
+Data Workbench6.3 のサーバーコンポーネントをアップグレードしています。
 
 **サーバーのアップグレード**
 
-If you have customized profiles that take precedence over the default files provided in the [!DNL Base] package, then you will need to update these customized files:
+[!DNL Base] パッケージで提供されるデフォルトのファイルよりも優先されるカスタマイズ済みのプロファイルがある場合は、これらのカスタマイズ済みのファイルを更新する必要があります。
 
-* **Meta.cfgファイルを更新します** ( [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]FSUサーバーの更新されたパスワードの暗号化を設定する場合)。また、名前と値のペアの変換のエントリを追加して、クエリ文字列のグループ化を利用 [します](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0)。
+* **Meta.cfg ファイルを更新します** ( [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]ファイルシステムユニット（FSU サーバー）用に更新されたパスワードの暗号化を設定し、名前と値のペアの変換用のエントリを追加して、 [クエリー文字列のグループ化](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0)を利用します。
 
    1. FSU 上の [!DNL meta.cfg] ファイルを開きます。
-   1. Change the data type for **[!UICONTROL Proxy Password]** from &quot; [!DNL string"] to &quot; [!DNL EncryptedString]&quot; in the *Workstation Configuration* section.
+   1. **[!UICONTROL Proxy Password]** のデータ型を、*ワークステーションの設定* セクションで、「 [!DNL string"] 」から「 [!DNL EncryptedString] 」に変更します。
 
       ```
-        Proxy User Name = string: 
-        Proxy Password = EncryptedString:   ( 
-        from Proxy Password = String) 
+        Proxy User Name = string:
+        Proxy Password = EncryptedString:   (
+        from Proxy Password = String)
         Use Address File = bool: true
       ```
 
@@ -46,54 +48,54 @@ If you have customized profiles that take precedence over the default files prov
 
 * **高速結合の強化のための更新**。Data Workbench での変換速度の向上を利用するために、次の設定ファイルに対してパラメーターの追加または値の変更を行います。
 
-   * **Communications.cfg** ( [!DNL E:\Server\Components\Communications.cfg])
+   * **Communications.cfg** (  [!DNL E:\Server\Components\Communications.cfg])
 
       ```
-      18 = SourceListServer:  
-          URI = string: /SourceListServer/ 
-          Listing Interval = int: 10 ( 
+      18 = SourceListServer:
+          URI = string: /SourceListServer/
+          Listing Interval = int: 10 (
       <new>)
       ```
 
-   * **Disk Files.cfg** (および [!DNL E:\Server\Components][!DNL E:\Server\Components for Processing Servers])
+   * **Disk Files.cfg** ( および [!DNL E:\Server\Components] にあ [!DNL E:\Server\Components for Processing Servers]る )
 
       ```
-      Disk Cache Size (MB) = double: 1024  
-      <(from double: 256)> 
-      Disk Cache Read Limit (MB) = double: 768  
+      Disk Cache Size (MB) = double: 1024
+      <(from double: 256)>
+      Disk Cache Read Limit (MB) = double: 768
       <(new)>
       ```
 
    * **Log Processing Mode.cfg** ( [!DNL E:\Server\Profiles\<your profile>\Dataset\Log Processing Mode.cfg])
 
       ```
-      <(changed) 
-      Batch Bytes = int: 268435456 
-      Cloud Bytes = int: 268435456 
+      <(changed)
+      Batch Bytes = int: 268435456
+      Cloud Bytes = int: 268435456
       Real Time FIFO Bytes = int: 268435456
       ```
 
       ```
-      ( 
-      <new>) 
-      Cache Bytes = int: 32000000 
-      Fast Input Decision Ratio = double: 200 
-      Fast Input FIFO Bytes = int: 268435456 
-      FIFO Hash Mask = int: 16383 
-      Fast Merge Buffer Bytes = int: 536870912 
-      Slow Merge Buffer Bytes = int: 268435456 
-      Fast Merge Fan In = int: 64 
-      Key Cache Size Logarithm = int: 21 
-      Max Seeks = int: 512 
-      Output Old Buffer Bytes = int: 536870912 
-      Overflow FIFO Bytes = int: 67108864 
+      (
+      <new>)
+      Cache Bytes = int: 32000000
+      Fast Input Decision Ratio = double: 200
+      Fast Input FIFO Bytes = int: 268435456
+      FIFO Hash Mask = int: 16383
+      Fast Merge Buffer Bytes = int: 536870912
+      Slow Merge Buffer Bytes = int: 268435456
+      Fast Merge Fan In = int: 64
+      Key Cache Size Logarithm = int: 21
+      Max Seeks = int: 512
+      Output Old Buffer Bytes = int: 536870912
+      Overflow FIFO Bytes = int: 67108864
       Paused = bool: false
       ```
    >[!NOTE]
    >
    >高速結合の強化を利用するには、各 DPU に RAM が少なくとも 8 GB あることを確認してください。
 
-* **Adobe Target と DWB の統合の更新**。A new export file, [!DNL ExportIntegration.exe], replaces the existing [!DNL TnTSend.exe] file on the Insight Server (`E:\Server\Scripts\TnTSend.exe`). この新しいエクスポートファイルは、[Adobe Target](https://www.adobe.com/marketing/target.html) の統合と、新しいマスターマーケティングプロファイル（MMP）および [Adobe Audience Manager](https://www.adobe.com/analytics/audience-manager.html) との連携の両方に対応しています。
+* **Adobe Target と DWB の統合の更新**。新しい書き出しファイル [!DNL ExportIntegration.exe] は、Insight サーバー上の既存の [!DNL TnTSend.exe] ファイル (`E:\Server\Scripts\TnTSend.exe`) を置き換えます。 この新しいエクスポートファイルは、[Adobe Target](https://www.adobe.com/marketing/target.html) の統合と、新しいマスターマーケティングプロファイル（MMP）および [Adobe Audience Manager](https://www.adobe.com/analytics/audience-manager.html) との連携の両方に対応しています。
 
    Adobe Target のエクスポートのために、次のコマンドを更新する必要があります。
 
@@ -103,32 +105,32 @@ If you have customized profiles that take precedence over the default files prov
 
    ```
    <filepath>
-   Command = string: ExportIntegration.exe 
+   Command = string: ExportIntegration.exe
    </filepath>
    ```
 
    >[!NOTE]
    >
-   >これは、バージョン6.3より前のバージョンで作成されたエクスポートにのみ影響します。
+   >これは、バージョン 6.3 より前に作成されたエクスポートにのみ影響します。
 
    また、古いエクスポートプロセスを使用する場合は、次を試すこともできます。
 
    * ワークステーションで新しい Target エクスポートを作成します。
-   * Modify the old Test and Target export found in [!DNL Server/Profiles/`<your profile>`/Export.]
+   * [!DNL Server/Profiles/`<your profile>`/Export.] にある古い Test and Target エクスポートを変更します。
 
-* **Adobe SC プロファイルの更新。** ファイルを変更する [!DNL Exclude Hit.cfg] には、関連ファイルでフィールドを宣言する必要があ [!DNL Decoding Instructions.cfg] ります。
+* **Adobe SC プロファイルの更新。** ファイルを変更す [!DNL Exclude Hit.cfg] るには、関連するファイルでフィールドを宣言する必要が [!DNL Decoding Instructions.cfg] あります。
 
    >[!NOTE]
    >
-   >If your Adobe SC profile includes a customized [!DNL Decoding Instructions.cfg] file, you will need to include a [!DNL DelimitedDecoder] parameter to your customized file.
+   >Adobeの SC プロファイルにカスタマイズされた [!DNL Decoding Instructions.cfg] ファイルが含まれている場合は、カスタマイズしたファイルに [!DNL DelimitedDecoder] パラメーターを含める必要があります。
 
    ```
-   0 = DelimitedDecoder: 
-      Delimiter = string: \t 
-      Fields = vector: x items 
-      …  
-         5 = string: 
-   Changed to: 
+   0 = DelimitedDecoder:
+      Delimiter = string: \t
+      Fields = vector: x items
+      …
+         5 = string:
+   Changed to:
    
    5 = string: x-hit_source
    ```

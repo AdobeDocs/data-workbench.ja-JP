@@ -3,10 +3,10 @@ description: Data Workbench v6.0x インストールから Data Workbench v6.1 �
 title: Data Workbench 6.0 から 6.1 へのアップグレード
 uuid: 4671c2bf-06ab-49c4-8dd1-24115facd83b
 exl-id: 559e1942-561c-4270-9670-550177730cdb,2a337d2e-c70e-4f35-a6c2-c3a7f50a0800
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 56%
+source-wordcount: '743'
+ht-degree: 57%
 
 ---
 
@@ -22,48 +22,48 @@ Data Workbench v6.0x インストールから Data Workbench v6.1 にアップ�
 
 >[!IMPORTANT]
 >
->サーバー、レポートサーバー、およびクライアントコンポーネントは、64ビットWindowsオペレーティングシステム上で動作するようにアップグレードされます。
+>サーバー、レポートサーバー、およびクライアントコンポーネントは、64 ビット Windows オペレーティングシステムで実行するようにアップグレードされます。
 
 ## サーバーのアップグレード {#section-7845393f76214aa7ad53ac4b2cca9e5b}
 
-次の手順に従って、**[!UICONTROL Server v6.1]**&#x200B;コンポーネントを更新します。
+次の手順に従って、**[!UICONTROL Server v6.1]** コンポーネントを更新します。
 
-1. **[!UICONTROL Software and Docs]**&#x200B;プロファイルを使用して、**[!UICONTROL Start Here]**&#x200B;ワークスペースを開き、必要なすべてのサーバーパッケージをローカルフォルダーにダウンロードします。
+1. **[!UICONTROL Software and Docs]** プロファイルを使用して、**[!UICONTROL Start Here]** ワークスペースを開き、必要なすべてのサーバーパッケージをローカルフォルダーにダウンロードします。
 
-   * **[!UICONTROL Server Packages]** \ **[!UICONTROL v6.1]** zipフォルダーをダウンロードし、すべてのファイルを展開します。
+   * **[!UICONTROL Server Packages]** \ **[!UICONTROL v6.1]** zip フォルダーをダウンロードし、すべてのファイルを展開します。
 
-      Serverパッケージには、**[!UICONTROL Lookup]**&#x200B;と&#x200B;**[!UICONTROL Profile]**&#x200B;フォルダーが含まれ、**[!UICONTROL Base]**&#x200B;と&#x200B;**[!UICONTROL Transform]**&#x200B;プロファイルが含まれ、サーバーを更新します。
+      Server パッケージには、サーバーを更新する **[!UICONTROL Base]** および **[!UICONTROL Transform]** プロファイルを含む **[!UICONTROL Lookup]** および **[!UICONTROL Profile]** フォルダーが含まれています。
 
-      * **[!UICONTROL Profiles]**&#x200B;フォルダーをダウンロードします。
-      * **[!UICONTROL Lookup]**&#x200B;フォルダーをダウンロードします。
-      * **[!UICONTROL Report Server]** \ **[!UICONTROL v6.1]**&#x200B;パッケージをダウンロードします。
-      * 必要に応じて、追加の&#x200B;**[!UICONTROL Sensor]**、**[!UICONTROL Documentation]**、**[!UICONTROL Dashboard]**&#x200B;ファイルをシステムにダウンロードします。
+      * **[!UICONTROL Profiles]** フォルダーをダウンロードします。
+      * **[!UICONTROL Lookup]** フォルダーをダウンロードします。
+      * **[!UICONTROL Report Server]** \ **[!UICONTROL v6.1]** パッケージをダウンロードします。
+      * 必要に応じて、追加の **[!UICONTROL Sensor]**、**[!UICONTROL Documentation]**、**[!UICONTROL Dashboard]** ファイルをダウンロードします。
 
-1. **[!UICONTROL Adobe Insight Server]**&#x200B;サービスを停止します。
+1. **[!UICONTROL Adobe Insight Server]** サービスを停止します。
 
    ![](assets/install_server_download1.png)
 
-1. ダウンロードした&#x200B;**[!UICONTROL Server]**&#x200B;パッケージから、次の操作を実行します。
+1. ダウンロードした **[!UICONTROL Server]** パッケージから、次の手順を実行します。
 
-   1. [!DNL Server\Bin]フォルダーを置き換えて、[!DNL InsightServer64.exe]とサポートファイルを更新します。
+   1. [!DNL Server\Bin] フォルダーを置き換えて、[!DNL InsightServer64.exe] とサポートファイルを更新します。
 
-   1. [!DNL Server\Profiles]フォルダーを置き換えます。 ファイルはすべて上書きして構いません。
-   1. [!DNL Server\Lookups]フォルダーを更新します。 既にフォルダー内にあるカスタムファイルに、新しくダウンロードしたファイルを追加する必要があります。
-   1. [!DNL Server\Software]フォルダーを置き換えて、[!DNL Insight.exe]と[!DNL ReportServer.exe]を更新します。
-   1. [!DNL Server\Scripts]フォルダーを更新して[!DNL TnTSend.exe]を更新します。
+   1. [!DNL Server\Profiles] フォルダーを置き換えます。 ファイルはすべて上書きして構いません。
+   1. [!DNL Server\Lookups] フォルダーを更新します。 既にフォルダー内にあるカスタムファイルに、新しくダウンロードしたファイルを追加する必要があります。
+   1. [!DNL Server\Software] フォルダーを置き換えて [!DNL Insight.exe] と [!DNL ReportServer.exe] を更新します。
+   1. [!DNL Server\Scripts] フォルダーを更新して [!DNL TnTSend.exe] を更新します。
 
-1. **[!UICONTROL DeviceAtlas]**&#x200B;を採用する場合は、[!DNL Server\Lookups]フォルダーにあるbundle](https://experienceleague.adobe.com/docs/data-workbench/using/dataset/trans-config-file/c-deviceatlas-update.html)を[更新する必要があります。
+1. **[!UICONTROL DeviceAtlas]** を採用する場合は、[!DNL Server\Lookups] フォルダーにある [bundle](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-deviceatlas-update.md) を更新する必要があります。
 
 1. ベクターが更新されて各プロファイルのアイテム数が反映されるように [!DNL Profile.cfg] ファイルを設定します。
 
-   例えば、**[!UICONTROL Predictive Analytics]**&#x200B;プロファイルを有効にするには、この設定を更新する必要があります。
+   例えば、**[!UICONTROL Predictive Analytics]** プロファイルを有効にするには、この設定を更新する必要があります。
 
    ```
-   Directories = vector: 5 items 
-       0 = string: Base\\ 
-       1 = string: Geography\\ 
-       2 = string: Predictive Analytics\\ 
-       3 = string: Adobe SC\\ 
+   Directories = vector: 5 items
+       0 = string: Base\\
+       1 = string: Geography\\
+       2 = string: Predictive Analytics\\
+       3 = string: Adobe SC\\
        4 = string: Profile Name\\
    ```
 
@@ -73,9 +73,9 @@ Data Workbench v6.0x インストールから Data Workbench v6.1 にアップ�
 
    サイトの実装に基づいて [!DNL PAServer.cfg] ファイルを設定して保存できるように、カスタムプロファイルは予測分析設定プロファイルから設定を継承する必要があります。
 
-1. **[!UICONTROL Log Source ID]**&#x200B;を定義します。
+1. **[!UICONTROL Log Source ID]** を定義します。
 
-   **[!UICONTROL Recording of Rows per Log Source]**&#x200B;が&#x200B;**[!UICONTROL v6.04]**&#x200B;に追加され、一意の名前&#x200B;**[!UICONTROL Log Source ID]**&#x200B;を追加することで、カスタムプロファイルの[!DNL Log Processing.cfg]ファイルに定義されます。
+   **[!UICONTROL Recording of Rows per Log Source]** が **[!UICONTROL v6.04]** に追加され、一意の名前 **[!UICONTROL Log Source ID]** を追加することで、カスタムプロファイルの [!DNL Log Processing.cfg] ファイルに定義されます。
 
    ```
    Log Processing.cfg
@@ -85,7 +85,7 @@ Data Workbench v6.0x インストールから Data Workbench v6.1 にアップ�
    ログソース ID が定義されていない場合は、次のエラーが表示されます。
 
    ```
-   Missing Log Source ID in log processing.cfg.  
+   Missing Log Source ID in log processing.cfg.
    Log Source ID must be defined for all log sources.
    ```
 
@@ -94,7 +94,7 @@ Data Workbench v6.0x インストールから Data Workbench v6.1 にアップ�
    * [!DNL InsightServer64.exe /unregserver]
    * [!DNL InsightServer64.exe /regserver]
 
-1. クラスター全体で&#x200B;**[!UICONTROL Adobe Insight Server]**&#x200B;サービスを開始します。
+1. クラスター全体で **[!UICONTROL Adobe Insight Server]** サービスを開始します。
 
 これで、サーバーのインストールは完了です。
 
@@ -102,30 +102,30 @@ Data Workbench v6.0x インストールから Data Workbench v6.1 にアップ�
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Report Server v6.1]**&#x200B;にアップグレードする前に、まず&#x200B;**[!UICONTROL Server v6.1]**&#x200B;にアップグレードする必要があります。
+>**[!UICONTROL Report Server v6.1]** にアップグレードする前に、まず **[!UICONTROL Server v6.1]** にアップグレードする必要があります。
 
-1. **[!UICONTROL Software and Docs]**&#x200B;プロファイルを使用して、**[!UICONTROL Report Server]**&#x200B;パッケージからローカルフォルダーに&#x200B;**[!UICONTROL v6.1]**&#x200B;をダウンロードします。
+1. **[!UICONTROL Software and Docs]** プロファイルを使用して、**[!UICONTROL Report Server]** パッケージから **[!UICONTROL v6.1]** をローカルフォルダーにダウンロードします。
 
 1. ダウンロードしたパッケージから **[!UICONTROL Report Server 6.1]** をコピーし、プロファイルパッケージを置き換えます。
 
    >[!NOTE]
    >
-   >[!DNL install]フォルダー内の[!DNL Insight.zbin]ファイルは、ローカライゼーションに使用されるバックアップファイルで、 [!DNL install]ディレクトリに存在する必要があります。 このファイルやその他の[!DNL .zbin]ファイルは、起動時に渡されるコマンドライン設定に応じて使用されます。
+   >[!DNL install] フォルダーの [!DNL Insight.zbin] ファイルは、ローカライゼーションに使用されるバックアップファイルで、 [!DNL install] ディレクトリに存在する必要があります。 このファイルや他の [!DNL .zbin] ファイルは、起動時に渡されるコマンドライン設定に応じて使用されます。
 
-1. （オプション）Data Workbenchは、現在、英語(-en-us)と中国語(-zh-cn)をサポートしています。 半角文字と全角文字をサポートするフォントを設定する必要があります。
+1. （オプション）Data Workbench は現在、英語 (-en-us) と中国語 (-zh-cn) をサポートしています。 半角文字と全角文字をサポートするフォントを設定する必要があります。
 
    ```
-   Report Server.cfg - Add Fonts 
-      Fonts = vector: 2 items  
-      0 = string: SimSun  
-      1 = string: Arial 
+   Report Server.cfg - Add Fonts
+      Fonts = vector: 2 items
+      0 = string: SimSun
+      1 = string: Arial
    ```
 
    リストしたフォントが Windows オペレーティングシステムにインストールされている必要もあります。
 
-1. ローカリゼーション用に[!DNL Report Server v6.1]を設定します。
+1. ローカライゼーション用に [!DNL Report Server v6.1] を設定します。
 
-   1. **[!UICONTROL Adobe Insight Report Server]**&#x200B;サービスを停止します。
+   1. **[!UICONTROL Adobe Insight Report Server]** サービスを停止します。
    1. 「管理者」としてコマンドプロンプトを起動します。
    1. Report Server の [!DNL install] フォルダーに移動します。
    1. 次のコマンドを使用して、Report Server サービスを削除します。
@@ -137,11 +137,11 @@ Data Workbench v6.0x インストールから Data Workbench v6.1 にアップ�
    1. 言語設定に応じてサービスを開始します。
 
       ```
-      ReportServer.exe -RegServer -Locale -en-us (English)  
+      ReportServer.exe -RegServer -Locale -en-us (English)
       ReportServer.exe -RegServer -Locale -zh-cn (Simplified Chinese)
       ```
 
-1. レポートサーバーが正しい設定で実行されていることを確認するには、**[!UICONTROL Windows Service Manager]**&#x200B;を開き、**[!UICONTROL Adobe Insight Report Server - Properties]**&#x200B;を右クリックします。 実行可能ファイルのパスに、更新されたコマンドライン設定が表示されます。
+1. Report Server が正しい設定で実行されていることを確認するには、**[!UICONTROL Windows Service Manager]** を開き、**[!UICONTROL Adobe Insight Report Server - Properties]** を右クリックします。 実行可能ファイルのパスに、更新されたコマンドライン設定が表示されます。
 
 これで、レポートサーバーのインストールは完了です。
 
@@ -149,10 +149,10 @@ Data Workbench v6.0x インストールから Data Workbench v6.1 にアップ�
 
 >[!IMPORTANT]
 >
->**[!UICONTROL Client v6.1]**&#x200B;にアップグレードする前に、管理者はまず&#x200B;**[!UICONTROL Insight Server v6.1.]**&#x200B;にアップグレードする必要があります。
+>**[!UICONTROL Client v6.1]** にアップグレードする前に、管理者はまず **[!UICONTROL Insight Server v6.1.]** にアップグレードする必要があります
 
 1. [!DNL Insight.exe] を起動しますが、どのプロファイルにも接続しないでください。
-1. [!DNL Insight.cfg]ファイルを編集します。
+1. [!DNL Insight.cfg] ファイルを編集します。
 
    ```
    Update Software = bool: true
@@ -164,9 +164,9 @@ Data Workbench v6.0x インストールから Data Workbench v6.1 にアップ�
 
    >[!NOTE]
    >
-   >[!DNL install]フォルダー内の[!DNL Insight.zbin]ファイルは、ローカライゼーションに使用されるバックアップファイルで、存在する必要があります。 このファイルやその他の[!DNL .zbin]ファイルは、起動時に渡されるコマンドライン設定に応じて使用されます。
+   >[!DNL install] フォルダー内の [!DNL Insight.zbin] ファイルは、ローカライゼーションに使用されるバックアップファイルで、存在する必要があります。 このファイルや他の [!DNL .zbin] ファイルは、起動時に渡されるコマンドライン設定に応じて使用されます。
 
-   ローカライズされた設定に必要な[!DNL insight.zbin]ファイルを追加するには、[ローカライズされた言語](../../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md#concept-86d7602cd6ec416b8d4a518f325e001e)の設定を参照してください。
+   ローカライズされた設定に必要な [!DNL insight.zbin] ファイルを追加するには、[ ローカライズされた言語の設定 ](../../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-0-to-6-1-upgrade/c-localized-ime.md#concept-86d7602cd6ec416b8d4a518f325e001e) を参照してください。
 
 **追加のクライアント設定**
 
@@ -185,9 +185,9 @@ Data Workbench v6.0x インストールから Data Workbench v6.1 にアップ�
    Data Workbench では、現在、英語と簡体字中国語の両方をサポートしています。これら両方の言語をサポートするフォントを選択できます。
 
    ```
-   Fonts = vector: 2 items 
-   0 = string: SimSun 
-   1 = string: Arial 
+   Fonts = vector: 2 items
+   0 = string: SimSun
+   1 = string: Arial
    ```
 
    要求したフォントを Windows オペレーティングシステムにインストールする必要もあります。
@@ -204,6 +204,6 @@ IME を使用すると、国際文字を入力できます。
    Localized IME = bool: true
    ```
 
-1. 作成したショートカットを起動して、プロファイルと更新された[!DNL .zbin]ファイルを同期します。
+1. 作成したショートカットを起動して、プロファイルと更新された [!DNL .zbin] ファイルを同期します。
 
 これで、クライアントのインストールは完了です。
