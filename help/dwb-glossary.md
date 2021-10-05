@@ -3,14 +3,14 @@ description: Data Workbench 用語集
 title: Data Workbench 用語集
 uuid: 1000c43d-383c-442d-bd09-de4f286ded31
 exl-id: 29d6560a-0394-4031-8152-20f7ea0de00b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+workflow-type: tm+mt
 source-wordcount: '4201'
 ht-degree: 100%
 
 ---
 
-# Data Workbench 用語集 {#data-workbench-glossary}
+# Data Workbench 用語集{#data-workbench-glossary}
 
 **アラート**
 
@@ -62,11 +62,11 @@ Data Workbench を使用して分析やレポートの定義などの作業を�
 
 **信頼区間**
 
-指定された確率で特定のレートやトレンドが観察される値の範囲。80％（p 値 = 0.20）、95％（p 値 = 0.05）および 99％（p 値 = 0.01）の信頼区間が最も広く使用されている区間です（出典：`http://www.nci.nih.gov/statistics/glossary`）。
+指定された確率で特定のレートやトレンドが観察される値の範囲。80％（p 値 = 0.20）、95％（p 値 = 0.05）および 99％（p 値 = 0.01）の信頼区間が最も広く使用されている区間です（出典：`https://www.nci.nih.gov/statistics/glossary`）。
 
 **信頼性レベル**
 
-調査結果におけるサンプリングエラーが指定された範囲内に収まる確率。通常は標準誤差との関係で表されます（例えば、標準誤差 1 の場合、確率は 68％となり、標準誤差 2 の場合、確率は 95.4％となります）（出典：`http://www.magazine.org/research/3410.cfm`）。
+調査結果におけるサンプリングエラーが指定された範囲内に収まる確率。通常は標準誤差との関係で表されます（例えば、標準誤差 1 の場合、確率は 68％となり、標準誤差 2 の場合、確率は 95.4％となります）（出典：`https://www.magazine.org/research/3410.cfm`）。
 
 **コンバージョンマップ**
 
@@ -238,7 +238,7 @@ Adobe Platform において、順序付けされた数値を含み、親の可�
 
 **序数**
 
-一連の番号またはその表示（出典：`http://wordnet.princeton.edu/perl/webwn?s=ordinal`）。Data Workbench 内でディメンションが序数に基づいて並べ替えられている場合、ディメンションの要素は内部的に表現される順序に基づいて表示されます。
+一連の番号またはその表示（出典：`https://wordnet.princeton.edu/perl/webwn?s=ordinal`）。Data Workbench 内でディメンションが序数に基づいて並べ替えられている場合、ディメンションの要素は内部的に表現される順序に基づいて表示されます。
 
 **異常値**
 

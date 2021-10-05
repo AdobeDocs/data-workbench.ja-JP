@@ -3,7 +3,7 @@ description: ステップバイステップ方式のウィザードを使用し�
 title: 指標ディメンションウィザード
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 exl-id: 4d283a00-409c-4d74-a558-40744caba71c
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
 workflow-type: tm+mt
 source-wordcount: '485'
 ht-degree: 82%
@@ -20,7 +20,7 @@ ht-degree: 82%
 
 1. 指標ディメンションウィザードを開きます。
 
-   ワークスペース内で右クリックし、**[!UICONTROL Tools]** > **[!UICONTROL Create Metric Dim]**&#x200B;を選択します。
+   ワークスペース内で右クリックし、**[!UICONTROL Tools]** > **[!UICONTROL Create Metric Dim]** を選択します。
 
 1. 指標ディメンションに名前を付けます。
 
@@ -60,26 +60,26 @@ ht-degree: 82%
 
    ![](assets/6_4_workstation_metricdim_format_metric.png)
 
-   形式は、ビジュアライゼーションで開いたときに指標をどのように表示するかを定義するものです。これらの形式は選択された [printf 標準](http://www.cplusplus.com/reference/cstdio/printf/)で、以下のように定義されています。
+   形式は、ビジュアライゼーションで開いたときに指標をどのように表示するかを定義するものです。これらの形式は選択された [printf 標準](https://www.cplusplus.com/reference/cstdio/printf/)で、以下のように定義されています。
 
    ```
    %[flags][width][.precision][length][specifier]
    % 0.2lf = % _ [flags] 0 [width] .2 [.precision] l [length] f[ specifier]
    ```
 
-   **[!UICONTROL Preview]**&#x200B;フィールドに、選択した指標と形式に基づいて値が表示されます。
+   **[!UICONTROL Preview]** フィールドに、選択した指標と形式に基づいて値が表示されます。
 
 1. 「グループの数」の式を追加します。
 
-   様々な範囲、すなわちグループを利用して指標ディメンションを定義できます。これは、[0-4]、[5-10]、...など、サイズに基づいて要素のサブセットを返します。 ディメンションレベルのエレメントは、範囲に指標の値を含むエレメントに関連付けられます。グループの式の説明は、「[ディメンション式の構文](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)」を参照してください。
+   様々な範囲、すなわちグループを利用して指標ディメンションを定義できます。これは、[0-4]、[5-10] など、サイズに基づいて要素のサブセットを返します。 ディメンションレベルのエレメントは、範囲に指標の値を含むエレメントに関連付けられます。グループの式の説明は、「[ディメンション式の構文](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)」を参照してください。
 
-1. 保存する前に&#x200B;**[!UICONTROL Preview]**&#x200B;をクリックして、指標ディメンションの値のテーブルを開きます。
+1. 保存する前に **[!UICONTROL Preview]** をクリックして、指標ディメンションの値のテーブルを開きます。
 
    ![](assets/6_4_workstation_metricdim_preview.png)
 
    このテーブルには、指標ディメンションごとの指標の値の詳細が表示されます。
 
-1. **[!UICONTROL Show in Dimension Menu]**&#x200B;をクリックして、新しく作成したディメンションを&#x200B;**Finder**&#x200B;の「**Dimension**」タブに追加します。
+1. **[!UICONTROL Show in Dimension Menu]** をクリックして、新しく作成したディメンションを **Finder** の「**Dimension**」タブに追加します。
 
 1. 「**[!UICONTROL Next]**」をクリックします。
 
@@ -93,6 +93,6 @@ ht-degree: 82%
    | **[!UICONTROL Launch Graph]** | テーブルの PNG グラフィックを起動します。 |
    | **[!UICONTROL Launch Table]** | ワークスペース内のテーブルを起動し、新しい指標ディメンションの値を選択されている指標の値と比較して列に表示します。 |
 
-1. **[!UICONTROL Finish]**&#x200B;をクリックして保存します。
+1. **[!UICONTROL Finish]** をクリックして保存します。
 
    保存ダイアログが開き、ファイルを保存することができます。値を表示するために選択したオプションがワークスペース内に表示されます。
