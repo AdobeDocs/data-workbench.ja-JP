@@ -4,9 +4,9 @@ title: Data Workbench ヘルプ
 feature: Reports & Analytics Basics
 uuid: 987b69f1-b82a-4719-a71d-b0250a4a4f92
 exl-id: 9c00c87e-e5dd-4806-9338-2336ae68176a
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 3a446ecb2ad7f16d840dbd2bfde44e3298bc588f
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '262'
 ht-degree: 96%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 96%
 
 [Data Workbench](https://www.adobe.com/solutions/digital-analytics/data-workbench.html) は [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html) の一部であり、あらゆるタイプの Web、CRM、POS およびその他のデータタイプにわたるオンラインまたはオフラインの顧客インタラクションからのデータを収集、処理、分析および可視化するために設計された、柔軟性が高く、強力なマルチチャネル機能を備えています。Data Workbench のインタラクティブレポートを使用すると、関連のある統計情報を分析し、これに基づいて反応して、アクティビティをモニタリングしたり、顧客動向を予測したりできます。
 
-* ![Analytics アイコン](assets/analytics-icon-24.png) [Analytics ドキュメント](https://experienceleague.adobe.com/docs/analytics/landing/home.html?lang=ja)
+* ![Analytics アイコン](assets/analytics-icon-24.png) [Analytics ドキュメント](https://experienceleague.adobe.com/docs/analytics.html?lang=ja)
 * ![PDF アイコン](assets/pdf_icon.png) [すべての Data Workbench ドキュメントを PDF 形式でダウンロード](/help/home/assets/data-workbench.pdf)
 
 ## 主なトピック
@@ -35,7 +35,7 @@ Data Workbench に次の予測分析機能、データビジュアライゼー�
 
 ## その他の Analytics ユーザーガイド
 
-[Analytics ユーザーガイド](https://experienceleague.adobe.com/docs/analytics/landing/home.html)
+[Analytics ユーザーガイド](https://experienceleague.adobe.com/docs/analytics.html)
 
 ## Data Workbench のリリースノートおよび新機能
 
