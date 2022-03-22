@@ -1,24 +1,24 @@
 ---
-description: Insightサーバーでの時間ベースのパラメーターに関する手順の形式を設定します。
-title: タイムゾーンのコード
+description: Insight サーバーでの時間ベースのパラメーターに関する手順の形式設定
+title: タイムゾーンコード（Insight サーバー）
 uuid: dcc8aa15-5846-4f24-8b82-e25ff89871ba
 exl-id: d8923b01-24fe-4a70-9800-f2eedf567c6a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 55%
+source-wordcount: '365'
+ht-degree: 53%
 
 ---
 
 # タイムゾーンのコード{#time-zone-codes}
 
-Insightサーバーでの時間ベースのパラメーターに関する手順の形式を設定します。
+Insight サーバーでの時間ベースのパラメーターに関する手順の形式設定
 
-[!DNL Insight Server]内の時間ベースのパラメーターのほとんどは、次の形式で指定されます。
+のほとんどの時間ベースのパラメーター [!DNL Insight Server] は次の形式で指定します。
 
-*月DD、YYYY HH:MM:SS TimeZone*
+*Month DD, YYYY HH:MM:SS タイムゾーン*
 
-例：August 13, 2013 22:30:00 EST
+例：2013 年 8 月 14 日 22:30:00 EST
 
 タイムゾーンの表現には、システムに依存しない次の形式（協定世界時）が使用されます。
 
@@ -26,14 +26,14 @@ UTC +hhmm *dstrules*
 
 記号（+）の部分にはプラス（+）記号かマイナス（-）記号を、*hhmm* には UTC からのオフセット（時と分）を指定します。*dstrules* は、夏時間などの時刻調整制度を導入するための一連のルールを指定する変数です（省略可能）。
 
-*dstrules*&#x200B;を指定する場合、*&lt; [!DNL dstrules]* [!DNL .dst]というタブ区切りファイルが、（特定のデータセットに関連付けられていない設定ファイルの）BaseプロファイルまたはデータセットプロファイルのDataset\TimeZoneディレクトリ内に存在する必要があります。 タイムゾーンに依存しない、夏時間の一連のルールをこのファイルで指定します。一連のルールは、年度ごとに異なっていても構いません。アドビが提供している [!DNL DST.dst] ファイル（Base プロファイル内）には、2005 年エネルギー政策法（2007 年より施行）によって定められた米国の標準ルールと、それ以前の年度用の米国ルールが指定されています。
+次を指定した場合： *dstrules*（という名前のタブ区切りファイル） *&lt; [!DNL dstrules]>* [!DNL .dst] は、（特定のデータセットに関連付けられていない設定ファイルの場合）Base プロファイルまたは（データセットに固有の設定ファイルの場合）データセットプロファイルの Dataset\TimeZone ディレクトリ内に存在する必要があります。 タイムゾーンに依存しない、夏時間の一連のルールをこのファイルで指定します。一連のルールは、年度ごとに異なっていても構いません。アドビが提供している [!DNL DST.dst] ファイル（Base プロファイル内）には、2005 年エネルギー政策法（2007 年より施行）によって定められた米国の標準ルールと、それ以前の年度用の米国ルールが指定されています。
 
 タイムゾーンの指定例を次に示します。
 
 * 米国東部夏時間：Time Zone = string: UTC -0500 DST
-* オフセットなし、*dstrules*&#x200B;なしのUTC時間（GMTに対応）:Time Zone = string:UTC -0000
+* オフセットなしでの UTC 時間 *dstrules* （GMT に対応）:タイムゾーン=文字列：UTC -0000
 
-この形式を使用する場合、[!DNL Insight Server]、[!DNL Insight]、[!DNL Report]の各マシンのシステムタイムゾーンを、指定したタイムゾーンと同じにする必要はありません。 また、[!DNL Insight Server]マシン上のすべてのアクティブなデータセットプロファイルに同じタイムゾーン設定を設定する必要はありません。
+この形式を使用する場合、 [!DNL Insight Server], [!DNL Insight]、および [!DNL Report] 指定したタイムゾーンと同じマシンは必要ありません。 さらに、 [!DNL Insight Server] コンピューターに同じタイムゾーン設定を設定する必要はありません。
 
 次の表は、時刻ベースのパラメーターでタイムゾーンの指定に使用できるコードを一覧にしたものです。
 
@@ -41,7 +41,7 @@ UTC +hhmm *dstrules*
 
 >[!NOTE]
 >
->夏時間などの時刻調整制度を導入する場合は、*profile name*\Dataset\Timezone directory on the [!DNL Insight Server]マシンに適切なルールを含む[!DNL .dst]ファイルを保存する必要があります。
+>夏時間などの時計シフティングポリシーを実装する場合は、 [!DNL .dst] ファイル内の適切なルールを *プロファイル名*\Dataset\Timezone ディレクトリ ( [!DNL Insight Server] マシン。
 
 | コード | タイムゾーン | GMT からのオフセット |
 |---|---|---|

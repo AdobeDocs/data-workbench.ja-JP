@@ -1,12 +1,12 @@
 ---
 description: インストール後、Adobeが発行した電子証明書は、レポートサーバーを実行するためのキーとして機能します。
-title: 電子証明書の再検証
+title: 電子証明書の再検証（概要）
 uuid: 6c8533df-f459-41eb-84ac-344bad9fecdc
 exl-id: 810e3057-26a9-413c-b77c-525035d37756
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 13%
+source-wordcount: '148'
+ht-degree: 10%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 13%
 
 インストール後、Adobeが発行した電子証明書は、レポートサーバーを実行するためのキーとして機能します。
 
-**推奨される頻度：** 必要に応じて
+**Recommended Frequency:** As needed
 
-正しく機能させるには、電子証明書が最新である必要があります。
+正しく機能するには、電子証明書が最新である必要があります。
 
-最新の状態に保つには、デジタル証明書を定期的に再検証する必要があります(通常、30日ごとに検証されますが、Adobeとの契約によって異なります)。 コンピューターがインターネットにアクセスできる場合、再検証プロセスは完全に透過的です。[!DNL Report Server] は、自動的にAdobeライセンスサーバーに接続し、必要に応じて証明書を再検証します。お使いのコンピューターにインターネットアクセスがない場合は、検証済みの新しい証明書をAdobeライセンスサーバーからダウンロードし、[デジタル証明書](../../../home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-install-dig-cert.md#concept-5a61fc67df3643598c7c403962075f76)のダウンロードとインストールの手順に従って、お使いのコンピューターにインストールします。
+To remain current, your digital certificate must be re-validated on a regular basis (generally, every 30 days, but this can vary depending on your agreement with Adobe). コンピューターがインターネットにアクセスできる場合、再検証プロセスは完全に透過的です。[!DNL Report Server] connects automatically to the Adobe License Server and re-validates the certificate when necessary. コンピューターがインターネットにアクセスできない場合は、検証済みの新しい証明書をAdobeライセンスサーバーからダウンロードし、 [電子証明書のダウンロードとインストール](../../../home/c-rpt-oview/c-inst-rpt/c-install-dig-cert/c-install-dig-cert.md#concept-5a61fc67df3643598c7c403962075f76).

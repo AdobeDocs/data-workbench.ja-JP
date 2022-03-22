@@ -1,63 +1,63 @@
 ---
-description: イベントログファイルを定期的に監視して、Insight Serverシステムのイベントメッセージを追跡する必要があります。このメッセージは、Insight Serverのインストールディレクトリ内のEventsフォルダーにある<YYYYMMDD>-event.txtファイルにデフォルトで記録されます。
-title: 管理イベントの監視
+description: イベントログファイルを定期的に監視して、Insight サーバーのシステムイベントメッセージを追跡する必要があります。このメッセージは、 <yyyymmdd>-event.txt ファイルは、Insight サーバーのインストールディレクトリ内の Events フォルダーにデフォルトで配置されています。
+title: 管理イベントの監視（Insight サーバー）
 uuid: 92d71478-0857-4af8-909c-0cf800b081f4
 exl-id: e468a7d0-ed09-4367-88ce-b68964511e76
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '397'
 ht-degree: 3%
 
 ---
 
 # 管理イベントの監視{#monitoring-administrative-events}
 
-イベントログファイルを定期的に監視して、Insight Serverのシステムイベントメッセージを追跡する必要があります。このメッセージは、Insight Serverのインストールディレクトリ内のEventsフォルダーにある`<YYYYMMDD>-event.txt`ファイルにデフォルトで記録されます。
+イベントログファイルを定期的に監視して、Insight サーバーのシステムイベントメッセージを追跡する必要があります。このメッセージは、 `<YYYYMMDD>-event.txt` デフォルトで、Insight サーバーのインストールディレクトリ内の Events フォルダーにあるファイル。
 
-**推奨頻度：** 5 ～ 10分ごと
+**推奨頻度：** 5 ～ 10 分ごと
 
-[!DNL Insight]の[!DNL Server Files Manager]、自動管理ツール、[!DNL *-event.txt]ファイル、またはWindowsイベントビューアを使用して、これらのイベントを監視できます。
+これらのイベントは、 [!DNL Server Files Manager] in [!DNL Insight]、自動管理ツール、 [!DNL *-event.txt] ファイル、または Windows イベントビューア
 
 >[!NOTE]
 >
->管理イベントログは、Windowsイベントログとは完全に別のものですが、同じイベントの一部が含まれています。 管理イベントログには、[!DNL Insight Server]イベントに関する情報のみが含まれます。
+>管理イベントログは、Windows イベントログとは完全に別のものですが、同じイベントの一部が含まれています。 管理イベントログには、 [!DNL Insight Server] イベント。
 
-**events.txtファイルを[!DNL Server Files Manager]**
+**events.txt ファイルを[!DNL Server Files Manager]**
 
-1. [!DNL Insight]の「[!DNL Admin] > [!DNL Dataset and Profile]」タブで、**[!UICONTROL Servers Manager]**&#x200B;サムネールをクリックして「サーバーマネージャー」ワークスペースを開きます。
-1. アクティブな[!DNL Insight Server]のアイコンを右クリックし、「**[!UICONTROL Server Files]**」をクリックします。
-1. [!DNL Server Files Manager]で、**[!UICONTROL Events]**&#x200B;をクリックして内容を表示します。
-1. 目的のファイルの横にある&#x200B;*server name*&#x200B;列のチェックマークを右クリックし、「**[!UICONTROL Make Local]**」をクリックします。 [!DNL Temp]列のファイル名の横にチェックマークが表示されます。
-1. [!DNL Temp]列のチェックマークを右クリックし、**[!UICONTROL Open]** / **[!UICONTROL in Notepad]**&#x200B;をクリックします。 新しいMicrosoft Windowsメモ帳ウィンドウにイベントファイルが表示されます。
+1. In [!DNL Insight]、 [!DNL Admin] > [!DNL Dataset and Profile] タブで、 **[!UICONTROL Servers Manager]** サムネールを使用して、サーバーマネージャーワークスペースを開きます。
+1. アクティブな [!DNL Insight Server] をクリックし、 **[!UICONTROL Server Files]**.
+1. 内 [!DNL Server Files Manager]をクリックし、 **[!UICONTROL Events]** をクリックして、その内容を表示します。
+1. チェックマーク ( *サーバー名* 列をクリックし、 **[!UICONTROL Make Local]**. ファイル名の横に、 [!DNL Temp] 列。
+1. チェックマーク ( [!DNL Temp] 列とクリック **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. 新しいMicrosoft Windows メモ帳ウィンドウにイベントファイルが表示されます。
 
    ![ステップ情報](assets/vis_FileManager_eventfile.png)
 
-   [!DNL Insight Server]インストールディレクトリ内の[!DNL Trace]フォルダー内の[!DNL Server.log]ファイルには、より詳細なログ情報が格納されています。
+   この [!DNL Server.log] ファイルを [!DNL Trace] フォルダー内の [!DNL Insight Server] インストールディレクトリには、より詳細なログ情報が含まれています。
 
-**Windowsイベントビューアでイベントを表示するには**
+**Windows イベントビューアでイベントを表示するには**
 
-* **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Event Viewer]**&#x200B;をクリックします。
+* クリック **[!UICONTROL Start]** > **[!UICONTROL Control Panel]** > **[!UICONTROL Administrative Tools]** > **[!UICONTROL Event Viewer]**.
 
 **管理イベントログディレクトリを変更するには**
 
-管理イベントログ設定ファイル[!DNL Administrative Events Log.cfg]は、イベントログを出力するディレクトリを指定します。
+管理イベントログの設定ファイル [!DNL Administrative Events Log.cfg]：イベントログを出力するディレクトリを指定します。
 
-1. [!DNL Insight]の「[!DNL Admin] > [!DNL Dataset and Profile]」タブで、**[!UICONTROL Servers Manager]**&#x200B;サムネールをクリックして「サーバーマネージャー」ワークスペースを開きます。
+1. In [!DNL Insight]、 [!DNL Admin] > [!DNL Dataset and Profile] タブで、 **[!UICONTROL Servers Manager]** サムネールを使用して、サーバーマネージャーワークスペースを開きます。
 
-1. 設定する[!DNL Insight Server]のアイコンを右クリックし、「**[!UICONTROL Server Files]**」をクリックします。
+1. 次のアイコンを右クリック： [!DNL Insight Server] を設定して、 **[!UICONTROL Server Files]**.
 
-1. [!DNL Server Files Manager]で、**[!UICONTROL Components]**&#x200B;をクリックして内容を表示します。 [!DNL Administrative Event Logs.cfg] ファイルは、このディレクトリ内に格納されています。
+1. 内 [!DNL Server Files Manager]をクリックし、 **[!UICONTROL Components]** をクリックして、その内容を表示します。 [!DNL Administrative Event Logs.cfg] ファイルは、このディレクトリ内に格納されています。
 
-1. *[!DNL Administrative Event Logs.cfg]のサーバー名*&#x200B;列のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 [!DNL Administrative Event Logs.cfg]の[!DNL Temp]列にチェックマークが表示されます。
+1. チェックマーク ( *サーバー名* 列 [!DNL Administrative Event Logs.cfg] をクリックし、 **[!UICONTROL Make Local]**. チェックマークが [!DNL Temp] 列 [!DNL Administrative Event Logs.cfg].
 
-1. [!DNL Temp]列に新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]** / **[!UICONTROL in Insight]**&#x200B;をクリックします。
+1. 新しく作成された、 [!DNL Temp] 列とクリック **[!UICONTROL Open]** > **[!UICONTROL in Insight]**.
 
-1. [!DNL Administrative Event Logs.cfg]ウィンドウで、「**[!UICONTROL component]**」をクリックして内容を表示します。 デフォルトのパスは、[!DNL Insight Server]インストールディレクトリ内の[!DNL Events]フォルダーです。
+1. 内 [!DNL Administrative Event Logs.cfg] ウィンドウ、クリック **[!UICONTROL component]** をクリックして、その内容を表示します。 デフォルトのパスは [!DNL Events] フォルダー内の [!DNL Insight Server] インストールディレクトリ。
 
    ![](assets/cfg_adminevents_examplevalues.png)
 
-1. Pathパラメーターに、イベントログデータを出力するディレクトリの名前を入力します。
-1. 次の操作を行って、変更をサーバーに保存します。
+1. Path パラメーターに、イベントログデータを出力するディレクトリの名前を入力します。
+1. 次の手順を実行して、変更をサーバーに保存します。
 
-   1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、「**[!UICONTROL Save]**」をクリックします。
-   1. [!DNL Server Files Manager]で、[!DNL Temp]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]** / **[!UICONTROL server name]**&#x200B;を選択します。
+   1. 右クリック **[!UICONTROL (modified)]** ウィンドウの上部にあるをクリックし、 **[!UICONTROL Save]**.
+   1. 内 [!DNL Server Files Manager]をクリックし、 [!DNL Temp] 列と選択 **[!UICONTROL Save to]** > **[!UICONTROL server name]**.

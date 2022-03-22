@@ -1,12 +1,12 @@
 ---
 description: ステップバイステップ方式のウィザードを使用して、指標属性によって定義されるディメンション（指標ディメンション）を作成できます。作成した新しい指標ディメンションをテストし、プレビューし、ディメンションリストに保存できます。
-title: 指標ディメンションウィザード
+title: 指標ディメンションウィザード (Dimension)
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 exl-id: 4d283a00-409c-4d74-a558-40744caba71c
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 82%
+source-wordcount: '486'
+ht-degree: 81%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 82%
 
 1. 指標ディメンションウィザードを開きます。
 
-   ワークスペース内で右クリックし、**[!UICONTROL Tools]** > **[!UICONTROL Create Metric Dim]** を選択します。
+   ワークスペースで、右クリックして「 」を選択します。 **[!UICONTROL Tools]** > **[!UICONTROL Create Metric Dim]**.
 
 1. 指標ディメンションに名前を付けます。
 
@@ -67,19 +67,19 @@ ht-degree: 82%
    % 0.2lf = % _ [flags] 0 [width] .2 [.precision] l [length] f[ specifier]
    ```
 
-   **[!UICONTROL Preview]** フィールドに、選択した指標と形式に基づいて値が表示されます。
+   内 **[!UICONTROL Preview]** フィールドに値が入力されている場合、選択した指標とフォーマットに基づいて値が表示されます。
 
 1. 「グループの数」の式を追加します。
 
-   様々な範囲、すなわちグループを利用して指標ディメンションを定義できます。これは、[0-4]、[5-10] など、サイズに基づいて要素のサブセットを返します。 ディメンションレベルのエレメントは、範囲に指標の値を含むエレメントに関連付けられます。グループの式の説明は、「[ディメンション式の構文](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)」を参照してください。
+   様々な範囲、すなわちグループを利用して指標ディメンションを定義できます。これは、サイズに基づいて要素のサブセットを返します ( 例： [0-4], [5-10],...).. ディメンションレベルのエレメントは、範囲に指標の値を含むエレメントに関連付けられます。グループの式の説明は、「[ディメンション式の構文](https://experienceleague.adobe.com/docs/data-workbench/using/client/qry-lang-syntx/c-syntx-dim-exp.html)」を参照してください。
 
-1. 保存する前に **[!UICONTROL Preview]** をクリックして、指標ディメンションの値のテーブルを開きます。
+1. クリック **[!UICONTROL Preview]** をクリックして、保存する前に指標ディメンションの値のテーブルを開きます。
 
    ![](assets/6_4_workstation_metricdim_preview.png)
 
    このテーブルには、指標ディメンションごとの指標の値の詳細が表示されます。
 
-1. **[!UICONTROL Show in Dimension Menu]** をクリックして、新しく作成したディメンションを **Finder** の「**Dimension**」タブに追加します。
+1. クリック **[!UICONTROL Show in Dimension Menu]** 新しく作成したディメンションを **Dimension** 」タブをクリックします。 **検索**.
 
 1. 「**[!UICONTROL Next]**」をクリックします。
 
@@ -93,6 +93,6 @@ ht-degree: 82%
    | **[!UICONTROL Launch Graph]** | テーブルの PNG グラフィックを起動します。 |
    | **[!UICONTROL Launch Table]** | ワークスペース内のテーブルを起動し、新しい指標ディメンションの値を選択されている指標の値と比較して列に表示します。 |
 
-1. **[!UICONTROL Finish]** をクリックして保存します。
+1. クリック **[!UICONTROL Finish]** 保存します。
 
    保存ダイアログが開き、ファイルを保存することができます。値を表示するために選択したオプションがワークスペース内に表示されます。

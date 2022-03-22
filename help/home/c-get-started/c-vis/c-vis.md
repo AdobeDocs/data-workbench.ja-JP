@@ -1,11 +1,11 @@
 ---
 description: ビジュアライゼーションを操作する際に理解しておく必要がある概念と機能の概要です。
-title: ビジュアライゼーション
+title: ビジュアライゼーションの概要
 uuid: 34ddc55f-a037-45ec-b636-d05b1806442f
 exl-id: 2d600c4b-2923-4a85-8a8b-02771b7dc067
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '159'
 ht-degree: 20%
 
 ---
@@ -14,15 +14,15 @@ ht-degree: 20%
 
 ビジュアライゼーションを操作する際に理解しておく必要がある概念と機能の概要です。
 
-[ビジュア](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-open-vis.html)
-[ライゼーショ](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-qk-ref.html)
-[ンを開くクイックリファレンス](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/make-selections/c-sel-vis.html)
-[](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-ustd-benchmks.html)
-[選択BenchmarkMetricとディメンションメニュー](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-met-dim-menus.html)
-[](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/subsets/c-wk-subsets.html)
-[SubsetsZoom in or out ](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-zoom-vis.html)
-[in a visualizationワークスペースへの引き出し線の追加ビジュアライゼーションの注釈の追加](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-call-wkspc.html)
-[bookmarkMetric Dim](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-present-layer.html)
-[](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-bookmark-about.html)
-[](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/dwb-create-metricdim.html)
-ウィザード指標ディメンションの編集
+[ビジュアライゼーションを開く](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-open-vis.html)
+[クイックリファレンス](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-qk-ref.html)
+[選択の実行](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/make-selections/c-sel-vis.html)
+[ベンチマーク](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-ustd-benchmks.html)
+[指標メニューとディメンションメニュー](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-met-dim-menus.html)
+[サブセット](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/subsets/c-wk-subsets.html)
+[ビジュアライゼーションでのズームイン/ズームアウト](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-zoom-vis.html)
+[ワークスペースへの引き出し線の追加](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-call-wkspc.html)
+[ビジュアライゼーションへの注釈の追加](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-present-layer.html)
+[ブックマークの追加](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/c-bookmark-about.html)
+[指標ディメンションウィザード](https://experienceleague.adobe.com/docs/data-workbench/using/client/visualizations/dwb-create-metricdim.html)
+指標ディメンションの編集
