@@ -1,10 +1,10 @@
 ---
-description: 統計的に有意な実験を作成するには、実験を実行して、Webサイトに加えた変更の結果を効果的に評価するのに十分な訪問者を含める必要がある期間を決定する必要があります。
-solution: Analytics,Analytics
+description: 統計的に有意な実験を作成するには、実験を実行して、Web サイトに対する変更の結果を効果的に評価するのに十分な訪問者を含める必要がある期間を決定する必要があります。
+solution: Analytics
 title: 必要な訪問者数の決定
 uuid: 07fca0aa-031a-4335-bba4-fb00cb90e29d
 exl-id: c23f4c21-21e5-4694-a500-efe1369cd4bf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 6%
@@ -13,9 +13,9 @@ ht-degree: 6%
 
 # 必要な訪問者数の決定{#determining-the-number-of-visitors-needed}
 
-統計的に有意な実験を作成するには、実験を実行して、Webサイトに加えた変更の結果を効果的に評価するのに十分な訪問者を含める必要がある期間を決定する必要があります。
+統計的に有意な実験を作成するには、実験を実行して、Web サイトに対する変更の結果を効果的に評価するのに十分な訪問者を含める必要がある期間を決定する必要があります。
 
-実験の最小長の決定に役立つ情報が必要な場合は、Adobeが提供する実験設計スプレッドシートをツールとして使用し、実験の設計に役立てることができます。 このファイルは、デフォルトで[!DNL VS Controlled Experiment Design.xls]と呼ばれ、ワークシートとしてだけでなく、実験に関する決定の記録としても機能します。 このファイルについて詳しくは、[Experiment Design Spreadsheet](../../../home/c-undst-ctrld-exp/t-exp-dsn-spst.md#task-d7f674980fe9415d80371d6020bcf164)を参照してください。
+実験の最小長の決定に役立つ場合は、Adobeが提供する実験設計スプレッドシートをツールとして使用し、実験の設計に役立てることができます。 このファイルの名前は [!DNL VS Controlled Experiment Design.xls] デフォルトでは、はワークシートとしてだけでなく、実験に関する決定の記録としても機能します。 このファイルの詳細については、 [実験設計スプレッドシート](../../../home/c-undst-ctrld-exp/t-exp-dsn-spst.md#task-d7f674980fe9415d80371d6020bcf164).
 
 >[!NOTE]
 >

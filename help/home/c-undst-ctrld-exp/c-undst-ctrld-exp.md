@@ -1,24 +1,24 @@
 ---
-description: 対照実験とは、実験試料群から得られた結果を標準対照群の結果と比較することを可能にする試験です。
-solution: Analytics,Analytics
-title: Data Workbench制御実験
+description: 対照実験とは、実験用サンプル群から得られた結果を標準の対照群から得た結果と比較することが可能な実験です。
+solution: Analytics
+title: Data Workbench対照実験
 uuid: 5fce2d9e-4975-44e4-a7c0-11064d8d28b4
 exl-id: 40bcf6a4-c722-427c-81ac-45dec1eae0b5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 0%
 
 ---
 
-# Data Workbench制御実験{#data-workbench-controlled-experiments}
+# Data Workbench対照実験{#data-workbench-controlled-experiments}
 
-対照実験とは、実験試料群から得られた結果を標準対照群の結果と比較することを可能にする試験です。
+対照実験とは、実験用サンプル群から得られた結果を標準の対照群から得た結果と比較することが可能な実験です。
 
-Siteを使用すると、Webサイトの様々な側面に関連する、制御された実験とその結果を実装、測定、分析できます。 これにより、提案された変更を完全に実装するのにかなりの時間や費用を費やす前に、Webサイトのパフォーマンスの向上に関する仮説をテストできます。
+Site では、Web サイトの様々な側面に関連する、対照実験とその結果を実装、測定、分析できます。 これにより、提案された変更を完全に実装するのに大きな時間や費用を費やす前に、Web サイトのパフォーマンスの向上に関する仮説をテストできます。
 
 >[!NOTE]
 >
->サイト実験は、[!DNL Sensor]設定された永続的なcookieメソッドのみが使用されるデータセットでのみ分析できます。 J2EEサーバー（JBoss、Tomcat、WebLogicおよびWebSphere）上で動作するセンサーは、対照実験をサポートしていません。 詳しくは、次の節を参照してください。
+>サイト実験は、使用される訪問者識別の唯一の方法が [!DNL Sensor] 永続的な cookie メソッドを設定します。 J2EE サーバー (JBoss、Tomcat、WebLogic、WebSphere) 上で動作するセンサーは、対照実験をサポートしていません。 詳しくは、次の節を参照してください。
 
-Siteを使用すると、A/B、A/B/A、多変量分析対照実験を実装して、現在のWebサイトのパフォーマンスに影響を与えることなく、統計的に正確なデータを収集して、仮説の詳細な評価を得ることができます。
+Site を使用すると、A/B、A/B/A、多変量分析制御実験を実装して、現在の Web サイトのパフォーマンスに影響を与えることなく、統計的に正確なデータを得て仮説の詳細を評価できる十分なテストデータを収集できます。

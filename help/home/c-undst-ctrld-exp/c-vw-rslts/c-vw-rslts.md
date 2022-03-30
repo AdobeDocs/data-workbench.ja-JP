@@ -1,10 +1,10 @@
 ---
-description: 実験の結果は、Insight内のビジュアライゼーションで表示できます。
-solution: Analytics,Analytics
+description: Insight 内のビジュアライゼーションに実験の結果を表示できます。
+solution: Analytics
 title: 結果の表示
 uuid: de9b6f34-faf8-43e2-bf93-1078e624b908
 exl-id: de63b09c-7648-49b0-8764-900fc0e56acc
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
 workflow-type: tm+mt
 source-wordcount: '32'
 ht-degree: 18%
@@ -13,4 +13,4 @@ ht-degree: 18%
 
 # 結果の表示{#viewing-the-results}
 
-実験の結果は、Insight内のビジュアライゼーションで表示できます。
+Insight 内のビジュアライゼーションに実験の結果を表示できます。
