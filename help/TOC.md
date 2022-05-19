@@ -6,9 +6,9 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Data Workbench ヘルプ
 user-guide-description: Data Workbench のマルチチャネル機能について学びます。Data Workbench クライアント、インストール、データセット設定に関するガイドなどが含まれます。
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
-source-wordcount: '3495'
+source-git-commit: 290ce286a46b33e4f468aa5cfad7a2ef0198b437
+workflow-type: tm+mt
+source-wordcount: '3493'
 ht-degree: 100%
 
 ---
