@@ -3,7 +3,7 @@ cloud: Experience Cloud
 product: adobe analytics
 solution: Analytics
 type: Documentation
-git-repo: https://git.corp.adobe.com/AdobeDocs/data-workbench.ja-JP
+git-repo: https://github.com/AdobeDocs/data-workbench.ja-JP
 index: true
 source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
 workflow-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 # 社内用のメタデータ
 
-metadata.md ファイルにはリポジトリー内のユーザーガイド TOC.md ファイルから渡される repo-level メタデータが含まれています。任意のユーザーガイドの metadata.md コンテンツを変更したい場合は、任意の TOC.md ファイル内でおこないます。
+metadata.md ファイルには、リポジトリー内にあるユーザーガイドの TOC.md ファイルにパススルーされる、リポジトリーレベルのメタデータが含まれています。任意のユーザーガイドの metadata.md コンテンツを変更したい場合は、任意の TOC.md ファイル内でおこないます。
 
 | メタデータ | 説明 |
 |--- |--- |
