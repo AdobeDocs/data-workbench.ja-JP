@@ -3,7 +3,7 @@ description: 重要なワークスペースをブックマークして、ワー�
 title: ブックマークの追加
 uuid: 8b7fd6ac-9bab-4e7a-8f52-8568413052e8
 exl-id: ba05d7ee-49c6-42a0-a490-9c59fcaaddc5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 69%
@@ -12,17 +12,19 @@ ht-degree: 69%
 
 # ブックマークの追加{#add-a-bookmarks}
 
+{{eol}}
+
 重要なワークスペースをブックマークして、ワークフローで使用されているビジュアライゼーションやレポート間をすばやく移動できます。
 
 1. ツールバーの右上隅にあるブックマークアイコン ![](assets/bookmark_icon.png) をクリックして、ワークスペースをブックマークします。
 
    ワークスペースをブックマークする前は、このアイコンは単なる本として表示されます。ワークスペースをブックマークすると、ブックマークアイコンはページがマークされた本に変化します。
 
-1. 左側のウィンドウで&#x200B;**[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]**&#x200B;をクリックして、ブックマークのリストを開きます。
+1. クリック **[!UICONTROL Add]** > **[!UICONTROL Bookmarks Panel]** をクリックし、ブックマークのリストを開きます。
 
    ![](assets/bookmarks_panel.png)
 
-1. ブックマークされたワークスペースを開くには、**[!UICONTROL Bookmark Panel]**&#x200B;内のワークスペース名をクリックします。
+1. ブックマークされたワークスペースを開くには、 **[!UICONTROL Bookmark Panel]**.
 
    ![](assets/bookmarks_panel_left.png)
 
@@ -30,9 +32,9 @@ ht-degree: 69%
 
 **ブックマークを削除するには：**
 
-* ブックマークパネルで右クリックし、「**`<bookmark title>`**&#x200B;を削除」を選択して選択したブックマークを削除するか、「**[!UICONTROL Clear All Bookmarks]**」を選択してすべてのブックマークを削除します。
+* [ ブックマーク ] パネルで、右クリックして [ ] を選択します。 **削除`<bookmark title>`** 選択したブックマークを削除するには、 **[!UICONTROL Clear All Bookmarks]** 」をクリックして、すべてのブックマークを削除します。
 
-* ワークトップ内のサムネールビューでワークスペースを右クリックし、「**[!UICONTROL Clear Bookmark]**」を選択することもできます。
+* また、ワークトップ内のサムネール表示でワークスペースを右クリックし、「 」を選択することもできます。 **[!UICONTROL Clear Bookmark]**.
 
 >[!IMPORTANT]
 >

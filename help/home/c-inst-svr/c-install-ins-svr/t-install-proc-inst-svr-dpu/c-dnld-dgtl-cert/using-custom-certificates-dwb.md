@@ -2,13 +2,17 @@
 description: カスタム証明書の使用に関する手順です。
 title: Data Workbench でのカスタム証明書の使用
 uuid: c3a2db27-bdb2-44b3-95dd-65eedd05c957
-translation-type: tm+mt
-source-git-commit: 72761a57e4bb9f230581b2cd37bff04ba7be8e37
+exl-id: f813d599-723f-4b5d-a0b5-f4d71c1b1a22
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '732'
+ht-degree: 93%
 
 ---
 
-
 # Data Workbench でのカスタム証明書の使用{#using-custom-certificates-in-data-workbench}
+
+{{eol}}
 
 カスタム証明書の使用に関する手順です。
 
@@ -24,7 +28,7 @@ Data Workbench クライアントまたはサーバーで使用される証明�
 
 1. 次の状態にあるクラスターの各サーバーのカスタム証明書を入手します。
 
-   1. Certificate is formatted as a [!DNL .pem] certificate.
+   1. 証明書は [!DNL .pem] 証明書。
    1. 証明書は、その鍵を含んでおり、暗号化されていない（つまり、パスワード／パスフレーズがない）。
 
       証明書は、次の行のどちらかを持つ、その証明書の鍵を含んでいる。
@@ -34,7 +38,7 @@ Data Workbench クライアントまたはサーバーで使用される証明�
       BEGIN RSA PRIVATE KEY
       ```
 
-      One way to remove the password phrase from a [!DNL .pem] certificate:
+      パスワードフレーズを [!DNL .pem] 証明書：
 
       ```
       openssl rsa  -in password-protected-cert.pem -out no-password-cert.pem 
@@ -42,7 +46,7 @@ Data Workbench クライアントまたはサーバーで使用される証明�
       ```
 
    1. 証明書に、CN、O、OU など（サーバーの [!DNL Access Control.cfg] ファイルでこのクライアントに必要とされている）がある。
-   1. 証明書は、*client*（または *server* **と** *client* の両方）の *purpose **** を使用して発行された。
+   1. 証明書は *目的&#42;&#42;&#42;* / *client* ( または *server* **および** *client*) をクリックします。
 
       証明書がサーバーおよび／またはクライアントの purpose コードを持っていることを検証するには、次のコマンドを使用できます。
 
@@ -69,14 +73,14 @@ Data Workbench クライアントまたはサーバーで使用される証明�
    <my_custom_client_cert.pem>
    ```
 
-## Setting up Custom Server Certificates {#setting-up-custom-server-certificates}
+## カスタムサーバー証明書の設定 {#setting-up-custom-server-certificates}
 
 この節では、Visual Sciences が発行した証明書を使用した、稼動中のクラスターがあり、設定は一般的な慣習（例えば、マスターの *Components for Processing Servers* ディレクトリは、すべての DPU の *Components* ディレクトリと同期するなど）に従っていると仮定します。
 
 1. 証明書を発行する CA を、クラスターのすべてのサーバーおよびこのクラスターと通信する必要のあるすべてのクライアントにインストールされた [!DNL trust_cert_ca.pem] に追加します。
 1. 次の要件に沿ったクラスターの各サーバーのカスタム証明書を入手します。
 
-   1. Custom certificate is formatted as a [!DNL .pem] certificate.
+   1. カスタム証明書は [!DNL .pem] 証明書。
    1. 証明書は、その鍵を含んでおり、暗号化されていない（つまり、パスワード／パスフレーズがない）。
 
       証明書は、その証明書の鍵（次のような行を持つ場合）を含んでいる。
@@ -86,7 +90,7 @@ Data Workbench クライアントまたはサーバーで使用される証明�
       BEGIN RSA PRIVATE KEY
       ```
 
-      One way to remove the password phrase from a [!DNL .pem] certificate:
+      パスワードフレーズを [!DNL .pem] 証明書：
 
       ```
       openssl rsa  -in password-protected-cert.pem -out no-password-cert.pem 

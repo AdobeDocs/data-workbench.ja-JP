@@ -3,7 +3,7 @@ description: Split 変換は、特定の区切り文字に基づいて 1 つの�
 title: Split
 uuid: 116e8465-8fb1-41eb-9a28-412cee54ab87
 exl-id: ea85b095-1306-4938-906d-35d421db6c98
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # 分割{#split}
+
+{{eol}}
 
 Split 変換は、特定の区切り文字に基づいて 1 つの文字列を複数のサブ文字列のベクトルに分割します。
 
@@ -32,7 +34,7 @@ Split 変換は、特定の区切り文字に基づいて 1 つの文字列を�
   </tr> 
   <tr> 
    <td colname="col1"> コメント </td> 
-   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
+   <td colname="col2"> （オプション）。変換についてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -51,7 +53,7 @@ Split 変換は、特定の区切り文字に基づいて 1 つの文字列を�
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Output </td> 
+   <td colname="col1"> 出力 </td> 
    <td colname="col2"> 出力フィールドの名前。 </td> 
    <td colname="col3"> </td> 
   </tr> 

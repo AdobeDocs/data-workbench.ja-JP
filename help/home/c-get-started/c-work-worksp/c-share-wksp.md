@@ -3,7 +3,7 @@ description: エクスポートワークスペースメニューを使用して�
 title: ワークスペースの共有
 uuid: 6100143a-d602-42d7-b742-987fe5f835d6
 exl-id: c05b0f8f-cd73-4025-825b-32471c8681b8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 74%
@@ -12,9 +12,11 @@ ht-degree: 74%
 
 # ワークスペースの共有{#share-a-workspace}
 
+{{eol}}
+
 エクスポートワークスペースメニューを使用して、ワークスペースの印刷および .png ファイルまたは Excel へのエクスポートを行えます。
 
-ワークスペースで、「**[!UICONTROL Export]**」をクリックします。
+ワークスペースで、 **[!UICONTROL Export]**.
 
 ![](assets/mnu_export.png)
 
@@ -49,11 +51,11 @@ ht-degree: 74%
   </tr> 
   <tr> 
    <td colname="col1"> Excel </td> 
-   <td colname="col2"> Microsoft ExcelがData Workbenchマシンにインストールされている場合、はMicrosoft Excelを自動的に起動し、特定のビジュアライゼーション、特定の凡例およびテキスト注釈のデータを新しいExcelファイル（.xlsまたは.xlsx）にエクスポートします。 詳しくは、「<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb">ワークスペースデータを Microsoft Excel にエクスポートする</a>」を参照してください。 </td> 
+   <td colname="col2"> Microsoft Excel がData Workbench機能にインストールされている場合、は自動的にMicrosoft Excel を起動し、特定のビジュアライゼーション、特定の凡例およびテキスト注釈のデータを新しい Excel ファイル（.xls または.xlsx）にエクスポートします。 詳しくは、「<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-fe214e3dbc364d2eba3834d62d295acb">ワークスペースデータを Microsoft Excel にエクスポートする</a>」を参照してください。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> テンプレートから（Excel への）エクスポート </td> 
-   <td colname="col2"> Microsoft ExcelがData Workbenchマシンにインストールされている場合、はMicrosoft Excelを自動的に起動し、特定のビジュアライゼーション、特定の凡例およびテキスト注釈のデータを、選択したテンプレートExcelファイル（<span class="filepath"> .xls</span>または<span class="filepath"> .xlsx</span>）にエクスポートします。 詳しくは、「<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302">テンプレート Excel ファイルにエクスポートする</a>」を参照してください。 </td> 
+   <td colname="col2"> Microsoft Excel がData Workbench機能にインストールされている場合、は自動的にMicrosoft Excel を起動し、特定のビジュアライゼーション、特定の凡例およびテキスト注釈からテンプレート Excel ファイルにデータをエクスポートします (<span class="filepath"> .xls</span> または <span class="filepath"> .xlsx</span>) をクリックします。 詳しくは、「<a href="../../../home/c-get-started/c-work-worksp/c-ex-wksp.md#section-814772929ca64cf6b92b89d3fdd02302">テンプレート Excel ファイルにエクスポートする</a>」を参照してください。 </td> 
   </tr> 
  </tbody> 
 </table>

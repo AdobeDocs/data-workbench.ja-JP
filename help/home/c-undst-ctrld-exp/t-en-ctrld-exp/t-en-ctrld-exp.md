@@ -4,7 +4,7 @@ solution: Analytics
 title: 対照実験の有効化
 uuid: 27d68fad-ae2d-4a2e-b449-fbaf88286cfa
 exl-id: 53c18524-6050-4708-af63-9e8ef8da389e
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 4%
@@ -12,6 +12,8 @@ ht-degree: 4%
 ---
 
 # 対照実験の有効化{#enabling-controlled-experimentation}
+
+{{eol}}
 
 対照実験を有効にするには、Web またはアプリケーションサーバーへの管理者アクセス権を持つユーザーが、Sensor がインストールされている Web クラスター内の各 Web またはアプリケーションサーバーの Sensor 設定ファイル（通常は txlogd.conf を使用して名前が付けられます）の ExpFile パラメーターを変更します。
 

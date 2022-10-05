@@ -3,7 +3,7 @@ description: セグメントクライアントの詳細テーブルビジュア�
 title: セグメントエクスポート
 uuid: 85c8aa72-23fe-424b-9580-6759dc8f8681
 exl-id: 49998b46-f3a6-43a3-a76e-468894b27ee4
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 55%
@@ -12,35 +12,37 @@ ht-degree: 55%
 
 # セグメントエクスポート{#segment-export}
 
+{{eol}}
+
 セグメントクライアントの詳細テーブルビジュアライゼーションから、セグメントエクスポート定義を簡単にData Workbenchできます。
 
-さらに、[!DNL Segment Exports]は、外部プロセスを使用して結合する必要がある各DPUに部分的な結果を生成するのではなく、結果を1つのサーバーに自動的に結合します。 セグメントエクスポートファイルを作成し、[!DNL Profile Manager]に保存して、任意のサーバーに出力ファイルをアップロードできます。
+さらに、 [!DNL Segment Exports] 各 DPU 上に部分的な結果が生成されるのではなく、外部プロセスを使用して結合する必要があるので、結果は 1 台のサーバーに自動的に結合されます。 セグメントエクスポートファイルを作成し、 [!DNL Profile Manager]をクリックし、任意のサーバーに出力ファイルをアップロードします。
 
 **セグメントエクスポートサーバーを設定するには**
 
-[!DNL Segment Export]機能を使用すると、各DPUに個別の出力ファイルを作成するのではなく、1つの出力ファイルがセグメントエクスポートサーバー上に作成されます。 セグメントエクスポートサーバーは、通常 FSU 上で動作するように設定されます。
+この [!DNL Segment Export] 機能は、各 DPU に個別の出力ファイルを作成するのではなく、セグメントエクスポートサーバー上に単一の出力ファイルを作成します。 セグメントエクスポートサーバーは、通常 FSU 上で動作するように設定されます。
 
-[!DNL Profile Manager]のDataset\ディレクトリで、ワークステーションの[!DNL Segment Export.cfg]を開き、サーバーのアドレスを指定します。 （アドレスは IP または完全修飾ドメイン名です）。
+次の Dataset\ディレクトリ内： [!DNL Profile Manager]、 [!DNL Segment Export.cfg] ワークステーションで、サーバーのアドレスを指定します。 （アドレスは IP または完全修飾ドメイン名です）。
 
 ![](assets/segment_export_cfg.png)
 
-これは、セグメントエクスポートの結果を受け取るData WorkbenchサーバーのIPです。 これは 1 回だけの設定です。[!DNL Segment Export.cfg] が存在しない場合、エクスポートは実行されません。
+これは、セグメントエクスポートの結果を受け取るData Workbenchサーバーの IP です。 これは 1 回だけの設定です。[!DNL Segment Export.cfg] が存在しない場合、エクスポートは実行されません。
 
 **エクスポートディレクトリを設定するには**
 
 セキュリティの点から、セグメントエクスポートの後に実行する実行可能ファイルやバッチファイルは、セグメントエクスポートサーバーの設定可能なスクリプトディレクトリに置く必要があります。
 
-[!DNL .part]と最終出力は、設定可能なエクスポートディレクトリに置く必要があります。 実行するコマンドは、Command および Command Arguments に存在します。Command Arguments 内の %file% のインスタンスは、出力ファイルのパスに置き換えられます。
+この [!DNL .part] 最終出力は、設定可能な書き出しディレクトリに配置する必要があります。 実行するコマンドは、Command および Command Arguments に存在します。Command Arguments 内の %file% のインスタンスは、出力ファイルのパスに置き換えられます。
 
 >[!NOTE]
 >
->Data Workbench5.4以降では、\Exportsフォルダーが自動的に作成されます。 バージョン 5.4 より前に設定した以前のエクスポートディレクトリでは、各セグメントエクスポートのファイル名の前に Exports\ プレフィックスが必要でした。現在このプレフィックスの追加は不要です。
+>Data Workbench5.4 が初めての場合は、\Exports フォルダーが自動的に作成されます。 バージョン 5.4 より前に設定した以前のエクスポートディレクトリでは、各セグメントエクスポートのファイル名の前に Exports\ プレフィックスが必要でした。現在このプレフィックスの追加は不要です。
 
-1. [!DNL Segment Exports]の宛先サーバーの[!DNL Communications.cfg]で、サーバーのリストにSegmentExportServerを追加します。 （例を赤で示します）。
+1. In [!DNL Communications.cfg] 宛先サーバーで [!DNL Segment Exports]をクリックし、 SegmentExportServer をサーバーのリストに追加します。 （例を赤で示します）。
 
    ![](assets/communications_cfg_example.png)
 
-   エクスポートディレクトリ：[!DNL .part]と出力ファイルを置く場所を指定します。 共有ディレクトリも指定できます。
+   エクスポートディレクトリ：置く場所を指定します [!DNL .part] 出力ファイル 共有ディレクトリも指定できます。
 
    Scripts Directory：実行するすべての実行可能ファイルまたはバッチファイルのあるディレクトリを指定します。
 
@@ -48,7 +50,7 @@ ht-degree: 55%
 
    ![](assets/accesscontrol_cfg_example.png)
 
-1. [!DNL .export]ファイルを変更します。
+1. を [!DNL .export] ファイル：
 
    ![](assets/segment_export_query_example.png)
 
@@ -72,12 +74,12 @@ ht-degree: 55%
 
    ![](assets/create_segment_export_file.png)
 
-1. [詳細テーブル]ヘッダーで右クリックし、**[!UICONTROL Create Segment Export File]**&#x200B;を選択します。
-1. [!DNL Save as]に、[!DNL .export]ファイルの名前を入力します。
-1. [!DNL .export]ファイルで、必要に応じてパラメーターを設定します。
+1. 詳細テーブルのヘッダーで、右クリックして「 」を選択します。 **[!UICONTROL Create Segment Export File]**.
+1. In [!DNL Save as]、 [!DNL .export] ファイル。
+1. の [!DNL .export] ファイルを開き、必要に応じてパラメーターを設定します。
 
    ワークスペース内の選択やフィルターは、エクスポートファイルに組み込まれます。
 
-1. [!DNL .export]ファイルを保存します。
+1. 保存する [!DNL .export] ファイル。
 
-   保存したファイルは[!DNL Profile Manager]に表示され、サーバーに保存できます。 ファイルをサーバーに保存すると、エクスポートが開始されます。
+   保存したファイルは、 [!DNL Profile Manager] サーバーに保存するために使用します。 ファイルをサーバーに保存すると、エクスポートが開始されます。

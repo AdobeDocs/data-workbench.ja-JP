@@ -3,7 +3,7 @@ description: セグメントディメンションを作成するには、まず�
 title: セグメントディメンションの作成
 uuid: 68dcf3bf-fbc9-4924-a0dd-d112cf366131
 exl-id: 393d544e-e821-49e3-8cfb-5a3496aa7380
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 64%
@@ -11,6 +11,8 @@ ht-degree: 64%
 ---
 
 # セグメントディメンションの作成{#create-a-segment-dimensions}
+
+{{eol}}
 
 セグメントディメンションを作成するには、まずワークスペース内に選択範囲を作成してから、セグメントをビジュアライゼーションに追加します。
 
@@ -21,27 +23,27 @@ ht-degree: 64%
    ![](assets/vis_Segment.png)
 
 1. セグメントの定義に使用するワークスペースにビジュアライゼーションを追加してから、目的の選択範囲を作成してセグメントを定義します。
-1. セグメントのビジュアライゼーションで、新しいセグメントを追加する後のセグメントのラベルを右クリックし、「**[!UICONTROL Add Segment]**」をクリックします。
+1. セグメントのビジュアライゼーションで、新しいセグメントを追加する後のセグメントのラベルを右クリックし、 **[!UICONTROL Add Segment]**.
 
    >[!NOTE]
    >
-   >新しい最初のセグメントを作成するには、**[!UICONTROL Segments]**&#x200B;ラベルを右クリックし、**[!UICONTROL Add Segment]**&#x200B;をクリックします。
+   >新しい最初のセグメントを作成するには、 **[!UICONTROL Segments]** ラベルとクリック **[!UICONTROL Add Segment]**.
 
    ![](assets/vis_SegmentNew.png)
 
    新しいセグメント（名前は「新規セグメント」）がビジュアライゼーションに表示されます。「その他」セグメントは、定義済みのセグメントに含まれないすべてのデータを表します。事実上、これがデータセットのデータとセグメントのデータの違いになります。
 
-1. 新しく作成されたセグメントを右クリックし、「**[!UICONTROL Rename Segment]**」をクリックします。
+1. 新しく作成されたセグメントを右クリックし、「 **[!UICONTROL Rename Segment]**.
 1. 新しいセグメントを説明する名前を名前フィールドに入力します。
 
    >[!NOTE]
    >
-   >[!DNL Site]の特定の訪問者などの指標の値が複数のセグメントの条件を満たす場合、その指標の値は、一致する最初にリストされたセグメントにのみ含まれます。
+   >指標値 ( [!DNL Site]が複数のセグメントの条件を満たす場合、この指標の値は、一致する最初にリストされたセグメントにのみ含まれます。
 
 **セグメントディメンションを保存するには**
 
-1. セグメントラベルを右クリックし、「**[!UICONTROL Save Dimension]**」をクリックします。 [!DNL Save Dimension As]ウィンドウが表示されます。 デフォルトの保存場所は、User\*profile name*\profilesフォルダーです。Dimension
-1. 「[!DNL File name]」フィールドに、ディメンションとして保存するセグメントのわかりやすい名前を入力し、「**[!UICONTROL Save]**」をクリックします。
+1. セグメントラベルを右クリックし、 **[!UICONTROL Save Dimension]**. この [!DNL Save Dimension As] ウィンドウが表示されます。 デフォルトの保存場所は、User\*profile name*\profiles フォルダーです。Dimension
+1. 内 [!DNL File name] 「 」フィールドに、ディメンションとして保存するセグメントのわかりやすい名前を入力し、 **[!UICONTROL Save]**.
 
 ビジュアライゼーションを操作しているときはいつでも、このセグメントディメンションにアクセスできます。セグメントエクスポート機能を使用して、保存したディメンション内の要素に関連付けられたデータをエクスポートすることもできます。
 

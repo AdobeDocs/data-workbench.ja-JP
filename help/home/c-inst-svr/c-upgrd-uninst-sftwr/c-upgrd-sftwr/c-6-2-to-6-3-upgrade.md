@@ -1,9 +1,9 @@
 ---
-description: Data Workbench6.3 のサーバーコンポーネントをアップグレードしています。
+description: Data Workbench6.3 用のサーバーコンポーネントをアップグレードします。
 title: DWB サーバーの 6.2 から 6.3 へのアップグレード
 uuid: e12b6cc1-070e-4bc7-bc64-203d11cfeae9
 exl-id: 5106d9a3-179a-49f1-915a-c03b36ed5257
-source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 56%
@@ -12,16 +12,18 @@ ht-degree: 56%
 
 # DWB サーバーのアップグレード：6.2 から 6.3 へ{#dwb-server-upgrade-to}
 
-Data Workbench6.3 のサーバーコンポーネントをアップグレードしています。
+{{eol}}
 
-**サーバーのアップグレード**
+Data Workbench6.3 用のサーバーコンポーネントをアップグレードします。
 
-[!DNL Base] パッケージで提供されるデフォルトのファイルよりも優先されるカスタマイズ済みのプロファイルがある場合は、これらのカスタマイズ済みのファイルを更新する必要があります。
+**サーバーをアップグレード**
 
-* **Meta.cfg ファイルを更新します** ( [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]ファイルシステムユニット（FSU サーバー）用に更新されたパスワードの暗号化を設定し、名前と値のペアの変換用のエントリを追加して、 [クエリー文字列のグループ化](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0)を利用します。
+指定した [!DNL Base] パッケージの場合は、次のカスタマイズ済みファイルを更新する必要があります。
+
+* **Meta.cfg ファイルの更新** ( [!DNL E:\..\Profiles\<your custom profile>\Context\meta.cfg)]を使用して、ファイルシステムユニット（FSU サーバ）の更新されたパスワード暗号化を設定し、名前と値のペア変換のエントリを追加し、 [クエリ文字列のグループ化](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md#concept-42f74911b5714219a359b719badac8e0).
 
    1. FSU 上の [!DNL meta.cfg] ファイルを開きます。
-   1. **[!UICONTROL Proxy Password]** のデータ型を、*ワークステーションの設定* セクションで、「 [!DNL string"] 」から「 [!DNL EncryptedString] 」に変更します。
+   1. のデータタイプの変更 **[!UICONTROL Proxy Password]** から」 [!DNL string"] 」 [!DNL EncryptedString]」 *ワークステーションの設定* 」セクションに入力します。
 
       ```
         Proxy User Name = string:
@@ -48,7 +50,7 @@ Data Workbench6.3 のサーバーコンポーネントをアップグレード�
 
 * **高速結合の強化のための更新**。Data Workbench での変換速度の向上を利用するために、次の設定ファイルに対してパラメーターの追加または値の変更を行います。
 
-   * **Communications.cfg** (  [!DNL E:\Server\Components\Communications.cfg])
+   * **Communications.cfg** ( [!DNL E:\Server\Components\Communications.cfg])
 
       ```
       18 = SourceListServer:
@@ -57,7 +59,7 @@ Data Workbench6.3 のサーバーコンポーネントをアップグレード�
       <new>)
       ```
 
-   * **Disk Files.cfg** ( および [!DNL E:\Server\Components] にあ [!DNL E:\Server\Components for Processing Servers]る )
+   * **Disk Files.cfg** ( [!DNL E:\Server\Components] および [!DNL E:\Server\Components for Processing Servers])
 
       ```
       Disk Cache Size (MB) = double: 1024
@@ -95,7 +97,7 @@ Data Workbench6.3 のサーバーコンポーネントをアップグレード�
    >
    >高速結合の強化を利用するには、各 DPU に RAM が少なくとも 8 GB あることを確認してください。
 
-* **Adobe Target と DWB の統合の更新**。新しい書き出しファイル [!DNL ExportIntegration.exe] は、Insight サーバー上の既存の [!DNL TnTSend.exe] ファイル (`E:\Server\Scripts\TnTSend.exe`) を置き換えます。 この新しいエクスポートファイルは、[Adobe Target](https://www.adobe.com/marketing/target.html) の統合と、新しいマスターマーケティングプロファイル（MMP）および [Adobe Audience Manager](https://www.adobe.com/analytics/audience-manager.html) との連携の両方に対応しています。
+* **Adobe Target と DWB の統合の更新**。新しいエクスポートファイル [!DNL ExportIntegration.exe]( 既存の [!DNL TnTSend.exe] ファイルを Insight サーバー上に置く (`E:\Server\Scripts\TnTSend.exe`) をクリックします。 この新しいエクスポートファイルは、[Adobe Target](https://www.adobe.com/marketing/target.html) の統合と、新しいマスターマーケティングプロファイル（MMP）および [Adobe Audience Manager](https://www.adobe.com/analytics/audience-manager.html) との連携の両方に対応しています。
 
    Adobe Target のエクスポートのために、次のコマンドを更新する必要があります。
 
@@ -116,13 +118,13 @@ Data Workbench6.3 のサーバーコンポーネントをアップグレード�
    また、古いエクスポートプロセスを使用する場合は、次を試すこともできます。
 
    * ワークステーションで新しい Target エクスポートを作成します。
-   * [!DNL Server/Profiles/`<your profile>`/Export.] にある古い Test and Target エクスポートを変更します。
+   * 次に示す古い Test and Target エクスポートを変更します。 [!DNL Server/Profiles/`<your profile>`/書き出し。]
 
-* **Adobe SC プロファイルの更新。** ファイルを変更す [!DNL Exclude Hit.cfg] るには、関連するファイルでフィールドを宣言する必要が [!DNL Decoding Instructions.cfg] あります。
+* **Adobe SC プロファイルの更新。** 変更点： [!DNL Exclude Hit.cfg] ファイルには、関連する [!DNL Decoding Instructions.cfg] ファイル。
 
    >[!NOTE]
    >
-   >Adobeの SC プロファイルにカスタマイズされた [!DNL Decoding Instructions.cfg] ファイルが含まれている場合は、カスタマイズしたファイルに [!DNL DelimitedDecoder] パラメーターを含める必要があります。
+   >Adobeの SC プロファイルに [!DNL Decoding Instructions.cfg] ファイルに、 [!DNL DelimitedDecoder] パラメーターをカスタマイズしたファイルに追加します。
 
    ```
    0 = DelimitedDecoder:

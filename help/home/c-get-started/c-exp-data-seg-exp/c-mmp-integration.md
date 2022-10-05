@@ -1,9 +1,9 @@
 ---
-description: Data Workbenchでは、ファイルを書き出して、統合Adobe Experience Cloudの一部としてプロファイルおよびオーディエンスの書き出しと統合できます。
+description: Data Workbenchを使用すると、統合されたAdobe Experience Cloudの一部として、ファイルとオーディエンスのエクスポートと統合するためのファイルを書き出すことができます。
 title: マスターマーケティングプロファイルエクスポート
 uuid: bae0f0c5-a452-4afd-9f2c-5f3ab69a12d2
 exl-id: 9fc89815-d31d-41a7-a0c0-de1e84b24baa
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 67%
@@ -12,13 +12,15 @@ ht-degree: 67%
 
 # マスターマーケティングプロファイルエクスポート{#master-marketing-profile-export}
 
-Data Workbenchでは、ファイルを書き出して、統合されたAdobe Experience Cloudの一部としてProfiles &amp; Audiencesと統合できます。
+{{eol}}
+
+Data Workbenchを使用すると、統合されたAdobe Experience Cloudの一部として、ファイルを書き出して Profiles &amp; Audiences と統合できます。
 
 <!-- <a id="section_731922BC8628479198A41EF3EA72F2FF"></a> -->
 
-プロファイルとExperience Cloudは、[!DNL Adobe Experience Cloud]のコアサービスである[オーディエンスIDサービス](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja)の一部です。 Profiles &amp; Audiencesのエクスポートを使用すると、すべての訪問者に割り当てられ、[Audience Manager](https://docs.adobe.com/content/help/ja-JP/experience-cloud/user-guides/home.html)で使用される一意のExperience CloudID(ECID)を使用して、Experience Cloud全体でオーディエンスを共有できます。 MMPとAdobe Targetの両方のエクスポートを生成するには、[!DNL ExportIntegration.exe]アプリケーション([!DNL E:\Server\Scripts])を使用します。
+プロファイルとオーディエンスは、 [Experience CloudID サービス](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=ja)、 [!DNL Adobe Experience Cloud]. プロファイルとオーディエンスのエクスポートを使用すると、すべての訪問者に割り当てられ、で使用される一意のExperience CloudID(ECID) を使用して、Experience Cloud全体でオーディエンスを共有できます [Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=ja). この [!DNL ExportIntegration.exe] アプリケーション ( [!DNL E:\Server\Scripts]) を使用して、MMP とAdobe Targetの両方のエクスポートを生成します。
 
-**プロファイルとオーディエンスを使用するためのFSUサーバーの設定**
+**プロファイルとオーディエンスを使用するための FSU サーバーの設定**
 
 1. FSU サーバーにアクセスします。
 1. MMPExport.cfg ファイルを開きます`Server/Admin/Export/MMPExport.cfg` を参照してください。
@@ -26,7 +28,7 @@ Data Workbenchでは、ファイルを書き出して、統合されたAdobe Exp
 
    >[!NOTE]
    >
-   >MMP/AAMの統合では、Amazonのs3バケットを利用してデータを転送します。
+   >MMP/AAMの統合は、データ転送にAmazonの s3 バケットに依存しています。
    >
    >
    >MMP（s3）転送に必要な s3 情報は Audience Manager チームから入手できます。
@@ -51,7 +53,7 @@ Data Workbenchでは、ファイルを書き出して、統合されたAdobe Exp
 
    >[!NOTE]
    >
-   >また、[!DNL MMPExport.cfg]ファイルを使用して、すべてのレコードを取得し、それらをセットに分割し、レコードのチャンクを作成できます。 これらのレコードチャンクは、その後 Amazon S3 にエクスポートされます。レコードのチャンクを作成するには、次の3つの必須パラメーターが必要です。[!DNL numRecordsPerChunk]、[!DNL numThreads]、および[!DNL maxRetriesOnSendFailure]。
+   >この [!DNL MMPExport.cfg]また、ファイルを使用して、すべてのレコードを取得し、セットに分割し、レコードのチャンクを作成できます。 これらのレコードチャンクは、その後 Amazon S3 にエクスポートされます。レコードのチャンクを作成するには、次の 3 つの必須パラメーターが必要です。 [!DNL numRecordsPerChunk], [!DNL numThreads]、および [!DNL maxRetriesOnSendFailure].
 
 **パラメーターの定義**
 
@@ -105,7 +107,7 @@ Data Workbenchでは、ファイルを書き出して、統合されたAdobe Exp
   </tr> 
   <tr> 
    <td colname="col1"> <i>numRecordsPerChunk</i> </td> 
-   <td colname="col2"> <p>チャンクのサイズをレコード数で指定します。 </p> <p>実装では、ユーザー指定の値を最小= 1000レコード&amp;nbsp;（～50 KBチャンク）&amp;nbsp；および最大= 50000レコード（～2.5 MBチャンク）にクリップします。&amp;nbsp；ユーザーがこの設定プロパティを指定しない場合は、デフォルト値の10000が使用されます。 </p> </td> 
+   <td colname="col2"> <p>チャンクのサイズをレコード数で指定します。 </p> <p>実装では、ユーザー指定の値を min = 1000 レコード&amp;nbsp;（～50 KB チャンク）&amp;nbsp；および max = 50000レコード（～2.5 MB チャンク）にクリップします。&amp;nbsp；ユーザーがこの設定プロパティを指定しない場合は、デフォルト値の10000が使用されます。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <i>numThreads</i> </td> 
@@ -120,7 +122,7 @@ Data Workbenchでは、ファイルを書き出して、統合されたAdobe Exp
 
 **クライアントからの MMP エクスポートの生成**
 
-1. クライアントから、ワークスペースを開き、**[!UICONTROL Tools]****[!UICONTROL Detail Table]**&#x200B;を右クリックします。
+1. クライアントから、ワークスペースを開き、右クリックします。 **[!UICONTROL Tools]**> **[!UICONTROL Detail Table]**.
 1. **レベル**&#x200B;を追加します。
 1. ヘッダーを右クリックし、「**属性を追加**」を選択します。
 1. ヘッダーを右クリックし、「**新しいマスターマーケティングプロファイルエクスポート**」を選択します。 ![](assets/mmp_mmp_export.png)
@@ -135,7 +137,7 @@ Data Workbenchでは、ファイルを書き出して、統合されたAdobe Exp
 1. これらのフィールドに入力したら、エクスポートのヘッダーを右クリックし、「User\.export」として「**保存**」を選択して、エクスポートを保存できます。
 1. **管理者**／**プロファイルマネージャー**&#x200B;を開き、エクスポートをプロファイルに保存します。
 
-   すべてのデータを正しく入力している場合は、FSU にエクスポートファイル（[!DNL Server/Exports]）が生成され、さらに、[!DNL MMPExport.cfg] 内の情報を使用して、AWS にエクスポートが転送されます。このログは[!DNL Server/Trace/]に記録されています。 例： [!DNL MMP-102014-133651- `<Segment Export Name>` .log]
+   すべてのデータを正しく入力している場合は、FSU にエクスポートファイル（[!DNL Server/Exports]）が生成され、さらに、[!DNL MMPExport.cfg] 内の情報を使用して、AWS にエクスポートが転送されます。このログは、 [!DNL Server/Trace/]. 例： [!DNL MMP-102014-133651- `<Segment Export Name>` .log]
 
 ```
 Query = SegmentExportQuery: 
@@ -168,4 +170,4 @@ Time Limit (sec) = double: 1800
 | 設定の詳細 | 説明 |
 |---|---|
 | MMP Segment ID | 必須。これは、Audience Manager で最初に定義した識別子です。 |
-| MMP Visitor ID Field | ECIDをマッピングします。 |
+| MMP Visitor ID Field | ECID をマッピングします。 |

@@ -3,7 +3,7 @@ description: プロファイル接続の削除
 title: プロファイル接続の削除
 uuid: 47a169f3-2843-4f9e-9ca9-4596491ba07a
 exl-id: 312ace0c-71ea-4216-98e8-0e99bb4f83bd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 18%
@@ -12,8 +12,10 @@ ht-degree: 18%
 
 # プロファイル接続の削除{#removing-a-profile-connection}
 
-1. 行の末尾の&#x200B;**[!UICONTROL X]**&#x200B;をクリックして、プロファイルへの接続を削除します。
-1. プロファイル接続を削除するかどうかを確認するプロンプトが表示されます。 **[!UICONTROL Yes]**&#x200B;を選択して、プロファイル接続を削除します。
+{{eol}}
+
+1. 次をクリック： **[!UICONTROL X]** をクリックして、プロファイルへの接続を削除します。
+1. プロファイル接続を削除するかどうかを尋ねるプロンプトが表示されます。 選択 **[!UICONTROL Yes]** をクリックして、プロファイル接続を削除します。
 
    ![](assets/delete_connection.png)
 

@@ -3,7 +3,7 @@ description: 変換機能（Transform）は、ログソースデータを他の�
 title: 変換機能について
 uuid: f797f283-025b-4fb5-a110-84a9483dccaa
 exl-id: db5d6329-407d-43f3-92fc-1b40f7289916
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 79%
@@ -12,13 +12,15 @@ ht-degree: 79%
 
 # 変換機能について{#about-transformation-functionality}
 
+{{eol}}
+
 変換機能（Transform）は、ログソースデータを他のアプリケーションで使用できるようエクスポートすることを目的に、Data Workbench サーバーコンピューター上で実行されます。
 
-[!DNL Transform] では、ファ [!DNL .vsl] イル、ログファイル、XMLファイル、ODBCデータを読み取り、DataWarehouse読み込みルーチン、監査機関、またはその他のターゲットで使用できるファイル、テキストファイ [!DNL .vsl] ル、または区切り文字付きテキストファイルとしてデータを書き出すことができます。データの抽出と変換は、常時実行できるほか、スケジュールに基づいて実行することもできます。
+[!DNL Transform] 読み取り可能 [!DNL .vsl] ファイル、ログファイル、XML ファイル、ODBC データを書き出し、 [!DNL .vsl] DataWarehouse読み込みルーチン、監査機関、その他のターゲットで使用できるファイル、テキストファイル、または区切り文字付きテキストファイル。 データの抽出と変換は、常時実行できるほか、スケジュールに基づいて実行することもできます。
 
 >[!NOTE]
 >
->通常、[!DNL Transform]はData WorkbenchサーバーのFSUに設定されます。 ただし、実際の導入条件によっては、Data Workbench サーバーの DPU に対して設定することが必要になる場合もあります。詳しくは、アドビにお問い合わせください。
+>通常、 [!DNL Transform] は、Data Workbench サーバーの FSU に対して設定されます。 ただし、実際の導入条件によっては、Data Workbench サーバーの DPU に対して設定することが必要になる場合もあります。詳しくは、アドビにお問い合わせください。
 
 [!DNL Transform] のメモリ使用量に関する情報は、「詳細なステータス」インターフェイスで確認できます。詳しくは、『*Data Workbench ユーザーガイド*』の「管理インターフェイス」という章を参照してください。
 

@@ -3,7 +3,7 @@ description: Data Workbenchクライアントユーザーインターフェイ�
 title: クイックリファレンス
 uuid: d4563f21-4a0c-4ba5-844a-700b03a7f56e
 exl-id: 59ac0cc7-e7c7-4ce1-889a-9a65a0faa853
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 88%
@@ -12,11 +12,13 @@ ht-degree: 88%
 
 # クイックリファレンス{#quick-reference}
 
+{{eol}}
+
 Data Workbenchクライアントユーザーインターフェイスの操作とショートカットキーの一覧を表示します。
 
 「[キーボードショートカット](../../../home/c-get-started/c-vis/c-qk-ref.md#section-0597bf92e1af4bcf9f1c8ceffe52649a)」も参照してください。
 
-## Data Workbench・クライアントのアクション{#section-dfea35452c2e4f0b92229a4974bc24fa}
+## Data Workbench・クライアントのアクション {#section-dfea35452c2e4f0b92229a4974bc24fa}
 
 クライアントユーザーインターフェイス内で作業を実行する時に、以下のアクションを使用します。
 
@@ -36,7 +38,7 @@ Data Workbenchクライアントユーザーインターフェイスの操作と
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> ワークスペースの左上隅にあるData Workbenchロゴをクリックします。 </td> 
+   <td colname="col1"> ワークスペースの左上隅にあるData Workbenchロゴをクリックします </td> 
    <td colname="col2"> <p>変更を保存 </p> </td> 
   </tr> 
   <tr> 
@@ -65,7 +67,7 @@ Data Workbenchクライアントユーザーインターフェイスの操作と
 | Ctrl キーを押しながら選択 | 選択範囲にテキストを追加 |
 | Shift キーを押しながら選択 | 選択範囲からテキストを削除 |
 
-## Data Workbench・クライアントのキーボード・ショートカット{#section-0597bf92e1af4bcf9f1c8ceffe52649a}
+## Data Workbench・クライアントのキーボード・ショートカット {#section-0597bf92e1af4bcf9f1c8ceffe52649a}
 
 ワークスペースと設定ファイルには以下のショートカットキーを使用します。
 
@@ -91,7 +93,7 @@ Data Workbenchクライアントユーザーインターフェイスの操作と
 | アクション | 結果 |
 |---|---|
 | Ctrl + X | テキストを切り取り |
-| Ctrl + Z | 元に戻す 以前に入力した文字のアクション |
+| Ctrl + Z | 元に戻す 以前に入力した文字に対するアクション |
 | Ctrl + Shift + Z | 入力した文字に対してアクションをやり直し |
 | Ctrl + A | すべて選択 |
 
@@ -106,7 +108,7 @@ Data Workbenchクライアントユーザーインターフェイスの操作と
  <tbody> 
   <tr> 
    <td colname="col1"><b>フルスクリーンビュー</b>。ワークスペースが画面を埋め、新しいサイズに再適合されます。 </td> 
-   <td colname="col2"><b>Ctrl プラス（+）</b> <p>Ctrl + +（キーパッド） </p> <p><i>または</i> </p> <p>Ctrl + Shift + +（キーボード） </p> </td> 
+   <td colname="col2"><b>Ctrl プラス（+）</b> <p>Ctrl + +（キーパッド） </p> <p><i> または</i> </p> <p>Ctrl + Shift + +（キーボード） </p> </td> 
    <td colname="col3"> 
     <ul id="ul_C7C731B894D946D9916F50806F015857"> 
      <li id="li_452B4C119B1A40038A408CFFC53653A9">ファイル／ページサイズ／画面にフィット <p><i>を選択し、次に以下を選択</i> </p> </li> 

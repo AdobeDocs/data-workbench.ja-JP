@@ -1,9 +1,9 @@
 ---
-description: イベントデータ領域の監視とSensorデータのログディレクトリの変更に関する情報です。
+description: イベントデータ領域の監視と Sensor データのログディレクトリの変更に関する情報です。
 title: イベントデータ容量の監視
 uuid: e514e8fb-e735-4003-ab21-17470c73af37
 exl-id: 1016d00f-e0a0-47f1-a600-528c4811fcf6
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 6%
@@ -12,32 +12,34 @@ ht-degree: 6%
 
 # イベントデータ容量の監視{#monitoring-event-data-space}
 
-イベントデータ領域の監視とSensorデータのログディレクトリの変更に関する情報です。
+{{eol}}
 
-**推奨頻度：** 5 ～ 10分ごと
+イベントデータ領域の監視と Sensor データのログディレクトリの変更に関する情報です。
 
-[!DNL Insight Server] では、設定に応じ [!DNL Sensor] て、データ処理ユニットまたはファイルサーバーユニットで1日に1つのログファイルを保存します。ログファイルのサイズとログファイルに必要なデータストレージ領域の量は、ログに記録されるWebサイトの数やWebサーバーが1秒あたりに受け取る要求の数など、多くの変数によって異なります。
+**推奨頻度：** 5 ～ 10 分ごと
 
-[!DNL Insight Server] （または[!DNL Insight Server]クラスタ）の一般的なインストールでは、複数のテラバイトのデータを格納できます(実装では、[!DNL Insight Server]マシンのAdobeで推奨されるハードウェアが使用される場合)。
+[!DNL Insight Server] 次のログファイルを 1 つ格納 [!DNL Sensor] 設定に応じて、データ処理ユニットまたはファイルサーバーユニットの 1 日あたり。 ログファイルのサイズとログファイルに必要なデータストレージ容量は、ログに記録される Web サイトの数や Web サーバーが 1 秒あたりに受け取る要求の数など、多くの変数によって異なります。
 
-通常、すべてのログデータは[!DNL Insight Server]マシンに残ります。 マシン上で利用可能なデータストレージ領域を増やす必要が生じた場合は、最新のログファイル以外のすべてのログファイルを別のマシンまたはデータストレージメディア（zipドライブ、テープなど）に移動できます。 データを移動する際に[!DNL Insight Server]を停止する必要はなく、[!DNL Insight Server]に接続され、連続データを使用する[!DNL Insights]で使用できる機能には影響しません。 分析データセットを処理または再処理しない場合、以前のすべてのデータへのアクセス権が維持され、新しいデータは引き続き[!DNL Insight]で使用できます。 分析データセットを処理または再処理する場合は、処理が完了するまでデータにアクセスできません。
+の一般的なインストール [!DNL Insight Server] ( または [!DNL Insight Server] （クラスタ）は、実装でAdobeが推奨するハードウェアを使用していると仮定して、複数のテラバイトのデータを保存できます [!DNL Insight Server] マシンです。
 
-デフォルトでは、[!DNL Sensor]によって生成され[!DNL Insight Server]に送信されるイベントデータは、[!DNL Insight Server]インストールディレクトリ内の[!DNL Logs]フォルダーに保存されます。 通信設定ファイル[!DNL Communications.cfg]は、[!DNL Insight Server]が読み取るイベントデータログファイルの場所を指定します。
+通常、すべてのログデータは [!DNL Insight Server] マシン。 マシン上でより多くのデータストレージ領域を使用可能にする必要が生じた場合は、最新のログファイル以外のすべてのログファイルを別のマシンまたはデータストレージメディア（zip ドライブ、テープなど）に移動できます。 データの移動を停止する必要はありません [!DNL Insight Server]また、 [!DNL Insights] それが [!DNL Insight Server] 継続的なデータを扱う 分析データセットを処理または再処理しない場合、以前のすべてのデータへのアクセス権が保持され、新しいデータは引き続き [!DNL Insight]. 分析データセットを処理または再処理する場合は、処理が完了するまでデータにアクセスできません。
 
-**データのログディレクトリを変更する [!DNL Sensor] には**
+デフォルトでは、 [!DNL Sensor] に送信され、 [!DNL Insight Server] が [!DNL Logs] フォルダー内の [!DNL Insight Server] インストールディレクトリ。 通信設定ファイル [!DNL Communications.cfg]は、が読み取るイベントデータログファイルの場所を指定します。 [!DNL Insight Server].
 
-1. [!DNL Insight]の「[!DNL Admin] > [!DNL Dataset and Profile]」タブで、**[!UICONTROL Servers Manager]**&#x200B;サムネールをクリックして「サーバーマネージャー」ワークスペースを開きます。
-1. 設定する[!DNL Insight Server]のアイコンを右クリックし、「**[!UICONTROL Server Files]**」をクリックします。
-1. [!DNL Server Files Manager]で、**[!UICONTROL Components]**&#x200B;をクリックして内容を表示します。 [!DNL Communications.cfg] ファイルは、このディレクトリ内に格納されています。
-1. *[!DNL Communications.cfg]のサーバー名*&#x200B;列のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 [!DNL Communications.cfg]の[!DNL Temp]列にチェックマークが表示されます。
-1. [!DNL Temp]列に新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]** / **[!UICONTROL in Insight]**&#x200B;をクリックします。
-1. [!DNL Communications.cfg]ウィンドウで、「**[!UICONTROL component]**」をクリックして内容を表示します。
-1. [!DNL Communications.cfg]ウィンドウで、「**[!UICONTROL Servers]**」をクリックして内容を表示します。 複数のタイプのサーバーが表示される場合があります。ファイル・サーバ、ログ・サーバ、Initサーバ、ステータス・サーバ、送信サーバ、レプリケート・サーバ。
-1. [!DNL Sensor]が処理するログファイルを書き込むLoggingServer （[!DNL Insight Server]によって処理されるログファイル）を探し、その番号をクリックしてメニューを表示します。
+**のログディレクトリを変更するには [!DNL Sensor] データ**
+
+1. In [!DNL Insight]、 [!DNL Admin] > [!DNL Dataset and Profile] タブで、 **[!UICONTROL Servers Manager]** サムネールを使用して、サーバーマネージャーワークスペースを開きます。
+1. 次のアイコンを右クリック： [!DNL Insight Server] を設定して、 **[!UICONTROL Server Files]**.
+1. 内 [!DNL Server Files Manager]をクリックし、 **[!UICONTROL Components]** をクリックして、その内容を表示します。 [!DNL Communications.cfg] ファイルは、このディレクトリ内に格納されています。
+1. チェックマーク ( *サーバー名* 列 [!DNL Communications.cfg] をクリックし、 **[!UICONTROL Make Local]**. チェックマークが [!DNL Temp] 列 [!DNL Communications.cfg].
+1. 新しく作成された、 [!DNL Temp] 列とクリック **[!UICONTROL Open]** > **[!UICONTROL in Insight]**.
+1. 内 [!DNL Communications.cfg] ウィンドウ、クリック **[!UICONTROL component]** をクリックして、その内容を表示します。
+1. 内 [!DNL Communications.cfg] ウィンドウ、クリック **[!UICONTROL Servers]** をクリックして、その内容を表示します。 複数のタイプのサーバーが表示される場合があります。ファイルサーバー、ログサーバー、Init サーバー、ステータスサーバー、送信サーバー、またはレプリケートサーバー。
+1. LoggingServer ( ) を探します。ここで、 [!DNL Sensor] は処理するログファイルを [!DNL Insight Server]をクリックし、その番号をクリックしてメニューを表示します。
 
    ![ステップ情報](assets/cfg_communications_examplevalues_logging.png)
 
-   デフォルトのログディレクトリは、[!DNL Insight Server]インストールディレクトリ内の[!DNL Logs]フォルダーです。
+   デフォルトのログディレクトリは、 [!DNL Logs] フォルダー内の [!DNL Insight Server] インストールディレクトリ。
 
 1. Log Directory パラメーターを編集して、ログファイルの適切な場所を反映します。
 
@@ -47,18 +49,18 @@ ht-degree: 6%
 
    ![](assets/cfg_communicates_logslocalpath_egvalues.png)
 
-   複数のFileServerが「サーバー」ノードの下に表示される場合があるので、変更するLogs\のローカルパスを持つサーバーを見つけるには、それらの内容を（[!DNL Servers]リスト内の数字をクリックして）表示する必要があります。
+   複数の FileServers が [ サーバ ] ノードの下に表示される場合があるので、その多くの FileServer の内容を ( [!DNL Servers] リスト ) をクリックして、変更対象の Logs\のローカルパスを持つサーバを検索します。
 
-1. [!DNL .vsl]ファイルの目的の場所を反映するようにローカルパスを編集します。
+1. ローカルパスを編集して、 [!DNL .vsl] ファイル。
 
    >[!NOTE]
    >
-   >FileServerの他のパラメータは変更しないでください。
+   >FileServer の他のパラメータは変更しないでください。
 
-   ログファイルの場所は[!DNL Communications.cfg]ファイル内で変更されていますが、FileServerのURIとして/Logs/を指定することで、これらのファイルを[!DNL Server Files Manager]のLogsディレクトリにマッピングできます。
+   ただし、 [!DNL Communications.cfg] ファイルにマッピングする場合、これらのファイルを [!DNL Server Files Manager] /Logs/を FileServer の URI として指定します。
 
-1. 次の操作を行って、変更をサーバーに保存します。
+1. 次の手順を実行して、変更をサーバーに保存します。
 
-   1. ウィンドウ上部の&#x200B;**[!UICONTROL (modified)]**&#x200B;を右クリックし、「**[!UICONTROL Save]**」をクリックします。
+   1. 右クリック **[!UICONTROL (modified)]** ウィンドウの上部にあるをクリックし、 **[!UICONTROL Save]**.
 
-   1. [!DNL Server Files Manager]で、[!DNL Temp]列のファイルのチェックマークを右クリックし、**[!UICONTROL Save to]** / *&lt;**[!UICONTROL server name]***&#x200B;を選択します。
+   1. 内 [!DNL Server Files Manager]をクリックし、 [!DNL Temp] 列と選択 **[!UICONTROL Save to]** > *&lt;**[!UICONTROL server name]**>*.

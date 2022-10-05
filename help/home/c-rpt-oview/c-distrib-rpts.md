@@ -1,9 +1,9 @@
 ---
-description: レポートが生成されると、ReportはそのReport.cfgファイル内の設定に基づいて、セット内のレポートを配信します。
+description: レポートが生成されると、Report.cfg ファイル内の設定に基づいて、セット内のレポートが配信されます。
 title: レポートの配信
 uuid: 0e993635-1aa8-4314-91aa-b4f8f002fa09
 exl-id: ead1d8ef-7319-4307-9155-0101a9c1959d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
@@ -12,20 +12,22 @@ ht-degree: 1%
 
 # レポートの配信{#distributing-reports}
 
-レポートが生成されると、ReportはそのReport.cfgファイル内の設定に基づいて、セット内のレポートを配信します。
+{{eol}}
 
-[!DNL Report] では、次の方法を使用して、セット内のレポートを配布できます。
+レポートが生成されると、Report.cfg ファイル内の設定に基づいて、セット内のレポートが配信されます。
 
-* **電子メール：** レポートをExcelファイル、ファイル、またはサムネールとして電子メール（インラインまたは添付ファイル）で配布するに [!DNL .png] は、レポートセットのファイルで「メールレポート」パラメーターを指定 [!DNL Report.cfg] します。セット内のすべてのレポートは、指定した受信者に1件のメッセージで電子メールで送信されます。
+[!DNL Report] では、次の方法を使用して、レポートをセット内で配布できます。
 
-* **共有ディレクトリ：** レポートをExcelファイル、ファイルまたはサムネールとして共有ディレクトリに配布するに [!DNL .png] は、レポートセットのファイルの出力ルートパラメーターにディレクトリを指定 [!DNL Report.cfg] します。
+* **電子メール：** レポートを Excel ファイルとして配布するには [!DNL .png] ファイルまたは電子メール経由のサムネール（インラインまたは添付ファイル）で、レポートセットの [!DNL Report.cfg] ファイル。 セット内のすべてのレポートは、指定した受信者宛てに 1 つのメッセージで電子メールで送信されます。
 
-* **Reporting Portal:** レポートポータルを使用すると、Webブラウザーでレポートを表示できます。Adobeの[!DNL Report Portal]には、Excelまたは[!DNL .png]ファイルとして生成されたレポートが表示されますが、サムネール([!DNL .jpg])として生成されたレポートは表示されません。 レポートをポータルに配布するには、そのポータルで使用するWebサーバーのドキュメントルートを、レポートセットの[!DNL Report.cfg]ファイルの「出力ルート」パラメーターに指定します。 [!DNL Report Portal]のインストールと使用について詳しくは、「[Report Portalの操作](../../home/c-rpt-oview/c-rpt-portal/c-rpt-portal.md#concept-f692210cad494c00865dbf325eb5ed35)」を参照してください。
+* **共有ディレクトリ：** レポートを Excel ファイルとして配布するには [!DNL .png] ファイルまたは共有ディレクトリへのサムネールの場合は、レポートセットの [!DNL Report.cfg] ファイル。
+
+* **レポートポータル：** レポートポータルでは、Web ブラウザーを使用してレポートを表示できます。 Adobe [!DNL Report Portal] Excel または [!DNL .png] ファイルをサムネールとして生成するものではなく、サムネール ( [!DNL .jpg]) をクリックします。 レポートをポータルに配布するには、ポータルに使用する Web サーバーのドキュメントルートを、レポートセットの [!DNL Report.cfg] ファイル。 のインストールと使用に関する詳細 [!DNL Report Portal]を参照してください。 [Report Portal の操作](../../home/c-rpt-oview/c-rpt-portal/c-rpt-portal.md#concept-f692210cad494c00865dbf325eb5ed35).
 
 >[!NOTE]
 >
->[!DNL Report]で現在サポートされている出力を読み取るには、目的の形式でレポートを表示できるアプリケーションが必要です。 例えば、[!DNL .xlsx]ファイルを表示するには、Microsoft Excel 2007以降が必要です。
+>現在、がサポートしている出力を読み取るには [!DNL Report]を使用する場合は、目的の形式でレポートを表示できるアプリケーションが必要です。 例えば、次を表示するには： [!DNL .xlsx] ファイルには、Microsoft Excel 2007 以降が必要です。
 
-また、これらの生成オプションと配布オプションの組み合わせを使用することもできます。 例えば、[!DNL Report Types]パラメーターを設定してレポートセットをExcelおよび[!DNL .png]ファイルとして生成し、[!DNL Mail Report]および[!DNL Output Root]パラメーターを設定した場合、指定した出力ディレクトリ（ポータルで表示する場合もあります）に配信され、1通の電子メールで受信者に送信されます。
+また、これらの生成オプションと配布オプションの組み合わせを使用することもできます。 例えば、 [!DNL Report Types] Excel としてレポートセットを生成するためのパラメーターおよび [!DNL .png] ファイルを選択し、 [!DNL Mail Report]および [!DNL Output Root] パラメーターを指定すると、そのセット内のすべてのレポートが指定した出力ディレクトリ（ポータル内で表示される場合もあります）に配信され、受信者宛に 1 通の E メールで送信されます。
 
-レポートセットを設定する手順については、[レポートセットの操作](../../home/c-rpt-oview/c-work-rpt-sets/c-work-rpt-sets.md#concept-a5f078668e1245e684cb2a778c8803d5)を参照してください。 特定の[!DNL Report.cfg]パラメーターについて詳しくは、[Report.cfgのパラメーター](../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff)を参照してください。
+レポートセットを設定する手順については、 [レポートセットの操作](../../home/c-rpt-oview/c-work-rpt-sets/c-work-rpt-sets.md#concept-a5f078668e1245e684cb2a778c8803d5). 特定の [!DNL Report.cfg] パラメータ， 「 [Report.cfg のパラメーター](../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).

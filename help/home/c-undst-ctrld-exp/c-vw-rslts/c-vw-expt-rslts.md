@@ -1,10 +1,10 @@
 ---
-description: After you have added the new field to Log Processing.cfg and created the new Split transformation and extended dimension, you can view the new extended dimension that you created as soon as the Fast Input stage of data reprocessing has finished.
+description: 新しいフィールドを Log Processing.cfg に追加し、新しい Split 変換と拡張ディメンションを作成した後、データ再処理の Fast Input ステージが完了したら、作成した新しい拡張ディメンションを表示できます。
 solution: Analytics
 title: 実験結果の表示
 uuid: c0468cad-fb8d-4ecf-8912-bf80b44b0a65
 exl-id: cada693c-79cb-4f49-a2f0-6ff60425be1c
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 4%
@@ -12,6 +12,8 @@ ht-degree: 4%
 ---
 
 # 実験結果の表示{#viewing-the-experiment-results}
+
+{{eol}}
 
 新しいフィールドを Log Processing.cfg に追加し、新しい Split 変換と拡張ディメンションを作成した後、データ再処理の Fast Input ステージが完了したら、作成した新しい拡張ディメンションを表示できます。
 
@@ -21,7 +23,7 @@ ht-degree: 4%
 
 * の任意のワークスペース内 [!DNL Insight]をクリックし、作成した experiment ディメンションを含むテーブルを開きます。
 
-   The experiment dimension elements, which represent each experiment you are currently running and each group within each experiment, display with the current number of sessions for each group. 各グループには、次の形式で実験名に続くグループ名を付けます。
+   実験ディメンション要素は、現在実行中の各実験と、各実験内の各グループを表し、各グループの現在のセッション数が表示されます。 各グループには、次の形式で実験名に続くグループ名を付けます。
 
    *実験名。グループ名*
 
@@ -29,7 +31,7 @@ ht-degree: 4%
 
 次の表に、 [!DNL Transformation.cfg] そして各実験とそのグループ
 
-The New Homepage experiment is shown at the bottom of the table with its two groups: Control and index2.
+新しいホームページの実験は、表の下部に、次の 2 つのグループと共に表示されます。コントロールとインデックス 2
 
 ![](assets/controlledexpgrps.png)
 

@@ -3,7 +3,7 @@ description: CrossRows 変換は、他の変換と同様、ログソース内の
 title: CrossRows
 uuid: 5910c150-6bec-4d98-b116-9b382fd54d3c
 exl-id: 321f986e-44a9-454c-9311-0ae37a11a088
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1137'
 ht-degree: 98%
@@ -11,6 +11,8 @@ ht-degree: 98%
 ---
 
 # CrossRows{#crossrows}
+
+{{eol}}
 
 CrossRows 変換は、他の変換と同様、ログソース内のデータ行（ログエントリ）に対して適用されます。
 
@@ -20,7 +22,7 @@ CrossRows 変換は、他の変換と同様、ログソース内のデータ行�
 
 >[!NOTE]
 >
->[!DNL CrossRows] 変換が正しく動作するためには、ソースデータにおいて、データが時系列順に並んでおり、追跡 ID ごとにグループ化されている必要があります。したがって、[!DNL CrossRows]は、[!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイルで定義されている場合にのみ機能します。
+>[!DNL CrossRows] 変換が正しく動作するためには、ソースデータにおいて、データが時系列順に並んでおり、追跡 ID ごとにグループ化されている必要があります。したがって [!DNL CrossRows] は、 [!DNL Transformation.cfg] ファイル内または [!DNL Transformation Dataset Include] ファイル。
 
 以降、次の点を踏まえて、表内のパラメーターの説明をお読みください。
 
@@ -43,7 +45,7 @@ CrossRows 変換は、他の変換と同様、ログソース内のデータ行�
   </tr> 
   <tr> 
    <td colname="col1"> コメント </td> 
-   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
+   <td colname="col2"> （オプション）。変換についてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -63,7 +65,7 @@ CrossRows 変換は、他の変換と同様、ログソース内のデータ行�
   </tr> 
   <tr> 
    <td colname="col1"> キー </td> 
-   <td colname="col2"> <p>（オプション）キーとして使用するフィールドの名前。 </p> <p> キーを指定した場合、特定の出力行に使用される入力行が、出力行と同じ Key 値を持つ連続する行ブロックに限定されます。この制限は、<span class="wintitle">CrossRows</span> 変換に対する他のパラメーターによって入力行に設定されたすべての制限に加えて適用されます。 </p> <p> 例えば、Web データを扱っているとき、x-session-key フィールド（セッションごとの一意の値）をキーとした場合、変換の対象となる入力行は、出力行と同じ x-session-key 値を持つ行に限定されます。そのため、考慮されるのは、出力行と同じセッション期間に生じたページビューを表す入力行のみとなります。 </p> </td> 
+   <td colname="col2"> <p>（オプション）。キーとして使用するフィールドの名前。 </p> <p> キーを指定した場合、特定の出力行に使用される入力行が、出力行と同じ Key 値を持つ連続する行ブロックに限定されます。この制限は、<span class="wintitle">CrossRows</span> 変換に対する他のパラメーターによって入力行に設定されたすべての制限に加えて適用されます。 </p> <p> 例えば、Web データを扱っているとき、x-session-key フィールド（セッションごとの一意の値）をキーとした場合、変換の対象となる入力行は、出力行と同じ x-session-key 値を持つ行に限定されます。そのため、考慮されるのは、出力行と同じセッション期間に生じたページビューを表す入力行のみとなります。 </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -78,13 +80,13 @@ CrossRows 変換は、他の変換と同様、ログソース内のデータ行�
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Output </td> 
+   <td colname="col1"> 出力 </td> 
    <td colname="col2"> 出力フィールドの名前。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> Row Begin／Row End </td> 
-   <td colname="col2"> <p>（オプション）出力行を基準として入力行の範囲を指定します。例えば、Row Begin の値が「0」である場合、出力行より前にあるすべての行が除外されます。Row Begin の値が「1」である場合、その出力行も除外されます。代表的な範囲の例を次に示します。 
+   <td colname="col2"> <p>（オプション）。出力行を基準として入力行の範囲を指定します。例えば、Row Begin の値が「0」である場合、出力行より前にあるすべての行が除外されます。Row Begin の値が「1」である場合、その出力行も除外されます。代表的な範囲の例を次に示します。 
      <ul id="ul_B030F32A5146430BA50DD4FAB4A527B0"> 
       <li id="li_30DFB8C0265349C295943A1CB8077B86"> Begin 0：基準となる行とそのすべての後続行 </li> 
       <li id="li_9090C2E94E394351867BC5B78F27B41C"> Begin 1：すべての後続行 </li> 
@@ -97,7 +99,7 @@ CrossRows 変換は、他の変換と同様、ログソース内のデータ行�
   </tr> 
   <tr> 
    <td colname="col1"> Time Begin／Time End </td> 
-   <td colname="col2"> <p>（オプション）出力行の時刻を基準として時間の範囲を指定します。例えば、Time End を 30 分とした場合、出力行の発生後 30 分以内に生じたすべての行が対象となります。Time Begin を -30 分とした場合、出力行の発生前 30 分以内に生じたすべての行が対象となります。 </p> <p> 日、週、時間、分、ミリ秒（ms）、ティック（100 ns）、ナノ秒（ns）の各時間単位を利用できます。 </p> </td> 
+   <td colname="col2"> <p>（オプション）。出力行の時刻を基準として時間の範囲を指定します。例えば、Time End を 30 分とした場合、出力行の発生後 30 分以内に生じたすべての行が対象となります。Time Begin を -30 分とした場合、出力行の発生前 30 分以内に生じたすべての行が対象となります。 </p> <p> 日、週、時間、分、ミリ秒（ms）、ティック（100 ns）、ナノ秒（ns）の各時間単位を利用できます。 </p> </td> 
    <td colname="col3"> 全時間 </td> 
   </tr> 
  </tbody> 

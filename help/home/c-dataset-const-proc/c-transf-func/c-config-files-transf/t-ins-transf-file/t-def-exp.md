@@ -3,7 +3,7 @@ description: イベントデータを出力するための命令は、エクス�
 title: エクスポーターの定義
 uuid: 565d4482-6c25-407c-bda7-0d116180902a
 exl-id: 5de6266a-e959-414c-9512-5e9f4011881b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 90%
@@ -12,18 +12,20 @@ ht-degree: 90%
 
 # エクスポーターの定義{#defining-exporters}
 
+{{eol}}
+
 イベントデータを出力するための命令は、エクスポーターから与えられます。
 
-変換機能には、[!DNL .vsl]ファイル、ログファイル、XMLファイル、ODBCデータを[!DNL .vsl]ファイル、テキストファイル、区切り文字付きテキストファイルとしてエクスポートする、3種類のエクスポーターが用意されています。
+変換機能には、エクスポート用に 3 種類のエクスポーターが用意されています [!DNL .vsl] ファイル、ログファイル、XML ファイル、ODBC データ [!DNL .vsl] DataWarehouse読み込みルーチン、監査機関、その他のターゲットで使用できるファイル、テキストファイル、または区切り文字付きテキストファイル。
 
 >[!NOTE]
 >
->エクスポーターが正しく動作するには、ログソースが[ログ処理設定ファイル](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)の[ログソース](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea)で説明されている適切な要件を満たしている必要があります。
+>エクスポーターが正しく動作するには、ログソースが適切な要件を満たしている必要があります ( [ログソース](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea) セクション [ログ処理設定ファイル](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md).
 
 **エクスポーターを定義するには**
 
-1. data workbenchで[!DNL Transform.cfg]を開きます。 [Insight Transform.cfgファイルを編集するには](../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md#task-857fc535ccdb4c39b763179efa4b0f13)を参照してください。
-1. **[!UICONTROL Exporters]**&#x200B;を右クリックし、**[!UICONTROL Add New]**&#x200B;をクリックします。
+1. 開く [!DNL Transform.cfg] （data workbench の） 詳しくは、 [Insight Transform.cfg ファイルを編集するには](../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md#task-857fc535ccdb4c39b763179efa4b0f13).
+1. 右クリック **[!UICONTROL Exporters]**&#x200B;を選択し、「 **[!UICONTROL Add New]**.
 1. 次のいずれかのオプションを選択します。
 
    * **[!UICONTROL ExportTextFile]**
@@ -32,7 +34,7 @@ ht-degree: 90%
 
    >[!NOTE]
    >
-   >[!DNL ExportVSLFile]オプションの場合、入力ファイル内のすべての拡張フィールドと、cs(*header*)形式のすべてのユーザー定義フィールドが常にVSL出力ファイルに書き込まれます。 既存の拡張フィールドを上書きした場合、出力ファイルに新しい値が書き込まれます。そのフィールドがブランクであったとしても同様です。
+   >の [!DNL ExportVSLFile] オプション、入力ファイル内のすべての拡張フィールド、および cs(*ヘッダー*) は常にVSL出力ファイルに書き込まれます。 既存の拡張フィールドを上書きした場合、出力ファイルに新しい値が書き込まれます。そのフィールドがブランクであったとしても同様です。
 
 1. 次の表を参考にして、設定ファイルの Exporters パラメーターを編集します。
 
@@ -54,19 +56,19 @@ ht-degree: 90%
       </tr> 
       <tr> 
       <td colname="col1"> 区切り </td> 
-      <td colname="col2"> <p>（オプション）<span class="wintitle">ExportDelimitedTextFile</span> の場合のみ。出力ファイル内のフィールドの区切りに使用する文字。 </p> <p> データの値に含まれている区切り文字はエスケープできません。そのため、コンマを区切り文字として使用することは、できるだけ避けてください。 </p> <p> Delimiter パラメーター内で Ctrl キーを押しながら右クリックすると、<span class="wintitle">挿入</span>メニューが表示されます。このメニューには、区切り文字としてよく使用される特殊文字が一覧表示されます。 </p> </td> 
+      <td colname="col2"> <p>（オプション）。<span class="wintitle">ExportDelimitedTextFile</span> の場合のみ。出力ファイル内のフィールドの区切りに使用する文字。 </p> <p> データの値に含まれている区切り文字はエスケープできません。そのため、コンマを区切り文字として使用することは、できるだけ避けてください。 </p> <p> Delimiter パラメーター内で Ctrl キーを押しながら右クリックすると、<span class="wintitle">挿入</span>メニューが表示されます。このメニューには、区切り文字としてよく使用される特殊文字が一覧表示されます。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> Line Separator </td> 
-      <td colname="col2">（オプション）<span class="wintitle">ExportDelimitedTextFile</span> の場合のみ。出力ファイル内の行の区切りに使用する文字。デフォルト値は [CR] [LF] です。 </td> 
+      <td colname="col2">（オプション）。<span class="wintitle">ExportDelimitedTextFile</span> の場合のみ。出力ファイル内の行の区切りに使用する文字。デフォルト値は [CR] [LF] です。 </td> 
       </tr> 
       <tr> 
       <td colname="col1"> 名前 </td> 
-      <td colname="col2"> <p>（オプション）エクスポーターの識別子。「<span class="wintitle">詳細なステータス</span>」インターフェイスにはこの名前が表示されます。 </p> <p> 「<span class="wintitle">詳細なステータス</span>」インターフェイスについて詳しくは、『<i>Data Workbench ユーザーガイド</i>』を参照してください。 </p> </td> 
+      <td colname="col2"> <p>（オプション）。エクスポーターの識別子。「<span class="wintitle">詳細なステータス</span>」インターフェイスにはこの名前が表示されます。 </p> <p> 「<span class="wintitle">詳細なステータス</span>」インターフェイスについて詳しくは、『<i>Data Workbench ユーザーガイド</i>』を参照してください。 </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> コメント </td> 
-      <td colname="col2"> （オプション）エクスポーターについてのメモ。 </td> 
+      <td colname="col2"> （オプション）。エクスポーターについてのメモ。 </td> 
       </tr> 
       <tr> 
       <td colname="col1"> Output Path </td> 
@@ -74,7 +76,7 @@ ht-degree: 90%
       </tr> 
       <tr> 
       <td colname="col1"> File Rotation Period </td> 
-      <td colname="col2"> <p>（オプション）出力ファイルにデータをエクスポートする頻度。それぞれの出力ファイルには、特定の期間（ローテーション期間）に関連したデータが含まれます。すべての時刻計算は GMT で行われます。つまり、1 日は午前 0 時 GMT に始まり、翌日の午前 0 時 GMT に終わります。ファイルに書き込まれたデータが、現地時刻に変換済みのフィールドを含んでいたとしても同様です。 </p> <p> 選択できる値は次のとおりです。 </p> 
+      <td colname="col2"> <p>（オプション）。出力ファイルにデータをエクスポートする頻度。それぞれの出力ファイルには、特定の期間（ローテーション期間）に関連したデータが含まれます。すべての時刻計算は GMT で行われます。つまり、1 日は午前 0 時 GMT に始まり、翌日の午前 0 時 GMT に終わります。ファイルに書き込まれたデータが、現地時刻に変換済みのフィールドを含んでいたとしても同様です。 </p> <p> 選択できる値は次のとおりです。 </p> 
       <ul id="ul_64F56D093E2E4D07ACB7D7921F4E6FA1"> 
        <li id="li_E4985C7F56E443049AFF57B0270032D6"> YEAR：1 年分のデータが各ファイルに保存されます。 </li> 
        <li id="li_42E59BB7A5704C85A6079ED9715C44BC"> MONTH：1 か月分のデータが各ファイルに保存されます。それぞれの月には、1（1 月）～ 12（12 月）の番号が付けられています。 </li> 
@@ -84,12 +86,12 @@ ht-degree: 90%
        <li id="li_EE8CF71BA12149F49D4B7F7108262CD0"> NONE：ファイルの回転は実施されません。すべてのデータが同じファイル（または他のパラメーターの設定で指定された一連のファイル）に書き込まれます。詳しくは、この表の「<span class="wintitle">File Name Format</span>」パラメーターを参照してください。 </li> 
       </ul> <p>ファイルのローテーション期間のデフォルトは DAY です。 </p> 
       <ul id="ul_0F3BC98275634F759E5022FF2C19715E"> 
-       <li id="li_24DC4D144DA94ED0B7B50E8BB39DB8E3"> ファイルの回転を NONE に設定するのは、<span class="wintitle">オフラインモード</span>で作業するときだけにしてください。<a href="../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md#task-857fc535ccdb4c39b763179efa4b0f13"> Offline Mode</a>パラメーターの説明を参照してください。 </li> 
+       <li id="li_24DC4D144DA94ED0B7B50E8BB39DB8E3"> ファイルの回転を NONE に設定するのは、<span class="wintitle">オフラインモード</span>で作業するときだけにしてください。詳しくは、 <a href="../../../../../home/c-dataset-const-proc/c-transf-func/c-config-files-transf/t-ins-transf-file/t-ins-transf-file.md#task-857fc535ccdb4c39b763179efa4b0f13"> オフラインモード</a> パラメータの説明。 </li> 
       </ul> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> File Name Format </td> 
-      <td colname="col2"> <p>（オプション）出力ファイル名の形式。 </p> <p> 各ログエントリの保存先となるファイルには、ローテーション期間の開始時刻に由来した名前を付けることができます。さらに、ログエントリに含まれている行のフィールド値をファイル名の中で使用することもできます。フィールド名は、エスケープして（%<i>fieldname</i>% 形式で）ファイル名に埋め込みます。 </p> <p>ローテーション期間に関連した構成要素は、次のエスケープシーケンスを使用した書式設定文字列でファイル名に埋め込みます。 
+      <td colname="col2"> <p>（オプション）。出力ファイル名の形式。 </p> <p> 各ログエントリの保存先となるファイルには、ローテーション期間の開始時刻に由来した名前を付けることができます。さらに、ログエントリに含まれている行のフィールド値をファイル名の中で使用することもできます。フィールド名は、エスケープして（%<i>fieldname</i>% 形式で）ファイル名に埋め込みます。 </p> <p>ローテーション期間に関連した構成要素は、次のエスケープシーケンスを使用した書式設定文字列でファイル名に埋め込みます。 
       <ul id="ul_3C5C8C5DC9104070ABCFDD85F49BE596"> 
        <li id="li_B100AE13FEA84AB6A1138CF58440E29E"> %yyyy%（4 桁の年） </li> 
        <li id="li_0583970798494A1795B03866DC717FB9"> %yy%（2 桁の年） </li> 
@@ -108,7 +110,7 @@ ht-degree: 90%
       </tr> 
       <tr> 
       <td colname="col1"> Execute at Rollover </td> 
-      <td colname="col2"> <p>（オプション）それぞれのファイルの最終処理時に外部（Windows）コマンドを実行できます。コマンドラインは、最終的なファイル名から得られます。その際、次のエスケープシーケンスがこのパラメーターに代入されます。 </p> 
+      <td colname="col2"> <p>（オプション）。それぞれのファイルの最終処理時に外部（Windows）コマンドを実行できます。コマンドラインは、最終的なファイル名から得られます。その際、次のエスケープシーケンスがこのパラメーターに代入されます。 </p> 
       <ul id="ul_5E16832BDBEA4757A2C02DE4B019A122"> 
        <li id="li_6A74D069353E4FE781657BF492675220"> %dir%：最終的なファイル名のディレクトリ部分（末尾のバックスラッシュを含む）。 </li> 
        <li id="li_2CF7232553C348089B1395BBB0BBD6AE"> %file%：最終的なファイルの名前（ディレクトリと拡張子を除く）。 </li> 
@@ -118,11 +120,11 @@ ht-degree: 90%
       </tr> 
       <tr> 
       <td colname="col1"> Memory Limit </td> 
-      <td colname="col2"> <p>（オプション）エクスポーターの出力をバッファリングする際に使用されるメモリ量（バイト）。デフォルト値は 10,000,000 バイトです。 </p> <p> <p>注意：多数の出力ファイルを同時に開く場合は、この値を増やしてください。ただし、他のシステムコンポーネントに必要な空きメモリ量が減る可能性があります。一方、この値を小さくすると、エクスポート処理のパフォーマンスは低下する可能性があります。不明な点はアドビにお問い合わせください。 </p> </p> </td> 
+      <td colname="col2"> <p>（オプション）。エクスポーターの出力をバッファリングする際に使用されるメモリ量（バイト）。デフォルト値は 10,000,000 バイトです。 </p> <p> <p>注意：多数の出力ファイルを同時に開く場合は、この値を増やしてください。ただし、他のシステムコンポーネントに必要な空きメモリ量が減る可能性があります。一方、この値を小さくすると、エクスポート処理のパフォーマンスは低下する可能性があります。不明な点はアドビにお問い合わせください。 </p> </p> </td> 
       </tr> 
       <tr> 
       <td colname="col1"> Open Files Limit </td> 
-      <td colname="col2"> <p>（オプション）エクスポーターからの出力時に同時に開くことができるファイルの最大数。この数を超えると、イベントログにエラーが記録され、Data Workbench サーバーの実行が停止されます。デフォルト値は 1000 です。 </p> </td> 
+      <td colname="col2"> <p>（オプション）。エクスポーターからの出力時に同時に開くことができるファイルの最大数。この数を超えると、イベントログにエラーが記録され、Data Workbench サーバーの実行が停止されます。デフォルト値は 1000 です。 </p> </td> 
       </tr> 
     </tbody> 
    </table>

@@ -1,14 +1,18 @@
 ---
 description: ワークスペースと設定ファイルには以下のショートカットキーを使用します。
-title: Data Workbenchクライアントのキーボードショートカット
+title: Data Workbench クライアントのキーボードショートカット
 uuid: 134bcf04-767c-4170-b375-545862b2d333
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 77b02661-d084-4860-8d28-97fb37b82332
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 96%
 
 ---
 
+# Data Workbench クライアントのキーボードショートカット{#keyboard-shortcuts-for-the-data-workbench-client}
 
-# Keyboard shortcuts for the Data Workbench Client{#keyboard-shortcuts-for-the-data-workbench-client}
+{{eol}}
 
 ワークスペースと設定ファイルには以下のショートカットキーを使用します。
 
@@ -42,13 +46,13 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col2"><b>Ctrl プラス（+）</b> <p>Ctrl + +（キーパッド） </p> <p><i> または</i> </p> <p>Ctrl + Shift + +（キーボード） </p> </td> 
    <td colname="col3"> 
     <ul id="ul_C7C731B894D946D9916F50806F015857"> 
-     <li id="li_452B4C119B1A40038A408CFFC53653A9"><span class="uicontrol"> ファイル</span> / <span class="uicontrol"> ページサイズ</span> /画面 <span class="uicontrol"> にフィット</span> <p><i>を選択し、次に以下を選択</i> </p> </li> 
-     <li id="li_DE9B8B31B9F24A6AA68A1D0DB886B501"><span class="uicontrol"> ファイル</span> /ワークスペース <span class="uicontrol"> を再適合</span> </li> 
+     <li id="li_452B4C119B1A40038A408CFFC53653A9"><span class="uicontrol"> ファイル</span> &gt; <span class="uicontrol"> ページサイズ</span> &gt; <span class="uicontrol"> 塗りつぶし画面</span> <p><i>を選択し、次に以下を選択</i> </p> </li> 
+     <li id="li_DE9B8B31B9F24A6AA68A1D0DB886B501"><span class="uicontrol"> ファイル</span> &gt; <span class="uicontrol"> ワークスペースを再適合</span> </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p><b>ウィンドウビュー</b>。ワークスペースが標準のウィンドウビューで表示され、新しいサイズに再適合されます。 </p> </td> 
-   <td colname="col2"><b>Ctrl マイナス（-）</b> <p>Ctrl + - </p> </td> 
+   <td colname="col2"><b>Ctrl マイナス（-）</b> <p>Ctrl - </p> </td> 
    <td colname="col3"> 
     <ul id="ul_3474B9EFD69343C09BC84E485D896C28"> 
      <li id="li_820BAED76FF24A5785E6D89C5C692DD5">ファイル／ページサイズ／標準 <p><i>を選択し、次に以下を選択</i> </p> </li> 
@@ -74,7 +78,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ctrl + Z </p> </td> 
-   <td colname="col2"> <p>前に入力した文字に対してアクションを取り消し </p> </td> 
+   <td colname="col2"> <p>元に戻す 以前に入力した文字に対するアクション </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Ctrl + Shift + Z </p> </td> 

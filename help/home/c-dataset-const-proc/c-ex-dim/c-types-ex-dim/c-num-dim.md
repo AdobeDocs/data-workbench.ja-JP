@@ -3,7 +3,7 @@ description: 数値ディメンションは、順序付け可能な数値エレ�
 title: 数値ディメンション
 uuid: 19fab770-1535-41b2-bad1-811eba5f3575
 exl-id: 69a4dfa6-8402-4c2b-8b04-e6e1a0fd5ccb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 97%
@@ -11,6 +11,8 @@ ht-degree: 97%
 ---
 
 # 数値ディメンション{#numeric-dimensions}
+
+{{eol}}
 
 数値ディメンションは、順序付け可能な数値エレメントで構成され、その親の可算ディメンションとの間に 1 対多の関係を持ちます。
 
@@ -43,7 +45,7 @@ ht-degree: 97%
   </tr> 
   <tr> 
    <td colname="col1"> コメント </td> 
-   <td colname="col2"> （オプション）拡張ディメンションについてのメモ。 </td> 
+   <td colname="col2"> （オプション）。拡張ディメンションについてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -110,7 +112,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->[!DNL Operation]で値が得られない場合、または[!DNL Clip Values]がfalseで、値が[!DNL Min]と[!DNL Max]の間でない場合、数値ディメンションの要素は親ディメンションの要素に関連付けられません。
+>If [!DNL Operation] は、値を生み出さない、または [!DNL Clip Values] が false で、値が次の値の間でない [!DNL Min] および [!DNL Max]の場合、数値ディメンションの要素は親ディメンションの要素に関連付けられていません。
 
 次の例は、Web サイトトラフィックから収集されたイベントデータを使用する数値ディメンションの定義です。この数値ディメンション（Ad View Counter）は、特定のセッション期間中に訪問者が広告を閲覧した回数をカウントします。Web サーバーからの広告リソース要求がすべて、「ad=」を含んだ cs-uri-query で行われることを前提としています。この例で関心の対象となっているのは、フィールドの実際の値ではなく、訪問者に広告が表示された回数（COUNT）です。
 

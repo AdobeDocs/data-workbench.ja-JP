@@ -1,9 +1,9 @@
 ---
-description: ワークトップまたはテキストエディターを使用して既存のReport.cfgファイルを編集する手順です。
+description: ワークトップまたはテキストエディターを使用して既存の Report.cfg ファイルを編集する手順です。
 title: 既存の Report.cfg ファイルの編集
 uuid: 494b9eef-42f3-4ed9-8b43-f5c09af33f2e
 exl-id: 69038c0c-bb01-4e61-aad6-1be0bdec8a6d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '388'
 ht-degree: 3%
@@ -12,48 +12,47 @@ ht-degree: 3%
 
 # 既存の Report.cfg ファイルの編集{#editing-existing-report-cfg-files}
 
-ワークトップまたはテキストエディターを使用して既存のReport.cfgファイルを編集する手順です。
+{{eol}}
+
+ワークトップまたはテキストエディターを使用して既存の Report.cfg ファイルを編集する手順です。
 
 >[!NOTE]
 >
->* [!DNL Report.cfg]ファイルを編集するには、オンラインで作業する必要があります。 オンラインで作業するには、[!DNL Worktop]からタイトルバーを右クリックし、**[!UICONTROL Work Online]**&#x200B;をクリックします。
-   >
-   >
-* [!DNL Report.cfg]ファイルの&#x200B;**[!UICONTROL Allow Report Regeneration]**&#x200B;パラメーターが[!DNL True]に設定されている場合、そのファイルに変更を加えてサーバーに保存すると、 [!DNL Report]はそのセット内のレポートを自動的に再生成します。 レポートが再生成される場合でも、電子メールでレポートを再送信するわけではありません。 その手順については、[電子メールによるレポートの再送](../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/t-res-rpts-email.md#task-b0a21f1c925f4e5d82560581ae4cf607)を参照してください。
-
+>* 編集するには、オンラインで作業する必要があります [!DNL Report.cfg] ファイル。 オンラインで作業するには、 [!DNL Worktop]をクリックし、タイトルバーを右クリックして、 **[!UICONTROL Work Online]**.
+>
+>* この **[!UICONTROL Allow Report Regeneration]** パラメーター [!DNL Report.cfg] ファイルが [!DNL True]をクリックし、そのファイルに変更を加えて、そのファイルをサーバに保存し直す場合、 [!DNL Report] は、そのセット内のレポートを自動的に再生成します。 レポートが再生成されますが、電子メールでレポートを再送信することはありません。 その手順については、 [メールによるレポートの再送信](../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/t-res-rpts-email.md#task-b0a21f1c925f4e5d82560581ae4cf607).
 >
 
 
+既存の [!DNL Report.cfg] から [!DNL Worktop] またはテキストエディターを使用して読み込むこともできます。
 
-既存の[!DNL Report.cfg]は、[!DNL Worktop]から編集するか、テキストエディターを使用して編集できます。
+の編集 [!DNL Report.cfg] ファイルを [!DNL Reports] タブ [!DNL Worktop] では、ファイルに既に存在するパラメータ、ベクトル、およびベクトル項目のみを編集できます。 ファイルにパラメーターまたはベクトルを追加する必要がある場合は、メモ帳などのテキストエディターを使用して編集する必要があります。
 
-[!DNL Worktop]の「[!DNL Reports]」タブを使用して[!DNL Report.cfg]ファイルを編集すると、ファイル内に既に存在するパラメーター、ベクトル、ベクトル項目のみを編集できます。 ファイルにパラメーターまたはベクトルを追加する必要がある場合は、メモ帳などのテキストエディターを使用して編集する必要があります。
+* [ワークトップを使用して既存の Report.cfg を編集するには](../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md#section-7bce3bca006149c79be7678430f21945)
+* [テキストエディターを使用して既存の Report.cfg を編集するには](../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md#section-06f3d2a8d7f34bc2841180caf10a1eb7)
 
-* [ワークトップを使用して既存のReport.cfgを編集するには](../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md#section-7bce3bca006149c79be7678430f21945)
-* [テキストエディターを使用して既存のReport.cfgを編集するには](../../../../home/c-rpt-oview/c-work-rpt-sets/c-edit-ex-rpt-files/c-edit-ex-rpt-files.md#section-06f3d2a8d7f34bc2841180caf10a1eb7)
-
-## ワークトップ{#section-7bce3bca006149c79be7678430f21945}を使用して既存のReport.cfgを編集するには
+## ワークトップを使用して既存の Report.cfg を編集するには {#section-7bce3bca006149c79be7678430f21945}
 
 >[!NOTE]
 >
->[!DNL Worktop]から[!DNL Report.cfg]を編集するには、オンラインで作業する必要があります。
+>を編集するには、オンラインで作業する必要があります [!DNL Report.cfg] から [!DNL Worktop].
 
-1. Data Workbenchの「 [!DNL Reports] 」タブで、設定するレポートセットのサブフォルダー（タブまたはドロップダウンサブディレクトリ）を選択します。
-1. 「**[!UICONTROL Report.cfg]**」をクリックします。このレポートセットの[!DNL Report.cfg]のパラメーターが表示されます。
+1. Data Workbench で、 [!DNL Reports] 」タブで、設定するレポートセットのサブフォルダ（タブまたはドロップダウンサブディレクトリ）を選択します。
+1. 「**[!UICONTROL Report.cfg]**」をクリックします。のパラメーター [!DNL Report.cfg] このレポートセットが表示されます。
 
-1. 必要に応じて設定パラメーターを編集します。 これらのパラメーターについて詳しくは、[Report.cfgのパラメーター](../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff)を参照してください。
-1. パラメーターの上部にある&#x200B;**[!UICONTROL Report.cfg (modified)]**&#x200B;を右クリックし、**[!UICONTROL Save to]***&lt; **[!UICONTROL server location]***をクリックして、ファイルを保存します。
+1. 必要に応じて設定パラメーターを編集します。 これらのパラメーターについて詳しくは、 [Report.cfg のパラメーター](../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
+1. 右クリックしてファイルを保存 **[!UICONTROL Report.cfg (modified)]** をクリックし、 **[!UICONTROL Save to]***&lt; **[!UICONTROL server location]**>*.
 
-## テキストエディター{#section-06f3d2a8d7f34bc2841180caf10a1eb7}を使用して既存のReport.cfgを編集するには
+## テキストエディターを使用して既存の Report.cfg を編集するには {#section-06f3d2a8d7f34bc2841180caf10a1eb7}
 
-1. ワークスペース内で右クリックし、**[!UICONTROL Admin]** / **[!UICONTROL Profile]** / **[!UICONTROL Reports Manager]**&#x200B;をクリックして、[!DNL Reports Manager]を開きます。
+1. を開きます。 [!DNL Reports Manager] ワークスペース内で右クリックし、 **[!UICONTROL Admin]** > **[!UICONTROL Profile]** > **[!UICONTROL Reports Manager]**.
 
 1. レポートセットのフォルダーをクリックします。
-1. このレポートセットの[!DNL Report.cfg]の横のチェックマークを右クリックし、「**[!UICONTROL Make Local]**」をクリックします。
+1. の横のチェックマークを右クリックします。 [!DNL Report.cfg] をクリックします。 **[!UICONTROL Make Local]**.
 
-1. [!DNL User]列で、このレポートセットの[!DNL Report.cfg]の横のチェックマークを右クリックし、**[!UICONTROL Open]** / **[!UICONTROL in Notepad]**&#x200B;をクリックします。 [!DNL Report.cfg]ファイルが開きます。
+1. 内 [!DNL User] 列で、横のチェックマークを右クリックします。 [!DNL Report.cfg] をクリックします。 **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. この [!DNL Report.cfg] ファイルが開きます。
 
-   [レポートセットの設定](../../../../home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/t-config-rpt-set.md#task-cfb2fd0c28bc48c2acdd582fe0d670d0)に示すサンプル[!DNL Report.cfg]には、デフォルトで[!DNL Report.cfg]ファイルに含まれているパラメーターのみが含まれています。 次の例には、[!DNL Report.cfg]ファイルで使用できるすべてのパラメーターが含まれています。このパラメーターは、パラメーターエントリのモデルとして使用できます。
+   サンプル [!DNL Report.cfg] 次に示す [レポートセットの設定](../../../../home/c-rpt-oview/c-work-rpt-sets/t-create-rpt-set/t-config-rpt-set/t-config-rpt-set.md#task-cfb2fd0c28bc48c2acdd582fe0d670d0) には、 [!DNL Report.cfg] ファイルに書き込まれます。 次の例では、 [!DNL Report.cfg] パラメータエントリのモデルとして使用できるファイル：
 
    ```
    Attachments = vector: 1 items
@@ -99,6 +98,6 @@ ht-degree: 3%
    Workspace Path = string: 
    ```
 
-1. 必要に応じて設定パラメーターを編集します。 これらのパラメーターについて詳しくは、[Report.cfgのパラメーター](../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff)を参照してください。
+1. 必要に応じて設定パラメーターを編集します。 これらのパラメーターについて詳しくは、 [Report.cfg のパラメーター](../../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-param.md#concept-838e59d72d3f4cb29ee15f5c7eb0ceff).
 1. ファイルを保存して閉じます。
-1. [!DNL Reports Manager]で、[!DNL Report.cfg]ファイルの[!DNL User]列のチェックマークを右クリックし、**[!UICONTROL Save to]***&lt;**[!UICONTROL profile name]**>*を選択します。
+1. 内 [!DNL Reports Manager]を選択し、 [!DNL User] 列 [!DNL Report.cfg] ファイルと選択 **[!UICONTROL Save to]***&lt; **[!UICONTROL profile name]**>*.

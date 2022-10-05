@@ -3,7 +3,7 @@ description: Sensor で記録されるベースラインイベントデータレ
 title: ベースラインイベントデータレコードフィールド
 uuid: aa36d332-089c-4ae2-98e2-a93d2fa023b7
 exl-id: ad3d8806-863a-4871-a35b-6680163f00ac
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 65%
@@ -11,6 +11,8 @@ ht-degree: 65%
 ---
 
 # ベースラインイベントデータレコードフィールド{#baseline-event-data-record-fields}
+
+{{eol}}
 
 Sensor で記録されるベースラインイベントデータレコードフィールドに関する情報です。
 
@@ -32,7 +34,7 @@ Sensor で記録されるベースラインイベントデータレコードフ�
   </tr>
   <tr>
    <td colname="col1"> cs(referrer) </td>
-   <td colname="col2"> <p>クライアントによってリクエストとともにサーバーに送信された HTTP リファラー文字列。 </p> <p>例：https://www.mysite.net/cgi-bin/websearch?qry </p> <p>ページタグを使用している場合、cs(referrer) はタグ画像を含むドキュメントの完全な URL（HTTP や HTTP を含む）になります。 </p> <p>また、Apache(1.3、2.0、2.2) と IIS のセンサーを設定して、要求に使用するポートを取り込むこともできます。このポートは、HTTP 要求と HTTPS 要求を識別できます。 </p> </td>
+   <td colname="col2"> <p>クライアントによってリクエストとともにサーバーに送信された HTTP リファラー文字列。 </p> <p>例：https://www.mysite.net/cgi-bin/websearch?qry </p> <p>ページタグを使用している場合、cs(referrer) はタグ画像を含むドキュメントの完全な URL です（HTTP や HTTP を含む）。 </p> <p>また、Apache(1.3、2.0、2.2) および IIS センサーを設定して、要求に使用するポートを取り込むこともできます。このポートでは、HTTP 要求と HTTPS 要求を識別できます。 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(user-agent) </td>
@@ -40,7 +42,7 @@ Sensor で記録されるベースラインイベントデータレコードフ�
   </tr>
   <tr>
    <td colname="col1"> cs-method </td>
-   <td colname="col2"> <p>HTTP リクエストのメソッドタイプ </p> <p>例：GET </p> <p>リファレンス：https://www.w3.org/TR/2000/NOTE-shoplogfileformat-20001115/#field_method </p> </td>
+   <td colname="col2"> <p>HTTP リクエストのメソッドタイプ </p> <p>例：GET </p> <p>参照：https://www.w3.org/TR/2000/NOTE-shoplogfileformat-20001115/#field_method </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs-uri-query </td>
@@ -48,7 +50,7 @@ Sensor で記録されるベースラインイベントデータレコードフ�
   </tr>
   <tr>
    <td colname="col1"> cs-uri-stem </td>
-   <td colname="col2"> <p>URI のステム部分（ステム+クエリー文字列= URI） </p> <p>ステムは、サーバー上の要求されたリソースに対する実際のパスまたは論理パスです。 </p> <p>例：/index.asp </p> </td>
+   <td colname="col2"> <p>URI のステム部分（ステム+クエリ文字列= URI） </p> <p>ステムは、サーバー上の要求されたリソースに対する実際のパスまたは論理パスです。 </p> <p>例：/index.asp </p> </td>
   </tr>
   <tr>
    <td colname="col1"> sc(content-type) </td>
@@ -60,7 +62,7 @@ Sensor で記録されるベースラインイベントデータレコードフ�
   </tr>
   <tr>
    <td colname="col1"> sc-status </td>
-   <td colname="col2"> <p>サーバーからクライアントに返されたステータスコード。 </p> <p>例：200 </p> <p>リファレンス：https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html </p> </td>
+   <td colname="col2"> <p>サーバーからクライアントに返されたステータスコード。 </p> <p>例：200 </p> <p>参照：https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html </p> </td>
   </tr>
   <tr>
    <td colname="col1"> s-dns </td>
@@ -72,7 +74,7 @@ Sensor で記録されるベースラインイベントデータレコードフ�
   </tr>
   <tr>
    <td colname="col1"> x-timestamp </td>
-   <td colname="col2"> <p>リクエストがサーバーによって受信された日付と時刻（GMT）。 </p> <p>時刻は、1600 年 1 月 1 日からの 100 ナノ秒数で表されます。 </p> <p>例：127710989320000000は、2005 年 9 月 13 日（火）の 11:28:52.0000000の x-timestamp 値です。 </p> </td>
+   <td colname="col2"> <p>リクエストがサーバーによって受信された日付と時刻（GMT）。 </p> <p>時刻は、1600 年 1 月 1 日からの 100 ナノ秒数で表されます。 </p> <p>例：127710989320000000は 11 の x-timestamp 値になります:28:2005 年 9 月 13 日（火）:52.0000000 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-trackingid </td>
@@ -81,4 +83,4 @@ Sensor で記録されるベースラインイベントデータレコードフ�
  </tbody>
 </table>
 
-[!DNL data workbench server] は、ベースラインイベントデータレコードフィールドから多数の変数を取得できます。 詳しくは、『*データセット設定ガイド*』を参照してください。
+この [!DNL data workbench server] は、ベースラインイベントデータレコードフィールドから多数の変数を派生させることができます。 詳しくは、 *データセット設定ガイド*.

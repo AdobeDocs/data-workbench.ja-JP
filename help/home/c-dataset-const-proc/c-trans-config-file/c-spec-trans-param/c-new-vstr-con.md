@@ -3,7 +3,7 @@ description: New Visitor Condition は、データセットへの組み入れ候
 title: 新規訪問者条件
 uuid: e9733109-5bf3-47ce-974c-d68264291f19
 exl-id: a0520edd-bde3-4f55-858c-8974d4224435
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # 新規訪問者条件{#new-visitor-condition}
+
+{{eol}}
 
 New Visitor Condition は、データセットへの組み入れ候補となる訪問者を判別するために使用される条件演算です。
 

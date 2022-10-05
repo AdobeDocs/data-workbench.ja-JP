@@ -3,7 +3,7 @@ description: Insight サーバーでは、可算、シンプル、多対多、�
 title: 拡張ディメンションのタイプ
 uuid: 68f42903-0599-43f2-8b5b-da9e171d77b1
 exl-id: 13a52ece-b68b-45bc-ac2d-d68c91742c9d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 91%
@@ -11,6 +11,8 @@ ht-degree: 91%
 ---
 
 # 拡張ディメンションのタイプ{#types-of-extended-dimensions}
+
+{{eol}}
 
 Insight サーバーでは、可算、シンプル、多対多、数値、非正規、時間の各ディメンションを定義して、データセットに組み入れることができます。
 
@@ -22,4 +24,4 @@ Insight サーバーは、ディメンションの作成に使用するログエ
 
 >[!NOTE]
 >
->ログエントリが拡張ディメンションの条件を満たさない場合、Insightサーバーはログエントリ内のすべてのフィールドをブランク値に置き換えます。 ただし、実際のログエントリは引き続き存在します。[!DNL Input] フィールドのブランク値が使用されるかどうかは、指定した演算（Operation）によって決まります。
+>ログエントリが拡張ディメンションの条件を満たさない場合、Insight サーバーはログエントリ内のすべてのフィールドを空白の値に置き換えます。 ただし、実際のログエントリは引き続き存在します。[!DNL Input] フィールドのブランク値が使用されるかどうかは、指定した演算（Operation）によって決まります。

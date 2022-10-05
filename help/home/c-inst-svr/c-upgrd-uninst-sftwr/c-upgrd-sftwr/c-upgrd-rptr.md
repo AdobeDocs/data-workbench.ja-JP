@@ -1,9 +1,9 @@
 ---
-description: Insightを使用してリピーターをアップグレードする手順、またはファイルをコピーしてアップグレードする手順。
+description: Insight を使用してリピーターをアップグレードする手順、またはファイルをコピーしてアップグレードする手順です。
 title: リピーターのアップグレード
 uuid: 2027ed9e-9dd9-40f5-b7e9-2709f8745b5c
 exl-id: f81fa79e-f660-48fd-b2ff-419961d49c55
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 1%
@@ -12,45 +12,47 @@ ht-degree: 1%
 
 # リピーターのアップグレード{#upgrading-repeater}
 
-Insightを使用してリピーターをアップグレードする手順、またはファイルをコピーしてアップグレードする手順。
+{{eol}}
 
-次のいずれかの方法を使用して、Platform 4.x以降から[!DNL Repeater]をアップグレードできます。
+Insight を使用してリピーターをアップグレードする手順、またはファイルをコピーしてアップグレードする手順です。
 
-* [Insightとリピーターとの接続の作成](../../../../home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-crt-conn-ins-rptr.md#task-785bfe5f0e31484683e4345038add118)で説明したように[!DNL Insight]と[!DNL Repeater]の間に接続を作成した場合は、[!DNL Insight]を使用して[!DNL Repeater]をアップグレードできます。 「[Insightを使用したリピーターのアップグレード](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md#section-59c24448fd0f45c08abd0245ad746764)」を参照してください。
+次のいずれかの方法を使用して、アップグレードできます。 [!DNL Repeater] Platform 4.x 以降の場合：
 
-   -or-
+* 次の間に [!DNL Insight] および [!DNL Repeater] の説明に従って、 [Insight とリピーターとの接続の作成](../../../../home/c-inst-svr/c-rptr-fntly/c-cnfg-rptr-fntly/t-crt-conn-ins-rptr.md#task-785bfe5f0e31484683e4345038add118)を使用する場合、 [!DNL Insight] アップグレード [!DNL Repeater]. 詳しくは、 [Insight を使用したリピーターのアップグレード](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md#section-59c24448fd0f45c08abd0245ad746764).
 
-* [!DNL Insight]と[!DNL Repeater]の間に接続を作成できなかった場合は、アップグレードファイルを[!DNL Repeater]マシンに直接コピーする必要があります。 [ファイルのコピーによるリピーターのアップグレード](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md#section-202f2209f6604f19a15d96b517ea1bc1)を参照してください。
+   -または-
 
-## Insightを使用したリピーターのアップグレード{#section-59c24448fd0f45c08abd0245ad746764}
+* 次の間に接続を作成できなかったか、作成できなかった場合： [!DNL Insight] および [!DNL Repeater]を使用する場合は、アップグレードファイルを [!DNL Repeater] マシン。 詳しくは、 [ファイルのコピーによるリピーターのアップグレード](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-upgrd-rptr.md#section-202f2209f6604f19a15d96b517ea1bc1).
 
-1. [!DNL Insight]コンピューターで、[!DNL Insight Server]アップグレードパッケージの[!DNL bin]フォルダーを、[!DNL Insight]がインストールされているディレクトリ内の[!DNL Temp]フォルダーにコピーします。
-1. [!DNL Insight]を起動します。
-1. [!DNL Insight]の「[!DNL Admin] > [!DNL Dataset and Profile]」タブで、**[!UICONTROL Servers Manager]**&#x200B;サムネールをクリックして「サーバーマネージャー」ワークスペースを開きます。
-1. アップグレードする[!DNL Repeater]のアイコンを右クリックし、「**[!UICONTROL Server Files]**」をクリックします。
-1. [!DNL Server Files Manager]で、次の手順を実行して、アップグレードファイルをサーバーにアップロードします。
+## Insight を使用したリピーターのアップグレード {#section-59c24448fd0f45c08abd0245ad746764}
 
-   1. [!DNL bin]フォルダーを探します。
-   1. Tempディレクトリ内の[!DNL bin]フォルダーのチェックマークを右クリックし、**[!UICONTROL Save Directory to]** / *&lt;**[!UICONTROL server name]***&#x200B;を選択します。
+1. の [!DNL Insight] コンピュータ、コピー [!DNL bin] フォルダーを [!DNL Insight Server] パッケージをにアップグレード [!DNL Temp] フォルダー内の [!DNL Insight] がインストールされている。
+1. 開始 [!DNL Insight].
+1. In [!DNL Insight]、 [!DNL Admin] > [!DNL Dataset and Profile] タブで、 **[!UICONTROL Servers Manager]** サムネールを使用して、サーバーマネージャーワークスペースを開きます。
+1. 次のアイコンを右クリック： [!DNL Repeater] アップグレードして、 **[!UICONTROL Server Files]**.
+1. 内 [!DNL Server Files Manager]次の手順を実行して、アップグレードファイルをサーバーにアップロードします。
 
->[!NOTE]
->
->この手順により、サーバー上に存在する同じ名前のファイルが上書きされることを示すメッセージが表示されます。 **[!UICONTROL Yes]**&#x200B;をクリックして続行します。
+   1. を [!DNL bin] フォルダー。
+   1. のチェックマークを右クリックします。 [!DNL bin] Temp ディレクトリ内のフォルダーを選択し、 **[!UICONTROL Save Directory to]** > *&lt;**[!UICONTROL server name]**>*.
 
 >[!NOTE]
 >
->[!DNL Repeater]のアップグレードを完了するために追加のファイルをアップロードする必要がある場合は、Adobeに指示が表示されます。
-
-アップグレードファイルを[!DNL Repeater]マシンにアップロードすると、[!DNL Repeater]が自動的に再起動し、新しいバージョンが読み込まれます。
-
-## ファイル{#section-202f2209f6604f19a15d96b517ea1bc1}をコピーしてリピータをアップグレードする
-
-1. 「Adobe」で指定されたアップグレードファイルを開きます。 おそらく、このファイルは[!DNL Insight Server]をアップグレードするための[!DNL .zip]ファイルです。
-1. [!DNL Repeater]をインストールしたディレクトリに移動します（例：[!DNL D:\Adobe\Repeater]）。
-1. [!DNL .zip]ファイル内の[!DNL bin]フォルダーをコピーし、[!DNL Repeater]インストールディレクトリに貼り付けて、既存の[!DNL bin]フォルダーを上書きします。
+>この手順により、サーバー上に存在する同じ名前のファイルが上書きされたことを示すメッセージが表示されます。 クリック **[!UICONTROL Yes]** をクリックして続行します。
 
 >[!NOTE]
 >
->[!DNL Insight Server]のアップグレードを完了するために追加のファイルをアップロードする必要がある場合は、Adobeに指示が表示されます。
+>追加のファイルをアップロードして [!DNL Repeater] アップグレード時に、Adobeが指示を出します。
 
-アップグレードファイルを[!DNL Repeater]マシンにコピーすると、[!DNL Repeater]が自動的に再起動し、新しいバージョンが読み込まれます。
+アップグレードファイルを [!DNL Repeater] 機械 [!DNL Repeater] を自動的に再起動し、新しいバージョンを読み込みます。
+
+## ファイルのコピーによるリピーターのアップグレード {#section-202f2209f6604f19a15d96b517ea1bc1}
+
+1. Adobe おそらく、このファイルは [!DNL .zip] アップグレード用ファイル [!DNL Insight Server].
+1. をインストールしたディレクトリに移動します。 [!DNL Repeater] ( 例： [!DNL D:\Adobe\Repeater]) をクリックします。
+1. を [!DNL bin] フォルダー内の [!DNL .zip] ファイルを [!DNL Repeater] 既存のディレクトリを上書きするインストールディレクトリ [!DNL bin] フォルダー。
+
+>[!NOTE]
+>
+>追加のファイルをアップロードして [!DNL Insight Server] アップグレード時に、Adobeが指示を出します。
+
+アップグレードファイルを [!DNL Repeater] 機械 [!DNL Repeater] を自動的に再起動し、新しいバージョンを読み込みます。

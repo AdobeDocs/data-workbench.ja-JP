@@ -1,9 +1,9 @@
 ---
-description: Data Workbenchの詳細なステータスインターフェイスは、Data WorkbenchサーバーのクライアントであるData Workbenchサーバーとレポートサーバーのコンピューターに関するエラーやその他の問題のトラブルシューティングに役立ちます。
+description: Data Workbench の詳細なステータスインターフェイスは、Data WorkbenchサーバーのクライアントであるData Workbenchサーバーとレポートサーバーのコンピューターに関するエラーやその他の問題のトラブルシューティングに役立ちます。
 title: レポートサーバーのステータスの表示
 uuid: 5260266d-5bd1-4905-9619-f67f6e1bc54c
 exl-id: 3a717a81-7c5d-432d-b214-4ae0455b19b5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 6%
@@ -12,19 +12,21 @@ ht-degree: 6%
 
 # レポートサーバーのステータスの表示{#displaying-report-server-status}
 
-Data Workbenchの詳細なステータスインターフェイスは、Data WorkbenchサーバーのクライアントであるData Workbenchサーバーとレポートサーバーのコンピューターに関するエラーやその他の問題のトラブルシューティングに役立ちます。
+{{eol}}
 
-[!DNL Master Server Detailed Status]インターフェイスでレポートのステータスを表示するには、Data Workbenchサーバーの[!DNL Communications.cfg]ファイルの[!DNL Servers]ベクトルにレポートステータスサーバーを追加する必要があります。 次の手順では、[!DNL Communications.cfg]ファイルにレポートステータスサーバーを追加する方法を説明します。
+Data Workbench の詳細なステータスインターフェイスは、Data WorkbenchサーバーのクライアントであるData Workbenchサーバーとレポートサーバーのコンピューターに関するエラーやその他の問題のトラブルシューティングに役立ちます。
 
-[!DNL Detailed Status]インターフェイスの詳細については、『*Data Workbenchユーザーガイド*』の「管理インターフェイス」の章を参照してください。
+レポートのステータスを表示するには、 [!DNL Master Server Detailed Status] インターフェイスで、レポートステータスサーバーを [!DNL Servers] data workbench サーバーのベクトル [!DNL Communications.cfg] ファイル。 次の手順では、レポートステータスサーバーを [!DNL Communications.cfg] ファイル：
 
-**を追加するには[!DNL Report Status Server]**
+詳しくは、 [!DNL Detailed Status] インターフェイスについては、『管理インターフェイス』の章を参照してください。 *Data Workbenchユーザーガイド*.
 
-1. Data Workbenchサーバー(InsightServer64.exe)をインストールしたディレクトリ内のComponentsフォルダーに移動します。
+**を追加するには、以下を実行します。[!DNL Report Status Server]**
+
+1. Data Workbench サーバー (InsightServer64.exe) をインストールしたディレクトリ内の Components フォルダーに移動します。
 
    例：[!DNL C:\Adobe\Server\Components]
-1. メモ帳などのテキストエディターで[!DNL Communications.cfg]を開きます。
-1. [!DNL Servers]ベクトルを探し、次のファイルフラグメントでハイライト表示されているように、このベクトルにレポートステータスサーバーを追加します。
+1. 開く [!DNL Communications.cfg] をメモ帳などのテキストエディターで使用する。
+1. を [!DNL Servers] ベクトルを参照し、次のファイルフラグメントでハイライト表示されているように、このベクトルにレポートステータスサーバーを追加します。
 
    ```
     . . .
@@ -43,5 +45,5 @@ Data Workbenchの詳細なステータスインターフェイスは、Data Work
          URI = string: /ReportStatus.vsp
    ```
 
-1. [!DNL Servers]ベクトルの項目数を更新します（つまり、項目の値を1ずつ増やします）。前の手順のファイルフラグメントでハイライト表示されています。
+1. 次の項目数を更新 [!DNL Servers] ベクトル（つまり、前の手順でファイルフラグメントでハイライト表示された項目の値を 1 ずつ増やします）。
 1. ファイルを保存します。

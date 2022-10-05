@@ -2,13 +2,17 @@
 description: プロファイルマネージャーで適用される Internal.cfg ファイルは、プロファイル、ディメンション、レポート、ワークスペース、指標およびフィルターマネージャーによってユーザーがカスタムプロファイルを変更できないようにします。
 title: ワークステーションでのプロファイルのロック
 uuid: 6b65d7c1-dade-4c6e-9d59-09693e62f3f5
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 2604ceea-0e55-4ae7-a286-e5257e974a64
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '177'
+ht-degree: 90%
 
 ---
 
-
 # ワークステーションでのプロファイルのロック{#locking-profiles-in-the-workstation}
+
+{{eol}}
 
 プロファイルマネージャーで適用される Internal.cfg ファイルは、プロファイル、ディメンション、レポート、ワークスペース、指標およびフィルターマネージャーによってユーザーがカスタムプロファイルを変更できないようにします。
 
@@ -18,9 +22,9 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 1. ワークスペース内で右クリックし、**管理者**／**プロファイルマネージャー**&#x200B;を選択します。
 
-1. In the **Profile Manager**, right-click **[!DNL Context > Internal.cfg]** and **Make Local**.
+1. 内 **プロファイルマネージャー**、右クリック **[!DNL Context > Internal.cfg]** および **ローカル化**.
 
-1. Right-click checkmark in **User** column and save to a `<custom profile>`.
+1. チェックマークインを右クリック **ユーザー** 列を編集して `<custom profile>`.
 
 ![](assets/dwb_lock_profiles.png)
 

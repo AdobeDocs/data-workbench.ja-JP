@@ -3,7 +3,7 @@ description: セグメントエクスポート機能を使用すると、任意�
 title: セグメントエクスポートを使用したデータのエクスポート
 uuid: a6468e76-fe5a-4807-806e-015063f9627a
 exl-id: 46540d63-3b6e-4cfc-ba34-8caffadab99c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # セグメントエクスポートを使用したデータのエクスポート{#exporting-data-using-segment-export}
+
+{{eol}}
 
 セグメントエクスポート機能を使用すると、任意の可算ディメンションの要素からなるセグメントを作成してから、そのセグメントのデータをバッチまたは継続的なリアルタイムベースでタブ区切りファイルに出力できます。
 

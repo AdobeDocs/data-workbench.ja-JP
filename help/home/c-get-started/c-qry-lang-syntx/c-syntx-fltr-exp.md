@@ -3,7 +3,7 @@ description: フィルターは、データセット内のデータのサブセ�
 title: フィルター式の構文
 uuid: faeb6847-3295-48ab-9d1c-db00f57647ba
 exl-id: 515c1645-69c8-4990-a913-d2d505c6fe51
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 94%
@@ -12,13 +12,15 @@ ht-degree: 94%
 
 # フィルター式の構文{#syntax-for-filter-expressions}
 
+{{eol}}
+
 フィルターは、データセット内のデータのサブセットを定義する式です。
 
 フィルターは、ディメンション間の関係に従って、各ディメンションの各要素を通すか、通さないかを決定します。
 
-フィルターは[!DNL Filter Editor]を使用して編集できます。 [フィルターエディター](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3)を参照してください。
+フィルターは、 [!DNL Filter Editor]. 詳しくは、 [フィルターエディター](../../../home/c-get-started/c-analysis-vis/c-filter-editors/c-filter-editors.md#concept-2f343ecbed8240f18b0c1f1eccef11e3).
 
-次の表の各構文の説明には、そのフィルターを使用する指標式の例があります。例えば、「Sessions[True]」は、「True」フィルターを使用して定義された指標です。 TrueフィルターはSessionディメンションのすべての要素を通すので、 Sessions[True]指標はSessions指標と同じです。
+次の表の各構文の説明には、そのフィルターを使用する指標式の例があります。（例：Sessions）[True] は、「True」フィルターを使用して定義された指標です。 セッション[True] True フィルターは、Session ディメンションのすべての要素を通すので、指標は Sessions 指標と同じです。
 
 <table id="table_5D66E6C11B384460BAAA7A6130214594"> 
  <tbody> 
@@ -63,7 +65,7 @@ ht-degree: 94%
    <td colname="col2"> <p>ディメンション Dim の要素のうち、順序の値が Ordinal の要素を通します。 </p> <p>例：Sessions[ Month=#0 ] は、データセットの最初の月のセッションの数です。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Dim &lt;&gt; #Ordinal </p> <p>ディム！= #Ordinal </p> </td> 
+   <td colname="col1"> <p>Dim &lt;&gt; #Ordinal </p> <p>薄暗い！= #Ordinal </p> </td> 
    <td colname="col2"> <p>ディメンション Dim の指定した要素以外をすべて通します。 </p> <p>例：Sessions[ Session_Value &lt;&gt; #0 ] は、セッション値が 0 以外のセッションの数です。 </p> </td> 
   </tr> 
   <tr> 

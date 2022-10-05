@@ -2,21 +2,25 @@
 description: ロケールに合わせて正しく表示されるように時間ディメンションを設定します。
 title: 時間ディメンションのローカライズ
 uuid: a2098522-bf05-4680-9b78-6fb284695a0a
-translation-type: tm+mt
-source-git-commit: 25366087936dfa5e31c5921aac400535ec259f2e
+exl-id: 950fe70b-a687-4b9c-b29f-555139740809
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 66%
 
 ---
 
-
 # 時間ディメンションのローカライズ{#localizing-time-dimensions}
+
+{{eol}}
 
 ロケールに合わせて正しく表示されるように時間ディメンションを設定します。
 
-You can configure the displayed format of time dimensions based on locale in the **[!DNL Standard Time Dimensions.cfg]** file (located by default at **[!DNL Server/Profiles/`<my profile>`/Dataset/Transformation/Time/Standard Time Dimensions.cfg]**).
+時間ディメンションの表示形式は、 **[!DNL Standard Time Dimensions.cfg]** ファイル ( デフォルトでは **[!DNL Server/Profiles/`<my profile>`/Dataset/Transformation/Time/Standard TimeDimension.cfg]**) をクリックします。
 
-For example, in North America you can express the date May 3rd, 2015 as 5/3/15, or **`%m/%d/%y`**. However, in other parts of the world this could be interpreted as `%d/%m/%y`, or March 5th, 2015 due to an ambiguity in the values. このような状況を回避するため、管理者はロケール内のユーザーの期待に合うように表示形式を変更できます。
+例えば、北米では、2015 年 5 月 3 日を5/3/15と表すことができます。 **`%m/%d/%y`**. しかし、世界の他の地域では、これは次のように解釈できます `%d/%m/%y`、または 2015 年 3 月 5 日（値の曖昧さが原因） このような状況を回避するため、管理者はロケール内のユーザーの期待に合うように表示形式を変更できます。
 
-## 1. Override Default Time Dimensions in Standard Time Dimensions.cfg {#section-7d0b24657bef4b15abb3cbea66cb617f}
+## 1. Standard Time Time.cfg でのデフォルトの時間Dimensionの上書き {#section-7d0b24657bef4b15abb3cbea66cb617f}
 
 この機能を有効にするには、管理者が既存の時間ディメンションを編集するか、パラメーターを追加して新しい時間ディメンションを作成して、デフォルト値をオーバーライドする必要があります。
 

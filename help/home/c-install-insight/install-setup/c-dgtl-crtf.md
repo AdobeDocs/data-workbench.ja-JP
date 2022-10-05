@@ -3,7 +3,7 @@ description: Insight プログラムファイルをインストールしたら�
 title: 電子証明書のダウンロードとインストール (Insight)
 uuid: 93ab2222-a977-4279-9e1e-71038b1d1cfa
 exl-id: 0dff95ae-880b-45d5-96df-4eb6bea58891
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '2744'
 ht-degree: 79%
@@ -11,6 +11,8 @@ ht-degree: 79%
 ---
 
 # デジタル証明書のダウンロードとインストール{#downloading-and-installing-the-digital-certificate}
+
+{{eol}}
 
 Insight プログラムファイルをインストールしたら、Adobeから提供された電子証明書をダウンロードしてインストールする必要があります。
 
@@ -93,7 +95,7 @@ crypto-api.xml
 >
 >ライセンスサーバーを使用したライセンスは、既存の `<Common Name>.pem` ファイルを使用して管理されており、証明書ストアから取得した証明書は、指定したサーバーとの通信にのみ使用されます。
 
-## 前提条件  {#section-69b18600052145ff8e5299b7123e69c5}
+## 前提条件 {#section-69b18600052145ff8e5299b7123e69c5}
 
 1. [!DNL certmgr.msc] ファイルへのアクセス権を持っていて、証明書と鍵を **Personal** ストアにインポートできる必要があります。（これは、デフォルトではほとんどの Windows ユーザーに当てはまります。）
 
@@ -240,7 +242,7 @@ Data Workbench クライアントまたはサーバーで使用される証明�
       ```
 
    1. 証明書に、CN、O、OU など（サーバーの [!DNL Access Control.cfg] ファイルでこのクライアントに必要とされている）がある。
-   1. 証明書は、*client*（または *server* **と** *client* の両方）の *purpose **** を使用して発行された。
+   1. 証明書は *目的&#42;&#42;&#42;* / *client* ( または *server* **および** *client*) をクリックします。
 
       証明書がサーバーおよび／またはクライアントの purpose コードを持っていることを検証するには、次のコマンドを使用できます。
 

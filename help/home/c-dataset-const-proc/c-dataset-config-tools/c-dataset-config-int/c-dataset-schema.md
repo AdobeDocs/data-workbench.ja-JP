@@ -3,7 +3,7 @@ description: 「データセットのスキーマ」インターフェイスに�
 title: データセットのスキーマ
 uuid: 4ef5f14b-dc19-4118-a2f2-d680ded8092c
 exl-id: b80e6e8e-9147-46ec-8602-2d7e5d33f077
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '380'
 ht-degree: 76%
@@ -12,9 +12,11 @@ ht-degree: 76%
 
 # データセットのスキーマ{#dataset-schema}
 
+{{eol}}
+
 「データセットのスキーマ」インターフェイスには、変換データセット設定ファイルで定義されている拡張ディメンション（可算、シンプル、多対多、数値、非正規、時間の各ディメンション）とそれらのディメンション間の関係が表示されます。
 
-さらに、[!DNL Dataset Schema]インターフェイスには、定義した派生ディメンションと、非表示に設定されている拡張ディメンションが表示されます。
+また、 [!DNL Dataset Schema] インターフェイスには、定義した派生ディメンションと、非表示に設定されている拡張ディメンションが表示されます。
 
 ![](assets/vis_DatasetSchema_Example.png)
 
@@ -24,9 +26,9 @@ ht-degree: 76%
 * [ディメンションにデフォルトのビジュアライゼーションを表示するには](../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-schema.md#section-1bbb73a5cbb34ffb844eb1932db85318)
 * [ディメンションに特定のビジュアライゼーションを表示するには](../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-int/c-dataset-schema.md#section-d46626df90bc4c44ae60c4b71eaeac7f)
 
-## 「データセットのスキーマ」インターフェイスでディメンションのタイプを判別するには{#section-16a0a12b11334c07bec558c0b7d260b1}
+## 「データセットのスキーマ」インターフェイスでディメンションのタイプを判別するには {#section-16a0a12b11334c07bec558c0b7d260b1}
 
-次の表に、[!DNL Dataset Schema]インターフェイスで名前が表示されるディメンションのタイプと色を示します。 （上記の例の）サンプルディメンションの親についても記述しています。
+次の表に、寸法のタイプと名前が [!DNL Dataset Schema] インターフェイス。 （上記の例の）サンプルディメンションの親についても記述しています。
 
 <table id="table_20D1A9EAAED247338476C475C63255F5"> 
  <thead> 
@@ -82,12 +84,12 @@ ht-degree: 76%
 
 ## ディメンションのデフォルトのビジュアライゼーションを表示するには {#section-1bbb73a5cbb34ffb844eb1932db85318}
 
-* [!DNL Dataset Schema]インターフェイスで、目的のディメンションをクリックします。 デフォルトのビジュアライゼーションが表示されます。例えば、デフォルトのビジュアライゼーションが、セッションと選択ディメンションを表示するテーブルである場合、URI ディメンションをクリックすると、セッションごとの URI のテーブルが Data Workbench に表示されます。
+* 内 [!DNL Dataset Schema] インターフェイスで、目的のディメンションをクリックします。 デフォルトのビジュアライゼーションが表示されます。例えば、デフォルトのビジュアライゼーションが、セッションと選択ディメンションを表示するテーブルである場合、URI ディメンションをクリックすると、セッションごとの URI のテーブルが Data Workbench に表示されます。
 
 >[!NOTE]
 >
->表示されるデフォルトのビジュアライゼーションを変更する場合は、『*Data Workbenchユーザーガイド*』の「インターフェイスと分析機能の設定」の章を参照してください。
+>表示されるデフォルトのビジュアライゼーションを変更する場合は、 *Data Workbenchユーザーガイド*.
 
 ## ディメンションの特定のビジュアライゼーションを表示するには {#section-d46626df90bc4c44ae60c4b71eaeac7f}
 
-* [!DNL Dataset Schema]インターフェイスで、目的のディメンションを右クリックし、**[!UICONTROL Add Visualization]** / *&lt;**[!UICONTROL visualization type]**>*&#x200B;をクリックします。
+* 内 [!DNL Dataset Schema] インターフェイスで、目的のディメンションを右クリックし、 **[!UICONTROL Add Visualization]** > *&lt;**[!UICONTROL visualization type]**>*.

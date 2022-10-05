@@ -4,7 +4,7 @@ solution: Analytics
 title: 実験の設定とデプロイ
 uuid: 460d3ea4-a6c8-4ac4-9a3f-eab71f65b096
 exl-id: 957c2ea2-72a5-4bb2-af1d-65187613c26d
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 1%
@@ -12,6 +12,8 @@ ht-degree: 1%
 ---
 
 # 実験の設定とデプロイ{#configuring-and-deploying-the-experiment}
+
+{{eol}}
 
 目標、仮説、実験の詳細を定義し、テストコンテンツを作成したら、対照実験を導入するようにセンサーを設定する必要があります。
 
@@ -48,7 +50,7 @@ ht-degree: 1%
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> Experiment </td> 
+   <td colname="col1"> 実験 </td> 
    <td colname="col2"> <p>実験のわかりやすい名前。 各実験名は一意である必要があり、スペースを含めることはできません。 </p> <p>実験名は、 <span class="keyword"> Insight </span>. 名前は、対照実験ディメンションのエレメント名の前半に表示されます。 要素名の後半部分は、このファイルの「グループ」フィールドのグループ名です。 各グループには、次の形式で実験名に続くグループ名を付けます。 </p> <p><i>ExperimentName.Group 名</i> </p> <p>例： <span class="filepath"> New_Homepage.Control </span> </p> </td> 
   </tr> 
   <tr> 
@@ -70,7 +72,7 @@ ht-degree: 1%
    <td colname="col2"> <p>実験内の訪問者の各グループのわかりやすい名前。 グループ名にスペースを含めることはできません。 </p> <p>グループ名は、 <span class="keyword"> Insight </span>. 詳しくは、「 Experiment フィールドの説明」を参照してください。 </p> <p>コントロール母集団は、「割合」フィールドに入力された値に基づいて、暗黙的または明示的に定義できます。 </p> <p> <p>注意：実験が統計的に有効であるために、定義した期間中に必要な訪問者数を満たすには、信頼水準を下げるか、期間を増やす必要が生じる場合があります。 例えば、期間が 5 日間の場合、信頼性レベルは 98%で、必要な訪問者数がその期間の予想数を超える場合は、期間を増やすか、予測される訪問者数が統計的に有効な実験の実行に必要な数を超えるまで信頼性レベルを減らす必要があります。 </p> </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 割合（％） </td> 
+   <td colname="col1"> 割合 </td> 
    <td colname="col2"> <p>定義された各グループに含める Web サイト訪問者の割合。 これらの値は、パーセンテージまたは小数値で表すことができます。 また、両方の値は 1 より大きいか小さい値である必要があります。 </p> <p>次に例を示します。 </p> <p>33.3%、66.7% </p> <p>.99 および。01 </p> <p>すべてのグループの合計が 100 未満の場合、未定義の超過分はデフォルトでコントロール母集団に設定されます。 </p> </td> 
   </tr> 
   <tr> 

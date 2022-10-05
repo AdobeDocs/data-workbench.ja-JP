@@ -3,7 +3,7 @@ description: .filter ファイルを手動で編集する手順です。
 title: フィルターファイルの手動編集
 uuid: a4f932b8-dca5-44a1-a2bb-a3c683b661d5
 exl-id: e4c98d61-27f4-456b-a1dd-da69249e5fb1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 43%
@@ -12,11 +12,13 @@ ht-degree: 43%
 
 # フィルターファイルの手動編集{#edit-filter-files-manually}
 
+{{eol}}
+
 .filter ファイルを手動で編集する手順です。
 
-1. [!DNL Profile Manager]で「**[!UICONTROL Filters]**」をクリックし、編集するファイルを見つけます。
-1. ファイルがサーバー上にある場合は、フィルター名の横にある該当する列のチェックマークを右クリックし、「**[!UICONTROL Make Local]**」をクリックします。
-1. [!DNL User]列のフィルターのチェックマークを右クリックし、**[!UICONTROL Open]** / **[!UICONTROL in Notepad]**&#x200B;をクリックします。 [!DNL .filter]ファイルが開きます。
+1. 内 [!DNL Profile Manager]をクリックし、 **[!UICONTROL Filters]**&#x200B;をクリックし、編集するファイルを探します。
+1. ファイルがサーバー上にある場合は、フィルター名の横にある該当する列のチェックマークを右クリックし、 **[!UICONTROL Make Local]**.
+1. フィルターのチェックマークを右クリックし、 [!DNL User] 列とクリック **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. この [!DNL .filter] ファイルが開きます。
 
    ![](assets/filter_manualEdit.png)
 

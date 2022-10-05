@@ -1,14 +1,18 @@
 ---
 description: プレゼンテーションレイヤーを使用して、ワークスペースビジュアライゼーションのマークアップおよび注釈の付与を行ってから、引き出し線とコメントを付加して発行することができます。テキスト説明、グラフィックオブジェクト、引き出し線矢印、色分け、画像およびその他の機能のオーバーレイへの追加によって注釈を付加し、重要なデータポイントを明確化したうえで、関係者と共有します。
-title: ビジュアライゼーションの注釈の作成
+title: ビジュアライゼーションへの注釈の付加
 uuid: f296b04e-4c02-4ee3-93cb-dd1163b855de
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 6adb7971-ef09-4e90-873b-586ae1d55f96
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 95%
 
 ---
 
+# ビジュアライゼーションへの注釈の付加{#annotating-visualizations}
 
-# Annotating visualizations{#annotating-visualizations}
+{{eol}}
 
 プレゼンテーションレイヤーを使用して、ワークスペースビジュアライゼーションのマークアップおよび注釈の付与を行ってから、引き出し線とコメントを付加して発行することができます。テキスト説明、グラフィックオブジェクト、引き出し線矢印、色分け、画像およびその他の機能のオーバーレイへの追加によって注釈を付加し、重要なデータポイントを明確化したうえで、関係者と共有します。
 
@@ -34,7 +38,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    >[!NOTE]
    >
-   >ワークスペース内で右クリックし、メニューコマンドを使用してモードを変更することもできます。
+   >ワークスペース内で右クリックして、メニューコマンドを使用してモードを変更することもできます。
 
    ![](assets/6_4_presentation_layer_right_menu.png)
 

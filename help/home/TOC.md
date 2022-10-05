@@ -6,9 +6,9 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Data Workbench ヘルプ
 user-guide-description: Data Workbench のマルチチャネル機能について学びます。Data Workbench クライアント、インストール、データセット設定に関するガイドなどが含まれます。
-source-git-commit: aab669c31131eb455749ae5667441f604ee1a252
+source-git-commit: 90b9fff995cb37a62024f454f009e9e0d7b927cd
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3498'
 ht-degree: 99%
 
 ---
@@ -859,7 +859,7 @@ ht-degree: 99%
          + [ビジュアライゼーションのロックとロック解除](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-locking-and-unlocking-visualizations.md)
          + [ビジュアライゼーションの折りたたみと展開](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-collapsing-and-expanding-visualizations.md)
          + [ビジュアライゼーションのエクスポート](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-exporting-visualizations.md)
-         + [ビジュアライゼーションの設定](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-configure-visualizations.md)
+         + [ビジュアライゼーションの設定と再設定](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-configure-visualizations.md)
          + [ビジュアライゼーションの削除](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-remove-visualizations.md)
          + [ビジュアライゼーションのサイズ設定](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-sizing-visualizations.md)
          + [ビジュアライゼーションの移動](c-adobe-data-workbench-dashboard/c-visualizations/c-manipulating-visualizations/c-moving-visualizations.md)
@@ -902,7 +902,7 @@ ht-degree: 99%
    + サーバーとの通信 {#servers-communication}
       + [ダッシュボードと Data Workbench サーバーとの通信](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/c-dashboard-to-data-workbench-servers-communication.md)
       + [クエリ API 有効化の確認](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-verifying-qurey-api-enablement.md)
-      + [アクセス制御の設定](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
+      + [ダッシュボードのアクセス制御の設定](c-preparing-for-dashboard-installation/c-dashboard-to-data-workbench-servers-communication/t-configuring-access-control.md)
    + ダッシュボードデプロイメント {#dashboard-deployment}
       + [ダッシュボードデプロイメント](c-preparing-for-dashboard-installation/c-dashboard-deployment/c-dashboard-deployment.md)
       + [ダッシュボードのデプロイ](c-preparing-for-dashboard-installation/c-dashboard-deployment/t-deploying-the-dashboard.md)

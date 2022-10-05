@@ -3,7 +3,7 @@ description: シンプルディメンションは、その親の可算ディメ�
 title: シンプルディメンション
 uuid: 3bca2354-02c4-4739-a7da-acccdb0efdfd
 exl-id: 2acad750-7c48-40f1-8130-ab056ac8bf0d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '834'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # シンプルディメンション{#simple-dimensions}
+
+{{eol}}
 
 シンプルディメンションは、その親の可算ディメンションとの間に 1 対多の関係を持ちます。
 
@@ -34,7 +36,7 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1"> コメント </td> 
-   <td colname="col2"> （オプション）拡張ディメンションについてのメモ。 </td> 
+   <td colname="col2"> （オプション）。拡張ディメンションについてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -54,7 +56,7 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1"> Load File </td> 
-   <td colname="col2"> <p>（オプション）対象の関係について用意した値のファイル。ロードファイルは、次のいずれかの状況で使用します。 </p> <p> 
+   <td colname="col2"> <p>（オプション）。対象の関係について用意した値のファイル。ロードファイルは、次のいずれかの状況で使用します。 </p> <p> 
      <ul id="ul_056C4A8E46AA479397DC63173C035D5C"> 
       <li id="li_C26EB5A4AB3C4BEB8EB3A217A5A2377E"> 決まった並び順が値に存在し、Data Workbench で表示したときに維持する必要があるとき。例えば、Quarter ディメンションを作成する場合、そのエレメント（四半期）は常に時系列で表示する必要があります。 </li> 
       <li id="li_5D4DF56BC6124D038A7260131B1F3DB3"> データには見つからなかった場合でも Data Workbench には表示すべき値のプレースホルダーを作成したいとき。 </li> 

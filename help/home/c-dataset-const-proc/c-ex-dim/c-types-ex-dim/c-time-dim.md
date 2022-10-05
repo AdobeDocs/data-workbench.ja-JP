@@ -3,14 +3,16 @@ description: 時間ディメンションを使用すると、Input Time (1970 ep
 title: 時間ディメンション
 uuid: b633cf4f-0db4-4378-9e59-43b6ad8f772d
 exl-id: f9534b24-3a16-4220-bac2-bc541e121005
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '465'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
 # 時間ディメンション{#time-dimensions}
+
+{{eol}}
 
 時間ディメンションを使用すると、Input Time (1970 epoch) パラメーターに指定した任意のタイムスタンプフィールドに基づいて、定期的または絶対的なローカル時間ディメンション（日、曜日、時間帯、予約時刻など）のグループを作成できます。
 
@@ -34,7 +36,7 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1"> コメント </td> 
-   <td colname="col2"> （オプション）拡張ディメンションについてのメモ。 </td> 
+   <td colname="col2"> （オプション）。拡張ディメンションについてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -57,7 +59,7 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1"> Input Time (1970 epoch) </td> 
-   <td colname="col2"> <p>入力として使用するタイムスタンプフィールドの名前。 </p> <p> <p>注意：このフィールドの値は、1970 年 1 月 1 日 00:00:01 からの秒数を表している必要があります。Input Time が有効な時間（1970 ～ 2037）ではない場合、変換プロセスは失敗し、Data Workbench サーバーからエラーが生成されます。 </p> </p> </td> 
+   <td colname="col2"> <p>入力として使用するタイムスタンプフィールドの名前。 </p> <p> <p>注意：このフィールドの値は、1970 年 1 月 1 日の 00 からの秒数を表している必要があります:00:01. Input Time が有効な時間（1970 ～ 2037）ではない場合、変換プロセスは失敗し、Data Workbench サーバーからエラーが生成されます。 </p> </p> </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

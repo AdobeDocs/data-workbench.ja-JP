@@ -3,7 +3,7 @@ description: DeviceAtlas JSON ファイルは、DeviceAtlas.dll と DeviceAtlas6
 title: DeviceAtlas の配布
 uuid: 1eb76c61-6696-4e6c-a3fd-61c00cc17b0a
 exl-id: e9671810-d32c-4ec4-a1cb-54b71c6f101c,333507bb-3e8b-4da1-8218-b35fcf8d5f80,aa811c7b-ef80-4f23-b395-0cbb7d2677a9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 97%
@@ -12,13 +12,15 @@ ht-degree: 97%
 
 # DeviceAtlas の配布{#deviceatlas-distribution}
 
+{{eol}}
+
 DeviceAtlas JSON ファイルは、DeviceAtlas.dll と DeviceAtlas64.dll ファイルと共に .bundle ファイル（.tar.gz に名前が変更）で配布されます。
 
 管理者が Insight サーバーをバージョン 6.0 にアップグレードした場合、DeviceAtlas.bundle ファイルはアップグレードパッケージと一緒に次の場所にあるソフトウェアおよびドキュメントプロファイル（softdocs プロファイル）に含まれています。
 
 [!DNL Server Packages > v6.00 > Server_6.00.zip]
 
-DeviceAtlas.bundleファイルは[!DNL Server\Lookups\DeviceAtlas]に抽出されます。
+DeviceAtlas.bundle ファイルの抽出先は次のとおりです。 [!DNL Server\Lookups\DeviceAtlas].
 
 DeviceAtlas.bundle ファイルは、DPU と同期されるディレクトリに配置する必要があります。新しい DeviceAtlasComponent に対応する DeviceAtlas.cfg ファイルは、同期マスター上の「Components for Processing Servers」ディレクトリに配置する必要があります。DeviceAtlas.bundle ファイルが変更されると、そのすぐ次の DeviceAtlas ルックアップの呼び出しでは、更新された API または JSON ファイルに基づいた結果が返されます。
 
@@ -56,7 +58,7 @@ DeviceAtlas 変換では、JSON ファイルのパスを指定する必要がな
 User Agent = string: x-ua  
 ```
 
-## DeviceAtlas.cfg ファイルの変更  {#section-10b43705a6c846fd9ec54ea6be249f88}
+## DeviceAtlas.cfg ファイルの変更 {#section-10b43705a6c846fd9ec54ea6be249f88}
 
 これは、DeviceAtlas.cfg ファイルに必要な [!DNL component] 引数の例です。
 
@@ -70,7 +72,7 @@ component = DeviceAtlasComponent:
 
 新しい DeviceAtlasComponent は、起動時に、.bundle ファイルを探し、JSON ファイルの不明化を解除してメモリに読み込み、ファイルを一時ディレクトリに展開して、実行しているプラットフォームに適した DLL をロードします。このコンポーネントは、バンドルファイルの変更を監視し、変更された場合に自動的に DLL と .cfg ファイルをリロードします。
 
-## DeviceAtlas の実行  {#section-6ed37b39199d4ffd95d30b49a7ee9666}
+## DeviceAtlas の実行 {#section-6ed37b39199d4ffd95d30b49a7ee9666}
 
 適切に設定すると、変換に必要な時間が大きく異なります。変換を各セッションの訪問者ごとに 1 回だけ実行するように設定すると、DeviceAtlas の処理をスピードアップできます。
 
@@ -78,7 +80,7 @@ component = DeviceAtlasComponent:
 
 変換を 2 回実行します。
 
-1. [!DNL mobile id]フィールドのみを検索し、
+1. 次の項目だけを検索： [!DNL mobile id] フィールド、
 1. [!DNL mobile id] を無視する条件を作成して、残りのフィールドを検索します。
 
 **Transformation.cfg を使用してデプロイする場合**：

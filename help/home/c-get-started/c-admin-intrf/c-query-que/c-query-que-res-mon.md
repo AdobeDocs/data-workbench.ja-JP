@@ -3,7 +3,7 @@ description: リソースモニターベクトルには、Memory Budget Monitor 
 title: クエリキューのリソースモニター
 uuid: 6b516bed-7f9a-4821-869e-19e720f20313
 exl-id: 6d445a4d-a415-41ce-9d45-1bdd0e726edd
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # クエリキューのリソースモニター{#query-queue-resource-monitors}
+
+{{eol}}
 
 リソースモニターベクトルには、Memory Budget Monitor と Number of Queries Monitor が含まれます。
 

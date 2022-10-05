@@ -2,30 +2,34 @@
 description: クライアントとサーバー間の通信において、パスワードやその他の文字列を暗号化します。
 title: 文字列の暗号化
 uuid: b2ec6a10-136c-4694-a425-04dbb41d43d1
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 43696ff1-3153-4d85-b9a9-c2752dd2c29a
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 75%
 
 ---
 
-
 # 文字列の暗号化{#string-encryption}
+
+{{eol}}
 
 クライアントとサーバー間の通信において、パスワードやその他の文字列を暗号化します。
 
-Data Workbench のクライアント（ワークステーション）とサーバー間の通信においては、Value パラメーター（パスワードなど）を *EncryptedString* タイプで保存することができます。This hides the parameter and saves the string to the *Windows Credential Store* on the server with the corresponding key returned. この機能は、主としてエクスポート内に資格情報を格納するとき使用しますが、任意のパラメーターの暗号化に使用することもできます。
+Data Workbench のクライアント（ワークステーション）とサーバー間の通信においては、Value パラメーター（パスワードなど）を *EncryptedString* タイプで保存することができます。これにより、パラメーターが非表示になり、文字列が *Windows 資格情報ストア* を返します。 この機能は、主としてエクスポート内に資格情報を格納するとき使用しますが、任意のパラメーターの暗号化に使用することもできます。
 
-* A new folder was added at Server\**EncryptStrings**.
+* 新しいフォルダがサーバに追加されました\**EncryptStrings**.
 
    これは、文字列を暗号化するための設定ファイルを指定する場所です。
 
-* A new configuration file was added at Server\Component\**EncryptedStrings.cfg**.
+* 新しい設定ファイルが Server\Component\*に追加されました&#x200B;*EncryptedStrings.cfg**.
 
    ```
    component = EncryptionComponent:
      Path = Path: EncryptStrings\\*.cfg
    ```
 
-   This file polls the *Server*\*EncryptStrings* folder for encryption configuration files.
+   このファイルは、 *サーバー*&#x200B;暗号化設定ファイル用の\*EncryptStrings*フォルダー。
 
 **文字列を暗号化するには**：
 
@@ -45,13 +49,14 @@ Data Workbench のクライアント（ワークステーション）とサー�
 
    * *Name* - このフィールドに、暗号化された文字列を識別するための値を格納します。
    * *EncryptValue* - 入力の設定ファイルでは、このフィールドの値を空のままにしておきます。暗号化済みの値がこのフィールドに返されます。
+
    複数のフィールドを暗号化するには、フィールドごとに別々の **NameEncryptValuePair** 値を追加します。
 
    >[!NOTE]
    >
    >すべての空の値フィールドが削除されます。
 
-1. Save the **EncryptedStrings.cfg** file to the Server\**EncryptStrings** folder.
+1. 保存する **EncryptedStrings.cfg** ファイルをサーバに送信します\**EncryptStrings**フォルダー。
 
 **出力ファイル**
 

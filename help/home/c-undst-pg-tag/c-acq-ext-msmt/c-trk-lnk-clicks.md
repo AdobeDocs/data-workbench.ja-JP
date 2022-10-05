@@ -1,9 +1,9 @@
 ---
-description: 参照ページタグを使用してリンククリック数を収集しやすくする手順です。
+description: 参照ページタグを使用してリンククリック数の収集を容易にする手順です。
 title: リンククリック数の追跡
 uuid: e4c492d2-9c90-4ed7-b997-6c50bdf98f93
 exl-id: 0cb743e6-5c6e-4f80-bc77-83d1e706c92b
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 3%
@@ -12,13 +12,15 @@ ht-degree: 3%
 
 # リンククリック数の追跡{#tracking-link-clicks}
 
-参照ページタグを使用してリンククリック数を収集しやすくする手順です。
+{{eol}}
 
-[!DNL Reference Page Tag] のデプロイメントを通じて、特定のページの訪問中に訪問者がクリックしたリンク（または href 値）を示す測定データを収集できます。 通常、このコレクションには、追加のリンク識別子をHTMLページに実装する必要はありません。
+参照ページタグを使用してリンククリック数の収集を容易にする手順です。
 
-[!DNL Reference Page Tag] を使用してリンククリック数を収集しやすくするには、次の手順を実行します。
+をデプロイする [!DNL Reference Page Tag]を使用すると、特定のページの訪問中に訪問者がクリックしたリンク（または href 値）を示す測定データを収集できます。 通常、このコレクションには、追加のリンク識別子をHTMLページに実装する必要はありません。
 
-1. 次のコードを、[!DNL zig.js] という名前の既存のファイルにコピーします。
+を使用してリンククリック数を簡単に収集できるようにする [!DNL Reference Page Tag]、次の手順を実行します。
+
+1. 次のコードを、 [!DNL zig.js]:
 
    ```
    //REFERENCE LINK AND FORM CLICK PAGE TAG
@@ -77,12 +79,12 @@ ht-degree: 3%
    //END FORM CLICK CAPTURE PAGE TAG
    ```
 
-1. Web サーバー上にあるディレクトリに、[!DNL zag2.gif] という名前の 1 ピクセルの画像ファイルを作成するか、配置します。
-1. [!DNL lc.src] 変数を変更して、[!DNL zag2.gif] ファイルの参照元となる Web サイトの適切なドメインを参照します。
+1. という名前の 1 ピクセル x 1 ピクセルの画像ファイルを作成または配置します。 [!DNL zag2.gif] を web サーバー上のディレクトリに追加します。
+1. を変更します。 [!DNL lc.src] 変数を使用して、Web サイトの適切なドメインを参照します。 [!DNL zag2.gif]ファイルが参照されています。
 
-1. [!DNL zag.gif] ファイルと [!DNL zig.js] ファイルに対して適切なキャッシュ制御ヘッダーが確立されていることを確認します。
+1. 適切なキャッシュ制御ヘッダーが [!DNL zag.gif] および [!DNL zig.js] ファイル。
 
-1. リンククリック値の収集元のHTMLファイル内で、 [!DNL Reference Page Tag Execution Call] を変更して、そのページのリンククリック数を取り込むように [!DNL Page Tag Execution Script] に通知する必要があります。 これをおこなうには、次のコード例で強調表示されているように、vlc 変数の値を「1」に変更します。
+1. リンクのクリック値を収集するHTMLファイル内で、 [!DNL Reference Page Tag Execution Call] 次の情報を伝えるために変更する必要があります [!DNL Page Tag Execution Script] をクリックして、そのページのリンククリック数をキャプチャします。 これをおこなうには、次のコード例で示すように、vlc 変数の値を「1」に変更します。
 
 ```
 <!-- BEGIN REFERENCE PAGE TAG-->

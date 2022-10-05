@@ -3,7 +3,7 @@ description: プロファイルコンポーネントの識別情報の表示に�
 title: ノードの詳細の表示
 uuid: 2016a650-b021-4295-8313-d6287578ed10
 exl-id: f8ce7741-8ba2-484d-ac35-5c286b65f098
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 78%
@@ -11,6 +11,8 @@ ht-degree: 78%
 ---
 
 # ノードの詳細の表示{#view-node-details}
+
+{{eol}}
 
 プロファイルコンポーネントの識別情報の表示に関する情報です。
 
@@ -36,7 +38,7 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->依存関係マップに対して[!DNL Show Performance Data]オプションが有効になっている場合にのみ、変換のパフォーマンス情報が表示されます。 詳しくは、[パフォーマンスデータの表示](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)を参照してください。
+>変換のパフォーマンス情報は、 [!DNL Show Performance Data] オプションは依存関係マップに対して有効です。 詳しくは、 [パフォーマンスデータの表示](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **拡張ディメンション**
 
@@ -46,7 +48,7 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->依存関係マップに対して[!DNL Show Performance Data]オプションが有効になっている場合にのみ、拡張ディメンションのパフォーマンス情報が表示されます。 詳しくは、[パフォーマンスデータの表示](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb)を参照してください。
+>拡張ディメンションのパフォーマンス情報は、 [!DNL Show Performance Data] オプションは依存関係マップに対して有効です。 詳しくは、 [パフォーマンスデータの表示](../../../../../home/c-get-started/c-admin-intrf/c-dataset-mgrs/c-dep-maps/c-disp-perf-data.md#concept-974e2bac3e184f0dab530e63aa4f5ecb).
 
 **指標**
 
@@ -80,4 +82,4 @@ ht-degree: 78%
 
 **プロファイルコンポーネントの入力または出力を表示するには**
 
-* 目的のノードを右クリックし、「**[!UICONTROL Inputs]**」または「**[!UICONTROL Outputs]**」をクリックします。 入力または出力のリストが表示されます。
+* 目的のノードを右クリックし、 **[!UICONTROL Inputs]** または **[!UICONTROL Outputs]**. 入力または出力のリストが表示されます。

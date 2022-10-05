@@ -1,81 +1,84 @@
 ---
-description: クエリAPIの設定に関するクイックガイドです。
-title: クエリAPIの設定
+description: クエリ API の設定に関するクイックガイドです。
+title: クエリ API のセットアップ
 uuid: 521f06a4-65ee-4206-b769-4c1ce6e5fe7d
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 8b9dace8-4dad-434c-aec3-2f6ca872a5f6
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '440'
+ht-degree: 1%
 
 ---
 
+# クエリ API のセットアップ{#query-api-setup}
 
-# クエリAPIの設定{#query-api-setup}
+{{eol}}
 
-クエリAPIの設定に関するクイックガイドです。
+クエリ API の設定に関するクイックガイドです。
 
-クエリAPIを設定するには、次の手順に従います。
+クエリ API を設定するには、次の手順に従います。
 
-1. クエリAPI証明書の取得
+1. クエリ API 証明書の取得
 
-   アドビのテクニカルオペレーションチームに電子メールを送信 — `Dataworkbench@adobe.com`.
+   Tech Ops チームにメールを送信するAdobeメール — `Dataworkbench@adobe.com`.
 
-   クエリAPIに使用するCN名を指定してください(クエリAPIのような汎用名を指定し `<Client>` てください)。
+   クエリ API で使用する CN 名を指定してください（のような汎用名を指定してください）。 `<Client>` クエリ API) を参照してください。
 
    >[!NOTE]
    >
-   >テクニカルオペレーションは証明書を生成し、URLにアップロードします。 チケットの生成が成功した場合は、アドビコンサルタントにテクニカルオペレーションから通知を受け取り、チケットが再度お客様に送信されるように伝えてください。
+   >Tech Ops が証明書を生成し、URL にアップロードします。 チケットの生成に成功した場合、Adobeコンサルタントにテクニカルオペレーションから通知を受け取った後、チケットを返送するように、テクニカルコンサルタントにお知らせください。
 
-1. APIスタンネルのダウンロードと抽出を参照してください。 コンサルタントからapi-stunnelファイルを受け取ります。
+1. API Stunnel のダウンロードと抽出。 コンサルタントから api-stunnel ファイルを受け取ります。
 
-   Perlがマシンにインストールされていることを確認します。
+   お使いのマシンに Perl がインストールされていることを確認します。
 
-   抽出したフォルダー（ファイルをコピーするフォルダーパス）で、Query API証明書をstunnelフォルダー内にコ *ピーし* ます。
+   抽出したフォルダー（ファイルをコピーするフォルダーパス）で、クエリ API 証明書を *スタンネル* フォルダー。
 
-1. Stunnel.confの設定
+1. Stunnel.conf の設定
 
-   *Stunnel* (証明書をコピーした場所 ** )フォルダー内にstunnel.confというファイルがあるはずです。
+   という名前のファイルが必要です。 *stunnel.conf* 内側 *Stunnel* フォルダー（証明書をコピーした場所）。
 
    ファイルをメモ帳で編集します。
 
    ![](assets/dwb_impl_API1.png)
 
-   次のようにパラメータを変更します。 ![](assets/dwb_impl_API2.png)
+   次のようにパラメーターを変更します。 ![](assets/dwb_impl_API2.png)
 
-   このファイルで2つのパラメーターを変更する必要があります。
+   このファイルでは、2 つのパラメーターを変更する必要があります。
 
-   * *Cert* =証明書の名前。 この例では、Aadhithya Ramani QAPI Client.pemです。
-   * *Connect* =メインDPUのサーバー名。
+   * *証明書* =証明書の名前。 この例では、Aadhithya Ramani QAPI Client.pem です。
+   * *接続* =メイン DPU のサーバ名。
 
-1. *Query.pmをコピーします*。
+1. のコピー *クエリ.pm*.
 
-   *Query.pmファイルは* 、Insight APIフォルダーで使用できます。
+   この *クエリ.pm* ファイルが Insight API フォルダーで使用可能になります。
 
-   Query.pm *(* Query.pm)ファイルをコピーして、Perl Libraryフォルダに貼り付けます(通常は*C:\Perl64\lib *ですが、Perlがマシンのどこにインストールされているかを確認してください)。
+   を *クエリ.pm* ファイルを作成し、Perl ライブラリフォルダに貼り付けます ( 通常は*C:\Perl64\lib *ですが、Perl がマシンにインストールされている場所を確認してください )。
 
-1. *api-http.plファイルの変更*
+1. を変更します。 *api-http.pl* ファイル
 
-   api-http.plファイルは、api-stunnelフォルダーにあります。
+   api-http.pl ファイルは api-stunnel フォルダーで入手できます。
 
-   変更するパラメーターは1つだけ
+   変更するパラメーターは 1 つだけです
 
-   *My $profile* =クエリAPIを設定するプロファイル名。
+   *$profile* =クエリ API を設定するプロファイル名
 
-1. Query APIをインストールします。
+1. クエリ API をインストールします。
 
-   システムのコマンドプロンプトを「管理者」として開き、次の図のようにスタンネルを展開したディレク *トリに移動* します。 ![](assets/dwb_impl_API3.png)
+   システムのコマンドプロンプトを「Administrator」として開き、 *スタンネル* 例： ![](assets/dwb_impl_API3.png)
 
-   Run the following command *.\stunnel -install*. ![](assets/dwb_impl_API4.png)
+   次のコマンドを実行します。 *.\stunnel -install*. ![](assets/dwb_impl_API4.png)
 
-   コマンドの実行後、stunnelがインストールされたというメッセージが *ウィンドウ* に表示されます。
+   コマンドを実行すると、ウィンドウがポップアップ表示され、 *スタンネル* がインストールされている。
 
    >[!NOTE]
    >
-   >コマンドの実行後、stunnelがインストールされたというメッセージが *ウィンドウ* に表示されます。
+   >コマンドを実行すると、ウィンドウがポップアップ表示され、 *スタンネル* がインストールされている。
 
-1. Query APIスタンネルの設定のテスト
+1. クエリ API スタンネル設定のテスト
 
-   このプロセスの最後の手順は、クエリAPIの設定をテストすることです。 api-stunnelディレクトリのインストールに使用したコマンドプロンプトで、 ![](assets/dwb_impl_API5.png)
+   このプロセスの最後の手順は、クエリ API の設定をテストすることです。 api-stunnel ディレクトリのインストールに使用したコマンドプロンプトで、 ![](assets/dwb_impl_API5.png)
 
-   次のコマンド* perl api-http.pl*を使用して、そのフォルダーにあるPerlスクリプトを実行します。 ![](assets/dwb_impl_API6.png)
+   次のコマンドを使用して、そのフォルダで使用可能な Perl スクリプトを実行します。* perl api-http.pl* ![](assets/dwb_impl_API6.png)
 
-   スクリプトの実行後、結果は下のスクリーンショットのようになります(結果の日時と値は、Query APIを設定したプロファイル内の時点と他のパラメーター（手順6）に応じて異なります)。 ![](assets/dwb_impl_API7.png)
-
+   スクリプトを実行した後の結果は、以下のスクリーンショットのようになります ( 結果の日時と値は、クエリ API を設定したプロファイルの時刻と他のパラメーターに応じて変わります（手順 6）。 ![](assets/dwb_impl_API7.png)

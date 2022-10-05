@@ -3,7 +3,7 @@ description: プレミアムメニューから最適なアトリビューショ�
 title: 最適なアトリビューションの作成
 uuid: d1fd0340-1917-41bc-9a08-e78a79d084e7
 exl-id: e0a42374-2500-46a3-a72a-708ab2d228db
-source-git-commit: b21da6d12175fa8570b1b366049baa9c8e8ea862
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 58%
@@ -12,27 +12,29 @@ ht-degree: 58%
 
 # 最適なアトリビューションの作成{#build-a-best-fit-attribution-model}
 
+{{eol}}
+
 プレミアムメニューから最適なアトリビューションを開き、次の手順に従って、最適なアトリビューションモデルを作成します。
 
-[ 最適なアトリビューション ](../../../../home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-algorithmic.md#concept-237feb6e9c4d49efaf75399297dcb9d1) の概要を参照してください。
+の概要を見る [最適なアトリビューション](../../../../home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-algorithmic.md#concept-237feb6e9c4d49efaf75399297dcb9d1).
 
 1. **最適なアトリビューション**&#x200B;を開きます。
 
-   ワークスペースを開き、**[!UICONTROL Premium]** > **[!UICONTROL Best Fit Attribution]** をクリックします。
+   ワークスペースを開いて、 **[!UICONTROL Premium]** > **[!UICONTROL Best Fit Attribution]**.
 
    ![](assets/attrib_windows_launch.png)
 
    >[!NOTE]
    >
-   >最適なアトリビューションは、Adobe Analytics Premiumの機能で、プロファイルで Premium を有効にする必要があります。 それには、証明書を更新し、profile.cfg ファイルに Premium プロファイルを追加する必要があります。[DWB サーバーのアップグレードを参照してください。DWB 6.3 の場合は 6.2～6.3](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md)。
+   >最適なアトリビューションは、Adobe Analytics Premiumの機能で、プロファイルで Premium を有効にする必要があります。 それには、証明書を更新し、profile.cfg ファイルに Premium プロファイルを追加する必要があります。詳しくは、 [DWB サーバーのアップグレード：6.2～6.3](/help/home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/c-6-2-to-6-3-upgrade.md) （DWB 6.3 用）
 
-1. **[!UICONTROL Success]** 指標を設定します。
+1. を **[!UICONTROL Success]** 指標。
 
    >[!NOTE]
    >
-   >**[!UICONTROL Finder]** テーブルからアトリビューションビジュアライゼーションの左側のウィンドウに指標をドラッグするか、**入力** メニューから選択します。
+   >指標は、 **[!UICONTROL Finder]** アトリビューションビジュアライゼーションの左側のウィンドウに表を追加するか、 **入力** メニュー
 
-   クリック **[!UICONTROL Inputs]** > **[!UICONTROL Set Success]**. 指標メニューが開きます。![](assets/attrib_set_success_metric.png)
+   クリック **[!UICONTROL Inputs]** > **[!UICONTROL Set Success]**. 指標メニューが開きます。 ![](assets/attrib_set_success_metric.png)
 
    コンバージョンの成功を特定する指標を選択します。
 
@@ -46,27 +48,27 @@ ht-degree: 58%
    >
    >タッチ指標の設定は、ディメンション要素をビジュアライゼーションにドラッグして成功指標を自動的に作成しようとする場合にのみ必要です。
 
-   **[!UICONTROL Inputs]** メニューをクリックし、「**タッチを設定**」を選択するか、ファインダーから指標をドラッグします。![](assets/attrib_set_touch.png)
+   次をクリック： **[!UICONTROL Inputs]** メニューと選択 **タッチを設定**&#x200B;または Finder から指標をドラッグします。 ![](assets/attrib_set_touch.png)
 
    これは、ディメンションエレメントを入力として使用した場合に、チャネル指標を取得するために使用されます。
 
 1. **成功**&#x200B;ウィンドウを設定します。
 
-   「[!DNL Inputs > Success Window]」をクリックします。テーブルから日付範囲を選択し、成功ウィンドウに名前を付けます。**[!UICONTROL Workspace Selection]** をクリックすると、選択した日付が成功指標の時間範囲として割り当てられます。
+   「[!DNL Inputs > Success Window]」をクリックします。テーブルから日付範囲を選択し、成功ウィンドウに名前を付けます。クリック **[!UICONTROL Workspace Selection]** 選択した日付が、成功指標の時間範囲として割り当てられます。
 
    ![](assets/attrib_set_success_window.png)
 
    >[!NOTE]
    >
-   >「成功」ウィンドウはワークステーションの選択なので、任意のディメンションを「成功」ウィンドウに含めることができます。
+   >成功ウィンドウはワークステーションの選択なので、成功ウィンドウに任意のディメンションを含めることができます。
 
-1. **[!UICONTROL Touch Window]** を設定します。
+1. を設定します。 **[!UICONTROL Touch Window]**.
 
-   「[!DNL Inputs > Touch Window]」をクリックします。テーブルから日付範囲を選択し、タッチウィンドウに名前を付けます。**[!UICONTROL Workspace Selection]** をクリックすると、選択した日付が成功指標の時間範囲として割り当てられます。
+   「[!DNL Inputs > Touch Window]」をクリックします。テーブルから日付範囲を選択し、タッチウィンドウに名前を付けます。クリック **[!UICONTROL Workspace Selection]** 選択した日付が、成功指標の時間範囲として割り当てられます。
 
    ![](assets/attrib_set_touch_window.png)
 
-   デフォルトでは、**タッチ** ウィンドウは **[!UICONTROL Success]** ウィンドウと同じ期間に設定されます。
+   デフォルトでは、 **タッチ** ウィンドウが **[!UICONTROL Success]** ウィンドウ
 
 1. （オプション）トレーニングフィルターを設定します。
 
@@ -74,19 +76,19 @@ ht-degree: 58%
 
    >[!NOTE]
    >
-   >成功ウィンドウとタッチウィンドウの両方を設定し、現在のワークスペースの選択にトレーニングフィルターを適用して、データをさらに制限できます。
+   >成功ウィンドウとタッチウィンドウの両方を設定して、現在のワークスペースの選択にトレーニングフィルターを適用し、データをさらに制限できます。
 
    ![](assets/attrib_filter.png)
 
    >[!NOTE]
    >
-   >トレーニングセットは、常に、成功ウィンドウを満たす訪問者から取得されます。 フィルターエディターを使用してフィルターすると、成功ウィンドウで報告された訪問者のサブセットを作成することができます。
+   >トレーニングセットは、常に、成功ウィンドウを満たす訪問者から作成されます。 フィルターエディターを使用してフィルターすると、成功ウィンドウで報告された訪問者のサブセットを作成することができます。
 
 1. タッチを表すチャネル指標を指定します。
 
-   指標をビジュアライゼーションにドラッグするか、[!DNL Inputs] / [!DNL Add Channel] メニューから指標を選択します。 まだキャンペーンやチャネルに対して指標を定義していないが、チャネルを表すディメンションがある場合は、ビジュアライゼーションでタッチ指標の指定を使用して指標を自動的に作成することができます。
+   指標をビジュアライゼーションにドラッグするか、 [!DNL Inputs] > [!DNL Add Channel] メニュー まだキャンペーンやチャネルに対して指標を定義していないが、チャネルを表すディメンションがある場合は、ビジュアライゼーションでタッチ指標の指定を使用して指標を自動的に作成することができます。
 
-   例えば、タッチ指標を [!DNL Hits] に設定し、[!DNL Email]、[!DNL Press Release]、[!DNL Print Ad]、[!DNL Social Media] などの要素を含む [!DNL dimension] を指定すると、ビジュアライゼーションに要素をドラッグ&amp;ドロップすると、[!DNL Hits where Media Type = Email] 形式のチャネル指標が生成されます。[!DNL Media Type]
+   例えば、タッチ指標がに設定されている場合、 [!DNL Hits]、および [!DNL dimension] 呼び出し [!DNL Media Type] を含む要素を使用 [!DNL Email], [!DNL Press Release], [!DNL Print Ad]、および [!DNL Social Media]を指定しない場合、ビジュアライゼーションはフォームのチャネル指標を生成します [!DNL Hits where Media Type = Email] 要素をビジュアライゼーションにドラッグ&amp;ドロップしたとき。
 
 1. 「**移動**」を押します。
 
@@ -94,7 +96,7 @@ ht-degree: 58%
 
    >[!NOTE]
    >
-   >完了した分析で **モデル完了** を右クリックし、アトリビューションモデルの統計を表示します。
+   >右クリック **モデル完了** アトリビューションモデルの統計を確認するには、完了した分析を参照してください。
 
    ![](assets/attrib_visualization.png)
 
@@ -102,7 +104,7 @@ ht-degree: 58%
 
 >[!NOTE]
 >
->**[!UICONTROL Streaming]**、モー **[!UICONTROL Online]** ドとモ **[!UICONTROL Offline]** ードは、評価対象のデータの待ち時間に基づいてアトリビューションモデルを作成する際に異なる効果を生みます。ストリーミングモードでは、詳細 **[!UICONTROL Model Complete]** メッセージが表示されます。 オンラインモードとオフラインモードでは、詳細 **[!UICONTROL Local Model Complete]** が表示されます。
+>**[!UICONTROL Streaming]**, **[!UICONTROL Online]** および **[!UICONTROL Offline]** モードは、評価されるデータの待ち時間に基づいてアトリビューションモデルを作成する際に、異なる効果を生み出します。 ストリーミングモードでは、詳細 **[!UICONTROL Model Complete]** メッセージが表示されます。 オンラインモードとオフラインモードでは、詳細 **[!UICONTROL Local Model Complete]** が表示されます。
 
 ## オプションメニュー {#section-22288867f6c8483a8a38410f4b948346}
 
@@ -160,7 +162,7 @@ ht-degree: 58%
 
 | リセットと削除オプション | 説明 |
 |---|---|
-| **[!UICONTROL Reset Model]** | **[!UICONTROL Reset]** メニューから **[!UICONTROL Reset Model]** を選択してビジュアライゼーションをクリアしますが、入力指標は維持します。 |
-| **[!UICONTROL Reset All]** | **[!UICONTROL Reset]** メニューから **[!UICONTROL Reset All]** を選択して、ビジュアライゼーションと入力指標をクリアします。 |
-| **[!UICONTROL Remove]** | 任意の入力を右クリックし、**[!UICONTROL Remove]** を選択して、選択した入力から指標をクリアします。 |
-| **[!UICONTROL Remove All]** | 「*チャネル*」を右クリックし、「**[!UICONTROL Remove All]**」を選択してすべての入力指標をクリアします。 |
+| **[!UICONTROL Reset Model]** | 次の **[!UICONTROL Reset]** メニュー、選択 **[!UICONTROL Reset Model]** をクリアし、入力指標を維持する。 |
+| **[!UICONTROL Reset All]** | 次の **[!UICONTROL Reset]** メニュー、選択 **[!UICONTROL Reset All]** をクリックして、ビジュアライゼーションと入力指標をクリアします。 |
+| **[!UICONTROL Remove]** | 任意の入力を右クリックし、「 」を選択します。 **[!UICONTROL Remove]** をクリックして、選択した入力から指標をクリアします。 |
+| **[!UICONTROL Remove All]** | 右クリック *チャネル* を選択し、 **[!UICONTROL Remove All]** をクリックして、すべての入力指標をクリアします。 |

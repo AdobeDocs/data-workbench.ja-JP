@@ -4,7 +4,7 @@ solution: Analytics
 title: 実験の評価
 uuid: 88fd81bc-b944-48ea-bd4d-8716979ec69e
 exl-id: 5add2168-f6bc-45c5-bf1d-1191a38c5bac
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 1%
@@ -12,6 +12,8 @@ ht-degree: 1%
 ---
 
 # 実験の評価{#evaluating-the-experiment}
+
+{{eol}}
 
 必要最小限の訪問者数が実験に参加するまで実験を実行した後で、実験の結果を評価するのに十分な統計的信頼性を確保できます。
 

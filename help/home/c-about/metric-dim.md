@@ -3,7 +3,7 @@ description: ステップバイステップ方式のウィザードを使用し�
 title: 指標ディメンションウィザード (Dimension)
 uuid: 411b2e28-0958-43bb-a853-7de7b3063818
 exl-id: 4d283a00-409c-4d74-a558-40744caba71c
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 81%
@@ -11,6 +11,8 @@ ht-degree: 81%
 ---
 
 # 指標ディメンションウィザード{#metric-dim-wizard}
+
+{{eol}}
 
 ステップバイステップ方式のウィザードを使用して、指標属性によって定義されるディメンション（指標ディメンション）を作成できます。作成した新しい指標ディメンションをテストし、プレビューし、ディメンションリストに保存できます。
 
@@ -34,7 +36,7 @@ ht-degree: 81%
 
    * クリックスルー
    * ヒット
-   * 製品            
+   * 製品
    * 訪問
    * 訪問者。
 

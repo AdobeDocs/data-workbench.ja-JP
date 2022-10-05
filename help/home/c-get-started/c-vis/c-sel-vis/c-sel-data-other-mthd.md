@@ -3,7 +3,7 @@ description: ポイントアンドクリックによりビジュアライゼー�
 title: 他の方法を使用してデータを選択する
 uuid: 0e2b8e6d-d696-4597-9f85-1968b18cfbc8
 exl-id: d6ef163e-1faa-4b0f-b69b-9e559f6f34fb
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 93%
@@ -11,6 +11,8 @@ ht-degree: 93%
 ---
 
 # 他の方法を使用してデータを選択する{#selecting-data-using-other-methods}
+
+{{eol}}
 
 ポイントアンドクリックによりビジュアライゼーションで簡単かつ強力な選択を行えますが、Adobe アプリケーションでは、これ以外に 3 つの方法を使用して、データを選択し、選択したデータで作業を行えます。
 
@@ -32,4 +34,4 @@ ht-degree: 93%
 
    例：カリフォルニアの顧客のみに関するデータの詳細分析を実行する場合。
 
-   サブセットはワークスペースにグローバルに適用されるので、サブセットを使用すると、すべてのData Workbenchに影響が及びます。 [サブセットの操作](../../../../home/c-get-started/c-vis/c-wk-subsets/c-wk-subsets.md#concept-43809322b6374d5cb2536630a13e943b)を参照してください。
+   サブセットはワークスペースにグローバルに適用されるので、サブセットを使用すると、すべてのData Workbenchに影響します。 詳しくは、 [サブセットの操作](../../../../home/c-get-started/c-vis/c-wk-subsets/c-wk-subsets.md#concept-43809322b6374d5cb2536630a13e943b).

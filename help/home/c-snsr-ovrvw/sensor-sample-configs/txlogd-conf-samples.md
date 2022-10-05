@@ -1,20 +1,24 @@
 ---
-description: サポートされるWebサーバーとOSの組み合わせに対するtxlogd.confファイルの例です。
-title: Txlogd.confファイルの例
+description: サポートされる Web サーバー/OS の組み合わせに対する txlogd.conf ファイルの例。
+title: txlogd.conf ファイルのサンプル
 uuid: ba8f3938-b7d6-44bd-93ca-eb66f509ef4e
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 3bbb794f-c771-43c6-9ebf-8892c1d9a707
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '253'
+ht-degree: 7%
 
 ---
 
+# txlogd.conf ファイルのサンプル{#txlogd-conf-file-samples}
 
-# Txlogd.confファイルの例{#txlogd-conf-file-samples}
+{{eol}}
 
-サポートされるWebサーバーとOSの組み合わせに対するtxlogd.confファイルの例です。
+サポートされる Web サーバー/OS の組み合わせに対する txlogd.conf ファイルの例。
 
-## IIS（Microsoft Windows Server 2000以降） {#section-d5d602c3e87b4ecf910e71772350e865}
+## IIS(Microsoft Windows Server 2000 以降 ) {#section-d5d602c3e87b4ecf910e71772350e865}
 
-Microsoft Windows Server 2000以降で実行されるSensor for Internet Information Service(IIS)5.xまたは6.xに必要なtxlogd.confファイルの例です。
+Microsoft Windows Server 2000 以降で実行されている Sensor for Internet Information Service(IIS)5.x または 6.x に必要な txlogd.conf ファイルの例。
 
 ```
 # sample txlogd configuration file for IIS
@@ -115,9 +119,9 @@ NewUserCacheControl no-cache=Set-Cookie
 CacheControl private,max-age=0,must-revalidate
 ```
 
-## Lotus Sametime（Windows Server 2000以降） {#section-36265b8192484a268ebafc42e941fdf2}
+## Lotus Sametime（Windows Server 2000 以降） {#section-36265b8192484a268ebafc42e941fdf2}
 
-Microsoft Windows Server 2000以降で実行するLotus Sametime用のSensorに必要なtxlogd.confファイルの例。
+Microsoft Windows Server 2000 以降で実行される Lotus Sametime のセンサーに必要な txlogd.conf ファイルの例。
 
 ```
 # sample txlogd configuration file for Lotus Sametime
@@ -191,9 +195,9 @@ ExpPartialMatch on
 SiteTest http,localhost,80,/test.html
 ```
 
-## Windows Server 2000以降でのLotus Domino {#section-d2fd9e0684fe460bbccaaabc4197bb48}
+## Lotus Domino サーバー（Windows 2000 以降） {#section-d2fd9e0684fe460bbccaaabc4197bb48}
 
-Microsoft Windows Server 2000以降で実行するLotus Domino用のSensorに必要なtxlogd.confファイルの例です。
+Microsoft Windows Server 2000 以降で実行される Lotus Domino 用 Sensor に必要な txlogd.conf ファイルの例。
 
 ```
 # sample txlogd configuration file for Lotus Domino
@@ -271,9 +275,9 @@ SpecialLogField cs(dn)=vars.X509SubjectName vys_log
 SpecialLogField cs(cert)=vars.certificate vys_log
 ```
 
-## IBM AIX 5.2上のIBM HTTP Server {#section-d7c88cc65b0b4c7a877bf7a084cbf4fb}
+## IBM AIX 5.2 上のIBM HTTP Server {#section-d7c88cc65b0b4c7a877bf7a084cbf4fb}
 
-IBM AIX 5.2で実行されるIBM HTTP Server 2.0.x用のSensorに必要なtxlogd.confファイルの例。
+IBM AIX 5.2 で実行されるIBM HTTP Server 2.0.x 用 Sensor に必要な txlogd.conf ファイルの例。
 
 ```
 # sample txlogd configuration file for IHS 2.0.x
@@ -410,9 +414,9 @@ DisableField cs(cookie)
 PrivacyID 0x1111111
 ```
 
-## RedHat Linux、Sun Solaris、FreeBSD、またはMac OSX上のApache Server 1.3.x {#section-36d0b6d761424d358280226a16e643d2}
+## RedHat Linux、Sun Solaris、FreeBSD、またはMac OSX 上の Apache サーバー 1.3.x {#section-36d0b6d761424d358280226a16e643d2}
 
-RedHat Linux 7.x、Sun Solaris 2.6以降、FreeBSD 4以降、またはMac OS X PowerPCで動作するApache Server 1.3.x用のSensorに必要なtxlogd.confファイルの例。
+RedHat Linux 7.x、Sun Solaris 2.6 以降、FreeBSD 4 以降、またはMac OS X PowerPC で実行される Apache Server 1.3.x 用の Sensor に必要な txlogd.conf ファイルの例。
 
 ```
 # sample txlogd configuration file for Apache 1.3
@@ -552,9 +556,9 @@ NewUserCacheControl no-cache=Set-Cookie
 CacheControl private,max-age=0,must-revalidate
 ```
 
-## Windows 2000 Server以降でのApache Server 1.3.x {#section-d225f200da28441895fb90a64c2a2ffd}
+## Apache サーバー 1.3.x（Windows 2000 Server 以降） {#section-d225f200da28441895fb90a64c2a2ffd}
 
-Microsoft Windows Server 2000以降で実行されるApache Server 1.3.x用のSensorに必要なtxlogd.confファイルの例です。
+Microsoft Windows Server 2000 以降で動作する Apache サーバー 1.3.x 用 Sensor で必要な txlogd.conf ファイルの例。
 
 ```
 # sample txlogd configuration file for Apache 1.3
@@ -695,9 +699,9 @@ NewUserCacheControl no-cache=Set-Cookie
 CacheControl private,max-age=0,must-revalidate
 ```
 
-## Linux、Sun Solaris、またはFreeBSD上のApache Server 2.0.xまたは2.2 {#section-b87565beba44472483348d442329c3fe}
+## Apache サーバー 2.0.x または 2.2（Linux、Sun Solaris、FreeBSD のいずれか） {#section-b87565beba44472483348d442329c3fe}
 
-次のApacheサーバー用のSensorに必要なtxlogd.confファイルの例。
+次の Apache サーバーの Sensor に必要な txlogd.conf ファイルの例。
 
 ```
 Apache Server 2.0.40 running under RedHat Linux 7.x or later or Sun Solaris SPARC 2.6 or later
@@ -842,9 +846,9 @@ NewUserCacheControl no-cache=Set-Cookie
 CacheControl private,max-age=0,must-revalidate
 ```
 
-## Windows Server 2000以降で稼働するApache Server 2.0.xまたは2.2 {#section-a1749d32a8aa4ca0b81f8b95c8dc511c}
+## Apache Server 2.0.x または 2.2（Windows Server 2000 以降） {#section-a1749d32a8aa4ca0b81f8b95c8dc511c}
 
-Microsoft Windows Server 2000以降で実行されるApache Server 2.0.xまたは2.2用のSensorに必要なtxlogd.confファイルの例。
+Microsoft Windows Server 2000 以降で動作する Apache Server 2.0.x または 2.2 用の Sensor で必要な txlogd.conf ファイルの例。
 
 ```
 # sample txlogd configuration file for Apache 2.0.x or 2.2
@@ -990,4 +994,3 @@ CacheControl private,max-age=0,must-revalidate
 ```
 
 ## セクションタイトル {#section-f25d181e181e4bb7bf46d4410756e945}
-

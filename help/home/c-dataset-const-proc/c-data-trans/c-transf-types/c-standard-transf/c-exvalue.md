@@ -3,7 +3,7 @@ description: Web データを扱う際、クエリー文字列や cookie など�
 title: ExtractValue
 uuid: 305827a2-04e6-421f-82cb-923d62b02e70
 exl-id: 5bafe64f-081a-49ec-997e-68e8f6915a71
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 97%
@@ -11,6 +11,8 @@ ht-degree: 97%
 ---
 
 # ExtractValue{#extractvalue}
+
+{{eol}}
 
 Web データを扱う際、クエリー文字列や cookie などの形式でエンコードされたフィールドの値を、ExtractValue 変換を使用して Web サイトデータから抽出することができます。
 
@@ -32,7 +34,7 @@ Web データを扱う際、クエリー文字列や cookie などの形式で�
   </tr> 
   <tr> 
    <td colname="col1"> コメント </td> 
-   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
+   <td colname="col2"> （オプション）。変換についてのメモ。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -58,7 +60,7 @@ Web データを扱う際、クエリー文字列や cookie などの形式で�
  </tbody> 
 </table>
 
-検索語句を抽出する場合、その語句全体を抽出し、必要に応じて、[!DNL Tokenize] 変換を使用し、検索キーワードに分割することができます。[!DNL Tokenize]変換について詳しくは、[Tokenize](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c)を参照してください。
+検索語句を抽出する場合、その語句全体を抽出し、必要に応じて、[!DNL Tokenize] 変換を使用し、検索キーワードに分割することができます。詳しくは、 [!DNL Tokenize] 変換については、 [Tokenize](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-tokenize.md#concept-f460aa5df3a7476e971af29cf5d9b32c).
 
 次に示したのは、cs(referrer-query) から x-v-search-querynames フィールドの値を抽出し、x-search-phrase フィールドに格納する [!DNL ExtractValue] 変換の設定例です。
 

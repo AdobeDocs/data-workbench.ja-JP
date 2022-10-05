@@ -3,7 +3,7 @@ description: URI 変換は、Site アプリケーションに備わっている 
 title: URI 変換
 uuid: 7e78b63f-5a9d-47d9-839f-20e145b7f931
 exl-id: ce41e4d9-adc1-4430-ba45-8bf2189f5dee
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # URI 変換{#uri-transformations}
+
+{{eol}}
 
 URI 変換は、Site アプリケーションに備わっている URI ディメンション作成用の内部フィールドに変更を加えるものです。
 

@@ -1,9 +1,9 @@
 ---
-description: Data Workbench6.1のサーバーコンポーネントを5.4からアップグレードします。
-title: DWBサーバーの5.4から5.5へのアップグレード
+description: Data Workbench6.1 のサーバーコンポーネントを 5.4 のインストールからアップグレードします。
+title: DWB サーバーの 5.4 から 5.5 へのアップグレード
 uuid: 9cf9f493-f098-4c6d-a8b5-786833496557
 exl-id: dd8c2a89-6a40-4ebf-a964-eb4851ab94a5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 2%
@@ -12,28 +12,30 @@ ht-degree: 2%
 
 # DWB サーバーのアップグレード：5.4 から 5.5 へ{#dwb-server-upgrade-to}
 
-Data Workbench6.1のサーバーコンポーネントを5.4からアップグレードします。
+{{eol}}
 
-したがって、[!DNL Insight] 5.4から[!DNL Insight] 5.5へのアップグレードは比較的簡単です。
+Data Workbench6.1 のサーバーコンポーネントを 5.4 のインストールからアップグレードします。
 
-次の手順を使用して、[!DNL Insight] 5.3から[!DNL Insight] 5.5に直接アップグレードすることもできます。 「[Insight 5.4から5.5](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-to-5.5.md#task-b581e47952e941158d52db3e68f076b9)へのアップグレード」および「[Insight 5.4から5.5](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-to-5.5.md#task-b581e47952e941158d52db3e68f076b9)へのアップグレード」に記載されているすべてのアップグレードタスクを実行してください。
+その結果、 [!DNL Insight] 5.4～ [!DNL Insight] 5.5 は比較的単純です。
 
-1. [!DNL Insight Server]サービスは、[!DNL Insight Master Server]を除く、クラスター内のすべてのサーバーで停止します。
+また、 [!DNL Insight] 5.3～ [!DNL Insight] 5.5 を使用します。 必ず、 [Insight 5.4 から 5.5 へのアップグレード](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-to-5.5.md#task-b581e47952e941158d52db3e68f076b9) セクションおよび [Insight 5.4 から 5.5 へのアップグレード](../../../../home/c-inst-svr/c-upgrd-uninst-sftwr/c-upgrd-sftwr/t-upgrd-to-5.5.md#task-b581e47952e941158d52db3e68f076b9) 」セクションに入力します。
 
-   1. 新しい[!DNL ReportServer.exe]ファイルと[!DNL Insight.exe]ファイルをSoftware\Insightフォルダーにコピーします。
+1. を停止します。 [!DNL Insight Server] クラスタ内のすべてのサーバー上のサービス ( [!DNL Insight Master Server].
 
-   1. [!DNL Insight]クライアントが更新されたら、[!DNL InsightServer.exe]ファイルと[!DNL InsightServer64.exe]ファイルを\Binフォルダーにコピーします。
+   1. 新しい [!DNL ReportServer.exe] および [!DNL Insight.exe] ファイルを Software\Insight フォルダーに保存します。
 
-   1. [!DNL Insight Master Server]が開始するのを待ってから、[!DNL Connections]ビジュアライゼーションを使用して実行中のバージョンを確認します。
+   1. 次の期間の後 [!DNL Insight] クライアントが更新されました。 [!DNL InsightServer.exe] および [!DNL InsightServer64.exe] ファイルを\Bin フォルダーに格納します。
 
-1. [!DNL Insight]クライアントでのクラスターの[!DNL Master Server]で、次の操作を実行します。
+   1. 待機： [!DNL Insight Master Server] を起動し、 [!DNL Connections] ビジュアライゼーション。
 
-   1. 既存の[!DNL Base]プロファイルのローカルコピーを作成し、名前を変更します（例：BaseBackup）。
-   1. 新しい[!DNL Base]プロファイルをProfilesフォルダーにコピーします。
-   1. 変換フォルダーに対して、次の2つの手順を繰り返します。
+1. クラスターの [!DNL Master Server] 内 [!DNL Insight] クライアント：
 
-1. サーバーパッケージのScriptsフォルダーを[!DNL Master Server]のServerインストールディレクトリにコピーします。
-1. [!DNL Terrain Images.cfg.off]ファイルを[!DNL Master Server]のComponentsフォルダーにコピーします。
-   **クライアントソフトウェアを [!DNL Insight] 5.4から5.5にアップグレードするには**
+   1. 既存のコピーをローカルに作成 [!DNL Base] プロファイルを作成し、名前を変更します（例：BaseBackup）。
+   1. 新しい [!DNL Base] プロファイルを Profiles フォルダーに追加します。
+   1. Transform フォルダに対して、次の 2 つの手順を繰り返します。
 
-[!DNL Insight.cfg]ファイルで、「ソフトウェアの更新」設定がTRUEに設定されていることを確認します。
+1. サーバーパッケージから [!DNL Master Server] を Server インストールディレクトリに追加します。
+1. を [!DNL Terrain Images.cfg.off] ファイルを [!DNL Master Server].
+   **クライアントソフトウェアをからアップグレードするには [!DNL Insight] 5.4～5.5**
+
+内 [!DNL Insight.cfg] ファイルに含める場合は、[ ソフトウェアの更新 ] の設定が [TRUE] に設定されていることを確認します。

@@ -3,7 +3,7 @@ description: プロファイルのコンポーネントの設定は、依存関�
 title: 依存関係マップ
 uuid: c869267c-5fa9-43b8-b4d4-06c7a36bfa8e
 exl-id: 4618c735-f507-4abc-a4b4-d52a37c64c60,733407ca-3326-406a-a642-a3ea3d3f6b8b
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 87%
@@ -12,9 +12,11 @@ ht-degree: 87%
 
 # 依存関係マップ{#dependency-maps}
 
+{{eol}}
+
 プロファイルのコンポーネントの設定は、依存関係マップで視覚化し、管理することができます。
 
-* **データセットコンポーネント：** データセットの、、ファイルに定義されているログソース、フィルター、フィールド、変換、拡張ディメ [!DNL Log Processing.cfg]ンション [!DNL Transformation.cfg]が含ま [!DNL dataset include] れます。
+* **データセットコンポーネント：** データセットの [!DNL Log Processing.cfg], [!DNL Transformation.cfg]、および [!DNL dataset include] ファイル。
 
 * **クエリーモデルのコンポーネント：** Dimensions、Metrics、Filters の各フォルダーで定義されている指標、ディメンション、フィルター
 * **ワークスペースとビジュアライゼーション：**&#x200B;ワークスペース、レポート、メニューオプション、グローブレイヤー
@@ -25,8 +27,8 @@ ht-degree: 87%
 
 ## データセットのコンポーネントの表示 {#section-3e51c09c23cc40aeade2e6ad0fa7c8d2}
 
-1. 依存関係マップ内で右クリックし、「**[!UICONTROL Display]**」をクリックします。
-1. **[!UICONTROL Dataset]**&#x200B;を選択します。 [!DNL Dataset]の左側にXが表示されます。
+1. 依存関係マップ内で右クリックし、 **[!UICONTROL Display]**.
+1. 選択 **[!UICONTROL Dataset]**. 左側に X が表示されます [!DNL Dataset].
 
 他の表示オプションについて詳しくは、『*Data Workbench ユーザーガイド*』を参照してください。
 
@@ -35,7 +37,7 @@ ht-degree: 87%
 ![](assets/vis_DependencyMap.png)
 
 * 黄緑色のノードは、データセットに定義されている特定のフィルターまたは 1 つまたは複数のログソースを表します。ログソースのノードは常にマップの左端に表示されます。
-* 灰色のノードは、[!DNL Log Processing.cfg]または[!DNL Log Processing Include]ファイルのFieldsパラメーターにリストされているフィールドを表します。
+* 灰色のノードは、 [!DNL Log Processing.cfg] または [!DNL Log Processing Include]ファイル。
 
 * 青のノードは、変換を表します。
 * 緑のノードは、拡張ディメンションを表します。
@@ -52,7 +54,7 @@ ht-degree: 87%
 
 >[!NOTE]
 >
->依存関係マップ内でハイライト表示されているパスは、選択範囲を構成しません。
+>依存関係マップ内でハイライト表示されているパスは、選択範囲を構成していません。
 
 ノードを右クリックすると、マップに表示されている各コンポーネントに関する識別情報を確認したり、メニューオプションを選択して、コンポーネントに関する詳細を表示したり、コンポーネントを編集したりできます。加えて、テキスト検索を実行したり、変換や拡張ディメンションのパフォーマンス情報を表示したりすることもできます。
 

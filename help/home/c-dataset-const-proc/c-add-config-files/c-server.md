@@ -3,7 +3,7 @@ description: Data Workbench で使用するデータのキャッシュサイズ�
 title: Server.cfg
 uuid: 7e789133-09fc-442d-b643-cca8620f4a97
 exl-id: fb7667f6-4061-4bde-8a48-6489b24e0411
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 72%
@@ -12,9 +12,11 @@ ht-degree: 72%
 
 # Server.cfg{#server-cfg}
 
+{{eol}}
+
 Data Workbench で使用するデータのキャッシュサイズ（バイト単位）は、Server.cfg ファイルの Sample Bytes パラメーターで指定します。
 
-デフォルト値は 250e6 です。[!DNL Server.cfg]ファイルを開いて保存する手順は、[!DNL Log Processing Mode.cfg]の手順と同じです。 [Log Processing Mode.cfg](../../../home/c-dataset-const-proc/c-add-config-files/t-log-proc-mode.md#task-e530907cb34f488182afe625e6d9e44a)を参照してください。
+デフォルト値は 250e6 です。を開いて保存する手順 [!DNL Server.cfg] ファイルは [!DNL Log Processing Mode.cfg]. 詳しくは、 [Log Processing Mode.cfg](../../../home/c-dataset-const-proc/c-add-config-files/t-log-proc-mode.md#task-e530907cb34f488182afe625e6d9e44a).
 
 >[!NOTE]
 >

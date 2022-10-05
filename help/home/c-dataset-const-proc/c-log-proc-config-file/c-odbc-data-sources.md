@@ -3,7 +3,7 @@ description: Data Workbench サーバー（InsightServer64.exe）は、ドライ
 title: ODBC データソース
 uuid: 5b37cd41-2d79-472c-8e6d-00ff894991a9
 exl-id: b22b1e27-9b6c-4708-b45c-a9605807689a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1245'
 ht-degree: 91%
@@ -11,6 +11,8 @@ ht-degree: 91%
 ---
 
 # ODBC データソース{#odbc-data-sources}
+
+{{eol}}
 
 Data Workbench サーバー（InsightServer64.exe）は、ドライバーが ODBC 3.0 に準拠していれば SQL データベース（Oracle、Microsoft SQL Server など）からイベントデータを読み取ることもできます。
 
@@ -22,14 +24,14 @@ Data Workbench サーバーの ODBC 対応は、Sensor から、または外部�
 
    >[!NOTE]
    >
-   >[!DNL Increasing ID]列には、複数の行に同じ値を指定できます。 例えば、タイムスタンプ列の有効桁数が不十分だとそのようなことが起こります。
+   >複数の行の値が [!DNL Increasing ID] 列。 例えば、タイムスタンプ列の有効桁数が不十分だとそのようなことが起こります。
 
 * Data Workbench サーバーは、長大なデータ（実際に使用するデータベースアプリケーションで決められた長さを超えるデータ）が格納された列を読み込むことができません。
 * データベースからのデータ取得は、ディスクファイルからの読み取りに比べて低速です。ODBC ソースからデータを読み込むデータセットは、Sensor や他のディスクファイルのデータから構築される同じサイズのデータセットと比べて、処理（特に再処理時）に時間がかかります。
 
 データの再処理について詳しくは、 [再処理と再変換](../../../home/c-dataset-const-proc/c-reproc-retrans/c-unst-reproc-retrans.md).
 
-**InsightサーバーをODBC用に設定するには[!DNL event data]**
+**Insight サーバーを ODBC 用に設定するには[!DNL event data]**
 
 SQL データベースからデータを読み込むように Data Workbench サーバーを設定するにはまず、次の作業を順に実行する必要があります。
 
@@ -37,13 +39,13 @@ SQL データベースからデータを読み込むように Data Workbench サ
 
    >[!NOTE]
    >
-   >Data Workbenchサーバークラスターで処理するODBCイベントデータを読み込む場合は、クラスター内のすべての処理サーバーにデータベースクライアントソフトウェアをインストールする必要があります。 クラスター内の処理サーバーを指定する方法について詳しくは、『*サーバー製品のインストールと管理に関するガイド*』を参照してください。
+   >Data Workbench サーバークラスターで処理する ODBC イベントデータを読み込む場合は、クラスター内のすべての処理サーバーにデータベースクライアントソフトウェアをインストールする必要があります。 クラスター内の処理サーバーを指定する方法について詳しくは、『*サーバー製品のインストールと管理に関するガイド*』を参照してください。
 
 1. Windows の ODBC データソースアドミニストレーターを使用してデータソースを設定します。
 
    Data Workbench サーバー（InsightServer64.exe）は、Windows サービスとして実行されることに注意してください。したがって、Data Workbench サーバーがデータソースを使用するためには、通常そのデータセットが、「ユーザー DSN」ではなく「システム DSN」として設定されている必要があります。この設定作業について詳しくは、データベースソフトウェアのドキュメントを参照してください。
 
-適切なData Workbenchサーバーマシンにデータベースクライアントソフトウェアをインストールした後、目的のプロファイルの[!DNL Log Processing]設定ファイル内の適切なパラメーターを編集して、ODBCデータソースを使用するようにデータセットを設定できます。
+適切な Data Workbench サーバーマシンにデータベースクライアントソフトウェアをインストールした後、 [!DNL Log Processing] 目的のプロファイルの設定ファイル。
 
 ## パラメーター {#section-15c0218d93364693a565f2609a12f73e}
 
@@ -101,6 +103,6 @@ ODBC（Open Database Connectivity）標準に準拠したデータベースか�
  </tbody> 
 </table>
 
-ここに示したのは、Data Workbench の [!DNL Log Processing] 設定ウィンドウで ODBC データソースを指定する例です。このデータソースは、[!DNL Data Source Name] &quot;VSTestO&quot;を持つデータベース内の[!DNL VISUAL.VSL]というテーブルからデータを取得します。 5 つの列オブジェクト（[!DNL Fields]）によって、データベースのデータ列から Data Workbench サーバーにデータをマッピングしています。
+ここに示したのは、Data Workbench の [!DNL Log Processing] 設定ウィンドウで ODBC データソースを指定する例です。このデータソースは、 [!DNL VISUAL.VSL] データベース内で [!DNL Data Source Name] 「VSTestO.」 5 つの列オブジェクト（[!DNL Fields]）によって、データベースのデータ列から Data Workbench サーバーにデータをマッピングしています。
 
 ![](assets/cfg_LogProcessing_LogSources_ODBC.png)

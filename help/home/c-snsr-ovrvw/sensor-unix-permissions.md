@@ -1,18 +1,22 @@
 ---
-description: コレクタ・モジュール、送信機プロセス、構成ファイルなど、Sensor UNIXファイルの権限に関する情報。
-title: Sensor UNIXファイルの権限
+description: Sensor UNIX ファイルの権限に関する情報（コレクターモジュール、トランスミッタープロセス、設定ファイルなど）。
+title: センサーの UNIX ファイルの権限
 uuid: 04d159b5-6569-48b6-a2db-9a0b40118ffe
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 07cbc7df-c628-437d-9ca1-b006da8de242
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '401'
+ht-degree: 6%
 
 ---
 
+# センサーの UNIX ファイルの権限{#sensor-unix-file-permissions}
 
-# Sensor UNIXファイルの権限{#sensor-unix-file-permissions}
+{{eol}}
 
-コレクタ・モジュール、送信機プロセス、構成ファイルなど、Sensor UNIXファイルの権限に関する情報。
+Sensor UNIX ファイルの権限に関する情報（コレクターモジュール、トランスミッタープロセス、設定ファイルなど）。
 
-## コレクタモジュール {#section-49c855baece24c4695184bfcbeeddebf}
+## コレクターモジュール {#section-49c855baece24c4695184bfcbeeddebf}
 
 <table id="table_0B972ABD2A5342CA8A6FE80EB666298A"> 
  <thead> 
@@ -24,32 +28,32 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  <tbody> 
   <tr> 
    <td colname="col1"> <p>ファイル名 </p> </td> 
-   <td colname="col2"> <p>mod_visual_sciences.so（Apache WebサーバーおよびIBM HTTPサーバー上） </p> <p>libvisual_sciences.soおよびJ2EECollector.jar（J2EEアプリケーションサーバー上） </p> <p>aol_visual_sciences.so（AOL Webサーバー上） </p> <p>saf_visual_sciences.so （Sun Java Webサーバー上） </p> </td> 
+   <td colname="col2"> <p>mod_visual_sciences.so(Apache Web サーバーおよびIBM HTTP サーバー上 ) </p> <p>libvisual_sciences.so と J2EECollector.jar（J2EE アプリケーションサーバー上） </p> <p>aol_visual_sciences.so （AOL Web サーバー上） </p> <p>saf_visual_sciences.so（Sun Java Web サーバー上） </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>デフォルトの権限 </p> </td> 
-   <td colname="col2"> <p>rwx r-x r-x（IBM HTTPおよびApache 1.3.x） </p> <p>rwx rwx r-x(Apache 2.0.x) </p> <p>rwx —x —x （J2EE、AOL、Sun Java Webサーバー） </p> </td> 
+   <td colname="col2"> <p>rwx r-x r-x (IBM HTTP および Apache 1.3.x) </p> <p>rwx rwx r-x (Apache 2.0.x) </p> <p>rwx —x —x （J2EE、AOL、Sun Java Web サーバー） </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>閲覧者 </p> </td> 
-   <td colname="col2"> <p>Webサーバー。ルートユーザーとして実行される場合もありますが、特定のユーザーアカウントで実行される場合が多くなります。 </p> <p>Webサーバーがルート以外のアカウントで実行される場合は、このファイルの権限によって、そのアカウントで読み取りを許可する必要があります。 </p> </td> 
+   <td colname="col1"> <p>読み取り担当者 </p> </td> 
+   <td colname="col2"> <p>Web サーバー。ルートユーザーとして実行される場合もありますが、特定のユーザーアカウントで実行される場合も多くあります。 </p> <p>Web サーバーが root 以外のアカウントで実行されている場合は、このファイルに対する権限により、そのアカウントがファイルを読み取ることが許可されている必要があります。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>実行形式 </p> </td> 
-   <td colname="col2"> <p>Webサーバーの子プロセス </p> <p>子プロセスは、Webサーバー設定で指定されたユーザーアカウントで実行されます。 多くのサーバでは、これは「nobody」と呼ばれる非常に限られた権限を持つ特別なアカウントです。 ただし、このアカウントを使用しないWebサーバーもあります。 Webサーバーの設定ファイルを確認し、設定するユーザーアカウントを決定します。 </p> </td> 
+   <td colname="col2"> <p>Web サーバーの子プロセス </p> <p>子プロセスは、Web サーバー設定で指定されたユーザーアカウントで実行されます。 多くのサーバーでは、これは「nobody」と呼ばれる特別な権限を持つ特別なアカウントですが、すべての Web サーバーがこのアカウントを使用するわけではありません。 Web サーバーの設定ファイルを調べて、設定されているユーザーアカウントを確認します。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>読み取り元 </p> </td> 
-   <td colname="col2"> <p>txlogd.conf </p> <p>diskQueueファイル </p> </td> 
+   <td colname="col2"> <p>txlogd.conf </p> <p>diskQueue ファイル </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 書き込み先 </td> 
-   <td colname="col2"> diskQueueファイル </td> 
+   <td colname="col2"> diskQueue ファイル </td> 
   </tr> 
  </tbody> 
 </table>
 
-## 送信機プロセス {#section-8af432472e9d4bd9a42270bf27adf33a}
+## トランスミッタープロセス {#section-8af432472e9d4bd9a42270bf27adf33a}
 
 <table id="table_3028CC9640D54016BD8CA7F9CAA34280"> 
  <thead> 
@@ -65,15 +69,15 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>デフォルトの権限 </p> </td> 
-   <td colname="col2"> <p>rw- r— r— （IBM HTTP、AOL、およびSun Java Webサーバ） </p> <p>rw-rw- r— （Apache WebサーバーおよびJ2EEアプリケーションサーバー） </p> </td> 
+   <td colname="col2"> <p>rw- r- r- (IBM HTTP、AOL、Sun Java Web サーバ ) </p> <p>rw- rw- r:（Apache Web サーバーと J2EE アプリケーションサーバー） </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 閲覧者 </td> 
-   <td colname="col2"> 送信プログラム </td> 
+   <td colname="col1"> 読み取り担当者 </td> 
+   <td colname="col2"> 送信機プログラム </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 作成者 </td> 
-   <td colname="col2"> -- </td> 
+   <td colname="col2"> — </td> 
   </tr> 
  </tbody> 
 </table>
@@ -94,15 +98,15 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>デフォルトの権限 </p> </td> 
-   <td colname="col2"> <p>rw- r— r— （IBM HTTP、AOL、およびSun Java Webサーバ） </p> <p>rw-rw- r— （Apache WebサーバーおよびJ2EEアプリケーションサーバー） </p> </td> 
+   <td colname="col2"> <p>rw- r- r- (IBM HTTP、AOL、Sun Java Web サーバ ) </p> <p>rw- rw- r:（Apache Web サーバーと J2EE アプリケーションサーバー） </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 閲覧者 </td> 
-   <td colname="col2"> <p>コレクタモジュール </p> <p>送信プログラム </p> <p>Sensorのインストール、設定、および管理を担当する管理者 </p> </td> 
+   <td colname="col1"> 読み取り担当者 </td> 
+   <td colname="col2"> <p>コレクターモジュール </p> <p>送信機プログラム </p> <p>Sensor のインストール、設定、保守を担当する管理者 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 作成者 </td> 
-   <td colname="col2"> Sensorのインストール、設定、および管理を担当する管理者 </td> 
+   <td colname="col2"> Sensor のインストール、設定、保守を担当する管理者 </td> 
   </tr> 
  </tbody> 
 </table>
@@ -123,15 +127,15 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
   <tr> 
    <td colname="col1"> <p>デフォルトの権限 </p> </td> 
-   <td colname="col2"> <p>rw- r— r— （IBM HTTP、AOL、およびSun Java Webサーバ） </p> <p>rw-rw- r— （Apache WebサーバーおよびJ2EEアプリケーションサーバー） </p> </td> 
+   <td colname="col2"> <p>rw- r- r- (IBM HTTP、AOL、Sun Java Web サーバ ) </p> <p>rw- rw- r:（Apache Web サーバーと J2EE アプリケーションサーバー） </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 閲覧者 </td> 
-   <td colname="col2"> 送信プログラム </td> 
+   <td colname="col1"> 読み取り担当者 </td> 
+   <td colname="col2"> 送信機プログラム </td> 
   </tr> 
   <tr> 
    <td colname="col1"> 作成者 </td> 
-   <td colname="col2"> -- </td> 
+   <td colname="col2"> — </td> 
   </tr> 
  </tbody> 
 </table>
@@ -147,7 +151,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> File name </td> 
+   <td colname="col1"> ファイル名 </td> 
    <td colname="col2"> ユーザー定義 </td> 
   </tr> 
   <tr> 
@@ -155,13 +159,12 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col2"> rw- rw- rw- （すべてのサーバタイプ） </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>閲覧者 </p> </td> 
-   <td colname="col2"> <p>コレクタモジュール </p> <p>送信プログラム </p> </td> 
+   <td colname="col1"> <p>読み取り担当者 </p> </td> 
+   <td colname="col2"> <p>コレクターモジュール </p> <p>送信機プログラム </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>作成者 </p> </td> 
-   <td colname="col2"> <p>コレクタモジュール </p> <p>送信プログラム </p> </td> 
+   <td colname="col2"> <p>コレクターモジュール </p> <p>送信機プログラム </p> </td> 
   </tr> 
  </tbody> 
 </table>
-

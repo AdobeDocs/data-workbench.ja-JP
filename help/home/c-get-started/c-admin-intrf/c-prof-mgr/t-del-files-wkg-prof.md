@@ -3,7 +3,7 @@ description: 作業プロファイルからファイルを削除する手順で�
 title: 作業プロファイルからのファイルの削除
 uuid: e3658085-57c2-4d25-bdc6-6767de1deb3e
 exl-id: 9d464280-b600-4064-bb44-502831ab2920
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 46%
@@ -12,14 +12,16 @@ ht-degree: 46%
 
 # 作業プロファイルからのファイルの削除{#delete-files-from-your-working-profile}
 
+{{eol}}
+
 作業プロファイルからファイルを削除する手順です。
 
-1. [!DNL Profile Manager]で、[!DNL Profile Manager]内の必要なフォルダーとサブフォルダーを開き、削除するファイルを見つけます。
+1. 内 [!DNL Profile Manager]」をクリックし、 [!DNL Profile Manager] をクリックして、削除するファイルを見つけます。
 
    >[!NOTE]
    >
-   >すべてのワークスペースはWorkspacesフォルダーにあります。
+   >すべてのワークスペースは Workspaces フォルダにあります。
 
-1. 削除するワークスペースまたはファイルの&#x200B;*working profile name*&#x200B;列（例えば、Dataset）のチェックマークを右クリックし、**[!UICONTROL Remove]** / **[!UICONTROL Yes]**&#x200B;をクリックします。
+1. チェックマーク ( *作業プロファイル名* 削除するワークスペースまたはファイルの列（例：データセット）を選択し、 **[!UICONTROL Remove]** > **[!UICONTROL Yes]**.
 
    ワークスペースまたはファイルがサーバーから削除され、使用できなくなります。

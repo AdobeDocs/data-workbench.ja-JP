@@ -3,7 +3,7 @@ description: Data Workbench の棒グラフには、複数のグラフにまた�
 title: 回帰分析グラフ
 uuid: 8512890e-f42b-4dce-826a-2b4bf2a215f4
 exl-id: bfc76c4a-edd5-41fe-b875-c199ea3beab5
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 94%
@@ -11,6 +11,8 @@ ht-degree: 94%
 ---
 
 # 回帰分析グラフ{#regression-analysis-graph}
+
+{{eol}}
 
 Data Workbench の棒グラフには、複数のグラフにまたがる複数の指標の回帰比較が含まれるようになりました。
 
@@ -28,7 +30,7 @@ Data Workbench の[棒グラフ](https://experienceleague.adobe.com/docs/data-wo
 
 1. 独立変数として他の指標のグラフを設定します。
 
-   指標を右クリックし、他の指標を表示するには&#x200B;**[!UICONTROL Regress with `<base metric name>`]**&#x200B;を選択します。
+   指標を右クリックし、「 」を選択します。 **[!UICONTROL Regress with `<base metric name>`]** （他の指標用）
 
    ![](assets/c_graph_regression.png)
 

@@ -2,13 +2,17 @@
 description: ポジティブケースを指定し、データを評価する指標とディメンション入力を追加して、デシジョンツリーを設定し、デシジョンツリーを調べます。
 title: デシジョンツリーの構築
 uuid: 5790d322-5460-444d-95d8-a06696f9a55f
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 06db9e77-72ea-44c7-8451-d3f195acd196
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '1110'
+ht-degree: 78%
 
 ---
 
-
 # デシジョンツリーの構築{#building-a-decision-tree}
+
+{{eol}}
 
 ポジティブケースを指定し、データを評価する指標とディメンション入力を追加して、デシジョンツリーを設定し、デシジョンツリーを調べます。
 
@@ -18,41 +22,41 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    新しいワークスペースを開いたら、**追加**／**一時的にロック解除**&#x200B;をクリックする必要がある場合があります。
 
-1. To open the Decision Tree Builder, right-click **[!UICONTROL Visualization]** > **Predictive Analytics** > **Classification** > **Decision Tree Builder**.
+1. デシジョンツリービルダーを開くには、右クリックします。 **[!UICONTROL Visualization]** > **予測分析** > **分類** > **デシジョンツリービルダー**.
 
 1. **ポジティブケース**&#x200B;を設定します。
 
    デシジョンツリーのポジティブケースを定義するには、ファインダーでディメンションを、またはテーブルでディメンションエレメントを選択するか、「フィルターを作成」でフィルターを作成します。実際には、ポジティブケースは、フィルター、ディメンション、エレメント、Data Workbench のすべてのタイプのビジュアライゼーション値など、ワークスペース内の複数の選択を組み合わせて定義できます。
 
-   * ポジティブケースとして&#x200B;**フィルターを作成し、適用**&#x200B;します。Right-click in the workspace and select **[!UICONTROL Tools]** > **[!UICONTROL Filter Editor]** to design and apply a filter.
+   * ポジティブケースとして&#x200B;**フィルターを作成し、適用**&#x200B;します。ワークスペース内で右クリックし、「 」を選択します。 **[!UICONTROL Tools]** > **[!UICONTROL Filter Editor]** フィルターを設計して適用する場合。
 
-   * ポジティブケースとして&#x200B;**ディメンション**&#x200B;を追加します。In the workspace, right-click and select **Tools** > **Finders** (or select **[!UICONTROL Add]** > **[!UICONTROL Finders]** in the left pane). 「**検索**」フィールドにディメンション名を入力し、ディメンションを選択します。
+   * ポジティブケースとして&#x200B;**ディメンション**&#x200B;を追加します。ワークスペースで右クリックし、「 」を選択します。 **ツール** > **ファインダー** ( または選択 **[!UICONTROL Add]** > **[!UICONTROL Finders]** をクリックします )。 「**検索**」フィールドにディメンション名を入力し、ディメンションを選択します。
 
-   * ポジティブケースとして&#x200B;**指標**&#x200B;を追加します。右クリックし、ツール/ファインダ **ー** ( **Tools** / **[!UICONTROL Add]** Finders **[!UICONTROL Finders]** )を選択するか、左ペインで/を選択して、指標テーブルを開きます。 ポジティブケースとして指標を選択します。
+   * ポジティブケースとして&#x200B;**指標**&#x200B;を追加します。右クリックして「 」を選択します。 **ツール** > **ファインダー** または、 **[!UICONTROL Add]** > **[!UICONTROL Finders]** 左側のペインで、指標テーブルを開きます。 ポジティブケースとして指標を選択します。
 
-   * ポジティブケースとして&#x200B;**ディメンションエレメント**&#x200B;を追加します。Right-click in the workspace and select **[!UICONTROL Table]** to open dimension elements, then select from the dimension elements to set your positive case.
+   * ポジティブケースとして&#x200B;**ディメンションエレメント**&#x200B;を追加します。ワークスペース内で右クリックし、「 」を選択します。 **[!UICONTROL Table]** ディメンションエレメントを開くには、ディメンションエレメントから「 」を選択して、ポジティブケースを設定します。
 
 1. クリック **[!UICONTROL Options]** > **[!UICONTROL Set Positive Case]**.
 
-   ここではポジティブケースが設定され、名前を付けることができます。The name will appear under the **[!UICONTROL Positive Case]** heading in the workspace.
+   ここではポジティブケースが設定され、名前を付けることができます。名前は、 **[!UICONTROL Positive Case]** ワークスペースの見出し。
 
    >[!NOTE]
    >
-   >ポジティブケースを設定すると、デシジョンツリーでは現在のワークスペース選択が使用されます。これは、訪問者（または最上位レベルの可算が定義されているが、ほとんどの場合は訪問者）として定義できます。 これらは、（複数のポジティブケースではなく）単一のポジティブケースの単一のフィルターとして組み合わせられます。
+   >ポジティブケースを設定すると、デシジョンツリーは現在のワークスペース選択を使用します。これは、訪問者（または最上位の可算が定義されているが、ほとんどの場合は訪問者）として定義できます。 これらは、（複数のポジティブケースではなく）単一のポジティブケースの単一のフィルターとして組み合わせられます。
 
-   Clicking **[!UICONTROL Set Positive Case]** when there is no selection will clear the positive case.
+   クリック **[!UICONTROL Set Positive Case]** 何も選択しない場合は、ポジティブケースがクリアされます。
 
-1. (optional) Select **[!UICONTROL Set Population Filters]** to define the visitor population to be classified.
+1. （オプション）を選択します。 **[!UICONTROL Set Population Filters]** ：分類する訪問者の母集団を定義します。
 
    母集団フィルターが適用されない場合、トレーニングセットはすべての訪問者から取得されます（デフォルトは「全員」です）。
 
    >[!NOTE]
    >
-   >Click the **[!UICONTROL Show Complex Filter Description]** to view the filtering scripts for the Positive Case and Population Filter.
+   >次をクリック： **[!UICONTROL Show Complex Filter Description]** をクリックして、ポジティブケースおよび母集団フィルターのフィルタリングスクリプトを表示します。
 
 1. 入力として&#x200B;**指標**、**ディメンション**&#x200B;および&#x200B;**ディメンションエレメント**&#x200B;を追加します。
 
-   入力を選択するには、ファインダーパネルから、または個々のディメンションエレメントのテーブルからドラッグ＆ドロップします。You can also select from the **[!UICONTROL Metrics]** menu in the toolbar.
+   入力を選択するには、ファインダーパネルから、または個々のディメンションエレメントのテーブルからドラッグ＆ドロップします。また、 **[!UICONTROL Metrics]** 」メニューを使用します。
 
    * 入力として&#x200B;**指標**&#x200B;を追加します。
 
@@ -66,18 +70,18 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
       ワークスペース内で右クリックし、**ツール**／**ファインダー**&#x200B;を選択して、ディメンション名を「**検索**」フィールドに入力します。 **Ctrl** + **Alt** キーを押しながら、ディメンションを選択して、ディメンションをデシジョンツリービルダーにドラッグします。
 
-      ディメンションは、一意に色分けされ、**入力（ディメンション）リスト**&#x200B;に表示されます。
+      ディメンションは、一意に色分けされて、**入力（ディメンション）**&#x200B;リストに表示されます。
 
    * 入力として&#x200B;**ディメンションエレメント**&#x200B;を追加します。
 
       ワークスペースで、右クリックして、ディメンションテーブルを選択します。ディメンションエレメントを選択し、**Ctrl** + **Alt** キーを押しながら、選択したエレメントをデシジョンツリービルダーにドラッグします。
 
-      ディメンションエレメントは、一意に色分けされ、**入力（要素）**&#x200B;リストに表示されます。
+      ディメンション要素は、一意に色分けされて、**入力（要素）**&#x200B;リストに表示されます。
    >[!IMPORTANT]
    >
-   >評価対象の入力は最大14個まで選択できます。 追加した入力が多すぎると、エラーメッセージが表示されます。
+   >評価する入力は最大で 14 個まで選択できます。 追加した入力が多すぎると、エラーメッセージが表示されます。
 
-1. Select **[!UICONTROL Go]** from the toolbar.
+1. 選択 **[!UICONTROL Go]** をクリックします。
 
    選択したディメンションと指標に基づいてデシジョンツリーが構築されます。買い物かごへの追加などの単純な指標の場合はすぐに作成されますが、複数のデータポイントを持つ滞在時間などの複雑なディメンションの場合は作成に時間がかかり、変換中に完了の割合が表示されます。その後、ツリーマップがプルーニングされ、ユーザーが操作できるように開きます。ディメンションと指標の入力は、ノード名に合わせて色分けされます。
 
@@ -87,11 +91,11 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
    >[!NOTE]
    >
-   >トレーニングサンプルは、ツリービルダーで使用するデータセットから取り出されます。 Data Workbench では、サンプルの 80％を使用してツリーを構築し、残りの 20％を使用してツリーモデルの正解率を評価します。
+   >トレーニングサンプルは、使用するツリービルダーのデータセットから取得されます。 Data Workbench では、サンプルの 80％を使用してツリーを構築し、残りの 20％を使用してツリーモデルの正解率を評価します。
 
-1. を使用して精度を確認しま **[!UICONTROL Confusion Matrix]**&#x200B;す。
+1. を使用して精度を検証する **[!UICONTROL Confusion Matrix]**.
 
-   Click **[!UICONTROL Options]** > **[!UICONTROL Confusion Matrix]** to view the Accuracy, Recall, Precision and F-Score values. 100％に近いほど、よいスコアです。
+   クリック **[!UICONTROL Options]** > **[!UICONTROL Confusion Matrix]** 「精度」、「再現率」、「精度」、「F スコア」の値を表示します。 100％に近いほど、よいスコアです。
 
    混同行列は、次の値の組み合わせを使用して、モデルの正解率の 4 カウントを付与します。
 
@@ -99,9 +103,10 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    * 予測された陽性（PP）
    * 実際の陰性（AN）
    * 予測された陰性（PN）
+
    >[!TIP]
    >
-   >これらの数値は、20%のテストデータの結果のスコアリングモデルを除外し、既に真の答えとして知られているものを適用することで得られます。 スコアが 50％を超える場合、（定義されたフィルターに一致する）ポジティブケースとして予測されます。このとき、正解率 = (TP + TN)/(TP + FP + TN + FN)、再現率 = TP / (TP + FN)、精度 = TP / (TP + FP) です。
+   >これらの数値は、20%のテストデータを除外し、既に真の答えとして知られている結果のスコアモデルを適用することで取得されます。 スコアが 50％を超える場合、（定義されたフィルターに一致する）ポジティブケースとして予測されます。このとき、正解率 = (TP + TN)/(TP + FP + TN + FN)、再現率 = TP / (TP + FN)、精度 = TP / (TP + FP) です。
 
 1. **デシジョンツリーを調べます**。
 
@@ -132,4 +137,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    * 予測マークアップ言語（**PMML**）：アプリケーションでデシジョンツリーモデルを記述および交換するために使用される XML ベースのファイル形式。
    * true または false、パーセンテージ、メンバーの数および入力値のシンプルな列と行を表示する&#x200B;**テキスト**。
    * **ディメンション**&#x200B;と、予測結果のエレメントに対応する分岐。
-

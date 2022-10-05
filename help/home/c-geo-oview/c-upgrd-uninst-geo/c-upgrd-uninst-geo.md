@@ -1,8 +1,8 @@
 ---
-description: Data Workbench Geographyソフトウェアのアップグレードとアンインストールに関する情報です。
+description: Data Workbench Geography ソフトウェアのアップグレードとアンインストールに関する情報です。
 title: Data Workbench Geography のアップグレードとアンインストール
 uuid: cc752762-ddc3-4e81-8c71-40e6cb1e7ecf
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 27%
@@ -12,9 +12,11 @@ ht-degree: 27%
 
 # Data Workbench Geography のアップグレードとアンインストール{#upgrading-and-uninstalling-data-workbench-geography}
 
-Data Workbench Geographyソフトウェアのアップグレードとアンインストールに関する情報です。
+{{eol}}
+
+Data Workbench Geography ソフトウェアのアップグレードとアンインストールに関する情報です。
 
 >[!NOTE]
 >
->Data Workbench [!DNL Geography]をアップグレードまたはアンインストールすると、データセットは自動的に再処理されます。
+>Data Workbench の場合は、 [!DNL Geography] がアップグレードまたはアンインストールされた場合、データセットは自動的に再処理します。
 

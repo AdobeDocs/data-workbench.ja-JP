@@ -1,39 +1,41 @@
 ---
-description: センサーは、サーバー上で使用する場合、有効なHTTPリクエストヘッダーや応答ヘッダー、またはサーバーのAPIを通じてイベントデータのフィールドを収集できます。
+description: センサーをサーバーで使用すると、は、サーバーの API を通じて有効な HTTP リクエストまたは応答ヘッダー、または変数からイベントデータのフィールドを収集できます。
 title: 拡張可能なフィールド
 uuid: 91b9857e-44a4-497f-b157-51afd30306fe
 exl-id: e783d073-cf06-4415-80e1-567b55fdee12
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
 # 拡張可能なフィールド{#extensible-fields}
 
-センサーは、サーバー上で使用する場合、有効なHTTPリクエストヘッダーや応答ヘッダー、またはサーバーのAPIを通じてイベントデータのフィールドを収集できます。
+{{eol}}
+
+センサーをサーバーで使用すると、は、サーバーの API を通じて有効な HTTP リクエストまたは応答ヘッダー、または変数からイベントデータのフィールドを収集できます。
 
 こうしたデータフィールドを収集するには、[!DNL txlogd.conf] の [!DNL Sensor] 設定ファイルに目的のヘッダーフィールドまたは変数を指定する必要があります。
 
 * [リクエストヘッダー](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-22766692b45546d8bfc93dbe3bc9368f)
 * [サーバー変数](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-74b258bc3e8a4a93a0ee9fb01c067e4b)
 
-## リクエストヘッダー{#section-22766692b45546d8bfc93dbe3bc9368f}
+## リクエストヘッダー {#section-22766692b45546d8bfc93dbe3bc9368f}
 
-[!DNL txlogd.conf]で収集するリクエストヘッダーフィールド（例えば、ホスト、Accept-Encoding、Keep-Aliveなど）を指定する構文を次に示します。
+収集するリクエストヘッダーフィールド（例えば、ホスト、Accept-Encoding、Keep-Alive など）を指定する構文を次に示します。 [!DNL txlogd.conf]:
 
 ```
 LogHeader RequestHeaderName
 ```
 
-収集されたデータは、[!DNL Sensor]によって、[!DNL data workbench server]によって作成された[!DNL .vsl]ファイルの「cs(RequestHeaderName)」フィールドに記録されます。 例えば、リクエストヘッダー「Host」から特定のリクエストヘッダー値を収集するには、[!DNL txlogd.conf]に「LogHeader Host」と入力します。 データは、イベントデータレコードの「cs(Host)」フィールドに記録されます。
+収集したデータは、 [!DNL Sensor] を [!DNL .vsl] が作成したファイル [!DNL data workbench server]. 例えば、リクエストヘッダー「Host」から特定のリクエストヘッダー値を収集するには、「LogHeader Host」と入力します。 [!DNL txlogd.conf]. データは、イベントデータレコードの「cs(Host)」フィールドに記録されます。
 
-## サーバー変数{#section-74b258bc3e8a4a93a0ee9fb01c067e4b}
+## サーバー変数 {#section-74b258bc3e8a4a93a0ee9fb01c067e4b}
 
-[!DNL Sensor] では、ファイルに含めるSpecialLogFieldエントリを使用して、応答ヘッダーやAPIでアクセス可能なサーバー変数からデータのフィールドを収集 [!DNL txlogd.conf] できます。また、「LogHeader」エントリに加えて、またはの代わりに「SpecialLogField」エントリを使用して、要求ヘッダーを収集することもできます。 [リクエストヘッダー](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-22766692b45546d8bfc93dbe3bc9368f)を参照してください。 リクエストヘッダーオプションは、後方互換性を維持するために使用できます。
+[!DNL Sensor] では、 [!DNL txlogd.conf] ファイル。 また、「LogHeader」エントリに加えて、またはの代わりに、「SpecialLogField」エントリを使用して、リクエストヘッダーを収集することもできます。 詳しくは、 [リクエストヘッダー](../../../home/c-snsr-ovrvw/c-evnt-data-rcd-flds/c-ex-flds.md#section-22766692b45546d8bfc93dbe3bc9368f). リクエストヘッダーオプションは、後方互換性を確保するために引き続き使用できます。
 
-[!DNL txlogd.conf]で「SpecialLogField」を指定する構文を次に示します。
+次に、 [!DNL txlogd.conf]:
 
 ```
 SpecialLogField cs(log field) = serverVariable stage
@@ -50,18 +52,18 @@ SpecialLogField cs(log field) = serverVariable stage
  </thead>
  <tbody> 
   <tr> 
-   <td colname="col1"> cs（logフィールド） </td> 
-   <td colname="col2"> 収集したデータがイベントデータレコードに記録されるフィールドの名前と、 <span class="keyword"> data workbenchサーバー</span>によって作成された<span class="filepath"> .vsl </span>ファイル。 </td> 
+   <td colname="col1"> cs（log フィールド） </td> 
+   <td colname="col2"> イベントデータレコードと <span class="filepath"> .vsl </span> が作成したファイル <span class="keyword"> data workbench サーバー </span>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> serverVariable </td> 
-   <td colname="col2"> <p>サーバーのAPIを介して<span class="wintitle"> Sensor </span>で使用できるサーバー変数 </p> <p>例：response.p3p </p> </td> 
+   <td colname="col2"> <p>使用可能な任意のサーバー変数 <span class="wintitle"> センサー </span> サーバーの API を通じて </p> <p>例：response.p3p </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> ステージ </td> 
-   <td colname="col2"> <p>vys_logまたはvys_cookie </p> <p>ステージを指定するには、vys_logとvys_cookieに使用できるサーバー変数を把握しておく必要があります。 </p> <p>例：serverVariable response.p3pの場合、 vys_logと入力します。 </p> </td> 
+   <td colname="col1"> stage </td> 
+   <td colname="col2"> <p>vys_log または vys_cookie </p> <p>ステージを指定するには、vys_log と vys_cookie に使用できるサーバ変数を把握しておく必要があります。 </p> <p>例：serverVariable response.p3p の場合、 vys_log と入力します。 </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-拡張可能なイベントデータレコードフィールドを収集するための[!DNL Sensor]の設定については、Adobeコンサルティングサービスにお問い合わせください。
+設定に関するヘルプ [!DNL Sensor] 拡張可能なイベントデータレコードフィールドを収集するには、Adobeコンサルティングサービスにお問い合わせください。

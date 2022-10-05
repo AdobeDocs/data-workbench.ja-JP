@@ -3,7 +3,7 @@ description: Format 変換は一連の入力を受け取って、指定された
 title: 形式
 uuid: c596902e-21bc-4ce6-9ca4-7ca86dfc0a6c
 exl-id: 842b502e-cd16-45b3-ada8-6f2d899f1d54
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # 形式{#format}
+
+{{eol}}
 
 Format 変換は一連の入力を受け取って、指定された構造と一致するように出力の書式を整えます。
 
@@ -32,7 +34,7 @@ Format 変換は一連の入力を受け取って、指定された構造と一�
   </tr> 
   <tr> 
    <td colname="col1"> コメント </td> 
-   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
+   <td colname="col2"> （オプション）。変換についてのメモ。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -51,7 +53,7 @@ Format 変換は一連の入力を受け取って、指定された構造と一�
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Output </td> 
+   <td colname="col1"> 出力 </td> 
    <td colname="col2"> 変換結果を格納するために作成されるフィールドの名前。入力が文字列ベクトルである場合、出力文字列ベクトルの長さは、最長の入力ベクトルの長さと等しくなります。それよりも短い文字列ベクトルが入力に含まれている場合、書式設定文字列内の対応する位置に空の文字列を使用して出力ベクトルの長さが揃えられます。 </td> 
    <td colname="col3"></td> 
   </tr> 

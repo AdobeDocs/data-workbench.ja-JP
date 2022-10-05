@@ -3,7 +3,7 @@ description: セグメントエクスポートウィザードを使用したセ�
 title: セグメントエクスポートウィザード
 uuid: 705bdf00-54e5-4992-8978-91afda8c7543
 exl-id: 6f42c5c6-a158-4ddd-8949-4ef55a44ed1c
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '460'
 ht-degree: 78%
@@ -12,9 +12,11 @@ ht-degree: 78%
 
 # セグメントエクスポートウィザード{#segment-export-wizard}
 
+{{eol}}
+
 セグメントエクスポートウィザードを使用したセグメントのエクスポート
 
-セグメントエクスポートウィザードでは、[詳細テーブル](https://experienceleague.adobe.com/docs/data-workbench/using/client/export-data/c-sgmt-expt.html)からセグメントをエクスポートするのではなく、セグメントを設定およびエクスポートする手順を順を追って実行できます。
+セグメントのエクスポートウィザードでは、ではなく、セグメントを設定およびエクスポートする手順を段階的に実行できます [詳細テーブルからのセグメントのエクスポート](https://experienceleague.adobe.com/docs/data-workbench/using/client/export-data/c-sgmt-expt.html).
 
 ## ウィザードを使用したセグメントのエクスポート {#section-b30f2699dbc7490bad18512b91cb0cb3}
 
@@ -53,11 +55,11 @@ ht-degree: 78%
 
    ![](assets/seg_wizard_3_3.png)
 
-1. 選択したエクスポートタイプを設定します。
+1. 選択した書き出しタイプを設定します。
 
    ヘッダー — ヘッダーが True である場合、**出力ファイル**&#x200B;フィールドに名前を付けます。
 
-   エスケープフィールド — **True**&#x200B;または&#x200B;**False**&#x200B;に設定します。
+   エスケープフィールド — に設定 **True** または **False**.
 
    順序フィールド — フィールドを選択し、上下に移動して、エクスポートファイルの順序を設定します。
 
@@ -81,7 +83,7 @@ ht-degree: 78%
 
 1. 「**次へ**」をクリックします。
 
-   **注意：** 選択したエクスポートタイプが **プロファイルとオーディエンスのエクスポート**、 **カスタムレコードサービス**、および **Adobe Targetのエクスポート**&#x200B;の場合、選択したエクスポートに基づいてテキストは静的になります。
+   **注意：** 選択した書き出しタイプが **プロファイルとオーディエンスの書き出し**, **カスタムレコードサービス**、および **Adobe Target Export**&#x200B;を指定した場合、選択した書き出しに基づいてテキストは静的になります。
 
 1. スケジュールパラメーターを設定します。
 

@@ -2,13 +2,17 @@
 description: 顧客マーケティングの遍歴を把握し、定量化するためにアトリビューションプロファイルと組み合わせて使用する 7 つの異なるアトリビューションモデルが用意されています。
 title: アトリビューションモデル
 uuid: 4c73629c-9d58-49d5-adeb-8175484709fa
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 35d3f491-a8ed-4d9d-8d48-fc5f20e977a5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 87%
 
 ---
 
-
 # アトリビューションモデル{#attribution-models}
+
+{{eol}}
 
 顧客マーケティングの遍歴を把握し、定量化するためにアトリビューションプロファイルと組み合わせて使用する 7 つの異なるアトリビューションモデルが用意されています。
 
@@ -34,13 +38,13 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->売上高または注文の発生に基づいてマーケティングインタラクションに配分を割り当て戻すのは、かなり一般的です。 次の 2 つのモデルでは、成功の他のダイナミクスを明らかにするために、様々な特性をマーケティングインタラクションに結び付けます。
+>売上高または注文の発生に基づいてマーケティングインタラクションに配分を割り当て直すのは、かなり一般的です。 次の 2 つのモデルでは、成功の他のダイナミクスを明らかにするために、様々な特性をマーケティングインタラクションに結び付けます。
 
 **隣接モデル**
 
 ![](assets/attrib_model_adjacency.png)
 
-The Adjacency model provides visibility into the marketing position away from the conversion, answering the question: Is the marketing channel typically the 1`<sup>st</sup>` (closest), 5`<sup>th</sup>`, or 10`<sup>th</sup>` marketing channel interaction away from success?
+隣接関係モデルは、次の質問に答えて、コンバージョンから離れたマーケティング位置を可視化します。マーケティングチャネルは通常、1`<sup>st</sup>` （最も近い）、5`<sup>th</sup>`、または 10`<sup>th</sup>` マーケティングチャネルのインタラクションが成功から遠ざかっている場合
 
 **待ち時間モデル**
 
@@ -63,4 +67,3 @@ The Adjacency model provides visibility into the marketing position away from th
 **3D プロセスマップのビジュアライゼーション**
 
 ![](assets/attrib_model_3Dprocess_map.png)
-

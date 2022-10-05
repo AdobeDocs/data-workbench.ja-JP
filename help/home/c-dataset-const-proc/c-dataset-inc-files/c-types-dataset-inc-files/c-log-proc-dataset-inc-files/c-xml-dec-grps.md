@@ -1,9 +1,9 @@
 ---
-description: XMLファイルからデータを抽出するデコーダーを定義するログソースとしてのXMLファイルの処理。
+description: XML ファイルからデータを抽出するデコーダーを定義するログソースとしての XML ファイルの処理。
 title: XML デコーダーグループ
 uuid: 8fc9ab80-9a71-4fe2-a646-e830ffeb67b9
 exl-id: 0b0534b7-8596-4528-a643-8a9b41dcaa33
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1295'
 ht-degree: 74%
@@ -12,17 +12,19 @@ ht-degree: 74%
 
 # XML デコーダーグループ{#xml-decoder-groups}
 
-XMLファイルからデータを抽出するデコーダーを定義するログソースとしてのXMLファイルの処理。
+{{eol}}
+
+XML ファイルからデータを抽出するデコーダーを定義するログソースとしての XML ファイルの処理。
 
 >[!NOTE]
 >
->XMLログソースに対してXMLデコーダーグループを定義するには、XMLファイルの構造と内容、抽出するデータ、およびそのデータが格納されるフィールドに関する知識が必要です。 この節では、デコーダー用に指定できるパラメーターについて簡単に説明します。デコーダーの使用方法は、目的のソースデータが格納されている XML ファイルによって異なります。
+>XML ログソースに対して XML デコーダーグループを定義するには、XML ファイルの構造と内容、抽出するデータ、およびそのデータが格納されるフィールドに関する知識が必要です。 この節では、デコーダー用に指定できるパラメーターについて簡単に説明します。デコーダーの使用方法は、目的のソースデータが格納されている XML ファイルによって異なります。
 
 XML ログソースの形式の要件について詳しくは、 [ログソース](../../../../../home/c-dataset-const-proc/c-log-proc-config-file/c-log-sources.md#concept-6714c720fac044cbb9af003bf401b2ea). XML デコーダーの定義に関して不明な点がありましたらアドビにお問い合わせください。
 
 XML デコーダーの最上位の要素はデコーダーグループ（XMLDecoderGroup）です。特定の形式の XML ファイルからデータを抽出するための一連のデコーダーテーブルが、デコーダーグループにまとめられています。異なる複数の形式の XML ファイルがある場合は、その形式ごとにデコーダーグループを定義する必要があります。各デコーダーグループは、少なくとも 1 つのデコーダーテーブルから成ります。
 
-次の表に、XMLデコーダーグループを定義するために指定する必要があるTablesパラメーターとすべてのサブパラメーターを示します。
+次の表に、XML デコーダーグループを定義するために指定する必要がある Tables パラメーターとすべてのサブパラメーターを示します。
 
 <table id="table_06C40C5149E94548A1B0C2ED4397624B"> 
  <thead> 
@@ -56,7 +58,7 @@ XML デコーダーの最上位の要素はデコーダーグループ（XMLDeco
    <td colname="col1"> パス </td> 
    <td colname="col2"> <p>デコーダーテーブルに格納される情報の、構造化 XML ファイル内における階層。子の XML デコーダーテーブルの場合、親テーブルのパスに対して相対的に指定します。パスの大文字と小文字が区別されることに注意してください。 </p> <p> 例えば、XML ファイルが次のような構造になっているとします。 </p> 
 
-    &amp;lt；訪問者&amp;gt;
+    &amp;lt;visitor&amp;gt;
     
     &amp;nbsp;
     
@@ -64,9 +66,9 @@ XML デコーダーの最上位の要素はデコーダーグループ（XMLDeco
     
     &amp;nbsp;
     
-     &amp;lt;/visitor&amp;gt;
+    &amp;lt;/visitor&amp;gt;
     
-     &amp;lt;/logdata&amp;gt;&amp;nbsp;   &lt;p> 次に、パスはlogdata.visitorに&lt;span class=&quot;filepath&quot;>なりま&lt;/span>す。&lt;/p> &lt;/td>
+    &amp;lt;/logdata&amp;gt;&amp;nbsp; &lt;/code> &lt;p> 次に、パスは logdata.visitor&lt;span class=&quot;filepath&quot;>になりま&lt;/span>す。 &lt;/p> &lt;/td>
 </tr> 
   <tr> 
    <td colname="col1"> テーブル </td> 
@@ -74,7 +76,7 @@ XML デコーダーの最上位の要素はデコーダーグループ（XMLDeco
   </tr> 
   <tr> 
    <td colname="col1"> Children </td> 
-   <td colname="col2"> <p>（オプション）埋め込みのデコーダーテーブル（複数可）。それぞれの子に、前述した Fields、Path、Table の各パラメーターが存在します。 </p> <p> <b>デコーダーテーブルに子を追加するには</b> </p> <p> 
+   <td colname="col2"> <p>（オプション）。埋め込みのデコーダーテーブル（複数可）。それぞれの子に、前述した Fields、Path、Table の各パラメーターが存在します。 </p> <p> <b>デコーダーテーブルに子を追加するには</b> </p> <p> 
      <ul id="ul_902AC6CA5D66457D84CBA3194FF49BBE"> 
       <li id="li_07B4D60E7E2E4630B4878691E575936A"> <span class="uicontrol">Children</span> を右クリックし、<span class="uicontrol">新規追加</span>／<span class="uicontrol">XMLDecoderTable</span> をクリックします。必要に応じて Field、Operation、Path を定義します。 </li> 
      </ul> </p> </td> 
@@ -84,7 +86,7 @@ XML デコーダーの最上位の要素はデコーダーグループ（XMLDeco
 
 データセットのログソースとして XML ファイルを使用するには、データセットへと加工される情報を抽出する XML デコーダーグループと XML デコーダーテーブルを定義する必要があります。以降、Web データセットのサンプル XML ログソースを例に、デコーダーグループとデコーダーテーブルを定義する方法を紹介します。
 
-次のXMLファイルには、Experience CloudID、電子メールアドレス、住所、訪問者のページビューに関する情報など、Webサイト訪問者に関する情報が含まれています。
+次の XML ファイルには、Experience CloudID、電子メールアドレス、物理アドレス、訪問者のページビューに関する情報など、Web サイトの訪問者に関する情報が含まれています。
 
 ![](assets/xmlFile_LogSource.png)
 
@@ -98,7 +100,7 @@ XML デコーダーの最上位の要素はデコーダーグループ（XMLDeco
 * 訪問者の ID。この ID は x-trackingid フィールドに格納します。
 * 訪問者の電子メールアドレス（contact.email）。x-email フィールドに格納します。
 * 訪問者の登録ステータス。訪問者が登録ユーザーである場合、x-is-registered フィールドに値「1」を格納します。
-* Pathの値は[!DNL logdata.visitor]、Tableの値は[!DNL Log Entry]です。 これらのパラメーターについて詳しくは、上の表（「XMLDecoderGroup」）を参照してください。
+* パスの値は、 [!DNL logdata.visitor]の場合、Table の値は [!DNL Log Entry]. これらのパラメーターについて詳しくは、上の表（「XMLDecoderGroup」）を参照してください。
 
 **子（ページビュー）テーブルの情報は次のとおりです。**
 
@@ -108,7 +110,7 @@ XML デコーダーの最上位の要素はデコーダーグループ（XMLDeco
 * 各ページビューの URI。cs-uri-stem フィールドに格納します。
 * Path の値は pageview で、Table の値は「Log Entry」。これらのパラメーターについて詳しくは、上の表（「XMLDecoderGroup」）を参照してください。
 
-次の画面キャプチャは、[!DNL Log Processing Dataset Include]ファイルの一部と、サンプルXMLファイル用のXMLデコーダーグループを示しています。このグループは、親と子のXMLデコーダーテーブルで扱う構造に基づいています。
+次の画面キャプチャは、 [!DNL Log Processing Dataset Include] ファイルの親と子の XML デコーダーテーブルの構造に基づいて、サンプル XML ファイル用に生成された XML デコーダーグループを作成します。
 
 ![](assets/cft_LogProc_xmldecodergroup_top.png)
 
@@ -124,13 +126,13 @@ XML デコーダーの最上位の要素はデコーダーグループ（XMLDeco
 
 同様のテーブルは、Data Workbench でフィールドビューアのインターフェイスを使用して作成できます。フィールドビューアのインターフェイスについて詳しくは、 [データセット設定ツール](../../../../../home/c-dataset-const-proc/c-dataset-config-tools/c-dataset-config-tools.md#concept-6e058b7691834cf79dcfd1573f78d4f5).
 
-## XML要素#valueを使用して、その属性値{#section-88758428afb94f0baa5a986604d53bc1}を読み取る
+## XML 要素で#valueを使用して属性値を読み取る {#section-88758428afb94f0baa5a986604d53bc1}
 
-XMLパスで&#x200B;**[!DNL #value]**&#x200B;タグを使用して、XML要素の値を取り込めるようになりました。
+これで、 **[!DNL #value]** タグを XML パスに追加し、XML 要素の値を取得します。
 
-例えば、以前は&#x200B;**`<Hit><Page name="Home Page" index="20">home.html</Page></Hit>`**&#x200B;パスを指定していたので、`<Page>`タグの値を読み取ることができません。 `<Page>`タグとその属性の値を読み取るには、それぞれ[!DNL Hit.Page.@name]と[!DNL Hit.Page.@index]を使用します。 **`Hit.Page.#value`**&#x200B;式を使用してタグの値を引き出すこともできます。
+例えば、以前に **`<Hit><Page name="Home Page" index="20">home.html</Page></Hit>`** を読み取れなくなりました `<Page>` タグを使用します。 の値を読み取るには `<Page>` タグとその属性は、 [!DNL Hit.Page.@name] および [!DNL Hit.Page.@index] それぞれ また、タグの値を **`Hit.Page.#value`** 式。
 
-例えば、次のフィールドをデコーダーに追加することで、タグ`<varValue>`の値を読み取ることができます。
+例えば、タグの値を読み取ることができます `<varValue>` デコーダーに次のフィールドを追加する。
 
 ```
 7 = XMLDecoderField: 
@@ -142,7 +144,7 @@ Path = string: varValue
 Table = string: Log Entry
 ```
 
-同様に、デコーダーに次のフィールドを追加することで、タグ`<Rep>`の値を読み取ることができます。
+同様に、タグの値を読み取ることができます `<Rep>` デコーダーに次のフィールドを追加する。
 
 ```
 7 = XMLDecoderField: 
@@ -154,7 +156,7 @@ Path = string: Reps
 Table = string: Log Entry
 ```
 
-一方、属性のない要素タグの値を読み取るには、`<line>`タグの下の`<text>`タグとその値を、デコーダーの構築方法に応じて、パスに「[!DNL text]」を付けるか[!DNL line.text]を使用して、直接読み取ることができます。
+これに対し、属性のない要素タグの値を読み取るには、 `<text>` タグを `<line>` タグとその値は、 [!DNL text]」をクリックします。 [!DNL line.text]（デコーダーの構築方法に応じて）。
 
 ```
 2 = XMLDecoderField: 

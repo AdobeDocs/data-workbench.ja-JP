@@ -4,7 +4,7 @@ solution: Analytics
 title: 実験設計スプレッドシート
 uuid: bcb11e39-9cbd-400c-af30-4b1c85e7f218
 exl-id: 554790ab-1182-4481-87b0-e768ea769ddf
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1398'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # 実験設計スプレッドシート{#experiment-design-spreadsheet}
+
+{{eol}}
 
 このファイルは、ワークシートとしてだけでなく、実験に関する決定の記録としても機能します。
 
@@ -24,7 +26,7 @@ ht-degree: 0%
 1. Web またはアプリケーションサーバーへの管理者アクセス権がある場合は、 [!DNL Sensor] 任意の [!DNL Sensor] マシンを web クラスター内に配置します。 管理者アクセス権がない場合は、担当のAdobeアカウントマネージャーに連絡してファイルをリクエストしてください。
 1. VS Controlled Experiment Design.xls ファイルを開きます。 （必要に応じて、このファイルの名前を変更できます）。
 
-   The spreadsheet on the following page is an example of how you would complete the spreadsheet when preparing to test the example hypothesis used throughout this guide.
+   次のページのスプレッドシートは、このガイドで使用する仮説の例をテストする準備をする際に、スプレッドシートを完了する方法の例です。
 
    ![](assets/experimentdesigntop.png)
 
@@ -134,9 +136,9 @@ ht-degree: 0%
 | フィールド | 説明 |
 |---|---|
 | アプリ選択に対して期待される指標 | Web サイトに必要な指標値の見出し。 |
-| 期間別予想訪問者数 | このフィールドは、通常、スプレッドシートによって自動的に計算されます。 ほとんどの日に、Web サイトがリターン訪問者よりも多くの新規訪問者を受け取ることを前提としています。 If this is not the case, this cell’s calculation should be overwritten with the actual number of visitors expected during the experiment. |
+| 期間別予想訪問者数 | このフィールドは、通常、スプレッドシートによって自動的に計算されます。 ほとんどの日に、Web サイトがリターン訪問者よりも多くの新規訪問者を受け取ることを前提としています。 そうでない場合、このセルの計算は、実験中に予想された実際の訪問者数で上書きされます。 |
 | タイプ I エラーの計算 Z スコア | 偽陽性の結果の Z スコア。 これは、中間の統計的計算です。 |
-| タイプ II エラーの計算 Z スコア | 偽の否定的な結果の Z スコア。 This is an intermediate statistical calculation. |
+| タイプ II エラーの計算 Z スコア | 偽の否定的な結果の Z スコア。 これは、中間の統計的計算です。 |
 | 必要な最小訪問者数（テストグループとコントロールグループ） | 指定した信頼水準、電力レベル、Z スコアを満たすために実験で必要な最小訪問者数。「期間あたりの予想訪問者数」フィールドの値の割合で表されます。 |
 | 必要な最小訪問者数（テストグループとコントロールグループ） | 指定した信頼水準、電力レベル、Z スコアを満たすために実験で必要な最小訪問者数。 この値は、「訪問者」セクションの「合計（通常 100%） 」フィールドの値以下である必要があります。 |
 | 最小実験時間（日数） | 指定した信頼水準、電力レベル、Z スコアを満たすために、実験を実行する必要がある最小日数。 この計算された数には、「期間ごとの予想訪問者数」フィールドで説明したのと同じ問題が含まれます。 Web サイトに再訪問者が多数いる場合、「最小実験時間（日数） 」フィールドは、個別訪問者の数が「最小訪問者数必須」フィールドの値と等しくなるまでにかかる予想日数です。 |

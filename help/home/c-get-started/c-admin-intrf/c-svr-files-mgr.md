@@ -1,9 +1,9 @@
 ---
-description: サーバーファイルマネージャーを使用すると、Data Workbenchのインストールディレクトリ内のすべてのディレクトリとファイル（構成ファイルや参照ファイルを含む）にアクセスできるようになり、許可されたData Workbenchからサーバーコンピューターをリモートで管理できます。
+description: サーバーファイルマネージャを使用すると、Data Workbenchのインストールディレクトリ内のすべてのディレクトリとファイル（構成ファイルや参照ファイルを含む）へのアクセスを提供し、許可されたData Workbenchからサーバーコンピュータをリモートで管理できます。
 title: サーバーファイルマネージャー
 uuid: 62625b9d-587f-4a78-8328-2270869909f8
 exl-id: 9ac7e95d-47e5-4862-a16e-bee0df1d3d15
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 55%
@@ -12,33 +12,35 @@ ht-degree: 55%
 
 # サーバーファイルマネージャー{#server-files-manager}
 
-サーバーファイルマネージャーを使用すると、Data Workbenchのインストールディレクトリ内のすべてのディレクトリとファイル（構成ファイルや参照ファイルを含む）にアクセスできるようになり、許可されたData Workbenchからサーバーコンピューターをリモートで管理できます。
+{{eol}}
 
-[!DNL Server Files Manager]には、[!DNL Admin]メニューを使用するだけでなく、[!DNL Servers Manager]内のData Workbenchサーバーコンピューターのノードを右クリックし、**[!UICONTROL Server Files]**&#x200B;をクリックしてアクセスすることもできます。
+サーバーファイルマネージャを使用すると、Data Workbenchのインストールディレクトリ内のすべてのディレクトリとファイル（構成ファイルや参照ファイルを含む）へのアクセスを提供し、許可されたData Workbenchからサーバーコンピュータをリモートで管理できます。
+
+次にアクセス： [!DNL Server Files Manager] の使用 [!DNL Admin] メニューを表示し、次の場所でData Workbench・サーバー・コンピュータのノードを右クリックします。 [!DNL Servers Manager] をクリックし、 **[!UICONTROL Server Files]**.
 
 ![](assets/vis_FileManager.png)
 
 >[!NOTE]
 >
->選択したディレクトリを表示する新しいサーバーファイルマネージャーを作成できます。 [新しいサーバーファイルマネージャーの作成](../../../home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-svr-files-mgrs.md#concept-6e8f63273109443699a8f61b1a2ea816)を参照してください。
+>選択したディレクトリを表示する新しいサーバーファイルマネージャーを作成できます。 詳しくは、 [新しいサーバーファイルマネージャーの作成](../../../home/c-get-started/c-intf-anlys-ftrs/c-cstm-prof-files-mgrs/c-new-svr-files-mgrs.md#concept-6e8f63273109443699a8f61b1a2ea816).
 
-[!DNL Server Files Manager]の左の列には、ファイル名とフォルダー名が一覧表示されます。 中央と右の列にあるチェックマークは、これらのディレクトリやファイルがファイル構造のどこに存在するかを示しています。
+の左の列 [!DNL Server Files Manager] ファイル名とフォルダ名の一覧を表示します。 中央と右の列にあるチェックマークは、これらのディレクトリやファイルがファイル構造のどこに存在するかを示しています。
 
-ファイルが製品のインストールディレクトリに存在する場合、*server name*(例えば、Data Workbenchサーバー)列にチェックマークが入ります。 ファイルがData Workbenchユーザーのコンピューター上の&#x200B;*Data Workbenchインストールディレクトリ*\Tempディレクトリに存在する場合、[!DNL Temp]列にはチェックマークが入ります。 チェックマークの色は、異なる場所にあるファイルが同時に変更されたかどうかを示しています。
+ファイルが製品のインストールディレクトリにある場合、 *サーバー名* ( 例えば、Data Workbenchサーバー ) 列にはチェックマークが含まれます。 ファイルがData Workbench・ユーザーのコンピュータ上の *Data Workbenchインストールディレクトリ*\Temp ディレクトリ： [!DNL Temp] 列にはチェックマークが含まれます。 チェックマークの色は、異なる場所にあるファイルが同時に変更されたかどうかを示しています。
 
 * サーバー名の列の赤いチェックマークは、フォルダーまたはファイルがData Workbenchサーバーコンピューター上に存在することを示します。
-* [!DNL Temp]列の赤いチェックマークは、ファイルまたはフォルダーのローカルコピーの変更日時が、Data Workbenchサーバーコンピューター上のファイルまたはフォルダーと同じであることを示します。
-* [!DNL Temp]列の白いチェックマークは、*Data Workbenchのインストールディレクトリ*\Tempディレクトリ内のファイルまたはフォルダーの変更日時が、Data Workbenchサーバーコンピューター上のファイルまたはフォルダーとは異なることを示します。
+* 赤いチェックマークが [!DNL Temp] 列は、ファイルまたはフォルダのローカルコピーが、Data Workbench・サーバ・コンピュータ上のファイルまたはフォルダと同じ [ 変更日時 ] を持つことを示します。
+* 白いチェックマーク [!DNL Temp] 列は、 *Data Workbenchインストールディレクトリ*\Temp ディレクトリに、Data Workbench・サーバ・コンピュータ上のファイルまたはフォルダとは異なる変更日時が指定されています。
 
-次の図は、赤と白のチェックマークの[!DNL Server Files Manager]を示しています。
+次の図は、 [!DNL Server Files Manager] 赤と白の両方のチェックマークが付いています。
 
 ![](assets/vis_FileManager_RedWhiteChecks.png)
 
 **を使用してディレクトリとファイルを管理するには[!DNL Server Files Manager]**
 
-[!DNL Server Files Manager]を使用して、Data Workbench・サーバ・コンピュータ上のディレクトリやファイルを操作できます。
+以下を使用して、 [!DNL Server Files Manager] を使用して、Data Workbench・サーバ・コンピュータ上のディレクトリとファイルを操作します。
 
-次の表に、[!DNL Server Files Manager]を使用して実行できるタスクを示します。
+次の表に、 [!DNL Server Files Manager]:
 
 <table id="table_D217AE5A878542EC8B604812A61819C3"> 
  <thead> 
@@ -95,7 +97,7 @@ ht-degree: 55%
   </tr> 
   <tr> 
    <td colname="col1"> <p>ファイルを開くには </p> </td> 
-   <td colname="col2"> <p><span class="wintitle"> Temp</span>列でファイルのチェックマークを右クリックし、「<span class="uicontrol">開く</span>」をクリックしてから、「<span class="uicontrol">Data Workbench</span>」、「</span>」、「<span class="uicontrol">」、「<span class="uicontrol">フォルダー</span>」をクリックします。 </span></p> </td> 
+   <td colname="col2"> <p>ファイルのチェックマークを右クリックし、 <span class="wintitle"> Temp</span> 列、クリック <span class="uicontrol"> 開く</span>」、「 <span class="uicontrol"> Data Workbench</span>, <span class="uicontrol"> メモ帳</span>または <span class="uicontrol"> フォルダー</span>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>ディレクトリのローカルコピーをData Workbench・サーバに保存 </p> </td> 
@@ -110,7 +112,7 @@ ht-degree: 55%
    <td colname="col2"> <p><span class="wintitle">Temp</span> 列でディレクトリまたはファイルのチェックマークを右クリックし、「<span class="uicontrol">削除</span>」をクリックします。 </p> </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>Microsoft Outlookでファイルを電子メールの添付ファイルとしてコピー&amp;ペーストする </p> </td> 
+   <td colname="col1"> <p>ファイルを E メールの添付ファイルとしてMicrosoft Outlook にコピー&amp;ペーストします </p> </td> 
    <td colname="col2"> <p><span class="wintitle">Temp</span> 列でファイルのチェックマークを右クリックし、「<span class="uicontrol">コピー</span>」をクリックします。電子メールの本文中で Ctrl + v キーを押して、ファイルを添付します。 </p> </td> 
   </tr> 
  </tbody> 

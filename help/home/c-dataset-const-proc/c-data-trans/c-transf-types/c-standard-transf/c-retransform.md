@@ -3,7 +3,7 @@ description: RETransform（正規表現）変換は、入力データから検�
 title: RETransform
 uuid: 60b5b60e-678a-416d-b5c3-57b1bbefce7d
 exl-id: 2595f782-0efb-4a2a-84bd-fdb04baf0852
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 89%
@@ -12,13 +12,15 @@ ht-degree: 89%
 
 # RETransform{#retransform}
 
+{{eol}}
+
 RETransform（正規表現）変換は、入力データから検索して捕捉するパターンを正規表現で記述し、指定された出力フィールドに捕捉した文字列を格納するパターンマッチング変換です。
 
 正規表現の評価は、入力文字列全体に対して行われます。正規表現で指定されたパターンと入力が一致しない場合、データは捕捉されません。正規表現の簡単な使用法については、 [正規表現](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c).
 
 >[!NOTE]
 >
->[!DNL RETransform]変換は[!DNL REMatch]変換と同様に動作します（[REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)を参照）。この変換は、正規表現で捕捉するサブパターンごとに出力フィールドを作成します。 [!DNL RETransform]は、[!DNL REMatch]変換と[!DNL Format]変換の組み合わせと考えることができます。 Action パラメーター（以下の表の「Action」を参照）が「RESULTS」に設定されている場合、[!DNL RETransform] は、[!DNL REMatch] 変換と [!DNL Union] 変換を組み合わせたような動作になります。
+>この [!DNL RETransform] 変換は、 [!DNL REMatch] 変換 ( [REMatch](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-rematch.md#concept-7f0b1caad1df46aabef4448f88261a8e)) を呼び出し、正規表現で取得するサブパターンごとに出力フィールドを作成します。 以下を考えてみてください。 [!DNL RETransform] 組み合わせとして [!DNL REMatch] および [!DNL Format] 変換 Action パラメーター（以下の表の「Action」を参照）が「RESULTS」に設定されている場合、[!DNL RETransform] は、[!DNL REMatch] 変換と [!DNL Union] 変換を組み合わせたような動作になります。
 
 <table id="table_51B7342E6A5E4E31913BD0F6A6ACC424"> 
  <thead> 
@@ -36,7 +38,7 @@ RETransform（正規表現）変換は、入力データから検索して捕捉
   </tr> 
   <tr> 
    <td colname="col1"> コメント </td> 
-   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
+   <td colname="col2"> （オプション）。変換についてのメモ。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -65,7 +67,7 @@ RETransform（正規表現）変換は、入力データから検索して捕捉
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Output </td> 
+   <td colname="col1"> 出力 </td> 
    <td colname="col2"> 出力文字列の名前。 </td> 
    <td colname="col3"></td> 
   </tr> 
@@ -74,7 +76,7 @@ RETransform（正規表現）変換は、入力データから検索して捕捉
 
 >[!NOTE]
 >
->[!DNL RETransform] 変換は非常に遅くなる可能性があり、データ処理時間の大部分がこの変換に費やされる可能性があります。
+>[!DNL RETransform] 変換は非常に遅くなる可能性があり、データ処理時間の大部分を占める場合があります。
 
 次の例では、Web サイトの訪問者が使用している Windows オペレーティングシステムのバージョンを抽出し、その値から x-windows-version フィールドを作成します。このケースでは、バージョン番号だけが出力値として得られます。
 

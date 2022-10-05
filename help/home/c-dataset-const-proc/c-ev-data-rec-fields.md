@@ -3,7 +3,7 @@ description: データセットを構築する際に Data Workbench サーバー
 title: イベントデータレコードフィールド
 uuid: b0232bfa-0a3b-4e3d-876e-6a15a3764eae
 exl-id: 35433b87-991a-4fb9-ba6a-3217e89eb769
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 82%
@@ -11,6 +11,8 @@ ht-degree: 82%
 ---
 
 # イベントデータレコードフィールド{#event-data-record-fields}
+
+{{eol}}
 
 データセットを構築する際に Data Workbench サーバーで処理できるデータフィールドについて取り上げます。
 
@@ -22,9 +24,9 @@ ht-degree: 82%
 
 データセット構築用のイベントデータは、ログソースと呼ばれるファイル内に存在します。各データレコードが 1 件のトランザクションレコード、またはタイムスタンプを持った 1 回のイベントの発生を表していることから、ログソース内のデータは「イベントデータ」と呼ばれます。
 
-ログソースのイベントデータは、[!DNL Sensors] によってリアルタイムで収集されます。 [!DNL Sensors] が HTTP およびアプリケーションサーバーから収集したイベントデータは Data Workbench サーバーに送信され、圧縮されたログ ([!DNL .vsl]) ファイルに変換されます。 フラットファイル、XML ファイルまたは ODBC データソースに存在するイベントデータを読み取る Data Workbench サーバーは、こうした様々な形式のファイルから決まった一連のデータフィールドを抽出するよう設定されたデコーダーの役割を担います。
+ログソースのイベントデータは、 [!DNL Sensors]. が収集したイベントデータ [!DNL Sensors] HTTP およびアプリケーションサーバーから data workbench サーバーに送信され、圧縮されたログ ( [!DNL .vsl]) ファイルに書き込むことができます。 フラットファイル、XML ファイルまたは ODBC データソースに存在するイベントデータを読み取る Data Workbench サーバーは、こうした様々な形式のファイルから決まった一連のデータフィールドを抽出するよう設定されたデコーダーの役割を担います。
 
-以下の節では、[!DNL Sensors] によって収集され、Data Workbench サーバーで読み取って使用できるデータフィールド（イベントデータレコードフィールドまたはログエントリフィールドと呼ばれます）に関する情報を示します。
+次の節では、で収集されるデータフィールド（イベントデータレコードフィールドまたはログエントリフィールドと呼ばれます）に関する情報を示します。 [!DNL Sensors] data workbench サーバーが読み取り、使用できるようにします。
 
 >[!NOTE]
 >
@@ -38,7 +40,7 @@ ht-degree: 82%
 
 ## ベースラインイベントデータレコードフィールド {#section-a882ed7aa6af41eeb45a55bf8c1ca3d7}
 
-ログ ( [!DNL .vsl] ) ファイルには、[!DNL Sensors] によってサーバーから収集され、データセット構築プロセスで Data Workbench サーバーによって使用されるイベントデータのフィールドが含まれます。 次の表は、[!DNL Sensor] によって記録される代表的なイベントデータレコードのフィールドの一覧です。
+ログ ( [!DNL .vsl]) ファイルには、 [!DNL Sensors] データセット構築プロセスで data workbench サーバーによって使用されます。 次の表は、[!DNL Sensor] によって記録される代表的なイベントデータレコードのフィールドの一覧です。
 
 <table id="table_98E135FE4EAF44D6ADEB3C6C1C0BF6A4">
  <thead>
@@ -58,7 +60,7 @@ ht-degree: 82%
   </tr>
   <tr>
    <td colname="col1"> cs(referrer) </td>
-   <td colname="col2"> <p>クライアントによってリクエストとともにサーバーに送信された HTTP リファラー文字列。 </p> <p> 例：<span class="filepath"> https://www.mysite.net/cgi-bin/websearch?qry </span> </p> </td>
+   <td colname="col2"> <p>クライアントによってリクエストとともにサーバーに送信された HTTP リファラー文字列。 </p> <p> 例： <span class="filepath"> https://www.mysite.net/cgi-bin/websearch?qry </span> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(user-agent) </td>
@@ -66,7 +68,7 @@ ht-degree: 82%
   </tr>
   <tr>
    <td colname="col1"> cs-method </td>
-   <td colname="col2"> <p>HTTP リクエストのメソッドのタイプ。 </p> <p> 例：GET </p> <p> リファレンス：<span class="filepath"> https://www.w3.org/TR/2000/NOTE-shoplogfileformat-20001115/#field_method </span> </p> </td>
+   <td colname="col2"> <p>HTTP リクエストのメソッドのタイプ。 </p> <p> 例：GET </p> <p> 参照： <span class="filepath"> https://www.w3.org/TR/2000/NOTE-shoplogfileformat-20001115/#field_method </span> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs-uri-query </td>
@@ -86,7 +88,7 @@ ht-degree: 82%
   </tr>
   <tr>
    <td colname="col1"> sc-status </td>
-   <td colname="col2"> <p>サーバーからクライアントに返されたステータスコード。 </p> <p> 例：200 </p> <p> リファレンス：<span class="filepath"> https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html </span> </p> </td>
+   <td colname="col2"> <p>サーバーからクライアントに返されたステータスコード。 </p> <p> 例：200 </p> <p> 参照： <span class="filepath"> https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html </span> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> s-dns </td>
@@ -98,7 +100,7 @@ ht-degree: 82%
   </tr>
   <tr>
    <td colname="col1"> x-timestamp </td>
-   <td colname="col2"> <p>リクエストがサーバーによって受信された日付と時刻（GMT）。時刻は、1600 年 1 月 1 日からの 100 ナノ秒数で表されます。 </p> <p> 例：127710989320000000は、2005 年 9 月 13 日（火）の 11:28:52.0000000の x-timestamp 値です。 </p> </td>
+   <td colname="col2"> <p>リクエストがサーバーによって受信された日付と時刻（GMT）。時刻は、1600 年 1 月 1 日からの 100 ナノ秒数で表されます。 </p> <p> 例：127710989320000000は 11 の x-timestamp 値になります:28:2005 年 9 月 13 日（火）:52.0000000 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-trackingid </td>
@@ -129,7 +131,7 @@ ht-degree: 82%
   </tr>
   <tr>
    <td colname="col1"> cs(referrer-host) </td>
-   <td colname="col2"> <p>リファラーのホスト名全体。 </p> <p> 例：cs(referrer) が <span class="filepath"> https://my.domain.com/my/page </span> の場合、cs(referrer-host) は <span class="filepath"> my.domain.com </span> です。 </p> </td>
+   <td colname="col2"> <p>リファラーのホスト名全体。 </p> <p> 例：cs(referrer) が <span class="filepath"> https://my.domain.com/my/page </span>、cs(referrer-host) は <span class="filepath"> my.domain.com </span>. </p> </td>
   </tr>
   <tr>
    <td colname="col1"> cs(referrer-query)(name) </td>
@@ -157,15 +159,15 @@ ht-degree: 82%
   </tr>
   <tr>
    <td colname="col1"> time </td>
-   <td colname="col2"> HH:MM:SS 形式の x-timestamp。 </td>
+   <td colname="col2"> HH 形式の x-timestamp:MM:SS. </td>
   </tr>
   <tr>
    <td colname="col1"> x-local-timestring </td>
-   <td colname="col2"> <p>データセットの <span class="filepath">Transformation.cfg</span> ファイルに指定されたローカルタイムゾーンに変換した x-timestamp。形式は YYYY-MM-DD HH:MM:SS.mmm です。 </p> <p> <p>注意：<span class="filepath">Log Processing.cfg</span> ファイルで時刻変換（x-local-timestring など）を定義することもできます。詳しくは、<a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> ログ処理設定ファイル </a> を参照してください。 </p> </p> </td>
+   <td colname="col2"> <p>データセットの <span class="filepath">Transformation.cfg</span> ファイルに指定されたローカルタイムゾーンに変換した x-timestamp。形式は YYYY-MM-DD HH です。:MM:SS.mmm </p> <p> <p>注意：<span class="filepath">Log Processing.cfg</span> ファイルで時刻変換（x-local-timestring など）を定義することもできます。詳しくは、 <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> ログ処理設定ファイル </a>. </p> </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-log-source-id </td>
-   <td colname="col2"> <p>特定のログエントリのログソースに対応する識別子。この識別子を記録するためには、<span class="wintitle">Sensor</span>、ログファイルまたは ODBC データソースを定義するときに、<span class="filepath">Log Processing.cfg</span> ファイルの <span class="wintitle">Log Source ID</span> フィールドに識別子を指定する必要があります。詳しくは、<a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> ログ処理設定ファイル </a> を参照してください。 </p> <p> 例：from VSensor01 </p> </td>
+   <td colname="col2"> <p>特定のログエントリのログソースに対応する識別子。この識別子を記録するためには、<span class="wintitle">Sensor</span>、ログファイルまたは ODBC データソースを定義するときに、<span class="filepath">Log Processing.cfg</span> ファイルの <span class="wintitle">Log Source ID</span> フィールドに識別子を指定する必要があります。詳しくは、 <a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md"> ログ処理設定ファイル </a>. </p> <p> 例：from VSensor01 </p> </td>
   </tr>
   <tr>
    <td colname="col1"> x-mask </td>
@@ -173,7 +175,7 @@ ht-degree: 82%
   </tr>
   <tr>
    <td colname="col1"> x-timestring </td>
-   <td colname="col2"> x-timestamp （YYYY-MM-DD HH:MM:SS.mmm 形式） </td>
+   <td colname="col2"> YYYY-MM-DD HH 形式の x-timestamp:MM:SS.mmm </td>
   </tr>
   <tr>
    <td colname="col1"> x-unixtime </td>

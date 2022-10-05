@@ -1,9 +1,9 @@
 ---
-description: 統計を支援するために、Data Workbenchはガイド付き分析のビジュアライゼーションで3つの統計的測定を提供します。
+description: この統計に役立つように、Data Workbenchはガイド付き分析のビジュアライゼーションで 3 つの統計的尺度を提供します。
 title: 統計的尺度
 uuid: a8782cd2-d657-4c04-9c5d-8e0af2a3b76e
 exl-id: 166ff98b-d531-4b31-897e-0c7fedbd2f4d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 82%
@@ -12,7 +12,9 @@ ht-degree: 82%
 
 # 統計的尺度{#statistical-measures}
 
-統計を支援するために、Data Workbenchはガイド付き分析のビジュアライゼーションで3つの統計的測定を提供します。
+{{eol}}
+
+この統計に役立つように、Data Workbenchはガイド付き分析のビジュアライゼーションで 3 つの統計的尺度を提供します。
 
 >[!NOTE]
 >
@@ -24,7 +26,7 @@ ht-degree: 82%
 
 >[!NOTE]
 >
->U統計とV統計は互いを補うように選択され、それぞれが、他方の統計との間で強く反応しないタイプの相関関係を検出するよう調整されました。
+>U 統計と V 統計は互いを補うように選択され、それぞれが他方の統計が強く反応しないタイプの相関を検出するよう調整されました。
 
 このビジュアライゼーションをガイドとして使用し、他のビジュアライゼーションをワークスペースに追加して、選択に基づいた、データに対する洞察を深めることができます。
 

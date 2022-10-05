@@ -1,9 +1,9 @@
 ---
-description: ワークトップを使用すると、特定のワークスペースがData Workbenchサーバー上にあるか、ローカルマシン上にあるか、またはその両方に保存されているかを簡単に判断できます。
+description: ワークトップを使用すると、Data Workbenchサーバー上、ローカルマシン上、またはその両方上のどこに特定のワークスペースが保存されているかを簡単に判断できます。
 title: ファイルのバージョン管理
 uuid: 5e7430f3-1425-41d2-828b-bc8f5786bf3b
 exl-id: 82a70d51-a95c-4ddd-8d3c-cd0364940693
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 26%
@@ -12,9 +12,11 @@ ht-degree: 26%
 
 # ファイルのバージョン管理{#file-versioning}
 
-ワークトップを使用すると、特定のワークスペースがData Workbenchサーバー上にあるか、ローカルマシン上にあるか、またはその両方に保存されているかを簡単に判断できます。
+{{eol}}
 
-## ファイルのバージョン{#section-d555c96b016344f19b356c12213dd2a9}の識別
+ワークトップを使用すると、Data Workbenchサーバー上、ローカルマシン上、またはその両方上のどこに特定のワークスペースが保存されているかを簡単に判断できます。
+
+## ファイルのバージョンの識別 {#section-d555c96b016344f19b356c12213dd2a9}
 
 **サーバー**
 
@@ -22,7 +24,7 @@ ht-degree: 26%
 
 ![](assets/wsp_thumb_server.png)
 
-サーバーワークスペースは、デフォルトでは、接続されたData Workbenchサーバー上のWorkspacesフォルダー内の適切なサブフォルダーに保存されます。
+サーバワークスペースは、デフォルトでは、接続されているData Workbench・サーバの Workspaces フォルダ内の適切なサブ・フォルダに保存されます。
 
 **ローカル**
 
@@ -30,16 +32,16 @@ ht-degree: 26%
 
 ![](assets/wsp_thumb_local.png)
 
-ローカルワークスペースは、デフォルトでは、Data Workbench（またはInsight）のインストールディレクトリ内の[!DNL User\working profile name\Workspaces\tab] nameフォルダーに保存されます。
+ローカルワークスペースは、デフォルトで [!DNL User\working profile name\Workspaces\tab] 名前フォルダーをData Workbench（または Insight）のインストールディレクトリ内に作成します。
 
 >[!NOTE]
 >
->サーバーワークスペースのローカルバージョンがある場合、サーバーワークスペースの更新バージョンをダウンロードする前に、サーバーバージョンに戻す必要があります。 ローカルに変更を加えずにサーバーのバージョンに戻すには、ローカルワークスペースのサムネールを右クリックし、「**[!UICONTROL Revert to server version]**」をクリックします。
+>サーバーワークスペースのローカルバージョンがある場合、サーバーのバージョンに戻してから、サーバーのワークスペースの更新バージョンをダウンロードする必要があります。 ローカルに変更を加えずにサーバーのバージョンに戻すには、ローカルワークスペースのサムネールを右クリックし、 **[!UICONTROL Revert to server version]**.
 
 **ユーザー**
 
-ユーザーワークスペースは、ローカルマシン上で作成され、ローカルマシン上にのみ存在するワークスペースです。ユーザーワークスペースは、背後に空白のワークスペースの輪郭が点線で示された単一のサムネールとして表示され、接続されたData Workbench・サーバーにソース・ワークスペースがないことを示します。
+ユーザーワークスペースは、ローカルマシン上で作成され、ローカルマシン上にのみ存在するワークスペースです。ユーザーワークスペースは、背後に空白のワークスペースの輪郭が点線で示された単一のサムネールとして表示され、接続されているData Workbenchサーバー上にソースワークスペースがないことを示します。
 
 ![](assets/wsp_thumb_user.png)
 
-ユーザーワークスペースは、デフォルトでは、Insightインストールディレクトリ内のUser\*working profile name*\Workspaces\*tab name*フォルダーに保存されます。
+ユーザーワークスペースは、デフォルトでは、Insight インストールディレクトリ内の User\*working profile name*\Workspaces\*tab name*フォルダーに保存されます。

@@ -4,7 +4,7 @@ solution: Analytics
 title: Data Workbench対照実験
 uuid: 5fce2d9e-4975-44e4-a7c0-11064d8d28b4
 exl-id: 40bcf6a4-c722-427c-81ac-45dec1eae0b5
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 0%
@@ -12,6 +12,8 @@ ht-degree: 0%
 ---
 
 # Data Workbench対照実験{#data-workbench-controlled-experiments}
+
+{{eol}}
 
 対照実験とは、実験用サンプル群から得られた結果を標準の対照群から得た結果と比較することが可能な実験です。
 

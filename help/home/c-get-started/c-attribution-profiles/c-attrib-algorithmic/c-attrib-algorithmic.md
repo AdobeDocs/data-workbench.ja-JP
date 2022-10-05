@@ -2,17 +2,21 @@
 description: 最適なアトリビューションは、機械学習によってコンバージョンにつながる様々なチャネルにアトリビューション値を割り当てる機能です。Data Workbench では、自動的にチャネルごとにある期間全体での成功への貢献度を評価し、その後、顧客の実際のインタラクションパターンに基づいてアトリビューションモデルを構築します。
 title: 最適なアトリビューション
 uuid: 0c51beb3-8f74-4f8e-9722-0c885140c8ce
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 225a54d0-370c-4274-8a87-dc287bbb8201
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 89%
 
 ---
 
-
 # 最適なアトリビューション{#best-fit-attribution}
+
+{{eol}}
 
 最適なアトリビューションは、機械学習によってコンバージョンにつながる様々なチャネルにアトリビューション値を割り当てる機能です。Data Workbench では、自動的にチャネルごとにある期間全体での成功への貢献度を評価し、その後、顧客の実際のインタラクションパターンに基づいてアトリビューションモデルを構築します。
 
-**[!UICONTROL Best Fit Attribution]** 販売の成功、電子メールの入会、その他の業績評価指標に貢献したインタラクション（タッチ）を比較できます。 アトリビューション分析では、自動的に最も重要なタッチに重みを割り当て、データに基づいて、市場や内部プロトコルに対応したアトリビューションモデルをチャネルごとに提供します。
+**[!UICONTROL Best Fit Attribution]** を使用すると、販売の成功、電子メールのサインアップ、その他の業績評価指標に貢献したインタラクション、またはタッチを比較できます。 アトリビューション分析では、自動的に最も重要なタッチに重みを割り当て、データに基づいて、市場や内部プロトコルに対応したアトリビューションモデルをチャネルごとに提供します。
 
 ![](assets/attrib_windows_5.png)
 
@@ -20,13 +24,14 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->To run **Best Fit Attribution** in Data Workbench, you need to update your server certificate ( [!DNL .pem file]) to support Adobe Analytics Premium. また、クライアントのカスタム **に** Premium[!DNL Profile.cfg] を追加し、サーバーとレポートサーバー用の新しい証明書を Adobe ClientCare から受け取る必要があります。
+>実行する **最適なアトリビューション** Data Workbenchで、サーバー証明書を更新する必要があります ( [!DNL .pem file]) を使用してAdobe Analytics Premiumをサポートします。 また、クライアントのカスタム **に** Premium[!DNL Profile.cfg] を追加し、サーバーとレポートサーバー用の新しい証明書を Adobe ClientCare から受け取る必要があります。
 
 ## 基本的な設定 {#section-db597eaee462412ea7280d1426366c61}
 
-See [Build a Best Fit Attribution](../../../../home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-building.md#concept-fede6fc4f592475fa8b351b1765a522d) for step-by-step instructions.
+詳しい手順については、[最適なアトリビューションの作成](../../../../home/c-get-started/c-attribution-profiles/c-attrib-algorithmic/c-attrib-building.md#concept-fede6fc4f592475fa8b351b1765a522d)を参照してください。
 
-**成功指標の設定**&#x200B;成功イベントを表す指標を定義します。
+**成功指標の設定**
+成功イベントを表す指標を定義します。
 
 ![](assets/attrib_windows_1.png)
 
@@ -38,7 +43,7 @@ See [Build a Best Fit Attribution](../../../../home/c-get-started/c-attribution-
 
 >[!NOTE]
 >
->タッチ指標を使用して、既存のチャネル指標を使用する代わりに、ディメンションエレメントのドラッグ&amp;ドロップからチャネル指標を抽出する場合にのみ、タッチ指標の設定が必要です。
+>タッチ指標の設定は、既存のチャネル指標を使用する代わりに、Dimension要素をドラッグ&amp;ドロップしてチャネル指標を取得する場合にのみ必要です。
 
 キャンペーンまたはチャネルに対して指標が定義されていないが、チャネルを表すディメンションがある場合、最適なアトリビューションはタッチ指標に基づいて成功指標を自動的に作成します。
 
@@ -62,7 +67,7 @@ See [Build a Best Fit Attribution](../../../../home/c-get-started/c-attribution-
 
 >[!NOTE]
 >
->タッチ指標の設定は、ディメンション要素をビジュアライゼーションにドラッグして成功指標を自動的に作成する場合にのみ必要です。
+>タッチ指標の設定は、ディメンション要素をビジュアライゼーションにドラッグして成功指標を自動的に作成しようとする場合にのみ必要です。
 
 日、月、年などの利用可能な任意の期間を設定して、販売サイクル全体またはサイトを訪れた特定のオーディエンスの成功イベントとタッチイベントの評価を制限することができます。アトリビューションを制限するウィンドウを作成すると、分析対象を特定のニーズに関連する期間に絞り込むことができます。
 
@@ -94,7 +99,7 @@ See [Build a Best Fit Attribution](../../../../home/c-get-started/c-attribution-
 
 **オプション 1：タッチ指標を追加してからチャネルのディメンションエレメントを追加する**
 
-こちらのアプローチの方が簡単です。最適なアトリビューションは、アトリビューションを評価する指標を自動的に作成します。In the example below the Touch Metric is ***Hits*** and Channels are: ***Display Campaigns***, ***Email Campaigns***, and ***SEM Campaigns***.
+こちらのアプローチの方が簡単です。最適なアトリビューションは、アトリビューションを評価する指標を自動的に作成します。以下の例では、タッチ指標は次のようになります。 ***ヒット数*** チャネルは次のとおりです。 ***キャンペーンの表示***, ***メールキャンペーン***、および ***SEM キャンペーン***.
 
 この手法を用いて、最適なアトリビューションは複数チャネルにわたってアトリビューションを評価する指標をバックグラウンドで作成します（ただし、自動生成された指標は表示されず、保存されていません）。以下の例では、3 つのチャネル（*ディスプレイキャンペーン*、*電子メールキャンペーン*、*SEM キャンペーン*）それぞれに対してヒット数をフィルタリングする 3 つの指標が作成されています。最適なアトリビューションでは、ユーザーに合わせて指標を作成することができるので、この方法が最も簡単です。
 

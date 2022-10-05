@@ -3,7 +3,7 @@ description: すべての Insight サーバーコンピューターが可能な�
 title: ディスク容量の監視（Insight サーバー）
 uuid: 13248e36-4e88-4212-816e-bcc12deefcb4
 exl-id: c2198edc-3961-4845-97cf-0ebe039f9a66
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '126'
 ht-degree: 2%
@@ -11,6 +11,8 @@ ht-degree: 2%
 ---
 
 # ディスク容量の監視{#monitoring-disk-space}
+
+{{eol}}
 
 すべての Insight サーバーコンピューターが可能な限り高いレベルで引き続き実行できるよう、使用可能なディスク容量を定期的に監視する必要があります。
 

@@ -1,9 +1,9 @@
 ---
-description: レポートとアラートを生成する前に、レポートサーバーを設定して、Insightサーバーのアドレスと、レポート対象のプロファイルを特定する必要があります。
+description: レポートとアラートを生成する前に、レポートサーバーを設定して、Insight サーバーのアドレスと、レポート対象のプロファイルを特定する必要があります。
 title: Insight サーバーへの接続の設定
 uuid: 2018b67e-90a6-41d7-b628-4b463869df6e
 exl-id: a398a665-fe09-448a-977c-b0f9de4add09
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 9%
@@ -12,18 +12,20 @@ ht-degree: 9%
 
 # Insight サーバーへの接続の設定{#configuring-the-connection-to-the-insight-server}
 
-レポートとアラートを生成する前に、レポートサーバーを設定して、Insightサーバーのアドレスと、レポート対象のプロファイルを特定する必要があります。
+{{eol}}
+
+レポートとアラートを生成する前に、レポートサーバーを設定して、Insight サーバーのアドレスと、レポート対象のプロファイルを特定する必要があります。
 
 >[!NOTE]
 >
->以下に説明するようにレポートサーバーを設定するまで、レポートサーバーを正常に実行できません。 プログラムと共にインストールされた未構成のファイルでレポートサーバーを実行しようとすると、レポートサーバーはエラーのストリームを生成します。
+>以下の説明に従ってレポートサーバーを設定するまでは、レポートサーバーを正常に実行できません。 プログラムと共にインストールされた未構成のファイルでレポートサーバを実行しようとすると、レポートサーバはエラーのストリームを生成します。
 
 **レポートサーバーを設定するには**
 
-1. Windowsエクスプローラーで、Report Serverをインストールしたディレクトリに移動します。
-1. [!DNL ReportServer.cfg]ファイルをメモ帳で開き、必要に応じて変更します。
+1. Windows エクスプローラで、Report Server をインストールしたディレクトリに移動します。
+1. を開きます。 [!DNL ReportServer.cfg] ファイルをメモ帳に保存し、必要に応じてファイルを変更します。
 
-   次のサンプル[!DNL Report Server.cfg]には、デフォルトで[!DNL Report Server.cfg]ファイルに含まれているパラメーターのみが含まれています（必要なパラメーター設定が強調表示されています）。 プロキシサーバを通じてAdobeライセンスサーバに連絡する場合は、Licensingベクトルとそのパラメータを追加する必要があります。 詳しくは、[Report Server.cfgのパラメーター](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06)を参照してください。
+   次のサンプル [!DNL Report Server.cfg] には、 [!DNL Report Server.cfg] ファイル（デフォルト）（およびは必須のパラメータ設定をハイライト表示） プロキシサーバを通じてAdobeライセンスサーバに接続する場合は、Licensing ベクトルとそのパラメータを追加する必要があります。 詳しくは、 [Report Server.cfg のパラメーター](../../../home/c-rpt-oview/c-rpt-param-ref/c-rpt-svr-param.md#concept-53359b328fd140d593c3f2fc0031be06) を参照してください。
 
    ```
    Fonts = vector: 0 items

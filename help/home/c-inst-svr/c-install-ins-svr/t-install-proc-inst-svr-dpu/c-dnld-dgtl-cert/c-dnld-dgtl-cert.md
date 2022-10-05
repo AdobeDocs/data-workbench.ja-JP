@@ -3,14 +3,16 @@ description: 電子証明書に関する一般的な情報、および電子証�
 title: 電子証明書のダウンロードとインストール
 uuid: ac484e96-21dc-4643-ae74-01ac957e30ee
 exl-id: 8aae9b63-7df0-4725-9833-711246bbe746
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
-workflow-type: ht
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 100%
 
 ---
 
-# 電子証明書のダウンロードとインストール {#downloading-and-installing-the-digital-certificates}
+# 電子証明書のダウンロードとインストール{#downloading-and-installing-the-digital-certificates}
+
+{{eol}}
 
 電子証明書に関する一般的な情報、および電子証明書をダウンロードしてインストールする手順について説明します。
 

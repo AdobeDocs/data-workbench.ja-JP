@@ -2,13 +2,17 @@
 description: デシジョンツリーメニューには、ポジティブユースケース、フィルター、リーフ配分オプション、混同行列などの高度なオプションを設定する機能が用意されています。
 title: デシジョンツリーのオプション
 uuid: 6439c6d4-60ac-4324-b870-b452a63b7ba1
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: e139562d-4613-4159-a858-2a78a2e896dd
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 100%
 
 ---
 
-
 # デシジョンツリーのオプション{#decision-tree-options}
+
+{{eol}}
 
 デシジョンツリーメニューには、ポジティブユースケース、フィルター、リーフ配分オプション、混同行列などの高度なオプションを設定する機能が用意されています。
 
@@ -83,7 +87,7 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
    <td colname="col2">デシジョンツリーの凡例キーのオンとオフを切り替えることができます。<img placement="break" id="image_D5B9415A48C04619955BD96970F720A1" src="assets/decison_tree_legend.png" />このメニューコマンドは、デシジョンツリーが表示されているときにのみ表示されます。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> 詳細 </td> 
+   <td colname="col1"> アドバンス </td> 
    <td colname="col2"> クリックすると、デシジョンツリーを細かく制御するための詳細メニューが開きます。メニューオプションについては、以下の表を参照してください。 </td> 
   </tr> 
  </tbody> 
@@ -115,4 +119,3 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
   </tr> 
  </tbody> 
 </table>
-

@@ -1,9 +1,9 @@
 ---
-description: Report Portalは、フォルダーのツリー表示、レポート日のツリー表示、アドホック検索に基づいてレポートを検索する検索機能を備えています。
+description: Report Portal では、フォルダーのツリー表示、レポートの日付のツリー表示、アドホック検索に基づいてレポートを検索するための検索機能を提供します。
 title: Report Portal での詳細検索
 uuid: 3b5262fb-ea42-449f-8ef9-897806a310a8
 exl-id: 891d51ad-8477-4a1a-9fe5-97e1210f11d5
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 5%
@@ -12,13 +12,15 @@ ht-degree: 5%
 
 # Report Portal での詳細検索{#advanced-search-in-the-report-portal}
 
-Report Portalは、フォルダーのツリー表示、レポート日のツリー表示、アドホック検索に基づいてレポートを検索する検索機能を備えています。
+{{eol}}
 
-1. Report Portalの左側のペインで「**[!UICONTROL Search]**」タブをクリックします。
+Report Portal では、フォルダーのツリー表示、レポートの日付のツリー表示、アドホック検索に基づいてレポートを検索するための検索機能を提供します。
+
+1. 次をクリック： **[!UICONTROL Search]** 」タブをクリックします。
 
    ![](assets/report_portal_search_button.png)
 
-   新しいWebページが開き、**[!UICONTROL Folder Tree]**&#x200B;オプションをデフォルトの表示として&#x200B;**[!UICONTROL Search]**&#x200B;ページが表示されます。
+   新しい Web ページが開き、 **[!UICONTROL Search]** ページの **[!UICONTROL Folder Tree]** オプションをデフォルトの表示として使用します。
 
    ![](assets/report_portal_search_headers.png)
 
@@ -34,27 +36,27 @@ Report Portalは、フォルダーのツリー表示、レポート日のツリ�
  <tbody> 
   <tr> 
    <td colname="col1"> <p>フォルダーツリー </p> </td> 
-   <td colname="col2"> <p>レポートフォルダーのカスタム階層に基づいてレポートを選択します。 これらのフォルダーは、<a href="../../home/c-rpt-oview/c-work-rpt-sets/c-work-rpt-sets.md#concept-a5f078668e1245e684cb2a778c8803d5">レポートセット</a>として定義および整理されます。 </p> </td> 
+   <td colname="col2"> <p>レポートフォルダーのカスタム階層に基づいてレポートを選択します。 これらのフォルダーは、 <a href="../../home/c-rpt-oview/c-work-rpt-sets/c-work-rpt-sets.md#concept-a5f078668e1245e684cb2a778c8803d5"> レポートセット</a>. </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>日付ツリー </p> </td> 
-   <td colname="col2"> <p>レポートサーバーで定義された日付の階層に基づいてフォルダーを選択します。 レポートは、実行された日付（年/月/日）に基づいて編成されます。 </p> </td> 
+   <td colname="col2"> <p>レポートサーバーで定義された日付の階層に基づいてフォルダを選択します。 レポートは、実行された日付（年/月/日）に基づいて整理されます。 </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>検索 </p> </td> 
-   <td colname="col2"> <p>すべてのレポートに対してアドホック検索を実行する。 レポートの完全な名前がわかっている場合は、検索ボックスに直接入力できます。 </p> <p>それに加えて: </p> 
+   <td colname="col2"> <p>すべてのレポートでアドホック検索を実行します。 レポートの完全名がわかっている場合は、検索ボックスに直接入力できます。 </p> <p>それに加えて： </p> 
     <ul id="ul_EAE30AAA865942078D0C6C0AE527C07C"> 
-     <li id="li_F5213977442F4B89A62CA6BC315F95BE">&lt;space&gt;キーを入力して、既存のすべてのレポートの先頭の文字または名前のドロップダウンリストを表示します。 </li> 
-     <li id="li_C28799438777471290B424CAFFCAF810">レポートの名を入力し、&lt;space&gt;キーを入力してドロップダウンリストを表示し、既存のレポートの名前を自動入力できます。 </li> 
+     <li id="li_F5213977442F4B89A62CA6BC315F95BE">タイプ a &lt;space&gt; キーを使用して、既存のすべてのレポートの開始文字または名前のドロップダウンリストを表示できます。 </li> 
+     <li id="li_C28799438777471290B424CAFFCAF810">レポートの名を入力し、a と入力します。 &lt;space&gt; キーを使用して既存のレポートの名前を自動入力できるドロップダウンリストを表示します。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>すべてを選択解除 </p> </td> 
-   <td colname="col2"> をクリックして、選択したレポートをすべてクリアします。 </td> 
+   <td colname="col2"> をクリックして、選択したすべてのレポートをクリアします。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <p>選択項目を表示 </p> </td> 
-   <td colname="col2">をクリックすると、フォルダツリーまたは日付ツリービューで選択したレポートが表示されます。 Report Portalが新しいウィンドウで開き、各レポートが.pngファイルとして表示されます。 複数のレポートが選択されている場合、ページ上部のタブから個々のレポートを選択できます。 <p>このページの「<span class="uicontrol">印刷</span>」ボタンをクリックして選択したレポートを印刷するか、「<span class="uicontrol">ダウンロード</span>」をクリックしてローカルに保存します。 </p> </td> 
+   <td colname="col1"> <p>選択した項目を表示 </p> </td> 
+   <td colname="col2">をクリックすると、フォルダーツリーまたは日付ツリービューで選択したレポートが表示されます。 Report Portal が新しいウィンドウで開き、各レポートが.png ファイルとして表示されます。 複数のレポートが選択されている場合、各レポートはページ上部のタブから選択できます。 <p>次をクリック： <span class="uicontrol"> 印刷</span> このページのボタンをクリックして、選択したレポートを印刷するか、 <span class="uicontrol"> ダウンロード</span> ローカルに保存する </p> </td> 
   </tr> 
  </tbody> 
 </table>

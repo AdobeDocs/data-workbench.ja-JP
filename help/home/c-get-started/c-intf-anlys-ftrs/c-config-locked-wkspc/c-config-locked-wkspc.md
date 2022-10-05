@@ -3,7 +3,7 @@ description: Data Workbenchは、特定のユーザーのみが特定のワー�
 title: ロックされているワークスペースの設定
 uuid: 0bb264f6-20b9-43d9-903e-1b2422af21d5
 exl-id: e31a786e-064e-4f2c-9bf4-7ceafde814c0
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 75%
@@ -11,6 +11,8 @@ ht-degree: 75%
 ---
 
 # ロックされているワークスペースの設定{#configure-a-locked-workspace}
+
+{{eol}}
 
 Data Workbenchは、特定のユーザーのみが特定のワークスペースを変更できるように設定できます。
 
@@ -23,4 +25,4 @@ Data Workbenchは、特定のユーザーのみが特定のワークスペース
 * **ユーザーの [!DNL Insight.cfg] ファイル内の Unlock パラメーター：**&#x200B;このパラメーターは、ロックされているワークスペースをユーザーが一時的にロック解除できるかどうかを指定します。
 * **一時的にロック解除メニューオプション：**&#x200B;ユーザーの [!DNL Insight.cfg] 内の Unlock パラメーターが true に設定されている場合、ロックされている各ワークスペースのタイトルバーメニューにこのオプションが自動的に表示されて、ユーザーにロック解除手段を提示します。
 
-[!DNL folder.lock] ファイルと [!DNL name.lock]workspace   ファイルについては、以下の節を参照してください。Unlockパラメーターの設定について詳しくは、[Unlockパラメーターの設定](../../../../home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-unlck-param.md#concept-b018a85c6217489aa01b17845872df7f)を参照してください。 [!DNL Temporarily Unlock menu]オプションについて詳しくは、[ワークスペースのロック解除](../../../../home/c-get-started/c-work-worksp/c-unlock-wksp.md#concept-18ada952aecf45c79a806b31b294023e)を参照してください。
+[!DNL folder.lock] ファイルと [!DNL name.lock]workspace   ファイルについては、以下の節を参照してください。Unlock パラメータの設定については、 [Unlock パラメータの設定](../../../../home/c-get-started/c-intf-anlys-ftrs/c-config-locked-wkspc/c-unlck-param.md#concept-b018a85c6217489aa01b17845872df7f). 詳しくは、 [!DNL Temporarily Unlock menu] オプション： [ワークスペースのロック解除](../../../../home/c-get-started/c-work-worksp/c-unlock-wksp.md#concept-18ada952aecf45c79a806b31b294023e).

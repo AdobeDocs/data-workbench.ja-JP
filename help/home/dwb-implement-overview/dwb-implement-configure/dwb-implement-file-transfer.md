@@ -3,7 +3,7 @@ description: DWB の様々なファイル転送方法のクイックガイドで
 title: ファイル転送ガバナンス
 uuid: a3e19f8a-1cc4-437c-9661-408f675109c0
 exl-id: a0ecd8e1-6d6f-4811-9869-092837dc9e55
-source-git-commit: 79981e92dd1c2e552f958716626a632ead940973
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 1%
@@ -12,16 +12,18 @@ ht-degree: 1%
 
 # ファイル転送ガバナンス{#file-transfer-governance}
 
+{{eol}}
+
 DWB の様々なファイル転送方法のクイックガイドです。
 
 ファイル転送ガバナンスは、内部ディレクトリから他のサーバーや内部ファイル移動にファイルを転送する標準的なプロセスです。
 
-## 様々なファイル転送方法 {#section-972bb39ba1954c6ebd35f6d042593efe}
+## 異なるファイル転送方法 {#section-972bb39ba1954c6ebd35f6d042593efe}
 
 1. AWS(Amazon Web Services)
 
-   1. まだインストールされていない場合は、チケットを発行して、AWSコマンドラインインターフェイスをサーバーにインストールします ([https://docs.aws.amazon.com/cli/latest/userguide/installing.html](https://docs.aws.amazon.com/cli/latest/userguide/installing.html) を参照 )。
-   1. 確認方法は？ コマンドプロンプトを使用してAWSを設定してみます ([https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) を参照 )。
+   1. AWSコマンドラインインターフェイスがまだインストールされていない場合は、チケットを発行してサーバーにインストールします ( [https://docs.aws.amazon.com/cli/latest/userguide/installing.html](https://docs.aws.amazon.com/cli/latest/userguide/installing.html)) をクリックします。
+   1. 確認方法は？ コマンドプロンプトを使用してAWSを設定してみます ( [https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)) をクリックします。
 
 1. FTP サーバから NAS ディレクトリにファイルを転送します。
 
@@ -43,26 +45,26 @@ DWB の様々なファイル転送方法のクイックガイドです。
 
       local_directory
 
-      (FTP の詳細は、プロジェクトのチェックリストで確認できます。 外部 FTP ユーザーを使用したファイルの転送 )
+      (FTP の詳細は、プロジェクトチェックリストで確認できます。 外部 FTP ユーザーを使用したファイルの転送 )
 
-   1. 以下に添付する ftp_winscp_get.pl スクリプトを使用し、必要に応じてスケジュールを設定します。
+   1. 以下に添付する ftp_winscp_get.pl スクリプトと、要件に基づくスケジュールを使用します。
 
       ftp_winscp_get.pl
 
-      このスクリプトはE:\scripts\Scripository\Library\Perlに配置する必要があります。
+      このスクリプトはE:\scripts\Scripository\Library\Perlに配置する必要があります
 
       >[!NOTE]
       >
-      >Scripository フォルダーが使用できない場合は、[ 週別再処理 ](../../../home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md#concept-60529e12d6d94386a02c1c6fdedf0295) を参照して、フォルダーをダウンロードしてください。
+      >Scripository フォルダーが使用できない場合は、 [週次再処理](../../../home/dwb-implement-overview/dwb-implement-configure/dwb-implement-reprocess-scripting.md#concept-60529e12d6d94386a02c1c6fdedf0295) をクリックしてフォルダーをダウンロードします。
 
-   1. ftp_address での可用性に基づいてスクリプトをスケジュールします。
-   1. ファイルの命名規則は、YYYYMMDD-&lt;offline_feed_name>-00 にする必要があります。*
+   1. ftp_address でのファイルの可用性に基づいてスクリプトをスケジュールします。
+   1. ファイルの命名規則は YYYYMMDD — である必要があります&lt;offline_feed_name>-00.&#42;
 
 1. NAS ディレクトリから FTP サーバにファイルを転送します。
 
    1. 必要に応じて ftp_winscp_put.pl スクリプトとスケジュールを使用します。
 
-      このスクリプトはE:\scripts\Scripository\Library\Perlに配置する必要があります。
+      このスクリプトはE:\scripts\Scripository\Library\Perlに配置する必要があります
 
       スクリプトを実行するには、次の詳細が必要です。
 
@@ -227,13 +229,13 @@ DWB の様々なファイル転送方法のクイックガイドです。
       }
       ```
 
-   1. ftp_address での可用性に基づいてスクリプトをスケジュールします。
-   1. ファイルの命名規則は、YYYYMMDD-&lt;offline_feed_name>-00 にする必要があります。*
+   1. ftp_address でのファイルの可用性に基づいてスクリプトをスケジュールします。
+   1. ファイルの命名規則は YYYYMMDD — である必要があります&lt;offline_feed_name>-00.&#42;
 
 1. 1 つの NAS ディレクトリから他の NAS ディレクトリにファイルを転送します。
 
-   1. 一方の NAS ディレクトリに直接接続するファイルを、もう一方の NAS ディレクトリからコピーして貼り付けます。 以下の手順に従います。)
+   1. 一方の NAS ディレクトリに直接接続するファイルを、もう一方のディレクトリからコピーして貼り付けます。 以下の手順に従います。)
 
-      サーバーにログイン —> 実行 —> \\server_name\E$ [ 新しいフォルダーが開き、ファイルを直接コピーまたは移動します ]
+      サーバにログイン —> 次を実行 —> \\server_name\E$に移動します。 [新しいフォルダーが開き、ファイルを直接コピーまたは移動します]
 
-   1. 「copy_files.pl」スクリプトを使用して、あるサーバから別のサーバにファイルをコピーするか、「move_files.pl」を使用して、あるサーバから別のサーバにファイルを移動します。 ( これらのファイルは、E:\scripts\Scripositoryで入手できます )。
+   1. 「copy_files.pl」スクリプトを使用して、あるサーバから別のサーバにファイルをコピーするか、「move_files.pl」を使用して、あるサーバから別のサーバにファイルを移動します。 ( これらのファイルは、 E:\scripts\Scripositoryで入手できます )

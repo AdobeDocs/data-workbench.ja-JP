@@ -3,14 +3,16 @@ description: Merge 変換は、入力フィールド（通常は文字列ベク�
 title: Merge
 uuid: 9ca2ab22-d854-47b0-8189-f563c1e83d1c
 exl-id: 75fa824b-f68d-4ec4-a75d-0f742a7bb1ba
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 100%
+source-wordcount: '253'
+ht-degree: 90%
 
 ---
 
 # 結合{#merge}
+
+{{eol}}
 
 Merge 変換は、入力フィールド（通常は文字列ベクトル）から値を受け取って、指定された区切り文字で単一の文字列に結合し、指定された出力フィールドにその結果を格納します。
 
@@ -30,7 +32,7 @@ Merge 変換は、入力フィールド（通常は文字列ベクトル）か�
   </tr> 
   <tr> 
    <td colname="col1"> コメント </td> 
-   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
+   <td colname="col2"> （オプション）。変換についてのメモ。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -54,7 +56,7 @@ Merge 変換は、入力フィールド（通常は文字列ベクトル）か�
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Output </td> 
+   <td colname="col1"> 出力 </td> 
    <td colname="col2"> 出力文字列の名前。 </td> 
    <td colname="col3"></td> 
   </tr> 
@@ -65,4 +67,4 @@ Merge 変換は、入力フィールド（通常は文字列ベクトル）か�
 
 ![](assets/cfg_TransformationType_Merge.png)
 
-例えば、入力フィールド x-products に B57481、C46355、Z97123 という文字列値が格納されていた場合、出力文字列 x-show-products は B57481::C46355::Z97123 となります。
+したがって、入力フィールド x-products にB57481、C46355、Z97123という文字列値が含まれている場合、出力文字列 x-show-products は次のようになりB57481す。:C46355::Z97123.

@@ -3,7 +3,7 @@ description: Web サイトトラフィックから収集されたデータを扱
 title: Sessionize
 uuid: c6e2487a-80e5-4e00-b4d4-2ce013fac3ea
 exl-id: bb25cb4b-7185-4524-8ff5-740b672e1cd9
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 92%
@@ -12,13 +12,15 @@ ht-degree: 92%
 
 # Sessionize{#sessionize}
 
+{{eol}}
+
 Web サイトトラフィックから収集されたデータを扱う場合、Sessionize 変換を使用してセッションの定義を指定できます。
 
 この変換は、タイムスタンプと追跡 ID をその入力として受け取り、ログエントリごとにセッション番号を出力します。特定の追跡 ID を持つ 1 つ目のセッションは「1」に、同じ追跡 ID を持つ 2 つ目のセッションは「2」にというように、セッション番号が 1 つずつ繰り上がります。出力データはセッションごとに一意の値を持つので、セッションキーとしてそのまま使用することができます。
 
 >[!NOTE]
 >
->[!DNL Sessionize] 変換が正しく動作するためには、ソースデータにおいて、データが時系列順に並んでおり、追跡 ID ごとにグループ化されている必要があります。したがって、[!DNL Sessionize]は、[!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイルで定義されている場合にのみ機能します。
+>[!DNL Sessionize] 変換が正しく動作するためには、ソースデータにおいて、データが時系列順に並んでおり、追跡 ID ごとにグループ化されている必要があります。したがって [!DNL Sessionize] は、 [!DNL Transformation.cfg] ファイル内または [!DNL Transformation Dataset Include] ファイル。
 
 <table id="table_34984DF9340149C0A5016F08EABAD158"> 
  <thead> 
@@ -36,7 +38,7 @@ Web サイトトラフィックから収集されたデータを扱う場合、S
   </tr> 
   <tr> 
    <td colname="col1"> コメント </td> 
-   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
+   <td colname="col2"> （オプション）。変換についてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 
@@ -51,7 +53,7 @@ Web サイトトラフィックから収集されたデータを扱う場合、S
   </tr> 
   <tr> 
    <td colname="col1"> Input Tracking ID </td> 
-   <td colname="col2"> <p>使用する追跡 ID の値が格納されているフィールド。この値は、64 ビット（16 桁）以下の 16 進数か、または 16 桁以下の 10 進整数であることが必要です。 </p> <p> <p>注意：追跡 ID に x-trackingid 以外のフィールドを使用したい場合は、最初にそのフィールドをハッシュ化しておく必要があります。<a href="../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-hash.md#concept-9c353923264941c3aea4428fed66d369"> Hash</a>を参照してください。 </p> </p> </td> 
+   <td colname="col2"> <p>使用する追跡 ID の値が格納されているフィールド。この値は、64 ビット（16 桁）以下の 16 進数か、または 16 桁以下の 10 進整数であることが必要です。 </p> <p> <p>注意：追跡 ID に x-trackingid 以外のフィールドを使用したい場合は、最初にそのフィールドをハッシュ化しておく必要があります。詳しくは、 <a href="../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-hash.md#concept-9c353923264941c3aea4428fed66d369"> Hash</a>. </p> </p> </td> 
    <td colname="col3"> x-trackingid </td> 
   </tr> 
   <tr> 
@@ -85,10 +87,10 @@ Web サイトトラフィックから収集されたデータを扱う場合、S
 
 >[!NOTE]
 >
->既に[!DNL Session Parameters.cfg]ファイルのパラメーターとしてMaximum Session DurationとSession Timeoutを定義している場合は、設定でこれらのパラメーターの値を入力しないでください。 以下の例に示したように、パラメーターは、*$(parameter name)* と入力することによって参照できます。これらのパラメーターについて詳しくは、 [Web データの設定](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
+>既に、 [!DNL Session Parameters.cfg] ファイルに値を入力しないでください。 以下の例に示したように、パラメーターは、*$(parameter name)* と入力することによって参照できます。これらのパラメーターについて詳しくは、 [Web データの設定](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
 
 次の例の [!DNL Sessionize] 変換は、x-timestamp フィールドと x-trackingid フィールドを入力として受け取り、各ログエントリのセッション番号を x-session-key フィールドに記録します。この変換の [!DNL Timeout Condition] には [!DNL Neither] 条件が使用されています。ログエントリの cs(referrer-domain) フィールドが Internal Domains パラメーターのいずれかのドメインと一致した場合、条件が false に評価されます。Internal Domains パラメーターと Session Timeout パラメーターの参照に注目してください。
 
-[!DNL NeitherCondition]について詳しくは、[条件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)を参照してください。 Internal DomainsパラメーターとSession Timeoutパラメーターについて詳しくは、 [Webデータの設定](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519)を参照してください。
+詳しくは、 [!DNL NeitherCondition]を参照してください。 [条件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md). Internal Domains パラメーターと Session Timeout パラメーターについて詳しくは、 [Web データの設定](../../../../../home/c-dataset-const-proc/c-config-web-data/c-config-web-data.md#concept-9a306b65483a484bb3f6f3c1d7e77519).
 
 ![](assets/cfg_TransformationType_Sessionize.png)

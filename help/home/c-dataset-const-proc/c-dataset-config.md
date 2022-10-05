@@ -3,7 +3,7 @@ description: 設定ファイルを編集することで、データセットの�
 title: データセット設定について
 uuid: 813933d1-f52d-4584-8edd-ce9cd4aed74a
 exl-id: 1358d08e-d81c-453d-a3a3-c1f279f38192
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '914'
 ht-degree: 84%
@@ -11,6 +11,8 @@ ht-degree: 84%
 ---
 
 # データセット設定について{#understanding-dataset-configuration}
+
+{{eol}}
 
 設定ファイルを編集することで、データセットの構築ルールを変更できます。
 
@@ -30,15 +32,15 @@ c_req_config_files.xml
 
    データセットプロファイルの [!DNL Profile.cfg] ファイルに継承プロファイルを追加する手順については、『*サーバー製品のインストールと管理に関するガイド*』を参照してください。Insight サーバークラスターのインストール方法と Insight サーバークラスター上で実行するデータセットプロファイルの設定方法について詳しくは、『*サーバー製品のインストールと管理に関するガイド*』を参照してください。
 
-* **Dataset\Log Processing.cfg：**&#x200B;データセット構築プロセスのログ処理段階を制御します。[ログ処理](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-8a63892878004dc389c7dad784fcb061)を参照してください。 [!DNL Log Processing.cfg]ファイルについて詳しくは、[ログ処理設定ファイル](../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md)を参照してください。
+* **Dataset\Log Processing.cfg：**&#x200B;データセット構築プロセスのログ処理段階を制御します。詳しくは、 [ログ処理](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-8a63892878004dc389c7dad784fcb061). 詳しくは、 [!DNL Log Processing.cfg] ファイル： [ログ処理設定ファイル](../../home/c-dataset-const-proc/c-log-proc-config-file/c-abt-log-proc-config-file.md).
 
-* **Dataset\Transformation.cfg：**&#x200B;データセット構築プロセスの変換段階を制御します。[変換](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-88f72e0897a744b5bc03df5039264dda)を参照してください。 プロファイル固有の分析に使用するデータセットは通常、[!DNL Transformation.cfg] ファイルで設定します。[!DNL Transformation.cfg]ファイルについて詳しくは、[変換設定ファイル](../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md)を参照してください。
+* **Dataset\Transformation.cfg：**&#x200B;データセット構築プロセスの変換段階を制御します。詳しくは、 [変換](../../home/c-dataset-const-proc/c-dataset-constr.md#concept-88f72e0897a744b5bc03df5039264dda). プロファイル固有の分析に使用するデータセットは通常、[!DNL Transformation.cfg] ファイルで設定します。詳しくは、 [!DNL Transformation.cfg] ファイル： [変換設定ファイル](../../home/c-dataset-const-proc/c-trans-config-file/c-abt-trans-config-file.md).
 
-* **データセットインクルードファイル：** ファイ [!DNL dataset include] ルには、データセットプロファイルのまたはファイルに含まれるパラメーターのサブセットが含まれま [!DNL Log Processing.cfg] す [!DNL Transformation.cfg] が、継承されたプロファイル内で保存および管理されます。[!DNL Dataset include] ファイルは、メインのデータセット設定ファイルを補完します。詳しくは、[データセットインクルードファイル](../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md)を参照してください。
+* **データセットインクルードファイル：** A [!DNL dataset include] ファイルには、 [!DNL Log Processing.cfg] または [!DNL Transformation.cfg] データセットプロファイル用のファイルですが、継承されたプロファイル内で保存および管理されます。 [!DNL Dataset include] ファイルは、メインのデータセット設定ファイルを補完します。 詳しくは、 [データセットインクルードファイル](../../home/c-dataset-const-proc/c-dataset-inc-files/c-abt-dataset-inc-files.md).
 
-Adobeアプリケーションの実装時に提供されるデータセットプロファイルには、[!DNL Profile Manager]を使用して開いたり、編集したり、保存したりできるデータセット設定ファイルが含まれています。
+Adobeアプリケーションの実装時に提供されるデータセットプロファイルには、 [!DNL Profile Manager].
 
-[!DNL Profile Manager]について詳しくは、『*Insightユーザーガイド*』を参照してください。
+詳しくは、 [!DNL Profile Manager]を参照し、 *Insight ユーザーガイド*.
 
 <!--
 c_addl_config_files.xml
@@ -46,11 +48,11 @@ c_addl_config_files.xml
 
 これらは必須ではありませんが、これらのファイルを使用することで、より細かくデータセット構築プロセスを制御することができます。
 
-* **：**[!DNL Log Processing Mode.cfg]データセットに組み入れるデータの処理を一時停止したり、オフラインソースを指定したりすることができます。Data Workbench サーバーの状態ファイルが保存される頻度を指定することもできます。[追加の設定ファイル](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004)を参照してください。
+* **：**[!DNL Log Processing Mode.cfg]データセットに組み入れるデータの処理を一時停止したり、オフラインソースを指定したりすることができます。Data Workbench サーバーの状態ファイルが保存される頻度を指定することもできます。詳しくは、 [追加の設定ファイル](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004).
 
-* **：**[!DNL Server.cfg]Data Workbench サーバーに接続する Data Workbench コンピューターのデフォルトのデータキャッシュサイズ（バイト単位）を指定します。[追加の設定ファイル](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004)を参照してください。
+* **：**[!DNL Server.cfg]Data Workbench サーバーに接続する Data Workbench コンピューターのデフォルトのデータキャッシュサイズ（バイト単位）を指定します。詳しくは、 [追加の設定ファイル](../../home/c-dataset-const-proc/c-add-config-files/c-add-config-files.md#concept-1afef4f88f1e467ab4326875fd1d3004).
 
-* **Transform.cfg と Transform Mode.cfg：**&#x200B;データ変換機能を使用するためのライセンスを持っている場合にのみ、これらのファイルを利用できます。[!DNL Transform.cfg] ファイルには、変換機能で使用されるデータ変換とログのソースを定義するパラメーターが含まれています。そこで定義した変換によってソースデータが加工され、指定した形式で出力されます。[!DNL Insight Transform Mode.cfg] ファイルでは、データセットに組み入れるデータの処理を一時停止したり、オフラインソースを指定したりすることができます。変換機能を実行する Insight サーバーの状態ファイルが保存される頻度を指定することもできます。[変換機能](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/transform/t-config-tfm.html)を参照してください。
+* **Transform.cfg と Transform Mode.cfg：**&#x200B;データ変換機能を使用するためのライセンスを持っている場合にのみ、これらのファイルを利用できます。[!DNL Transform.cfg] ファイルには、変換機能で使用されるデータ変換とログのソースを定義するパラメーターが含まれています。そこで定義した変換によってソースデータが加工され、指定した形式で出力されます。[!DNL Insight Transform Mode.cfg] ファイルでは、データセットに組み入れるデータの処理を一時停止したり、オフラインソースを指定したりすることができます。変換機能を実行する Insight サーバーの状態ファイルが保存される頻度を指定することもできます。詳しくは、 [変換機能](https://experienceleague.adobe.com/docs/data-workbench/using/server-admin-install/transform/t-config-tfm.html).
 
 <!--
 c_next_steps.xml
@@ -80,11 +82,11 @@ c_next_steps.xml
   </tr> 
   <tr> 
    <td colname="col1"> <p>ファイルサーバーユニットとして実行するように Insight サーバーを設定する </p> </td> 
-   <td colname="col2"> <p><a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> Insightサーバーのファイルサーバーユニットの設定  </a> </p> </td> 
+   <td colname="col2"> <p><a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> Insight サーバーのファイルサーバーユニットの設定 </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>中央の正規化サーバーとして実行するように Insight サーバーを設定する </p> </td> 
-   <td colname="col2"> <p><a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> Insightサーバーのファイルサーバーユニットの設定  </a> </p> </td> 
+   <td colname="col2"> <p><a href="../../home/c-dataset-const-proc/c-log-proc-config-file/c-ins-svr-file-svr-unit.md#concept-995abff3fce34e439fb3f7f47191c80d"> Insight サーバーのファイルサーバーユニットの設定 </a> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>時間ディメンションの作成と時刻の変換に使用するタイムゾーンを設定する </p> </td> 

@@ -3,7 +3,7 @@ description: data workbench は、検索および並べ替え操作に正規表�
 title: 正規表現
 uuid: dc8c1e88-4d95-4011-8a38-70fae0c5cf6d
 exl-id: bb1be6d8-3b7a-47e4-bb29-4a65de99666b
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '132'
 ht-degree: 68%
@@ -12,9 +12,11 @@ ht-degree: 68%
 
 # 正規表現{#regular-expressions}
 
+{{eol}}
+
 data workbench は、検索および並べ替え操作に正規表現（regex）を利用します。
 
-**[!UICONTROL Search]**&#x200B;フィールド内で、「re:」ステートメントに続いて検索を実行できます。次に例を示します。
+内 **[!UICONTROL Search]** フィールドは、「re:」ステートメントに続いて、共通の式を使用して検索を実行できます。次に例を示します。
 
 ```
 <b>re: *.s</b>

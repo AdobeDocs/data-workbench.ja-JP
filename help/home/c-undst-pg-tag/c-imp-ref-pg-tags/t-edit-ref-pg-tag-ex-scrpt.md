@@ -1,9 +1,9 @@
 ---
-description: 参照ページタグは、Webサーバー上にあるページタグ実行スクリプトで構成され、呼び出されると、サイト訪問者が要求したページのクライアント側のすべてのデータが収集されます。
+description: 参照ページタグは、Web サーバー上にあるページタグ実行スクリプトで構成され、呼び出されると、サイト訪問者がリクエストしたページのすべてのクライアント側データが収集されます。
 title: 参照ページタグ実行スクリプトの編集
 uuid: 0db00b89-e420-423d-9b88-8b724baa828f
 exl-id: bc922b59-716e-4e92-84b5-59a52620df03
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '231'
 ht-degree: 6%
@@ -12,11 +12,13 @@ ht-degree: 6%
 
 # 参照ページタグ実行スクリプトの編集{#editing-the-reference-page-tag-execution-script}
 
-参照ページタグは、Webサーバー上にあるページタグ実行スクリプトで構成され、呼び出されると、サイト訪問者が要求したページのクライアント側のすべてのデータが収集されます。
+{{eol}}
 
-[!DNL Reference Page Tag Execution Script]を変更して、Adobeコンサルティングサービスチームとの要件収集会議で特定される可能性のある追加情報を収集できます。 [!DNL Reference Page Tag Execution Script]は、Webページへの大きなダウンロードの追加を避けるために、サイズが比較的小さくなります。
+参照ページタグは、Web サーバー上にあるページタグ実行スクリプトで構成され、呼び出されると、サイト訪問者がリクエストしたページのすべてのクライアント側データが収集されます。
 
-次の[!DNL Reference Page Tag Execution Script]コードは、[!DNL zig.js]という名前のファイルで提供されます。
+次の項目を変更できます。 [!DNL Reference Page Tag Execution Script] Adobeコンサルティングサービスチームとの要件収集会議で特定できる追加情報を収集する。 この [!DNL Reference Page Tag Execution Script] はサイズが比較的小さいので、web ページへの大きなダウンロードの追加を避けます。
+
+以下 [!DNL Reference Page Tag Execution Script] コードが [!DNL zig.js]:
 
 ```
 //REFERENCE PAGE TAG 
@@ -60,19 +62,19 @@ document.write(ct,cd,cu,vo,ce);
 //END REFERENCE PAGE TAG 
 ```
 
-[!DNL Reference Page Tag]を使用したデータ収集を容易にするには、次の手順を実行します。
+を使用したデータ収集を容易にする [!DNL Reference Page Tag]、次の手順を実行します。
 
-1. [!DNL zag.gif]という名前の1ピクセルx 1ピクセルの画像ファイルを作成するか、Webサーバー上に存在するディレクトリに配置します。
-1. cd変数を変更して、Webサイトまたは[!DNL zag.gif]ファイルの参照元であるAdobe管理サービスドメインの適切なドメインを参照します。 ファイルへの参照は、[!DNL zig.js]ファイル関数の実行によって作成されます。 次に例を示します。
+1. という名前の 1 ピクセル x 1 ピクセルの画像ファイルを作成または配置します。 [!DNL zag.gif] を web サーバー上のディレクトリに追加します。
+1. cd 変数を変更して、Web サイトまたはAdobe管理サービスドメインの適切なドメインを参照します。 [!DNL zag.gif] ファイルが参照されています。 ファイルへの参照は、 [!DNL zig.js] ファイル関数 次に例を示します。
 
    ```
    //www.mysite.com
    ```
 
-1. cu変数を変更して、[!DNL zag.gif]ファイルの場所に適したパスを参照します。 例：
+1. cu 変数を変更して、 [!DNL zag.gif] ファイル。 例：
 
    ```
    /scripts
    ```
 
-1. [!DNL zag.gif]ファイルと[!DNL zig.js]ファイルに対して適切なキャッシュ制御ヘッダーが確立されていることを確認します。
+1. 適切なキャッシュ制御ヘッダーが [!DNL zag.gif] および [!DNL zig.js] ファイル。

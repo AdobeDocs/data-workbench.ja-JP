@@ -2,16 +2,17 @@
 description: セグメントエクスポートファイルのカスタム列のエクスポートヘッダーを作成して、エクスポートされたセグメントのわかりやすい説明を追加できます。このエクスポート機能を使用して、TSV や CSV ファイルとして出力することもできます。
 title: カスタムヘッダーでのセグメントエクスポート
 uuid: 186e7868-13b2-42e1-b83f-5a752ee9b407
-translation-type: tm+mt
-source-git-commit: 8f5c69541bdd97aefbad3840f75f06846615f222
+exl-id: 1d27f926-35e1-4886-b7a6-702d9947dabb
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 89%
+source-wordcount: '210'
+ht-degree: 59%
 
 ---
 
-
 # カスタムヘッダーでのセグメントエクスポート{#segment-export-with-custom-headers}
+
+{{eol}}
 
 セグメントエクスポートファイルのカスタム列のエクスポートヘッダーを作成して、エクスポートされたセグメントのわかりやすい説明を追加できます。このエクスポート機能を使用して、TSV や CSV ファイルとして出力することもできます。
 
@@ -21,32 +22,31 @@ ht-degree: 89%
 
 ## 新しいセグメントエクスポートの作成 {#section-cffff55855f8467ea468b71393ab7676}
 
-1. ワークスペースを開き、**[!UICONTROL ツール]**／**[!UICONTROL 詳細テーブル]**&#x200B;を右クリックします。
+1. ワークスペースを開いて右クリック **[!UICONTROL Tools]** > **[!UICONTROL Detail Table]**.
 
-1. 右クリックして、**[!UICONTROL レベルを追加／拡張]**&#x200B;で項目を選択します。
-1. タイトルを右クリックし、「**[!UICONTROL 属性を追加」を選択します。]**&#x200B;メニューからディメンションを選択します。
+1. 右クリックして「 」を選択します。 **[!UICONTROL Add Level > Extended]** > 項目を選択します。
+1. タイトルを右クリックし、「 」を選択します。 **[!UICONTROL Add Attribute.]** メニューから寸法を選択します。
 
-1. タイトルを右クリックし、「**[!UICONTROL 指標を追加」を選択します。]**&#x200B;メニューから指標を選択します。
+1. タイトルを右クリックし、「 」を選択します。 **[!UICONTROL Add Metric.]** メニューから指標を選択します。
 
-1. タイトルを右クリックし、「**[!UICONTROL 新しいセグメントエクスポート]**」を選択します。
+1. タイトルを右クリックし、「 」を選択します。 **[!UICONTROL New Segment Export]**.
 
    ![](assets/segment_export_headers.png)
 
-   「**[!UICONTROL 新しいセグメントのヘッダー付きエクスポート]**」を選択すると、指標の名前で Column Name が自動的に生成されます。「**[!UICONTROL 新しいセグメントエクスポート]**」を選択すると、カスタムの名前を設定する必要があります。 ![](assets/segment_export_with_headers.png)
+   **[!UICONTROL New Segment Export with Header]** は、指標の名前で列名を自動的に入力します。 **[!UICONTROL New Segment Export]** では、カスタム名を設定する必要があります。 ![](assets/segment_export_with_headers.png)
 
    >[!NOTE]
    >
-   >[列名]フィールドを空のままにすることはできません。空のままにすると、ヘッダーが存在しなくなります。
+   >「列名」フィールドを空白にすることはできません。空白にすると、ヘッダーが存在しなくなります。
 
-1. 右クリックし、セグメントに名前をつけて「**[!UICONTROL エクスポートファイルを保存]**」をクリックします。
+1. 右クリックしてセグメントに名前を付け、「 」をクリックします。 **[!UICONTROL Save Export File]**.
 
    エクスポートウィンドウが開きます。
 
-1. Right-click the export name and click **Save as`<export filename>`**.
+1. エクスポート名を右クリックし、 **名前を付けて保存`<export filename>`**.
 
    ![](assets/segment_export_headers_7.png)
 
-1. Right-click [!DNL Admin] > [!DNL Profile Manager] > [!DNL Expand Export]. 作成したエクスポートファイルを見つけ、既存のプロファイルに保存します。
+1. 右クリック [!DNL Admin] > [!DNL Profile Manager] > [!DNL Expand Export]. 作成したエクスポートファイルを見つけ、既存のプロファイルに保存します。
 
    ![](assets/segment_export_headers_8.png)
-

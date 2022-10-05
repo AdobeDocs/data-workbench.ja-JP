@@ -3,7 +3,7 @@ description: 新しいフィルターの作成や、新しいフィルターへ�
 title: フィルター条件の使用
 uuid: a75fcb21-be5c-452a-8632-86cd78db15cb
 exl-id: 15745b0c-2754-4f8b-acfd-a6bd5886ecf8
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 81%
@@ -12,23 +12,25 @@ ht-degree: 81%
 
 # フィルター条件の使用{#working-with-filter-conditions}
 
+{{eol}}
+
 新しいフィルターの作成や、新しいフィルターへの条件の追加など、フィルター条件の操作に関する情報です。
 
-## フィルターの作成 {#section-70ba51ae625e493fa3ca70b93ffba406}
+## フィルターを作成 {#section-70ba51ae625e493fa3ca70b93ffba406}
 
-* **[!UICONTROL Add Visualization]** / **[!UICONTROL Filter Editor]**&#x200B;を右クリックして、ワークスペースでフィルターエディターを開きます。
+* 右クリックして、ワークスペースでフィルターエディターを開きます **[!UICONTROL Add Visualization]** > **[!UICONTROL Filter Editor]**.
 
-   -or-
+   -または-
 
-* 既にフィルタエディターが開いていて、フィルターが読み込まれている場合は、現在のフィルターの名前を右クリックし、「**[!UICONTROL New Blank Filter]**」をクリックします。
+* 既にフィルタエディタが開いていて、フィルタが読み込まれている場合は、現在のフィルタの名前を右クリックし、 **[!UICONTROL New Blank Filter]**.
 
-## 新しいフィルター{#section-50986db80f1148c489630a8a63fe9f28}に条件を追加します。
+## 新しいフィルターに条件を追加する {#section-50986db80f1148c489630a8a63fe9f28}
 
 1. 新しいフィルターを作成します。（「フィルターを適用」ではなく）「フィルターを作成」がハイライトされていて、フィルターを作成モードで作業していることを確認します。
-1. **[!UICONTROL Right-click to build filter]**&#x200B;とマークされた領域内を右クリックし、次のいずれかのオプションを選択します。
+1. マークされた領域内で右クリック **[!UICONTROL Right-click to build filter]** をクリックし、次のいずれかのオプションを選択します。
 
-   * インクルージョンフィルターを作成するには、**[!UICONTROL Include group with]**&#x200B;をクリックします。
-   * 除外フィルターを作成するには、「**[!UICONTROL Exclude group with]**」をクリックします。
+   * インクルージョンフィルターを作成するには、 **[!UICONTROL Include group with]**.
+   * 除外フィルターを作成するには、 **[!UICONTROL Exclude group with]**.
 
 1. フィルターを追加する条件のタイプを選択します。
 
@@ -52,7 +54,7 @@ ht-degree: 81%
   </tr> 
   <tr> 
    <td colname="col1"> <p>数式 </p> </td> 
-   <td colname="col2"> <p>入力した数式に基づいてフィルター条件を定義します。フィルターを機能させるには、適切な構文を使用する必要があります。 </p> <p> <p>注意：フィルターを定義する構文について詳しくは、<a href="../../../../home/c-get-started/c-qry-lang-syntx/c-syntx-fltr-exp.md#concept-72f2563f809747a2a3cff7ec72462a15">フィルター式の構文</a>を参照してください。 </p> </p> </td> 
+   <td colname="col2"> <p>入力した数式に基づいてフィルター条件を定義します。フィルターを機能させるには、適切な構文を使用する必要があります。 </p> <p> <p>注意：フィルターを定義する構文について詳しくは、 <a href="../../../../home/c-get-started/c-qry-lang-syntx/c-syntx-fltr-exp.md#concept-72f2563f809747a2a3cff7ec72462a15"> フィルター式の構文</a>. </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>指標の値 </p> </td> 
@@ -78,7 +80,7 @@ ht-degree: 81%
  </tbody> 
 </table>
 
-この例のフィルターは、最後のページビューが[!DNL /hme/rts/Our Rates]のユーザーの最初と最後のフィルターを定義します。
+この例のフィルターは、最後のページビューが [!DNL /hme/rts/Our Rates]:
 
 ![](assets/client-fil2.png)
 
@@ -86,7 +88,7 @@ ht-degree: 81%
 
    >[!NOTE]
    >
-   >複数の包含条件は、論理ORとしてグループ化されます。 したがって、フィルターによって含めるデータは、定義された包含条件の少なくとも 1 つを満たしている必要があります。複数の除外条件も論理 OR としてグループ化されます。除外するデータは、除外条件の少なくとも 1 つを満たしている必要があります。
+   >複数の包含条件は、論理 OR としてグループ化されます。 したがって、フィルターによって含めるデータは、定義された包含条件の少なくとも 1 つを満たしている必要があります。複数の除外条件も論理 OR としてグループ化されます。除外するデータは、除外条件の少なくとも 1 つを満たしている必要があります。
 
 次の例のフィルターは、多数の映画を評価したが、どの映画にも高いスコア（4 または 5）を与えなかった映画視聴者（ユーザー）で構成されるデータのサブセットを定義します。このフィルター（Very Hard to Please）は、次の 2 つの条件で構成されています。
 
@@ -95,26 +97,26 @@ ht-degree: 81%
 
 ![](assets/vis_FilterEditor_ExampleMovies.png)
 
-## フィルター条件{#section-3092e0d7ac624885b8fe24616279de13}の削除
+## フィルター条件の削除 {#section-3092e0d7ac624885b8fe24616279de13}
 
 >[!NOTE]
 >
->条件を削除できるのは、フィルターを作成モードで作業している場合のみです。 ワークスペースにフィルターを適用していた場合、そのフィルターの 1 つ以上の条件を削除するには、「フィルターを作成」をクリックしてフィルターを作成モードに戻る必要があります。
+>条件は、Design Filter モードで作業している場合にのみ削除できます。 ワークスペースにフィルターを適用していた場合、そのフィルターの 1 つ以上の条件を削除するには、「フィルターを作成」をクリックしてフィルターを作成モードに戻る必要があります。
 
 * 条件の左側の **x** をクリックして、条件を削除します。
 
-## 条件の説明の編集{#section-5015fd2c88ed4b6a95be7f0d53be2db0}
+## 条件の説明を編集 {#section-5015fd2c88ed4b6a95be7f0d53be2db0}
 
 フィルターに追加した各条件に説明を追加できます。必要に応じて、説明を編集または削除できます。
 
 >[!NOTE]
 >
->条件の説明は、フィルターを作成モードで作業している場合にのみ表示されます。
+>条件の説明は、Design Filter モードで作業している場合にのみ表示されます。
 
-* 条件を右クリックし、「**[!UICONTROL Edit description]**」をクリックします。
+* 条件を右クリックし、 **[!UICONTROL Edit description]**.
 
-   * 説明を追加または編集するには、[!DNL Edit condition description]フィールドに説明を入力します。 フィルターエディターウィンドウの条件の上に、説明が引用符で囲まれて表示されます。
+   * 説明を追加または編集するには、 [!DNL Edit condition description] フィールドに入力します。 フィルターエディターウィンドウの条件の上に、説明が引用符で囲まれて表示されます。
 
       ![](assets/vis_FilterEditor_ConditionDescription.png)
 
-* 説明を削除するには、**[!UICONTROL Remove description]**&#x200B;をクリックします。 条件はフィルターエディターウィンドウ内に表示されたままです。
+* 説明を削除するには、 **[!UICONTROL Remove description]**. 条件はフィルターエディターウィンドウ内に表示されたままです。

@@ -3,7 +3,7 @@ description: 新しいファンネルビジュアライゼーションを構築�
 title: ファネルの作成
 uuid: 88afa09d-42ff-4e3b-b5cc-d74e01f4fc39
 exl-id: 24b63998-3aad-4ddf-b2d2-78dd0df9a510
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 81%
@@ -11,6 +11,8 @@ ht-degree: 81%
 ---
 
 # ファネルの作成{#building-a-funnel}
+
+{{eol}}
 
 新しいファンネルビジュアライゼーションを構築するには、次の手順を実行します。
 
@@ -20,17 +22,17 @@ ht-degree: 81%
 
    ![](assets/dimension_table_pagename.png)
 
-   例えば、ワークスペースを右クリックし、「**[!UICONTROL Table > Site Content > Page Name]**」を選択します。
+   例えば、ワークスペースを右クリックし、「 」を選択します。 **[!UICONTROL Table > Site Content > Page Name]**
 
 1. ファネルのビジュアライゼーションが開きます。
 
-   例えば、ワークスペースを右クリックし、「**[!UICONTROL Visualization > Funnel]**」を選択します。
+   例えば、ワークスペースを右クリックし、「 」を選択します。 **[!UICONTROL Visualization > Funnel]**.
 
    ![](assets/step2-funnel.png)
 
-1. 要素を選択し、**[!UICONTROL `<Ctrl>`]** + **[!UICONTROL `<Alt>`]**&#x200B;を押しながらドラッグして、ディメンションを追加します。
+1. 要素を選択し、次に **[!UICONTROL `<Ctrl>`]** + **[!UICONTROL `<Alt>`]**.
 
-1. 要素をターゲットゾーン&#x200B;**[!UICONTROL Drag Dimension Element Here]**&#x200B;上の位置にドラッグします。
+1. 要素をターゲットゾーンの上の位置にドラッグします。 **[!UICONTROL Drag Dimension Element Here]**.
 
    ![](assets/step4-funnel.png)
 
@@ -48,4 +50,4 @@ ht-degree: 81%
 
 ファンネルからは、フォールアウト率とフォールスルー率、顧客の販売コンバージョンの割合、キャンペーンやコンテンツパスに従っている割合を特定できます。詳しくは、[パスブラウザー](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-path-browser-funnel.md#concept-b0cedf7a28ae422696ded1258c9a4119)を開くと、選択したページに到着する前に表示していたページの詳細なリストと、ページを離れた後のパスを表示できます。
 
-追加の[ファネル機能](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md#concept-e65c81fe17794acd8d00d796b1780dc3)を参照してください。
+追加情報を見る [ファネル機能](../../../../home/c-get-started/c-analysis-vis/c-funnel-visualization/c-funnel-visualization-features.md#concept-e65c81fe17794acd8d00d796b1780dc3).

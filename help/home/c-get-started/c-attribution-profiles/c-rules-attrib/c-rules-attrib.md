@@ -3,7 +3,7 @@ description: Data Workbench のルールに基づく新しいアトリビュー�
 title: アトリビューションプロファイル
 uuid: 500e9e86-cffc-4f0d-a397-6521b493bf9a
 exl-id: 29946f22-1d39-44ca-9474-13dbe228751c
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 77%
@@ -11,6 +11,8 @@ ht-degree: 77%
 ---
 
 # アトリビューションプロファイル{#attribution-profile}
+
+{{eol}}
 
 Data Workbench のルールに基づく新しいアトリビューションプロファイルを使用すると、すばやくアトリビューションイベントを分析し、ユーザーが定義したコンバージョンの成功への貢献度を割り当てることができます。アトリビューションプロファイルには、データアーキテクトがその機能を設定および拡張するために必要な情報がすべて揃っており、アナリストが即座に分析を開始できるように事前に作成されたワークスペースが含まれています。
 
@@ -20,11 +22,11 @@ Data Workbench のルールに基づく新しいアトリビューションプ�
 
 >[!IMPORTANT]
 >
->アトリビューションプロファイルは、Analytics(SC/Insight)のデータフィードを使用するAdobeSCプロファイルを実装したユーザーがすぐに使用できるように設定されます。 デフォルトでは、マーケティングイベントとコンバージョンイベントが、提供されたルールベースモデルで評価されるデフォルトのインタラクションタイプとして使用されます。
+>アトリビューションプロファイルは、Analytics(SC/Insight) のデータフィードを使用するAdobeSC プロファイルを実装しているユーザーが、すぐに使用できるように設定されています。 デフォルトでは、マーケティングイベントとコンバージョンイベントが、提供されたルールベースモデルで評価されるデフォルトのインタラクションタイプとして使用されます。
 
-詳しくは、「  [アトリビューションプロファ](../../../../home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-profile-deploy.md#concept-fbcb5800cd6a40cc901e61f3882988c0) イルおよびアトリビ [ューシ](../../../../home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-models.md#concept-e209c7e86a5c4008ad6d78fdf4ea032d) ョンモデルのデプロイを参照してください。
+詳しくは、「 [アトリビューションプロファイルのデプロイ](../../../../home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-profile-deploy.md#concept-fbcb5800cd6a40cc901e61f3882988c0) および [アトリビューションモデル](../../../../home/c-get-started/c-attribution-profiles/c-rules-attrib/c-attrib-models.md#concept-e209c7e86a5c4008ad6d78fdf4ea032d) を参照してください。
 
-## アーキテクトワークスペースとアナリストワークスペース {#section-27c6aff70ba147cca6e11451e127afb4}
+## アーキテクトワークスペースとアナリストのワークスペース {#section-27c6aff70ba147cca6e11451e127afb4}
 
 アトリビューションプロファイル内には、ワークベンチの個別のタブで定義されたアーキテクトワークスペースとアナリストワークスペースがあります。
 
@@ -32,15 +34,15 @@ Data Workbench のルールに基づく新しいアトリビューションプ�
 
 **アーキテクトワークスペース**
 
-「**アトリビューション**」タブ内で、「**[!UICONTROL Architect Workspace]**」タブをクリックすると、基本的なアトリビューションモデリング用の設定ファイルを設定するために特別に設計されたワークスペースが開きます。
+内 **帰属** タブで、 **[!UICONTROL Architect Workspace]** 」タブをクリックすると、基本的なアトリビューションモデリング用の設定ファイルを設定するために特別に設計されたワークスペースが開きます。
 
 ![](assets/attribution_profile_arch.png)
 
-アーキテクトタブには、プロファイルデータセットフォルダー内の各設定ファイルの手順を順番に実行できるワークスペースが含まれています。例えば、**[!UICONTROL Attribution Configuration - Step 1]**&#x200B;を使用すると、[!DNL profile.cfg]ファイルのTransformationセクション内のAttribution値を特定できます。
+アーキテクトタブには、プロファイルデータセットフォルダー内の各設定ファイルの手順を順番に実行できるワークスペースが含まれています。例： **[!UICONTROL Attribution Configuration - Step 1]** では、Attribution の値を [!DNL profile.cfg] ファイル。
 
 ![](assets/attribution_profile_arch_step1.png)
 
-**アナリス** トワークスペース「 」 **[!UICONTROL Analyst]** **[!UICONTROL Workspaces]** タブをクリックすると、アトリビューションプロファイルで提供されるディメンションと指標を利用して分析を事前に作成したワークスペースが開きます。
+**アナリストワークスペース** 次をクリック： **[!UICONTROL Analyst]** **[!UICONTROL Workspaces]** 「 」タブをクリックすると、アトリビューションプロファイルに用意されているディメンションと指標を利用した事前作成済みの分析ワークスペースが開きます。
 
 これらのワークスペースは、4 つのカテゴリーに分類されます。
 
@@ -51,6 +53,6 @@ Data Workbench のルールに基づく新しいアトリビューションプ�
 
 ![](assets/attribution_profile_analyst.png)
 
-アナリストタブには、レポートを使用して事前設定されたワークスペースが含まれています。例えば、**[!UICONTROL First Attribution]**&#x200B;を使用すると、**[!UICONTROL Campaign]**&#x200B;テーブルから選択して、**[!UICONTROL Time]**&#x200B;に基づく&#x200B;**[!UICONTROL Revenue]**&#x200B;アトリビューションを表示できます。
+アナリストタブには、レポートを使用して事前設定されたワークスペースが含まれています。例： **[!UICONTROL First Attribution]** 次の中から選択できます。 **[!UICONTROL Campaign]** 表示するテーブル **[!UICONTROL Revenue]** 次に基づく属性 **[!UICONTROL Time]**.
 
 ![](assets/attribution_profile_analyst_step1.png)

@@ -3,7 +3,7 @@ description: Data Workbench サーバーは、Data Workbench に備わってい�
 title: ルックアップデータの統合
 uuid: 35fd48f7-c0c4-4a83-919d-c15902f27495
 exl-id: 150d3aae-4431-488f-8f19-b522637ee935
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 94%
@@ -11,6 +11,8 @@ ht-degree: 94%
 ---
 
 # ルックアップデータの統合{#integrating-lookup-data}
+
+{{eol}}
 
 Data Workbench サーバーは、Data Workbench に備わっているいくつかの変換によって、ルックアップデータをデータセットに組み入れることができます。
 
@@ -31,4 +33,4 @@ Data Workbench サーバーは、Data Workbench に備わっているいくつ�
 
 >[!NOTE]
 >
->[!DNL ODBCLookup]変換は、[!DNL Transformation.cfg]ファイルまたは[!DNL Transformation Dataset Include]ファイルで定義されている場合にのみ機能します。
+>なお、 [!DNL ODBCLookup] 変換は、 [!DNL Transformation.cfg] ファイル内または [!DNL Transformation Dataset Include] ファイル。

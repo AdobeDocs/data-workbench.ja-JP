@@ -3,7 +3,7 @@ description: 傾向スコアリングの統計的計算を定義しています�
 title: 傾向スコアリングの計算
 uuid: 67270864-0468-4cc9-b48b-0e880f813555
 exl-id: 679e1363-fd10-4a44-a85a-ef0daefaf303
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # 傾向スコアリングの計算{#calculating-propensity-scoring}
+
+{{eol}}
 
 傾向スコアリングの統計的計算が定義されています。
 

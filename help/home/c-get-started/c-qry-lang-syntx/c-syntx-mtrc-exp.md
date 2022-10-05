@@ -3,7 +3,7 @@ description: 指標は、指標エディターを使用して編集し、プロ�
 title: 指標式の構文
 uuid: 801e265d-d7e4-4f0f-9698-d0b50dd00995
 exl-id: 27d86fea-6500-4608-aadb-f39058fd3a6e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '851'
 ht-degree: 91%
@@ -12,17 +12,19 @@ ht-degree: 91%
 
 # 指標式の構文{#syntax-for-metric-expressions}
 
+{{eol}}
+
 指標は、指標エディターを使用して編集し、プロファイルの Metrics ディレクトリに保存できます。
 
-詳しくは、[派生指標の作成と編集](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40)を参照してください。 指標式はワークシートで使用することもできます。詳しくは、「 [ワークシート](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). 指標式を定義するには、次の構文を使用します。
+詳しくは、 [派生指標の作成と編集](../../../home/c-get-started/c-admin-intrf/c-prof-mgr/c-drvd-mtrcs.md#concept-e41723b342a849309874b26232224a40). 指標式はワークシートで使用することもできます。詳しくは、「 [ワークシート](../../../home/c-get-started/c-analysis-vis/c-wksts/c-wksts.md#concept-45b50aafc4d84709841f14aee8022581). 指標式を定義するには、次の構文を使用します。
 
 メモ:
 
 1. 下線を引いた語句は、式のテキストにそのまま入力する必要があります。
-1. フォーム`{TEXT}?`はオプションのテキストを表します。
-1. `{TEXT}*`の形式は、0回以上発生する可能性のあるテキストを表します。
-1. フォーム`{A | B | C |...}`は、A、B、Cなど、指定されたオプションの1つで構成されるテキストを表します。.
-1. `[A,B)`の形式は、AからBまでの範囲の数値を表します。
+1. フォーム `{TEXT}?` オプションのテキストを表します。
+1. フォーム `{TEXT}*` 0 回以上発生する可能性のあるテキストを表します。
+1. フォーム `{A | B | C |...}` は、A、B、C など、指定されたオプションの 1 つだけから成るテキストを表します。.
+1. フォーム `[A,B)` は、A から B までの範囲の数値を表します。
 
 <table id="table_A6CA9C9F396448209398AA2A369E63FA"> 
  <tbody> 
@@ -68,7 +70,7 @@ ht-degree: 91%
   </tr> 
   <tr> 
    <td colname="col1"> <p>log (B, X) </p> </td> 
-   <td colname="col2"> <p>数学的な対数関数。指標 X はパラメーターで、指標 B が底です。 </p> <p>例：dB = 20*log（振幅，10） </p> </td> 
+   <td colname="col2"> <p>数学的な対数関数。指標 X はパラメーターで、指標 B が底です。 </p> <p>例：dB = 20*log(Amplitude,10) </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <p>Metric[Filter] </p> </td> 

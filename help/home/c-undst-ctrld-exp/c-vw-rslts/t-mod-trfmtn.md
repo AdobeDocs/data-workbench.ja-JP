@@ -4,7 +4,7 @@ solution: Analytics
 title: Transformation.cfg の変更
 uuid: c17e48db-8fd9-4640-b621-6963bb8223d7
 exl-id: a9c89789-8290-4a24-91c1-ca1c5b7b437a
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 6%
@@ -12,6 +12,8 @@ ht-degree: 6%
 ---
 
 # Transformation.cfg の変更{#modifying-transformation-cfg}
+
+{{eol}}
 
 x-experiment フィールドを使用できるようになったら、拡張ディメンションを作成して、x-experiment フィールドをデータセットに含める必要があります。これにより、Insight で結果を表示できます。
 

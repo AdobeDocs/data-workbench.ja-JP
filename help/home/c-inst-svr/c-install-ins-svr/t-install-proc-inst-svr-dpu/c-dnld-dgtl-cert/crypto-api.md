@@ -2,16 +2,17 @@
 description: Windows 証明書ストアを使用すると、サーバーとの SSL 通信のために、クライアントの証明書と秘密鍵を Windows 証明書ストアに格納できます。
 title: Windows 証明書ストア
 uuid: a8021295-375a-460b-8686-acf3bc43cd17
-translation-type: ht
-source-git-commit: a766b64ef809e2223fed869d8d63b75f270a3d39
-workflow-type: ht
+exl-id: 8613a941-6213-4bfa-9c35-dccc2acb6c17
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
 source-wordcount: '1000'
 ht-degree: 100%
 
 ---
 
+# Windows 証明書ストア{#windows-certificate-store}
 
-# Windows 証明書ストア {#windows-certificate-store}
+{{eol}}
 
 Windows 証明書ストアを使用すると、サーバーとの SSL 通信のために、クライアントの証明書と秘密鍵を Windows 証明書ストアに格納できます。
 
@@ -116,7 +117,7 @@ Windows 証明書ストアを使用すると、サーバーとの SSL 通信の�
 
 1. これらのパラメーターを追加して、値が Windows 証明書マネージャーのリストと一致するのを検証したら、[!DNL Insight.cfg] ファイルを保存します。
 
-これで、ワークステーションを開始（またはサーバーから切断／再接続）できます。Data Workbench は、証明書ストアから証明書および秘密鍵を読み込んで、通常どおりに接続します。
+これで、ワークステーションを開始（またはサーバーから切断／再接続）できます。問題がなければ、証明書ストアから証明書およびキーが Data Workbench に読み込まれ、通常どおりの接続が確立されます。
 
 ## ログ出力 {#section-a7ef8c9e90ef4bbabaa3cd51a2aca3ab}
 

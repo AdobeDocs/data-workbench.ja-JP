@@ -1,20 +1,24 @@
 ---
-description: 設定ファイルのサンプルファイル
-title: サンプル設定ファイル
+description: 設定ファイルのサンプルファイル。
+title: 設定ファイルのサンプル
 uuid: 9bc5c0a9-e67a-4c63-952d-9a39d75e6975
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 8a9abadb-228b-4da6-bfe6-8e828bb6ace9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 8%
 
 ---
 
+# 設定ファイルのサンプル{#sample-configuration-files}
 
-# サンプル設定ファイル{#sample-configuration-files}
+{{eol}}
 
-設定ファイルのサンプルファイル
+設定ファイルのサンプルファイル。
 
-## Magnus.confファイルの例 {#section-aec81c734d0f483591c3ede1fe588b6a}
+## Magnus.conf ファイルのサンプル {#section-aec81c734d0f483591c3ede1fe588b6a}
 
-Netscape Enterprise Server、iPlanet、Sun ONE、Sun Java System Webサーバーの完全なmagnus.confファイルのインストールと設定の例です。
+Netscape Enterprise Server、iPlanet、Sun ONE、Sun Java System Web サーバーの完全な magnus.conf ファイルのインストールと設定の例。
 
 ```
 #ServerRoot /usr/iplanet/servers/https-nova.visualsciences.net
@@ -42,9 +46,9 @@ Init fn="load-modules" shlib="/usr/iplanet/servers/visual_sciences/saf_visual_sc
 Init fn="vys-init" config-file="/etc/txlogd.conf"
 ```
 
-## Obj.confファイルの例 {#section-1acd3ae557074ee6a46492eb98f89805}
+## Obj.conf ファイルのサンプル {#section-1acd3ae557074ee6a46492eb98f89805}
 
-Netscape Enterprise Server、iPlanet、Sun ONE、Sun Java System Webサーバーの完全なobj.confファイルのインストールと設定の例です。
+Netscape Enterprise Server、iPlanet、Sun ONE、Sun Java System Web サーバーの完全な obj.conf ファイルのインストールと設定の例。
 
 ```
 <Object name=default>
@@ -94,4 +98,3 @@ Netscape Enterprise Server、iPlanet、Sun ONE、Sun Java System Webサーバー
   PathCheck fn="check-acl" acl="es-internal"
 </Object>
 ```
-

@@ -3,7 +3,7 @@ description: 多対多ディメンションは、その親の可算ディメン�
 title: 多対多ディメンション
 uuid: 42c909e8-1228-4210-9406-ffc0d92372fa
 exl-id: 02d1a21c-a5b4-4b58-8089-9b9c68a7b1d1
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # 多対多ディメンション{#many-to-many-dimensions}
+
+{{eol}}
 
 多対多ディメンションは、その親の可算ディメンションとの間に多対多の関係を持ちます。
 
@@ -34,7 +36,7 @@ ht-degree: 100%
   </tr> 
   <tr> 
    <td colname="col1"> コメント </td> 
-   <td colname="col2"> （オプション）拡張ディメンションについてのメモ。 </td> 
+   <td colname="col2"> （オプション）。拡張ディメンションについてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

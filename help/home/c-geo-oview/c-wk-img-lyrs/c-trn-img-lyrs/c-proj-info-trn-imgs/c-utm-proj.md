@@ -3,7 +3,7 @@ description: ユニバーサル横メルカトル（UTM）投影法は、8 つ�
 title: ユニバーサル横メルカトル投影法
 uuid: 55421412-5c68-4a4f-88d6-650d5999a77c
 exl-id: 7d7610c3-14e7-474e-b792-ad413c86a2ef
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 86%
@@ -11,6 +11,8 @@ ht-degree: 86%
 ---
 
 # ユニバーサル横メルカトル投影法{#universal-transverse-mercator-projections}
+
+{{eol}}
 
 ユニバーサル横メルカトル（UTM）投影法は、8 つのパラメーターで定義されます。
 
@@ -20,11 +22,11 @@ ht-degree: 86%
 
 **ユニバーサル横メルカトル投影法を指定するには**
 
-1. [!DNL Server Files Manager]で、**[!UICONTROL Components]**&#x200B;をクリックして内容を表示します。 [!DNL Terrain Images.cfg] ファイルは、このディレクトリ内に格納されています。
+1. 内 [!DNL Server Files Manager]をクリックし、 **[!UICONTROL Components]** をクリックして、その内容を表示します。 [!DNL Terrain Images.cfg] ファイルは、このディレクトリ内に格納されています。
 
-1. *[!DNL Terrain Images.cfg]のサーバー名*&#x200B;列のチェックマークを右クリックし、**[!UICONTROL Make Local]**&#x200B;をクリックします。 [!DNL Terrain Images.cfg]の[!DNL Temp]列にチェックマークが表示されます。
+1. チェックマーク ( *サーバー名* 列 [!DNL Terrain Images.cfg]を選択し、「 **[!UICONTROL Make Local]**. チェックマークが [!DNL Temp] 列 [!DNL Terrain Images.cfg].
 
-1. [!DNL Temp]列に新しく作成されたチェックマークを右クリックし、**[!UICONTROL Open]** / **[!UICONTROL in Notepad]**&#x200B;をクリックします。 [!DNL Terrain Images.cfg]ファイルがメモ帳ウィンドウに表示されます。
+1. 新しく作成された、 [!DNL Temp] 列とクリック **[!UICONTROL Open]** > **[!UICONTROL in Notepad]**. この [!DNL Terrain Images.cfg]ファイルがメモ帳ウィンドウに表示されます。
 
 1. 以下のサンプルファイルの一部とパラメーターの表をガイドとして使用して、Projection Info パラメーターを編集します。以下にハイライトされているように、投影タイプを必ず指定してください。
 

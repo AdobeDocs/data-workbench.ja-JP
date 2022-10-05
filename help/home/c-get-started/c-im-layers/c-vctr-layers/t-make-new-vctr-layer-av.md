@@ -3,7 +3,7 @@ description: ベクトルレイヤーをグローブビジュアライゼーシ�
 title: 新しいベクターレイヤーを使用可能にする
 uuid: 7bfbae0d-e5db-4aa2-8a8b-15b4980aadb5
 exl-id: 6c084bac-1a6d-452a-bf07-e502d0f2145a
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 45%
@@ -12,17 +12,19 @@ ht-degree: 45%
 
 # 新しいベクターレイヤーを使用可能にする{#make-a-new-vector-layer-available}
 
+{{eol}}
+
 ベクトルレイヤーをグローブビジュアライゼーションに表示できるようにする手順。
 
-1. Data Workbenchサーバーのインストールディレクトリ内のProfiles\*profile name*\Mapsフォルダーに、レイヤーファイルと[!DNL .vec]または[!DNL .tsv]ファイルを配置します。
-1. Profiles\*profile name*\Mapsフォルダーの[!DNL order.txt]ファイルを編集して、レイヤーを表示する順序を反映します。 デフォルトで、レイヤーは名前の辞書順で表示されます。
+1. Profiles\*profile name*\MapsData Workbenchーのインストールディレクトリに、レイヤーファイルと [!DNL .vec] または [!DNL .tsv] ファイル。
+1. を編集します。 [!DNL order.txt] ファイルを Profiles\*profile name*\Maps フォルダーに保存し、レイヤーを表示する順序を反映します。 デフォルトで、レイヤーは名前の辞書順で表示されます。
 
    >[!NOTE]
    >
-   >[!DNL order.txt]ファイルを編集する際は、表示するマップレイヤを覆わないように注意してください。
+   >を編集する際に [!DNL order.txt] ファイルを表示するマップ画層を覆い隠さないように注意してください。
 
-   [!DNL order.txt]ファイルの使用に関する詳細は、[Customizing Menus Using Order.txt Files](../../../../home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/t-cstm-menus-ordr-files.md#task-a391800a8dd444deb3e1516d5189f999)を参照してください。
+   詳しくは、 [!DNL order.txt] ファイル： [Order.txt ファイルを使用したメニューのカスタマイズ](../../../../home/c-get-started/c-intf-anlys-ftrs/c-ctm-menus/t-cstm-menus-ordr-files.md#task-a391800a8dd444deb3e1516d5189f999).
 
-1. Insightで、ワークスペースのタイトルバーを右クリックし、 **[!UICONTROL Switch Profile]** / *&lt;**[!UICONTROL profile name]**>*&#x200B;をクリックして、目的のプロファイルを選択します。
-1. ワークスペースのタイトルバーを右クリックし、「**[!UICONTROL Work Online]**」をクリックします。 「オンラインで作業」の横に X マークが表示されます。
+1. Insight で、ワークスペースのタイトルバーを右クリックし、 **[!UICONTROL Switch Profile]** > *&lt;**[!UICONTROL profile name]**>*.
+1. ワークスペースのタイトルバーを右クリックし、 **[!UICONTROL Work Online]**. 「オンラインで作業」の横に X マークが表示されます。
 1. ワークスペースを開き、グローブビジュアライゼーションで右クリックして、新しいレイヤーを選択します。レイヤー名の横に X マークが表示されます。

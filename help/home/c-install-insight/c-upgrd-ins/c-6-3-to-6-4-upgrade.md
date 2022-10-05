@@ -2,16 +2,17 @@
 description: Data Workbench v6.4 にアップグレードするには、この手順に従います。
 title: 6.3 から 6.4 へのアップグレード
 uuid: 2461c1ab-cf99-4fb5-b431-d7062df7a53d
-translation-type: tm+mt
-source-git-commit: 2930bd3ae06e700e75144221fc993efdd6bd1e85
+exl-id: 540deb86-2463-4820-b67a-a32d68b4346e
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 74%
 
 ---
 
-
 # 6.3 から 6.4 へのアップグレード{#upgrading-to}
+
+{{eol}}
 
 Data Workbench v6.4 にアップグレードするには、この手順に従います。
 
@@ -21,23 +22,24 @@ Data Workbench 6.4 にアップグレードする際は、以下の要件およ�
 
 >[!IMPORTANT]
 >
->以前のインストールからファイルを移動するのではなく、新たにインストールしたデフォルトの設定ファイルを使用してカスタマイズすることをお勧めします。ただし、次の例外があります。
+>以前のインストールからファイルを移動するのではなく、新しくインストールしたデフォルトの設定ファイルを使用してカスタマイズすることをお勧めします。ただし、次の例外があります。
 
 * 以下の実行ファイルについて、Windows 2012 Server の **MS System Center Endpoint Protection** の&#x200B;***除外プロセス***&#x200B;を&#x200B;*追加*&#x200B;します。
 
    * **[!DNL InsightServer64.exe]**
    * **[!DNL ReportServer.exe]**
    * **[!DNL ExportIntegration.exe]**
-   これにより、これらのインターフェイスする実行可能ファイルに対して許可リスト権限が有効になります。
 
-* **サーバー上の&#x200B;*Trust_ca_cert.pem*証明書を更新します**。
+   これにより、これら許可リストの相互に作用する実行可能ファイルに対する権限が有効になります。
+
+* **サーバー上の *Trust_ca_cert.pem* 証明書を更新します**。
 * **アトリビューションプロファイルの再編成**。
 
-   * *Attribution* フォルダーの名前が ***Attribution - Premiumに変更されました*** ( *プロファイル*\*Attribution - Premium*にあるデフォルトのインストールにあります)。
+   * この *帰属* フォルダーの名前がに変更されました ***Attribution - Premium*** ( デフォルトのインストール場所の *プロファイル*\*Attribution - Premium*) です。
 
    * *Premium* プロファイルは削除され、ワークスペースは新しい ***Attribution - Premium*** フォルダーに移動されました。
 
-* ***Attribution-Premium*設定を更新します**。 デフォルトの *Adobe SC* プロファイルをオーバーライドするパラメーター設定でプロファイルをカスタマイズした場合は、以下の設定ファイルのカスタムフィールドを更新する必要があります。
+* ***Attribution-Premium* 設定を更新します**。 デフォルトの *Adobe SC* プロファイルをオーバーライドするパラメーター設定でプロファイルをカスタマイズした場合は、以下の設定ファイルのカスタムフィールドを更新する必要があります。
 
    * **[!DNL Decoding Instructions.cfg]**
    * **[!DNL SC Fields.cfg]**
@@ -74,7 +76,7 @@ Data Workbench 6.4 にアップグレードする際は、以下の要件およ�
 
 * **カスタム Meta.cfg ファイルを更新します**（必要な場合）。
 
-   The **[!DNL Meta.cfg]** files in **[!DNL Base\Context and AdobeSC\Context]** folders have been updated in this release.
+   この **[!DNL Meta.cfg]** ファイル **[!DNL Base\Context and AdobeSC\Context]** このリリースでフォルダーが更新されました。
 
    インストール時に **meta.cfg** ファイルをオーバーライドする場合は、これらのパラメーターと、適切に入力された&#x200B;**メタデータのベクター**&#x200B;でプロファイルのコピーを更新する必要があります。
 
@@ -99,7 +101,7 @@ Data Workbench 6.4 にアップグレードする際は、以下の要件およ�
 
 * Windows 2012 Server 上で Microsoft Excel レポートを生成できるように **Report Server の権限**&#x200B;を設定します。
 
-   1. Set permission of the root folder (**[!DNL E:\ReportServer\]**) to *Everyone = full control*.
+   1. ルートフォルダーの権限を設定します (**[!DNL E:\ReportServer\]**) から *全員=フルコントロール*.
 
    1. 適切な権限で以下のフォルダーを作成します。
 
@@ -112,11 +114,11 @@ Data Workbench 6.4 にアップグレードする際は、以下の要件およ�
 
       >[!NOTE]
       >
-      >Windows Server 2012でReport Serverを実行する場合は、Windows Server 2012 R2をインストールする必要があります。
+      >Windows Server 2012 上で Report Server を実行している場合は、Windows Server 2012 R2 をインストールする必要があります。
 
    1. これらのフォルダーの所有者として「SYSTEM」を割り当てます。
 
-* **フォントを Report Server に追加します。** **[!DNL ReportServer.cfg]**ファイルに、（すべての言語で）次のフォントを追加します。
+* **フォントを Report Server に追加します。** **[!DNL ReportServer.cfg]**file に次のフォントを追加します（すべての言語用）。
 
    ```
    Fonts = vector: 3 items 
@@ -125,7 +127,7 @@ Data Workbench 6.4 にアップグレードする際は、以下の要件およ�
      2 = string: MS Mincho
    ```
 
-* **Microsoft Excelのバージョンを更新します**（必要な場合）。
+* **Microsoft Excel **のバージョンを更新します（必要な場合）。
 
    Data Workbench 6.4 のリリースに伴って、Excel 2007 のサポートが終了しました。また、Data Workbench は 64 ビットアーキテクチャの Microsoft Windows 上でのみ動作するので、64 ビット版の Microsoft Excel もインストールすることをお勧めします。
 
@@ -156,4 +158,3 @@ Data Workbench 6.4 にアップグレードする際は、以下の要件およ�
      1 = string: SimSun 
      2 = string: MS Mincho
    ```
-

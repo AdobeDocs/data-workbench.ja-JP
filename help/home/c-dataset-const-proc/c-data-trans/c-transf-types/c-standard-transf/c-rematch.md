@@ -3,7 +3,7 @@ description: REMatch 変換は、入力データから検索して捕捉する 1
 title: REMatch
 uuid: 8ef80bfa-aea2-45a1-a7d9-38ad33043886
 exl-id: 571e6f1c-f557-49c3-9e7c-c31f06132ec7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 79%
@@ -12,15 +12,17 @@ ht-degree: 79%
 
 # REMatch{#rematch}
 
+{{eol}}
+
 REMatch 変換は、入力データから検索して捕捉する 1 つまたは複数のパターンを正規表現で指定するパターンマッチング変換です。
 
 この変換では、正規表現で捕捉するサブパターンごとに出力フィールドが構築されます。正規表現が入力フィールドと一致しない場合、出力結果はブランクとなります。出力フィールドが既に存在する場合、その値がブランク値で置き換えられます。正規表現の簡単な使用法については、 [正規表現](../../../../../home/c-dataset-const-proc/c-reg-exp.md#concept-070077baa419475094ef0469e92c5b9c).
 
 >[!NOTE]
 >
->[!DNL REMatch]変換の動作は、[!DNL RETransform]変換（[RETransform](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md#concept-23f80aa0bc204565b337e5c4931f6a74)を参照）と同様です。この変換は、正規表現を使用して文字列を取得し、その文字列を単一の出力フィールドに格納します。
+>この [!DNL REMatch] 変換は、 [!DNL RETransform] 変換 ( [RETransform](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-retransform.md#concept-23f80aa0bc204565b337e5c4931f6a74)) を呼び出します。この関数は、正規表現を使用して文字列を取得し、その文字列を単一の出力フィールドに格納します。
 
-[!DNL REMatch] は、複数の変換や1つの変換の後に1つの変 [!DNL RETransform] 換が続くよりも、 [!DNL RETransform] 文字列をより効率的に解析 [!DNL Flatten] します。[Flatten](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md#concept-7acd351a6d2444bd960ca412ae3333ce)を参照してください。
+[!DNL REMatch] 複数の文字列よりも効率的に文字列を解析する [!DNL RETransform] 変換または単一の [!DNL RETransform] その後に [!DNL Flatten] 変換。 詳しくは、 [Flatten](../../../../../home/c-dataset-const-proc/c-data-trans/c-transf-types/c-standard-transf/c-flatten.md#concept-7acd351a6d2444bd960ca412ae3333ce).
 
 <table id="table_7077578512B249E986BC79AE770CBD9A"> 
  <thead> 
@@ -43,7 +45,7 @@ REMatch 変換は、入力データから検索して捕捉する 1 つまたは
   </tr> 
   <tr> 
    <td colname="col1"> コメント </td> 
-   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
+   <td colname="col2"> （オプション）。変換についてのメモ。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -71,7 +73,7 @@ REMatch 変換は、入力データから検索して捕捉する 1 つまたは
 
 >[!NOTE]
 >
->[!DNL REMatch] 変換は非常に遅くなる可能性があり、データ処理時間の大部分がこの変換に費やされる可能性があります。
+>[!DNL REMatch] 変換は非常に遅くなる可能性があり、データ処理時間の大部分を占める場合があります。
 
 次の例では、YYYY-MM-DD 形式の日付を [!DNL REMatch] 変換で解析し、x-year、x-month、x-day の各フィールドに格納しています。2007-01-02 という日付の場合、x-year、x-month、x-day に格納される値は、それぞれ 2007、01、02 となります。
 

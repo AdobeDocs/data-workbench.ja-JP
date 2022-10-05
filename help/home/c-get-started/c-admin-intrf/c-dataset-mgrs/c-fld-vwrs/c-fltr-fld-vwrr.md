@@ -3,7 +3,7 @@ description: 特定のテキストを検索したり、空白行を除外した�
 title: フィールドビューア内でのフィルタリング
 uuid: 3788fa03-c898-4e9d-81a0-ecf90376cac6
 exl-id: 0bb781e7-8c1c-4a74-882f-410470782ad2
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 79%
@@ -12,6 +12,8 @@ ht-degree: 79%
 
 # フィールドビューア内でのフィルタリング{#filter-within-a-field-viewer}
 
+{{eol}}
+
 特定のテキストを検索したり、空白行を除外したりして、フィールドビューアに表示される値をフィルタリングできます。
 
 **フィールドビューア内でフィルタリングするには**
@@ -19,7 +21,7 @@ ht-degree: 79%
 1. 値を検索するフィールドの列内で右クリックします。
 1. I
 
-   [!DNL Search for rows with]の下のテキストボックスに、検索するテキストを入力します。 パターンマッチング用の正規表現を入力することもできます。
+   の下のテキストボックス [!DNL Search for rows with]、検索するテキストを入力します。 パターンマッチング用の正規表現を入力することもできます。
 
 ![](assets/vis_FieldViewer_Search.png)
 
@@ -29,6 +31,6 @@ ht-degree: 79%
 
 **空白行を除外するには**
 
-* 空白行を除外するフィールドの列内で右クリックし、「**[!UICONTROL Filter out blank rows]**」をクリックします。
+* 空白行を除外するフィールドの列内で右クリックし、 **[!UICONTROL Filter out blank rows]**.
 
 このオプションを有効にすると、左側に X が表示され、列名が赤でハイライトされます。

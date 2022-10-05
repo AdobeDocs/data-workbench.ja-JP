@@ -3,7 +3,7 @@ description: 散布グラフは、データディメンションの要素（Page
 title: 2D 散布グラフ
 uuid: 73c23d22-3c3a-4535-b66b-0e3508bd904c
 exl-id: 340f8c18-ce47-4f3a-aba4-3d6124505313
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 86%
@@ -11,6 +11,8 @@ ht-degree: 86%
 ---
 
 # 2D 散布グラフ{#d-scatter-plots}
+
+{{eol}}
 
 散布グラフは、データディメンションの要素（Page（ページ）や City（都市）など）を、x 軸と y 軸が異なる指標を表すグリッド上にグラフとして描いたものです。
 
@@ -26,7 +28,7 @@ ht-degree: 86%
 
 散布グラフ上の各ポイントのサイズは、半径指標で決まります。デフォルトの半径指標は、Adobe アプリケーションごとに異なります。例えば、[!DNL Site] では半径指標がデフォルトでセッションに基づいています。半径指標を変更して、利用できる任意の指標を散布グラフのポイントで表せます。これを行う手順については、「[半径指標の変更](../../../home/c-get-started/c-analysis-vis/c-scat-plots.md#section-fd80576d583c430cb469daf12e39aa2a)」を参照してください。ポイントの色は、ワークスペース内で開く色凡例に基づきます。色凡例について詳しくは、「[色凡例](../../../home/c-get-started/c-analysis-vis/c-legends/c-color-leg.md#concept-f84d51dc0d6547f981d0642fc2d01358)」を参照してください。
 
-## 点を選択{#section-4b4d45f39b884d54bb7407b3b2f4ea50}
+## 点を選択 {#section-4b4d45f39b884d54bb7407b3b2f4ea50}
 
 **単一のポイントを選択するには**
 
@@ -40,20 +42,20 @@ ht-degree: 86%
 
 * Shift キーを押しながらポイントをクリックするか、Shift キーを押しながら複数のポイント全体をドラッグします。
 
-## 寸法の変更{#section-796cd962ef3f476caa89d99083782ed1}
+## ディメンションの変更 {#section-796cd962ef3f476caa89d99083782ed1}
 
-* グラフの上部にあるディメンションのラベルを右クリックし、**[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]**>*&#x200B;をクリックします。
+* グラフの上部にあるディメンションのラベルを右クリックし、 **[!UICONTROL Change Dimension]** > *&lt;**[!UICONTROL dimension name]**>*.
 
-## 指標の変更{#section-44b8be9215cd4039b1eeb98ae1b31445}
+## 指標の変更 {#section-44b8be9215cd4039b1eeb98ae1b31445}
 
 **散布グラフの x 軸または y 軸に表示される指標を変更するには**
 
-* 変更する指標のラベルを右クリックし、**[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*&#x200B;をクリックします。
+* 変更する指標のラベルを右クリックし、 **[!UICONTROL Change Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
-## 半径指標の変更{#section-fd80576d583c430cb469daf12e39aa2a}
+## 半径指標の変更 {#section-fd80576d583c430cb469daf12e39aa2a}
 
 **散布グラフの半径指標を変更するには**
 
-グラフの上部にあるディメンションのラベルを右クリックし、**[!UICONTROL Change Radius Metric]** > *&lt;**[!UICONTROL metric name]**>*&#x200B;をクリックします。
+グラフの上部にあるディメンションのラベルを右クリックし、 **[!UICONTROL Change Radius Metric]** > *&lt;**[!UICONTROL metric name]**>*.
 
 ![](assets/mnu_ScatterPlot_Change.png)

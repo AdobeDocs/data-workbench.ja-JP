@@ -3,7 +3,7 @@ description: 傾向スコアリングでは、コンバージョンが発生す�
 title: 傾向スコアリング
 uuid: 4f7163f5-6fe4-4f87-9e27-71ec8b4717af
 exl-id: 832a1e6c-8eeb-4dcc-97e8-9570e1a6eb4f
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 86%
@@ -11,6 +11,8 @@ ht-degree: 86%
 ---
 
 # 傾向スコアリング{#propensity-scoring}
+
+{{eol}}
 
 傾向スコアリングでは、コンバージョンが発生する可能性や指定したイベントが完了する可能性を基に顧客を定義できます。傾向スコアリングを使用すると、プロセスを実行したり、キャンペーンを展開したりする前に、取り組みの潜在的な効果を最大限に引き出すことができます。
 
@@ -22,11 +24,11 @@ ht-degree: 86%
 
 傾向スコアリングを使用すると、特定のスコアの予測に最も役立つ要因を特定することや、イベントが発生する確率を高めることができますが、次のような具体的な問いへの回答にも適用できます。顧客がコンバージョンするか顧客が電子メールに反応するか顧客が再度購入するか傾向スコアリングでは、そうした問いに答え、行動を起こす気持ちのある訪問者を特定することができます（後で、設定し、スコアを割り当てることができます）。
 
-また、オプションの&#x200B;**[!UICONTROL Training Filter]**&#x200B;機能を使用すると、フィルターを使用して、スコア対象の訪問者のサブセットを定義できます。 フィルターを適用しない場合は、すべての訪問者がスコアリングのターゲットになります。
+また、オプションの **[!UICONTROL Training Filter]** 機能。 フィルターを適用しない場合は、すべての訪問者がスコアリングのターゲットになります。
 
 ## 傾向スコアリングビジュアライゼーションの機能 {#section-28413bc7d33b42c59cecb427c1c5a3fa}
 
-傾向スコアリングビジュアライゼーションを開くには、 **[!UICONTROL Add]** / **[!UICONTROL Visualization]** / **[!UICONTROL Predictive Analytics]** / **[!UICONTROL Scoring]** / **[!UICONTROL Propensity Score]**&#x200B;をクリックします。
+傾向スコアリングビジュアライゼーションを開くには、 **[!UICONTROL Add]** > **[!UICONTROL Visualization]** > **[!UICONTROL Predictive Analytics]** > **[!UICONTROL Scoring]** > **[!UICONTROL Propensity Score]**.
 
 ![](assets/propensity_visualization_GO.png)
 
@@ -39,20 +41,20 @@ ht-degree: 86%
 | ロード | 以前に作成した ScoreDim をロードして、スコアリングモデルを変更または再構築できるようにします。 |
 | 保存 | 必要に応じてアクセスしたり開いたりできる Dim ファイルとして傾向スコアリングビジュアライゼーションを保存します。 |
 | Submit | サーバー側で処理するためにスコアリングタスクを送信します。 |
-| オプション | トレーニングフィルターを設定して、訪問者のサブセットを制限します。デフォルトのフィルターは&#x200B;**[!UICONTROL Train on Everyone]**&#x200B;ですが、ワークスペースを選択するか、**[!UICONTROL Filter Editor]**&#x200B;を使用してフィルターを作成することで、フィルターを変更できます。 |
+| オプション | トレーニングフィルターを設定して、訪問者のサブセットを制限します。デフォルトのフィルターは **[!UICONTROL Train on Everyone]**&#x200B;ただし、ワークスペースを選択するか、 **[!UICONTROL Filter Editor]**. |
 | ターゲットを設定 | 従属変数を設定します。 |
 | 指標 | 指標を独立変数として追加します。 |
-| 要素 | Dimensionテーブルの`<Ctrl>` + `<Alt>`キーを使用して、Dimension要素をドラッグします。 |
+| 要素 | Dimension要素をドラッグするには、 `<Ctrl>` + `<Alt>` キーをDimension表から |
 
 **関連トピック**:
 
-* [ゲインチャートとリフトチャート](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md#concept-0d049f6baf534f7fb97f271843ba6c4a)。 これらのビューは、完全なスコアリングモデルから、または[!DNL Add Visualization> Predictive Analytics > Scoring.]から開くことができます
-* [モデルビューア](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md#concept-d4fdf4b335c04b0ea07e70ab9a7ce9dd)。これらのビューは、完全なスコアリングモデルから、または[!DNL Add Visualization> Predictive Analytics > Scoring.]から開くことができます
-* [複雑なフィルターの説明](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-complex-filter.md#concept-f9c55e54837f4b5995a00bc950ce5dff)機能。
+* この [ゲインチャートとリフトチャート](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-gain-lift-chart.md#concept-0d049f6baf534f7fb97f271843ba6c4a). これらのビューは、完全なスコアリングモデルから、または [!DNL Add Visualization> Predictive Analytics > Scoring.]
+* [モデルビューア](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-model-viewer.md#concept-d4fdf4b335c04b0ea07e70ab9a7ce9dd)。これらのビューは、完全なスコアリングモデルから、または [!DNL Add Visualization> Predictive Analytics > Scoring.]
+* この [複雑なフィルターの説明](../../../../home/c-get-started/c-analysis-vis/c-visitor-propensity/c-propensity-complex-filter.md#concept-f9c55e54837f4b5995a00bc950ce5dff) 機能。
 
 ## 傾向スコアリングビジュアライゼーションの使用 {#section-63ced03fa2eb44f2b8a98d61a6c88122}
 
-* **スコアリング対象の訪問者の母集団を定義するフィルターを 1 つ以上定義します**。このオプションの&#x200B;**[!UICONTROL Training Filter]**&#x200B;を使用すると、選択した条件に基づいて訪問者をターゲットに設定できます。 フィルターが適用されていない場合、すべての訪問者がスコアリング対象です。トレーニングフィルターが設定されている場合、各訪問者にはスコアが与えられますが、スコアリング結果は、定義した訪問者の母集団に対して意味を持ちます。
+* **スコアリング対象の訪問者の母集団を定義するフィルターを 1 つ以上定義します**。このオプションは **[!UICONTROL Training Filter]** 選択した条件に基づいて訪問者をターゲットに設定できます。 フィルターが適用されていない場合、すべての訪問者がスコアリング対象です。トレーニングフィルターが設定されている場合、各訪問者にはスコアが与えられますが、スコアリング結果は、定義した訪問者の母集団に対して意味を持ちます。
 * **ポジティブな訪問者を特定します**。従属変数を定義するには、目的の結果に一致するポジティブな訪問者を特定するターゲットフィルターを指定します。これは、売上高 > $10 のように単純でも、もっと複雑なフィルターでも構いません。
 * **ターゲットフィルターをトレーニングフィルターと同じにすることはできません**。必然的に、ターゲットフィルターはトレーニングフィルターに追加されるものである必要があるので、スコア対象の訪問者母集団のポジティブなサブセットを定義します。
 * **傾向スコアリングアルゴリズムへの入力として、関心のある変数（独立変数）を選択します**。これには、指標や、ディメンションの個別のエレメントを選択できます。Propensity Scoring will start preprocessing just as in [訪問者クラスタリング](../../../../home/c-get-started/c-analysis-vis/c-visitor-cluster/c-visitor-cluster.md#concept-1c2406ef7b284a56a02daa38eaa2e73d). システムは、以前設定したトレーニングフィルター（存在する場合）に一致する一定量のサンプルの取得を開始します。現在、サンプルサイズは、（トレーニングフィルターで定義した）スコアリング母集団の 10％、最小 20,000、最大 100,000 に設定され、スコアリング母集団のサイズに縛られます。

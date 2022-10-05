@@ -3,7 +3,7 @@ description: Math 変換すると、ログエントリ内のフィールドに�
 title: Math
 uuid: 9e1a5950-8fb2-48e9-b9a1-82c5165fba10
 exl-id: d8b9cacd-67d1-447c-94dd-7028aa371dfa
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 97%
@@ -11,6 +11,8 @@ ht-degree: 97%
 ---
 
 # 数学{#math}
+
+{{eol}}
 
 Math 変換すると、ログエントリ内のフィールドに対して算術演算を適用できます。
 
@@ -32,7 +34,7 @@ Math 変換すると、ログエントリ内のフィールドに対して算術
   </tr> 
   <tr> 
    <td colname="col1"> コメント </td> 
-   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
+   <td colname="col2"> （オプション）。変換についてのメモ。 </td> 
    <td colname="col3"></td> 
   </tr> 
   <tr> 
@@ -44,9 +46,9 @@ Math 変換すると、ログエントリ内のフィールドに対して算術
    <td colname="col1"> 式 </td> 
    <td colname="col2"> <p>実行する計算を表す演算式。 </p> <p> 以下に示した任意の演算および関数を使用でき、式にはフィールド名を含めることができます。 </p> <p> 運用 
      <ul id="ul_DB5915FADA0A41A3B11F1F48615F40A9">
-      <li id="li_CA9EA97243F04760A81313C17EE057B3"> 加算（+） </li>
-      <li id="li_908A272EBA2340098C20F22AA8D9ED26"> 減算（-） </li>
-      <li id="li_C62257FF3AAB436D9148BBEA441621D7"> 乗算（*） </li>
+      <li id="li_CA9EA97243F04760A81313C17EE057B3"> 加算 (+) </li>
+      <li id="li_908A272EBA2340098C20F22AA8D9ED26"> 減算 (-) </li>
+      <li id="li_C62257FF3AAB436D9148BBEA441621D7"> 乗算 (*) </li>
       <li id="li_B5A9EAB3E49D4CB9A297172199F23542"> 除算（/） </li>
       <li id="li_D2D2B51DB2C8412A9B6F9D5F3CC03F8A"> 剰余 (%) </li>
       <li id="li_07E7E368FFD2437A852B785E159848E5"> 累乗法 (^) </li>
@@ -63,7 +65,7 @@ Math 変換すると、ログエントリ内のフィールドに対して算術
    <td colname="col3"></td> 
   </tr> 
   <tr> 
-   <td colname="col1"> Output </td> 
+   <td colname="col1"> 出力 </td> 
    <td colname="col2"> 算術演算の結果を格納するフィールドの名前。 </td> 
    <td colname="col3"></td> 
   </tr> 
@@ -74,4 +76,4 @@ Math 変換すると、ログエントリ内のフィールドに対して算術
 
 ![](assets/cfg_TransformationType_Math.png)
 
-[!DNL Not Empty]条件について詳しくは、[条件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md)を参照してください。
+詳しくは、 [!DNL Not Empty] 条件については、 [条件](../../../../../home/c-dataset-const-proc/c-conditions/c-abt-cond.md).

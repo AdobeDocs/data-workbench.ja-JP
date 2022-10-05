@@ -3,7 +3,7 @@ description: 密度マップビジュアライゼーションは、四角形の�
 title: 密度マップ
 uuid: c13cecee-f322-4757-aa90-12039173ff9f
 exl-id: da37d954-cadb-42a6-a44b-9b38c0354a5d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 84%
@@ -11,6 +11,8 @@ ht-degree: 84%
 ---
 
 # 密度マップ{#density-map}
+
+{{eol}}
 
 密度マップビジュアライゼーションは、四角形のマップ内にエレメントを影付きの長方形として表示します。
 
@@ -25,30 +27,30 @@ ht-degree: 84%
    新しいワークスペースを開いた後に、**追加**／**一時的にロック解除**&#x200B;をクリックする必要がある場合があります。
 1. クリック **[!UICONTROL Visualization]** > **[!UICONTROL Density Map]**.
 
-1. メニューから&#x200B;**[!UICONTROL Dimension]**&#x200B;を選択します。
+1. を選択します。 **[!UICONTROL Dimension]** を選択します。
 
-   例えば、**[!UICONTROL Time]** > **[!UICONTROL Days]**&#x200B;を選択します。
+   例えば、「 **[!UICONTROL Time]** > **[!UICONTROL Days]**.
 
-   これに対して、 **[!UICONTROL Time]** > **[!UICONTROL Hours]**&#x200B;を選択すると、値が小さいほど、より多くの要素が小さい長方形として表示されます。
+   これに対し、選択 **[!UICONTROL Time]** > **[!UICONTROL Hours]** では、値が小さいほど、より多くの要素が小さい長方形として表示されます。
 
    >[!NOTE]
    >
-   >必要に応じて複数のエレメントを含むディメンションを選択する必要があります。 現在、ディメンションごとのエレメント数は最大 200 個に制限されています。
+   >必要に応じて複数の要素を持つディメンションを選択します。 現在、ディメンションごとのエレメント数は最大 200 個に制限されています。
 
-1. **[!UICONTROL Visualization]** > **[!UICONTROL Table]**&#x200B;を開き、テーブルから要素を選択してマップに表示することで、ディメンションビューを変更できます。
+1. 寸法ビューは、 **[!UICONTROL Visualization]** > **[!UICONTROL Table]** テーブルから複数の要素を選択してマップに表示します。
 
    ![](assets/density_map_day_selections.png)
 
    マップは、テーブルからの選択に応じて変更されます。
 
 1. 小さなエレメントの上にカーソルを置くと、マウスカーソルの近くに表示されるテキスト内にそのエレメントの名前と値が表示されます。
-1. 右クリックし、「**[!UICONTROL Mask]**」を選択して要素をマスクしてから、オプションを選択します。
+1. 右クリックして選択することで要素をマスクする **[!UICONTROL Mask]**」、「 」の順に選択します。
 
    ![](assets/density_map_day_mask.png)
 
-   マスクされたノードをすべて表示するには、**[!UICONTROL Unhide All]**&#x200B;を選択します。
+   マスクされたノードをすべて表示するには、 **[!UICONTROL Unhide All]**.
 
-1. 右クリックして「**[!UICONTROL Spotlight]**」を選択し、オプションを選択して、要素をスポットライトします。 スポットライトを使用すると、範囲内のエレメントに明暗を付けることができます。
+1. 右クリックして選択することで要素をスポットライト **[!UICONTROL Spotlight]**」、「 」の順に選択します。 スポットライトを使用すると、範囲内のエレメントに明暗を付けることができます。
 1. ワークスペースに色凡例を追加します。色凡例を使用して、マップ内の値を識別することができます。
 
    ワークスペースに色凡例を追加できます。ノードの色は、データの追加のディメンションに基づいて変更されます。
@@ -56,7 +58,7 @@ ht-degree: 84%
 
    ![](assets/density_map_change_dim.png)
 
-1. セルを右クリックし、「**[!UICONTROL Add Callout]**」を選択して引き出し線を追加します。 メニューから様々なタイプやビジュアライゼーションを選択できます。
+1. セルを右クリックし、「 」を選択して引き出し線を追加する **[!UICONTROL Add Callout]**. メニューから様々なタイプやビジュアライゼーションを選択できます。
 
    ![](assets/density_map_callout.png)
 
@@ -69,7 +71,7 @@ ht-degree: 84%
 * エレメントを選択するには、左クリックします。
 * 複数のエレメントを選択するには、Ctrl キーを押しながらクリックします。
 * エレメントを選択解除するには、Shift キーを押しながらクリックします。
-* メニューを開くには、選択したエレメント内で右クリックします。次に、**[!UICONTROL Deselect]**&#x200B;または&#x200B;**[!UICONTROL Deselect All]**&#x200B;を選択して、選択した要素をクリアします。
+* メニューを開くには、選択したエレメント内で右クリックします。次に、 **[!UICONTROL Deselect]** または **[!UICONTROL Deselect All]** をクリックして、選択した要素をクリアします。
 
 ## 追加のオプション {#section-d77defb012424de4a7ced8e5c93115bc}
 

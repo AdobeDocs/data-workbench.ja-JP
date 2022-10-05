@@ -3,7 +3,7 @@ description: insight.zbin ファイルを設定して、クライアントアプ
 title: ローカライズされた Languages insight.zbin の設定
 uuid: 7735e183-7ba3-4e11-bfe2-7f87e4c55fc8
 exl-id: bb57887f-f213-48a4-9a10-8da7ea33eda5
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '469'
 ht-degree: 65%
@@ -11,6 +11,8 @@ ht-degree: 65%
 ---
 
 # ローカライズされた言語の設定{#setting-up-localized-languages}
+
+{{eol}}
 
 insight.zbin ファイルを設定して、クライアントアプリケーションの言語を設定します。
 

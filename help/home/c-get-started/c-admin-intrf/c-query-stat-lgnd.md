@@ -3,7 +3,7 @@ description: クエリーステータスの凡例には、実行中のクエリ�
 title: クエリステータスの凡例
 uuid: 6a0285c8-3ced-4c12-8f0c-e86d70d9e044
 exl-id: 9580ee7f-3575-4e73-b7df-5b61f6ce8e1e
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 92%
@@ -12,11 +12,13 @@ ht-degree: 92%
 
 # クエリステータスの凡例{#query-status-legend}
 
+{{eol}}
+
 クエリーステータスの凡例には、実行中のクエリーに関する詳細情報が表示されます。
 
 ![](assets/vis_StatusLegend.png)
 
-次の表に、[!DNL Query Status Legend]を使用して実行できるタスクを示します。
+次の表に、 [!DNL Query Status Legend].
 
 <table id="table_BD9330D4B3014A84B24EF0E71872F627"> 
  <thead> 

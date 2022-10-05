@@ -4,7 +4,7 @@ solution: Analytics
 title: 必要な訪問者数の決定
 uuid: 07fca0aa-031a-4335-bba4-fb00cb90e29d
 exl-id: c23f4c21-21e5-4694-a500-efe1369cd4bf
-source-git-commit: 31f775478b0f0d968310ed10a43ad46791319ee9
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 6%
@@ -12,6 +12,8 @@ ht-degree: 6%
 ---
 
 # 必要な訪問者数の決定{#determining-the-number-of-visitors-needed}
+
+{{eol}}
 
 統計的に有意な実験を作成するには、実験を実行して、Web サイトに対する変更の結果を効果的に評価するのに十分な訪問者を含める必要がある期間を決定する必要があります。
 

@@ -1,9 +1,9 @@
 ---
-description: 入力セルの作成方法
+description: 入力セルの作成方法。
 title: 入力セルの作成
 uuid: 9b2883e4-b12a-4279-9894-37a1df6c34b3
 exl-id: 1e55696e-fcc8-4521-b37b-f52409229e6d
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 62%
@@ -12,9 +12,11 @@ ht-degree: 62%
 
 # 入力セルの作成{#create-an-input-cell}
 
-入力セルの作成方法
+{{eol}}
 
-セルB1が入力セルとしてフォーマットされ（セルを右クリックして&#x200B;**[!UICONTROL Format]** > **[!UICONTROL Input Cell]**&#x200B;をクリック）、ビジュアライゼーションをロック（上の枠を右クリックして&#x200B;**[!UICONTROL Locked]**&#x200B;をクリック）した場合、入力セルの値を変更して結果を表示できます。
+入力セルの作成方法。
+
+セル B1 が入力セルとしてフォーマットされている場合 ( セルを右クリックし、 **[!UICONTROL Format]** > **[!UICONTROL Input Cell]**) をクリックし、ビジュアライゼーションをロックします ( 上の境界線を右クリックし、 **[!UICONTROL Locked]**) をクリックすると、入力セルの値を変更して、その場で結果を表示できます。
 
 次の例は、入力セルの数式が表示されているワークシートを示しています。
 

@@ -3,7 +3,7 @@ description: User Groups パラメーターを定義するテーブルです。
 title: クエリキューのユーザーグループ
 uuid: 90d9058c-1809-4579-a8c6-930a07affc83
 exl-id: e9586ad4-4c0b-48b7-b533-4d23a0f4a216
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # クエリキューのユーザーグループ{#query-queue-user-groups}
+
+{{eol}}
 
 User Groups パラメーターを定義するテーブルです。
 

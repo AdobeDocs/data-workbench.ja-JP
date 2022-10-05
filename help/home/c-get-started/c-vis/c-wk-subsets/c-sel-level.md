@@ -3,7 +3,7 @@ description: サブセットを作成するときには、レベルを指定す�
 title: レベルの選択
 uuid: 18c2bee7-a70f-4510-978f-830b56780f47
 exl-id: 39d8407c-e2ec-4080-8918-26cafbf988df
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 100%
@@ -11,6 +11,8 @@ ht-degree: 100%
 ---
 
 # レベルの選択{#select-a-level}
+
+{{eol}}
 
 サブセットを作成するときには、レベルを指定する必要があります。
 

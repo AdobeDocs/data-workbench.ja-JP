@@ -3,7 +3,7 @@ description: 弦のビジュアライゼーションを使用すると、指標�
 title: 弦のビジュアライゼーション
 uuid: 3f322f58-f8f5-4d91-bdf8-4b5f9d7fb072
 exl-id: d712f7b3-de2f-4ca4-a1bf-a2e4d42a084e
-source-git-commit: 232117a8cacaecf8e5d7fcaccc5290d6297947e5
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 85%
@@ -12,13 +12,15 @@ ht-degree: 85%
 
 # 弦のビジュアライゼーション{#chord-visualization}
 
+{{eol}}
+
 弦のビジュアライゼーションを使用すると、指標の比率と相関関係の両方を表示できます。弦の大きさで相関関係の強さが示されます。
 
 弦のビジュアライゼーションでは、指標間の相関関係を特定し、考えられる相関を追加して、簡単に評価することができます。また、以前に作成した[相関行列](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html)の別の表示も提供します。弦のビジュアライゼーションを使用して、指標間の正または負の相関関係を特定することはできません。特定できるのは、相関関係が存在していることだけです。場合によっては、カウンター指標を適用することで、直接または逆の関係を特定することができます。
 
-1. **ビジュアライゼーシ&#x200B;**[!UICONTROL Chord]**ョンを開きます**。
+1. **を開きます。**[!UICONTROL Chord]**視覚化**.
 
-   ワークスペースで、[!DNL Visualization > Predictive Analytics > Chord]を右クリックします。
+   ワークスペースで、右クリックします。 [!DNL Visualization > Predictive Analytics > Chord].
 
 1. **メニューからディメンションを選択します。**
 
@@ -30,7 +32,7 @@ ht-degree: 85%
 
 1. **相関する指標を選択します**。
 
-   **[!UICONTROL Finder]**&#x200B;から指標をドラッグします。それには、**[!UICONTROL Ctrl-Alt]**&#x200B;をクリックして、表からグラフに指標をドラッグします。 2 つ以上の指標を選択すると、グラフが自動的に更新され、相関データの表示が開始されます。必要に応じて、データポイントを相関させる指標の追加を続けます。
+   指標を **[!UICONTROL Finder]** クリックして **[!UICONTROL Ctrl-Alt]** をクリックして、指標をテーブルからグラフにドラッグします。 2 つ以上の指標を選択すると、グラフが自動的に更新され、相関データの表示が開始されます。必要に応じて、データポイントを相関させる指標の追加を続けます。
 
    ![](assets/chord_drag_metric.png)
 

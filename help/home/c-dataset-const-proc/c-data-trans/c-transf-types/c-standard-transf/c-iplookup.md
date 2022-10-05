@@ -3,7 +3,7 @@ description: IPLookup 変換は、IP Geo-Location データまたは IP Geo-Inte
 title: IPLookup
 uuid: 6fccee39-761f-4854-a7fd-3f8b453e0698
 exl-id: 3e9dba44-8d31-49af-8ce0-fecaf92edeb7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 88%
@@ -12,15 +12,17 @@ ht-degree: 88%
 
 # IPLookup{#iplookup}
 
+{{eol}}
+
 IPLookup 変換は、IP Geo-Location データまたは IP Geo-Intelligence データ（各種ベンダーによって提供され、アドビ独自の形式に変換される）を受け取って、そのデータを分析用の地理情報に変換します。
 
-新規追加メニューには、2つの[!DNL IPLookup]変換が表示されます。
+2 [!DNL IPLookup] 変換は、新規追加/変換タイプメニューに表示されます。
 
-* [!DNL IPLookup] Quova(データの [!DNL IP geo-location] 場合)
+* [!DNL IPLookup] Quova for [!DNL IP geo-location] データ
 
-* [!DNL IPLookup] Digital Envoy(データ [!DNL IP geo-intelligence] 用)
+* [!DNL IPLookup] Digital Envoy for [!DNL IP geo-intelligence] データ
 
-[!DNL IPLookup]変換を定義する場合は、[!DNL IP geo-location]データまたは[!DNL IP geo-intelligence]データに適した変換を選択します。
+を定義する際に [!DNL IPLookup] 変換を行う場合は、 [!DNL IP geo-location] または [!DNL IP geo-intelligence] データ。
 
 <table id="table_C438A30AB5E64160A5C486D6887B1D7E"> 
  <thead> 
@@ -38,7 +40,7 @@ IPLookup 変換は、IP Geo-Location データまたは IP Geo-Intelligence デ�
   </tr> 
   <tr> 
    <td colname="col1"> コメント </td> 
-   <td colname="col2"> （オプション）変換についてのメモ。 </td> 
+   <td colname="col2"> （オプション）。変換についてのメモ。 </td> 
    <td colname="col3"> </td> 
   </tr> 
   <tr> 

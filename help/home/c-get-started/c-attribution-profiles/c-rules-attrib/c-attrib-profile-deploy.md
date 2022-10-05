@@ -2,13 +2,17 @@
 description: アトリビューションプロファイルは、継承された、すぐに利用できるプロファイルです。Adobe SC プロファイおよび Analytics（SC／Insight）のデータフィードと組み合わせて、このプロファイルをデプロイすると、複数のデジタルチャネルに新しいアトリビューションモデルを迅速に公開できます。
 title: アトリビューションプロファイルのデプロイ
 uuid: acc4e92a-2af1-4993-bae7-015ece3da26c
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 287e1710-7e74-4904-b258-7b811ad484b7
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 68%
 
 ---
 
-
 # アトリビューションプロファイルのデプロイ{#deploying-the-attribution-profile}
+
+{{eol}}
 
 アトリビューションプロファイルは、継承された、すぐに利用できるプロファイルです。Adobe SC プロファイおよび Analytics（SC／Insight）のデータフィードと組み合わせて、このプロファイルをデプロイすると、複数のデジタルチャネルに新しいアトリビューションモデルを迅速に公開できます。
 
@@ -20,13 +24,13 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
 
 >[!NOTE]
 >
->この手順では、データセットの再変換が必要になります。
+>これらの手順では、データセットを再変換する必要があります。
 
-1. カスタムプロファイルフォルダー内の [!DNL profile.cfg] ファイルを開きます(で開きま [!DNL server\Profiles\(custom profile name)\profile.cfg]す。
+1. カスタムプロファイルフォルダー内の [!DNL profile.cfg] ファイルを開きます（で開く） [!DNL server\Profiles\(custom profile name)\profile.cfg].
 
-1. If the Attribution profile is not listed in the configuration file, add it to the list. ![](assets/new_profile_cfg.png)
+1. 設定ファイルにアトリビューションプロファイルがリストされていない場合は、リストに追加します。 ![](assets/new_profile_cfg.png)
 
-1. Make sure the **[!UICONTROL Attribution]** string is listed below the **[!UICONTROL Adobe SC]** profile string.
+1. 次を確認します。 **[!UICONTROL Attribution]** 文字列が **[!UICONTROL Adobe SC]** プロファイル文字列。
 
 1. 更新した [!DNL profile.cfg] ファイルを保存し、プロファイルマネージャーからサーバーに保存します。
 
@@ -65,18 +69,18 @@ source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
  </tbody> 
 </table>
 
-1. Adobe Analytics のデータソースを定義するために使用されるデコーダーグループ内でこれらのフィールドが宣言されていることを確認します。The default decoder group is provided under [!DNL Dataset\Log Procesing\Decoding Instructions.cfg].
-1. Verify that these fields are declared in the **[!UICONTROL Fields]** section of the [!DNL SC Fields.cfg] file. This file can be located under [!DNL Dataset\Log Processing\SC Fields.cfg].
+1. Adobe Analytics のデータソースを定義するために使用されるデコーダーグループ内でこれらのフィールドが宣言されていることを確認します。デフォルトのデコーダーグループは、 [!DNL Dataset\Log Procesing\Decoding Instructions.cfg].
+1. これらのフィールドが **[!UICONTROL Fields]** セクション [!DNL SC Fields.cfg] ファイル。 このファイルは、以下の場所にあります。 [!DNL Dataset\Log Processing\SC Fields.cfg].
 
 ## アトリビューションの追加とトラブルシューティング {#section-168133a8a1a54e1281e532033878d246}
 
-The Attribution profile added a configuration file, [!DNL 0a_Marketing Channels.cfg], which copies the value of the [!DNL x-va_closer_detail] into a new field called [!DNL x-marketing-channel], when the [!DNL x-va_instance_event] field matches &quot;1&quot;. Both [!DNL x-va_closer_detail] and [!DNL x-va_instant_event] are decoded by default, and passed from decoding in the installed packages available when you update to version 6.2.
+アトリビューションプロファイルに設定ファイルが追加されました。 [!DNL 0a_Marketing Channels.cfg]: [!DNL x-va_closer_detail] ～という新しい分野に入る [!DNL x-marketing-channel]、 [!DNL x-va_instance_event] フィールドは「1」に一致します。 両方 [!DNL x-va_closer_detail] および [!DNL x-va_instant_event] はデフォルトでデコードされ、バージョン 6.2 に更新した場合に使用可能なインストール済みパッケージでのデコードから渡されます。
 
 「[!DNL x-marketing-channel]」フィールドは、マーケティングチャネルというシンプルディメンションで使用されます。
 
 >[!IMPORTANT]
 >
->If you have altered your profiles by removing previously unused fields that are now being used, you will want to verify that the [!DNL x-va_closer_detail] and [!DNL x-va_instance_event] fields are being decoded and passed through for use.
+>現在使用中の未使用のフィールドを削除してプロファイルを変更した場合は、 [!DNL x-va_closer_detail] および [!DNL x-va_instance_event] フィールドはデコードされ、使用するために経由されます。
 
 フィールドが見つからない場合は、詳細な状態を示す次のメッセージが表示されます。
 
@@ -89,4 +93,3 @@ The Attribution profile added a configuration file, [!DNL 0a_Marketing Channels.
 ```
 <b>x-va_instance_event</b> is not available
 ```
-

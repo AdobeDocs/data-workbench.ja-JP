@@ -3,7 +3,7 @@ description: Data Workbench のディメンションメニューに表示した�
 title: 拡張ディメンションの非表示
 uuid: c32f47ad-0246-4611-b54c-0c9f0eb396bd
 exl-id: 5baccf39-6f3b-40a1-b1c0-a8e5d6a61211
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '535'
 ht-degree: 79%
@@ -11,6 +11,8 @@ ht-degree: 79%
 ---
 
 # 拡張ディメンションの非表示{#hiding-extended-dimensions}
+
+{{eol}}
 
 Data Workbench のディメンションメニューに表示したくない拡張ディメンションは、Hidden パラメーターまたは Show パラメーターを使用して非表示にすることができます。
 
@@ -25,9 +27,9 @@ Hidden パラメーターと Show パラメーターを使用して拡張ディ�
 
 ## Hidden パラメーターを使用した拡張ディメンションの非表示 {#section-7167a6f6241a4bc78f2f322e048d65cf}
 
-Hiddenパラメーターは、[!DNL Transformation Dataset Configuration]ファイルで拡張ディメンションを定義する際に使用できるオプションのパラメーターです。
+Hidden パラメーターは、 [!DNL Transformation Dataset Configuration] ファイル。
 
-1. 非表示にする拡張ディメンションが定義されている[!DNL Transformation Dataset Configuration]ファイルを開きます。 [既存のデータセットインクルードファイルの編集](../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md#task-456c04e38ebc425fb35677a6bb6aa077)を参照してください。
+1. 開く [!DNL Transformation Dataset Configuration] 非表示にする拡張ディメンションが定義されているファイル。 詳しくは、 [既存のデータセットインクルードファイルの編集](../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md#task-456c04e38ebc425fb35677a6bb6aa077).
 
 1. 設定ウィンドウで目的のディメンションの Hidden パラメーターを探し、「*true*」と入力します。
 1. ファイルをローカルに保存したうえで、サーバー上の適切なプロファイルに保存します。詳しくは、 [既存のデータセットインクルードファイルの編集](../../../../home/c-dataset-const-proc/c-dataset-inc-files/c-work-dataset-inc-files/t-edit-ex-dataset-inc-files.md#task-456c04e38ebc425fb35677a6bb6aa077).
@@ -38,7 +40,7 @@ Hidden パラメーターの設定を変更した場合、その変更を反映�
 
 ## Show パラメーターを使用した拡張ディメンションの非表示 {#section-4dceb1079c7f40d2bffc686d1f73f8ad}
 
-Showパラメーターは、[!DNL Transformation Dataset Configuration]ファイルで拡張ディメンションを定義するためのパラメーターの1つではありません。 代わりに、作成する派生ディメンションの[!DNL .dim]ファイルでパラメーターが定義されます。 そのため、Show パラメーターを使用して拡張ディメンションを非表示にするにはまず、以下の手順に従って、拡張ディメンションをベースに派生ディメンションを作成する必要があります。
+Show パラメーターは、 [!DNL Transformation Dataset Configuration] ファイル。 代わりに、パラメーターは [!DNL .dim] 作成する派生ディメンションのファイル。 そのため、Show パラメーターを使用して拡張ディメンションを非表示にするにはまず、以下の手順に従って、拡張ディメンションをベースに派生ディメンションを作成する必要があります。
 
 1. メモ帳などのテキストエディターを使用して、&lt;*dimension name*>.dim という名前で空のファイルを作成します。ファイル名は、非表示にするディメンションと同じ名前であることが必要です。例えば、Next Page ディメンションを非表示にする場合、[!DNL Next Page.dim] というファイルを作成します。
 
@@ -49,6 +51,6 @@ Showパラメーターは、[!DNL Transformation Dataset Configuration]ファイ
 
 1. プロファイルの Dimensions ディレクトリにファイルを保存します。必要に応じてサブディレクトリにファイルを保存できます。
 
-Show パラメーターを使用して拡張ディメンションを非表示にするときは、データセットを再変換しなくても、変更が反映されます。ローカルバージョンのプロファイルでディメンションの表示と非表示を切り替えたり（[!DNL .dim]ファイルをUserフォルダーに保存したり）、[!DNL .dim]ファイルをサーバーに保存してプロファイルの他のユーザーが使用できます。
+Show パラメーターを使用して拡張ディメンションを非表示にするときは、データセットを再変換しなくても、変更が反映されます。ローカルバージョンのプロファイルでディメンションの表示と非表示を切り替えることができます ( つまり、 [!DNL .dim] ファイルを User フォルダーに保存 )、または [!DNL .dim] ファイルをサーバーに送信して、プロファイルの他のユーザーが使用できるようにします。
 
 指標やフィルターを非表示にするときにも、Show パラメーターを使用できます。詳しくは、『*Data Workbench ユーザーガイド*』の「インターフェイスと分析機能の設定」という章を参照してください。

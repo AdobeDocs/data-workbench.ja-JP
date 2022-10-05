@@ -1,18 +1,22 @@
 ---
-description: Data Workbenchのインストールパッケージに含まれるファイル。
+description: インストールパッケージに含まれるData Workbenchファイル。
 title: インストールパッケージに含まれているファイル
 uuid: 46cda536-ea71-4840-bd7f-3fe9e0242c33
-translation-type: tm+mt
-source-git-commit: aec1f7b14198cdde91f61d490a235022943bfedb
+exl-id: 086fb49c-d492-4670-938b-7ede70a7cd16
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+workflow-type: tm+mt
+source-wordcount: '280'
+ht-degree: 71%
 
 ---
 
-
 # インストールパッケージに含まれているファイル{#files-included-in-the-installation-package}
 
-Data Workbenchのインストールパッケージに含まれるファイル。
+{{eol}}
 
-Insightパッケージには、次のディレクトリが含まれています。
+インストールパッケージに含まれるData Workbenchファイル。
+
+Insight パッケージには、次のディレクトリが含まれています。
 
 ## プログラムファイル {#section-ddb14bf42cdd4dc7a6b4310a5b4388e4}
 
@@ -32,7 +36,7 @@ C:\Program Files\Adobe\Adobe Analytics\Data Workbench
  <tbody> 
   <tr> 
    <td colname="col1"> <b> <span class="filepath"> Insight.exe </span> </b> </td> 
-   <td colname="col2"> Data Workbenchクライアントの実行可能ファイル。 </td> 
+   <td colname="col2"> Data Workbench・クライアントの実行可能ファイル。 </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b> <span class="filepath"> insight.ini </span> </b> </td> 
@@ -49,7 +53,7 @@ C:\Program Files\Adobe\Adobe Analytics\Data Workbench
  </tbody> 
 </table>
 
-## AppData ファイル{#section-afddeedf8d29451f996fa46b2dfe932c}
+## AppData ファイル {#section-afddeedf8d29451f996fa46b2dfe932c}
 
 データファイル（**[!DNL Insight.cfg]**、プロファイル、証明書、トレースログおよびユーザーファイル）は、デフォルトでは以下に保存されます。
 
@@ -69,15 +73,15 @@ C:\Program Files\Adobe\Adobe Analytics\Data Workbench
  <tbody> 
   <tr> 
    <td colname="col1"> <b> <span class="filepath"> Insight.cfg </span> </b> </td> 
-   <td colname="col2"> Data Workbench設定ファイル。 Data Workbenchが動作するパラメーターを定義します。 Insightサー <a href="../../../home/c-install-insight/install-setup/c-conn-isvr.md#concept-9f47b2cd7c12492693a2cf810cfc1d9e"> バーへの接続の設定を参照してくださ </a>い。 </td> 
+   <td colname="col2"> Data Workbench設定ファイル。 パラメーターが動作するData Workbenchを定義します。 詳しくは、 <a href="../../../home/c-install-insight/install-setup/c-conn-isvr.md#concept-9f47b2cd7c12492693a2cf810cfc1d9e"> Insight サーバーへの接続の設定 </a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b> <span class="filepath"> Base </span> </b> </td> 
-   <td colname="col2"> <p>Data Workbenchのプログラムファイルが含まれます。 </p> <p> <p>注意：これらのファイルを削除または変更することはできません。 </p> </p> </td> 
+   <td colname="col2"> <p>Data Workbench用のプログラムファイルが含まれます。 </p> <p> <p>注意：これらのファイルを削除または変更することはできません。 </p> </p> </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b> <span class="filepath"> Certificates </span> </b> </td> 
-   <td colname="col2"> Contains the certificate file, <span class="filepath"> trust_ca_cert.pem </span>, and the named user digital certificate for Data Workbench. See <a href="../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#concept-4c6a900074d4464fb6ec7862f7e54f10"> Downloading and Installing the Digital Certificate </a>. </td> 
+   <td colname="col2"> 証明書ファイルが含まれています。 <span class="filepath"> trust_ca_cert.pem </span>、およびData Workbench用の名前付きユーザー電子証明書。 詳しくは、 <a href="../../../home/c-install-insight/install-setup/c-dgtl-crtf.md#concept-4c6a900074d4464fb6ec7862f7e54f10"> 電子証明書のダウンロードとインストール </a>. </td> 
   </tr> 
   <tr> 
    <td colname="col1"> <b> <span class="filepath"> 設定 </span> </b> </td> 
@@ -92,7 +96,7 @@ C:\Program Files\Adobe\Adobe Analytics\Data Workbench
    <td colname="col2"> ワークステーションが生成するログファイルが含まれます。 </td> 
   </tr> 
   <tr> 
-   <td colname="col1"> <b> <span class="filepath"> Profiles </span></b> </td> 
+   <td colname="col1"> <b> <span class="filepath"> プロファイル </span></b> </td> 
    <td colname="col2"> <i>AdobeSC</i>、<i>Predictive Analytics</i> および他のプロファイル設定ファイルが含まれます。 </td> 
   </tr> 
   <tr> 
@@ -101,4 +105,3 @@ C:\Program Files\Adobe\Adobe Analytics\Data Workbench
   </tr> 
  </tbody> 
 </table>
-

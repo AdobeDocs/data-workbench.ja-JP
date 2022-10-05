@@ -1,9 +1,9 @@
 ---
-description: ダッシュボード製品には、ClientCareが提供するライセンスがAdobeに必要です。
+description: このダッシュボード製品には、AdobeClientCare が提供するライセンスが必要です。
 title: ダッシュボードライセンスキーの追加
 uuid: 51ec87a8-e9cc-4aa1-8d13-a79612a13d17
 exl-id: bf532fb0-9287-4c15-aa4c-07f7bd0fdba7
-source-git-commit: d9df90242ef96188f4e4b5e6d04cfef196b0a628
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 12%
@@ -12,10 +12,12 @@ ht-degree: 12%
 
 # ダッシュボードライセンスキーの追加{#add-dashboard-license-key}
 
-ダッシュボード製品には、ClientCareが提供するライセンスがAdobeに必要です。
+{{eol}}
 
-1. 管理者として&#x200B;**[!UICONTROL SQL Management Studio]**&#x200B;を開きます。
-1. ダッシュボードで作成したデータベース（thinclientdbなど）を開きます。
-1. **[!UICONTROL Configuration]**&#x200B;テーブルを右クリックし、**[!UICONTROL Edit Top 200 Rows]**&#x200B;をクリックします。
-1. **[!UICONTROL licenseKey]**&#x200B;フィールドを探し、AdobeのClientCareから提供されたキーを&#x200B;**[!UICONTROL Value]**&#x200B;列に入力します。
-1. **[!UICONTROL IIS Manager Console]**&#x200B;で&#x200B;**[!UICONTROL Application Pool]**&#x200B;を再起動します。
+このダッシュボード製品には、AdobeClientCare が提供するライセンスが必要です。
+
+1. 開く **[!UICONTROL SQL Management Studio]** 管理者として。
+1. ダッシュボードで作成したデータベース（thinclientdb など）を開きます。
+1. を右クリックします。 **[!UICONTROL Configuration]** テーブルとクリック **[!UICONTROL Edit Top 200 Rows]**.
+1. 次を検索： **[!UICONTROL licenseKey]** フィールドに入力し、AdobeClientCare から提供されたキーを **[!UICONTROL Value]** 列。
+1. を再起動します。 **[!UICONTROL Application Pool]** 内 **[!UICONTROL IIS Manager Console]**.

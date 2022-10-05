@@ -3,7 +3,7 @@ description: テーブル
 title: ダッシュボードテーブル
 uuid: 3bfb5be4-5510-456b-8b3d-6e57cb93949e
 exl-id: 215ad990-92af-4c36-9946-89dbe36bbb8c
-source-git-commit: 235b8816c7397ac1ab71df650a1d4c2d681b3b2d
+source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -11,6 +11,8 @@ ht-degree: 0%
 ---
 
 # テーブル{#tables}
+
+{{eol}}
 
 テーブルは、ダッシュボードアプリケーションで使用できる、最も詳細な指向のビジュアライゼーションです。 テーブルでは、各データ要素をテーブルの行として表示して、指標とディメンションのデータを視覚化できます。 1 つの列にはディメンション値が格納され、他の列には対応する指標値が格納されます。 複数の指標を表示できます。また、テーブルに表示できるディメンション値の数に制限はありません。 選択したディメンションの、Data Workbench データに存在するすべての値がテーブルに表示されます。
 
