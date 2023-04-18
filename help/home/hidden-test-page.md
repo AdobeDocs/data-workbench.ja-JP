@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 3c3a0289ae50d407a83ca8878af59ecde5e86e8d
+source-git-commit: c92c1e5688ca867caf1f3d4a6a3e44dafb5b3734
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '695'
 ht-degree: 2%
 
 ---
@@ -98,7 +98,7 @@ badgeExam: label="Exam ADO-E903" type="neutral"
 
 Workfrontチームは、黄色のハイライトを使用して、今後の機能のプレビューを示すように求めました。 次に、その仕組みを示します。
 
-例：
+例 1:
 
 ```
 This entire paragraph should NOT be highlighted. <span class="preview"> This word is **bold** inside a highlighted sentence.</span> And this is just the last sentence.
@@ -107,6 +107,42 @@ This entire paragraph should NOT be highlighted. <span class="preview"> This wor
 レンダリング:
 
 この段落全体をハイライト表示しないでください。 <span class="preview"> この単語は **太字** 強調表示された文の中に</span> これが最後の文です
+
+例 2:
+
+```
+Highlighting should start after this paragraph.
+
+<div class="preview">
+
+**This is a test**
+
+>[!TIP]
+>
+>Drink 6 cups of water a day.
+
+Last highlighted paragraph
+
+<\div>
+
+Not highlighted
+```
+
+レンダリング：この段落の後にハイライト表示を開始する必要があります。
+
+<div class="preview">
+
+**これはテストです**
+
+>[!TIP]
+>
+>1 日に 6 杯の水を飲む。
+
+最後に強調表示された段落
+
+&lt;\div>
+
+強調表示されていません
 
 原則として、 `<span class="preview">` 段落内の段落またはテキストをハイライト表示し、 `<div class="preview">` 複数の段落およびコンポーネントの場合。
 
