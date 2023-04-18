@@ -5,9 +5,9 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 87af4ae77f71701b52247f996b89edfb93794dd7
+source-git-commit: c08189cf57f08fc5be4bc24ec06d9b9a865a53c8
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '680'
 ht-degree: 2%
 
 ---
@@ -113,17 +113,21 @@ This entire paragraph should NOT be highlighted. <span class="preview"> This wor
 ```
 Highlighting should start after this paragraph.
 
-<span class="preview">
+<div class="preview">
 
-**This is a test**
+Start of DIV.
 
->[!TIP]
+>[!NOTE]
 >
->Drink 6 cups of water a day.
+>This is a note.
+>
+>I have a request to highlight the note's background.
 
-Last highlighted paragraph
+![image](/help/quicksilver/administration-and-setup/add-users/create-and-manage-users/assets/add-admin-1.png)
 
-</span>
+Last highlighted item.
+
+</div>
 
 Not highlighted
 ```
@@ -132,17 +136,21 @@ Not highlighted
 
 この段落の後にハイライト表示を開始する必要があります。
 
-<span class="preview">
+<div class="preview">
 
-**これはテストです**
+DIV の開始。
 
->[!TIP]
+>[!NOTE]
 >
->1 日に 6 杯の水を飲む。
+>これはメモです。
+>
+>メモの背景を強調するリクエストがあります。
 
-最後に強調表示された段落
+![image](/help/home/assets/analytics-icon-24.png)
 
-</span>
+最後にハイライトされた項目。
+
+</div>
 
 強調表示されていません
 
