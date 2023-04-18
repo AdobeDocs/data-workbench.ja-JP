@@ -6,9 +6,9 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Data Workbench ヘルプ
 user-guide-description: Data Workbench のマルチチャネル機能について学びます。Data Workbench クライアント、インストール、データセット設定に関するガイドなどが含まれます。
-source-git-commit: 90b9fff995cb37a62024f454f009e9e0d7b927cd
+source-git-commit: fd815415e55e72ab01a1beee9b7ebed0432eded9
 workflow-type: tm+mt
-source-wordcount: '3498'
+source-wordcount: '3501'
 ht-degree: 99%
 
 ---
@@ -658,8 +658,8 @@ ht-degree: 99%
    + 対照実験 {#controlled-experimentation}
       + [対照実験の有効化](c-undst-ctrld-exp/t-en-ctrld-exp/t-en-ctrld-exp.md)
       + [ExpFile パラメーターの変更](c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expfile-prm.md)
-      + [ExpCookieURL パラメーターの変更（オプション）](c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expckurl-prm.md)
-      + [ExpPartialMatch パラメーターの変更（オプション）](c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md)
+      + [ExpCookieURL パラメーターの変更（任意）](c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expckurl-prm.md)
+      + [ExpPartialMatch パラメーターの変更（任意）](c-undst-ctrld-exp/t-en-ctrld-exp/c-mod-expplmth-prm.md)
    + 対照実験の作成 {#create-controlled-experiment}
       + [対照実験の作成](c-undst-ctrld-exp/t-crt-ctrld-exp/t-crt-ctrld-exp.md)
       + [目標の定義](c-undst-ctrld-exp/t-crt-ctrld-exp/c-dfn-obj.md)
@@ -963,3 +963,4 @@ ht-degree: 99%
 + [ クエリー API](https://www.adobe.io/)
 + [Data Workbench と Adobe Target の統合](dwb-adobe-target.md)
 + [Data Workbench 用語集](dwb-glossary.md)
++ [非表示のテストページ](hidden-test-page.md)
