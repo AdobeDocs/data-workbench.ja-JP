@@ -5,10 +5,10 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 73c7ad435917ab17022494f6f73d2c626363dcc2
+source-git-commit: 87af4ae77f71701b52247f996b89edfb93794dd7
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '673'
+ht-degree: 2%
 
 ---
 
@@ -113,7 +113,7 @@ This entire paragraph should NOT be highlighted. <span class="preview"> This wor
 ```
 Highlighting should start after this paragraph.
 
-<div class="preview">
+<span class="preview">
 
 **This is a test**
 
@@ -123,14 +123,16 @@ Highlighting should start after this paragraph.
 
 Last highlighted paragraph
 
-</div>
+</span>
 
 Not highlighted
 ```
 
-レンダリング：この段落の後にハイライト表示を開始する必要があります。
+レンダリング:
 
-<div class="preview">
+この段落の後にハイライト表示を開始する必要があります。
+
+<span class="preview">
 
 **これはテストです**
 
@@ -140,11 +142,9 @@ Not highlighted
 
 最後に強調表示された段落
 
-</div>
+</span>
 
 強調表示されていません
-
-原則として、 `<span class="preview">` 段落内の段落またはテキストをハイライト表示し、 `<div class="preview">` 複数の段落およびコンポーネントの場合。
 
 ## コードブロックの構文の強調表示
 
