@@ -5,14 +5,70 @@ hide: true
 hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
-source-git-commit: 0cd0a201aa10e519fa9760a64ab95fa1a10a3799
+exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
+source-git-commit: a3625867de6b7b8f8b7f71b3b124f028356dabad
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 2%
+source-wordcount: '749'
+ht-degree: 4%
 
 ---
 
 # 非表示のテストページ
+
+## メモのタイプ
+
+
+サポートされるすべての注記タイプ。
+
+>[!NOTE]
+>
+>This is a standard NOTE block.
+
+>[!TIP]
+>
+>This is a standard tip.
+
+>[!IMPORTANT]
+>
+>これは重要な注意事項です。
+
+>[!WARNING]
+>
+>これは警告です。
+
+>[!CAUTION]
+>
+>これは注意が必要です。
+
+>[!ADMIN]
+>
+>これは管理メモです。 EXL のみ。
+
+>[!AVAILABILITY]
+>
+>これは可用性に関するメモです。 EXL のみ。
+
+>[!PREREQUISITES]
+>
+>これは前提条件のメモです。 EXL のみ。
+
+>[!INFO]
+>
+>これは情報メモです。 EXL のみ。
+
+>[!ERROR]
+>
+>これはエラーメモです。 EXL のみ。
+
+>[!SUCCESS]
+>
+>これは成功メモです。 EXL のみ。
+
+>[!MORELIKETHIS]
+>
+>* ページ 1
+>* ページ 2
+
 
 ## バッジ
 
