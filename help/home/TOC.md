@@ -6,9 +6,9 @@ feature-set: Analytics
 feature: Data Workbench
 user-guide-title: Data Workbench ヘルプ
 user-guide-description: Data Workbench のマルチチャネル機能について学びます。Data Workbench クライアント、インストール、データセット設定に関するガイドなどが含まれます。
-source-git-commit: fd815415e55e72ab01a1beee9b7ebed0432eded9
+source-git-commit: 35cd94fdde735cc24f88083a16881a12bbc33f4f
 workflow-type: tm+mt
-source-wordcount: '3501'
+source-wordcount: '3504'
 ht-degree: 99%
 
 ---
@@ -964,3 +964,4 @@ ht-degree: 99%
 + [Data Workbench と Adobe Target の統合](dwb-adobe-target.md)
 + [Data Workbench 用語集](dwb-glossary.md)
 + [非表示のテストページ](hidden-test-page.md)
++ [非表示のサポートの概要](hidden-support-overview.md)
