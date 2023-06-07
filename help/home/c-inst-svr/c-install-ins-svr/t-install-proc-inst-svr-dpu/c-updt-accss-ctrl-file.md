@@ -3,9 +3,9 @@ description: Access Control.cfg ファイルは、Insight サーバーの特定�
 title: アクセス制御ファイルの更新
 uuid: f73651e5-6a8b-45fc-8f36-6751304dc53c
 exl-id: 551758c1-f24b-49e6-ab6e-09979511e4f4
-source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+source-git-commit: 5ce5b8f8b35d2d4f319076f54347e300e5f133df
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '472'
 ht-degree: 4%
 
 ---
@@ -20,7 +20,7 @@ AccessGroups と呼ばれるエンティティを定義します。 AccessGroup 
 
 接続する前に [!DNL Insight Server] と [!DNL Insight]の場合は、管理者 AccessGroup を更新して、 [!DNL Insight] 組織に対してAdobeが発行したライセンス。 この AccessGroup は、 [!DNL Insight].
 
-次の手順では、Administrators AccessGroup にライセンスを追加する方法を説明します。 このタスクを完了するには、次のタスクを決定する必要があります [!DNL Insight] ライセンスには、組織の管理者権限があります。 ( 初期のセットアップおよび設定の場合、1 つのライセンスに管理者権限を付与するだけで十分です。 追加のライセンスには、後で管理権限を付与することができます )。 また、このライセンスに割り当てられている「共通名」を知る必要があります。 この値を取得するには、次の場所でアカウントのライセンス証明書を確認します。 [https://aap.adobe.com](https://aap.adobe.com).
+次の手順では、Administrators AccessGroup にライセンスを追加する方法を説明します。 このタスクを完了するには、次のタスクを決定する必要があります [!DNL Insight] ライセンスには、組織の管理者権限があります。 ( 初期のセットアップおよび設定の場合、1 つのライセンスに管理者権限を付与するだけで十分です。 追加のライセンスには、後で管理権限を付与することができます )。 また、このライセンスに割り当てられている「共通名」を知る必要があります。
 
 この手順の目的は、単にのライセンスが必要なコピーを特定することです。 [!DNL Insight] を使用して、最初にをセットアップおよび設定できます。 [!DNL Insight Server]. このライセンスを特定したら、のライセンスコピーを使用して、以降のすべてのサーバ設定（追加の AccessGroup 設定を含む）を実行できます。 [!DNL Insight]. AccessGroups を使用したサーバーへのアクセス制御の詳細については、 [アクセス制御の設定](../../../../home/c-inst-svr/c-admin-inst-svr/c-config-acs-ctrl/c-config-acs-ctrl.md#concept-ac385e870dbe4b57a72bf7266b60f93d).
 

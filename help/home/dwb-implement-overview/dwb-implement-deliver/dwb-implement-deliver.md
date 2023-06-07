@@ -3,9 +3,9 @@ description: DWB の設定後、これらの機能を実装できます。
 title: Data Workbench 機能の実装
 uuid: f7eec017-f27c-4ae0-bc23-45195fc08d81
 exl-id: 4b2625a6-cc44-4281-b532-fc29e8c06105
-source-git-commit: b1dda69a606a16dccca30d2a74c7e63dbd27936c
+source-git-commit: 5ce5b8f8b35d2d4f319076f54347e300e5f133df
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '258'
 ht-degree: 3%
 
 ---
@@ -39,5 +39,3 @@ DWB の設定後、これらの機能を実装できます。
 * 実装するには **二項相関を持つ Predictive Intelligence**&#x200B;を参照してください。 [二項相関](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html).
 
 * 実装するには **二項相関を持つ Predictive Intelligence**&#x200B;を参照してください。 [相関行列](https://experienceleague.adobe.com/docs/data-workbench/using/client/analysis-visualizations/correlation-analysis/c-correlation-analysis.html).
-
-* DWB ダッシュボードを設定して検証するには、次に移動します。 [AdobeData Workbenchライセンスポータル](https://license.visualsciences.com/License/#documentation). また、 [基本的なオンボーディング手順](../../../home/dwb-implement-overview/dwb-implement-provision/dwb-implement-onboarding.md#concept-e93aba41b26a410f959c5ca7f8e33355).
