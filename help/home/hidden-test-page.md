@@ -6,9 +6,9 @@ hidefromtoc: true
 badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
 badgeExam: label="Exam ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: a3625867de6b7b8f8b7f71b3b124f028356dabad
+source-git-commit: 62b03629815f33344189c2562bc486301878a146
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '753'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 4%
 # 非表示のテストページ
 
 ## メモのタイプ
-
 
 サポートされるすべての注記タイプ。
 
@@ -42,7 +41,7 @@ ht-degree: 4%
 
 >[!ADMIN]
 >
->これは管理メモです。 EXL のみ。
+>これは、管理としてレンダリングされる管理メモです。 EXL のみ。
 
 >[!AVAILABILITY]
 >
@@ -68,7 +67,6 @@ ht-degree: 4%
 >
 >* ページ 1
 >* ページ 2
-
 
 ## バッジ
 
@@ -142,13 +140,13 @@ badgeExam: label="Exam ADO-E903" type="neutral"
 * 複数のメタデータバッジを指定した場合、バッジは、バッジ名に基づいてアルファベット順に表示されます ( 例： `badge1:` または `badgeWeb`.
 * URL を新しいタブで開く場合は、次の構文を使用します。
 
-   ```
-   [!BADGE Open in new tab]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Open adobe.com in new tab"}
-   ```
+  ```
+  [!BADGE Open in new tab]{type=Negative url="https://www.adobe.com newtab=true" tooltip="Open adobe.com in new tab"}
+  ```
 
-   レンダリング:
+  レンダリング:
 
-   [!BADGE 新しいタブで開く]{type=Negative url="https://www.adobe.com newtab=true" tooltip="新しいタブで adobe.com を開く"}
+  [!BADGE 新しいタブで開く]{type=Negative url="https://www.adobe.com newtab=true" tooltip="新しいタブで adobe.com を開く"}
 
 ## テキストのハイライト
 
