@@ -1,44 +1,44 @@
 ---
-title: Data Workbenchの提供終了に関する FAQ
-description: Data Workbenchの提供終了のお知らせの詳細を説明します。
-source-git-commit: 4f591a65d4cfbb69b3e5397cf27a9ed3ee498a30
-workflow-type: tm+mt
+title: Data Workbench の提供終了に関する FAQ
+description: Data Workbench の提供終了のお知らせについて詳しく説明します。
+exl-id: 0abb72f1-b68b-48cc-829c-cac7bd21a6de
+source-git-commit: 020a39b7f22d08b76e641e437c1ecaaf26f1b50a
+workflow-type: ht
 source-wordcount: '393'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
+# Data Workbench の提供終了に関する FAQ
 
-# Data Workbenchの提供終了に関する FAQ
+Data Workbench の提供終了日は、**2023年12月31日（PT）**&#x200B;です。
 
-Data Workbenchの提供終了日： **2023 年 12 月 31 日**.
+## 対象になるのは何ですか？
 
-## には何が含まれますか？
+このお知らせは、Managed Services およびオンプレミスのソフトウェアソリューションを含む、Data Workbench に依存するすべてのソリューションに影響を与えます。この提供終了は、Data Workbench にのみ影響します。Adobe Analytics 内の他の機能やコンポーネントには影響を与えません。
 
-この発表は、Managed Servicesおよびオンプレミスのソフトウェアソリューションを含む、Data Workbenchに依存するすべてのソリューションに影響を与えます。 この提供終了はData Workbenchにのみ影響します。Adobe Analytics内の他の機能やコンポーネントには影響しません。
+## Data Workbench が廃止する理由は何ですか？
 
-## なぜData Workbenchは引退するのか？
+Adobe Experience Platform のリリースと継続的な改善に伴い、お客様は様々なチャネルのデータを組み合わせ、複数のアドビソリューションで使用できます。特に、Customer Journey Analytics では、クロスチャネルデータを使用して、そのデータに対するアドバンス分析を実行できます。
 
-Adobe Experience Platformのリリースと継続的な改善に伴い、お客様は様々なチャネルのデータを組み合わせ、複数のAdobeソリューションで使用できます。 特に、Customer Journey Analyticsでは、クロスチャネルデータを使用して、そのデータに対する高度な分析を実行できます。
+現在、Data Workbench で使用可能なほとんどの機能とユースケースは、Adobe Experience Platform ソリューションでも使用できます。ただし、Data Workbench の機能が Adobe Experience Platform の各ソリューションでレプリケートされないケースは限られています。特定の機能領域やユースケースの互換性については、組織のアドビ担当営業または販売店にお問い合わせください。
 
-現在、Data Workbenchで利用可能なのほとんどの機能と使用例は、現在、Adobe Experience Platformソリューションで利用できます。 ただし、Adobe Experience Platformの各ソリューションでData Workbench機能がレプリケートされない場合は限られています。 機能の特定の領域や使用例の互換性については、Adobeのアカウントマネージャーにお問い合わせください。
+## オンプレミスデプロイメントに関するアドビのガイダンスとは何ですか？
 
-## オンプレミスデプロイメントに関するAdobeのガイダンスとは
+アドバンス分析を実現する現在のアドビソリューションに移行することをお勧めします。従来の永続ライセンスをご利用のお客様は、Data Workbench を引き続き使用することを決定できます。ただし、アドビでは、重大なバグやセキュリティの脆弱性を含め、この製品をサポートまたは更新する予定はありません。提供終了日を過ぎた Data Workbench のオンプレミスデプロイメントの継続使用は、組織自身の責任で行います。
 
-高度な分析を実現する現在のAdobeソリューションに移行することをお勧めします。 レガシーの永続ライセンスをご利用のお客様は、引き続きData Workbenchを使用することができます。 ただし、Adobeは、重大なバグやセキュリティの脆弱性を含む、製品をサポートまたは更新する予定はありません。 提供終了日を過ぎたData Workbenchのオンプレミスデプロイメントを継続的に使用する場合は、組織自身の責任においておこなわれます。
+## Data Workbench に役立つコンサルティングサービスを購入できますか？
 
-## Data Workbenchに役立つコンサルティングサービスを購入できますか？
+Adobe Professional Services は、提供終了日まで購入できます。 この日付を過ぎると、Adobe Professional Services は使用できなくなります。一部の外部パートナーは、Data Workbench のサービスの提供を継続することを選択する可能性があります。そうした場合、アドビによる承認はなく、その外部パートナーのみで行います。
 
-Adobe Professional Servicesは、提供終了日まで購入できます。 この日付を過ぎると、使用できるAdobe Professional Servicesはありません。 一部の外部パートナーは、引き続きData Workbench向けのサービスを提供することを選択します。 そうなると、Adobeの承認なしに、その外部のパートナーのみが行います。
+## アドビが推奨するソリューションまたは製品は何ですか？
 
-## Adobeが推奨するのは、どのソリューションや製品ですか？
+アドビは現在、Data Workbench と同様のニーズを満たす次の Adobe Experience Platform ソリューションを提供しています。
 
-Adobeは、現在、次のAdobe Experience Platformソリューションを提供しており、Data Workbenchとして同様のニーズを満たしています。
+* [**Customer Journey Analytics**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=ja)：Adobe Experience Platform からのマルチチャネルデータに対して、アトリビューション、フィルター、フロー、フォールアウトなどのアドバンス分析手法を使用します。
+* [**クエリサービス**](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja)：Adobe Experience Platform のデータに対して SQL クエリを実行します。
+* [**データ準備**](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja)：他の Adobe Experience Platform ソリューションでより効果的に使用できるように、データをマッピング、変換および検証します。
 
-* [**Customer Journey Analytics**](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=ja):Adobe Experience Platformからのマルチチャネルデータで、アトリビューション、フィルター、フロー、フォールアウトなど、高度な分析手法を使用します。
-* [**クエリサービス**](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=ja):Adobe Experience Platformのデータに対して SQL クエリを実行します。
-* [**データ準備**](https://experienceleague.adobe.com/docs/experience-platform/data-prep/home.html?lang=ja):他のAdobe Experience Platformソリューションでより効果的に使用するために、データをマッピング、変換および検証します。
+## 詳細情報はどこで入手できますか？
 
-## 詳細はどこで入手できますか？
-
-この発表に関する詳細や質問については、Adobeのアカウントマネージャーにお問い合わせください。
+この提供終了のお知らせに関する詳細や質問については、組織のアドビ担当営業または販売店にお問い合わせください。
