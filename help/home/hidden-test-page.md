@@ -3,17 +3,23 @@ title: 非表示のテストページ
 description: このページは、検索や目次には表示されません
 hide: true
 hidefromtoc: true
-badgePremium: label="Premium" type="Positive" url="https://www.premium-product.com" tooltip="Download Premium"
-badgeExam: label="Exam ADO-E903" type="neutral"
+badgePremium: label="プレミアム" type="Positive" url="https://www.premium-product.com" tooltip="Premium のダウンロード"
+badgeExam: label="試験 ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 62b03629815f33344189c2562bc486301878a146
+source-git-commit: 3480cc9b82a5561a364a88f3d09c14cca56a0c7a
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '796'
 ht-degree: 4%
 
 ---
 
 # 非表示のテストページ
+
+## 問題のプレビュー
+
+次の段落は、VSC プレビューで正しくレンダリングされません。 なぜか分かりません。
+
+パスワードが [!DNL Adobe]、 [パスワードアカウントのAdobeを変更](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html){target="_blank"}.
 
 ## メモのタイプ
 
@@ -110,7 +116,7 @@ badgeExam: label="Exam ADO-E903" type="neutral"
 
 | タイプ | バッジ |
 |---|---|
-| 情報（デフォルト） | [!BADGE ベータ]{type=Informative url="https://www.example.com"} |
+| 情報（デフォルト） | [!BADGE Beta]{type=Informative url="https://www.example.com"} |
 | 肯定的 | [!BADGE 新機能]{type=Positive url="https://www.example.com" tooltip="example.com に移動"} |
 | 否定的 | [!BADGE 廃止]{type=negative tooltip="この機能は現在提供終了です"} |
 | 中立的 | [!BADGE 多分]{type=Neutral tooltip="乗り手が馬から落ちた…"} |
