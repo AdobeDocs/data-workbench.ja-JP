@@ -16,7 +16,7 @@ ht-degree: 100%
 
 # Data Workbench ヘルプ {#using}
 
-+ [Data Workbench ヘルプ ](home.md)
++ [Data Workbench ヘルプ](home.md)
 + [提供終了のお知らせ](eol.md)
 + リリースノート {#release-notes}
    + [リリースノート：概要](c-release-notes-insight/release-notes.md)
