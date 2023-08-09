@@ -6,20 +6,22 @@ hidefromtoc: true
 badgePremium: label="プレミアム" type="Positive" url="https://www.premium-product.com" tooltip="Premium のダウンロード"
 badgeExam: label="試験 ADO-E903" type="neutral"
 exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 3480cc9b82a5561a364a88f3d09c14cca56a0c7a
+source-git-commit: 51cc5fb0196d1bc34325e65c2715eaeab5590938
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '797'
 ht-degree: 4%
 
 ---
 
 # 非表示のテストページ
 
+アクティブ化?
+
 ## 問題のプレビュー
 
 次の段落は、VSC プレビューで正しくレンダリングされません。 なぜか分かりません。
 
-パスワードが [!DNL Adobe]、 [パスワードアカウントのAdobeを変更](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html){target="_blank"}.
+パスワードが [!DNL Adobe]を使用する場合、 [パスワードアカウントのAdobeを変更する](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html){target="_blank"}.
 
 ## メモのタイプ
 
@@ -47,11 +49,11 @@ ht-degree: 4%
 
 >[!ADMIN]
 >
->これは、管理としてレンダリングされる管理メモです。 EXL のみ。
+>これは、ADMINISTRATION としてレンダリングされる管理メモです。 EXL のみ。
 
 >[!AVAILABILITY]
 >
->これは可用性に関するメモです。 EXL のみ。
+>これは、可用性に関するメモです。 EXL のみ。
 
 >[!PREREQUISITES]
 >
@@ -76,7 +78,7 @@ ht-degree: 4%
 
 ## バッジ
 
-バッジは、コンテンツインジケーターとして使用される色付きのラベルです。 例えば、バッジを追加して記事を「 _ベータ版_ またはセクションを _プレミアム_. バッジの色を変更し、URL とツールチップを関連付けることができます。
+バッジは、コンテンツインジケーターとして使用される色付きのラベルです。 例えば、バッジを追加して記事を「 _ベータ版_ またはセクションを _Premium_. バッジの色を変更し、URL とツールチップを関連付けることができます。
 
 [!BADGE バッジの例]
 
@@ -117,8 +119,8 @@ badgeExam: label="Exam ADO-E903" type="neutral"
 | タイプ | バッジ |
 |---|---|
 | 情報（デフォルト） | [!BADGE Beta]{type=Informative url="https://www.example.com"} |
-| 肯定的 | [!BADGE 新機能]{type=Positive url="https://www.example.com" tooltip="example.com に移動"} |
-| 否定的 | [!BADGE 廃止]{type=negative tooltip="この機能は現在提供終了です"} |
+| 肯定的 | [!BADGE 新機能]{type=Positive url="https://www.example.com" tooltip="example.comに移動します。"} |
+| 否定的 | [!BADGE 廃止済み]{type=negative tooltip="この機能は現在提供終了です"} |
 | 中立的 | [!BADGE 多分]{type=Neutral tooltip="乗り手が馬から落ちた…"} |
 | 注意 | [!BADGE 注意]{type=Caution tooltip="黄色のステータス"} |
 
@@ -137,11 +139,11 @@ badgeExam: label="Exam ADO-E903" type="neutral"
 ### バッジの要件
 
 * メタデータで使用できるバッジは 2 つだけです。 このルールは設定可能なので、例外が必要な場合はお知らせください。
-* バッジラベルのみが必要です。 この `type`, `url`、および `tooltip` パラメーターはオプションです。 この `type` パラメータは色を決定します。 この `url` パラメーターを使用すると、ユーザーはバッジをクリックして記事またはページを開くことができます。 この `tooltip` パラメータは、マウスオーバー時にツールチップテキストを表示します。
+* バッジラベルのみが必要です。 The `type`, `url`、および `tooltip` パラメーターはオプションです。 The `type` パラメータは色を決定します。 The `url` パラメーターを使用すると、ユーザーはバッジをクリックして記事またはページを開くことができます。 The `tooltip` パラメータは、マウスオーバー時にツールチップテキストを表示します。
 * へのバッジの追加 `TOC.md` ファイルには、ガイド内のすべての記事にバッジが表示されます。 バッジから記事にジャンプするための URL を指定する場合は、ルートリンク ( 例： `/help/guide/article.md`) は相対リンクではありません ( 例： `article.md`) を使用して、異なるフォルダー内の記事を処理できます。
 * バッジの追加先 `metadata-new.md` リポジトリ内の各記事のバッジを表示します。
 * メタデータバッジの場合は、すべての値が引用符で囲まれていることを確認します。 インラインバッジの場合は、 `url` および `tooltip` は引用符で囲まれます。
-* 有効なタイプの値は次のとおりです。 *情報* （デフォルト、青）、 *肯定的* （緑）、 *ネガティブ* （赤）、 *中立* （ダークグレー） *注意* （黄色）。
+* 有効なタイプの値は次のとおりです。 *参考情報* （デフォルト、青）、 *肯定的* （緑）、 *ネガティブ* （赤）、 *中立* （ダークグレー） *注意* （黄色）。
 * バッジラベルはローカライズされています。
 * 複数のメタデータバッジを指定した場合、バッジは、バッジ名に基づいてアルファベット順に表示されます ( 例： `badge1:` または `badgeWeb`.
 * URL を新しいタブで開く場合は、次の構文を使用します。
@@ -152,9 +154,9 @@ badgeExam: label="Exam ADO-E903" type="neutral"
 
   レンダリング:
 
-  [!BADGE 新しいタブで開く]{type=Negative url="https://www.adobe.com newtab=true" tooltip="新しいタブで adobe.com を開く"}
+  [!BADGE 新しいタブで開く]{type=Negative url="https://www.adobe.com newtab=true" tooltip="adobe.comを新しいタブで開きます。"}
 
-## テキストのハイライト
+## テキストのハイライト表示
 
 Workfrontチームは、黄色のハイライトを使用して、今後の機能のプレビューを示すように求めました。 次に、その仕組みを示します。
 
@@ -196,7 +198,7 @@ Not highlighted
 
 DIV の開始。
 
-これは新しい段落、次に画像です
+これは新しい段落で、次に画像です
 
 ![image](/help/home/assets/analytics-icon-24.png)
 
@@ -208,13 +210,13 @@ DIV の開始。
 
 ## コードブロックの構文の強調表示
 
-Experience Leagueは、コードブロックの構文のハイライト表示をサポートしています。 必ず `java` バッククォートの開始後に、構文が正しくハイライト表示されていることを確認します。 有効な言語の一覧については、 [https://prismjs.com](https://prismjs.com/#supported-languages). 言語が不足している場合は、jira チケットをログに記録してください。
+Experience Leagueは、コードブロックの構文のハイライト表示をサポートしています。 必ず次のような言語を指定してください。 `java` バッククォートの開始後に、構文が正しくハイライト表示されていることを確認します。 有効な言語の一覧については、 [https://prismjs.com](https://prismjs.com/#supported-languages). 言語が不足している場合は、jira チケットをログに記録してください。
 
 ### コードブロック内の行番号
 
 追加 `{line-numbers="true"}` 行番号を有効にする言語の後に配置します。
 
-行番号 (&grave;&grave;&grave;) を使用する例`html {line-numbers="true"}`):
+行番号 (&grave;&grave;&grave;) を含む例`html {line-numbers="true"}`):
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
