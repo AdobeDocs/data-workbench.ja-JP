@@ -5,17 +5,17 @@ hide: true
 hidefromtoc: true
 badgePremium: label="プレミアム" type="Positive" url="https://www.premium-product.com" tooltip="Premium のダウンロード"
 badgeExam: label="試験 ADO-E903" type="neutral"
-exl-id: 25669153-b90c-4cf6-81aa-cabcbf2cbcb6
-source-git-commit: 51cc5fb0196d1bc34325e65c2715eaeab5590938
+exl-id: 02245655-511e-4e89-8846-dac85681ea91
+source-git-commit: 6df7ed2c80f04416a48db8d4bc52ede2e87bf372
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '803'
 ht-degree: 4%
 
 ---
 
 # 非表示のテストページ
 
-アクティブ化?
+アクティブ化? 繰り返し、この自動アクティブ化は PT の午前 11 時 30 分に行われましたか。
 
 ## 問題のプレビュー
 
@@ -82,7 +82,7 @@ ht-degree: 4%
 
 [!BADGE バッジの例]
 
-バッジには 2 種類あり、それぞれ異なる構文を持ちます。
+次の 2 つのタイプがあります。 of バッジには異なる構文があります。
 
 * **メタデータ**  — ページの上部付近にバッジを表示します
 * **インライン**  — 構文が存在するバッジを表示します
@@ -216,7 +216,7 @@ Experience Leagueは、コードブロックの構文のハイライト表示を
 
 追加 `{line-numbers="true"}` 行番号を有効にする言語の後に配置します。
 
-行番号 (&grave;&grave;&grave;) を含む例`html {line-numbers="true"}`):
+行番号 (&grave;&grave;&grave;) を使用する例`html {line-numbers="true"}`):
 
 ```html {line-numbers="true"}
 <!DOCTYPE html>
